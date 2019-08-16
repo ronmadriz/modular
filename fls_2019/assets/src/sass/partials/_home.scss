@@ -96,7 +96,7 @@ html {
 							&.img_grid {
 								div {
 									&.item {
-										&.first-of-type {
+										&:first-of-type {
 											background-color: $gray;
 											div {
 												&.caption {
