@@ -217,6 +217,7 @@ html body .img_grid .item {
             justify-content: center; }
 
 html body .industries.img_grid div.caption:first-of-type {
+  top: 0;
   background-color: #e6e7e9;
   color: #404040; }
 
