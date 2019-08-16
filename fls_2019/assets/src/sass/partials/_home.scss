@@ -96,11 +96,11 @@ html {
 							&.img_grid {
 								div {
 									&.item {
-										&.first {
-											top:0;
+										&.first-of-type {
 											background-color: $gray;
 											div {
 												&.caption {
+													top:0;
 													h2 {
 														color: $accent_1;
 														font-size: 1.4375rem;
