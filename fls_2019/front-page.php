@@ -81,7 +81,7 @@ if ($feat_industries) {
 	echo '<div class="container">'.PHP_EOL;
 	echo '<div class="row industries img_grid">'.PHP_EOL;
 	echo '<div class="item first col-12 col-md-4">'.PHP_EOL;
-	echo '<div class="caption text-center align-content-center">'.PHP_EOL;
+	echo '<div class="caption text-center align-content-center justify-content-center">'.PHP_EOL;
 	echo '<h2><a href="'.get_permalink(1116142).'">'.$feat_ind_title.'</a></h2>'.PHP_EOL;
 	echo '<span class="desc d-none d-sm-block"><a href="'.get_permalink(1116142).'">'.$feat_ind_content.'</span></a>'.PHP_EOL;
 	//	echo '<a href="'.get_permalink(1116142).'" class="btn btn-blue">Learn More</a>'.PHP_EOL;
