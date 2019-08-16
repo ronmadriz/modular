@@ -363,9 +363,8 @@ if ('has_2_solutions') {
 				echo get_the_post_thumbnail($solution_2->ID, 'full', array('class' => 'img-fluid')).PHP_EOL;
 				echo '<div class="title"><a href="'.get_permalink().'">'.get_the_title($solution_2->ID).'</a></div>'.PHP_EOL;
 				echo '<div class="caption text-center">'.PHP_EOL;
-				echo '<h2>'.get_the_title($solution_2->ID).'</h2>'.PHP_EOL;
-				echo '<div class="desc"><p>'.$solution_summary_2.'</p></div>'.PHP_EOL;
-				echo '<a href="'.get_the_permalink($solution_2->ID).'" class="btn btn-outline-light">Learn More</a>'.PHP_EOL;
+				echo '<h2><a href="'.get_the_permalink($solution_2->ID).'">'.get_the_title($solution_2->ID).'</a></h2>'.PHP_EOL;
+				echo '<div class="desc"><p><a href="'.get_the_permalink($solution_2->ID).'">'.$solution_summary_2.'</a></p></div>'.PHP_EOL;
 				echo '</div>'.PHP_EOL;
 				echo '</div>'.PHP_EOL;
 				endif;
