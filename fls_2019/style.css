@@ -1,0 +1,30 @@
+/*
+Theme Name: FLS Custom Theme
+Theme URI: https://www.firstcreative.com
+Description: Event Listing Theme created by First Creative
+Author: First Creative
+Author URI: firstcreative.com
+Version: 1.0
+Tags:
+
+License:
+License URI:
+*/
+html body .img_grid .item:first-of-type:hover div.caption {
+    align-items: start;
+    justify-content: start;
+}
+html body .industries.img_grid div:hover div.caption:first-of-type a {
+    width: 100%;
+}
+@media (min-width: 786px) {
+    .max-width {
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    .navbar {
+        padding-bottom: 10px!important;
+    }
+}

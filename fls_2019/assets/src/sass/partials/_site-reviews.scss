@@ -1,0 +1,70 @@
+div {
+	&#site_reviews {
+		div {
+			&.title {
+			    margin-bottom: 0rem;
+			    padding: 0 2rem 1rem;
+			    &:after {
+					content: '';
+					display: block;
+					width: 90%;
+					background: $light_gray;
+					height: 1px;
+					margin: 2rem auto 0;						    	
+			    }							
+			}
+			&.glsr-reviews {
+				&.glsr-default {
+					div {
+						&.glsr-review {
+							margin-bottom: 1rem;
+							padding:0 .875rem .875rem;
+							&:nth-of-type(even) {
+								background-color: $off_white;
+							}
+							div {
+								&.glsr-review-header {
+									> div {
+										&.glsr-review-rating {
+											display:inline-block;
+										}
+										&.glsr-review-title {
+											display:inline-block;											
+										}
+									}
+								}
+								&.glsr-review-content {
+									
+								}
+								&.glsr-review-footer {
+								    font-size: 85%;
+									font-style: italic;
+									div {
+										&.glsr-custom-nameCompany {
+											
+										}
+										&.glsr-review-author {
+											display:inline;
+										}
+										&.glsr-custom-nameLast {
+											display:inline;
+										}
+										&.glsr-custom-city {
+											display:inline;											
+										}
+										&.glsr-custom-state {
+											display:inline;										
+										}
+									}
+								}
+							}
+							>div {
+							    margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

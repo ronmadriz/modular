@@ -1,0 +1,42 @@
+body {
+	header {
+		a {
+			&.navbar-brand {
+				margin-right: 0;
+				color:$accent_1;
+			    @media (min-width:786px) {
+			    	min-width: 457.5px;
+			    }				
+				img {
+					@media (max-width: 786px) {
+					    max-height: 90px;
+					    width: auto;
+					}
+					@media (min-width: 786px) {
+						margin-right:1rem;
+						min-width: 100%;
+					}
+				}
+			}
+		}
+		span {
+			&.nav_tel {
+				font-weight: bold;
+				font-size: 1.175rem;
+				padding-top: 5px;
+				text-align: center;
+				a {
+					color:$accent_4;
+				}
+			}
+		}
+		div {
+			&#nav-holder {
+				position: relative;
+			}
+			&#page-top {
+				z-index: 100000;
+			}
+		}
+	}	
+}

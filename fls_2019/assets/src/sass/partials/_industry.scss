@@ -1,0 +1,126 @@
+html {
+	body {
+		main {
+			section {
+				&#child_solutions {
+					div {
+						&.item {
+							@media(min-width: 786px) {
+								margin-bottom: 1.4375rem;
+							}
+							.item-thumb {
+								@media(max-width: 786px) {
+									text-align: center;
+									margin-bottom: 1rem;
+								}
+							}
+						}						
+					}
+				}
+				&#case_study {
+					padding-top: 2rem;
+					padding-bottom: 2rem;					
+					div {
+						&.content {
+							margin-top:1rem;
+							margin-bottom:1rem;
+						}
+					}
+				}
+				&#testimonial {
+					.content {
+						border-color: #f0f0f0;
+						background-color: #f7f7f7;
+						border-radius:.25rem;
+						padding:2.18rem 2.18rem 1.25rem 2.4rem;
+						word-wrap: break-word;
+						margin-bottom: 2.18rem;					
+						i.fas {
+							font-family: 'Font Awesome 5 Free';
+							content: '\f099';
+							display: block;
+							position: absolute;
+							z-index: 1;
+							color: #000;
+							left: -.75rem;
+							top: 40%;
+							font-size: 1.75rem;
+						}
+					}
+				}
+				&#faq {
+					padding-top:2rem;
+					padding-bottom:2rem;
+					ul {
+						&.nav {
+							&.nav-tabs {
+								border-color:$light_gray;
+								li {
+									&.nav-item {
+										a {
+											&.nav-link {
+												border-bottom: 0;
+												padding:.875rem 1.25rem;
+												&.active {
+													font-weight:bold;
+													border-color:$light_gray;
+													background-color:$off_white;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					div {
+						&.tab-content {
+							padding:1.25rem;
+							border-width:1px;
+							border-style:solid;
+							border-top:0 solid transparent;
+							border-color:$light_gray;
+							background-color: $off_white;
+							dl {
+								padding-left:1.5275rem;
+								dt {
+									h4 {
+										font-size:1.125rem;
+										font-weight: bold;
+										color:$dark;
+									}
+								}
+								dd {
+									margin-top:.85rem;
+									p {
+										font-size:.85rem;
+									}
+								}
+							}
+						}
+					}
+				}
+				&#literature {
+					padding-top:2rem;
+					padding-bottom:2rem;
+					ul {
+						&.literature_list {
+							li {
+								padding-left:0;
+								padding-right:0;
+								h4 {
+									margin-top:1rem;
+									a {
+										color:$blue;
+										font-size: 1.125rem;
+										font-weight: bold;										
+									}
+								}
+							}
+						}
+					}					
+				}
+			}					
+		}
+	}
+}

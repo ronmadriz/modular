@@ -1,0 +1,359 @@
+body {
+	main {
+		form {
+			transform: all 0.25s ease;
+			label {
+				line-height: 175%;
+			}
+			input {
+				&.form-control, &.medium {
+					&[type=text], &[type=email], &[type=password], &[type=date], &[type=tel] {
+						margin-top: .25rem;
+						margin-bottom: .75rem;
+						font-size: 1rem;
+						font-weight: normal;
+						border-style: solid;
+						border-radius:0;
+						outline: none;
+						transition: border-color 0.2s;
+						color:$base;
+						&::placeholder {
+							color:$accent_1;
+							font-style: italic;
+						}
+					}
+					&:focus {
+						&[type=text], &[type=email], &[type=password], &[type=date], &[type=tel] {
+							border-color:$border_color;
+						}
+					}
+					&[type=date] {
+						&::-webkit-datetime-edit-month-field {
+							color: $base;
+						}
+						&::-webkit-datetime-edit-day-field {
+							color: $base;
+						}
+						&::-webkit-datetime-edit-year-field {
+							color: $base;
+						}										
+						&::-webkit-inner-spin-button {
+							display:none;
+						}
+						&::-webkit-calendar-picker-indicator {
+							color:$base;
+							&:hover {
+							  color:$base;
+							  cursor: pointer;
+							}
+							&:active {
+							  color: $base;
+							}
+						}
+					}
+				}
+				&[type=submit] {
+					&.btn {
+						border-radius: 0;
+					}
+					&.gform_button {
+							background-color: $accent_1;
+							border-color: $accent_1;
+							color: $alternate;
+							-webkit-transition-duration: .35s;
+							transition-duration: .35s;
+							-webkit-transition-delay: 50ms;
+							transition-delay: 50ms;
+							display: inline-block;
+							font-weight: 400;
+							text-align: center;
+							white-space: nowrap;
+							vertical-align: middle;
+							-webkit-user-select: none;
+							-moz-user-select: none;
+							-ms-user-select: none;
+							user-select: none;
+							border: 1px solid transparent;
+							padding: .375rem .75rem;
+							font-size: 1rem;
+							line-height: 1.5;
+							border-radius: .25rem;
+							transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;						
+					}
+				}
+			}
+			button {
+				&[type=submit] {
+					&.btn {
+						border-radius: 0;
+					}
+					&.glsr-button {
+						background-color: $accent_1;
+						border-color: $accent_1;
+						color: $alternate;
+						-webkit-transition-duration: .35s;
+						transition-duration: .35s;
+						-webkit-transition-delay: 50ms;
+						transition-delay: 50ms;
+						display: inline-block;
+						font-weight: 400;
+						text-align: center;
+						white-space: nowrap;
+						vertical-align: middle;
+						-webkit-user-select: none;
+						-moz-user-select: none;
+						-ms-user-select: none;
+						user-select: none;
+						border: 1px solid transparent;
+						padding: .375rem .75rem;
+						font-size: 1rem;
+						line-height: 1.5;
+						border-radius: .25rem;
+						transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;						
+					}
+				}					
+			}
+			textarea, select {
+				margin-top: .25rem;
+				margin-bottom: .75rem;
+				font-size: 1rem;
+				font-weight: normal;
+				border-style: solid;
+				border-radius:0;
+				outline: none;
+				transition: border-color 0.2s;
+				color:$base;
+			}
+			&.sent {
+				div {
+					&.inside {
+						display:none;
+					}
+				}
+			}
+		}
+		aside {
+			&.sidebar {
+				padding-left:0;
+				padding-right:0;
+				padding-top: 2rem;
+				form {
+					background-color: $light_gray;
+					padding-bottom: 1rem;
+					div {
+						&.form_title {
+							background-color: $accent_1;
+							color:$alternate;
+							text-transform: capitalize;
+							font-weight: bold;
+							padding:.45rem 0 .6rem;
+							text-align: center;
+						}
+						&.form-group {
+							padding-left:1rem;
+							padding-right:1rem;
+							margin-top:1rem;
+							input, textarea, select {
+								&.form-control {
+									font-size:.85rem;
+								}
+							}
+							textarea {
+								height:5rem;
+							}
+						}
+						.btn {
+							font-size:.85rem;
+						}
+					}
+				}
+			}
+		}		
+	}
+	header {
+		button {
+			&#searchToggle {
+				height: 2.25rem;
+				width: 2.5rem;
+				background-color: transparent;
+				border: 0;
+				font-size: 1.35rem;
+				color:$blue;
+				&:focus {
+				    outline: 0;
+				}
+			}
+		}
+		form {
+			&#searchform {
+				position: absolute;
+				right: 15px;
+				top: 13px;
+				background: $white;
+				padding: 0 0.25rem;
+				transition: all 0.5s ease;
+				@media (min-width:786px) {
+					top:2.5rem;					
+				}
+				input {
+					&[type=text] {
+						padding: .25rem .5rem .25rem 1rem;
+						border: 1px solid $light_gray;
+						border-right: 0;
+						outline: 0;
+						margin-right:0;
+					}
+				}
+				button {
+					background-color: $white;
+					color:$blue;
+					padding: .25rem .75rem;
+					border: 1px solid $light_gray;
+					margin-left:-4px;
+					outline:0;
+					&#searchsubmit {
+						border: 1px solid $light_gray;
+						border-left: 0;
+					}
+					&#searchClose {
+						&:focus {
+						    outline: 0;
+						}				
+					}
+				}
+			}
+		}
+	}
+	footer {
+		div {
+			&.gform_wrapper {
+				margin:0;
+				form {
+					&#gform_3 {
+						div {
+							&.gform_footer {
+								text-align:center;
+								input {
+									&[type="submit"] {
+										background-color: $accent_1;
+										border-color: $accent_1;
+										color: $alternate;
+										-webkit-transition-duration: .35s;
+										transition-duration: .35s;
+										-webkit-transition-delay: 50ms;
+										transition-delay: 50ms;
+										display: inline-block;
+										font-weight: 400;
+										text-align: center;
+										white-space: nowrap;
+										vertical-align: middle;
+										-webkit-user-select: none;
+										-moz-user-select: none;
+										-ms-user-select: none;
+										user-select: none;
+										border: 1px solid transparent;
+										padding: .375rem .75rem;
+										font-size: 1rem;
+										line-height: 1.5;
+										border-radius: .25rem;
+										transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;								
+									}
+								}
+							}
+						}
+					}			
+				}
+			}
+		}
+	}
+	form {
+		transition: all 0.25s ease;
+		&.sent {
+			div {
+				&.form-group {
+					display: none;
+				}
+			}
+			p {
+					display: none;					
+			}
+		}
+		div {
+			&.wpcf7-response-output {
+				margin-left: auto;
+				margin-right: auto;
+				background-color: $fail;
+				color: $alternate;
+				&.wpcf7-mail-sent-ok {
+					background-color:$success;
+				}
+			}
+		}
+	}
+}
+
+// Gravity Form overrides 
+html {
+	body {
+		div {
+			&.gform_wrapper {
+				form {
+					div {
+						&.gform_body {
+							ul{
+								&.gform_fields {
+									li{
+										&.gfield {
+											padding-left:.5rem;
+											@media only screen and (min-width: 641px){
+												padding-right:.5rem;
+											}
+											&:first-of-type {
+												padding-left:0;
+												padding-right:0;
+												p {
+													margin:.75rem .5rem;
+												}
+											}
+										}
+									}						
+								}
+							}
+						}
+						&.gform_footer {
+							text-align:center;
+						}
+					}
+					&#gform_2 {
+						div {
+							&.gform_body {
+								ul{
+									&.gform_fields {
+										li{
+											&.gfield {
+												label {
+													display:none;
+												}
+											}
+										}
+									}
+								}
+							}							
+							&.gform_footer {
+								input {
+									&[type="submit"] {
+										background-color:$warning;
+										border-color:$warning;
+										color:$charcoal;
+										text-transform:uppercase;
+									    width: 80%;
+									}
+								}
+							}							
+						}
+					}
+				}
+			}
+		}
+	}
+}

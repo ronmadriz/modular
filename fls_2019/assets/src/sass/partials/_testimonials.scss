@@ -1,0 +1,59 @@
+html {
+	body {
+		&#page-testimonials {
+			div {
+				&.featured_testimonials {
+					margin-top:1.5rem;
+					margin-bottom:1.5rem;
+					div {
+						&.item {
+							border: 1px solid $light_gray;
+							display: flex;
+							flex-direction: column;
+							padding:0;
+							margin-left: 5px;
+							margin-right: 5px;
+							flex: 0 0 30%;
+							max-width: 30%;
+							blockquote {
+							    text-align: center;
+							    color: $base;
+							    padding: 10%;
+							    position: relative;
+							    flex: 1 auto;
+							    display: flex;
+							    justify-content: center;
+							    align-items: center;
+							    font-size:.875rem;
+							    &:after {
+								    display: block;
+								    content: '';
+								    width: 0;
+								    height: 0;
+								    border-left: 1rem solid transparent;
+								    border-right: 1rem solid transparent;
+								    border-top: 1rem solid #fff;
+								    position: absolute;
+								    bottom: -32px;
+								}
+							}
+							span {
+								background-color: $sky;
+								padding: 13% 0 3%;
+								text-align: center;
+								display:block;
+							}
+						}
+					}
+				}
+			}
+			article {
+			    margin-bottom: 1rem;
+			    font-size: .9rem;
+			    span {
+			    	margin-top:.25rem;
+			    }
+			}
+		}
+	}
+}

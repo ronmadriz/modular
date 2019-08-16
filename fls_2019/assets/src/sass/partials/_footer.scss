@@ -1,0 +1,135 @@
+body {
+	footer {
+		section {
+			&#foot_contact {
+				background-color: $gray;
+				> div {
+					&.container-fluid {
+						background-color:$white;
+						div {
+							&.title {
+								background-color: $blue;
+								color:$alternate;
+								position: relative;
+								text-transform: uppercase;
+								z-index: 2;
+								h4 {
+									margin: 1rem 0;
+								}
+							}
+						}
+					}
+				}
+				form {
+					padding-top: 2rem;
+					padding-bottom: 2rem;
+					textarea {
+						height:10rem;
+					}
+				}
+			}		
+			&#foot_call_cta {
+				background-color: $accent_1;
+				border-bottom:3px solid $accent_5;
+			    text-align: center;
+			    color: $alternate;
+			    padding: 1.25rem 0;
+		    	font-weight: bold;
+			    font-size:1.2rem;
+			    margin-top: 20px;
+			    a {
+			    	color:$accent_2;
+			    	i, svg {
+					    transform: rotate(90deg);
+			    	}
+			    }
+			}
+			&#foot_info {
+			    padding-top: 2rem;
+				div {
+					&.item {
+						h2 {
+						    color: $accent_1;
+						    text-align: left;
+						    font-size: 1.03rem;
+						    margin-bottom: 1.25rem;
+						    font-family: $primary;
+						    font-weight: bold;
+						    text-transform: uppercase;
+						    letter-spacing: 0.04em;								
+						}
+						li {
+							font-size: 1rem;
+							font-weight: 600;
+							line-height: 1.4286rem;
+							font-family: "Open Sans", arial, helvetica, sans-serif;
+							a {
+								color: $accent_4;
+								line-height:1.5625em;
+							}
+						}
+						p, address {
+							color:$accent_4;
+							margin-bottom:0;
+							font-size:1.03rem;
+						    line-height: 1.75rem;
+							strong, b {
+								color:$accent_1;
+							}
+							a {
+								color:$accent_4;
+							}
+						}
+					}
+				}				
+			}
+			&#foot_connect {
+			    margin-top: 1rem;
+			    padding-top: 2rem;
+			    padding-bottom: 2rem;
+			    border-top: 1px solid $gray;
+			    div {
+			    	&#social {
+			    		ul {
+			    			li {
+			    				font-size:2rem;
+			    				a {
+			    					color:$accent_1;
+			    				}
+			    			}
+			    		}
+			    	}
+			    	&#newsletter {
+			    		label {
+							text-transform: uppercase;
+							font-weight: 700;
+							font-style: normal;
+							color: $accent_1;
+							margin-bottom: 0;
+			    		}
+			    	}
+			    }
+			}	
+			&#boilerplate {
+				background-color:$accent_3;
+				color:$dark_gray;
+				text-transform: uppercase;
+			    padding: 30px 0;
+			    font-size: .75rem;
+			    font-weight: 600;
+			    a {
+					color:$dark_gray;
+					padding-left:.5rem;
+					padding-right:.5rem;
+					border-left:1px solid $dark_gray;
+					&:first-of-type {
+						margin-left:.5rem;
+					}
+					&:last-of-type {
+						border-right:1px solid $dark_gray;
+					}
+			    }				
+			}
+		}
+	}
+}

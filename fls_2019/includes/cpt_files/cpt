@@ -1,0 +1,23 @@
+<?php 
+add_action( 'init', function() {
+
+    register_extended_post_type( 'cpt_id', array(
+
+        # Add the post type to the site's main RSS feed:
+        'show_in_feed' => true,
+        'has_archive' => false,
+        'menu_icon' => 'dashicon-',
+
+        
+    ), array(
+
+        # Override the base names used for labels:
+        'singular' => 'Custom Post Type',
+        'plural'   => 'Custom Post Types',
+        'slug'     => 'cpt_slug'
+
+    ) );
+
+} );
+
+?>

@@ -1,0 +1,64 @@
+// Color 
+$dark:rgb(51,51,51);
+$black:rgb(64,64,64);
+$black_trans:rgba(64,64,64,.75);
+$white:rgb(255, 255, 255);
+$white_trans:rgba(255,255,255,.85);
+$cloudy:rgba(255,255,255,.85);
+
+$charcoal:rgb(100,101,105);
+$off_white:rgb(248,248,248);
+$light_gray:rgb(238,238,238);
+$gray:rgb(230, 231, 233);
+$gris:rgb(220,221,222);
+$dark_gray:rgb(132,133,135);
+$sky:rgb(243,247,250);
+$slate:rgb(0,3,51);
+$light_blue:rgb(15,138,207);
+$blue:rgb(21,108,179);
+$blue_tr:rgba(21,108,179,.65);
+$yellow:rgb(254,205,6);
+
+$warning: rgb(255,204,0);
+$fail:rgb(255,0,0);
+$success:rgb(57,143,20);
+
+// socials
+$facebook: rgb(59, 89, 152);
+$twitter: rgb(29, 161, 242);
+$youtube: rgb(255, 0, 0);
+$linkedin: rgb(0, 119, 181);
+$google: rgb(219, 68, 55);
+$instagram: rgb(195, 42, 163);
+
+$base:$black;
+$alternate:$white;
+
+$border_color:$slate;
+$accent_1:$blue;
+$accent_1_tr:$blue_tr;
+$accent_2:$yellow;
+$accent_3:$gray;
+$accent_4:$charcoal;
+$accent_5:$light_blue;
+
+@keyframes growOut {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes growIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+$fade_red: linear-gradient(to right, #e73827, #f85032);
+$fade_red_webkit:-webkit-linear-gradient(to right, #e73827, #f85032);
