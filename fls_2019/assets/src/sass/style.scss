@@ -142,7 +142,9 @@ html {
 						&:first-of-type {
 							top:0;
 							background-color: $gray;
-							color:$black;
+							a {
+								color:$black;
+							}
 						}						
 					}
 					&:hover {

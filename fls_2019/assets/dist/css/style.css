@@ -218,8 +218,9 @@ html body .img_grid .item {
 
 html body .industries.img_grid div.caption:first-of-type {
   top: 0;
-  background-color: #e6e7e9;
-  color: #404040; }
+  background-color: #e6e7e9; }
+  html body .industries.img_grid div.caption:first-of-type a {
+    color: #404040; }
 
 html body .industries.img_grid div:hover img {
   -webkit-transform: scale(1.3);
