@@ -10,13 +10,6 @@ Tags:
 License:
 License URI:
 */
-html body .img_grid .item:first-of-type:hover div.caption {
-    align-items: start;
-    justify-content: start;
-}
-html body .industries.img_grid div:hover div.caption:first-of-type a {
-    width: 100%;
-}
 @media (min-width: 786px) {
     .max-width {
         position: absolute;
