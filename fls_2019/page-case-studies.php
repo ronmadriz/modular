@@ -114,7 +114,7 @@ if ($studies_query) {
 	echo '">'.PHP_EOL;
 	the_post_thumbnail('full', array('class' => 'img-fluid'));
 	echo '<div class="title"><a href="'.get_permalink().'">'.get_the_title().'</a></div>'.PHP_EOL;
-	echo '<div class="caption text-center">'.PHP_EOL;
+	echo '<div class="caption text-center align-content-center justify-content-center">'.PHP_EOL;
 	echo '<h2><a href="'.get_the_permalink().'">'.get_the_title().'</a></h2>'.PHP_EOL;
 	echo '<div class="desc"><p><a href="'.get_the_permalink().'">'.$summary.'</a></p></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
