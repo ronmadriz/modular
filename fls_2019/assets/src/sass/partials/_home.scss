@@ -94,20 +94,29 @@ html {
 						}
 						.item {
 							&:first-of-type {
+								top:0;
+								background-color: $gray;								
 								div {
 									&.caption {
 										h2 {
 										    color: $accent_1;
 										    font-size: 1.4375rem;
+											a {
+												color:$black;
+											}
 										}
 										span {
 											font-size: 1.1875rem;
 											line-height: 2.5rem;
+											a {
+												color:$black;
+											}
 										}
 									}
 								}
 							}							
-						}					}
+						}					
+					}
 					&#home_testimonials {
 						padding-top:2rem;
 						padding-bottom:2rem;

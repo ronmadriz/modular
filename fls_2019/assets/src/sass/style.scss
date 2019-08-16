@@ -138,15 +138,6 @@ html {
 		.industries {
 			&.img_grid {
 				div {
-					&.caption {
-						&:first-of-type {
-							top:0;
-							background-color: $gray;
-							a {
-								color:$black;
-							}
-						}						
-					}
 					&:hover {
 						img {
 							transform: scale(1.3);
