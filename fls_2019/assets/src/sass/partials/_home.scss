@@ -106,6 +106,9 @@ html {
 														font-size: 1.4375rem;
 														a {
 															color:$black;
+															&:hover {
+																text-decoration: none;
+															}
 														}
 													}
 													span {
@@ -113,6 +116,9 @@ html {
 														line-height: 2.5rem;
 														a {
 															color:$black;
+															&:hover {
+																text-decoration: none;
+															}
 														}
 													}
 												}

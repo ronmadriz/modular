@@ -1111,11 +1111,15 @@ html body#page-home main {
           font-size: 1.4375rem; }
           html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption h2 a {
             color: #404040; }
+            html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption h2 a:hover {
+              text-decoration: none; }
         html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption span {
           font-size: 1.1875rem;
           line-height: 2.5rem; }
           html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption span a {
             color: #404040; }
+            html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption span a:hover {
+              text-decoration: none; }
   html body#page-home main section#home_testimonials {
     padding-top: 2rem;
     padding-bottom: 2rem;
