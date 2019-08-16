@@ -1102,18 +1102,18 @@ html body#page-home main {
     padding-bottom: 2rem; }
     html body#page-home main section#home_industries .title {
       margin-bottom: 2rem; }
-    html body#page-home main section#home_industries .img_grid .item:first-of-type {
+    html body#page-home main section#home_industries div.img_grid div.item:first-of-type {
       top: 0;
       background-color: #e6e7e9; }
-      html body#page-home main section#home_industries .img_grid .item:first-of-type div.caption h2 {
+      html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption h2 {
         color: #156cb3;
         font-size: 1.4375rem; }
-        html body#page-home main section#home_industries .img_grid .item:first-of-type div.caption h2 a {
+        html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption h2 a {
           color: #404040; }
-      html body#page-home main section#home_industries .img_grid .item:first-of-type div.caption span {
+      html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption span {
         font-size: 1.1875rem;
         line-height: 2.5rem; }
-        html body#page-home main section#home_industries .img_grid .item:first-of-type div.caption span a {
+        html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption span a {
           color: #404040; }
   html body#page-home main section#home_testimonials {
     padding-top: 2rem;
