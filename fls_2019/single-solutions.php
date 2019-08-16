@@ -217,9 +217,8 @@ if ($solutions_footercs) {
 			echo get_the_post_thumbnail($solution->ID, 'full', array('class' => 'img-fluid')).PHP_EOL;
 			echo '<div class="title"><a href="'.get_permalink().'">'.(!empty($alternate_page_title)?$alternate_page_title:get_the_title($solution->ID)).'</a></div>'.PHP_EOL;
 			echo '<div class="caption text-center">'.PHP_EOL;
-			echo '<h2>'.$alternate_page_title.'</h2>'.PHP_EOL;
-			echo '<div class="desc"><p>'.$solution_summary.'</p></div>'.PHP_EOL;
-			echo '<a href="'.get_the_permalink($solution->ID).'" class="btn btn-outline-light">Learn More</a>'.PHP_EOL;
+			echo '<h2><a href="'.get_the_permalink($solution->ID).'">'.$alternate_page_title.'</a></h2>'.PHP_EOL;
+			echo '<div class="desc"><p><a href="'.get_the_permalink($solution->ID).'">'.$solution_summary.'</a></p></div>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 			endif;
