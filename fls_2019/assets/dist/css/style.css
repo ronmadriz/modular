@@ -1245,3 +1245,9 @@ div#site_reviews div.glsr-reviews.glsr-default div.glsr-review {
       display: inline; }
   div#site_reviews div.glsr-reviews.glsr-default div.glsr-review > div {
     margin-bottom: 0; }
+
+svg .region path {
+  -webkit-animation: fadeInFromNone 0.5s ease-out;
+          animation: fadeInFromNone 0.5s ease-out; }
+  svg .region path:hover {
+    opacity: .9; }
