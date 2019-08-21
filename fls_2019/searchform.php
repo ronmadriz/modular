@@ -1,6 +1,6 @@
 <?php
 echo '<form role="search" method="get" id="searchform" class="d-none" action="';
-home_url('/');
+bloginfo('url');
 echo '">'.PHP_EOL;
 echo '<label class="sr-only" for="s">Search for:</label>'.PHP_EOL;
 echo '<input type="text" value="" name="s" id="s" placeholder="Search...">'.PHP_EOL;
