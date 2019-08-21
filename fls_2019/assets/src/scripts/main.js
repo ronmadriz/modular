@@ -26,10 +26,6 @@ j(document).ready(function(){
 	    }
 	});
 
-	// Search 
-    j(".fa.fa-search").click(function() {
-        j(".toggleSearch").toggle("slide")
-    })
     // Gravity form fixes 
     j("form#gform_3 .medium").addClass('form-control');
     j("form#gform_2 .medium").addClass('form-control');
