@@ -26,7 +26,7 @@ if ($banners) {
 	echo '<img src="'.$banner_logo['url'].'" alt="'.$$banner_logo['alt'].'" class="brand img-fluid">'.PHP_EOL;
 	echo '<h1>'.$banner_title.'</h1>'.PHP_EOL;
 	if ($banner_link):
-	echo '<a href="'.get_permalink($banner_link->ID).'"></a>'.PHP_EOL;
+	echo '<a href="'.get_permalink($banner_link->ID).'" aria-label="'.$banner_title.'"></a>'.PHP_EOL;
 	endif;
 	echo '<img src="'.$banner_image['url'].'" alt="'.$$banner_image['alt'].'" class="background img-fluid">'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
