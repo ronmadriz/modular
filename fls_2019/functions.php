@@ -33,7 +33,6 @@ define('THEME_INCLUDE', THEME_DIRECTORY.'/includes');
 define('THEME_IMAGES', THEME_URI.'/assets/dist/images');
 define('THEME_CSS', THEME_URI.'/assets/dist/css');
 define('THEME_JS', THEME_URI.'/assets/dist/scripts');
-define('WPCF7_LOAD_JS', false);
 include (THEME_INCLUDE.'/core/extended-cpts.php');
 include (THEME_INCLUDE.'/core/extended-taxos.php');
 foreach (glob(THEME_INCLUDE.'/cpt_files/*.php') as $filename) {include $filename;}
