@@ -23,7 +23,7 @@ function enqueue_my_styles() {
 	wp_enqueue_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 	wp_enqueue_style('lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css');
 	wp_enqueue_style('site-style', get_template_directory_uri().'/assets/dist/css/style.min.css');
-    wp_enqueue_style('my-style', get_template_directory_uri().'/style.css');
+	wp_enqueue_style('my-style', get_template_directory_uri().'/style.css');
 }
 add_action('wp_enqueue_scripts', 'enqueue_my_styles');
 define('THEME_DIRECTORY', get_stylesheet_directory());
@@ -33,6 +33,7 @@ define('THEME_INCLUDE', THEME_DIRECTORY.'/includes');
 define('THEME_IMAGES', THEME_URI.'/assets/dist/images');
 define('THEME_CSS', THEME_URI.'/assets/dist/css');
 define('THEME_JS', THEME_URI.'/assets/dist/scripts');
+define('WPCF7_LOAD_JS', false);
 include (THEME_INCLUDE.'/core/extended-cpts.php');
 include (THEME_INCLUDE.'/core/extended-taxos.php');
 foreach (glob(THEME_INCLUDE.'/cpt_files/*.php') as $filename) {include $filename;}
