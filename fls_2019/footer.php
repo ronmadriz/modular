@@ -115,7 +115,7 @@ echo '<form action="//fall-arrest.us7.list-manage.com/subscribe/post?u=a578a5eeb
 echo '<div class="form-group">'.PHP_EOL;
 echo '<label for="email" class="d-inline-block form-control-label">subscribe to our newsletter</label>'.PHP_EOL;
 echo '<div class="input-group mb-3">'.PHP_EOL;
-echo '<input type="email" value="" name="EMAIL" id="mce-EMAIL" class="required email form-control" placeholder="Enter your Email Address" aria-label="Enter your Email Address">'.PHP_EOL;
+echo '<input type="email" value="" name="EMAIL" id="mce-EMAIL" class="required email form-control" placeholder="Enter your Email Address" aria-label="Enter your Email Address" aria-describedby="basic-addon2">'.PHP_EOL;
 echo '<div class="input-group-append">'.PHP_EOL;
 echo '<button class="btn btn-blue" type="submit" id="mc-embedded-subscribe" class="button">Subscribe</button>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
