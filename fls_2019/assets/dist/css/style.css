@@ -1122,9 +1122,8 @@ html body#page-home main {
               text-decoration: none; }
     @media (max-width: 786px) {
       html body#page-home main section#home_industries div.img_grid div.item {
-        border-bottom: 5px solid white; }
-        html body#page-home main section#home_industries div.img_grid div.item:nth-of-type(odd) {
-          border-right: 5px solid white; } }
+        border-bottom: 5px solid white;
+        border-right: 5px solid white; } }
   html body#page-home main section#home_testimonials {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1134,9 +1133,8 @@ html body#page-home main {
       margin-bottom: 2rem; }
   @media (max-width: 786px) {
     html body#page-home main section#home_clients div.item {
-      border-bottom: 5px solid white; }
-      html body#page-home main section#home_clients div.item:nth-of-type(odd) {
-        border-right: 5px solid white; } }
+      border-bottom: 5px solid white;
+      border-right: 5px solid white; } }
 
 html body#page-home footer section#foot_call_cta {
   margin-top: 0; }

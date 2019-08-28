@@ -126,9 +126,7 @@ html {
 										}
 										@media(max-width: 786px) {	
 											border-bottom: 5px solid $alternate;
-											&:nth-of-type(odd) {
-												border-right: 5px solid $alternate;
-											}
+											border-right: 5px solid $alternate;
 										}
 									}									
 								}
@@ -149,9 +147,7 @@ html {
 							&.item {
 								@media(max-width: 786px) {	
 									border-bottom: 5px solid $alternate;
-									&:nth-of-type(odd) {
-										border-right: 5px solid $alternate;
-									}
+									border-right: 5px solid $alternate;
 								}								
 							}
 						}
