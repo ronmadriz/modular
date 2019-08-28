@@ -26,7 +26,7 @@ if (is_front_page()) {
 echo '<section id="foot_call_cta">'.PHP_EOL;
 echo '<div class="container">'.PHP_EOL;
 echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
-echo '<div class="col-12 col-md-8">Call today to speak with our fall protection experts: <a href="tel:+1'.$phoneND.'"><i class="fas fa-phone"></i> '.$phone.'</a></div>'.PHP_EOL;
+echo '<div class="col-12 col-md-8">Call today to speak with our fall protection experts: <a href="tel:+1'.$phone.'"><i class="fas fa-phone"></i> '.$phone.'</a></div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
