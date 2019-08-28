@@ -120,7 +120,7 @@ echo '</section>'.PHP_EOL;
 echo '<section id="boilerplate">'.PHP_EOL;
 echo '<div class="container">'.PHP_EOL;
 echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
-echo '<div class="col-12 col-md-10 text-center">copyright &copy; 2019 flexible lifeline systems. all rights reserved <a href="#">privacy policy</a> <a href="#">site map</a></div>'.PHP_EOL;
+echo '<div class="col-12 col-md-10 text-center">copyright &copy; '.date("Y").' flexible lifeline systems. all rights reserved <a href="/privacy-policy/">privacy policy</a></div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
