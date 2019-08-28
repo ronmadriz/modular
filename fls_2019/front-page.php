@@ -163,12 +163,12 @@ the_row();
 $feat_clients_title = get_sub_field('title');
 $feat_clients_logos = get_sub_field('logos');
 echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
-echo '<div class="col-6 col-md-10 text-center"><h3 class="text-uppercase">'.$feat_clients_title.'</h3></div>'.PHP_EOL;
+echo '<div class="col-12 col-md-10 text-center"><h3 class="text-uppercase">'.$feat_clients_title.'</h3></div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 if ($feat_clients_logos):
 echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
 foreach ($feat_clients_logos as $logos):
-echo '<div class="item col-12 col-md-2 align-self-center"><img src="'.$logos['url'].'" alt="'.$logos['alt'].'" class="img-fluid" /></div>'.PHP_EOL;
+echo '<div class="item col-6 col-md-2 align-self-center"><img src="'.$logos['url'].'" alt="'.$logos['alt'].'" class="img-fluid" /></div>'.PHP_EOL;
 endforeach;
 echo '</div>'.PHP_EOL;
 endif;
