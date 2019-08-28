@@ -48,7 +48,7 @@ $featInd_args = array(
 $featInd_query = new WP_Query($featInd_args);
 if ($featInd_query) {
 	echo '<div class="item col-6 col-md-3">'.PHP_EOL;
-	echo '<h2>Featured Industries</h2>'.PHP_EOL;
+	echo '<h2><a href="/fall-protection-industries/all/">Featured Industries</a></h2>'.PHP_EOL;
 	echo '<ul class="list-unstyled">'.PHP_EOL;
 	while ($featInd_query->have_posts()):$featInd_query->the_post();
 	echo '<li><a href="'.get_the_permalink().'">'.get_the_title().'</a></li>'.PHP_EOL;
@@ -59,15 +59,15 @@ if ($featInd_query) {
 }
 
 $featSol_args = array(
-	'post_type'   => 'solutions',
-	'orderby'     => 'menu_index',
-	'order'       => 'ASC',
-	'post_parent' => 0,
+	'post_type'    => 'solutions',
+	'orderby'      => 'menu_index',
+	'order'        => 'ASC',
+	'post__not_in' => array(1116134),
 );
 $featSol_query = new WP_Query($featSol_args);
 if ($featSol_query) {
 	echo '<div class="item col-6 col-md-3">'.PHP_EOL;
-	echo '<h2>Solutions</h2>'.PHP_EOL;
+	echo '<h2><a href="/fall-protection-solutions/all/">Solutions</a></h2>'.PHP_EOL;
 	echo '<ul class="list-unstyled">'.PHP_EOL;
 	while ($featSol_query->have_posts()):$featSol_query->the_post();
 	echo '<li><a href="'.get_the_permalink().'">'.get_the_title().'</a></li>'.PHP_EOL;
@@ -86,7 +86,7 @@ $service_args = array(
 $service_query = new WP_Query($service_args);
 if ($service_query) {
 	echo '<div class="item col-6 col-md-3">'.PHP_EOL;
-	echo '<h2>Services</h2>'.PHP_EOL;
+	echo '<h2><a href="/fall-protection-services/">Services</a></h2>'.PHP_EOL;
 	echo '<ul class="list-unstyled">'.PHP_EOL;
 	while ($service_query->have_posts()):$service_query->the_post();
 	echo '<li><a href="'.get_the_permalink().'">'.get_the_title().'</a></li>'.PHP_EOL;
@@ -97,7 +97,7 @@ if ($service_query) {
 }
 echo '<div class="item col-6 col-md-3">'.PHP_EOL;
 echo '<h2>FLS Headquarters</h2>'.PHP_EOL;
-echo '<address>2437 Peyton Road<br>	Houston, TX 77032</address>'.PHP_EOL;
+echo '<address>'.$address.'</address>'.PHP_EOL;
 echo '<p><strong>Phone</strong>: '.$phone.'</p>'.PHP_EOL;
 echo '<p><strong>Fax</strong>: '.$fax.'</p>'.PHP_EOL;
 echo '<p><strong>Email</strong>: <a href="mailto:'.$email.'?subject=Question from FLS Fall Arrest">'.$email.'</a></p>'.PHP_EOL;
