@@ -80,7 +80,7 @@ if ($feat_industries) {
 	echo '</div>'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
 	echo '<div class="row industries img_grid">'.PHP_EOL;
-	echo '<div class="item col-12 col-md-4">'.PHP_EOL;
+	echo '<div class="item col-6 col-md-4">'.PHP_EOL;
 	echo '<div class="caption text-center align-content-center justify-content-center">'.PHP_EOL;
 	echo '<h2><a href="'.get_permalink(1116142).'">'.$feat_ind_title.'</a></h2>'.PHP_EOL;
 	echo '<span class="desc d-none d-sm-block"><a href="'.get_permalink(1116142).'">'.$feat_ind_content.'</span></a>'.PHP_EOL;
@@ -95,7 +95,7 @@ if ($feat_industries) {
 		$industry = $industries_item;
 		setup_postdata($industry);
 		$industry_summary = get_field('summary', $industry->ID);
-		echo '<div class="item col-12 col-md-4">'.PHP_EOL;
+		echo '<div class="item col-6 col-md-4">'.PHP_EOL;
 		echo '<img src="'.get_the_post_thumbnail_url($industry->ID).'" alt="" class="img-fluid">'.PHP_EOL;
 		echo '<div class="title"><a href="'.get_the_permalink($industry->ID).'">'.get_the_title($industry->ID).'</a></div>'.PHP_EOL;
 		echo '<div class="caption text-center align-content-center">'.PHP_EOL;
@@ -163,7 +163,7 @@ the_row();
 $feat_clients_title = get_sub_field('title');
 $feat_clients_logos = get_sub_field('logos');
 echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
-echo '<div class="col-12 col-md-10 text-center"><h3 class="text-uppercase">'.$feat_clients_title.'</h3></div>'.PHP_EOL;
+echo '<div class="col-6 col-md-10 text-center"><h3 class="text-uppercase">'.$feat_clients_title.'</h3></div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 if ($feat_clients_logos):
 echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
