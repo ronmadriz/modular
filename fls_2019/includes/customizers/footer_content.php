@@ -36,7 +36,7 @@ function ronmadriz_register_cta_customizer($wp_customize) {
 			array(
 				'label'    => __('Footer Phone', 'ronmadriz_core'),
 				'section'  => 'footer_content',
-				'type'	   => 'text',
+				'type'     => 'text',
 				'settings' => 'footer_phone',
 			)
 		)
@@ -49,7 +49,7 @@ function ronmadriz_register_cta_customizer($wp_customize) {
 			array(
 				'label'    => __('Footer Fax', 'ronmadriz_core'),
 				'section'  => 'footer_content',
-				'type'	   => 'text',
+				'type'     => 'text',
 				'settings' => 'footer_fax',
 			)
 		)
@@ -62,8 +62,21 @@ function ronmadriz_register_cta_customizer($wp_customize) {
 			array(
 				'label'    => __('Footer Email', 'ronmadriz_core'),
 				'section'  => 'footer_content',
-				'type'	   => 'text',
+				'type'     => 'text',
 				'settings' => 'footer_email',
+			)
+		)
+	);
+
+	$wp_customize->add_setting('footer_newsletter');
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize, 'footer_newsletter',
+			array(
+				'label'    => __('Footer Newsletter Form', 'ronmadriz_core'),
+				'section'  => 'footer_content',
+				'type'     => 'text',
+				'settings' => 'footer_newsletter',
 			)
 		)
 	);

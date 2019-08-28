@@ -6,6 +6,7 @@ $address            = get_theme_mod('footer_address');
 $phone              = get_theme_mod('footer_phone');
 $fax                = get_theme_mod('footer_fax');
 $email              = get_theme_mod('footer_email');
+$footer_newsletter  = get_theme_mod('footer_newsletter');
 echo '</main>'.PHP_EOL;
 echo '<footer>'.PHP_EOL;
 if (is_front_page()) {
@@ -111,7 +112,7 @@ echo '<div id="social" class="col-12 col-md-6">'.PHP_EOL;
 social_media_icons();
 echo '</div>'.PHP_EOL;
 echo '<div id="newsletter" class="col-12 col-md-6">'.PHP_EOL;
-echo do_shortcode('[contact-form-7 id="1117101" title="Newsletter Subscription"]').PHP_EOL;
+echo do_shortcode($footer_newsletter).PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
