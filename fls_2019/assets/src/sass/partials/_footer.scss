@@ -134,6 +134,13 @@ body {
 			    padding: 0 1rem 1rem;
 				a {
 					color:$alternate;
+					position: relative;
+					bottom: .7rem;
+					padding: 1rem;
+					background: $accent_1;
+					color: white;
+					border-radius: 2rem;
+					box-shadow: -1px 3px 15px 0 rgba(0,0,0,0.25);					
 					&[href^="tel"] {
 						cursor: normal;
 					}
