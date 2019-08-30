@@ -125,7 +125,7 @@ echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 echo '</footer>'.PHP_EOL;
-echo '<span id="mobileCTA" class="fixed-bottom d-inline-block d-md-none"><a href="'.$phone.'"><i class="fas fa-phone"></i></a></span>'.PHP_EOL;
+echo '<span id="mobileCTA" class="fixed-bottom d-inline-block d-md-none"><a href="tel:'.$phone.'"><i class="fas fa-phone"></i></a></span>'.PHP_EOL;
 wp_footer();
 echo $ronmadriz_settings['ronmadriz_footer_extra'];
 echo '</body>'.PHP_EOL;
