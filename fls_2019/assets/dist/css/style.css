@@ -804,14 +804,17 @@ body main form {
     -webkit-transition: border-color 0.2s;
     transition: border-color 0.2s;
     color: #404040; }
-  body main form.sent div.inside {
-    display: none; }
-  body main form div.wpcf7-response-output.wpcf7-mail-sent-ok {
-    background-color: #156cb3;
-    border-color: #156cb3;
+  body main form div.wpcf7-response-output {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    color: white;
     text-align: center;
     padding-top: .5rem;
     padding-bottom: .5rem; }
+    body main form div.wpcf7-response-output.wpcf7-mail-sent-ok {
+      background-color: #156cb3;
+      border-color: #156cb3; }
 
 body main aside.sidebar {
   padding-left: 0;
@@ -912,7 +915,7 @@ body footer div.gform_wrapper {
 body form {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease; }
-  body form.sent div.form-group {
+  body form.sent div.form-group, body form.sent div.inside {
     display: none; }
   body form.sent p {
     display: none; }
@@ -920,9 +923,13 @@ body form {
     margin-left: auto;
     margin-right: auto;
     background-color: red;
-    color: white; }
+    color: white;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem; }
     body form div.wpcf7-response-output.wpcf7-mail-sent-ok {
-      background-color: #398f14; }
+      background-color: #156cb3;
+      border-color: #156cb3; }
 
 html body div.gform_wrapper form div.gform_body ul.gform_fields li.gfield {
   padding-left: .5rem; }

@@ -124,24 +124,21 @@ body {
 				transition: border-color 0.2s;
 				color:$base;
 			}
-			&.sent {
-				div {
-					&.inside {
-						display:none;
-					}
-				}
-			}
 			div {
 				&.wpcf7-response-output {
+					margin-left: auto;
+					margin-right: auto;
+					background-color: $fail;
+					color: $alternate;
+					text-align: center;
+					padding-top: .5rem;
+					padding-bottom: .5rem;				
 					&.wpcf7-mail-sent-ok {
 						background-color: $accent_1;
 						border-color: $accent_1;
-						text-align: center;
-						padding-top: .5rem;
-						padding-bottom: .5rem;
 					}
 				}
-			}
+			}			
 		}
 		aside {
 			&.sidebar {
@@ -281,7 +278,7 @@ body {
 		transition: all 0.25s ease;
 		&.sent {
 			div {
-				&.form-group {
+				&.form-group, &.inside {
 					display: none;
 				}
 			}
@@ -295,8 +292,12 @@ body {
 				margin-right: auto;
 				background-color: $fail;
 				color: $alternate;
+				text-align: center;
+				padding-top: .5rem;
+				padding-bottom: .5rem;				
 				&.wpcf7-mail-sent-ok {
-					background-color:$success;
+					background-color: $accent_1;
+					border-color: $accent_1;
 				}
 			}
 		}
