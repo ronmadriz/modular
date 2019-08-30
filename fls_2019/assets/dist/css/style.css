@@ -693,8 +693,8 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
   display: block; }
 
 body main form {
-  -webkit-transform: all 0.25s ease;
-          transform: all 0.25s ease; }
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
   body main form label {
     line-height: 175%; }
   body main form input.form-control[type=text], body main form input.form-control[type=email], body main form input.form-control[type=password], body main form input.form-control[type=date], body main form input.form-control[type=tel], body main form input.medium[type=text], body main form input.medium[type=email], body main form input.medium[type=password], body main form input.medium[type=date], body main form input.medium[type=tel] {
