@@ -131,6 +131,17 @@ body {
 					}
 				}
 			}
+			div {
+				&.wpcf7-response-output {
+					&.wpcf7-mail-sent-ok {
+						background-color: $accent_1;
+						border-color: $accent_1;
+						text-align: center;
+						padding-top: .5rem;
+						padding-bottom: .5rem;
+					}
+				}
+			}
 		}
 		aside {
 			&.sidebar {

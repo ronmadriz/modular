@@ -806,6 +806,12 @@ body main form {
     color: #404040; }
   body main form.sent div.inside {
     display: none; }
+  body main form div.wpcf7-response-output.wpcf7-mail-sent-ok {
+    background-color: #156cb3;
+    border-color: #156cb3;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem; }
 
 body main aside.sidebar {
   padding-left: 0;
