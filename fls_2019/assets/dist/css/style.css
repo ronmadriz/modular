@@ -1035,10 +1035,10 @@ body footer section#boilerplate {
     body footer section#boilerplate a:first-of-type {
       margin-left: .5rem; }
 
-body footer span#mobileCTA {
+body span#mobileCTA {
   background-color: #156cb3;
   padding: 0 1rem 1rem; }
-  body footer span#mobileCTA a {
+  body span#mobileCTA a {
     color: white;
     position: relative;
     bottom: .7rem;
@@ -1048,7 +1048,7 @@ body footer span#mobileCTA {
     border-radius: 2rem;
     -webkit-box-shadow: -1px 3px 15px 0 rgba(0, 0, 0, 0.25);
             box-shadow: -1px 3px 15px 0 rgba(0, 0, 0, 0.25); }
-    body footer span#mobileCTA a[href^="tel"] {
+    body span#mobileCTA a[href^="tel"] {
       cursor: normal; }
 
 html body#page-home main {
