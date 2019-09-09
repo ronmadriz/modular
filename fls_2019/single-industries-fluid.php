@@ -91,40 +91,40 @@ if ($cf_contactForm) {
 	echo '</section>'.PHP_EOL;
 }
 
-// INDUSTRY SPECIFIC SOLUTIONS
-$solutions_group = get_field('solutions_group');
-if ($solutions_group) {
-	while (have_rows('solutions_group')):the_row();
-	$section_title = get_sub_field('section_title');
-	echo '<section id="child_solutions" class="imgs_captions">'.PHP_EOL;
+// Solutions footer
+$solutions_footercs = get_field('solutions_footer');
+if ($solutions_footercs) {
+	while (have_rows('solutions_footer')):the_row();
+	$solution_footers_title = get_sub_field('title');
+	$solution_footers_text  = get_sub_field('text');
+	echo '<section id="inline_solutions">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="row">'.PHP_EOL;
+	echo '<div class="title gray_bg col-12 text-center"><span>'.$solution_footers_title.'</span></div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
-	echo (!empty($section_title)?'<div class="row"><div class="section_title col-12"><h1>'.$section_title.'</h1></div></div>'.PHP_EOL:'');
 	$solutions_repeater = get_sub_field('solutions');
 	if ($solutions_repeater) {
+		echo '<div class="row content industries img_grid">'.PHP_EOL;
 		while (have_rows('solutions')) {
 			the_row();
-			$solutions_item = get_sub_field('article');
-			echo '<div class="row item align-items-center">'.PHP_EOL;
+			$solutions_item = get_sub_field('solution');
 			if ($solutions_item):
 			$solution = $solutions_item;
 			setup_postdata($solution);
 			$solution_summary = get_field('summary', $solution->ID);
-			echo '<div class="item-thumb col-12 col-md-3">'.get_the_post_thumbnail($solution->ID, 'thumbnail', array('class' => 'img-fluid')).'</div>'.PHP_EOL;
-			echo '<div class="item-desc align-content-center col-12 col-md-9 text-center text-md-left">'.PHP_EOL;
-			echo '<h4><a href="'.get_permalink($solution->ID).'">'.get_the_title($solution->ID).'</a></h4>'.PHP_EOL;
-			echo $solution_summary.PHP_EOL;
+			echo '<div class="item col-12 col-md-4">'.PHP_EOL;
+			echo get_the_post_thumbnail($solution->ID, 'full', array('class' => 'img-fluid')).PHP_EOL;
+			echo '<div class="title"><a href="'.get_permalink().'">'.get_the_title($solution->ID).'</a></div>'.PHP_EOL;
+			echo '<div class="desc"><p><a href="'.get_the_permalink($solution->ID).'">'.$solution_summary.'</a></p></div>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
-			wp_reset_query();
+			echo '</div>'.PHP_EOL;
 			endif;
-			echo '</div>'.PHP_EOL;
 		}
 		wp_reset_query();
+		echo '</div>'.PHP_EOL;
 	}
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="col-12">'.PHP_EOL;
-	echo $solution_description;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 	endwhile;
