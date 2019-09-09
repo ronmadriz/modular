@@ -22,6 +22,17 @@ body {
 					    line-height: 150%;
 					}
 				}
+				&#case_study {
+					div {
+						&.item { 
+							div {
+								&.img {
+									height: 275px;
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
