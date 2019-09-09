@@ -22,6 +22,17 @@ body {
 					    line-height: 150%;
 					}
 				}
+				&#inline_solutions {
+					div {
+						&.item { 
+							img {
+								&.img-fluid {
+									min-width: 100%;
+								}
+							}
+						}
+					}
+				}
 				&#case_study {
 					div {
 						&.item { 

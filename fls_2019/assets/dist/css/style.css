@@ -1201,6 +1201,9 @@ body.industries-template-single-industries-fluid main section#main-content, body
       font-size: 131%;
       line-height: 150%; } }
 
+body.industries-template-single-industries-fluid main section#inline_solutions div.item img.img-fluid {
+  min-width: 100%; }
+
 body.industries-template-single-industries-fluid main section#case_study div.item div.img {
   height: 275px; }
 
