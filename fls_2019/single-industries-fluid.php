@@ -18,8 +18,13 @@ $alternate_page_title = get_field('alternate_page_title');
 echo '<h1>'.(!empty($alternate_page_title)?$alternate_page_title:get_the_title()).'</h1>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</section>'.PHP_EOL;
+
+echo '<section id="breadcrumbs">'.PHP_EOL;
+echo '<div class="container">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
-echo '<div class="col-12" id="breadcrumbs"><ul class="list-inline"><li class="list-inline-item"><a href="#">Home</a></li><li class="list-inline-item"><a href="#">Solutions by Industry</a></li><li class="list-inline-item">'.get_the_title().'</li></ul></div>'.PHP_EOL;
+echo '<div class="col-12"><ul class="list-inline"><li class="list-inline-item"><a href="#">Home</a></li><li class="list-inline-item"><a href="#">Solutions by Industry</a></li><li class="list-inline-item">'.get_the_title().'</li></ul></div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
