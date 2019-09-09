@@ -2,9 +2,9 @@ body {
 	&.solutions-template {
 		div {
 			&.testimonials {
-				background-color: #f7f7f7;
+				background-color: $lightly;
 				border-radius: 5px;
-			    border: 1px solid #f0f0f0;
+			    border: 1px solid $not_quite_white;
 			    font-size: 1em;
 			    padding: 28px 28px;
 			    word-wrap: break-word;				
