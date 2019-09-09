@@ -1193,17 +1193,6 @@ body.solutions-template div.testimonials {
   padding: 28px 28px;
   word-wrap: break-word; }
 
-body.industries-template-single-industries-fluid main section div.title h1 {
-  font-family: Oswald,helvetica,sans-serif;
-  font-size: 1.4375rem;
-  font-weight: 400;
-  font-style: normal;
-  color: #404040;
-  text-transform: uppercase;
-  letter-spacing: .01em;
-  line-height: 1.2em;
-  margin-bottom: 1rem; }
-
 body.industries-template-single-industries-fluid main section#main-content {
   padding-top: .5rem; }
   body.industries-template-single-industries-fluid main section#main-content h2:first-of-type {

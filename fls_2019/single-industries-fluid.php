@@ -101,7 +101,7 @@ if ($solutions_footercs) {
 	echo '<section id="inline_solutions">'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="title col-12"><h1>'.$solution_footers_title.'</h1></div>'.PHP_EOL;
+	echo '<div class="section_title col-12"><h1>'.$solution_footers_title.'</h1></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	$solutions_repeater = get_sub_field('solutions');
 	if ($solutions_repeater) {
