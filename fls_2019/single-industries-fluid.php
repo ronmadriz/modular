@@ -98,10 +98,12 @@ if ($solutions_footercs) {
 	$solution_footers_title = get_sub_field('title');
 	$solution_footers_text  = get_sub_field('text');
 	echo '<section id="inline_solutions">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="title gray_bg col-12 text-center"><span>'.$solution_footers_title.'</span></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '<div class="container">'.PHP_EOL;
 	$solutions_repeater = get_sub_field('solutions');
 	if ($solutions_repeater) {
 		echo '<div class="row content">'.PHP_EOL;
