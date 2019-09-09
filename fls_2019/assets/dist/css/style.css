@@ -1206,7 +1206,8 @@ body.industries-template-single-industries-fluid main section#cf_contactFormTitl
 
 body.industries-template-single-industries-fluid main section#cf_contactForm {
   background-color: #e6e7e9;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
   body.industries-template-single-industries-fluid main section#cf_contactForm textarea {
     height: 5.5rem; }
 
