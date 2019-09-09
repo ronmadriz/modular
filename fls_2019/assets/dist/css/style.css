@@ -1224,6 +1224,10 @@ body.industries-template-single-industries-fluid main section#cf_contactForm {
   body.industries-template-single-industries-fluid main section#cf_contactForm textarea {
     height: 5.5rem; }
 
+body.industries-template-single-industries-fluid main section#inline_solutions {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
 html body#page-testimonials div.featured_testimonials {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
