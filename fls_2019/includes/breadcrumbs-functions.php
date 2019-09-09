@@ -12,6 +12,7 @@ function the_breadcrumb() {
 		echo '<section id="breadcrumbs">'.PHP_EOL;
 		echo '<div class="container">'.PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
+		echo '<div class="col-12">'.PHP_EOL;
 		echo '<ul class="list-inline">'.PHP_EOL;
 		echo '<li class="list-inline-item"><a href="';
 		echo get_option('home');
@@ -60,6 +61,7 @@ function the_breadcrumb() {
 			}
 		}
 		echo '</ul>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</section>'.PHP_EOL;
