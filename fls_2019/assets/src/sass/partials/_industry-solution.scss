@@ -16,6 +16,7 @@ body {
 			section {
 				div {
 					&.section_title {
+						border-bottom-size: 2px;
 						border-bottom-color: $black;
 					}
 				}
