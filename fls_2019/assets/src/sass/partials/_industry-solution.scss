@@ -33,6 +33,9 @@ body {
 				&#cf_contactForm {
 					background-color: $accent_3;
 					padding-top:1rem;
+					textarea {
+						height: 5.5rem;						
+					}
 				}
 			}
 		}
