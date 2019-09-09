@@ -33,6 +33,11 @@ body {
 				}
 				&#gallery {
 					padding-top:2rem;
+					img {
+						&.img-fluid {
+							min-width: 100%;
+						}
+					}
 				}
 				&#cf_contactFormTitle {
 					background-color: $accent_1;

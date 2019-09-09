@@ -1207,6 +1207,8 @@ body.industries-template-single-industries-fluid main section#main-content, body
 
 body.industries-template-single-industries-fluid main section#gallery, body.industries-template-single-industries-2019 main section#gallery {
   padding-top: 2rem; }
+  body.industries-template-single-industries-fluid main section#gallery img.img-fluid, body.industries-template-single-industries-2019 main section#gallery img.img-fluid {
+    min-width: 100%; }
 
 body.industries-template-single-industries-fluid main section#cf_contactFormTitle, body.industries-template-single-industries-2019 main section#cf_contactFormTitle {
   background-color: #156cb3;
