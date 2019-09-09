@@ -119,7 +119,6 @@ if ($solutions_footercs) {
 			echo '<div class="title"><a href="'.get_permalink().'">'.get_the_title($solution->ID).'</a></div>'.PHP_EOL;
 			echo '<div class="desc"><p><a href="'.get_the_permalink($solution->ID).'">'.$solution_summary.'</a></p></div>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
-			echo '</div>'.PHP_EOL;
 			endif;
 		}
 		wp_reset_query();
