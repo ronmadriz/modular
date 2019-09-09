@@ -52,11 +52,6 @@ if ($industry_gallery) {
 	echo '<section id="gallery">'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="section_title col-12">'.PHP_EOL;
-	echo '<h1>'.$gallery_title.'</h1>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="content col-12">'.PHP_EOL;
 	if ($gallery_pics):
 	echo '<ul class="gallery list-unstyled list-inline">'.PHP_EOL;
