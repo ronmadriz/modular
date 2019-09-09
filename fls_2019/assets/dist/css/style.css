@@ -274,6 +274,12 @@ html body main {
         @media (min-width: 786px) {
           html body main section#banner div.page_title h1 {
             padding-left: 1rem; } }
+  html body main section#breadcrumbs {
+    padding-top: 2rem;
+    font-size: 130%; }
+    html body main section#breadcrumbs ul li:not(:last-of-type):after {
+      content: '/';
+      margin-left: .5rem; }
   html body main section#main-content {
     padding-top: 2rem; }
     html body main section#main-content h1, html body main section#main-content h2, html body main section#main-content h4, html body main section#main-content h5, html body main section#main-content h6 {

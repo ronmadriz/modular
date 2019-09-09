@@ -213,6 +213,20 @@ html {
 						}
 					}
 				}
+				&#breadcrumbs {
+				    padding-top: 2rem;
+				    font-size: 130%;
+				    ul {
+				    	li {
+				    		&:not(:last-of-type) {
+				    			&:after {
+									content: '/';
+									margin-left: .5rem;				    				
+				    			}
+				    		}
+				    	}
+				    }
+				}
 				&#main-content {
 					padding-top:2rem;
 					h1, h2, h4, h5, h6 {
