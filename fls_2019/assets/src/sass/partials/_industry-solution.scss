@@ -21,8 +21,11 @@ body {
 						    font-weight: bold;
 						    letter-spacing: .0125px;
 						}
-					}						
-				} 
+					}
+				}
+				&#cf_contactForm {
+					background-color: $accent_3;
+				}
 			}
 		}
 	}	

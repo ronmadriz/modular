@@ -1198,6 +1198,9 @@ body.industries-template-single-industries-fluid main section#main-content h2:fi
   font-weight: bold;
   letter-spacing: .0125px; }
 
+body.industries-template-single-industries-fluid main section#cf_contactForm {
+  background-color: #e6e7e9; }
+
 html body#page-testimonials div.featured_testimonials {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
