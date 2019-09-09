@@ -1200,8 +1200,9 @@ body.industries-template-single-industries-fluid main section#main-content h2:fi
 
 body.industries-template-single-industries-fluid main section#cf_contactFormTitle {
   background-color: #156cb3;
-  color: white;
   padding-top: 1rem; }
+  body.industries-template-single-industries-fluid main section#cf_contactFormTitle h1 {
+    color: white; }
 
 body.industries-template-single-industries-fluid main section#cf_contactForm {
   background-color: #e6e7e9;
