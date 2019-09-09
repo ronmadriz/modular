@@ -31,7 +31,7 @@ echo '</section>'.PHP_EOL;
 // INDUSTRY CONTENT
 if (have_posts()):while (have_posts()):the_post();
 echo '<section id="main-content">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div class="col-12">';
 the_content();
@@ -50,7 +50,7 @@ if ($industry_gallery) {
 	$gallery_title = get_sub_field('title');
 	$gallery_pics  = get_sub_field('gallery_pics');
 	echo '<section id="gallery">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="content col-12">'.PHP_EOL;
 	if ($gallery_pics):
