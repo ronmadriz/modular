@@ -72,7 +72,7 @@ $cf_contactForm = do_shortcode('[contact-form-7 id="1117125" title="Single Fluid
 if ($cf_contactForm) {
 	echo '<section id="cf_contactFormTitle"><div class="container"><div class="row"><div class="col-12"><h1>How can we help?</h1></div></div></div></section>'.PHP_EOL;
 	echo '<section id="cf_contactForm">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="col-12">'.PHP_EOL;
 	echo $cf_contactForm;
