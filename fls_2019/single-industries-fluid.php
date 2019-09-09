@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Full-width page layout
+Template Name: Full-Width Page Layout
 Template Post Type: industries
  */
 $pageID = get_the_id();
