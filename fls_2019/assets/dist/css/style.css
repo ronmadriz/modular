@@ -1222,6 +1222,19 @@ body.industries-template-single-industries-fluid main section#cf_contactForm {
 body.industries-template-single-industries-fluid main section#inline_solutions {
   padding-top: 2rem;
   padding-bottom: 2rem; }
+  body.industries-template-single-industries-fluid main section#inline_solutions div.title {
+    display: block;
+    text-align: center;
+    color: #404040;
+    line-height: 1.45rem; }
+  body.industries-template-single-industries-fluid main section#inline_solutions div.content {
+    display: block;
+    text-align: center;
+    color: #404040;
+    line-height: 1.45rem; }
+
+body.industries-template-single-industries-fluid main section#testimonial div.section_title {
+  margin-bottom: 0; }
 
 html body#page-testimonials div.featured_testimonials {
   margin-top: 1.5rem;
