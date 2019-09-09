@@ -49,7 +49,7 @@ if ($industry_gallery) {
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="content col-12">'.PHP_EOL;
 	if ($gallery_pics):
-	echo '<ul class="gallery text-md-center list-unstyled list-inline">'.PHP_EOL;// changes
+	echo '<ul class="gallery text-md-center list-unstyled list-inline">'.PHP_EOL;
 	foreach ($gallery_pics as $gallery_pic):
 	echo '<li class="list-inline-item col-6 col-md-3 col-xl-2">'.PHP_EOL;
 	echo '<a href="'.$gallery_pic['url'].'" data-gallery="fls-gallery" data-toggle="lightbox">'.PHP_EOL;
