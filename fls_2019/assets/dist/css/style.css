@@ -1231,9 +1231,8 @@ body.industries-template-single-industries-fluid main section#inline_solutions {
       color: #404040;
       line-height: 1.45rem;
       font-weight: bold;
-      font-size: 1.15rem;
-      text-transform: uppercase;
-      letter-spacing: -.55px; }
+      font-size: 1.3rem;
+      font-family: "Oswald", helvetica, sans-serif; }
   body.industries-template-single-industries-fluid main section#inline_solutions div.desc {
     margin-bottom: 2rem; }
     body.industries-template-single-industries-fluid main section#inline_solutions div.desc a {
