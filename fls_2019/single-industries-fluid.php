@@ -21,13 +21,8 @@ echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 
-echo '<section id="breadcrumbs">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
-echo '<div class="row">'.PHP_EOL;
-echo '<div class="col-12"><ul class="list-inline"><li class="list-inline-item"><a href="#">Home</a></li><li class="list-inline-item"><a href="#">Solutions by Industry</a></li><li class="list-inline-item">'.get_the_title().'</li></ul></div>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-echo '</section>'.PHP_EOL;
+the_breadcrumb();
+
 // INDUSTRY CONTENT
 if (have_posts()):while (have_posts()):the_post();
 echo '<section id="main-content">'.PHP_EOL;
