@@ -1193,6 +1193,14 @@ body.solutions-template div.testimonials {
   padding: 28px 28px;
   word-wrap: break-word; }
 
+body.industries-template-single-industries-fluid main section#main-content, body.industries-template-single-industries-fluid main section#gallery, body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-fluid main section#case_study, body.industries-template-single-industries-fluid main section#testimonial {
+  margin-left: 100px;
+  margin-right: 100px; }
+  @media (min-width: 1300px) {
+    body.industries-template-single-industries-fluid main section#main-content, body.industries-template-single-industries-fluid main section#gallery, body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-fluid main section#case_study, body.industries-template-single-industries-fluid main section#testimonial {
+      font-size: 131%;
+      line-height: 150%; } }
+
 body.industries-template-single-industries-fluid main section div.section_title, body.industries-template-single-industries-2019 main section div.section_title {
   border-bottom-width: 2px;
   border-bottom-color: #404040;

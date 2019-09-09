@@ -11,6 +11,20 @@ body {
 			}
 		}
 	}
+	&.industries-template-single-industries-fluid {
+		main {
+			section {
+				&#main-content, &#gallery, &#inline_solutions, &#case_study, &#testimonial {
+				    margin-left: 100px;
+				    margin-right: 100px;
+					@media(min-width:1300px){
+					    font-size: 131%;
+					    line-height: 150%;
+					}
+				}
+			}
+		}
+	}
 	&.industries-template-single-industries-fluid, &.industries-template-single-industries-2019 {
 		main {
 			section {
