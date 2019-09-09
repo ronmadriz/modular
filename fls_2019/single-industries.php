@@ -1,8 +1,4 @@
 <?php
-/*
-Template Name: Full-width page layout
-Template Post Type: industries
- */
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
 get_header();
