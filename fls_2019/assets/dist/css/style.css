@@ -1193,6 +1193,11 @@ body.solutions-template div.testimonials {
   padding: 28px 28px;
   word-wrap: break-word; }
 
+body.industries-template-single-industries-fluid main section#main-content h2:first-of-type {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .0125px; }
+
 html body#page-testimonials div.featured_testimonials {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
