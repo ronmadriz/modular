@@ -98,12 +98,10 @@ if ($solutions_footercs) {
 	$solution_footers_title = get_sub_field('title');
 	$solution_footers_text  = get_sub_field('text');
 	echo '<section id="inline_solutions">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="title gray_bg col-12 text-center"><span>'.$solution_footers_title.'</span></div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="row">'.PHP_EOL;
+	echo '<div class="title col-12">'.$solution_footers_title.'</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
 	$solutions_repeater = get_sub_field('solutions');
 	if ($solutions_repeater) {
 		echo '<div class="row">'.PHP_EOL;
@@ -128,31 +126,6 @@ if ($solutions_footercs) {
 	echo '</section>'.PHP_EOL;
 	endwhile;
 	wp_reset_query();
-}
-
-// TESTIMONIALS
-
-$industry_testimonials = get_field('industry_testimonials');
-if ($industry_testimonials) {
-	$testimonial = $industry_testimonials;
-	setup_postdata($testimonial);
-	echo '<section id="testimonial">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="section_title col-12">'.PHP_EOL;
-	echo '<h1>customer testimonial</h1>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="content col-12">'.PHP_EOL;
-	echo '<h2>'.get_the_title($industry_testimonials).'</h2>'.PHP_EOL;
-	echo get_the_content();
-	echo '<i class="fas fa-quote-left"></i>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-	wp_reset_postdata();
 }
 
 // CASE STUDIES
@@ -194,6 +167,30 @@ if (have_rows('case_study_groups')) {
 	echo '</section>'.PHP_EOL;
 }
 
+// TESTIMONIALS
+
+$industry_testimonials = get_field('industry_testimonials');
+if ($industry_testimonials) {
+	$testimonial = $industry_testimonials;
+	setup_postdata($testimonial);
+	echo '<section id="testimonial">'.PHP_EOL;
+	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="row">'.PHP_EOL;
+	echo '<div class="section_title col-12">'.PHP_EOL;
+	echo '<h1>customer testimonial</h1>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '<div class="row">'.PHP_EOL;
+	echo '<div class="content col-12">'.PHP_EOL;
+	echo '<h2>'.get_the_title($industry_testimonials).'</h2>'.PHP_EOL;
+	echo get_the_content();
+	echo '<i class="fas fa-quote-left"></i>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+	wp_reset_postdata();
+}
 // VIDEOS
 $videos = get_field('videos');
 if ($videos):
