@@ -1230,7 +1230,10 @@ body.industries-template-single-industries-fluid main section#inline_solutions {
       text-align: center;
       color: #404040;
       line-height: 1.45rem;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: -.55px; }
   body.industries-template-single-industries-fluid main section#inline_solutions div.desc {
     margin-bottom: 2rem; }
     body.industries-template-single-industries-fluid main section#inline_solutions div.desc a {
