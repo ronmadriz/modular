@@ -17,9 +17,15 @@ body {
 				div {
 					&.title {
 						h1 {
-							text-transform:uppercase;
-							color:$black;
-							border-bottom: 2px solid $black;
+							font-family: Oswald,helvetica,sans-serif;
+							font-size: 1.4375rem;
+							font-weight: 400;
+							font-style: normal;
+							color: $black;
+							text-transform: uppercase;
+							letter-spacing: .01em;
+							line-height: 1.2em;
+							margin-bottom: 1rem;
 						}
 					}
 				}
