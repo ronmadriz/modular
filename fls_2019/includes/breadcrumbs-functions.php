@@ -39,6 +39,10 @@ function the_breadcrumb() {
 			echo '<li class="list-inline-item"><a href="/fall-protection-industries/all/">All Industries</a></li>'.PHP_EOL;
 		}
 
+		if (is_singular('solutions')) {
+			echo '<li class="list-inline-item"><a href="/fall-protection-solutions/all/">Fall Safety Solutions</a></li>'.PHP_EOL;
+		}
+
 		// If the current page is a single post, show its title with the separator
 		if (is_single()) {
 			echo '<li class="list-inline-item">';
