@@ -36,12 +36,16 @@ function the_breadcrumb() {
 
 		// If the current page is a single post, show its title with the separator
 		if (is_single()) {
+			echo '<li class="list-inline-item">';
 			the_title();
+			echo '</li>'.PHP_EOL;
 		}
 
 		// If the current page is a static page, show its title.
 		if (is_page()) {
+			echo '<li class="list-inline-item">';
 			echo the_title();
+			echo '</li>'.PHP_EOL;
 		}
 
 		// if you have a static page assigned to be you posts list page. It will find the title of the static page and display it. i.e Home >> Blog
@@ -55,6 +59,7 @@ function the_breadcrumb() {
 				rewind_posts();
 			}
 		}
+		echo '</ul>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</section>'.PHP_EOL;
