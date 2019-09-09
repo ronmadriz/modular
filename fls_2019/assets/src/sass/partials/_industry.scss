@@ -122,5 +122,20 @@ html {
 				}
 			}					
 		}
+		&.industries-template-single-industries-fluid {
+			main {
+				section {
+					&#main-content {
+						h2 {
+							&:first-of-type {
+							    text-transform: uppercase;
+							    font-weight: bold;
+							    letter-spacing: .0125px;
+							}
+						}						
+					} 
+				}
+			}
+		}
 	}
 }
