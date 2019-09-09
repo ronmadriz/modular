@@ -57,7 +57,7 @@ if ($industry_gallery) {
 	echo '<ul class="gallery list-unstyled list-inline">'.PHP_EOL;
 	foreach ($gallery_pics as $gallery_pic):
 	echo '<li class="list-inline-item col-6 col-md-3 col-xl-2">'.PHP_EOL;
-	echo '<a href="'.$gallery_pic['url']['sizes']['full'].'" data-gallery="fls-gallery" data-toggle="lightbox">'.PHP_EOL;
+	echo '<a href="'.$gallery_pic['url'].'" data-gallery="fls-gallery" data-toggle="lightbox">'.PHP_EOL;
 	echo '<img src="'.$gallery_pic['sizes']['thumbnail'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid">'.PHP_EOL;
 	echo '</a>'.PHP_EOL;
 	echo '</li>'.PHP_EOL;
