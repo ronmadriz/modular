@@ -106,7 +106,7 @@ if ($solutions_footercs) {
 	echo '<div class="container">'.PHP_EOL;
 	$solutions_repeater = get_sub_field('solutions');
 	if ($solutions_repeater) {
-		echo '<div class="row content industries img_grid">'.PHP_EOL;
+		echo '<div class="row content">'.PHP_EOL;
 		while (have_rows('solutions')) {
 			the_row();
 			$solutions_item = get_sub_field('solution');
