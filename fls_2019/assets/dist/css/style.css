@@ -1193,10 +1193,12 @@ body.solutions-template div.testimonials {
   padding: 28px 28px;
   word-wrap: break-word; }
 
-body.industries-template-single-industries-fluid main section#main-content h2:first-of-type {
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: .0125px; }
+body.industries-template-single-industries-fluid main section#main-content {
+  padding-top: .5rem; }
+  body.industries-template-single-industries-fluid main section#main-content h2:first-of-type {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .0125px; }
 
 body.industries-template-single-industries-fluid main section#cf_contactFormTitle {
   background-color: #156cb3;
