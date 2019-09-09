@@ -52,16 +52,20 @@ body {
 					padding-bottom: 2rem;
 					div {
 						&.title {
-							display:block;
-							text-align:center;
-							color:$black;
-							line-height:1.45rem;							
+							a {
+								display:block;
+								text-align:center;
+								color:$black;
+								line-height:1.45rem;
+							}
 						}
-						&.content {
-							display:block;
-							text-align:center;
-							color:$black;
-							line-height:1.45rem;							
+						&.desc {
+							a {
+								display:block;
+								text-align:center;
+								color:$black;
+								line-height:1.45rem;
+							}
 						}
 					}
 				}

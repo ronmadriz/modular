@@ -1222,12 +1222,12 @@ body.industries-template-single-industries-fluid main section#cf_contactForm {
 body.industries-template-single-industries-fluid main section#inline_solutions {
   padding-top: 2rem;
   padding-bottom: 2rem; }
-  body.industries-template-single-industries-fluid main section#inline_solutions div.title {
+  body.industries-template-single-industries-fluid main section#inline_solutions div.title a {
     display: block;
     text-align: center;
     color: #404040;
     line-height: 1.45rem; }
-  body.industries-template-single-industries-fluid main section#inline_solutions div.content {
+  body.industries-template-single-industries-fluid main section#inline_solutions div.desc a {
     display: block;
     text-align: center;
     color: #404040;
