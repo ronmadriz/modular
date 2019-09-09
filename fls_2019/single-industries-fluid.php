@@ -70,7 +70,7 @@ if ($industry_gallery) {
 $cf_contactForm = do_shortcode('[contact-form-7 id="1117125" title="Single Fluid - Contact Form"]');
 
 if ($cf_contactForm) {
-	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="col-12"><h1>How can we help?</h1></div></div></div></section>'.PHP_EOL;
+	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center">How can we help?</h1></div></div></div></section>'.PHP_EOL;
 	echo '<section id="cf_contactForm">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;// made fluid
 	echo '<div class="row">'.PHP_EOL;
