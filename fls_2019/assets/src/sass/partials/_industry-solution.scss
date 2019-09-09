@@ -53,12 +53,13 @@ body {
 					div {
 						&.title {
 							margin-top:.75rem;
-							margin-bottom:.75rem;
+							margin-bottom:.25rem;
 							a {
 								display:block;
 								text-align:center;
 								color:$black;
 								line-height:1.45rem;
+								font-weight:bold;
 							}
 						}
 						&.desc {
