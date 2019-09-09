@@ -89,7 +89,7 @@ if ($solutions_footercs) {
 	$solution_footers_title = get_sub_field('title');
 	$solution_footers_text  = get_sub_field('text');
 	echo '<section id="inline_solutions">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="section_title col-12"><h1>'.$solution_footers_title.'</h1></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
@@ -124,7 +124,7 @@ if ($solutions_footercs) {
 $case_studies = get_field('case_study_groups');
 if (have_rows('case_study_groups')) {
 	echo '<section id="case_study">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('case_study_groups')):the_row();
 	$study_section_title = get_sub_field('study_section_title');
 	$studies             = get_sub_field('studies');
@@ -165,7 +165,7 @@ if ($industry_testimonials) {
 	$testimonial = $industry_testimonials;
 	setup_postdata($testimonial);
 	echo '<section id="testimonial">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="section_title col-12">'.PHP_EOL;
 	echo '<h1>customer testimonial</h1>'.PHP_EOL;
@@ -186,7 +186,7 @@ if ($industry_testimonials) {
 $videos = get_field('videos');
 if ($videos):
 echo '<section id="solution_videos">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
 while (have_rows('videos')):the_row();
 $v_title = get_sub_field('title');
 $v_embed = get_sub_field('v_embed');
