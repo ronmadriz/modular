@@ -23,8 +23,14 @@ body {
 						}
 					}
 				}
+				&#cf_contactFormTitle {
+					background-color: $accent_1;
+					color: $alternate;
+					padding-top:1rem;
+				}
 				&#cf_contactForm {
 					background-color: $accent_3;
+					padding-top:1rem;
 				}
 			}
 		}
