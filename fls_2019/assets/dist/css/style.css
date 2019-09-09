@@ -1193,38 +1193,38 @@ body.solutions-template div.testimonials {
   padding: 28px 28px;
   word-wrap: break-word; }
 
-body.industries-template-single-industries-fluid main section div.section_title {
+body.industries-template-single-industries-fluid main section div.section_title, body.industries-template-single-industries-2019 main section div.section_title {
   border-bottom-width: 2px;
   border-bottom-color: #404040;
   padding-left: 0; }
 
-body.industries-template-single-industries-fluid main section#main-content {
+body.industries-template-single-industries-fluid main section#main-content, body.industries-template-single-industries-2019 main section#main-content {
   padding-top: .5rem; }
-  body.industries-template-single-industries-fluid main section#main-content h2:first-of-type {
+  body.industries-template-single-industries-fluid main section#main-content h2:first-of-type, body.industries-template-single-industries-2019 main section#main-content h2:first-of-type {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: .0125px; }
 
-body.industries-template-single-industries-fluid main section#cf_contactFormTitle {
+body.industries-template-single-industries-fluid main section#cf_contactFormTitle, body.industries-template-single-industries-2019 main section#cf_contactFormTitle {
   background-color: #156cb3;
   padding-top: 1rem; }
-  body.industries-template-single-industries-fluid main section#cf_contactFormTitle h1 {
+  body.industries-template-single-industries-fluid main section#cf_contactFormTitle h1, body.industries-template-single-industries-2019 main section#cf_contactFormTitle h1 {
     color: white; }
 
-body.industries-template-single-industries-fluid main section#cf_contactForm {
+body.industries-template-single-industries-fluid main section#cf_contactForm, body.industries-template-single-industries-2019 main section#cf_contactForm {
   background-color: #e6e7e9;
   padding-top: 1rem;
   padding-bottom: 1rem; }
-  body.industries-template-single-industries-fluid main section#cf_contactForm textarea {
+  body.industries-template-single-industries-fluid main section#cf_contactForm textarea, body.industries-template-single-industries-2019 main section#cf_contactForm textarea {
     height: 5.5rem; }
 
-body.industries-template-single-industries-fluid main section#inline_solutions {
+body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-2019 main section#inline_solutions {
   padding-top: 2rem;
   padding-bottom: 2rem; }
-  body.industries-template-single-industries-fluid main section#inline_solutions div.title {
+  body.industries-template-single-industries-fluid main section#inline_solutions div.title, body.industries-template-single-industries-2019 main section#inline_solutions div.title {
     margin-top: .75rem;
     margin-bottom: .75rem; }
-    body.industries-template-single-industries-fluid main section#inline_solutions div.title a {
+    body.industries-template-single-industries-fluid main section#inline_solutions div.title a, body.industries-template-single-industries-2019 main section#inline_solutions div.title a {
       display: block;
       text-align: center;
       color: #404040;
@@ -1232,15 +1232,15 @@ body.industries-template-single-industries-fluid main section#inline_solutions {
       font-weight: 700;
       font-size: 1.3rem;
       font-family: "Oswald", helvetica, sans-serif; }
-  body.industries-template-single-industries-fluid main section#inline_solutions div.desc {
+  body.industries-template-single-industries-fluid main section#inline_solutions div.desc, body.industries-template-single-industries-2019 main section#inline_solutions div.desc {
     margin-bottom: 2rem; }
-    body.industries-template-single-industries-fluid main section#inline_solutions div.desc a {
+    body.industries-template-single-industries-fluid main section#inline_solutions div.desc a, body.industries-template-single-industries-2019 main section#inline_solutions div.desc a {
       display: block;
       text-align: center;
       color: #404040;
       line-height: 1.45rem; }
 
-body.industries-template-single-industries-fluid main section#testimonial div.section_title {
+body.industries-template-single-industries-fluid main section#testimonial div.section_title, body.industries-template-single-industries-2019 main section#testimonial div.section_title {
   margin-bottom: 0; }
 
 html body#page-testimonials div.featured_testimonials {
