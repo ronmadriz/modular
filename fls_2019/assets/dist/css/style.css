@@ -1193,6 +1193,11 @@ body.solutions-template div.testimonials {
   padding: 28px 28px;
   word-wrap: break-word; }
 
+body.industries-template-single-industries-fluid main section div.title h1 {
+  text-transform: uppercase;
+  color: #404040;
+  border-bottom: 2px solid #404040; }
+
 body.industries-template-single-industries-fluid main section#main-content {
   padding-top: .5rem; }
   body.industries-template-single-industries-fluid main section#main-content h2:first-of-type {
