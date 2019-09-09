@@ -1194,8 +1194,8 @@ body.solutions-template div.testimonials {
   word-wrap: break-word; }
 
 body.industries-template-single-industries-fluid main section#main-content, body.industries-template-single-industries-fluid main section#gallery, body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-fluid main section#case_study, body.industries-template-single-industries-fluid main section#testimonial, body.industries-template-single-industries-fluid main section#cf_contactForm {
-  margin-left: 100px;
-  margin-right: 100px; }
+  padding-left: 100px;
+  padding-right: 100px; }
   @media (min-width: 1300px) {
     body.industries-template-single-industries-fluid main section#main-content, body.industries-template-single-industries-fluid main section#gallery, body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-fluid main section#case_study, body.industries-template-single-industries-fluid main section#testimonial, body.industries-template-single-industries-fluid main section#cf_contactForm {
       font-size: 131%;
