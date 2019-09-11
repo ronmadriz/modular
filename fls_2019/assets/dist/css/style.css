@@ -245,27 +245,12 @@ html body main {
     @media (min-width: 786px) {
       html body main section#banner {
         min-height: 6rem; } }
-    html body main section#banner div.w-image {
-      min-height: 450px; }
     html body main section#banner div.page_title {
       background-color: #156cb3;
       color: white;
       position: absolute;
       bottom: 0;
       padding-top: 1rem; }
-      @media (min-width: 786px) {
-        html body main section#banner div.page_title::after {
-          height: 100%;
-          width: 7rem;
-          border-radius: 0;
-          background-color: #156cb3;
-          content: "";
-          position: absolute;
-          right: -3.1em;
-          bottom: 0rem;
-          -webkit-transform: skewX(40deg);
-                  transform: skewX(40deg);
-          z-index: 1; } }
       html body main section#banner div.page_title h1 {
         color: white;
         font-family: "Open Sans", arial, helvetica, sans-serif;
@@ -274,6 +259,21 @@ html body main {
         @media (min-width: 786px) {
           html body main section#banner div.page_title h1 {
             padding-left: 1rem; } }
+    html body main section#banner div.w-image {
+      min-height: 450px; }
+    @media (min-width: 786px) {
+      html body main section#banner:not(.industries-template-single-industries-fluid) div.page_title::after {
+        height: 100%;
+        width: 7rem;
+        border-radius: 0;
+        background-color: #156cb3;
+        content: "";
+        position: absolute;
+        right: -3.1em;
+        bottom: 0rem;
+        -webkit-transform: skewX(40deg);
+                transform: skewX(40deg);
+        z-index: 1; } }
   html body main section#breadcrumbs {
     padding-top: 2rem;
     font-size: 130%; }

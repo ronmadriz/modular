@@ -178,29 +178,12 @@ html {
 						min-height: 6rem;					
 					}
 					div {
-						&.w-image {
-							min-height:450px;
-						}
 						&.page_title {
 							background-color: $accent_1;
 							color:$alternate;
 							position: absolute;
 							bottom: 0;
 							padding-top: 1rem;
-							@media(min-width: 786px){
-								&::after {
-									height: 100%;
-									width:7rem;
-									border-radius: 0;
-									background-color: $accent_1;
-									content: "";
-									position: absolute;
-									right: -3.1em;
-									bottom: 0rem;
-									transform: skewX(40deg);
-									z-index: 1;
-								}
-							}
 							h1 {
 								color:$white;
 								font-family: $primary;
@@ -208,6 +191,29 @@ html {
 								font-weight: bold;
 								@media(min-width:786px) {
 									padding-left: 1rem;
+								}
+							}
+						}
+						&.w-image {
+							min-height:450px;
+						}
+					}
+					&:not(.industries-template-single-industries-fluid) {
+						div {
+							&.page_title {
+								@media(min-width: 786px){
+									&::after {
+										height: 100%;
+										width:7rem;
+										border-radius: 0;
+										background-color: $accent_1;
+										content: "";
+										position: absolute;
+										right: -3.1em;
+										bottom: 0rem;
+										transform: skewX(40deg);
+										z-index: 1;
+									}
 								}
 							}
 						}
