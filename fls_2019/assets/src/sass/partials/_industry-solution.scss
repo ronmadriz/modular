@@ -14,11 +14,12 @@ body {
 	&.industries-template-single-industries-fluid {
 		main {
 			section {
-				&#banner div.page_title, &#breadcrumb, &#main-content, &#gallery, &#inline_solutions, &#case_study, &#testimonial, &#cf_contactForm, &#cf_contactFormTitle {
-					
+				&#banner div.page_title, &#breadcrumb, &#main-content, &#gallery, &#inline_solutions, &#case_study, &#testimonial, &#cf_contactForm, &#cf_contactFormTitle {					
+				    padding-left:5%;
+				    padding-right:5%;
 					@media(min-width:992px){
 					    padding-left: 10%;
-					    padding-right: 10%;						
+					    padding-right: 10%;
 					}
 					@media(min-width:1300px){
 					    padding-left: 100px;
