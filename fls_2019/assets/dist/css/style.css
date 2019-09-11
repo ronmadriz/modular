@@ -99,6 +99,47 @@ body header div#nav-holder {
 body header div#page-top {
   z-index: 100000; }
 
+body main section#banner {
+  background-color: #e6e7e9;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  min-height: 4rem; }
+  @media (min-width: 786px) {
+    body main section#banner {
+      min-height: 6rem; } }
+  body main section#banner div.page_title {
+    background-color: #156cb3;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding-top: 1rem; }
+    body main section#banner div.page_title h1 {
+      color: white;
+      font-family: "Open Sans", arial, helvetica, sans-serif;
+      font-size: 1.8125rem;
+      font-weight: bold; }
+      @media (min-width: 786px) {
+        body main section#banner div.page_title h1 {
+          padding-left: 1rem; } }
+  body main section#banner div.w-image {
+    min-height: 450px; }
+
+@media (min-width: 786px) {
+  body:not(.industries-template-single-industries-fluid) main section#banner div.page_title::after {
+    height: 100%;
+    width: 7rem;
+    border-radius: 0;
+    background-color: #156cb3;
+    content: "";
+    position: absolute;
+    right: -3.1em;
+    bottom: 0rem;
+    -webkit-transform: skewX(40deg);
+            transform: skewX(40deg);
+    z-index: 1; } }
+
 html body a {
   color: #156cb3; }
   html body a.dropdown-item {
@@ -235,45 +276,6 @@ html body main {
   @media (min-width: 786px) {
     html body main {
       padding-top: 7rem; } }
-  html body main section#banner {
-    background-color: #e6e7e9;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    min-height: 4rem; }
-    @media (min-width: 786px) {
-      html body main section#banner {
-        min-height: 6rem; } }
-    html body main section#banner div.page_title {
-      background-color: #156cb3;
-      color: white;
-      position: absolute;
-      bottom: 0;
-      padding-top: 1rem; }
-      html body main section#banner div.page_title h1 {
-        color: white;
-        font-family: "Open Sans", arial, helvetica, sans-serif;
-        font-size: 1.8125rem;
-        font-weight: bold; }
-        @media (min-width: 786px) {
-          html body main section#banner div.page_title h1 {
-            padding-left: 1rem; } }
-    html body main section#banner div.w-image {
-      min-height: 450px; }
-    @media (min-width: 786px) {
-      html body main section#banner:not(.industries-template-single-industries-fluid) div.page_title::after {
-        height: 100%;
-        width: 7rem;
-        border-radius: 0;
-        background-color: #156cb3;
-        content: "";
-        position: absolute;
-        right: -3.1em;
-        bottom: 0rem;
-        -webkit-transform: skewX(40deg);
-                transform: skewX(40deg);
-        z-index: 1; } }
   html body main section#breadcrumbs {
     padding-top: 2rem;
     font-size: 130%; }
@@ -422,6 +424,47 @@ body header div#nav-holder {
 
 body header div#page-top {
   z-index: 100000; }
+
+body main section#banner {
+  background-color: #e6e7e9;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  min-height: 4rem; }
+  @media (min-width: 786px) {
+    body main section#banner {
+      min-height: 6rem; } }
+  body main section#banner div.page_title {
+    background-color: #156cb3;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding-top: 1rem; }
+    body main section#banner div.page_title h1 {
+      color: white;
+      font-family: "Open Sans", arial, helvetica, sans-serif;
+      font-size: 1.8125rem;
+      font-weight: bold; }
+      @media (min-width: 786px) {
+        body main section#banner div.page_title h1 {
+          padding-left: 1rem; } }
+  body main section#banner div.w-image {
+    min-height: 450px; }
+
+@media (min-width: 786px) {
+  body:not(.industries-template-single-industries-fluid) main section#banner div.page_title::after {
+    height: 100%;
+    width: 7rem;
+    border-radius: 0;
+    background-color: #156cb3;
+    content: "";
+    position: absolute;
+    right: -3.1em;
+    bottom: 0rem;
+    -webkit-transform: skewX(40deg);
+            transform: skewX(40deg);
+    z-index: 1; } }
 
 body header nav.navbar {
   -webkit-box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.24);
