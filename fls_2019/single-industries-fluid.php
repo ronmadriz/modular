@@ -44,7 +44,7 @@ if ($industry_gallery) {
 	while (have_rows('industry_gallery')):the_row();
 	$gallery_title = get_sub_field('title');
 	$gallery_pics  = get_sub_field('gallery_pics');
-	$gallery_img = get_sub_field('gallery_img')
+	$gallery_img = get_sub_field('gallery_img');
 	$gallery_img_url = $gallery_img['url'];
 	$gallery_img_alt = $gallery_img['alt'];
 	echo '<section id="gallery">'.PHP_EOL;
