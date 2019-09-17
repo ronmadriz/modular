@@ -95,7 +95,7 @@ if ($icons) {
 			$fl_content = get_sub_field('icon_content');
 			echo '<div class="row h-100 justify-content-center align-items-center">'.PHP_EOL;
 			echo '<div class="col-3"><img src="'.$fl_image['url'].'" class="img-fluid" alt=""></div>'.PHP_EOL;
-			echo '<div class="col-9"><p>Flexible Lifeline Systems aircraft fall protection solutions start with evaluating the specific maintenance operations performed. In the systems, evaluation of the supporting building structures is often required.</p></div>'.PHP_EOL;
+			echo '<div class="col-9">'.$fl_content.'</div>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 		}
 		echo '</div>'.PHP_EOL;
