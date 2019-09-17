@@ -16,7 +16,7 @@ echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 
-echo (!is_page('privacy-policy')?'<div id="pagewrapper" class="container"><div class="row"><div id="columns_2" class="col-12 col-md-9">':'').PHP_EOL;
+echo (!is_page('fall-protection-101')?'<div id="pagewrapper" class="container"><div class="row"><div id="columns_2" class="col-12 col-md-9">':'').PHP_EOL;
 
 // MAIN CONTENT
 echo '<section id="main-content">'.PHP_EOL;
@@ -47,11 +47,11 @@ if ($side_nav == 1) {
 	}
 	echo wp_nav_menu(['container' => 'nav', "menu" => $menu]);
 }
-if(!is_page('privacy-policy')){
+if(!is_page('fall-protection-101')){
 	get_sidebar();
 }
 echo '</aside>'.PHP_EOL;
 
-echo (is_page('privacy-policy')?'':'</div></div>').PHP_EOL;
+echo (is_page('fall-protection-101')?'':'</div></div>').PHP_EOL;
 
 get_footer();?>
