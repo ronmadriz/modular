@@ -1256,9 +1256,6 @@ body.industries-template-single-industries-fluid main section#inline_solutions d
 body.industries-template-single-industries-fluid main section#case_study div.item div.img {
   height: 275px; }
 
-body.industries-template-single-industries-fluid main section#icons {
-  padding-top: 2rem; }
-
 body.industries-template-single-industries-fluid main section div.section_title, body.industries-template-single-industries-2019 main section div.section_title {
   border-bottom-width: 2px;
   border-bottom-color: #404040;
@@ -1288,6 +1285,9 @@ body.industries-template-single-industries-fluid main section#cf_contactForm, bo
   padding-bottom: 1rem; }
   body.industries-template-single-industries-fluid main section#cf_contactForm textarea, body.industries-template-single-industries-2019 main section#cf_contactForm textarea {
     height: 5.5rem; }
+
+body.industries-template-single-industries-fluid main section#icons, body.industries-template-single-industries-2019 main section#icons {
+  padding-top: 2rem; }
 
 body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-2019 main section#inline_solutions {
   padding-top: 2rem;
