@@ -82,7 +82,26 @@ if ($cf_contactForm) {
 	echo '</section>'.PHP_EOL;
 }
 
-// Solutions footer
+// ICONS
+$icons = get_field('icon_row');
+if (have_rows('icon_row')) {
+	if (have_rows('icon_row')) {
+		echo '<section id="icons">'.PHP_EOL;
+		echo '<div class="container-fluid">'.PHP_EOL;
+		while (have_rows('icon_row')) {
+			the_row();
+			$fl_image   = get_sub_field('icon_image');
+			$fl_content = get_sub_field('icon_content');
+			echo '<div class="row h-100 justify-content-center align-items-md-center">'.PHP_EOL;
+			echo '<div class="fl_thumb col-3 col-md-2"><img src="'.$fl_image['url'].'" class="img-fluid" alt=""></div>'.PHP_EOL;
+			echo '<div class="fl_content col-9 col-md-10">'.$fl_content.'</div>'.PHP_EOL;
+			echo '</div>'.PHP_EOL;
+		}
+		echo '</div>'.PHP_EOL;
+		echo '</section>'.PHP_EOL;
+	}
+}
+// SOLUTIONS
 $solutions_footercs = get_field('solutions_footer');
 if ($solutions_footercs) {
 	while (have_rows('solutions_footer')):the_row();
