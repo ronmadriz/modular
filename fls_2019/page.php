@@ -50,7 +50,7 @@ if ($side_nav == 1) {
 	echo wp_nav_menu(['container' => 'nav', "menu" => $menu]);
 }
 if(!is_page('privacy-policy'){
-	get_sidebar();
+	get_sidebar()
 }
 echo '</aside>'.PHP_EOL;
 
