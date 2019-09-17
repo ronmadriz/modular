@@ -48,9 +48,7 @@ if ($industry_gallery) {
 	echo '<section id="gallery">'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
 	if( !empty($gallery_img) ): 
-	$gallery_img_url = $gallery_img['url'];
-	$gallery_img_alt = $gallery_img['alt'];
-	echo '<div class="row"><div class="col-12 col-md-8"><img src="'.$gallery_img_url.'" alt="'.$gallery_img_alt.'"></div></div>'.PHP_EOL;
+	echo '<div class="row"><div class="col-12 col-md-8"><img src="'.$gallery_img['url'].'" alt="'.$gallery_img['alt'].'"></div></div>'.PHP_EOL;
 	endif;
 	echo '<div class="row"><div class="content col-12">'.PHP_EOL;
 	if ($gallery_pics):
