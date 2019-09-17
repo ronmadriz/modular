@@ -85,7 +85,7 @@ if ($cf_contactForm) {
 // ICONS
 echo '<section id="icons">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
-echo '<div class="row">'.PHP_EOL;
+echo '<div class="row h-100 justify-content-center align-items-center">'.PHP_EOL;
 echo '<div class="col-3"><img src="https://via.placeholder.com/36" style="min-width:100%;" alt=""></div>'.PHP_EOL;
 echo '<div class="col-9"><p>Flexible Lifeline Systems aircraft fall protection solutions start with evaluating the specific maintenance operations performed. In the systems, evaluation of the supporting building structures is often required.</p></div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
