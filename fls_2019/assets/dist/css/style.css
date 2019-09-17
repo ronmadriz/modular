@@ -1258,6 +1258,8 @@ body.industries-template-single-industries-fluid main section#case_study div.ite
 
 body.industries-template-single-industries-fluid main section#icons {
   padding-top: 2rem; }
+  body.industries-template-single-industries-fluid main section#icons .fl_image img {
+    max-width: 300px; }
 
 body.industries-template-single-industries-fluid main section div.section_title, body.industries-template-single-industries-2019 main section div.section_title {
   border-bottom-width: 2px;
