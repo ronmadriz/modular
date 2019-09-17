@@ -31,11 +31,6 @@ j(document).ready(function(){
       j('a').attr("target", "_top");
     });
 
-    var listItems = j("section#gallery ul.gallery li");
-    listItems.each(function(li) {
-        console.log(j(this).attr('id'));
-    });
-
 });
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');

@@ -199,6 +199,7 @@ j(document).ready(function(){
     j('svg a').click(function(event){
       j('a').attr("target", "_top");
     });
+
 });
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
