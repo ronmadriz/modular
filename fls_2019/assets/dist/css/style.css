@@ -1288,6 +1288,8 @@ body.industries-template-single-industries-fluid main section#cf_contactForm, bo
 
 body.industries-template-single-industries-fluid main section#icons, body.industries-template-single-industries-2019 main section#icons {
   padding-top: 2rem; }
+  body.industries-template-single-industries-fluid main section#icons div:not(:last-of-type) .row, body.industries-template-single-industries-2019 main section#icons div:not(:last-of-type) .row {
+    margin-bottom: 1rem; }
 
 body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-2019 main section#inline_solutions {
   padding-top: 2rem;

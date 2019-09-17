@@ -98,10 +98,13 @@ body {
 				}
 				&#icons {
 					padding-top:2rem;
-					.fl_image {
-					}
-					.fl_content {
-					}
+					div {
+						&:not(:last-of-type) {
+							.row {
+								margin-bottom:1rem;
+							}
+						}
+					}							
 				}
 				&#inline_solutions {
 					padding-top: 2rem;
