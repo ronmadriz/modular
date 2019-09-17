@@ -45,11 +45,11 @@ if ($industry_gallery) {
 	$gallery_title = get_sub_field('title');
 	$gallery_pics  = get_sub_field('gallery_pics');
 	$gallery_img = get_sub_field('gallery_img');
-	$gallery_img_url = $gallery_img['url'];
-	$gallery_img_alt = $gallery_img['alt'];
 	echo '<section id="gallery">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
-	echo (!empty($gallery_img):'<div class="row"><div class="col-12 col-md-8"><img src="'.$gallery_img_url.'" alt="'.$gallery_img_alt.'"></div></div>':'').PHP_EOL;
+	if( !empty($gallery_img) ): 
+	echo '<div class="row"><div class="col-12 col-md-8"><img src="'.$gallery_img['url'].'" alt="'.$gallery_img['alt'].'"></div></div>'.PHP_EOL;
+	endif;
 	echo '<div class="row"><div class="content col-12">'.PHP_EOL;
 	if ($gallery_pics):
 	echo '<ul class="gallery list-unstyled list-inline">'.PHP_EOL;
