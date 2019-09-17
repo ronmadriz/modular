@@ -83,10 +83,9 @@ if ($cf_contactForm) {
 }
 
 // ICONS
-$icons = get_field('fl_icons');
-if ($icons) {
-	$icon_row = get_sub_field('icon_row');
-	if (have_rows($icon_row)) {
+$icons = get_field('icon_row');
+if (have_rows('icon_row')) {
+	if (have_rows('icon_row') {
 		echo '<section id="icons">'.PHP_EOL;
 		echo '<div class="container-fluid">'.PHP_EOL;
 		while (have_rows('icon_row')) {
