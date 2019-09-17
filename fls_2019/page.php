@@ -39,7 +39,7 @@ echo '</div>'.PHP_EOL;
 
 echo '<aside class="sidebar d-none d-sm-block col-md-3">'.PHP_EOL;
 $secondary_logo = get_field('secondary_logo');
-echo (!empty($secondary_logo)?'<div id="sidebar_logo" class="d-block text-center"><img src="'.$secondary_logo['url'].'" alt="'.$secondary_logo['alt'].'"></div>':'').PHP_EOL;
+echo ((!empty($secondary_logo)) && (!is_page('fall-protection-101'))?'<div id="sidebar_logo" class="d-block text-center"><img src="'.$secondary_logo['url'].'" alt="'.$secondary_logo['alt'].'"></div>':'').PHP_EOL;
 $side_nav = get_field('has_sidebar_menu');
 if ($side_nav == 1) {
 	if (get_field('navmenu')) {
