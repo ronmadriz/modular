@@ -1290,6 +1290,8 @@ body.industries-template-single-industries-fluid main section#icons, body.indust
   padding-top: 2rem; }
   body.industries-template-single-industries-fluid main section#icons div:not(:last-of-type) .row, body.industries-template-single-industries-2019 main section#icons div:not(:last-of-type) .row {
     margin-bottom: 1rem; }
+  body.industries-template-single-industries-fluid main section#icons div .fl_thumb, body.industries-template-single-industries-2019 main section#icons div .fl_thumb {
+    padding: 1rem 1rem 1rem 0; }
 
 body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-2019 main section#inline_solutions {
   padding-top: 2rem;
