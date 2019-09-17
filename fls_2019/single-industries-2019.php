@@ -87,7 +87,7 @@ $icons = get_field('icon_row');
 if (have_rows('icon_row')) {
 	if (have_rows('icon_row')) {
 		echo '<section id="icons">'.PHP_EOL;
-		echo '<div class="container-fluid">'.PHP_EOL;
+		echo '<div class="container">'.PHP_EOL;
 		while (have_rows('icon_row')) {
 			the_row();
 			$fl_image   = get_sub_field('icon_image');
