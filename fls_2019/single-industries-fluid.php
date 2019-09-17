@@ -83,21 +83,24 @@ if ($cf_contactForm) {
 }
 
 // ICONS
-$icon_row = get_field('icon_row');
-if (have_rows($icon_row)) {
-	echo '<section id="icons">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
-	while (have_rows('icon_row')) {
-		the_row();
-		$fl_image   = get_sub_field('icon_image');
-		$fl_content = get_sub_field('icon_content');
-		echo '<div class="row h-100 justify-content-center align-items-center">'.PHP_EOL;
-		echo '<div class="col-3"><img src="'.$fl_image['url'].'" class="img-fluid" alt=""></div>'.PHP_EOL;
-		echo '<div class="col-9"><p>Flexible Lifeline Systems aircraft fall protection solutions start with evaluating the specific maintenance operations performed. In the systems, evaluation of the supporting building structures is often required.</p></div>'.PHP_EOL;
+$icons = get_field('fl_icons');
+if (($icons)) {
+	$icon_row = get_sub_field('icon_row');
+	if (have_rows($icon_row)) {
+		echo '<section id="icons">'.PHP_EOL;
+		echo '<div class="container-fluid">'.PHP_EOL;
+		while (have_rows('icon_row')) {
+			the_row();
+			$fl_image   = get_sub_field('icon_image');
+			$fl_content = get_sub_field('icon_content');
+			echo '<div class="row h-100 justify-content-center align-items-center">'.PHP_EOL;
+			echo '<div class="col-3"><img src="'.$fl_image['url'].'" class="img-fluid" alt=""></div>'.PHP_EOL;
+			echo '<div class="col-9"><p>Flexible Lifeline Systems aircraft fall protection solutions start with evaluating the specific maintenance operations performed. In the systems, evaluation of the supporting building structures is often required.</p></div>'.PHP_EOL;
+			echo '</div>'.PHP_EOL;
+		}
 		echo '</div>'.PHP_EOL;
+		echo '</section>'.PHP_EOL;
 	}
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
 }
 
 // SOLUTIONS
