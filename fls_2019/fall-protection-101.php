@@ -45,6 +45,16 @@ echo '<div class="container-fluid">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo (!empty($tabbed_intro)?'<div class="col-12">'.$tabbed_intro.'</div>'.PHP_EOL:'');
 echo '</div>'.PHP_EOL;
+if (have_rows('tabbed_content')) {
+	while (have_rows('tabbed_content')) {
+		$fp_title   = get_sub_field('title');
+		$fp_content = get_sub_field('content');
+		echo '<div class="row">'.PHP_EOL;
+		echo (!empty($fp_title)?'<div class="fp_title col-12">'.$fp_title.'</div>'.PHP_EOL:'');
+		echo (!empty($fp_content)?'<div class="fp_content col-12">'.$fp_content.'</div>'.PHP_EOL:'');
+		echo '</div>'.PHP_EOL;
+	}
+}
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 
