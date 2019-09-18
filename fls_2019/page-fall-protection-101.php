@@ -36,11 +36,12 @@ echo '</section>'.PHP_EOL;
 // End Industry Main Column
 
 // Tabbed Content
-echo '<section>'.PHP_EOL;
+$tabbed_intro   = get_field('tabbed_content_introduction');
+$tabbed_content = get_field('tabbed_content');
+echo '<section id="fp_101">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
-echo '<div class="col-12">'.PHP_EOL;
-echo '</div>'.PHP_EOL;
+echo (!empty($tabbed_content)?'<div class="col-12">'.$tabbed_content.'</div>'.PHP_EOL:'');
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
