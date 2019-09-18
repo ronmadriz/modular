@@ -35,6 +35,15 @@ echo '</section>'.PHP_EOL;
 
 // End Industry Main Column
 
-// Sidebar
+// Tabbed Content
+echo '<section>'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
+echo '<div class="row">'.PHP_EOL;
+echo '<div class="col-12">'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</section>'.PHP_EOL;
+
 echo '</div>'.PHP_EOL;
 get_footer();?>
