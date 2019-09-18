@@ -1,4 +1,7 @@
 <?php
+/*
+ * Template Name: Fall Protection 101
+ */
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
 get_header();
