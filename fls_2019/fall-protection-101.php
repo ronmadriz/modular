@@ -19,6 +19,8 @@ echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 
+the_breadcrumb();
+
 // MAIN CONTENT
 echo '<section id="main-content">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;

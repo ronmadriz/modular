@@ -1418,3 +1418,23 @@ svg .region path {
           animation: fadeInFromNone 0.5s ease-out; }
   svg .region path:hover {
     opacity: .9; }
+
+body.page-template-page-fall-protection-101 main section#banner div.page_title, body.page-template-page-fall-protection-101 main section#breadcrumbs, body.page-template-page-fall-protection-101 main section#main-content, body.page-template-page-fall-protection-101 main section#gallery, body.page-template-page-fall-protection-101 main section#inline_solutions, body.page-template-page-fall-protection-101 main section#case_study, body.page-template-page-fall-protection-101 main section#testimonial, body.page-template-page-fall-protection-101 main section#cf_contactForm, body.page-template-page-fall-protection-101 main section#cf_contactFormTitle, body.page-template-page-fall-protection-101 main section#icons {
+  padding-left: 5%;
+  padding-right: 5%; }
+  @media (min-width: 992px) and (max-width: 1299.99px) {
+    body.page-template-page-fall-protection-101 main section#banner div.page_title, body.page-template-page-fall-protection-101 main section#breadcrumbs, body.page-template-page-fall-protection-101 main section#main-content, body.page-template-page-fall-protection-101 main section#gallery, body.page-template-page-fall-protection-101 main section#inline_solutions, body.page-template-page-fall-protection-101 main section#case_study, body.page-template-page-fall-protection-101 main section#testimonial, body.page-template-page-fall-protection-101 main section#cf_contactForm, body.page-template-page-fall-protection-101 main section#cf_contactFormTitle, body.page-template-page-fall-protection-101 main section#icons {
+      padding-left: 10%;
+      padding-right: 10%; } }
+  @media (min-width: 1300px) {
+    body.page-template-page-fall-protection-101 main section#banner div.page_title, body.page-template-page-fall-protection-101 main section#breadcrumbs, body.page-template-page-fall-protection-101 main section#main-content, body.page-template-page-fall-protection-101 main section#gallery, body.page-template-page-fall-protection-101 main section#inline_solutions, body.page-template-page-fall-protection-101 main section#case_study, body.page-template-page-fall-protection-101 main section#testimonial, body.page-template-page-fall-protection-101 main section#cf_contactForm, body.page-template-page-fall-protection-101 main section#cf_contactFormTitle, body.page-template-page-fall-protection-101 main section#icons {
+      padding-left: 100px;
+      padding-right: 100px;
+      font-size: 131%;
+      line-height: 150%; } }
+
+body.page-template-page-fall-protection-101 main section#inline_solutions div.item img.img-fluid {
+  min-width: 100%; }
+
+body.page-template-page-fall-protection-101 main section#case_study div.item div.img {
+  height: 275px; }
