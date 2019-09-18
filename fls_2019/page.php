@@ -15,7 +15,7 @@ echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
-
+echo '<div id="pagewrapper" class="container"><div class="row"><div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
 // MAIN CONTENT
 echo '<section id="main-content">'.PHP_EOL;
 echo '<div class="container">'.PHP_EOL;
@@ -47,5 +47,7 @@ if ($side_nav == 1) {
 }
 get_sidebar();
 echo '</aside>'.PHP_EOL;
+
 echo '</div></div>'.PHP_EOL;
+
 get_footer();?>
