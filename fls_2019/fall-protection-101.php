@@ -46,14 +46,14 @@ echo '<div class="row">'.PHP_EOL;
 echo (!empty($tabbed_intro)?'<div class="col-12">'.$tabbed_intro.'</div>'.PHP_EOL:'');
 echo '</div>'.PHP_EOL;
 if (have_rows('tabbed_content')) {
-	$fp_counter = 0;
+	$fp_counter = 1;
 	while (have_rows('tabbed_content')) {
 		$fp_title   = get_sub_field('title');
 		$fp_row_id  = str_replace(' ', '-', $fp_title);
 		$fp_content = get_sub_field('content');
 		the_row();
 		echo '<div id="'.$fp_row_id.'" class="row">'.PHP_EOL;
-		echo (!empty($fp_title)?'<div class="fp_title col-12"><h2>1'.$fp_counter++ .' '.$fp_title.'</h2></div>'.PHP_EOL:'');
+		echo (!empty($fp_title)?'<div class="fp_title col-12"><h2>1.'.$fp_counter++ .' '.$fp_title.'</h2></div>'.PHP_EOL:'');
 		echo (!empty($fp_content)?'<div class="fp_content col-12">'.$fp_content.'</div>'.PHP_EOL:'');
 		echo '</div>'.PHP_EOL;
 	}
