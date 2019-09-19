@@ -44,14 +44,13 @@ if (have_rows('fp_icons')) {
 	echo '<div class="row">'.PHP_EOL;
 	while (have_rows('fp_icons')) {
 		$fp_icon     = get_sub_field('fp_icon');
-		$fp_content  = get_sub_field('fp_content');
 		$fp_icon_src = $fp_icon['url'];
+		$fp_icon_alt = $fp_icon['alt'];
+		$fp_content  = get_sub_field('fp_content');
 		the_row();
 		echo '<div class="fp_icon col-12 col-md-6">'.PHP_EOL;
-		echo '<span class="fp_icon"><img src="'.$fp_icon_src.'" alt=""></span>'.PHP_EOL;
-		echo '<span class="fp_content">'.PHP_EOL;
-		$fp_content;
-		echo '</span>'.PHP_EOL;
+		echo '<span class="fp_icon d-block"><img src="'.$fp_icon_src.'" alt="'.$fp_icon_alt.'"></span>'.PHP_EOL;
+		echo '<span class="fp_content d-block">'.$fp_content.'</span>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
@@ -60,14 +59,16 @@ if (have_rows('fp_icons')) {
 }
 
 // Fall Protection 101 Info
-
-echo '<section id="fp_info">'.PHP_EOL;
-echo '<div class="container-fluid">'.PHP_EOL;
-echo '<div class="row">'.PHP_EOL;
-echo '<div class="col-12"></div>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-echo '</section>'.PHP_EOL;
+$fp_info = get_field('fp_info');
+if (!empty($fp_info)) {
+	echo '<section id="fp_info">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="row">'.PHP_EOL;
+	echo '<div class="col-12">'.$fp_info.'</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+}
 
 // FP 101 Contact Form
 
