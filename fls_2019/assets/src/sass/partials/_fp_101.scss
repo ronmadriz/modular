@@ -2,7 +2,7 @@ body {
 	&.page-template-fall-protection-101 {
 		main {
 			section {
-				&#banner div.page_title, &#breadcrumbs, &#main-content, &#fp_101 {					
+				&#banner div.page_title, &#breadcrumbs, &#main-content, &#fp_101, &#fp_info {					
 				    padding-left:5%;
 				    padding-right:5%;
 					@media(min-width:992px) and (max-width:1299.99px){
@@ -38,6 +38,21 @@ body {
 						}
 					}
 				}
+				&#cf_contactFormTitle {
+					background-color: $accent_1;
+					padding-top:1rem;
+					h1 {
+						color: $alternate;
+					}
+				}
+				&#cf_contactForm {
+					background-color: $accent_3;
+					padding-top:1rem;
+					padding-bottom:1rem;
+					textarea {
+						height: 5.5rem;						
+					}
+				}			
 			}
 		}
 	}	
