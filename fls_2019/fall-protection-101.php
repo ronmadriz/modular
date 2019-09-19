@@ -43,13 +43,13 @@ if (have_rows('fp_icons')) {
 	echo '<div class="container">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	while (have_rows('fp_icons')) {
+		the_row();
 		$fp_icon     = get_sub_field('fp_icon');
 		$fp_icon_src = $fp_icon['url'];
 		$fp_icon_alt = $fp_icon['alt'];
 		$fp_content  = get_sub_field('fp_content');
-		the_row();
 		echo '<div class="fp_icon col-12 col-md-6">'.PHP_EOL;
-		echo '<span class="fp_icon d-block"><img src="'.$fp_icon_src.'" alt="'.$fp_icon_alt.'"></span>'.PHP_EOL;
+		echo '<span class="fp_icon d-block"><img src="'.$fp_icon_src.'" alt="'.$fp_icon_alt.'" class="img-fluid"></span>'.PHP_EOL;
 		echo '<span class="fp_content d-block">'.$fp_content.'</span>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 	}
