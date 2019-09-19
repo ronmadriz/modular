@@ -16,25 +16,14 @@ body {
 					    line-height: 150%;
 					}
 				}
-				&#inline_solutions {
-					div {
-						&.item { 
+				&#fp_icons {
+					span {
+						&.fp_icon {
 							img {
 								&.img-fluid {
-									min-width: 100%;
+									max-width: 125px;
 								}
-							}
-						}
-					}
-				}
-				&#case_study {
-					div {
-						&.item { 
-							div {
-								&.img {
-									height: 275px; // change
-								}
-							}
+							}							
 						}
 					}
 				}

@@ -1433,11 +1433,8 @@ body.page-template-fall-protection-101 main section#banner div.page_title, body.
       font-size: 131%;
       line-height: 150%; } }
 
-body.page-template-fall-protection-101 main section#inline_solutions div.item img.img-fluid {
-  min-width: 100%; }
-
-body.page-template-fall-protection-101 main section#case_study div.item div.img {
-  height: 275px; }
+body.page-template-fall-protection-101 main section#fp_icons span.fp_icon img.img-fluid {
+  max-width: 125px; }
 
 body.page-template-fall-protection-101 main section#cf_contactFormTitle {
   background-color: #156cb3;
