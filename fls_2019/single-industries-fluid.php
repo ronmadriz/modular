@@ -48,13 +48,13 @@ if ($industry_gallery) {
 	echo '<section id="gallery">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	if (!empty($gallery_img)):
-	echo '<div class="row justify-content-center mb-md-3"><div class="col-12 col-md-8 text-md-center"><img src="'.$gallery_img['url'].'" alt="'.$gallery_img['alt'].'" class="img-fluid"></div></div>'.PHP_EOL;
+	echo '<div class="row justify-content-center mb-md-3"><div class="col-12 text-md-center"><img src="'.$gallery_img['url'].'" alt="'.$gallery_img['alt'].'" class="img-fluid"></div></div>'.PHP_EOL;
 	endif;
 	echo '<div class="row justify-content-center mb-md-3"><div class="content text-md-center col-12">'.PHP_EOL;
 	if ($gallery_pics):
 	echo '<ul class="gallery list-unstyled list-inline">'.PHP_EOL;
 	foreach ($gallery_pics as $gallery_pic):
-	echo '<li class="list-inline-item col-6 col-md-3 col-xl-2">'.PHP_EOL;
+	echo '<li class="list-inline-item col-6 col-md-3 col-lg-2 col-xl-1">'.PHP_EOL;
 	echo '<a href="'.$gallery_pic['url'].'" data-gallery="fls-gallery" data-toggle="lightbox">'.PHP_EOL;
 	echo '<img src="'.$gallery_pic['sizes']['thumbnail'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid">'.PHP_EOL;
 	echo '</a>'.PHP_EOL;

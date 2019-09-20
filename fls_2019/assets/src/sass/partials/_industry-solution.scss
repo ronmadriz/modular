@@ -121,10 +121,22 @@ body {
 					}
 				}
 				&#gallery {
-					padding-top:2rem;
+					padding-top:2rem;					
 					img {
 						&.img-fluid {
 							min-width: 100%;
+						}
+					}
+					div {
+						&.content {
+							&.gallery {
+								padding-left: 0;
+								padding-right: 0;
+								ul {
+									margin-block-start:0;
+									margin-block-end:0;
+								}
+							}
 						}
 					}
 				}
@@ -157,6 +169,12 @@ body {
 								&.img-fluid {
 									max-width: 125px;
 								}
+							}
+						}
+						&.fl_content {
+							h2 {
+								text-transform:uppercase;
+								color:$accent_1;
 							}
 						}
 					}							
