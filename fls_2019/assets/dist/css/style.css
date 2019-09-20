@@ -1436,6 +1436,9 @@ body.page-template-fall-protection-101 main section#banner div.page_title, body.
 body.page-template-fall-protection-101 main section#fp_icons span.fp_icon img.img-fluid {
   max-width: 125px; }
 
+body.page-template-fall-protection-101 main section#fp_icons span.fp_content h3 {
+  text-align: center; }
+
 body.page-template-fall-protection-101 main section#cf_contactFormTitle {
   background-color: #156cb3;
   padding-top: 1rem; }
