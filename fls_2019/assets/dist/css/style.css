@@ -1342,6 +1342,8 @@ body.industries-template-single-industries-fluid main section#icons, body.indust
   body.industries-template-single-industries-fluid main section#icons div.fl_content h2, body.industries-template-single-industries-2019 main section#icons div.fl_content h2 {
     text-transform: uppercase;
     color: #156cb3; }
+  body.industries-template-single-industries-fluid main section#icons div.fl_content p, body.industries-template-single-industries-2019 main section#icons div.fl_content p {
+    margin-bottom: 0; }
 
 body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-2019 main section#inline_solutions {
   padding-top: 2rem;
