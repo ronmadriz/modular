@@ -1299,7 +1299,7 @@ body.industries-template-single-industries-fluid main section#main-content, body
 
 body.industries-template-single-industries-fluid main section#gallery, body.industries-template-single-industries-2019 main section#gallery {
   padding-top: 2rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 2rem; }
   body.industries-template-single-industries-fluid main section#gallery img.img-fluid, body.industries-template-single-industries-2019 main section#gallery img.img-fluid {
     min-width: 100%; }
   body.industries-template-single-industries-fluid main section#gallery div.content.gallery, body.industries-template-single-industries-2019 main section#gallery div.content.gallery {
@@ -1332,7 +1332,7 @@ body.industries-template-single-industries-fluid main section#cf_contactForm, bo
     height: 5.5rem; }
 
 body.industries-template-single-industries-fluid main section#icons, body.industries-template-single-industries-2019 main section#icons {
-  padding-top: 2rem; }
+  padding-top: 3rem; }
   body.industries-template-single-industries-fluid main section#icons div:not(:last-of-type).row, body.industries-template-single-industries-2019 main section#icons div:not(:last-of-type).row {
     margin-bottom: 2rem; }
   body.industries-template-single-industries-fluid main section#icons div .fl_thumb, body.industries-template-single-industries-2019 main section#icons div .fl_thumb {
