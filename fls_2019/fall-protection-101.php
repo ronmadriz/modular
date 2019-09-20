@@ -48,7 +48,7 @@ if (have_rows('fp_icons')) {
 		$fp_icon_src = $fp_icon['url'];
 		$fp_icon_alt = $fp_icon['alt'];
 		$fp_content  = get_sub_field('fp_content');
-		echo '<div class="fp_icon col-12 col-md-6 col-lg-3">'.PHP_EOL;
+		echo '<div class="fp_icon col-12 col-md-6 col-xl-3">'.PHP_EOL;
 		echo '<span class="fp_icon d-block text-center"><img src="'.$fp_icon_src.'" alt="'.$fp_icon_alt.'" class="img-fluid"></span>'.PHP_EOL;
 		echo '<span class="fp_content d-block">'.$fp_content.'</span>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
