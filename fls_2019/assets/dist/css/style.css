@@ -1298,7 +1298,8 @@ body.industries-template-single-industries-fluid main section#main-content, body
     letter-spacing: .0125px; }
 
 body.industries-template-single-industries-fluid main section#gallery, body.industries-template-single-industries-2019 main section#gallery {
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  padding-bottom: 1rem; }
   body.industries-template-single-industries-fluid main section#gallery img.img-fluid, body.industries-template-single-industries-2019 main section#gallery img.img-fluid {
     min-width: 100%; }
   body.industries-template-single-industries-fluid main section#gallery div.content.gallery, body.industries-template-single-industries-2019 main section#gallery div.content.gallery {
@@ -1325,7 +1326,8 @@ body.industries-template-single-industries-fluid main section#cf_contactFormTitl
 body.industries-template-single-industries-fluid main section#cf_contactForm, body.industries-template-single-industries-2019 main section#cf_contactForm {
   background-color: #e6e7e9;
   padding-top: 1rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  margin-bottom: 1rem; }
   body.industries-template-single-industries-fluid main section#cf_contactForm textarea, body.industries-template-single-industries-2019 main section#cf_contactForm textarea {
     height: 5.5rem; }
 
@@ -1353,8 +1355,13 @@ body.industries-template-single-industries-fluid main section#inline_solutions, 
       color: #404040;
       line-height: 1.45rem;
       font-weight: 700;
-      font-size: 1.3rem;
-      font-family: "Oswald", helvetica, sans-serif; }
+      font-size: 1.3rem; }
+      @media (min-width: 992px) {
+        body.industries-template-single-industries-fluid main section#inline_solutions div.title a, body.industries-template-single-industries-2019 main section#inline_solutions div.title a {
+          font-size: 1.83rem;
+          font-weight: 300;
+          margin-bottom: 1.25rem;
+          margin-top: 1.25rem; } }
   body.industries-template-single-industries-fluid main section#inline_solutions div.desc, body.industries-template-single-industries-2019 main section#inline_solutions div.desc {
     margin-bottom: 2rem; }
     body.industries-template-single-industries-fluid main section#inline_solutions div.desc a, body.industries-template-single-industries-2019 main section#inline_solutions div.desc a {

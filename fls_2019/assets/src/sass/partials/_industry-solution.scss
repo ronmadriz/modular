@@ -121,7 +121,8 @@ body {
 					}
 				}
 				&#gallery {
-					padding-top:2rem;					
+					padding-top:2rem;
+				    padding-bottom: 1rem;
 					img {
 						&.img-fluid {
 							min-width: 100%;
@@ -159,6 +160,7 @@ body {
 					background-color: $accent_3;
 					padding-top:1rem;
 					padding-bottom:1rem;
+					margin-bottom: 1rem;
 					textarea {
 						height: 5.5rem;						
 					}
@@ -201,7 +203,12 @@ body {
 								line-height:1.45rem;
 								font-weight:700;
 								font-size:1.3rem;
-								font-family:$tertiary;
+								@media(min-width:992px){
+								    font-size: 1.83rem;
+								    font-weight:300;
+								    margin-bottom: 1.25rem;
+								    margin-top: 1.25rem;
+								}
 							}
 						}
 						&.desc {
