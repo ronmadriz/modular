@@ -169,8 +169,8 @@ body {
 					padding-top:2rem;
 					div {
 						&:not(:last-of-type) {
-							.row {
-								margin-bottom:1rem;
+							&.row {
+								margin-bottom:2rem;
 							}
 						}
 						.fl_thumb {
@@ -208,6 +208,7 @@ body {
 								    font-weight:300;
 								    margin-bottom: 1.25rem;
 								    margin-top: 1.25rem;
+								    font-family: $tertiary;
 								}
 							}
 						}

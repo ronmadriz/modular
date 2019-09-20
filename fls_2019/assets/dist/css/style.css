@@ -1333,8 +1333,8 @@ body.industries-template-single-industries-fluid main section#cf_contactForm, bo
 
 body.industries-template-single-industries-fluid main section#icons, body.industries-template-single-industries-2019 main section#icons {
   padding-top: 2rem; }
-  body.industries-template-single-industries-fluid main section#icons div:not(:last-of-type) .row, body.industries-template-single-industries-2019 main section#icons div:not(:last-of-type) .row {
-    margin-bottom: 1rem; }
+  body.industries-template-single-industries-fluid main section#icons div:not(:last-of-type).row, body.industries-template-single-industries-2019 main section#icons div:not(:last-of-type).row {
+    margin-bottom: 2rem; }
   body.industries-template-single-industries-fluid main section#icons div .fl_thumb, body.industries-template-single-industries-2019 main section#icons div .fl_thumb {
     padding: 1rem 1rem 1rem 0; }
     body.industries-template-single-industries-fluid main section#icons div .fl_thumb img.img-fluid, body.industries-template-single-industries-2019 main section#icons div .fl_thumb img.img-fluid {
@@ -1361,7 +1361,8 @@ body.industries-template-single-industries-fluid main section#inline_solutions, 
           font-size: 1.83rem;
           font-weight: 300;
           margin-bottom: 1.25rem;
-          margin-top: 1.25rem; } }
+          margin-top: 1.25rem;
+          font-family: "Oswald", helvetica, sans-serif; } }
   body.industries-template-single-industries-fluid main section#inline_solutions div.desc, body.industries-template-single-industries-2019 main section#inline_solutions div.desc {
     margin-bottom: 2rem; }
     body.industries-template-single-industries-fluid main section#inline_solutions div.desc a, body.industries-template-single-industries-2019 main section#inline_solutions div.desc a {
