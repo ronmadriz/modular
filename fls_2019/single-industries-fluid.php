@@ -95,8 +95,8 @@ if (have_rows('icon_row')) {
 			$fl_image   = get_sub_field('icon_image');
 			$fl_content = get_sub_field('icon_content');
 			echo '<div class="row h-100 justify-content-center align-items-md-center">'.PHP_EOL;
-			echo '<div class="fl_thumb col-3 col-md-2 text-md-center"><img src="'.$fl_image['url'].'" class="img-fluid" alt=""></div>'.PHP_EOL;
-			echo '<div class="fl_content col-9 col-md-10">'.$fl_content.'</div>'.PHP_EOL;
+			echo '<div class="fl_thumb col-3 col-md-2 col-lg-1 text-md-center"><img src="'.$fl_image['url'].'" class="img-fluid" alt=""></div>'.PHP_EOL;
+			echo '<div class="fl_content col-9 col-md-10 col-lg-11">'.$fl_content.'</div>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 		}
 		echo '</div>'.PHP_EOL;
