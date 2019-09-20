@@ -59,7 +59,18 @@ body {
 					textarea {
 						height: 5.5rem;						
 					}
-				}			
+				}
+				&#fp_101 {
+					div {
+						&.row {
+							margin-top:.5rem;							
+							margin-bottom:.5rem;
+							h2 {
+							    margin-bottom: 1rem;
+							}
+						}
+					}
+				}
 			}
 		}
 	}	
