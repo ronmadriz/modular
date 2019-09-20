@@ -1257,6 +1257,8 @@ body.industries-template-single-industries-fluid main section#case_study div.ite
   height: 275px; }
 
 @media (min-width: 1600px) {
+  body.industries-template-single-industries-fluid section#banner div.w-image {
+    min-height: 585px; }
   body.industries-template-single-industries-fluid p {
     font-size: 120%;
     line-height: 170%;

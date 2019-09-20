@@ -53,6 +53,9 @@ body {
 			}
 		}
 		@media(min-width:1600px){
+			section#banner div.w-image {
+			    min-height: 585px;
+			}			
 			p {
 				font-size:120%;
 				line-height:170%;
