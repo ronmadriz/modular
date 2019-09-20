@@ -1483,7 +1483,8 @@ svg .region path {
 
 body.page-template-fall-protection-101 main section#banner div.page_title, body.page-template-fall-protection-101 main section#breadcrumbs, body.page-template-fall-protection-101 main section#main-content, body.page-template-fall-protection-101 main section#fp_101, body.page-template-fall-protection-101 main section#fp_info, body.page-template-fall-protection-101 main section#cf_contactForm, body.page-template-fall-protection-101 main section#fp_icons {
   padding-left: 5%;
-  padding-right: 5%; }
+  padding-right: 5%;
+  margin-bottom: 2rem; }
   @media (min-width: 992px) and (max-width: 1299.99px) {
     body.page-template-fall-protection-101 main section#banner div.page_title, body.page-template-fall-protection-101 main section#breadcrumbs, body.page-template-fall-protection-101 main section#main-content, body.page-template-fall-protection-101 main section#fp_101, body.page-template-fall-protection-101 main section#fp_info, body.page-template-fall-protection-101 main section#cf_contactForm, body.page-template-fall-protection-101 main section#fp_icons {
       padding-left: 10%;
