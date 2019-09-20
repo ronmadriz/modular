@@ -1304,13 +1304,13 @@ body.industries-template-single-industries-fluid main section#gallery, body.indu
   body.industries-template-single-industries-fluid main section#gallery div.content.gallery, body.industries-template-single-industries-2019 main section#gallery div.content.gallery {
     padding-left: 0;
     padding-right: 0; }
-    body.industries-template-single-industries-fluid main section#gallery div.content.gallery ul, body.industries-template-single-industries-2019 main section#gallery div.content.gallery ul {
+    body.industries-template-single-industries-fluid main section#gallery div.content.gallery ul.gallery, body.industries-template-single-industries-2019 main section#gallery div.content.gallery ul.gallery {
       -webkit-margin-before: 0;
               margin-block-start: 0;
       -webkit-margin-after: 0;
               margin-block-end: 0; }
       @media (min-width: 992px) {
-        body.industries-template-single-industries-fluid main section#gallery div.content.gallery ul li, body.industries-template-single-industries-2019 main section#gallery div.content.gallery ul li {
+        body.industries-template-single-industries-fluid main section#gallery div.content.gallery ul.gallery li, body.industries-template-single-industries-2019 main section#gallery div.content.gallery ul.gallery li {
           max-width: 15.7%;
           -webkit-box-flex: 0;
               -ms-flex: 0 0 15.7%;
