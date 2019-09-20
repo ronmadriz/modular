@@ -1510,13 +1510,15 @@ body.page-template-fall-protection-101 main section#fp_icons span.fp_content h3 
 
 body.page-template-fall-protection-101 main section#cf_contactFormTitle {
   background-color: #156cb3;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  margin-top: 2rem; }
   body.page-template-fall-protection-101 main section#cf_contactFormTitle h1 {
     color: white; }
 
 body.page-template-fall-protection-101 main section#cf_contactForm {
   background-color: #e6e7e9;
   padding-top: 1rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  margin-bottom: 3rem; }
   body.page-template-fall-protection-101 main section#cf_contactForm textarea {
     height: 5.5rem; }
