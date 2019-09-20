@@ -210,6 +210,17 @@ body {
 						}
 					}
 				}
+				&#case_study {
+					div {
+						&.item {
+							div {
+								&.content {
+									padding-left:30px;
+								}
+							}
+						}
+					}
+				}
 				&#testimonial {
 					div {
 						&.section_title {
