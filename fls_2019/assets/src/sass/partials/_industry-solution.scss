@@ -202,7 +202,10 @@ body {
 								display:block;
 								text-align:center;
 								color:$black;
-								line-height:2.15rem;
+								line-height:1.45rem;
+								@media(min-width:1600px) {
+									line-height:2.15rem;
+								}
 							}
 						}
 					}

@@ -1355,7 +1355,10 @@ body.industries-template-single-industries-fluid main section#inline_solutions, 
       display: block;
       text-align: center;
       color: #404040;
-      line-height: 2.15rem; }
+      line-height: 1.45rem; }
+      @media (min-width: 1600px) {
+        body.industries-template-single-industries-fluid main section#inline_solutions div.desc a, body.industries-template-single-industries-2019 main section#inline_solutions div.desc a {
+          line-height: 2.15rem; } }
 
 body.industries-template-single-industries-fluid main section#testimonial div.section_title, body.industries-template-single-industries-2019 main section#testimonial div.section_title {
   margin-bottom: 0; }
