@@ -10,7 +10,7 @@ function the_breadcrumb() {
 
 		// Start the breadcrumb with a link to your homepage
 		echo '<section id="breadcrumbs">'.PHP_EOL;
-		echo (is_single(array(1117126, 'fall-protection-101'))?'<div class="container-fluid">':'<div class="container">').PHP_EOL;
+		echo (is_single(1117126) || is_page('fall-protection-101')?'<div class="container-fluid">':'<div class="container">').PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
 		echo '<div class="col-12">'.PHP_EOL;
 		echo '<ul class="list-inline">'.PHP_EOL;
