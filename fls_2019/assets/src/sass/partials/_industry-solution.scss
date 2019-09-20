@@ -135,6 +135,12 @@ body {
 								ul {
 									margin-block-start:0;
 									margin-block-end:0;
+									li {
+										@media (min-width: 992px) {
+											max-width: 15.7%;
+											flex: 0 0 15.7%;											
+										}
+									}
 								}
 							}
 						}
