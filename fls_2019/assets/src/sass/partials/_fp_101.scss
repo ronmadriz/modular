@@ -65,7 +65,8 @@ body {
 							img {
 								&.img-fluid {
 									position: absolute;
-									bottom: -1rem;									
+									bottom: -1rem;
+									max-height: 475px;
 								}
 							}							
 						}

@@ -1524,7 +1524,8 @@ body.page-template-fall-protection-101 main section#cf_contactForm {
     height: 5.5rem; }
   body.page-template-fall-protection-101 main section#cf_contactForm div#fp_101_form_th img.img-fluid {
     position: absolute;
-    bottom: -1rem; }
+    bottom: -1rem;
+    max-height: 475px; }
 
 body.page-template-fall-protection-101 main section#fp_101 div.row {
   margin-top: .5rem;
