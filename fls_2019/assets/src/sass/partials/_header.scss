@@ -75,7 +75,7 @@ body {
 			}
 		}
 	}
-	&:not(.industries-template-single-industries-fluid), &:not(#page-fall-protection-101) {
+	&:not(.industries-template-single-industries-fluid) {
 		main {
 			section {
 				&#banner {
@@ -100,5 +100,22 @@ body {
 				}
 			}
 		}
+	}
+	&#page-fall-protection-101 {
+		main {
+			section {
+				&#banner {
+					div {
+						&.page_title {
+							@media(min-width: 786px){
+								&::after {
+									display:none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}		
 	}	
 }
