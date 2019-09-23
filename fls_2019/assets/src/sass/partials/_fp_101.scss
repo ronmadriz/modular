@@ -59,6 +59,19 @@ body {
 					textarea {
 						height: 5.5rem;						
 					}
+					div {
+						&#fp_101_form {
+							
+						}
+						&#fp_101_form_th {
+							img {
+								&.img-fluid {
+									position: absolute;
+									bottom: -1rem;									
+								}
+							}							
+						}
+					}
 				}
 				&#fp_101 {
 					div {
