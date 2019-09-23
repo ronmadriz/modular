@@ -127,7 +127,7 @@ body main section#banner {
     min-height: 450px; }
 
 @media (min-width: 786px) {
-  body:not(.industries-template-single-industries-fluid) main section#banner div.page_title::after, body:not(.page-template-fall-protection-101) main section#banner div.page_title::after {
+  body:not(.industries-template-single-industries-fluid) main section#banner div.page_title::after, body:not(#page-fall-protection-101) main section#banner div.page_title::after {
     height: 100%;
     width: 7rem;
     border-radius: 0;
@@ -453,7 +453,7 @@ body main section#banner {
     min-height: 450px; }
 
 @media (min-width: 786px) {
-  body:not(.industries-template-single-industries-fluid) main section#banner div.page_title::after, body:not(.page-template-fall-protection-101) main section#banner div.page_title::after {
+  body:not(.industries-template-single-industries-fluid) main section#banner div.page_title::after, body:not(#page-fall-protection-101) main section#banner div.page_title::after {
     height: 100%;
     width: 7rem;
     border-radius: 0;
