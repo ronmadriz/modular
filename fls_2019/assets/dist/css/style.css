@@ -1564,6 +1564,8 @@ body.page-template-fall-protection-101 main section#fp_101 div.row {
   margin-bottom: .5rem; }
   body.page-template-fall-protection-101 main section#fp_101 div.row h2 {
     margin-bottom: 1rem; }
-  body.page-template-fall-protection-101 main section#fp_101 div.row#fp_101_intro {
-    border-bottom: 1px solid #e3ece3;
-    margin-bottom: 1.55em; }
+  body.page-template-fall-protection-101 main section#fp_101 div.row#fp_101_intro hr {
+    margin-top: 1.55rem;
+    margin-bottom: 1.55rem;
+    border: 0;
+    border-top: 1px solid #e3ece3; }
