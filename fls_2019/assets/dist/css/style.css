@@ -1496,7 +1496,11 @@ body.page-template-fall-protection-101 main section#banner div.page_title, body.
       font-size: 131%;
       line-height: 150%; } }
 
-body.page-template-fall-protection-101 main section#banner div.page_title, body.page-template-fall-protection-101 main section#breadcrumbs {
+@media (min-width: 1350px) {
+  body.page-template-fall-protection-101 main section#banner {
+    height: 600px; } }
+
+body.page-template-fall-protection-101 main section#banner div.page_title, body.page-template-fall-protection-101 main section#banner#breadcrumbs {
   margin-bottom: 0; }
 
 body.page-template-fall-protection-101 main section#breadcrumbs ul.list-inline {

@@ -17,8 +17,13 @@ body {
 					    line-height: 150%;
 					}
 				}
-				&#banner div.page_title, &#breadcrumbs {
-					margin-bottom:0;
+				&#banner {
+					@media(min-width: 1350px) {
+						height: 600px;
+					}
+					div.page_title, &#breadcrumbs {
+						margin-bottom:0;
+					}
 				}
 				&#breadcrumbs {
 					ul {
