@@ -93,9 +93,7 @@ $tabbed_intro   = get_field('tabbed_content_introduction');
 $tabbed_content = get_field('tabbed_content');
 echo '<section id="fp_101">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
-echo '<div class="row">'.PHP_EOL;
-echo (!empty($tabbed_intro)?'<div id="fp_101_intro" class="col-12 text-center">'.$tabbed_intro.'</div>'.PHP_EOL:'');
-echo '</div>'.PHP_EOL;
+echo (!empty($tabbed_intro)?'<div id="fp_101_intro" class="row"><div class="col-12 text-center">'.$tabbed_intro.'</div></div>'.PHP_EOL:'');
 if (have_rows('tabbed_content')) {
 	$fp_counter = 1;
 	while (have_rows('tabbed_content')) {
