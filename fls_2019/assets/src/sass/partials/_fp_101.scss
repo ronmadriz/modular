@@ -16,6 +16,52 @@ body {
 					    font-size: 131%;
 					    line-height: 150%;
 					}
+					@media(min-width:1600px){
+						section#banner div.w-image {
+						    min-height: 585px;
+						}			
+						p {
+							font-size:120%;
+							line-height:170%;
+							font-weight:300;
+							margin:0 0 30px;
+						}
+						h3 {
+							font-size: 1.75rem;	
+						}
+						a {
+							line-height: 1.75rem;
+						}
+						div.title a {
+							font-size: 1.6rem;
+							line-height: 1.75rem;	
+						}
+
+						h1 {
+							font-size: 1.75rem;
+							
+						}
+						h4 {
+							font-size: 1.75rem;	
+						}
+
+
+						a.btn.btn-dark {
+							font-size: 1.25rem;
+						}
+
+						main form input.form-control[type=date], main form input.form-control[type=email], main form input.form-control[type=password], main form input.form-control[type=tel], main form input.form-control[type=text], main form input.medium[type=date], main form input.medium[type=email], main form input.medium[type=password], main form input.medium[type=tel], main form input.medium[type=text] {
+							margin-bottom: 1rem;
+							font-size: 1.25rem;
+						}
+						.form-control{
+							font-size: 1.25rem;
+						}
+
+						main form select, main form textarea {
+							margin-bottom: 1.25rem;
+						}			
+					}					
 				}
 				&#banner {
 					@media(min-width: 1350px) {
