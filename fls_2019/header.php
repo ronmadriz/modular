@@ -98,7 +98,7 @@ $company_pages_args = array(
 );
 wp_nav_menu($company_pages_args);
 echo '</li>'.PHP_EOL;
-echo '</ul></li>'.PHP_EOL;
+echo '</ul>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
