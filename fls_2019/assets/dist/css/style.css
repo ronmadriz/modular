@@ -1502,7 +1502,8 @@ body.page-template-fall-protection-101 main section#banner div.page_title, body.
       font-size: 120%;
       line-height: 170%;
       font-weight: 300;
-      margin: 0 0 30px; }
+      margin: 0 0 30px;
+      padding: 1rem 0; }
     body.page-template-fall-protection-101 main section#banner div.page_title h3, body.page-template-fall-protection-101 main section#breadcrumbs h3, body.page-template-fall-protection-101 main section#main-content h3, body.page-template-fall-protection-101 main section#fp_101 h3, body.page-template-fall-protection-101 main section#fp_info h3, body.page-template-fall-protection-101 main section#cf_contactForm h3, body.page-template-fall-protection-101 main section#fp_icons h3 {
       font-size: 1.75rem; }
     body.page-template-fall-protection-101 main section#banner div.page_title a, body.page-template-fall-protection-101 main section#breadcrumbs a, body.page-template-fall-protection-101 main section#main-content a, body.page-template-fall-protection-101 main section#fp_101 a, body.page-template-fall-protection-101 main section#fp_info a, body.page-template-fall-protection-101 main section#cf_contactForm a, body.page-template-fall-protection-101 main section#fp_icons a {
@@ -1522,7 +1523,10 @@ body.page-template-fall-protection-101 main section#banner div.page_title, body.
     body.page-template-fall-protection-101 main section#banner div.page_title .form-control, body.page-template-fall-protection-101 main section#breadcrumbs .form-control, body.page-template-fall-protection-101 main section#main-content .form-control, body.page-template-fall-protection-101 main section#fp_101 .form-control, body.page-template-fall-protection-101 main section#fp_info .form-control, body.page-template-fall-protection-101 main section#cf_contactForm .form-control, body.page-template-fall-protection-101 main section#fp_icons .form-control {
       font-size: 1.25rem; }
     body.page-template-fall-protection-101 main section#banner div.page_title main form select, body.page-template-fall-protection-101 main section#banner div.page_title main form textarea, body.page-template-fall-protection-101 main section#breadcrumbs main form select, body.page-template-fall-protection-101 main section#breadcrumbs main form textarea, body.page-template-fall-protection-101 main section#main-content main form select, body.page-template-fall-protection-101 main section#main-content main form textarea, body.page-template-fall-protection-101 main section#fp_101 main form select, body.page-template-fall-protection-101 main section#fp_101 main form textarea, body.page-template-fall-protection-101 main section#fp_info main form select, body.page-template-fall-protection-101 main section#fp_info main form textarea, body.page-template-fall-protection-101 main section#cf_contactForm main form select, body.page-template-fall-protection-101 main section#cf_contactForm main form textarea, body.page-template-fall-protection-101 main section#fp_icons main form select, body.page-template-fall-protection-101 main section#fp_icons main form textarea {
-      margin-bottom: 1.25rem; } }
+      margin-bottom: 1.25rem; }
+    body.page-template-fall-protection-101 main section#banner div.page_title .fp_icon, body.page-template-fall-protection-101 main section#breadcrumbs .fp_icon, body.page-template-fall-protection-101 main section#main-content .fp_icon, body.page-template-fall-protection-101 main section#fp_101 .fp_icon, body.page-template-fall-protection-101 main section#fp_info .fp_icon, body.page-template-fall-protection-101 main section#cf_contactForm .fp_icon, body.page-template-fall-protection-101 main section#fp_icons .fp_icon {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; } }
 
 @media (min-width: 1350px) {
   body.page-template-fall-protection-101 main section#banner {

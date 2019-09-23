@@ -25,6 +25,7 @@ body {
 							line-height:170%;
 							font-weight:300;
 							margin:0 0 30px;
+						    padding: 1rem 0;
 						}
 						h3 {
 							font-size: 1.75rem;	
@@ -60,7 +61,11 @@ body {
 
 						main form select, main form textarea {
 							margin-bottom: 1.25rem;
-						}			
+						}
+						.fp_icon {
+						    padding-left: 1.5rem;
+						    padding-right: 1.5rem;
+						}
 					}					
 				}
 				&#banner {
