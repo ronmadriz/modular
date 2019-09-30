@@ -1674,3 +1674,7 @@ body.page-template-sample-fall-protection-plan main section#fp_101 div.row {
     margin-bottom: 1.55rem;
     border: 0;
     border-top: 1px solid #e3ece3; }
+  body.page-template-sample-fall-protection-plan main section#fp_101 div.row.item {
+    margin-bottom: 2rem; }
+    body.page-template-sample-fall-protection-plan main section#fp_101 div.row.item div.fp_icon {
+      max-height: 200px; }

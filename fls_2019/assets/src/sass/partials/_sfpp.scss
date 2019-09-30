@@ -144,6 +144,14 @@ body {
 									border-top: 1px solid #e3ece3;
 								}
 							}
+							&.item {
+								margin-bottom:2rem;
+								div {
+									&.fp_icon {
+										max-height:200px;
+									}
+								}
+							}
 						}
 					}
 				}
