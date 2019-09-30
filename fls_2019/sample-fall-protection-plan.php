@@ -101,7 +101,7 @@ if (have_rows('tabbed_content')) {
 		$fp_content = get_sub_field('content');
 		the_row();
 		echo '<div class="row">'.PHP_EOL;
-		echo (!empty($fp_title)?'<div class="fp_title col-12"><h2>1.'.$fp_counter++ .' '.$fp_title.'</h2></div>'.PHP_EOL:'');
+		echo (!empty($fp_title)?'<div class="fp_title col-12"><h2>6.1.'.$fp_counter++ .' '.$fp_title.'</h2></div>'.PHP_EOL:'');
 		echo (!empty($fp_content)?'<div class="fp_content col-12">'.$fp_content.'</div>'.PHP_EOL:'');
 		echo '</div>'.PHP_EOL;
 	}
