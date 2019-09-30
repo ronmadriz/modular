@@ -70,7 +70,7 @@ if (have_rows('tabbed_content')) {
 		$fp_icon_alt = $fp_icon['alt'];
 		$fp_content  = get_sub_field('content');
 		the_row();
-		echo '<div class="row">'.PHP_EOL;
+		echo '<div class="item row">'.PHP_EOL;
 		echo (!empty($fp_icon)?'<div class="fp_icon col-4"><img src="'.$fp_icon_src.'" alt="'.$fp_icon_alt.'" class="img-fluid"></div>'.PHP_EOL:'');
 		echo (!empty($fp_title)?'<div class="fp_content_area col-8"><span class="fp_title d-block"><h2>6.1.'.$fp_counter++ .' '.$fp_title.'</h2></span>'.PHP_EOL:'');
 		echo (!empty($fp_content)?'<span class="fp_content d-block">'.$fp_content.'</span></div>'.PHP_EOL:'');
