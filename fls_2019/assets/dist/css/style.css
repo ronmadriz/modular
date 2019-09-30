@@ -1690,5 +1690,5 @@ body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row {
       border: 0;
       border-bottom: 1px solid #000; }
     body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row.item:not(:last-of-type) {
-      border-bottom: 1px solid #e3ece3;
+      border-bottom: 1px solid gray;
       padding-bottom: 2rem; }
