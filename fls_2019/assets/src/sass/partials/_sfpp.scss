@@ -83,22 +83,6 @@ body {
 						}
 					}
 				}
-				&#fp_icons {
-					span {
-						&.fp_icon {
-							img {
-								&.img-fluid {
-									max-width: 150px;
-								}
-							}							
-						}
-						&.fp_content {
-							h3 {
-								text-align: center;
-							}
-						}
-					}
-				}
 				&#cf_contactFormTitle {
 					background-color: $accent_1;
 					padding-top:1rem;
@@ -151,6 +135,15 @@ body {
 								div {
 									&.fp_icon {
 										max-height:200px;
+										@media(max-width: 786px){
+										    text-align: center;
+										    margin-bottom: 2rem;
+										    img {
+										    	&.img-fluid {
+										    		height:100%;
+										    	}
+										    }
+										}
 									}
 								}
 								&:not(:last-of-type) {
