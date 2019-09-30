@@ -1313,6 +1313,9 @@ body.industries-template-single-industries-fluid main section#gallery, body.indu
   body.industries-template-single-industries-fluid main section#gallery div.content.gallery, body.industries-template-single-industries-2019 main section#gallery div.content.gallery {
     padding-left: 0;
     padding-right: 0; }
+  @media (max-width: 786px) {
+    body.industries-template-single-industries-fluid main section#gallery div#gallery_img, body.industries-template-single-industries-2019 main section#gallery div#gallery_img {
+      margin-bottom: .25rem; } }
   body.industries-template-single-industries-fluid main section#gallery div ul.gallery, body.industries-template-single-industries-2019 main section#gallery div ul.gallery {
     -webkit-margin-before: 0;
             margin-block-start: 0;
@@ -1324,6 +1327,9 @@ body.industries-template-single-industries-fluid main section#gallery, body.indu
         -webkit-box-flex: 0;
             -ms-flex: 0 0 15.7%;
                 flex: 0 0 15.7%; } }
+    @media (max-width: 786px) {
+      body.industries-template-single-industries-fluid main section#gallery div ul.gallery li, body.industries-template-single-industries-2019 main section#gallery div ul.gallery li {
+        width: 49.275%; } }
 
 body.industries-template-single-industries-fluid main section#cf_contactFormTitle, body.industries-template-single-industries-2019 main section#cf_contactFormTitle {
   background-color: #156cb3;
