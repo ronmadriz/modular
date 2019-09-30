@@ -1572,10 +1572,11 @@ body.page-template-fall-protection-101 main section#cf_contactForm {
   margin-bottom: 3rem; }
   body.page-template-fall-protection-101 main section#cf_contactForm textarea {
     height: 5.5rem; }
-  body.page-template-fall-protection-101 main section#cf_contactForm div#fp_101_form_th img.img-fluid {
-    position: absolute;
-    bottom: -1rem;
-    max-height: 475px; }
+  @media (min-width: 786px) {
+    body.page-template-fall-protection-101 main section#cf_contactForm div#fp_101_form_th img.img-fluid {
+      position: absolute;
+      bottom: -1rem;
+      max-height: 475px; } }
 
 body.page-template-fall-protection-101 main section#fp_101 div.row {
   margin-top: .5rem;
@@ -1665,10 +1666,11 @@ body.page-template-sample-fall-protection-plan main section#cf_contactForm {
   margin-bottom: 3rem; }
   body.page-template-sample-fall-protection-plan main section#cf_contactForm textarea {
     height: 5.5rem; }
-  body.page-template-sample-fall-protection-plan main section#cf_contactForm div#fp_101_form_th img.img-fluid {
-    position: absolute;
-    bottom: -1rem;
-    max-height: 475px; }
+  @media (min-width: 786px) {
+    body.page-template-sample-fall-protection-plan main section#cf_contactForm div#fp_101_form_th img.img-fluid {
+      position: absolute;
+      bottom: -1rem;
+      max-height: 475px; } }
 
 body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row {
   margin-top: .5rem;
