@@ -145,6 +145,14 @@ body {
 										    }
 										}
 									}
+									&.fp_content_area {
+										input {
+											&.underline {
+												border: 0;
+												border-bottom: 1px solid #000;												
+											}
+										}
+									}
 								}
 								&:not(:last-of-type) {
 									border-bottom: 1px solid $keyline;
