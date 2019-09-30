@@ -141,17 +141,20 @@ body {
 									margin-top: 1.55rem;
 									margin-bottom: 1.55rem;
 									border: 0;
-									border-top: 1px solid #e3ece3;
+									border-top: 1px solid $keyline;
 								}
 							}
 							&.item {
 								margin-bottom:3rem;
-							    padding-bottom:2rem;
 								div {
 									&.fp_icon {
 										max-height:200px;
 									}
 								}
+								&:not(:last-of-type) {
+									border-bottom: 1px solid $keyline;
+								    padding-bottom: 2rem;
+								}								
 							}
 						}
 					}

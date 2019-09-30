@@ -1675,7 +1675,9 @@ body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row {
     border: 0;
     border-top: 1px solid #e3ece3; }
   body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row.item {
-    margin-bottom: 3rem;
-    padding-bottom: 2rem; }
+    margin-bottom: 3rem; }
     body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row.item div.fp_icon {
       max-height: 200px; }
+    body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row.item:not(:last-of-type) {
+      border-bottom: 1px solid #e3ece3;
+      padding-bottom: 2rem; }
