@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Fall Protection 101
+ * Template Name: Sample Fall Protection Plan
  */
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
