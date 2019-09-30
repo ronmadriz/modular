@@ -37,6 +37,23 @@ echo '</section>'.PHP_EOL;
 
 // End Industry Main Column
 
+// FP 101 Contact Form
+
+$cf_contactForm_code = get_field('cf_contactForm_code');
+$cf_contactForm      = do_shortcode($cf_contactForm_code);
+if ($cf_contactForm) {
+	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center">How can we help?</h1></div></div></div></section>'.PHP_EOL;
+	echo '<section id="cf_contactForm">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;// made fluid
+	echo '<div class="row">'.PHP_EOL;
+	echo '<div class="col-12">'.PHP_EOL;
+	echo $cf_contactForm;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+}
+
 // Icons
 if (have_rows('fp_icons')) {
 	echo '<section id="fp_icons">'.PHP_EOL;
@@ -65,23 +82,6 @@ if (!empty($fp_info)) {
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="col-12">'.$fp_info.'</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-}
-
-// FP 101 Contact Form
-
-$cf_contactForm_code = get_field('cf_contactForm_code');
-$cf_contactForm      = do_shortcode($cf_contactForm_code);
-if ($cf_contactForm) {
-	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center">How can we help?</h1></div></div></div></section>'.PHP_EOL;
-	echo '<section id="cf_contactForm">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;// made fluid
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="col-12">'.PHP_EOL;
-	echo $cf_contactForm;
-	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
