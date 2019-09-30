@@ -54,39 +54,6 @@ if ($cf_contactForm) {
 	echo '</section>'.PHP_EOL;
 }
 
-// Icons
-if (have_rows('fp_icons')) {
-	echo '<section id="fp_icons">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
-	while (have_rows('fp_icons')) {
-		the_row();
-		$fp_icon     = get_sub_field('fp_icon');
-		$fp_icon_src = $fp_icon['url'];
-		$fp_icon_alt = $fp_icon['alt'];
-		$fp_content  = get_sub_field('fp_content');
-		echo '<div class="fp_icon col-12 col-md-6 col-xl-3">'.PHP_EOL;
-		echo '<span class="fp_icon d-block text-center"><img src="'.$fp_icon_src.'" alt="'.$fp_icon_alt.'" class="img-fluid"></span>'.PHP_EOL;
-		echo '<span class="fp_content d-block">'.$fp_content.'</span>'.PHP_EOL;
-		echo '</div>'.PHP_EOL;
-	}
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-}
-
-// Fall Protection 101 Info
-$fp_info = get_field('fp_info');
-if (!empty($fp_info)) {
-	echo '<section id="fp_info">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="col-12">'.$fp_info.'</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-}
-
 // Tabbed Content
 
 $tabbed_intro   = get_field('tabbed_content_introduction');
@@ -97,12 +64,16 @@ echo (!empty($tabbed_intro)?'<div id="sfpp_plan_intro" class="row"><div class="c
 if (have_rows('tabbed_content')) {
 	$fp_counter = 1;
 	while (have_rows('tabbed_content')) {
-		$fp_title   = get_sub_field('title');
-		$fp_content = get_sub_field('content');
+		$fp_title    = get_sub_field('title');
+		$fp_icon     = get_sub_field('fp_icon');
+		$fp_icon_src = $fp_icon['url'];
+		$fp_icon_alt = $fp_icon['alt'];
+		$fp_content  = get_sub_field('content');
 		the_row();
 		echo '<div class="row">'.PHP_EOL;
-		echo (!empty($fp_title)?'<div class="fp_title col-12"><h2>6.1.'.$fp_counter++ .' '.$fp_title.'</h2></div>'.PHP_EOL:'');
-		echo (!empty($fp_content)?'<div class="fp_content col-12">'.$fp_content.'</div>'.PHP_EOL:'');
+		echo (!empty($fp_icon)?'<div class="fp_icon col-4"><img src="'.$fp_icon_src.'" alt="'.$fp_icon_alt.'" class="img-fluid"></div>'.PHP_EOL:'');
+		echo (!empty($fp_title)?'<div class="fp_content_area col-8"><span class="fp_title d-block"><h2>6.1.'.$fp_counter++ .' '.$fp_title.'</h2></span>'.PHP_EOL:'');
+		echo (!empty($fp_content)?'<span class="fp_content d-block">'.$fp_content.'</span></div>'.PHP_EOL:'');
 		echo '</div>'.PHP_EOL;
 	}
 }
