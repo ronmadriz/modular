@@ -1664,17 +1664,17 @@ body.page-template-sample-fall-protection-plan main section#cf_contactForm {
     bottom: -1rem;
     max-height: 475px; }
 
-body.page-template-sample-fall-protection-plan main section#fp_101 div.row {
+body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row {
   margin-top: .5rem;
   margin-bottom: .5rem; }
-  body.page-template-sample-fall-protection-plan main section#fp_101 div.row h2 {
+  body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row h2 {
     margin-bottom: 1rem; }
-  body.page-template-sample-fall-protection-plan main section#fp_101 div.row#fp_101_intro hr {
+  body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row#fp_101_intro hr {
     margin-top: 1.55rem;
     margin-bottom: 1.55rem;
     border: 0;
     border-top: 1px solid #e3ece3; }
-  body.page-template-sample-fall-protection-plan main section#fp_101 div.row.item {
-    margin-bottom: 2rem; }
-    body.page-template-sample-fall-protection-plan main section#fp_101 div.row.item div.fp_icon {
+  body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row.item {
+    margin-bottom: 3rem; }
+    body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row.item div.fp_icon {
       max-height: 200px; }
