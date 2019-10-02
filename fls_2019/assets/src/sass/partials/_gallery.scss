@@ -41,9 +41,11 @@ body {
 								    width: initial;
 								    height: initial;
 								    text-indent: initial;
-									&.active img {
-									    opacity: 0.7;
+									&.active {
 									    border:1px solid $alternate;
+										img {
+										    opacity: 0.7;
+										}
 									}
 									&:before, &:after {
 										display:none;

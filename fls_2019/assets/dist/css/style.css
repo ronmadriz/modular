@@ -1255,9 +1255,10 @@ body section#gallery div#flsCarousel .thumb_nav {
       width: initial;
       height: initial;
       text-indent: initial; }
-      body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators > li.active img {
-        opacity: 0.7;
+      body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators > li.active {
         border: 1px solid white; }
+        body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators > li.active img {
+          opacity: 0.7; }
       body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators > li:before, body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators > li:after {
         display: none; }
 
