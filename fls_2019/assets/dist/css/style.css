@@ -1253,6 +1253,8 @@ body section#gallery div#flsCarousel .thumb_nav {
       background-color: none; }
       body section#gallery div#flsCarousel .thumb_nav #thumbs span.active img {
         opacity: 0.7; }
+    body section#gallery div#flsCarousel .thumb_nav #thumbs span:hover {
+      cursor: pointer; }
   body section#gallery div#flsCarousel .thumb_nav span.th_nav {
     width: 40px;
     height: 91%;
