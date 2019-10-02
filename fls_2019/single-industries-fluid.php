@@ -74,8 +74,8 @@ if ($industry_gallery) {
 	$gall_count++;
 	endforeach;
 	echo '</div>';
-	echo '<span id="left" class="th_nav float-left"><i class="fa fa-chevron-left"></i></span>'.PHP_EOL;
-	echo '<span id="right" class="th_nav float-right"><i class="fa fa-chevron-right"></i></span>'.PHP_EOL;
+	echo '<span id="left" class="th_nav d-inline-block float-left"><i class="fa fa-chevron-left"></i></span>'.PHP_EOL;
+	echo '<span id="right" class="th_nav d-inline-block float-right"><i class="fa fa-chevron-right"></i></span>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	endif;
 	echo '</div>'.PHP_EOL;
