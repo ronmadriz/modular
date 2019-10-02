@@ -1346,13 +1346,14 @@ body.industries-template-single-industries-fluid main section#main-content, body
     letter-spacing: .0125px; }
 
 body.industries-template-single-industries-fluid main section#gallery, body.industries-template-single-industries-2019 main section#gallery {
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-top: 2rem 0; }
   body.industries-template-single-industries-fluid main section#gallery img.img-fluid, body.industries-template-single-industries-2019 main section#gallery img.img-fluid {
     min-width: 100%; }
-  body.industries-template-single-industries-fluid main section#gallery div.content.gallery, body.industries-template-single-industries-2019 main section#gallery div.content.gallery {
-    padding-left: 0;
+  body.industries-template-single-industries-fluid main section#gallery div.content, body.industries-template-single-industries-2019 main section#gallery div.content {
     padding-right: 0; }
+    body.industries-template-single-industries-fluid main section#gallery div.content.gallery, body.industries-template-single-industries-2019 main section#gallery div.content.gallery {
+      padding-left: 0;
+      padding-right: 0; }
   @media (max-width: 786px) {
     body.industries-template-single-industries-fluid main section#gallery div#gallery_img, body.industries-template-single-industries-2019 main section#gallery div#gallery_img {
       margin-bottom: .25rem; } }
