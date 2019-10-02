@@ -141,7 +141,7 @@ body main section#banner {
     z-index: 1; } }
 
 @media (min-width: 786px) {
-  body .industries-template-single-industries-fluid main section#banner div.page_title::after, body .page-template-sample-fall-protection-plan main section#banner div.page_title::after, body .page-template-fall-protection-101 main section#banner div.page_title::after {
+  body.industries-template-single-industries-fluid main section#banner div.page_title::after, body.page-template-sample-fall-protection-plan main section#banner div.page_title::after, body.page-template-fall-protection-101 main section#banner div.page_title::after {
     display: none; } }
 
 html body a {
@@ -471,7 +471,7 @@ body main section#banner {
     z-index: 1; } }
 
 @media (min-width: 786px) {
-  body .industries-template-single-industries-fluid main section#banner div.page_title::after, body .page-template-sample-fall-protection-plan main section#banner div.page_title::after, body .page-template-fall-protection-101 main section#banner div.page_title::after {
+  body.industries-template-single-industries-fluid main section#banner div.page_title::after, body.page-template-sample-fall-protection-plan main section#banner div.page_title::after, body.page-template-fall-protection-101 main section#banner div.page_title::after {
     display: none; } }
 
 body header nav.navbar {
