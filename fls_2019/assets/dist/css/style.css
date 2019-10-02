@@ -1250,7 +1250,9 @@ body section#gallery div#flsCarousel .thumb_nav {
     position: static;
     left: initial;
     width: initial;
-    margin-left: initial; }
+    margin-left: initial;
+    -webkit-margin-after: 0;
+            margin-block-end: 0; }
     body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators > li {
       width: initial;
       height: initial;
