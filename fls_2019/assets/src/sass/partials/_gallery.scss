@@ -35,6 +35,9 @@ body {
 							overflow-x: auto;
 							position: absolute;
 							#thumb_list {
+								position:absolute;
+								left:0;
+								width:auto;								
 							    span {
 									&.active {
 									    border:1px solid $alternate;

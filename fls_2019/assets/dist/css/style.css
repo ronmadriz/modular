@@ -1248,13 +1248,17 @@ body section#gallery div#flsCarousel .thumb_nav {
     width: 100%;
     overflow-x: auto;
     position: absolute; }
-    body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span.active {
-      border: 1px solid white;
-      background-color: none; }
-      body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span.active img {
-        opacity: 0.7; }
-    body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span:hover {
-      cursor: pointer; }
+    body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list {
+      position: absolute;
+      left: 0;
+      width: auto; }
+      body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span.active {
+        border: 1px solid white;
+        background-color: none; }
+        body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span.active img {
+          opacity: 0.7; }
+      body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span:hover {
+        cursor: pointer; }
   body section#gallery div#flsCarousel .thumb_nav span.th_nav {
     width: 40px;
     height: 91%;
