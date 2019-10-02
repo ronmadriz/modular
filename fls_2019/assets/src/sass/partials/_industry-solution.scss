@@ -142,20 +142,10 @@ body {
 							@media(max-width:786px){
 								margin-bottom: .25rem;
 							}						
-						}						
-						ul {
-							&.gallery {
-								margin-block-start:0;
-								margin-block-end:0;
-								li {
-									@media (min-width: 992px) {
-										max-width: 15.7%;
-										flex: 0 0 15.7%;
-									}
-									@media(max-width:786px){
-										width:49.275%;
-									}									
-								}
+						}
+						&#carousel_controls {
+							a {
+								width:50%;
 							}
 						}
 					}
