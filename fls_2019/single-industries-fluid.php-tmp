@@ -59,7 +59,7 @@ if ($industry_gallery) {
 	echo '<div class="carousel-item'.($gal_counter == 0?' active':'').'" data-slide-number="'.$gal_counter.'">'.PHP_EOL;
 	echo '<img src="'.$gallery_pic['sizes']['full'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid">'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
-	$gal_counter++
+	$gal_counter++;
 	endforeach;
 	echo '</div>'.PHP_EOL;
 	echo '<a class="carousel-control left pt-3" href="#flsCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>'.PHP_EOL;
@@ -72,7 +72,7 @@ if ($industry_gallery) {
 	echo '<img src="'.$gallery_pic['sizes']['thumbnail'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid">'.PHP_EOL;
 	echo '</a>'.PHP_EOL;
 	echo '</li>'.PHP_EOL;
-	$gall_count++
+	$gall_count++;
 	endforeach;
 	echo '</ul>';
 	echo '</div>'.PHP_EOL;
