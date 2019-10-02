@@ -31,11 +31,22 @@ body {
 					    padding: .5rem 1rem;
 					    .thumbs {
 						    overflow-x:auto;
+						    position:absolute;
 						    width:85%;
+						    margin-left:-50%;
 					    }
 					    span {
 					    	&.th_nav {
-					    		color:$alternate;
+								width:40px;
+								height:40px;
+								position:absolute;
+								color:$alternate;
+					    	}
+					    	&#thumb_left {
+								left:0px;
+					    	}
+					    	&#thumb_right {
+								right:0px;
 					    	}
 					    }
 					}

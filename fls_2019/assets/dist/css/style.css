@@ -1245,9 +1245,18 @@ body section#gallery div#flsCarousel .thumb_nav {
   padding: .5rem 1rem; }
   body section#gallery div#flsCarousel .thumb_nav .thumbs {
     overflow-x: auto;
-    width: 85%; }
+    position: absolute;
+    width: 85%;
+    margin-left: -50%; }
   body section#gallery div#flsCarousel .thumb_nav span.th_nav {
+    width: 40px;
+    height: 40px;
+    position: absolute;
     color: white; }
+  body section#gallery div#flsCarousel .thumb_nav span#thumb_left {
+    left: 0px; }
+  body section#gallery div#flsCarousel .thumb_nav span#thumb_right {
+    right: 0px; }
 
 body.solutions-template div.testimonials {
   background-color: #f7f7f7;
