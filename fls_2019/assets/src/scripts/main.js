@@ -30,7 +30,18 @@ j(document).ready(function(){
     j('svg a').click(function(event){
       j('a').attr("target", "_top");
     });
-
+    // carousel Nav
+    var view = j("#thumbs");
+    var move = "100px";
+    var sliderLimit = -750;
+    j("#thumb_right").click(function(){
+        var currentPosition = parseInt(view.css("left"));
+        if (currentPosition >= sliderLimit) view.stop(false,true).animate({left:"-="+move},{ duration: 400})
+    });
+    j("#thumb_left").click(function(){
+        var currentPosition = parseInt(view.css("left"));
+        if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 400});
+    });
 });
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
@@ -74,23 +85,6 @@ jQuery(
       j('.navbar .dropdown > a').click(function() {
         location.href = this.href;
       });
-var view = j("#tslshow");
-var move = "100px";
-var sliderLimit = -750;
-
-j("#thumb_right").click(function(){
-
-    var currentPosition = parseInt(view.css("left"));
-    if (currentPosition >= sliderLimit) view.stop(false,true).animate({left:"-="+move},{ duration: 400})
-
-});
-
-j("#thumb_left").click(function(){
-
-    var currentPosition = parseInt(view.css("left"));
-    if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 400});
-
-});      
     }
   }
 );
