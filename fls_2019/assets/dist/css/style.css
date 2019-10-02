@@ -127,7 +127,11 @@ body main section#banner {
     min-height: 450px; }
 
 @media (min-width: 786px) {
-  body:not(.industries-template-single-industries-fluid) main section#banner div.page_title::after, body:not(.page-template-sample-fall-protection-plan) main section#banner div.page_title::after, body:not(.page-template-fall-protection-101) main section#banner div.page_title::after {
+  body#page-fall-protection-101 main section#banner div.page_title::after {
+    display: none; } }
+
+@media (min-width: 786px) {
+  :not(.industries-template-single-industries-fluid) main section#banner div.page_title::after, :not(.page-template-sample-fall-protection-plan) main section#banner div.page_title::after, :not(.page-template-fall-protection-101) main section#banner div.page_title::after {
     height: 100%;
     width: 7rem;
     border-radius: 0;
@@ -139,10 +143,6 @@ body main section#banner {
     -webkit-transform: skewX(40deg);
             transform: skewX(40deg);
     z-index: 1; } }
-
-@media (min-width: 786px) {
-  body#page-fall-protection-101 main section#banner div.page_title::after {
-    display: none; } }
 
 html body a {
   color: #156cb3; }
@@ -457,7 +457,11 @@ body main section#banner {
     min-height: 450px; }
 
 @media (min-width: 786px) {
-  body:not(.industries-template-single-industries-fluid) main section#banner div.page_title::after, body:not(.page-template-sample-fall-protection-plan) main section#banner div.page_title::after, body:not(.page-template-fall-protection-101) main section#banner div.page_title::after {
+  body#page-fall-protection-101 main section#banner div.page_title::after {
+    display: none; } }
+
+@media (min-width: 786px) {
+  :not(.industries-template-single-industries-fluid) main section#banner div.page_title::after, :not(.page-template-sample-fall-protection-plan) main section#banner div.page_title::after, :not(.page-template-fall-protection-101) main section#banner div.page_title::after {
     height: 100%;
     width: 7rem;
     border-radius: 0;
@@ -469,10 +473,6 @@ body main section#banner {
     -webkit-transform: skewX(40deg);
             transform: skewX(40deg);
     z-index: 1; } }
-
-@media (min-width: 786px) {
-  body#page-fall-protection-101 main section#banner div.page_title::after {
-    display: none; } }
 
 body header nav.navbar {
   -webkit-box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.24);

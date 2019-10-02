@@ -75,32 +75,6 @@ body {
 			}
 		}
 	}
-	&:not(.industries-template-single-industries-fluid), &:not(.page-template-sample-fall-protection-plan), &:not(.page-template-fall-protection-101) {
-		main {
-			section {
-				&#banner {
-					div {
-						&.page_title {
-							@media(min-width: 786px){
-								&::after {
-									height: 100%;
-									width:7rem;
-									border-radius: 0;
-									background-color: $accent_1;
-									content: "";
-									position: absolute;
-									right: -3.1em;
-									bottom: 0rem;
-									transform: skewX(40deg);
-									z-index: 1;
-								}
-							}
-						}
-					}					
-				}
-			}
-		}
-	}
 	&#page-fall-protection-101 {
 		main {
 			section {
@@ -118,4 +92,30 @@ body {
 			}
 		}		
 	}	
+}
+:not(.industries-template-single-industries-fluid), :not(.page-template-sample-fall-protection-plan), :not(.page-template-fall-protection-101) {
+	main {
+		section {
+			&#banner {
+				div {
+					&.page_title {
+						@media(min-width: 786px){
+							&::after {
+								height: 100%;
+								width:7rem;
+								border-radius: 0;
+								background-color: $accent_1;
+								content: "";
+								position: absolute;
+								right: -3.1em;
+								bottom: 0rem;
+								transform: skewX(40deg);
+								z-index: 1;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
