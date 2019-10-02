@@ -1268,6 +1268,8 @@ body section#gallery div#flsCarousel .thumb_nav {
     opacity: 1;
     top: .5rem;
     background: #333333; }
+    body section#gallery div#flsCarousel .thumb_nav span.th_nav:hover {
+      cursor: pointer; }
   body section#gallery div#flsCarousel .thumb_nav span#thumb_left {
     left: 0px; }
   body section#gallery div#flsCarousel .thumb_nav span#thumb_right {
