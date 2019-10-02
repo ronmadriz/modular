@@ -59,8 +59,6 @@ if ($industry_gallery) {
 	echo '</div>'.PHP_EOL;
 	$gal_counter++;
 	endforeach;
-    echo '<a class="carousel-control left pt-3" href="#flsCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>'.PHP_EOL;
-    echo '<a class="carousel-control right pt-3" href="#flsCarousel" data-slide="next"><i class="fa fa-chevron-right"></i></a'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	$gall_count = 0;
 	endif;
