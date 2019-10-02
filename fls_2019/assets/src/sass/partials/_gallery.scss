@@ -41,8 +41,10 @@ body {
 								    width: initial;
 								    height: initial;
 								    text-indent: initial;
+								    background-color: none;
 									&.active {
 									    border:1px solid $alternate;
+									    background-color: none;
 										img {
 										    opacity: 0.7;
 										}
