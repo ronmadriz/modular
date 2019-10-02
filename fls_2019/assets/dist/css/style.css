@@ -1258,6 +1258,8 @@ body section#gallery div#flsCarousel .thumb_nav {
       body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators > li.active img {
         opacity: 0.7;
         border: 1px solid white; }
+      body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators > li:before, body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators > li:after {
+        display: none; }
 
 body.solutions-template div.testimonials {
   background-color: #f7f7f7;
