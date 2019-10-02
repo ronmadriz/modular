@@ -29,10 +29,9 @@ body {
 					    bottom: 0;
 					    background-color: rgba(0,0,0,.5);
 					    padding: .5rem 1rem;
-					    .thumbs {
-						    overflow-x:auto;
-						    position:absolute;
-						    width:85%;
+					    #thumbs {
+						    max-width: 98%;
+						    overflow-x: auto;
 						    margin-left:-50%;
 					    }
 					    span {

@@ -1243,10 +1243,9 @@ body section#gallery div#flsCarousel .thumb_nav {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   padding: .5rem 1rem; }
-  body section#gallery div#flsCarousel .thumb_nav .thumbs {
+  body section#gallery div#flsCarousel .thumb_nav #thumbs {
+    max-width: 98%;
     overflow-x: auto;
-    position: absolute;
-    width: 85%;
     margin-left: -50%; }
   body section#gallery div#flsCarousel .thumb_nav span.th_nav {
     width: 40px;
