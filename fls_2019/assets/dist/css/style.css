@@ -1243,7 +1243,7 @@ body section#gallery div#flsCarousel .thumb_nav {
   z-index: 1000;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem; }
+  padding: .5rem 1rem; }
   body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators {
     position: static;
     left: initial;
