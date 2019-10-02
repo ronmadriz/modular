@@ -1250,9 +1250,12 @@ body section#gallery div#flsCarousel .thumb_nav {
     margin-left: -50%; }
   body section#gallery div#flsCarousel .thumb_nav span.th_nav {
     width: 40px;
-    height: 40px;
+    height: 90%;
     position: absolute;
-    color: white; }
+    color: white;
+    z-index: 1000;
+    opacity: 1;
+    background: #333333; }
   body section#gallery div#flsCarousel .thumb_nav span#thumb_left {
     left: 0px; }
   body section#gallery div#flsCarousel .thumb_nav span#thumb_right {

@@ -37,10 +37,13 @@ body {
 					    }
 					    span {
 					    	&.th_nav {
-								width:40px;
-								height:40px;
-								position:absolute;
-								color:$alternate;
+    width: 40px;
+    height: 90%;
+    position: absolute;
+    color: $alternate;
+    z-index: 1000;
+    opacity: 1;
+    background: $dark;
 					    	}
 					    	&#thumb_left {
 								left:0px;
