@@ -1246,6 +1246,11 @@ body section#gallery div#flsCarousel .thumb_nav {
   body section#gallery div#flsCarousel .thumb_nav #thumbs {
     max-width: 98%;
     overflow-x: auto; }
+    body section#gallery div#flsCarousel .thumb_nav #thumbs span.active {
+      border: 1px solid white;
+      background-color: none; }
+      body section#gallery div#flsCarousel .thumb_nav #thumbs span.active img {
+        opacity: 0.7; }
   body section#gallery div#flsCarousel .thumb_nav span.th_nav {
     width: 40px;
     height: 90%;
