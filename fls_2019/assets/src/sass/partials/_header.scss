@@ -75,25 +75,6 @@ body {
 			}
 		}
 	}
-	&#page-fall-protection-101 {
-		main {
-			section {
-				&#banner {
-					div {
-						&.page_title {
-							@media(min-width: 786px){
-								&::after {
-									display:none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}		
-	}	
-}
-:not(.industries-template-single-industries-fluid), :not(.page-template-sample-fall-protection-plan), :not(.page-template-fall-protection-101) {
 	main {
 		section {
 			&#banner {
@@ -114,8 +95,25 @@ body {
 							}
 						}
 					}
-				}
+				}					
 			}
 		}
 	}
+	.industries-template-single-industries-fluid, .page-template-sample-fall-protection-plan, .page-template-fall-protection-101 {
+		main {
+			section {
+				&#banner {
+					div {
+						&.page_title {
+							@media(min-width: 786px){
+								&::after {
+									display:none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}		
+	}	
 }
