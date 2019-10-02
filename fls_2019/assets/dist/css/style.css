@@ -1238,12 +1238,13 @@ body ul.gallery li {
 
 body section#gallery div#flsCarousel .thumb_nav {
   white-space: nowrap;
-  overflow-x: auto;
   position: absolute;
   z-index: 1000;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   padding: .5rem 1rem; }
+  body section#gallery div#flsCarousel .thumb_nav .thumbs {
+    overflow-x: auto; }
 
 body.solutions-template div.testimonials {
   background-color: #f7f7f7;
