@@ -1246,6 +1246,8 @@ body section#gallery div#flsCarousel .thumb_nav {
   body section#gallery div#flsCarousel .thumb_nav .thumbs {
     overflow-x: auto;
     width: 85%; }
+  body section#gallery div#flsCarousel .thumb_nav span.th_nav {
+    color: white; }
 
 body.solutions-template div.testimonials {
   background-color: #f7f7f7;
