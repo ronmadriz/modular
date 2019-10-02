@@ -32,8 +32,7 @@ body {
 					    #thumbs {
 							max-width: 100%;
 							overflow-x: auto;
-							left: 40px;
-							position: relative;
+							position: absolute;
 						    span {
 								&.active {
 								    border:1px solid $alternate;
