@@ -63,7 +63,8 @@ if ($industry_gallery) {
 	endif;
 	$gallery_photos  = get_sub_field('gallery_pics');
 	if($gallery_photos):
-	echo '<div class="thumb_nav col-12 justify-content-center align-items-center text-cente">'.PHP_EOL;
+	echo '<div class="thumb_nav col-12 align-items-center">'.PHP_EOL;
+	echo '<div class="thumbs">'
 	foreach ($gallery_photos as $gallery_photo):
 	echo '<span class="d-inline-block'.($gall_count == 0?' active':'').'"" data-slide-to="'.$gall_count.'" data-target="#flsCarousel">'.PHP_EOL;
 	echo '<a id="carousel-selector-'.$gall_count.'"'.($gall_count == 0?' class="selected"':'').'>'.PHP_EOL;
@@ -72,6 +73,9 @@ if ($industry_gallery) {
 	echo '</span>'.PHP_EOL;
 	$gall_count++;
 	endforeach;
+	echo '</div>';
+	echo '<span id="th_nav_left" class="float-left"><i class="fa fa-chevron-left"></i></span>'.PHP_EOL;
+	echo '<span id="th_nav_right" class="float-right"><i class="fa fa-chevron-right"></i></span>'.PHP_EOL;
 	echo '</div>';
 	endif;
 	echo '</div>'.PHP_EOL;

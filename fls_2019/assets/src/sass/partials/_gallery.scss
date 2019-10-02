@@ -30,31 +30,6 @@ body {
 					    bottom: 0;
 					    background-color: rgba(0,0,0,.5);
 					    padding: .5rem 1rem;
-					    ul {
-							&.carousel-indicators {
-							    position: static;
-							    left: initial;
-							    width: initial;
-							    margin-left: initial;
-							    margin-block-end: 0;
-								> li {
-								    width: initial;
-								    height: initial;
-								    text-indent: initial;
-								    background-color: none;
-									&.active {
-									    border:1px solid $alternate;
-									    background-color: none;
-										img {
-										    opacity: 0.7;
-										}
-									}
-									&:before, &:after {
-										display:none;
-									}
-								}
-							}
-					    }
 					}
 				}
 			}

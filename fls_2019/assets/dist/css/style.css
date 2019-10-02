@@ -1244,25 +1244,6 @@ body section#gallery div#flsCarousel .thumb_nav {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   padding: .5rem 1rem; }
-  body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators {
-    position: static;
-    left: initial;
-    width: initial;
-    margin-left: initial;
-    -webkit-margin-after: 0;
-            margin-block-end: 0; }
-    body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators > li {
-      width: initial;
-      height: initial;
-      text-indent: initial;
-      background-color: none; }
-      body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators > li.active {
-        border: 1px solid white;
-        background-color: none; }
-        body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators > li.active img {
-          opacity: 0.7; }
-      body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators > li:before, body section#gallery div#flsCarousel .thumb_nav ul.carousel-indicators > li:after {
-        display: none; }
 
 body.solutions-template div.testimonials {
   background-color: #f7f7f7;
