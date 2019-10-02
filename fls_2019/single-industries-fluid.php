@@ -59,7 +59,6 @@ if ($industry_gallery) {
 	echo '</div>'.PHP_EOL;
 	$gal_counter++;
 	endforeach;
-	echo '</div>'.PHP_EOL;
 	$gall_count = 0;
 	endif;
 	$gallery_photos  = get_sub_field('gallery_pics');
@@ -77,6 +76,7 @@ if ($industry_gallery) {
 	echo '</ul>';
 	echo '</div>';
 	endif;
+	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
