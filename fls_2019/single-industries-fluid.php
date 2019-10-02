@@ -64,16 +64,14 @@ if ($industry_gallery) {
 	$gallery_photos  = get_sub_field('gallery_pics');
 	if($gallery_photos):
 	echo '<div class="thumb_nav col-12 justify-content-center align-items-center text-cente">'.PHP_EOL;
-	echo '<ul class="carousel-indicators justify-content-center align-items-center text-center">'.PHP_EOL;
 	foreach ($gallery_photos as $gallery_photo):
-	echo '<li'.($gall_count == 0?' class="active"':'').' data-slide-to="'.$gall_count.'" data-target="#flsCarousel">'.PHP_EOL;
+	echo '<span class="'.($gall_count == 0?' active':'').'"" data-slide-to="'.$gall_count.'" data-target="#flsCarousel">'.PHP_EOL;
 	echo '<a id="carousel-selector-'.$gall_count.'"'.($gall_count == 0?' class="selected"':'').'>'.PHP_EOL;
 	echo '<img src="'.$gallery_photo['sizes']['thumbnail'].'" alt="'.$gallery_photo['alt'].'" class="img-fluid">'.PHP_EOL;
 	echo '</a>'.PHP_EOL;
-	echo '</li>'.PHP_EOL;
+	echo '</span>'.PHP_EOL;
 	$gall_count++;
 	endforeach;
-	echo '</ul>';
 	echo '</div>';
 	endif;
 	echo '</div>'.PHP_EOL;
