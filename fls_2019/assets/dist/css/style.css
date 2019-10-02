@@ -1361,7 +1361,8 @@ body.industries-template-single-industries-fluid main section#gallery, body.indu
     body.industries-template-single-industries-fluid main section#gallery div#gallery_img, body.industries-template-single-industries-2019 main section#gallery div#gallery_img {
       margin-bottom: .25rem; } }
   body.industries-template-single-industries-fluid main section#gallery div#carousel_controls a, body.industries-template-single-industries-2019 main section#gallery div#carousel_controls a {
-    width: 50%; }
+    width: 50%;
+    text-align: center; }
 
 body.industries-template-single-industries-fluid main section#cf_contactFormTitle, body.industries-template-single-industries-2019 main section#cf_contactFormTitle {
   background-color: #156cb3;
