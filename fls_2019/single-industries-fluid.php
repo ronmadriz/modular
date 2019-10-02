@@ -63,7 +63,7 @@ if ($industry_gallery) {
 	endif;
 	$gallery_photos  = get_sub_field('gallery_pics');
 	if($gallery_photos):
-	echo '<div class="thumb_nav col-12 align-items-center">'.PHP_EOL;
+	echo '<div class="thumb_nav col-12 align-items-center justify-content-center">'.PHP_EOL;
 	echo '<span id="left" class="th_nav d-inline-block float-left align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></span>'.PHP_EOL;
 	echo '<div class="thumbs">'.PHP_EOL;
 	foreach ($gallery_photos as $gallery_photo):
