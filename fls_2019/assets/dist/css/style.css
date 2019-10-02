@@ -1244,7 +1244,8 @@ body section#gallery div#flsCarousel .thumb_nav {
   background-color: rgba(0, 0, 0, 0.5);
   padding: .5rem 1rem; }
   body section#gallery div#flsCarousel .thumb_nav .thumbs {
-    overflow-x: auto; }
+    overflow-x: auto;
+    width: 85%; }
 
 body.solutions-template div.testimonials {
   background-color: #f7f7f7;

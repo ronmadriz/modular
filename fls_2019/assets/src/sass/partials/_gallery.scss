@@ -31,6 +31,12 @@ body {
 					    padding: .5rem 1rem;
 					    .thumbs {
 						    overflow-x:auto;
+						    width:85%;
+					    }
+					    span {
+					    	&.th_nav {
+					    		
+					    	}
 					    }
 					}
 				}
