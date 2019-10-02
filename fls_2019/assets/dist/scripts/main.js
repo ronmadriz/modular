@@ -200,7 +200,7 @@ j(document).ready(function(){
       j('a').attr("target", "_top");
     });
     // carousel Nav
-    var view = j("#thumbs");
+    var view = j("#thumb_list");
     var move = "100px";
     var sliderLimit = -750;
     j("#thumb_right").click(function(){

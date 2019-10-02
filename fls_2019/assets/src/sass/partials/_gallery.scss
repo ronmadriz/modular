@@ -31,21 +31,23 @@ body {
 					    padding: .5rem 1rem;
 				        height: 170px;
 					    #thumbs {
-							max-width: 100%;
+							width: 100%;
 							overflow-x: auto;
 							position: absolute;
-						    span {
-								&.active {
-								    border:1px solid $alternate;
-								    background-color: none;
-									img {
-									    opacity: 0.7;
+							#thumb_list {
+							    span {
+									&.active {
+									    border:1px solid $alternate;
+									    background-color: none;
+										img {
+										    opacity: 0.7;
+										}
 									}
-								}
-								&:hover {
-									cursor: pointer;
-								}
-						    }
+									&:hover {
+										cursor: pointer;
+									}
+							    }								
+							}
 					    }
 					    span {
 					    	&.th_nav {
