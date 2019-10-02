@@ -121,8 +121,9 @@ body {
 					}
 				}
 				&#gallery {
+					padding:2rem 0 0;
 					@media(min-width:768px) {
-						padding:2rem 0;
+						padding:2rem 100px;
 					}
 					img {
 						&.img-fluid {
