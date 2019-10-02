@@ -66,6 +66,7 @@ if ($industry_gallery) {
 	endif;
 	$gallery_photos  = get_sub_field('gallery_pics');
 	if($gallery_photos):
+	echo '<div class="thumb_nav col-12">'
 	echo '<ul class="carousel-indicators list-inline">'.PHP_EOL;
 	foreach ($gallery_photos as $gallery_photo):
 	echo '<li class="list-inline-item'.($gall_count == 0?' active':'').'" data-slide-to="'.$gall_count.'" data-target="#flsCarousel">'.PHP_EOL;
@@ -76,6 +77,7 @@ if ($industry_gallery) {
 	$gall_count++;
 	endforeach;
 	echo '</ul>';
+	echo '</div>';
 	endif;
 	echo '</div>'.PHP_EOL;
 	echo '</div></div>'.PHP_EOL;
