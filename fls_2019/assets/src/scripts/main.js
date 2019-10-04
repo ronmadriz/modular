@@ -42,6 +42,20 @@ j(document).ready(function(){
         var currentPosition = parseInt(view.css("left"));
         if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 400});
     });
+
+    if (target) {
+      var targetOffset = $target.offset().top - 50;
+      j(this).click(function(event) {
+        if(event != 'undefined') {
+            event.preventDefault();}
+        j(scrollElem).animate({scrollTop: targetOffset}, 400, function(e) {
+            e.preventDefault();
+            location.hash = target;
+        });
+      });
+    }
+
+
 });
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
