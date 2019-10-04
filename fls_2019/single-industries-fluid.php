@@ -89,6 +89,27 @@ if ($industry_gallery) {
 	endwhile;
 	;
 }
+
+// TESTIMONIALS
+
+$industry_testimonials = get_field('industry_testimonials');
+if ($industry_testimonials) {
+	$testimonial = $industry_testimonials;
+	setup_postdata($testimonial);
+	echo '<section id="testimonial">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="row justify-content-center">'.PHP_EOL;
+	echo '<div class="content col-12">'.PHP_EOL;
+	echo '<span class="sr-only">customer testimonial</span>'.PHP_EOL;
+	echo get_the_content();
+	echo '<p class="text-right">~ '.get_the_title($industry_testimonials).'</p>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+	wp_reset_postdata();
+}
+
+// CTA
 echo '<section id="cta_blue"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center"><a href="#cf_contactFormTitle">Speak with a fall protection specialist</a></div></div></div></section>'.PHP_EOL;
 
 // ICONS
@@ -110,24 +131,7 @@ if (have_rows('icon_row')) {
 		echo '</section>'.PHP_EOL;
 	}
 }
-// TESTIMONIALS
 
-$industry_testimonials = get_field('industry_testimonials');
-if ($industry_testimonials) {
-	$testimonial = $industry_testimonials;
-	setup_postdata($testimonial);
-	echo '<section id="testimonial">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
-	echo '<div class="row justify-content-center">'.PHP_EOL;
-	echo '<div class="content col-12">'.PHP_EOL;
-	echo '<span class="sr-only">customer testimonial</span>'.PHP_EOL;
-	echo get_the_content();
-	echo '<p class="text-right">~ '.get_the_title($industry_testimonials).'</p>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-	wp_reset_postdata();
-}
 // SOLUTIONS
 $solutions_footercs = get_field('solutions_footer');
 if ($solutions_footercs) {
@@ -165,21 +169,6 @@ if ($solutions_footercs) {
 	wp_reset_query();
 }
 
-$cf_contactForm = do_shortcode('[contact-form-7 id="1117125" title="Single Fluid - Contact Form"]');
-
-if ($cf_contactForm) {
-	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center">How can we help?</h1></div></div></div></section>'.PHP_EOL;
-	echo '<section id="cf_contactForm">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;// made fluid
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="col-12">'.PHP_EOL;
-	echo $cf_contactForm;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-}
-
 // CASE STUDIES
 
 $case_studies = get_field('case_study_groups');
@@ -215,6 +204,20 @@ if (have_rows('case_study_groups')) {
 	}
 	endwhile;
 	wp_reset_postdata();
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+}
+$cf_contactForm = do_shortcode('[contact-form-7 id="1117125" title="Single Fluid - Contact Form"]');
+
+if ($cf_contactForm) {
+	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center">How can we help?</h1></div></div></div></section>'.PHP_EOL;
+	echo '<section id="cf_contactForm">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;// made fluid
+	echo '<div class="row">'.PHP_EOL;
+	echo '<div class="col-12">'.PHP_EOL;
+	echo $cf_contactForm;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
