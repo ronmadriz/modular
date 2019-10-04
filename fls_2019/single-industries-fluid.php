@@ -117,7 +117,7 @@ if ($industry_testimonials) {
 	$testimonial = $industry_testimonials;
 	setup_postdata($testimonial);
 	echo '<section id="testimonial">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row justify-content-center">'.PHP_EOL;
 	echo '<div class="content col-12">'.PHP_EOL;
 	echo '<span class="sr-only">customer testimonial</span>'.PHP_EOL;
