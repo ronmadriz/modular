@@ -1282,15 +1282,15 @@ body.solutions-template div.testimonials {
   padding: 28px 28px;
   word-wrap: break-word; }
 
-body.industries-template-single-industries-fluid main section#banner div.page_title, body.industries-template-single-industries-fluid main section#breadcrumbs, body.industries-template-single-industries-fluid main section#main-content, body.industries-template-single-industries-fluid main section#gallery, body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-fluid main section#case_study, body.industries-template-single-industries-fluid main section#testimonial, body.industries-template-single-industries-fluid main section#cf_contactForm, body.industries-template-single-industries-fluid main section#cf_contactFormTitle, body.industries-template-single-industries-fluid main section#icons {
+body.industries-template-single-industries-fluid main section#banner div.page_title, body.industries-template-single-industries-fluid main section#cta_blue, body.industries-template-single-industries-fluid main section#breadcrumbs, body.industries-template-single-industries-fluid main section#main-content, body.industries-template-single-industries-fluid main section#gallery, body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-fluid main section#case_study, body.industries-template-single-industries-fluid main section#testimonial, body.industries-template-single-industries-fluid main section#cf_contactForm, body.industries-template-single-industries-fluid main section#cf_contactFormTitle, body.industries-template-single-industries-fluid main section#icons {
   padding-left: 5%;
   padding-right: 5%; }
   @media (min-width: 992px) and (max-width: 1299.99px) {
-    body.industries-template-single-industries-fluid main section#banner div.page_title, body.industries-template-single-industries-fluid main section#breadcrumbs, body.industries-template-single-industries-fluid main section#main-content, body.industries-template-single-industries-fluid main section#gallery, body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-fluid main section#case_study, body.industries-template-single-industries-fluid main section#testimonial, body.industries-template-single-industries-fluid main section#cf_contactForm, body.industries-template-single-industries-fluid main section#cf_contactFormTitle, body.industries-template-single-industries-fluid main section#icons {
+    body.industries-template-single-industries-fluid main section#banner div.page_title, body.industries-template-single-industries-fluid main section#cta_blue, body.industries-template-single-industries-fluid main section#breadcrumbs, body.industries-template-single-industries-fluid main section#main-content, body.industries-template-single-industries-fluid main section#gallery, body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-fluid main section#case_study, body.industries-template-single-industries-fluid main section#testimonial, body.industries-template-single-industries-fluid main section#cf_contactForm, body.industries-template-single-industries-fluid main section#cf_contactFormTitle, body.industries-template-single-industries-fluid main section#icons {
       padding-left: 10%;
       padding-right: 10%; } }
   @media (min-width: 1300px) {
-    body.industries-template-single-industries-fluid main section#banner div.page_title, body.industries-template-single-industries-fluid main section#breadcrumbs, body.industries-template-single-industries-fluid main section#main-content, body.industries-template-single-industries-fluid main section#gallery, body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-fluid main section#case_study, body.industries-template-single-industries-fluid main section#testimonial, body.industries-template-single-industries-fluid main section#cf_contactForm, body.industries-template-single-industries-fluid main section#cf_contactFormTitle, body.industries-template-single-industries-fluid main section#icons {
+    body.industries-template-single-industries-fluid main section#banner div.page_title, body.industries-template-single-industries-fluid main section#cta_blue, body.industries-template-single-industries-fluid main section#breadcrumbs, body.industries-template-single-industries-fluid main section#main-content, body.industries-template-single-industries-fluid main section#gallery, body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-fluid main section#case_study, body.industries-template-single-industries-fluid main section#testimonial, body.industries-template-single-industries-fluid main section#cf_contactForm, body.industries-template-single-industries-fluid main section#cf_contactFormTitle, body.industries-template-single-industries-fluid main section#icons {
       padding-left: 100px;
       padding-right: 100px;
       font-size: 131%;
@@ -1361,6 +1361,13 @@ body.industries-template-single-industries-fluid main section#gallery, body.indu
   body.industries-template-single-industries-fluid main section#gallery div#carousel_controls a, body.industries-template-single-industries-2019 main section#gallery div#carousel_controls a {
     width: 50%;
     text-align: center; }
+
+body.industries-template-single-industries-fluid main section#cta_blue, body.industries-template-single-industries-2019 main section#cta_blue {
+  background-color: #156cb3;
+  text-align: center; }
+  body.industries-template-single-industries-fluid main section#cta_blue a, body.industries-template-single-industries-2019 main section#cta_blue a {
+    color: white;
+    font-size: 1.25rem; }
 
 body.industries-template-single-industries-fluid main section#cf_contactFormTitle, body.industries-template-single-industries-2019 main section#cf_contactFormTitle {
   background-color: #156cb3;

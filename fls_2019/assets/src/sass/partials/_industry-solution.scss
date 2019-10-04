@@ -14,7 +14,7 @@ body {
 	&.industries-template-single-industries-fluid {
 		main {
 			section {
-				&#banner div.page_title, &#breadcrumbs, &#main-content, &#gallery, &#inline_solutions, &#case_study, &#testimonial, &#cf_contactForm, &#cf_contactFormTitle, &#icons {					
+				&#banner div.page_title, &#cta_blue, &#breadcrumbs, &#main-content, &#gallery, &#inline_solutions, &#case_study, &#testimonial, &#cf_contactForm, &#cf_contactFormTitle, &#icons {					
 				    padding-left:5%;
 				    padding-right:5%;
 					@media(min-width:992px) and (max-width:1299.99px){
@@ -151,6 +151,14 @@ body {
 						}
 					}
 
+				}
+				&#cta_blue {
+					background-color: $accent_1;
+					text-align:center;
+					a {
+						color:$alternate;
+						font-size:1.25rem;
+					}
 				}
 				&#cf_contactFormTitle {
 					background-color: $accent_1;
