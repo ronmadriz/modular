@@ -89,7 +89,7 @@ if ($industry_gallery) {
 	endwhile;
 	;
 }
-echo '<section id="cta_blue"><div class="container-fluid"><div class="row"><div class="col-12 text-center"><a href="#cf_contactForm" class="text-center">Speak with a fall protection specialist</a></div></div></div></section>'.PHP_EOL;
+echo '<section id="cta_blue"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center"><a href="#cf_contactForm" class="text-center">Speak with a fall protection specialist</a></div></div></div></section>'.PHP_EOL;
 
 // ICONS
 $icons = get_field('icon_row');
