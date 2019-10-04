@@ -89,19 +89,9 @@ jQuery(
     }
   }
 );
-
-j(document).ready(function(){
-    j( "a.scrollLink" ).click(function( event ) {
-        event.preventDefault();
-        j("html, body").animate({ 
-          scrollTop: j(j(this).attr("href")).offset().top 
-        }, 3500);
-    });
-});
-
 function offsetAnchor() {
     if(location.hash.length !== 0) {
-        window.scrollTo(window.scrollX, window.scrollY - 100);
+        window.scrollTo(window.scrollX, window.scrollY - 350);
     }
 }
 window.addEventListener("hashchange", offsetAnchor);
