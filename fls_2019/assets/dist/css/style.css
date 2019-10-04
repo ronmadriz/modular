@@ -1363,7 +1363,9 @@ body.industries-template-single-industries-fluid main section#gallery, body.indu
     text-align: center; }
 
 body.industries-template-single-industries-fluid main section#cta_blue, body.industries-template-single-industries-2019 main section#cta_blue {
-  background-color: #156cb3; }
+  background-color: #156cb3;
+  padding-top: 1.5rem;
+  padding-bottom: .75rem; }
   body.industries-template-single-industries-fluid main section#cta_blue a, body.industries-template-single-industries-2019 main section#cta_blue a {
     color: white; }
 
