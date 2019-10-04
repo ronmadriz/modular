@@ -1445,14 +1445,14 @@ body.industries-template-single-industries-fluid main section#testimonial, body.
     font-style: italic; }
     body.industries-template-single-industries-fluid main section#testimonial div.content:before, body.industries-template-single-industries-2019 main section#testimonial div.content:before {
       content: "\201D";
-      font-family: sans-serif;
       color: #156cb3;
       padding-left: .5rem;
       padding-right: .5rem;
       position: absolute;
       display: block;
-      top: -2rem;
-      font-size: 4.25rem;
+      font-family: sans-serif;
+      top: -2.5rem;
+      font-size: 6rem;
       font-style: normal;
       -webkit-transform: rotate(-180deg);
               transform: rotate(-180deg); }

@@ -268,16 +268,17 @@ body {
 							font-style: italic;
 							&:before {
 								content: "\201D";
-								font-family: sans-serif;
 								color: $accent_1;
 								padding-left: .5rem;
 								padding-right: .5rem;
 								position: absolute;
 								display: block;
-								top: -2rem;
-								font-size: 4.25rem;
-								font-style: normal;
-								transform: rotate(-180deg);							}					
+								font-family: sans-serif;
+								top: -2.5rem;
+							    font-size: 6rem;
+							    font-style: normal;
+							    transform: rotate(-180deg);
+							}					
 						}
 					}
 				}
