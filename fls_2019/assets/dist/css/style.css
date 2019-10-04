@@ -1439,7 +1439,8 @@ body.industries-template-single-industries-fluid main section#case_study div.ite
   padding-left: 30px; }
 
 body.industries-template-single-industries-fluid main section#testimonial, body.industries-template-single-industries-2019 main section#testimonial {
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  background-color: #f7f7f7; }
   body.industries-template-single-industries-fluid main section#testimonial div.section_title, body.industries-template-single-industries-2019 main section#testimonial div.section_title {
     margin-bottom: 0; }
   body.industries-template-single-industries-fluid main section#testimonial div.content, body.industries-template-single-industries-2019 main section#testimonial div.content {
