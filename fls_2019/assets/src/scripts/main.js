@@ -95,6 +95,6 @@ j(document).ready(function(){
         event.preventDefault();
         j("html, body").animate({ 
           scrollTop: j(j(this).attr("href")).offset().top 
-        }, 5000);
+        }, 3500);
     });
 });
