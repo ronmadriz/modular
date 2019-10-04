@@ -1382,8 +1382,7 @@ body.industries-template-single-industries-fluid main section#cf_contactFormTitl
 body.industries-template-single-industries-fluid main section#cf_contactForm, body.industries-template-single-industries-2019 main section#cf_contactForm {
   background-color: #e6e7e9;
   padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem; }
+  padding-bottom: 1rem; }
   body.industries-template-single-industries-fluid main section#cf_contactForm textarea, body.industries-template-single-industries-2019 main section#cf_contactForm textarea {
     height: 5.5rem; }
 
@@ -1466,6 +1465,9 @@ body.industries-template-single-industries-fluid main section#testimonial, body.
         body.industries-template-single-industries-fluid main section#testimonial div.content:before, body.industries-template-single-industries-2019 main section#testimonial div.content:before {
           top: -6.15rem;
           left: 2rem; } }
+
+body.industries-template-single-industries-fluid footer section#foot_call_cta, body.industries-template-single-industries-2019 footer section#foot_call_cta {
+  display: none; }
 
 html body#page-testimonials div.featured_testimonials {
   margin-top: 1.5rem;
