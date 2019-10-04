@@ -1431,7 +1431,8 @@ body.industries-template-single-industries-fluid main section#testimonial div.se
   margin-bottom: 0; }
 
 body.industries-template-single-industries-fluid main section#testimonial div.content, body.industries-template-single-industries-2019 main section#testimonial div.content {
-  border: 1px solid #156cb3; }
+  border: 1px solid #156cb3;
+  position: relative; }
   body.industries-template-single-industries-fluid main section#testimonial div.content::before, body.industries-template-single-industries-2019 main section#testimonial div.content::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -1439,7 +1440,9 @@ body.industries-template-single-industries-fluid main section#testimonial div.co
     background-color: #f7f7f7;
     color: #156cb3;
     padding-left: .5rem;
-    padding-right: .5rem; }
+    padding-right: .5rem;
+    position: absolute;
+    display: inline-block; }
 
 html body#page-testimonials div.featured_testimonials {
   margin-top: 1.5rem;
