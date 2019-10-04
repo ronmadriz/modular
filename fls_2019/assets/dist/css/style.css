@@ -1443,10 +1443,7 @@ body.industries-template-single-industries-fluid main section#testimonial, body.
     border: 1px solid #156cb3;
     position: relative;
     font-style: italic; }
-    body.industries-template-single-industries-fluid main section#testimonial div.content::before, body.industries-template-single-industries-2019 main section#testimonial div.content::before {
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      content: "\f10d";
+    body.industries-template-single-industries-fluid main section#testimonial div.content span.icon, body.industries-template-single-industries-2019 main section#testimonial div.content span.icon {
       background-color: #f7f7f7;
       color: #156cb3;
       padding-left: .5rem;
