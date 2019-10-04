@@ -87,13 +87,6 @@ jQuery(
         location.href = this.href;
       });
     }
-    function offsetAnchor() {
-        if(location.hash.length !== 0) {
-            window.scrollTo(window.scrollX, window.scrollY - 100);
-        }
-    }
-    window.addEventListener("hashchange", offsetAnchor);
-    window.setTimeout(offsetAnchor, 1)    
   }
 );
 
@@ -105,3 +98,11 @@ j(document).ready(function(){
         }, 3500);
     });
 });
+
+function offsetAnchor() {
+    if(location.hash.length !== 0) {
+        window.scrollTo(window.scrollX, window.scrollY - 100);
+    }
+}
+window.addEventListener("hashchange", offsetAnchor);
+window.setTimeout(offsetAnchor, 1)    
