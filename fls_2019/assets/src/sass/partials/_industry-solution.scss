@@ -266,18 +266,15 @@ body {
 							border:1px solid $accent_1;
 							position:relative;
 							font-style: italic;
-							span {
-								&.icon {
-									color:$accent_1;
-									padding-left:.5rem;
-									padding-right:.5rem;
-									position: absolute;
-								    display:block;
-								    top: -1.15rem;
-									font-size: 2.25rem;
-									height: 2rem;
-									width: 2rem;
-								}									
+							&:before {
+								content:"\201D";
+								color:$accent_1;
+								padding-left:.5rem;
+								padding-right:.5rem;
+								position: absolute;
+							    display:block;
+							    top: -1.15rem;
+								font-size: 2.25rem;
 							}					
 						}
 					}

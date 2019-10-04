@@ -1443,16 +1443,15 @@ body.industries-template-single-industries-fluid main section#testimonial, body.
     border: 1px solid #156cb3;
     position: relative;
     font-style: italic; }
-    body.industries-template-single-industries-fluid main section#testimonial div.content span.icon, body.industries-template-single-industries-2019 main section#testimonial div.content span.icon {
+    body.industries-template-single-industries-fluid main section#testimonial div.content:before, body.industries-template-single-industries-2019 main section#testimonial div.content:before {
+      content: "\201D";
       color: #156cb3;
       padding-left: .5rem;
       padding-right: .5rem;
       position: absolute;
       display: block;
       top: -1.15rem;
-      font-size: 2.25rem;
-      height: 2rem;
-      width: 2rem; }
+      font-size: 2.25rem; }
 
 html body#page-testimonials div.featured_testimonials {
   margin-top: 1.5rem;
