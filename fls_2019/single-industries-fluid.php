@@ -215,7 +215,7 @@ if ($industry_testimonials) {
 	echo '<span class="sr-only">customer testimonial</span>'.PHP_EOL;
 	echo get_the_content();
 	echo '<p class="text-right">~ '.get_the_title($industry_testimonials).'</p>'.PHP_EOL;
-	echo '<span class="icon"><i class="fas fa-quote-left"></i></span>'
+	echo '<span class="icon"><i class="fas fa-quote-left"></i></span>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
