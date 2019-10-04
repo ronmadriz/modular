@@ -91,7 +91,7 @@ jQuery(
 );
 function offsetAnchor() {
     if(location.hash.length !== 0) {
-        window.scrollTo(window.scrollX, window.scrollY - 350);
+        window.scrollTo(window.scrollX, window.scrollY - 250);
     }
 }
 window.addEventListener("hashchange", offsetAnchor);
