@@ -1441,7 +1441,8 @@ body.industries-template-single-industries-fluid main section#testimonial, body.
     margin-bottom: 0; }
   body.industries-template-single-industries-fluid main section#testimonial div.content, body.industries-template-single-industries-2019 main section#testimonial div.content {
     border: 1px solid #156cb3;
-    position: relative; }
+    position: relative;
+    font-style: italic; }
     body.industries-template-single-industries-fluid main section#testimonial div.content::before, body.industries-template-single-industries-2019 main section#testimonial div.content::before {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;

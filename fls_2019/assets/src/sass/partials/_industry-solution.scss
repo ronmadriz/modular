@@ -265,6 +265,7 @@ body {
 						&.content {
 							border:1px solid $accent_1;
 							position:relative;
+							font-style: italic;
 							&::before {
 								font-family: "Font Awesome 5 Free"; 
 								font-weight: 900; 
