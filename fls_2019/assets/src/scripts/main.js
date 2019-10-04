@@ -93,6 +93,8 @@ jQuery(
 j(document).ready(function(){
     j( "a.scrollLink" ).click(function( event ) {
         event.preventDefault();
-        j("html, body").animate({ scrollTop: j(j(this).attr("href")).offset().top }, -1500);
+        j("html, body").animate({ 
+          scrollTop: j(j(this).attr("href")).offset().top 
+        }, 3500);
     });
 });
