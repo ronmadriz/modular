@@ -110,7 +110,26 @@ if (have_rows('icon_row')) {
 		echo '</section>'.PHP_EOL;
 	}
 }
+// TESTIMONIALS
 
+$industry_testimonials = get_field('industry_testimonials');
+if ($industry_testimonials) {
+	$testimonial = $industry_testimonials;
+	setup_postdata($testimonial);
+	echo '<section id="testimonial">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="row justify-content-center">'.PHP_EOL;
+	echo '<div class="content col-12 col-md-6">'.PHP_EOL;
+	echo '<span class="sr-only">customer testimonial</span>'.PHP_EOL;
+	echo get_the_content();
+	echo '<p class="text-right">~ '.get_the_title($industry_testimonials).'</p>'.PHP_EOL;
+	echo '<span class="icon"><i class="fas fa-quote-left"></i></span>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+	wp_reset_postdata();
+}
 // SOLUTIONS
 $solutions_footercs = get_field('solutions_footer');
 if ($solutions_footercs) {
@@ -202,26 +221,6 @@ if (have_rows('case_study_groups')) {
 	echo '</section>'.PHP_EOL;
 }
 
-// TESTIMONIALS
-
-$industry_testimonials = get_field('industry_testimonials');
-if ($industry_testimonials) {
-	$testimonial = $industry_testimonials;
-	setup_postdata($testimonial);
-	echo '<section id="testimonial">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
-	echo '<div class="row justify-content-center">'.PHP_EOL;
-	echo '<div class="content col-12 col-md-6">'.PHP_EOL;
-	echo '<span class="sr-only">customer testimonial</span>'.PHP_EOL;
-	echo get_the_content();
-	echo '<p class="text-right">~ '.get_the_title($industry_testimonials).'</p>'.PHP_EOL;
-	echo '<span class="icon"><i class="fas fa-quote-left"></i></span>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-	wp_reset_postdata();
-}
 // VIDEOS
 $videos = get_field('videos');
 if ($videos):
