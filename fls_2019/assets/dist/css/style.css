@@ -1365,8 +1365,7 @@ body.industries-template-single-industries-fluid main section#gallery, body.indu
 body.industries-template-single-industries-fluid main section#cta_blue, body.industries-template-single-industries-2019 main section#cta_blue {
   background-color: #156cb3; }
   body.industries-template-single-industries-fluid main section#cta_blue a, body.industries-template-single-industries-2019 main section#cta_blue a {
-    color: white;
-    font-size: 1.25rem; }
+    color: white; }
 
 body.industries-template-single-industries-fluid main section#cf_contactFormTitle, body.industries-template-single-industries-2019 main section#cf_contactFormTitle {
   background-color: #156cb3;
