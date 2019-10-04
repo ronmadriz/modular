@@ -213,8 +213,8 @@ if ($industry_testimonials) {
 	echo '<div class="row justify-content-center">'.PHP_EOL;
 	echo '<div class="content col-12 col-md-6">'.PHP_EOL;
 	echo '<span class="sr-only">customer testimonial</span>'.PHP_EOL;
-	echo '<h2>'.get_the_title($industry_testimonials).'</h2>'.PHP_EOL;
 	echo get_the_content();
+	echo '<p class="text-right">~ '.get_the_title($industry_testimonials).'</p>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
