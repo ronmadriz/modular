@@ -212,17 +212,10 @@ j(document).ready(function(){
         if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 400});
     });
 
-    if (target) {
-      var targetOffset = $target.offset().top - 50;
-      j(this).click(function(event) {
-        if(event != 'undefined') {
-            event.preventDefault();}
-        j(scrollElem).animate({scrollTop: targetOffset}, 400, function(e) {
-            e.preventDefault();
-            location.hash = target;
-        });
-      });
-    }
+    function scrollToDiv(element){
+        element = element.replace("link", "");
+        j('html,body').unbind().animate({scrollTop: j(element).offset().top-250},'slow');
+    };
 
 
 });
