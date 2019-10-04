@@ -279,14 +279,19 @@ body {
 								position: absolute;
 								display: block;
 								font-family: sans-serif;
-								top: -2.5rem;
+							    font-size: 6rem;
+							    font-style: normal;
+							    transform: rotate(-180deg);
 								@media(max-width:786px){
 									top: -6.15rem;
 									left: 2rem;									
 								}
-							    font-size: 6rem;
-							    font-style: normal;
-							    transform: rotate(-180deg);
+								@media(min-width:786px) and (max-width:1300px) {
+									top:-5.75rem;	
+								}
+								@media(min-width:1300px) {
+									top: -2.5rem;									
+								}
 							}					
 						}
 					}
