@@ -1367,6 +1367,7 @@ body.industries-template-single-industries-fluid main section#cta_blue, body.ind
   padding-top: 1.5rem;
   padding-bottom: .75rem; }
   body.industries-template-single-industries-fluid main section#cta_blue a, body.industries-template-single-industries-2019 main section#cta_blue a {
+    display: block;
     color: white; }
 
 body.industries-template-single-industries-fluid main section#cf_contactFormTitle, body.industries-template-single-industries-2019 main section#cf_contactFormTitle {
