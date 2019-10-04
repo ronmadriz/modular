@@ -1456,6 +1456,10 @@ body.industries-template-single-industries-fluid main section#testimonial, body.
       font-style: normal;
       -webkit-transform: rotate(-180deg);
               transform: rotate(-180deg); }
+      @media (max-width: 786px) {
+        body.industries-template-single-industries-fluid main section#testimonial div.content:before, body.industries-template-single-industries-2019 main section#testimonial div.content:before {
+          top: -6.15rem;
+          left: 2rem; } }
 
 html body#page-testimonials div.featured_testimonials {
   margin-top: 1.5rem;

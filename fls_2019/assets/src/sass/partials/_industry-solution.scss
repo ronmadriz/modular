@@ -275,6 +275,10 @@ body {
 								display: block;
 								font-family: sans-serif;
 								top: -2.5rem;
+								@media(max-width:786px){
+									top: -6.15rem;
+									left: 2rem;									
+								}
 							    font-size: 6rem;
 							    font-style: normal;
 							    transform: rotate(-180deg);
