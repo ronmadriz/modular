@@ -212,12 +212,6 @@ j(document).ready(function(){
         if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 400});
     });
 
-    function scrollToDiv(element){
-        element = element.replace("link", "");
-        j('html,body').unbind().animate({scrollTop: j(element).offset().top-250},'slow');
-    };
-
-
 });
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
@@ -264,3 +258,10 @@ jQuery(
     }
   }
 );
+
+j(document).ready(function(){
+    j( "a.scrollLink" ).click(function( event ) {
+        event.preventDefault();
+        j("html, body").animate({ scrollTop: j(j(this).attr("href")).offset().top }, 500);
+    });
+});
