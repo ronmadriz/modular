@@ -170,6 +170,10 @@ body {
 				}
 				&#icons {
 					padding-top:3rem;
+					h2 {
+						font-family:$tertiary;
+						text-transform:uppercase;
+					}
 					div {
 						&:not(:last-of-type) {
 							&.row {

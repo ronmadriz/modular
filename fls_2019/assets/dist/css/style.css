@@ -1378,6 +1378,9 @@ body.industries-template-single-industries-fluid main section#cf_contactForm, bo
 
 body.industries-template-single-industries-fluid main section#icons, body.industries-template-single-industries-2019 main section#icons {
   padding-top: 3rem; }
+  body.industries-template-single-industries-fluid main section#icons h2, body.industries-template-single-industries-2019 main section#icons h2 {
+    font-family: "Oswald", helvetica, sans-serif;
+    text-transform: uppercase; }
   body.industries-template-single-industries-fluid main section#icons div:not(:last-of-type).row, body.industries-template-single-industries-2019 main section#icons div:not(:last-of-type).row {
     margin-bottom: 2rem; }
   body.industries-template-single-industries-fluid main section#icons div .fl_thumb, body.industries-template-single-industries-2019 main section#icons div .fl_thumb {
