@@ -32,6 +32,7 @@ body {
 							overflow-x: auto;
 							position: absolute;
 						    height: 150px;
+						    left:40px;
 							#thumb_list {
 								position:absolute;
 								left:0;
@@ -58,7 +59,7 @@ body {
 							    color: $dark;
 							    z-index: 1000;
 							    opacity: 1;
-							    top: .5rem;							    
+							    top: .5rem;
 							    background: $alternate;
 							    &:hover {
 							    	cursor: pointer;
