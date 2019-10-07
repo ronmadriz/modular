@@ -25,7 +25,6 @@ body {
 					.thumb_nav {
 					    white-space:nowrap;
 					    z-index: 1000;
-					    background-color: rgba(0,0,0,.5);
 					    padding: .5rem 1rem;
 				        height: 170px;
 					    #thumbs {
@@ -56,11 +55,11 @@ body {
 							    width: 40px;
 							    height: 91%;
 							    position: absolute;
-							    color: $alternate;
+							    color: $dark;
 							    z-index: 1000;
 							    opacity: 1;
 							    top: .5rem;							    
-							    background: $dark;
+							    background: $alternate;
 							    &:hover {
 							    	cursor: pointer;
 							    }
