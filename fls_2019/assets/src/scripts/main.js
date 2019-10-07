@@ -95,4 +95,9 @@ function offsetAnchor() {
     }
 }
 window.addEventListener("hashchange", offsetAnchor);
-window.setTimeout(offsetAnchor, 1)    
+window.setTimeout(offsetAnchor, 1)
+
+
+document.addEventListener( 'redirect', function( event ) {
+    location = '/form-submission-success-page/';
+}, false );
