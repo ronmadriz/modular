@@ -641,6 +641,6 @@ add_filter('site-reviews/review/build/after', function ($renderedFields, $review
 //show custom fields meta box
 add_filter('acf/settings/remove_wp_meta_box', '__return_false');
 if (function_exists('add_image_size')) {
-	add_image_size('gallery-th', 160, 90, true);//(cropped)
+	add_image_size('gallery-th', 256, 144, true);//(cropped)
 }
 ?>
