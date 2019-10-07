@@ -1251,7 +1251,7 @@ body section#gallery div#flsCarousel .thumb_nav {
       left: 0;
       width: auto; }
       body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span.active {
-        border: 1px solid white;
+        border: 1px solid #156cb3;
         background-color: none; }
         body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span.active img {
           opacity: 0.7; }
