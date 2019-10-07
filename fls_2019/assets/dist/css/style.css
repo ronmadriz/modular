@@ -1257,6 +1257,8 @@ body section#gallery div#flsCarousel .thumb_nav {
           opacity: 0.7; }
       body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span:hover {
         cursor: pointer; }
+      body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span img {
+        max-height: 145px; }
   body section#gallery div#flsCarousel .thumb_nav span.th_nav {
     width: 40px;
     height: 91%;
