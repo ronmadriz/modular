@@ -1245,8 +1245,7 @@ body section#gallery div#flsCarousel .thumb_nav {
     width: 100%;
     overflow-x: auto;
     position: absolute;
-    height: 150px;
-    left: 40px; }
+    height: 150px; }
     body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list {
       position: absolute;
       left: 0;
