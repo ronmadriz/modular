@@ -56,14 +56,10 @@ function the_breadcrumb() {
 			echo the_title();
 			echo '</li>'.PHP_EOL;
 		} else {
-		    $parents = get_ancestors( $post->ID, 'page', 'post_type' );
-		    foreach( $parents as $parent ) {
-		        echo get_the_title( $parent );
-		    }
-		}
-
-		if (is_child()) {
-			echo 
+			$parents = get_ancestors($post->ID, 'page', 'post_type');
+			foreach ($parents as $parent) {
+				echo get_the_title($parent);
+			}
 		}
 
 		// if you have a static page assigned to be you posts list page. It will find the title of the static page and display it. i.e Home >> Blog
