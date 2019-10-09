@@ -47,7 +47,7 @@ function the_breadcrumb() {
 		if (is_page() && $post->post_parent) {
 			$parent_title = get_the_title($post->post_parent);
 			$parent_link  = get_the_permalink($post->post_parent);
-			echo '<li><a href="'.$parent_link.'">'.$parent_title."</a></li>".PHP_EOL;
+			echo '<li class="list-inline-item"><a href="'.$parent_link.'">'.$parent_title."</a></li>".PHP_EOL;
 		}
 
 		// If the current page is a single post, show its title with the separator
