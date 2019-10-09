@@ -26,6 +26,16 @@ function enqueue_my_styles() {
 	wp_enqueue_style('my-style', get_template_directory_uri().'/style.css');
 }
 add_action('wp_enqueue_scripts', 'enqueue_my_styles');
+
+function is_child($pageID) {
+	global $post;
+	if (is_page() && ($post->post_parent == $pageID)) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
 define('THEME_DIRECTORY', get_stylesheet_directory());
 define('THEME_URI', get_stylesheet_directory_uri());
 define('THEME_LIBS', THEME_URI.'/assets/libs');
@@ -38,6 +48,7 @@ include (THEME_INCLUDE.'/core/extended-taxos.php');
 foreach (glob(THEME_INCLUDE.'/cpt_files/*.php') as $filename) {include $filename;}
 foreach (glob(THEME_INCLUDE.'/customizers/*.php') as $customizers) {include $customizers;}
 include (THEME_INCLUDE.'/options/default.php');
+
 include (THEME_INCLUDE.'/breadcrumbs-functions.php');
 include (THEME_INCLUDE.'/class-wp-bootstrap-navwalker.php');
 include (THEME_INCLUDE.'/wp-bootstrap4.1-pagination.php');
