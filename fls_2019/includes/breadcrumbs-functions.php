@@ -57,6 +57,13 @@ function the_breadcrumb() {
 			echo '</li>'.PHP_EOL;
 		}
 
+		// if page is a child of
+		global $post;
+		$page_parent = $post->post_parent;
+		if (is_page() && ($page_parent == $pageID)) {
+			echo 'i be the pappy';
+		}
+
 		// if you have a static page assigned to be you posts list page. It will find the title of the static page and display it. i.e Home >> Blog
 		if (is_home()) {
 			global $post;
