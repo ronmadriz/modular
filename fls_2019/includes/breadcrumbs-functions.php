@@ -55,11 +55,11 @@ function the_breadcrumb() {
 			echo '<li class="list-inline-item">';
 			echo the_title();
 			echo '</li>'.PHP_EOL;
-		} else {
-			$parents = get_ancestors($post->ID, 'page', 'post_type');
-			foreach ($parents as $parent) {
-				echo '<li class="list-inline-item">'.get_the_title($parent).'</li>'.PHP_EOL;
-			}
+		}
+
+		if ($post->post_parent) {
+			$parent_title = get_the_title($post->post_parent);
+			echo $parent_title;
 		}
 
 		// if you have a static page assigned to be you posts list page. It will find the title of the static page and display it. i.e Home >> Blog
