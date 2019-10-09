@@ -55,7 +55,9 @@ function the_breadcrumb() {
 			echo '<li class="list-inline-item">';
 			echo the_title();
 			echo '</li>'.PHP_EOL;
-		} else {
+		}
+
+		if (is_child()) {
 			$parents = get_ancestors($post->ID, 'page', 'post_type');
 			foreach ($parents as $parent) {
 				echo get_the_title($parent);
