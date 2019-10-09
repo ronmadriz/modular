@@ -43,7 +43,8 @@ function the_breadcrumb() {
 			echo '<li class="list-inline-item"><a href="/fall-protection-solutions/all/">Fall Safety Solutions</a></li>'.PHP_EOL;
 		}
 
-		if ($post->post_parent) {
+		global $post;// if outside the loop
+		if (is_page() && $post->post_parent) {
 			$parent_title = get_the_title($post->post_parent);
 			echo '<li>'.$parent_title."</li>".PHP_EOL;
 		}
