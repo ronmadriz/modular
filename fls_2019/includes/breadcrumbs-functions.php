@@ -57,6 +57,15 @@ function the_breadcrumb() {
 			echo '</li>'.PHP_EOL;
 		}
 
+		function is_child($pageID) {
+			global $post;
+			if (is_page() && ($post->post_parent == $pageID)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+
 		if (is_child()) {
 			$parents = get_ancestors($post->ID, 'page', 'post_type');
 			foreach ($parents as $parent) {

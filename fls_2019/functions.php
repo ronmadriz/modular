@@ -27,15 +27,6 @@ function enqueue_my_styles() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_my_styles');
 
-function is_child($pageID) {
-	global $post;
-	if (is_page() && ($post->post_parent == $pageID)) {
-		return true;
-	} else {
-		return false;
-	}
-}
-
 define('THEME_DIRECTORY', get_stylesheet_directory());
 define('THEME_URI', get_stylesheet_directory_uri());
 define('THEME_LIBS', THEME_URI.'/assets/libs');
