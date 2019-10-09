@@ -43,6 +43,11 @@ function the_breadcrumb() {
 			echo '<li class="list-inline-item"><a href="/fall-protection-solutions/all/">Fall Safety Solutions</a></li>'.PHP_EOL;
 		}
 
+		if ($post->post_parent) {
+			$parent_title = get_the_title($post->post_parent);
+			echo '<li>'.$parent_title."</li>".PHP_EOL;
+		}
+
 		// If the current page is a single post, show its title with the separator
 		if (is_single()) {
 			echo '<li class="list-inline-item">';
@@ -55,11 +60,6 @@ function the_breadcrumb() {
 			echo '<li class="list-inline-item">';
 			echo the_title();
 			echo '</li>'.PHP_EOL;
-		}
-
-		if ($post->post_parent) {
-			$parent_title = get_the_title($post->post_parent);
-			echo $parent_title;
 		}
 
 		// if you have a static page assigned to be you posts list page. It will find the title of the static page and display it. i.e Home >> Blog
