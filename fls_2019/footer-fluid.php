@@ -108,7 +108,7 @@ echo '</section>'.PHP_EOL;
 echo '<section id="foot_connect">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
 echo '<div class="row justify-content-center">'.PHP_EOL;
-echo '<div id="newsletter" class="col-12 col-md-10">'.PHP_EOL;
+echo '<div id="newsletter" class="col-12 col-md-10 text-center">'.PHP_EOL;
 echo do_shortcode($footer_newsletter).PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
