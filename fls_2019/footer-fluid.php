@@ -8,7 +8,7 @@ $fax                = get_theme_mod('footer_fax');
 $email              = get_theme_mod('footer_email');
 $footer_newsletter  = get_theme_mod('footer_newsletter');
 echo '</main>'.PHP_EOL;
-echo '<footer>'.PHP_EOL;
+echo '<footer class="fluid">'.PHP_EOL;
 if (is_front_page()) {
 	echo '<section id="foot_contact">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
@@ -118,8 +118,7 @@ echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 echo '<section id="boilerplate">'.PHP_EOL;
-echo '<div class="container-fluid
-">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
 echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
 echo '<div class="col-12 col-md-10 text-center">copyright &copy; '.date("Y").' flexible lifeline systems. all rights reserved <a href="/privacy-policy/">privacy policy</a></div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;

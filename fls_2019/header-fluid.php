@@ -37,7 +37,7 @@ echo '<body id="page-'.$slug.'"';
 body_class();
 echo '>'.PHP_EOL;
 echo $ronmadriz_settings['ronmadriz_body_extra'];
-echo '<header>'.PHP_EOL;
+echo '<header class="fluid">'.PHP_EOL;
 echo '<nav class="navbar navbar-light fixed-top">'.PHP_EOL;
 echo '<div id="nav-holder" class="container-fluid">'.PHP_EOL;
 if (!empty($site_logo_header)):

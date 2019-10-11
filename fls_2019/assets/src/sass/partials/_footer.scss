@@ -5,7 +5,7 @@ body {
 				background-color: $gray;
 				> div {
 					&.container-fluid {
-						background-color:$white;
+						background-color:$white;						
 						div {
 							&.title {
 								background-color: $blue;
@@ -126,6 +126,22 @@ body {
 						margin-left:.5rem;
 					}
 			    }				
+			}
+		}
+		&.fluid {
+			section {
+			    padding-left:5%;
+			    padding-right:5%;
+				@media(min-width:992px) and (max-width:1299.99px){
+				    padding-left: 10%;
+				    padding-right: 10%;
+				}
+				@media(min-width:1300px){
+				    padding-left: 100px;
+				    padding-right: 100px;
+				    font-size: 131%;
+				    line-height: 150%;
+				}				
 			}
 		}
 	}
