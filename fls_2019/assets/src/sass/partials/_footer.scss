@@ -144,6 +144,19 @@ body {
 				}				
 			}
 		}
+		section {
+			&#foot_info {
+				div {
+					&.item {
+						li {
+						    font-size: 1.15rem;
+						    font-weight: 600;
+						    line-height: 2.45rem;
+						}						
+					}
+				}
+			}
+		}
 	}
 	span {
 		&#mobileCTA {

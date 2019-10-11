@@ -1141,6 +1141,11 @@ body footer.fluid section {
       font-size: 131%;
       line-height: 150%; } }
 
+body footer section#foot_info div.item li {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 2.45rem; }
+
 body span#mobileCTA {
   padding: 0 1rem 1rem; }
   body span#mobileCTA a {
