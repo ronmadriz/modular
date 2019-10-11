@@ -5,7 +5,7 @@ Template Post Type: industries
  */
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
-get_header();
+include 'header-fluid.php';
 
 $banner_img = get_field('banner');
 // BANNER
@@ -308,5 +308,5 @@ if (have_rows('download_literature')) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
-
-get_footer();?>
+include 'footer-fluid.php';
+?>
