@@ -1141,7 +1141,10 @@ body footer.fluid section {
       body footer.fluid section#foot_info div.item li {
         font-size: 1.15rem;
         font-weight: 600;
-        line-height: 2.45rem; } }
+        line-height: 2.45rem; }
+      body footer.fluid section#foot_info div.item address, body footer.fluid section#foot_info div.item p {
+        font-size: 1.15rem;
+        line-height: 2.15rem; } }
 
 body span#mobileCTA {
   padding: 0 1rem 1rem; }
