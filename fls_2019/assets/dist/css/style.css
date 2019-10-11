@@ -1139,12 +1139,11 @@ body footer.fluid section {
       padding-left: 100px;
       padding-right: 100px;
       font-size: 131%;
-      line-height: 150%; } }
-
-body footer section#foot_info div.item li {
-  font-size: 1.15rem;
-  font-weight: 600;
-  line-height: 2.45rem; }
+      line-height: 150%; }
+      body footer.fluid section section#foot_info div.item li {
+        font-size: 1.15rem;
+        font-weight: 600;
+        line-height: 2.45rem; } }
 
 body span#mobileCTA {
   padding: 0 1rem 1rem; }
