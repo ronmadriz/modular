@@ -371,7 +371,7 @@ body {
 		}
 		&.fluid {
 			nav {
-				.nav-holder {
+				#nav-holder {
 				    padding-left:5%;
 				    padding-right:5%;
 					@media(min-width:992px) and (max-width:1299.99px){
