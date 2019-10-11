@@ -88,7 +88,6 @@ body header a.navbar-brand {
 body header span.nav_tel {
   font-weight: bold;
   font-size: 1.175rem;
-  padding-top: 5px;
   text-align: center; }
   body header span.nav_tel a {
     color: #646569; }
@@ -418,7 +417,6 @@ body header a.navbar-brand {
 body header span.nav_tel {
   font-weight: bold;
   font-size: 1.175rem;
-  padding-top: 5px;
   text-align: center; }
   body header span.nav_tel a {
     color: #646569; }
