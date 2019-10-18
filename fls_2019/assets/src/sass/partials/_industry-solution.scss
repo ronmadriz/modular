@@ -259,6 +259,19 @@ body {
 						}
 					}
 				}
+				&#literature {
+					ul {
+						&.literature_list {
+							li {
+								img {
+									&.img-fluid {
+										min-width:100%;
+									}
+								}
+							}
+						}
+					}
+				}
 				&#testimonial {
 				    margin-top: 4rem;
 					background-color: #f7f7f7;
