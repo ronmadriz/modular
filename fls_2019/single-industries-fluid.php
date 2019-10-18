@@ -142,14 +142,14 @@ if (have_rows('download_literature')) {
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="content col-12 col-md-10">'.PHP_EOL;
+	echo '<div class="content col-12">'.PHP_EOL;
 	echo '<ul class="list-inline literature_list">'.PHP_EOL;
 	while (have_rows('download_literature')) {
 		the_row();
 		$lit_file  = get_sub_field('file');
 		$lit_img   = get_sub_field('Image');
 		$lit_title = get_sub_field('title');
-		echo '<li class="list-inline-item col-6 col-md-4 text-center">';
+		echo '<li class="list-inline-item col-6 col-md-3 text-center">';
 		echo ($lit_file != null?'<a href="'.$lit_file['url'].'" class="d-block">':'');
 		echo ($lit_img != null?'<img src="'.$lit_img['url'].'" alt="'.$lit_img['alt'].'" class="img-fluid">':'');
 		echo ($lit_file != null?'</a>'.PHP_EOL:'');
