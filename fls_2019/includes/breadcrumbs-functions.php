@@ -40,13 +40,15 @@ function the_breadcrumb() {
 
 		if (is_singular('industries')) {
 			echo '<li class="list-inline-item"><a href="/fall-protection-industries/all/">All Industries</a></li>'.PHP_EOL;
+			echo ($post->post_parent?'<li class="list-inline-item"><a href="'.$parent_link.'">'.$parent_title."</a></li>".PHP_EOL:'');
 		}
 
 		if (is_singular('solutions')) {
 			echo '<li class="list-inline-item"><a href="/fall-protection-solutions/all/">Fall Safety Solutions</a></li>'.PHP_EOL;
+
 		}
 
-		if (is_page() && $post->post_parent || is_single('solutions') && $post->post_parent || is_single('industries') && $post->post_parent) {
+		if (is_page() && $post->post_parent) {
 			echo '<li class="list-inline-item"><a href="'.$parent_link.'">'.$parent_title."</a></li>".PHP_EOL;
 		}
 
