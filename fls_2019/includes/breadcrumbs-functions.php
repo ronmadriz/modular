@@ -47,7 +47,6 @@ function the_breadcrumb() {
 		if (is_singular('industries') && $post->post_parent) {
 			$parent_title = get_the_title($post->post_parent);
 			$parent_link  = get_the_permalink($post->post_parent);
-			echo '<li class="list-inline-item"><a href="/fall-protection-solutions/all/">Fall Safety Solutions</a></li>'.PHP_EOL;
 			echo '<li class="list-inline-item"><a href="'.$parent_link.'">'.$parent_title."</a></li>".PHP_EOL;
 		}
 
