@@ -28,6 +28,12 @@ endif;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '<div class="row justify-content-center align-content-center mb-2">'.PHP_EOL;
+echo '<div class="col-12 col-md-10">'.PHP_EOL;
+echo '<p>Not what you&apos;re looking for? Start a new search:'.get_search_form().'</p>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+
+echo '<div class="row justify-content-center align-content-center mb-2">'.PHP_EOL;
 if (have_posts()):
 while (have_posts()):the_post();
 echo '<div class="col-12 col-md-10 mt-1 mb-1">'.PHP_EOL;
