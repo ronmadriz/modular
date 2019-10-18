@@ -1711,6 +1711,9 @@ body.page-template-fall-protection-101 main section#fp_101 div.row {
     border: 0;
     border-top: 1px solid #e3ece3; }
 
+body.page-template-fall-protection-101 main section#inline_solutions div.item div.title a {
+  line-height: 2.25rem; }
+
 body.page-template-sample-fall-protection-plan main section:not(#banner), body.page-template-sample-fall-protection-plan main section#banner div.page_title {
   padding-left: 5%;
   padding-right: 5%;
