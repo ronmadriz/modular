@@ -58,7 +58,7 @@ echo '<span class="nav-bar"></span>'.PHP_EOL;
 echo '<span class="nav-bar"></span>'.PHP_EOL;
 echo '</span>'.PHP_EOL;
 echo '</button>'.PHP_EOL;
-if (!is_404()) {
+if (!is_404() || !is_search()) {
 	echo '<button id="searchToggle" aria-label="Search Toggle"><i class="fas fa-search"></i></button>'.PHP_EOL;
 	get_search_form();
 }
