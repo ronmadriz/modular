@@ -162,6 +162,19 @@ body {
 						}
 					}
 				}
+				&#inline_solutions {
+					div {
+						&.item {
+							div {
+								&.title {
+									a {
+										line-height:2.25rem;
+									}
+								}
+							}
+						}
+					}
+				}				
 			}
 		}
 	}	
