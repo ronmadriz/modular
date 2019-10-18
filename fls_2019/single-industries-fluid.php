@@ -137,7 +137,7 @@ if (have_rows('download_literature')) {
 	echo '<section id="literature">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="section_title col-12 col-md-10">'.PHP_EOL;
+	echo '<div class="section_title col-12">'.PHP_EOL;
 	echo '<h1>download literature</h1>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
