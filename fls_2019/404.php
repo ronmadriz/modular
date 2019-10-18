@@ -17,5 +17,11 @@ echo '<p>The page you are looking for has either moved or is no longer valid. Pl
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
+echo '<div class="row">'.PHP_EOL;
+echo '<div class="col-lg-12">'.PHP_EOL;
+get_search_form();
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 get_footer();?>
