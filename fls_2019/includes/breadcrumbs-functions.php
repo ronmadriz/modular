@@ -5,6 +5,9 @@
 
 //  to include in functions.php
 function the_breadcrumb() {
+	global $post;// if outside the loop
+	$parent_title = get_the_title($post->post_parent);
+	$parent_link  = get_the_permalink($post->post_parent);
 
 	if (!is_front_page()) {
 
@@ -39,28 +42,11 @@ function the_breadcrumb() {
 			echo '<li class="list-inline-item"><a href="/fall-protection-industries/all/">All Industries</a></li>'.PHP_EOL;
 		}
 
-		global $post;
-		if (is_singular('industries') && $post->post_parent) {
-			$parent_title = get_the_title($post->post_parent);
-			$parent_link  = get_the_permalink($post->post_parent);
-			echo '<li class="list-inline-item"><a href="'.$parent_link.'">'.$parent_title."</a></li>".PHP_EOL;
-		}
-
 		if (is_singular('solutions')) {
 			echo '<li class="list-inline-item"><a href="/fall-protection-solutions/all/">Fall Safety Solutions</a></li>'.PHP_EOL;
 		}
 
-		global $post;
-		if (is_singular('industries') && $post->post_parent) {
-			$parent_title = get_the_title($post->post_parent);
-			$parent_link  = get_the_permalink($post->post_parent);
-			echo '<li class="list-inline-item"><a href="'.$parent_link.'">'.$parent_title."</a></li>".PHP_EOL;
-		}
-
-		global $post;
 		if (is_page() && $post->post_parent) {
-			$parent_title = get_the_title($post->post_parent);
-			$parent_link  = get_the_permalink($post->post_parent);
 			echo '<li class="list-inline-item"><a href="'.$parent_link.'">'.$parent_title."</a></li>".PHP_EOL;
 		}
 
@@ -71,25 +57,11 @@ function the_breadcrumb() {
 			echo '</li>'.PHP_EOL;
 		}
 
-		global $post;
-		if (is_single() && $post->post_parent) {
-			$parent_title = get_the_title($post->post_parent);
-			$parent_link  = get_the_permalink($post->post_parent);
-			echo '<li class="list-inline-item"><a href="'.$parent_link.'">'.$parent_title."</a></li>".PHP_EOL;
-		}
-
 		// If the current page is a static page, show its title.
 		if (is_page()) {
 			echo '<li class="list-inline-item">';
 			echo the_title();
 			echo '</li>'.PHP_EOL;
-		}
-
-		global $post;
-		if (is_page() && $post->post_parent) {
-			$parent_title = get_the_title($post->post_parent);
-			$parent_link  = get_the_permalink($post->post_parent);
-			echo '<li class="list-inline-item"><a href="'.$parent_link.'">'.$parent_title."</a></li>".PHP_EOL;
 		}
 
 		// if you have a static page assigned to be you posts list page. It will find the title of the static page and display it. i.e Home >> Blog
