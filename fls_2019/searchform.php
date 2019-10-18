@@ -1,5 +1,5 @@
 <?php
-echo '<form role="search" method="get" id="searchform"'.(!is_404() || !(is_search() && 0 === $wp_query->found_posts)?' class="d-none"':'').' action="';
+echo '<form role="search" method="get" id="searchform"'.(!is_404() || !($query->is_search() && $query->is_main_query())?' class="d-none"':'').' action="';
 bloginfo('url');
 echo '">'.PHP_EOL;
 echo '<label class="sr-only" for="s">Search for:</label>'.PHP_EOL;
