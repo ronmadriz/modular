@@ -178,56 +178,54 @@ body {
 			}
 		}		
 	}
-	header {
-		button {
-			&#searchToggle {
-				height: 2.25rem;
-				width: 2.5rem;
-				background-color: transparent;
-				border: 0;
-				font-size: 1.35rem;
-				color:$blue;
-				&:focus {
-				    outline: 0;
-				}
+	button {
+		&#searchToggle {
+			height: 2.25rem;
+			width: 2.5rem;
+			background-color: transparent;
+			border: 0;
+			font-size: 1.35rem;
+			color:$blue;
+			&:focus {
+			    outline: 0;
 			}
 		}
-		form {
-			&#searchform {
-				position: absolute;
-				right: 15px;
-				top: 13px;
-				background: $white;
-				padding: 0 0.25rem;
-				transition: all 0.5s ease;
-				@media (min-width:786px) {
-					top:2.5rem;					
-				}
-				input {
-					&[type=text] {
-						padding: .25rem .5rem .25rem 1rem;
-						border: 1px solid $light_gray;
-						border-right: 0;
-						outline: 0;
-						margin-right:0;
-					}
-				}
-				button {
-					background-color: $white;
-					color:$blue;
-					padding: .25rem .75rem;
+	}
+	form {
+		&#searchform {
+			position: absolute;
+			right: 15px;
+			top: 13px;
+			background: $white;
+			padding: 0 0.25rem;
+			transition: all 0.5s ease;
+			@media (min-width:786px) {
+				top:2.5rem;					
+			}
+			input {
+				&[type=text] {
+					padding: .25rem .5rem .25rem 1rem;
 					border: 1px solid $light_gray;
-					margin-left:-4px;
-					outline:0;
-					&#searchsubmit {
-						border: 1px solid $light_gray;
-						border-left: 0;
-					}
-					&#searchClose {
-						&:focus {
-						    outline: 0;
-						}				
-					}
+					border-right: 0;
+					outline: 0;
+					margin-right:0;
+				}
+			}
+			button {
+				background-color: $white;
+				color:$blue;
+				padding: .25rem .75rem;
+				border: 1px solid $light_gray;
+				margin-left:-4px;
+				outline:0;
+				&#searchsubmit {
+					border: 1px solid $light_gray;
+					border-left: 0;
+				}
+				&#searchClose {
+					&:focus {
+					    outline: 0;
+					}				
 				}
 			}
 		}
