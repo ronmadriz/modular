@@ -30,7 +30,7 @@ echo '</div>'.PHP_EOL;
 echo '<div class="row justify-content-center align-content-center mb-2">'.PHP_EOL;
 echo '<div class="col-12 col-md-10">'.PHP_EOL;
 echo '<p>Not what you&apos;re looking for? Start a new search:</p>'.PHP_EOL;
-get_search_form()
+get_search_form();
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 
