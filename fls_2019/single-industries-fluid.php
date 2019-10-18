@@ -207,20 +207,6 @@ if (have_rows('case_study_groups')) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
-$cf_contactForm = do_shortcode('[contact-form-7 id="1117125" title="Single Fluid - Contact Form"]');
-
-if ($cf_contactForm) {
-	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center">How can we help?</h1></div></div></div></section>'.PHP_EOL;
-	echo '<section id="cf_contactForm">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;// made fluid
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="col-12">'.PHP_EOL;
-	echo $cf_contactForm;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-}
 
 // VIDEOS
 $videos = get_field('videos');
@@ -248,7 +234,7 @@ endif;
 
 if (have_rows('industry_faq')) {
 	echo '<section id="faq">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="content col-12">'.PHP_EOL;
 	echo '<ul class="nav nav-tabs">'.PHP_EOL;
@@ -277,7 +263,7 @@ if (have_rows('industry_faq')) {
 // DOWNLOADABLE FILES
 if (have_rows('download_literature')) {
 	echo '<section id="literature">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="section_title col-12 col-md-10">'.PHP_EOL;
 	echo '<h1>download literature</h1>'.PHP_EOL;
@@ -308,5 +294,21 @@ if (have_rows('download_literature')) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
+
+$cf_contactForm = do_shortcode('[contact-form-7 id="1117125" title="Single Fluid - Contact Form"]');
+
+if ($cf_contactForm) {
+	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center">How can we help?</h1></div></div></div></section>'.PHP_EOL;
+	echo '<section id="cf_contactForm">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;// made fluid
+	echo '<div class="row">'.PHP_EOL;
+	echo '<div class="col-12">'.PHP_EOL;
+	echo $cf_contactForm;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+}
+
 include 'footer-fluid.php';
 ?>
