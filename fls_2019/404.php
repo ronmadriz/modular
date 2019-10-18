@@ -18,7 +18,7 @@ echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div class="col-lg-12">'.PHP_EOL;
-echo get_search_form();
+get_search_form();
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
