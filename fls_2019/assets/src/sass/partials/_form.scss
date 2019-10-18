@@ -193,15 +193,8 @@ body {
 	}
 	form {
 		&#searchform {
-			position: absolute;
-			right: 15px;
-			top: 13px;
-			background: $white;
 			padding: 0 0.25rem;
-			transition: all 0.5s ease;
-			@media (min-width:786px) {
-				top:2.5rem;					
-			}
+			background: $white;
 			input {
 				&[type=text] {
 					padding: .25rem .5rem .25rem 1rem;
@@ -229,6 +222,19 @@ body {
 				}
 			}
 		}
+	}
+	header {
+		form {
+			&#searchform {
+				position: absolute;
+				right: 15px;
+				top: 13px;
+				transition: all 0.5s ease;
+				@media (min-width:786px) {
+					top:2.5rem;					
+				}
+			}
+		}		
 	}
 	footer {
 		div {
