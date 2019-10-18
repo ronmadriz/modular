@@ -45,15 +45,12 @@ function the_breadcrumb() {
 
 		if (is_singular('solutions')) {
 			echo '<li class="list-inline-item"><a href="/fall-protection-solutions/all/">Fall Safety Solutions</a></li>'.PHP_EOL;
-
-		}
-
-		if (is_page() && $post->post_parent) {
-			echo '<li class="list-inline-item"><a href="'.$parent_link.'">'.$parent_title."</a></li>".PHP_EOL;
+			echo ($post->post_parent?'<li class="list-inline-item"><a href="'.$parent_link.'">'.$parent_title."</a></li>".PHP_EOL:'');
 		}
 
 		// If the current page is a single post, show its title with the separator
 		if (is_single()) {
+			echo ($post->post_parent?'<li class="list-inline-item"><a href="'.$parent_link.'">'.$parent_title."</a></li>".PHP_EOL:'');
 			echo '<li class="list-inline-item">';
 			the_title();
 			echo '</li>'.PHP_EOL;
@@ -61,6 +58,7 @@ function the_breadcrumb() {
 
 		// If the current page is a static page, show its title.
 		if (is_page()) {
+			echo ($post->post_parent?'<li class="list-inline-item"><a href="'.$parent_link.'">'.$parent_title."</a></li>".PHP_EOL:'');
 			echo '<li class="list-inline-item">';
 			echo the_title();
 			echo '</li>'.PHP_EOL;
