@@ -2,7 +2,7 @@ body {
 	&.page-template-fall-protection-101 {
 		main {
 			section {
-				&#banner div.page_title, &#breadcrumbs, &#main-content, &#fp_101, &#fp_info, &#cf_contactForm, &#fp_icons {					
+				&:not(#banner), &#banner div.page_title {					
 				    padding-left:5%;
 				    padding-right:5%;
 				    margin-bottom: 2rem;
