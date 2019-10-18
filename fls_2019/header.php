@@ -58,8 +58,10 @@ echo '<span class="nav-bar"></span>'.PHP_EOL;
 echo '<span class="nav-bar"></span>'.PHP_EOL;
 echo '</span>'.PHP_EOL;
 echo '</button>'.PHP_EOL;
-echo '<button id="searchToggle" aria-label="Search Toggle"><i class="fas fa-search"></i></button>'.PHP_EOL;
-get_search_form();
+if (!is_404()) {
+	echo '<button id="searchToggle" aria-label="Search Toggle"><i class="fas fa-search"></i></button>'.PHP_EOL;
+	get_search_form();
+}
 echo '</div>'.PHP_EOL;
 echo '<div class="collapse navbar-collapse" id="navigation">'.PHP_EOL;
 echo '<ul class="navbar-nav">'.PHP_EOL;
