@@ -291,7 +291,7 @@ endwhile;
 wp_reset_query();
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
- elseif ($video_count >= 2):
+ elseif ($video_count > 1):
 echo '<section id="videos">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
 while (have_rows('videos')):the_row();
