@@ -1375,7 +1375,7 @@ body.industries-template-single-industries-fluid main section#case_study div.ite
   body.industries-template-single-industries-fluid main form select, body.industries-template-single-industries-fluid main form textarea {
     margin-bottom: 1.25rem; } }
 
-body.industries-template-single-industries-fluid main section div.section_title, body.industries-template-single-industries-2019 main section div.section_title {
+body.industries-template-single-industries-fluid main section div.section_title, body.industries-template-single-industries-fluid main section span.section_title, body.industries-template-single-industries-2019 main section div.section_title, body.industries-template-single-industries-2019 main section span.section_title {
   border-bottom-width: 2px;
   border-bottom-color: #404040;
   padding-left: 0; }

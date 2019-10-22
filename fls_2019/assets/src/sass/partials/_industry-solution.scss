@@ -103,7 +103,7 @@ body {
 	&.industries-template-single-industries-fluid, &.industries-template-single-industries-2019 {
 		main {
 			section {
-				div {
+				div, span {
 					&.section_title {
 						border-bottom-width: 2px;
 						border-bottom-color: $black;
@@ -208,7 +208,10 @@ body {
 								margin-bottom:0;
 							}
 						}
-					}							
+					}
+				}
+				&.videos {
+
 				}
 				&#inline_solutions {
 					padding-top: 2rem;
