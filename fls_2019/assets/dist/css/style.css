@@ -1447,19 +1447,21 @@ body.industries-template-single-industries-fluid main section#icons, body.indust
   body.industries-template-single-industries-fluid main section#icons div.fl_content p, body.industries-template-single-industries-2019 main section#icons div.fl_content p {
     margin-bottom: 0; }
 
-body.industries-template-single-industries-fluid main section#videos div.videos > span, body.industries-template-single-industries-2019 main section#videos div.videos > span {
-  display: block; }
-  body.industries-template-single-industries-fluid main section#videos div.videos > span.video, body.industries-template-single-industries-2019 main section#videos div.videos > span.video {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%; }
-    body.industries-template-single-industries-fluid main section#videos div.videos > span.video iframe, body.industries-template-single-industries-2019 main section#videos div.videos > span.video iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0; }
+body.industries-template-single-industries-fluid main section#videos div.videos, body.industries-template-single-industries-2019 main section#videos div.videos {
+  margin-bottom: 2rem; }
+  body.industries-template-single-industries-fluid main section#videos div.videos > span, body.industries-template-single-industries-2019 main section#videos div.videos > span {
+    display: block; }
+    body.industries-template-single-industries-fluid main section#videos div.videos > span.video, body.industries-template-single-industries-2019 main section#videos div.videos > span.video {
+      position: relative;
+      overflow: hidden;
+      padding-top: 56.25%; }
+      body.industries-template-single-industries-fluid main section#videos div.videos > span.video iframe, body.industries-template-single-industries-2019 main section#videos div.videos > span.video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0; }
 
 body.industries-template-single-industries-fluid main section#inline_solutions, body.industries-template-single-industries-2019 main section#inline_solutions {
   padding-top: 2rem;
