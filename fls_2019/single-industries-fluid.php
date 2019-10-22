@@ -341,8 +341,27 @@ if (have_rows('industry_faq')) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
-
+// OSHA Content
+if (have_rows('osha')) {
+	echo '<section id="osha">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
+	while (have_rows('osha')) {
+		the_row();
+		$osha_title   = get_sub_field('title');
+		$osha_img     = get_sub_field('image');
+		$osha_content = get_sub_field('content');
+		echo '<div class="row"><div class="section_title col-12"><h1>'.$osha_title.'</h1></div></div>'.PHP_EOL;
+		echo '<div class="row">'.PHP_EOL;
+		echo '<div class="img col-12 col-md-4">'.($osha_img?'<img src="'.$osha_img['url'].'" alt="'.$osha_img['alt'].'" class="img-fluid">':'').'</div>'.PHP_EOL;
+		echo '<div class="content col-12 col-md-8">'.$osha_content.'</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+	}
+	wp_reset_query();
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+}
 // Contact Form
+$cf_contactForm = get_field('contact_form');
 if ($cf_contactForm) {
 	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center">How can we help?</h1></div></div></div></section>'.PHP_EOL;
 	echo '<section id="cf_contactForm">'.PHP_EOL;
