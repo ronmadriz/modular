@@ -244,10 +244,12 @@ if (have_rows('case_study_groups')) {
 }
 
 // VIDEOS
-$videos = get_field('videos');
+$videos      = get_field('videos');
+$video_count = count(get_field('videos'));
 if ($videos):
 echo '<section id="solution_videos">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
+echo '<p>'.$video_count.'</p>'.PHP_EOL;
 while (have_rows('videos')):the_row();
 $v_title = get_sub_field('title');
 $v_embed = get_sub_field('v_embed');
