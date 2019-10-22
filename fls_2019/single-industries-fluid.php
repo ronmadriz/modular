@@ -350,12 +350,12 @@ if (have_rows('industry_faq')) {
 
 				<h2>PERSONAL FALL PROTECTION:</h2>
 				<p>1910.140 Personal Fall Arrest Systems: The employer must ensure that each personal fall protection system used must comply with the requirements in this section:</p>
-				<ul type="i">
+				<ol type="i">
 				<li>Limit the maximum arresting force on the employee to 1,800 pounds; 1910.140(d)(1)</li>
 				<li>Bring the employee to a complete stop and limit the maximum deceleration distance the employee travels to 3.5 feet; 1910.140(d)(1)</li>
 				<li>Have sufficient strength to withstand twice the potential impact energy of the employee free falling a distance of 6 feet, or the free fall distance permitted by the system; and... 1910.140(d)(1)</li>
 				<li>Sustain the employee within the system/strap configuration without making contact with the employee's neck and chin area. 1910.140(d)(1)</li>
-				</ul>
+				</ol>
 				<h2>REGULAR INSPECTIONS:</h2>
 				<p>In the absence of a specific requirement for Inspection, OSHA Sec 5.a.1 becomes default: OSHA Sec 5.a.1 (a) Each employer - (1) shall furnish to each of his employees employment and a place of employment which are free from recognized hazards that are causing or are likely to cause death or serious physical harm to his employees; 29 USC 654 (2) shall comply with occupational safety and health standards promulgated under this Act. (b) Each employee shall comply with occupational safety and health standards and all rules, regulations, and orders issued pursuant to this Act which are applicable to his own actions and conduct.</p>
 				<p>Following manufacturer’s requirements is considered a reasonable effort to satisfy this general rule and employee responsibility. Flexible Lifeline Systems follows the requirements set by the manufacturer of the components that are used to build your system. Additionally, ANSI Standards ANSI/ASSE Z359.2 Z.359.6-2016 9.2, while not codified as law, are considered to be “best practices” and often required by many companies – insurance, banking, etc., to provide coverage such as worker compensation or professional insurance, or to assess capital asset values. These standards speak directly to importance of regular inspection of fall protection systems.</p>
