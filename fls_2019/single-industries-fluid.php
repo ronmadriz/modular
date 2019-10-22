@@ -355,6 +355,7 @@ if (have_rows('osha')) {
 		echo '<div class="content col-12 col-md-8">'.$osha_content.'</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 	}
+	wp_reset_query();
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
