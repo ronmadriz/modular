@@ -1346,7 +1346,7 @@ body.industries-template-single-industries-fluid main section#inline_solutions d
 body.industries-template-single-industries-fluid main section#case_study div.item div.img {
   height: 275px; }
 
-body.industries-template-single-industries-fluid main section#case_study div.item span.img {
+body.industries-template-single-industries-fluid main section#case_study div.item span.img img.img-fluid {
   min-width: 100%; }
 
 @media (min-width: 1600px) {

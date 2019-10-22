@@ -49,7 +49,11 @@ body {
 							}
 							span {
 								&.img {
-									min-width:100%;
+									img {
+										&.img-fluid {
+											min-width:100%;
+										}
+									}
 								}
 							}
 						}
