@@ -344,7 +344,7 @@ if (have_rows('industry_faq')) {
 if (have_rows('osha')) {
 	echo '<section id="osha">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
-	while (have_rows('industry_faq')) {
+	while (have_rows('osha')) {
 		the_row();
 		$osha_title   = get_sub_field('title');
 		$osha_img     = get_sub_field('image');
