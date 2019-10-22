@@ -213,7 +213,7 @@ if (have_rows('case_study_groups')) {
 	while (have_rows('case_study_groups')):the_row();
 	$study_section_title = get_sub_field('study_section_title');
 	$studies             = get_sub_field('studies');
-	$studies_count       = count(get_field('studies'));
+	$studies_count       = count($studies);
 	echo (!empty($study_section_title)?'<div class="row"><div class="section_title col-12"><h1>'.$study_section_title.'</h1></div></div>'.PHP_EOL:'');
 	if ($studies && $studies_count <= 3) {
 		while (have_rows('studies')) {
