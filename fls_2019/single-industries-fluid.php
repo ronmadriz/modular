@@ -246,19 +246,40 @@ if (have_rows('case_study_groups')) {
 // VIDEOS
 $videos      = get_field('videos');
 $video_count = count(get_field('videos'));
-if ($videos):
+if ($videos && $video_count == 1):
 echo '<section id="solution_videos">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
-echo '<p>'.$video_count.'</p>'.PHP_EOL;
 while (have_rows('videos')):the_row();
 $v_title = get_sub_field('title');
 $v_embed = get_sub_field('v_embed');
 $v_desc  = get_sub_field('description');
 echo '<div class="row">'.PHP_EOL;
-echo '<div class="section_title col-12"><h1>'.$v_title.'</h1></div>'.PHP_EOL;
-echo '<div class="video col-12">'.$v_embed.'</div>'.PHP_EOL;
-echo '<div class="content col-12">'.PHP_EOL;
+echo '<div class="video col-12">'.PHP_EOL;
+echo '<span class="section_title"><h1>'.$v_title.'</h1></span>'.PHP_EOL;
+echo '<span class="video">'.$v_embed.'</span>'.PHP_EOL;
+echo '<span class="content">'.PHP_EOL;
 echo $v_desc.PHP_EOL;
+echo '</span>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+endwhile;
+wp_reset_query();
+echo '</div>'.PHP_EOL;
+echo '</section>'.PHP_EOL;
+ elseif ($video_count >= 2):
+echo '<section id="solution_videos">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
+while (have_rows('videos')):the_row();
+$v_title = get_sub_field('title');
+$v_embed = get_sub_field('v_embed');
+$v_desc  = get_sub_field('description');
+echo '<div class="row">'.PHP_EOL;
+echo '<div class="col-12 col-md-6">'.PHP_EOL;
+echo '<span class="section_title"><h1>'.$v_title.'</h1></span>'.PHP_EOL;
+echo '<span class="video">'.$v_embed.'</span>'.PHP_EOL;
+echo '<span class="content">'.PHP_EOL;
+echo $v_desc.PHP_EOL;
+echo '</span>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 endwhile;
