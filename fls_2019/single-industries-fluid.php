@@ -237,7 +237,7 @@ if (have_rows('case_study_groups')) {
 			endif;
 		}
 		wp_reset_postdata();
-	} elseif ($studies && $studies_count >= 4) {
+	} elseif ($studies && $studies_count > 3) {
 		while (have_rows('studies')) {
 			the_row();
 			$study_item = get_sub_field('case_study');
