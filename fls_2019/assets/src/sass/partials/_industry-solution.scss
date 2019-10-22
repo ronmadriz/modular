@@ -47,6 +47,11 @@ body {
 									height: 275px; // change
 								}
 							}
+							span {
+								&.img {
+									min-width:100%;
+								}
+							}
 						}
 					}
 				}		
