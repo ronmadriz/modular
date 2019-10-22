@@ -254,7 +254,7 @@ if (have_rows('case_study_groups')) {
 			echo '<span class="d-block content text-center text-md-left col-12 col-md-8 align-self-center">'.PHP_EOL;
 			echo (!empty($case_study_title)?'<h4>'.$case_study_title.'</h4>'.PHP_EOL:'<h4>'.get_the_title($study->ID).'</h4>'.PHP_EOL);
 			echo '<p>'.$study_summary.'</p>'.PHP_EOL;
-			echo '<span class="d-block buttons"><a href="'.get_permalink($study->ID).'" class="btn btn-dark">View Case Study</a></div>';
+			echo '<span class="d-block buttons"><a href="'.get_permalink($study->ID).'" class="btn btn-dark">View Case Study</a></span>';
 			echo '</span>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
