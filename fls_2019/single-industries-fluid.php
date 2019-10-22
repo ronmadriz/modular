@@ -354,7 +354,6 @@ if (have_rows('osha')) {
 		echo '<div class="img col-12 col-md-4">'.($osha_img?'<img src="'.$osha_img['url'].'" alt="'.$osha_img['alt'].'" class="img-fluid">':'').'</div>'.PHP_EOL;
 		echo '<div class="content col-12 col-md-8">'.$osha_content.'</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
-		wp_reset_postdata();
 	}
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
