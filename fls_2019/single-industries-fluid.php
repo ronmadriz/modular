@@ -340,22 +340,26 @@ if (have_rows('industry_faq')) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
-// OSHA Section
-$osha = get_field('osha');
-if ($osha) {
-	echo '<section id="osha">'.PHP_EOL;
+// OSHA Content
+if (have_rows('osha')) {
+	echo '<section id="faq">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="content col-12">'.PHP_EOL;
-	echo $osha;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
+	while (have_rows('industry_faq')) {
+		the_row();
+		$osha_title   = get_sub_field('title');
+		$osha_img     = get_sub_field('image');
+		$osha_content = get_sub_field('content');
+		echo '<div class="row"><div class="section_title col-12">'.$osha_title.'</div></div>'.PHP_EOL;
+		echo '<div class="row">'.PHP_EOL;
+		echo '<div class="img col-12 col-md-4">'.$osha_img.'</div>'.PHP_EOL;
+		echo '<div class="content col-12 col-md-8">'.$osha_content.'</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		wp_reset_postdata();
+	}
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
-
-$cf_contactForm = do_shortcode('[contact-form-7 id="1117125" title="Single Fluid - Contact Form"]');
-
+// Contact Form
 if ($cf_contactForm) {
 	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center">How can we help?</h1></div></div></div></section>'.PHP_EOL;
 	echo '<section id="cf_contactForm">'.PHP_EOL;
