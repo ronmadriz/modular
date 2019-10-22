@@ -210,8 +210,14 @@ body {
 						}
 					}
 				}
-				&.videos {
-
+				&#videos {
+					div {
+						&.videos {
+							>span {
+								display:block;
+							}
+						}
+					}
 				}
 				&#inline_solutions {
 					padding-top: 2rem;
