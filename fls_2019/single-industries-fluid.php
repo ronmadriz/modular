@@ -342,7 +342,7 @@ if (have_rows('industry_faq')) {
 }
 // OSHA Content
 if (have_rows('osha')) {
-	echo '<section id="faq">'.PHP_EOL;
+	echo '<section id="osha">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('industry_faq')) {
 		the_row();
