@@ -6,7 +6,6 @@ html {
 					&:not(#banner), &#banner div.page_title {
 					    padding-left:5%;
 					    padding-right:5%;
-					    margin-bottom: 2rem;
 						@media(min-width:992px) and (max-width:1299.99px){
 						    padding-left: 10%;
 						    padding-right: 10%;
@@ -209,8 +208,6 @@ html {
 						}
 					}
 					&#inline_solutions {
-						padding-top: 2rem;
-						padding-bottom: 2rem;
 						div {
 							&.title {
 								margin-top:.75rem;
