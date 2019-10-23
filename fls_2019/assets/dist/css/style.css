@@ -1387,7 +1387,8 @@ html body.solutions-template-solutions-fluid main section#cf_contactFormTitle, h
 html body.solutions-template-solutions-fluid main section#cf_contactForm, html body.industries-template-single-industries-fluid main section#cf_contactForm, html body.page-template-fall-protection-101 main section#cf_contactForm, html body.page-template-sample-fall-protection-plan main section#cf_contactForm {
   background-color: #e6e7e9;
   padding-top: 1rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  margin-bottom: 0; }
   html body.solutions-template-solutions-fluid main section#cf_contactForm textarea, html body.industries-template-single-industries-fluid main section#cf_contactForm textarea, html body.page-template-fall-protection-101 main section#cf_contactForm textarea, html body.page-template-sample-fall-protection-plan main section#cf_contactForm textarea {
     height: 5.5rem; }
   @media (min-width: 786px) {
