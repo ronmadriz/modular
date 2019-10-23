@@ -43,6 +43,13 @@ j(document).ready(function(){
         if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 400});
     });
 
+$('#version-select').change(function(){
+    var val = $(this).val();
+    var lastThreeChars = val.substring(val.length - 3);
+    $('div').hide();
+    $('div[class$="' + lastThreeChars + '"]').show();
+});
+
 });
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
@@ -96,3 +103,16 @@ function offsetAnchor() {
 }
 window.addEventListener("hashchange", offsetAnchor);
 window.setTimeout(offsetAnchor, 1)
+
+// Solutions Filter
+var $btns = j('.btn_filter').click(function() {
+  if (this.id == 'all') {
+    j('#solutions_results > .item').fadeIn(450);
+  } else {
+    var $el = j('.' + this.id).fadeIn(450);
+    j('#solutions_results > .item').not($el).hide();
+  }
+  $btns.removeClass('active');
+  j(this).addClass('active');
+})
+
