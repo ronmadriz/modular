@@ -81,11 +81,15 @@ html {
 								    margin-bottom:0;
 								}								
 							}
+							&.page_title {
+								margin-bottom:0;
+								&::after{
+									height:0;
+									width:0;
+								}
+							}
 						}
 					}					
-					&#banner div.page_title, &#cf_contactFormTitle {
-						margin-bottom:0;
-					}
 					&#breadcrumbs {
 						ul {
 							&.list-inline {
@@ -153,6 +157,7 @@ html {
 						background-color: $accent_1;
 						padding-top:1rem;
 						margin-top:2rem;
+						margin-bottom:0;
 						h1 {
 							color: $alternate;
 						}

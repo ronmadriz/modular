@@ -1372,8 +1372,11 @@ html body.solutions-template-solutions-fluid main section#main-content, html bod
     min-height: 600px;
     margin-bottom: 0; } }
 
-html body.solutions-template-solutions-fluid main section#banner div.page_title, html body.solutions-template-solutions-fluid main section#cf_contactFormTitle, html body.industries-template-single-industries-fluid main section#banner div.page_title, html body.industries-template-single-industries-fluid main section#cf_contactFormTitle, html body.page-template-fall-protection-101 main section#banner div.page_title, html body.page-template-fall-protection-101 main section#cf_contactFormTitle, html body.page-template-sample-fall-protection-plan main section#banner div.page_title, html body.page-template-sample-fall-protection-plan main section#cf_contactFormTitle {
+html body.solutions-template-solutions-fluid main section#banner div.page_title, html body.industries-template-single-industries-fluid main section#banner div.page_title, html body.page-template-fall-protection-101 main section#banner div.page_title, html body.page-template-sample-fall-protection-plan main section#banner div.page_title {
   margin-bottom: 0; }
+  html body.solutions-template-solutions-fluid main section#banner div.page_title::after, html body.industries-template-single-industries-fluid main section#banner div.page_title::after, html body.page-template-fall-protection-101 main section#banner div.page_title::after, html body.page-template-sample-fall-protection-plan main section#banner div.page_title::after {
+    height: 0;
+    width: 0; }
 
 html body.solutions-template-solutions-fluid main section#breadcrumbs ul.list-inline, html body.industries-template-single-industries-fluid main section#breadcrumbs ul.list-inline, html body.page-template-fall-protection-101 main section#breadcrumbs ul.list-inline, html body.page-template-sample-fall-protection-plan main section#breadcrumbs ul.list-inline {
   margin-bottom: 0; }
@@ -1414,7 +1417,8 @@ html body.solutions-template-solutions-fluid main section#cta_blue, html body.in
 html body.solutions-template-solutions-fluid main section#cf_contactFormTitle, html body.industries-template-single-industries-fluid main section#cf_contactFormTitle, html body.page-template-fall-protection-101 main section#cf_contactFormTitle, html body.page-template-sample-fall-protection-plan main section#cf_contactFormTitle {
   background-color: #156cb3;
   padding-top: 1rem;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  margin-bottom: 0; }
   html body.solutions-template-solutions-fluid main section#cf_contactFormTitle h1, html body.industries-template-single-industries-fluid main section#cf_contactFormTitle h1, html body.page-template-fall-protection-101 main section#cf_contactFormTitle h1, html body.page-template-sample-fall-protection-plan main section#cf_contactFormTitle h1 {
     color: white; }
 
