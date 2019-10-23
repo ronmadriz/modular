@@ -2,37 +2,6 @@ body {
 	&.page-template-sample-fall-protection-plan {
 		main {
 			section {
-				&#cf_contactFormTitle {
-					background-color: $accent_1;
-					padding-top:1rem;
-					margin-top:2rem;
-					h1 {
-						color: $alternate;
-					}
-				}
-				&#cf_contactForm {
-					background-color: $accent_3;
-					padding-top:1rem;
-					padding-bottom:1rem;
-					margin-bottom:3rem;					
-					textarea {
-						height: 5.5rem;						
-					}
-					div {
-						&#fp_101_form {}
-						&#fp_101_form_th {
-							img {
-								&.img-fluid {
-									@media(min-width:786px){
-										position: absolute;
-										bottom: -1rem;
-										max-height: 475px;
-									}
-								}
-							}							
-						}
-					}
-				}
 				&#sfpp_plan {
 					div {
 						&.row {
