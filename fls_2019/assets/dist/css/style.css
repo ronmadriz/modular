@@ -1494,7 +1494,7 @@ html body.solutions-template-solutions-fluid main section#testimonial, html body
         html body.solutions-template-solutions-fluid main section#testimonial div.content:before, html body.industries-template-single-industries-fluid main section#testimonial div.content:before, html body.page-template-fall-protection-101 main section#testimonial div.content:before, html body.page-template-sample-fall-protection-plan main section#testimonial div.content:before {
           top: -2.5rem; } }
 
-html body.solutions-template-solutions-fluid main footer section#foot_call_cta, html body.industries-template-single-industries-fluid main footer section#foot_call_cta, html body.page-template-fall-protection-101 main footer section#foot_call_cta, html body.page-template-sample-fall-protection-plan main footer section#foot_call_cta {
+html body.solutions-template-solutions-fluid footer section#foot_call_cta, html body.industries-template-single-industries-fluid footer section#foot_call_cta, html body.page-template-fall-protection-101 footer section#foot_call_cta, html body.page-template-sample-fall-protection-plan footer section#foot_call_cta {
   margin-top: 0; }
 
 body.solutions-template div.testimonials {
