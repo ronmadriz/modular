@@ -172,7 +172,7 @@ if ($solutions_footercs) {
 	while (have_rows('solutions_footer')):the_row();
 	$solution_footers_title = get_sub_field('title');
 	$solution_footers_text  = get_sub_field('text');
-	echo '<section id="child_grid">'.PHP_EOL;
+	echo '<section id="inline_solutions">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="title gray_bg col-12 text-center"><span>'.$solution_footers_title.'</span></div>'.PHP_EOL;
