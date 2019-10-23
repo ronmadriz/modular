@@ -1399,8 +1399,11 @@ html body.solutions-template-solutions-fluid main section#gallery, html body.ind
     width: 50%;
     text-align: center; }
 
-html body.solutions-template-solutions-fluid main section#literature ul.literature_list li img.img-fluid, html body.industries-template-single-industries-fluid main section#literature ul.literature_list li img.img-fluid, html body.page-template-fall-protection-101 main section#literature ul.literature_list li img.img-fluid, html body.page-template-sample-fall-protection-plan main section#literature ul.literature_list li img.img-fluid {
-  min-width: 100%; }
+html body.solutions-template-solutions-fluid main section#literature, html body.industries-template-single-industries-fluid main section#literature, html body.page-template-fall-protection-101 main section#literature, html body.page-template-sample-fall-protection-plan main section#literature {
+  padding-top: 0;
+  padding-bottom: 0; }
+  html body.solutions-template-solutions-fluid main section#literature ul.literature_list li img.img-fluid, html body.industries-template-single-industries-fluid main section#literature ul.literature_list li img.img-fluid, html body.page-template-fall-protection-101 main section#literature ul.literature_list li img.img-fluid, html body.page-template-sample-fall-protection-plan main section#literature ul.literature_list li img.img-fluid {
+    min-width: 100%; }
 
 html body.solutions-template-solutions-fluid main section#cta_blue, html body.industries-template-single-industries-fluid main section#cta_blue, html body.page-template-fall-protection-101 main section#cta_blue, html body.page-template-sample-fall-protection-plan main section#cta_blue {
   background-color: #156cb3;
