@@ -31,10 +31,6 @@ html {
 						    line-height: 150%;
 						}
 						@media(min-width:1600px){
-							section#banner div.w-image {
-							    min-height: 585px;
-							    margin-bottom:0;
-							}
 							a {
 								line-height: 1.75rem;
 							}
@@ -71,6 +67,12 @@ html {
 							    padding-left: 1.5rem;
 							    padding-right: 1.5rem;
 							}
+						}
+					}
+					&#banner div.w-image {
+						@media(min-width:1600px){
+						    min-height: 585px;
+						    margin-bottom:0;
 						}
 					}
 				}			
