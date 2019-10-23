@@ -3,7 +3,7 @@ html {
 		&.solutions-template-solutions-fluid, &.industries-template-single-industries-fluid, &.page-template-fall-protection-101, &.page-template-sample-fall-protection-plan {
 			main {
 				section {
-					&:not(#banner), &#banner div.page_title {					
+					&:not(#banner), &#banner div.page_title {
 					    padding-left:5%;
 					    padding-right:5%;
 					    margin-bottom: 2rem;
@@ -100,7 +100,6 @@ html {
 						background-color: $accent_3;
 						padding-top:1rem;
 						padding-bottom:1rem;
-						margin-bottom:3rem;					
 						textarea {
 							height: 5.5rem;						
 						}
