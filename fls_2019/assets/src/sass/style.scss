@@ -69,10 +69,17 @@ html {
 							}
 						}
 					}
-					&#banner div.w-image {
-						@media(min-width:1600px){
-						    min-height: 585px;
-						    margin-bottom:0;
+					&#banner {
+						div {
+							&.w-image {
+								@media(min-width:1600px){
+								    min-height: 585px;
+								    margin-bottom:0;
+								}								
+							}
+							&.page_title {
+								margin-bottom:0;
+							}
 						}
 					}
 				}			

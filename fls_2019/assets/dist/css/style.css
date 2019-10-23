@@ -193,6 +193,9 @@ html body.solutions-template-solutions-fluid main section:not(#banner), html bod
     min-height: 585px;
     margin-bottom: 0; } }
 
+html body.solutions-template-solutions-fluid main section#banner div.page_title, html body.industries-template-single-industries-fluid main section#banner div.page_title, html body.page-template-fall-protection-101 main section#banner div.page_title, html body.page-template-sample-fall-protection-plan main section#banner div.page_title {
+  margin-bottom: 0; }
+
 html body div#pagewrapper {
   padding-top: 1rem;
   padding-bottom: 1rem; }
