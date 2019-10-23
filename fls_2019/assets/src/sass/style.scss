@@ -31,7 +31,9 @@ html {
 						    line-height: 150%;
 						}
 						@media(min-width:1600px){
-
+							section#banner div.w-image {
+							    min-height: 585px;
+							}
 							a {
 								line-height: 1.75rem;
 							}

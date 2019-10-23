@@ -166,6 +166,8 @@ html body.solutions-template-solutions-fluid main section:not(#banner), html bod
       font-size: 131%;
       line-height: 150%; } }
   @media (min-width: 1600px) {
+    html body.solutions-template-solutions-fluid main section:not(#banner) section#banner div.w-image, html body.solutions-template-solutions-fluid main section#banner div.page_title section#banner div.w-image, html body.industries-template-single-industries-fluid main section:not(#banner) section#banner div.w-image, html body.industries-template-single-industries-fluid main section#banner div.page_title section#banner div.w-image, html body.page-template-fall-protection-101 main section:not(#banner) section#banner div.w-image, html body.page-template-fall-protection-101 main section#banner div.page_title section#banner div.w-image, html body.page-template-sample-fall-protection-plan main section:not(#banner) section#banner div.w-image, html body.page-template-sample-fall-protection-plan main section#banner div.page_title section#banner div.w-image {
+      min-height: 585px; }
     html body.solutions-template-solutions-fluid main section:not(#banner) a, html body.solutions-template-solutions-fluid main section#banner div.page_title a, html body.industries-template-single-industries-fluid main section:not(#banner) a, html body.industries-template-single-industries-fluid main section#banner div.page_title a, html body.page-template-fall-protection-101 main section:not(#banner) a, html body.page-template-fall-protection-101 main section#banner div.page_title a, html body.page-template-sample-fall-protection-plan main section:not(#banner) a, html body.page-template-sample-fall-protection-plan main section#banner div.page_title a {
       line-height: 1.75rem; }
     html body.solutions-template-solutions-fluid main section:not(#banner) div.title a, html body.solutions-template-solutions-fluid main section#banner div.page_title div.title a, html body.industries-template-single-industries-fluid main section:not(#banner) div.title a, html body.industries-template-single-industries-fluid main section#banner div.page_title div.title a, html body.page-template-fall-protection-101 main section:not(#banner) div.title a, html body.page-template-fall-protection-101 main section#banner div.page_title div.title a, html body.page-template-sample-fall-protection-plan main section:not(#banner) div.title a, html body.page-template-sample-fall-protection-plan main section#banner div.page_title div.title a {
@@ -1666,29 +1668,6 @@ svg .region path {
           animation: fadeInFromNone 0.5s ease-out; }
   svg .region path:hover {
     opacity: .9; }
-
-@media (min-width: 1600px) {
-  body.page-template-fall-protection-101 main section:not(#banner) a, body.page-template-fall-protection-101 main section#banner div.page_title a {
-    line-height: 1.75rem; }
-  body.page-template-fall-protection-101 main section:not(#banner) div.title a, body.page-template-fall-protection-101 main section#banner div.page_title div.title a {
-    font-size: 1.6rem;
-    line-height: 1.75rem; }
-  body.page-template-fall-protection-101 main section:not(#banner) h1, body.page-template-fall-protection-101 main section#banner div.page_title h1 {
-    font-size: 1.75rem; }
-  body.page-template-fall-protection-101 main section:not(#banner) h4, body.page-template-fall-protection-101 main section#banner div.page_title h4 {
-    font-size: 1.75rem; }
-  body.page-template-fall-protection-101 main section:not(#banner) a.btn.btn-dark, body.page-template-fall-protection-101 main section#banner div.page_title a.btn.btn-dark {
-    font-size: 1.25rem; }
-  body.page-template-fall-protection-101 main section:not(#banner) main form input.form-control[type=date], body.page-template-fall-protection-101 main section:not(#banner) main form input.form-control[type=email], body.page-template-fall-protection-101 main section:not(#banner) main form input.form-control[type=password], body.page-template-fall-protection-101 main section:not(#banner) main form input.form-control[type=tel], body.page-template-fall-protection-101 main section:not(#banner) main form input.form-control[type=text], body.page-template-fall-protection-101 main section:not(#banner) main form input.medium[type=date], body.page-template-fall-protection-101 main section:not(#banner) main form input.medium[type=email], body.page-template-fall-protection-101 main section:not(#banner) main form input.medium[type=password], body.page-template-fall-protection-101 main section:not(#banner) main form input.medium[type=tel], body.page-template-fall-protection-101 main section:not(#banner) main form input.medium[type=text], body.page-template-fall-protection-101 main section#banner div.page_title main form input.form-control[type=date], body.page-template-fall-protection-101 main section#banner div.page_title main form input.form-control[type=email], body.page-template-fall-protection-101 main section#banner div.page_title main form input.form-control[type=password], body.page-template-fall-protection-101 main section#banner div.page_title main form input.form-control[type=tel], body.page-template-fall-protection-101 main section#banner div.page_title main form input.form-control[type=text], body.page-template-fall-protection-101 main section#banner div.page_title main form input.medium[type=date], body.page-template-fall-protection-101 main section#banner div.page_title main form input.medium[type=email], body.page-template-fall-protection-101 main section#banner div.page_title main form input.medium[type=password], body.page-template-fall-protection-101 main section#banner div.page_title main form input.medium[type=tel], body.page-template-fall-protection-101 main section#banner div.page_title main form input.medium[type=text] {
-    margin-bottom: 1rem;
-    font-size: 1.25rem; }
-  body.page-template-fall-protection-101 main section:not(#banner) .form-control, body.page-template-fall-protection-101 main section#banner div.page_title .form-control {
-    font-size: 1.25rem; }
-  body.page-template-fall-protection-101 main section:not(#banner) main form select, body.page-template-fall-protection-101 main section:not(#banner) main form textarea, body.page-template-fall-protection-101 main section#banner div.page_title main form select, body.page-template-fall-protection-101 main section#banner div.page_title main form textarea {
-    margin-bottom: 1.25rem; }
-  body.page-template-fall-protection-101 main section:not(#banner) .fp_icon, body.page-template-fall-protection-101 main section#banner div.page_title .fp_icon {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem; } }
 
 @media (min-width: 1350px) {
   body.page-template-fall-protection-101 main section#banner {
