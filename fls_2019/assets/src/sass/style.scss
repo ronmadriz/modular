@@ -13,6 +13,66 @@ html {
 				}
 			}
 		}
+		&.solutions-template-solutions-fluid, &.industries-template-single-industries-fluid, &.page-template-fall-protection-101, &.page-template-sample-fall-protection-plan {
+			main {
+				section {
+					&:not(#banner), &#banner div.page_title {					
+					    padding-left:5%;
+					    padding-right:5%;
+					    margin-bottom: 2rem;
+						@media(min-width:992px) and (max-width:1299.99px){
+						    padding-left: 10%;
+						    padding-right: 10%;
+						}
+						@media(min-width:1300px){
+						    padding-left: 100px;
+						    padding-right: 100px;
+						    font-size: 131%;
+						    line-height: 150%;
+						}
+						@media(min-width:1600px){
+
+							a {
+								line-height: 1.75rem;
+							}
+							div.title a {
+								font-size: 1.6rem;
+								line-height: 1.75rem;	
+							}
+
+							h1 {
+								font-size: 1.75rem;
+								
+							}
+							h4 {
+								font-size: 1.75rem;	
+							}
+
+
+							a.btn.btn-dark {
+								font-size: 1.25rem;
+							}
+
+							main form input.form-control[type=date], main form input.form-control[type=email], main form input.form-control[type=password], main form input.form-control[type=tel], main form input.form-control[type=text], main form input.medium[type=date], main form input.medium[type=email], main form input.medium[type=password], main form input.medium[type=tel], main form input.medium[type=text] {
+								margin-bottom: 1rem;
+								font-size: 1.25rem;
+							}
+							.form-control{
+								font-size: 1.25rem;
+							}
+
+							main form select, main form textarea {
+								margin-bottom: 1.25rem;
+							}
+							.fp_icon {
+							    padding-left: 1.5rem;
+							    padding-right: 1.5rem;
+							}
+						}
+					}
+				}			
+			}
+		}
 		div {
 			&#pagewrapper {
 				padding-top: 1rem;
