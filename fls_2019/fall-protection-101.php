@@ -35,8 +35,6 @@ endif;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 
-// End Industry Main Column
-
 // Icons
 if (have_rows('fp_icons')) {
 	echo '<section id="fp_icons">'.PHP_EOL;

@@ -20,7 +20,10 @@ echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 
-// INDUSTRY CONTENT
+the_breadcrumb();
+
+// MAIN CONTENT
+
 if (have_posts()):while (have_posts()):the_post();
 echo '<section id="main-content">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
