@@ -56,6 +56,23 @@ html {
 							}
 						}
 					}
+					div, span {
+						&.section_title {
+							border-bottom-width: 2px;
+							border-bottom-color: $black;
+							padding-left: 0;
+						}
+					}
+					&#main-content {
+						padding-top: .5rem;
+						h2 {
+							&:first-of-type {
+							    text-transform: uppercase;
+							    font-weight: bold;
+							    letter-spacing: .0125px;
+							}
+						}
+					}
 					&#banner {
 						div {
 							&.w-image {
@@ -65,6 +82,9 @@ html {
 								}								
 							}
 						}
+					}					
+					&#banner div.page_title, &#cf_contactFormTitle {
+						margin-bottom:0;
 					}
 					&#breadcrumbs {
 						ul {
@@ -72,9 +92,50 @@ html {
 							    margin-bottom: 0;
 							}
 						}
-					}					
-					&#banner div.page_title, &#cf_contactFormTitle {
-						margin-bottom:0;
+					}
+					&#gallery {
+						padding:2rem 0 0;
+						@media(min-width:768px) {
+							padding:2rem 100px;
+						}
+						img {
+							&.img-fluid {
+								min-width: 100%;
+							}
+						}
+						div {
+							&.content {
+								padding-right:0;
+								&.gallery {
+									padding-left: 0;
+									padding-right: 0;
+								}
+							}
+							&#gallery_img{
+								@media(max-width:786px){
+									margin-bottom: .25rem;
+								}						
+							}
+							&#carousel_controls {
+								a {
+									width:50%;
+								    text-align: center;
+								}
+							}
+						}
+					}
+					&#literature {
+						ul {
+							&.literature_list {
+								li {
+									img {
+										&.img-fluid {
+											min-width:100%;
+										}
+									}
+								}
+							}
+						}
 					}
 					&#cta_blue {
 						background-color: $accent_1;

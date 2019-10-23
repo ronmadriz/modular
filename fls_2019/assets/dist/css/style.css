@@ -1355,16 +1355,50 @@ html body.solutions-template-solutions-fluid main section:not(#banner), html bod
       padding-left: 1.5rem;
       padding-right: 1.5rem; } }
 
+html body.solutions-template-solutions-fluid main section div.section_title, html body.solutions-template-solutions-fluid main section span.section_title, html body.industries-template-single-industries-fluid main section div.section_title, html body.industries-template-single-industries-fluid main section span.section_title, html body.page-template-fall-protection-101 main section div.section_title, html body.page-template-fall-protection-101 main section span.section_title, html body.page-template-sample-fall-protection-plan main section div.section_title, html body.page-template-sample-fall-protection-plan main section span.section_title {
+  border-bottom-width: 2px;
+  border-bottom-color: #404040;
+  padding-left: 0; }
+
+html body.solutions-template-solutions-fluid main section#main-content, html body.industries-template-single-industries-fluid main section#main-content, html body.page-template-fall-protection-101 main section#main-content, html body.page-template-sample-fall-protection-plan main section#main-content {
+  padding-top: .5rem; }
+  html body.solutions-template-solutions-fluid main section#main-content h2:first-of-type, html body.industries-template-single-industries-fluid main section#main-content h2:first-of-type, html body.page-template-fall-protection-101 main section#main-content h2:first-of-type, html body.page-template-sample-fall-protection-plan main section#main-content h2:first-of-type {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .0125px; }
+
 @media (min-width: 1600px) {
   html body.solutions-template-solutions-fluid main section#banner div.w-image, html body.industries-template-single-industries-fluid main section#banner div.w-image, html body.page-template-fall-protection-101 main section#banner div.w-image, html body.page-template-sample-fall-protection-plan main section#banner div.w-image {
     min-height: 600px;
     margin-bottom: 0; } }
 
+html body.solutions-template-solutions-fluid main section#banner div.page_title, html body.solutions-template-solutions-fluid main section#cf_contactFormTitle, html body.industries-template-single-industries-fluid main section#banner div.page_title, html body.industries-template-single-industries-fluid main section#cf_contactFormTitle, html body.page-template-fall-protection-101 main section#banner div.page_title, html body.page-template-fall-protection-101 main section#cf_contactFormTitle, html body.page-template-sample-fall-protection-plan main section#banner div.page_title, html body.page-template-sample-fall-protection-plan main section#cf_contactFormTitle {
+  margin-bottom: 0; }
+
 html body.solutions-template-solutions-fluid main section#breadcrumbs ul.list-inline, html body.industries-template-single-industries-fluid main section#breadcrumbs ul.list-inline, html body.page-template-fall-protection-101 main section#breadcrumbs ul.list-inline, html body.page-template-sample-fall-protection-plan main section#breadcrumbs ul.list-inline {
   margin-bottom: 0; }
 
-html body.solutions-template-solutions-fluid main section#banner div.page_title, html body.solutions-template-solutions-fluid main section#cf_contactFormTitle, html body.industries-template-single-industries-fluid main section#banner div.page_title, html body.industries-template-single-industries-fluid main section#cf_contactFormTitle, html body.page-template-fall-protection-101 main section#banner div.page_title, html body.page-template-fall-protection-101 main section#cf_contactFormTitle, html body.page-template-sample-fall-protection-plan main section#banner div.page_title, html body.page-template-sample-fall-protection-plan main section#cf_contactFormTitle {
-  margin-bottom: 0; }
+html body.solutions-template-solutions-fluid main section#gallery, html body.industries-template-single-industries-fluid main section#gallery, html body.page-template-fall-protection-101 main section#gallery, html body.page-template-sample-fall-protection-plan main section#gallery {
+  padding: 2rem 0 0; }
+  @media (min-width: 768px) {
+    html body.solutions-template-solutions-fluid main section#gallery, html body.industries-template-single-industries-fluid main section#gallery, html body.page-template-fall-protection-101 main section#gallery, html body.page-template-sample-fall-protection-plan main section#gallery {
+      padding: 2rem 100px; } }
+  html body.solutions-template-solutions-fluid main section#gallery img.img-fluid, html body.industries-template-single-industries-fluid main section#gallery img.img-fluid, html body.page-template-fall-protection-101 main section#gallery img.img-fluid, html body.page-template-sample-fall-protection-plan main section#gallery img.img-fluid {
+    min-width: 100%; }
+  html body.solutions-template-solutions-fluid main section#gallery div.content, html body.industries-template-single-industries-fluid main section#gallery div.content, html body.page-template-fall-protection-101 main section#gallery div.content, html body.page-template-sample-fall-protection-plan main section#gallery div.content {
+    padding-right: 0; }
+    html body.solutions-template-solutions-fluid main section#gallery div.content.gallery, html body.industries-template-single-industries-fluid main section#gallery div.content.gallery, html body.page-template-fall-protection-101 main section#gallery div.content.gallery, html body.page-template-sample-fall-protection-plan main section#gallery div.content.gallery {
+      padding-left: 0;
+      padding-right: 0; }
+  @media (max-width: 786px) {
+    html body.solutions-template-solutions-fluid main section#gallery div#gallery_img, html body.industries-template-single-industries-fluid main section#gallery div#gallery_img, html body.page-template-fall-protection-101 main section#gallery div#gallery_img, html body.page-template-sample-fall-protection-plan main section#gallery div#gallery_img {
+      margin-bottom: .25rem; } }
+  html body.solutions-template-solutions-fluid main section#gallery div#carousel_controls a, html body.industries-template-single-industries-fluid main section#gallery div#carousel_controls a, html body.page-template-fall-protection-101 main section#gallery div#carousel_controls a, html body.page-template-sample-fall-protection-plan main section#gallery div#carousel_controls a {
+    width: 50%;
+    text-align: center; }
+
+html body.solutions-template-solutions-fluid main section#literature ul.literature_list li img.img-fluid, html body.industries-template-single-industries-fluid main section#literature ul.literature_list li img.img-fluid, html body.page-template-fall-protection-101 main section#literature ul.literature_list li img.img-fluid, html body.page-template-sample-fall-protection-plan main section#literature ul.literature_list li img.img-fluid {
+  min-width: 100%; }
 
 html body.solutions-template-solutions-fluid main section#cta_blue, html body.industries-template-single-industries-fluid main section#cta_blue, html body.page-template-fall-protection-101 main section#cta_blue, html body.page-template-sample-fall-protection-plan main section#cta_blue {
   background-color: #156cb3;
@@ -1505,37 +1539,6 @@ body.solutions-template div.testimonials {
   padding: 28px 28px;
   word-wrap: break-word; }
 
-body.industries-template-single-industries-fluid main section div.section_title, body.industries-template-single-industries-fluid main section span.section_title {
-  border-bottom-width: 2px;
-  border-bottom-color: #404040;
-  padding-left: 0; }
-
-body.industries-template-single-industries-fluid main section#main-content {
-  padding-top: .5rem; }
-  body.industries-template-single-industries-fluid main section#main-content h2:first-of-type {
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: .0125px; }
-
-body.industries-template-single-industries-fluid main section#gallery {
-  padding: 2rem 0 0; }
-  @media (min-width: 768px) {
-    body.industries-template-single-industries-fluid main section#gallery {
-      padding: 2rem 100px; } }
-  body.industries-template-single-industries-fluid main section#gallery img.img-fluid {
-    min-width: 100%; }
-  body.industries-template-single-industries-fluid main section#gallery div.content {
-    padding-right: 0; }
-    body.industries-template-single-industries-fluid main section#gallery div.content.gallery {
-      padding-left: 0;
-      padding-right: 0; }
-  @media (max-width: 786px) {
-    body.industries-template-single-industries-fluid main section#gallery div#gallery_img {
-      margin-bottom: .25rem; } }
-  body.industries-template-single-industries-fluid main section#gallery div#carousel_controls a {
-    width: 50%;
-    text-align: center; }
-
 body.industries-template-single-industries-fluid main section#icons {
   padding-top: 3rem; }
   body.industries-template-single-industries-fluid main section#icons h2 {
@@ -1552,9 +1555,6 @@ body.industries-template-single-industries-fluid main section#icons {
     color: #156cb3; }
   body.industries-template-single-industries-fluid main section#icons div.fl_content p {
     margin-bottom: 0; }
-
-body.industries-template-single-industries-fluid main section#literature ul.literature_list li img.img-fluid {
-  min-width: 100%; }
 
 html body#page-testimonials div.featured_testimonials {
   margin-top: 1.5rem;
@@ -1700,6 +1700,3 @@ body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row {
     body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row.item:not(:last-of-type) {
       border-bottom: 1px solid gray;
       padding-bottom: 2rem; }
-
-body.page-template-sample-fall-protection-plan main section#inline_solutions div.item div.title a {
-  line-height: 2.25rem; }
