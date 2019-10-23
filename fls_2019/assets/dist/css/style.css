@@ -190,10 +190,13 @@ html body.solutions-template-solutions-fluid main section:not(#banner), html bod
 
 @media (min-width: 1600px) {
   html body.solutions-template-solutions-fluid main section#banner div.w-image, html body.industries-template-single-industries-fluid main section#banner div.w-image, html body.page-template-fall-protection-101 main section#banner div.w-image, html body.page-template-sample-fall-protection-plan main section#banner div.w-image {
-    min-height: 585px;
+    min-height: 600px;
     margin-bottom: 0; } }
 
-html body.solutions-template-solutions-fluid main section#banner div.page_title, html body.industries-template-single-industries-fluid main section#banner div.page_title, html body.page-template-fall-protection-101 main section#banner div.page_title, html body.page-template-sample-fall-protection-plan main section#banner div.page_title {
+html body.solutions-template-solutions-fluid main section#breadcrumbs ul.list-inline, html body.industries-template-single-industries-fluid main section#breadcrumbs ul.list-inline, html body.page-template-fall-protection-101 main section#breadcrumbs ul.list-inline, html body.page-template-sample-fall-protection-plan main section#breadcrumbs ul.list-inline {
+  margin-bottom: 0; }
+
+html body.solutions-template-solutions-fluid main section#banner div.page_title, html body.solutions-template-solutions-fluid main section div.cf_contactFormTitle, html body.industries-template-single-industries-fluid main section#banner div.page_title, html body.industries-template-single-industries-fluid main section div.cf_contactFormTitle, html body.page-template-fall-protection-101 main section#banner div.page_title, html body.page-template-fall-protection-101 main section div.cf_contactFormTitle, html body.page-template-sample-fall-protection-plan main section#banner div.page_title, html body.page-template-sample-fall-protection-plan main section div.cf_contactFormTitle {
   margin-bottom: 0; }
 
 html body div#pagewrapper {
@@ -1380,35 +1383,6 @@ body.industries-template-single-industries-fluid main section#case_study div.ite
 body.industries-template-single-industries-fluid main section#case_study div.item span.img img.img-fluid {
   min-width: 100%; }
 
-@media (min-width: 1600px) {
-  body.industries-template-single-industries-fluid section#banner div.w-image {
-    min-height: 585px; }
-  body.industries-template-single-industries-fluid p {
-    font-size: 120%;
-    line-height: 170%;
-    font-weight: 300;
-    margin: 0 0 30px; }
-  body.industries-template-single-industries-fluid h3 {
-    font-size: 1.75rem; }
-  body.industries-template-single-industries-fluid a {
-    line-height: 1.75rem; }
-  body.industries-template-single-industries-fluid div.title a {
-    font-size: 1.6rem;
-    line-height: 1.75rem; }
-  body.industries-template-single-industries-fluid h1 {
-    font-size: 1.75rem; }
-  body.industries-template-single-industries-fluid h4 {
-    font-size: 1.75rem; }
-  body.industries-template-single-industries-fluid a.btn.btn-dark {
-    font-size: 1.25rem; }
-  body.industries-template-single-industries-fluid main form input.form-control[type=date], body.industries-template-single-industries-fluid main form input.form-control[type=email], body.industries-template-single-industries-fluid main form input.form-control[type=password], body.industries-template-single-industries-fluid main form input.form-control[type=tel], body.industries-template-single-industries-fluid main form input.form-control[type=text], body.industries-template-single-industries-fluid main form input.medium[type=date], body.industries-template-single-industries-fluid main form input.medium[type=email], body.industries-template-single-industries-fluid main form input.medium[type=password], body.industries-template-single-industries-fluid main form input.medium[type=tel], body.industries-template-single-industries-fluid main form input.medium[type=text] {
-    margin-bottom: 1rem;
-    font-size: 1.25rem; }
-  body.industries-template-single-industries-fluid .form-control {
-    font-size: 1.25rem; }
-  body.industries-template-single-industries-fluid main form select, body.industries-template-single-industries-fluid main form textarea {
-    margin-bottom: 1.25rem; } }
-
 body.industries-template-single-industries-fluid main section div.section_title, body.industries-template-single-industries-fluid main section span.section_title, body.industries-template-single-industries-2019 main section div.section_title, body.industries-template-single-industries-2019 main section span.section_title {
   border-bottom-width: 2px;
   border-bottom-color: #404040;
@@ -1675,16 +1649,6 @@ svg .region path {
   svg .region path:hover {
     opacity: .9; }
 
-@media (min-width: 1350px) {
-  body.page-template-fall-protection-101 main section#banner {
-    height: 600px; } }
-
-body.page-template-fall-protection-101 main section#banner div.page_title, body.page-template-fall-protection-101 main section#banner#breadcrumbs {
-  margin-bottom: 0; }
-
-body.page-template-fall-protection-101 main section#breadcrumbs ul.list-inline {
-  margin-bottom: 0; }
-
 body.page-template-fall-protection-101 main section#fp_icons span.fp_icon img.img-fluid {
   max-width: 150px; }
 
@@ -1724,16 +1688,6 @@ body.page-template-fall-protection-101 main section#fp_101 div.row {
 
 body.page-template-fall-protection-101 main section#inline_solutions div.item div.title a {
   line-height: 2.25rem; }
-
-@media (min-width: 1350px) {
-  body.page-template-sample-fall-protection-plan main section#banner {
-    height: 600px; } }
-
-body.page-template-sample-fall-protection-plan main section#banner div.page_title, body.page-template-sample-fall-protection-plan main section#banner#breadcrumbs {
-  margin-bottom: 0; }
-
-body.page-template-sample-fall-protection-plan main section#breadcrumbs ul.list-inline {
-  margin-bottom: 0; }
 
 body.page-template-sample-fall-protection-plan main section#cf_contactFormTitle {
   background-color: #156cb3;

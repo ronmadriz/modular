@@ -2,21 +2,6 @@ body {
 	&.page-template-sample-fall-protection-plan {
 		main {
 			section {
-				&#banner {
-					@media(min-width: 1350px) {
-						height: 600px;
-					}
-					div.page_title, &#breadcrumbs {
-						margin-bottom:0;
-					}
-				}
-				&#breadcrumbs {
-					ul {
-						&.list-inline {
-						    margin-bottom: 0;
-						}
-					}
-				}
 				&#cf_contactFormTitle {
 					background-color: $accent_1;
 					padding-top:1rem;

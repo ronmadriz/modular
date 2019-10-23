@@ -2,21 +2,6 @@ body {
 	&.page-template-fall-protection-101 {
 		main {
 			section {
-				&#banner {
-					@media(min-width: 1350px) {
-						height: 600px;
-					}
-					div.page_title, &#breadcrumbs {
-						margin-bottom:0;
-					}
-				}
-				&#breadcrumbs {
-					ul {
-						&.list-inline {
-						    margin-bottom: 0;
-						}
-					}
-				}
 				&#fp_icons {
 					span {
 						&.fp_icon {

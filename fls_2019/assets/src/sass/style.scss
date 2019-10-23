@@ -73,14 +73,21 @@ html {
 						div {
 							&.w-image {
 								@media(min-width:1600px){
-								    min-height: 585px;
+								    min-height: 600px;
 								    margin-bottom:0;
 								}								
 							}
-							&.page_title {
-								margin-bottom:0;
+						}
+					}
+					&#breadcrumbs {
+						ul {
+							&.list-inline {
+							    margin-bottom: 0;
 							}
 						}
+					}					
+					&#banner div.page_title, div.cf_contactFormTitle {
+						margin-bottom:0;
 					}
 				}			
 			}
