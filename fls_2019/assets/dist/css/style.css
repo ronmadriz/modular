@@ -1332,6 +1332,11 @@ html body.solutions-template-solutions-fluid main section:not(#banner), html bod
       font-size: 131%;
       line-height: 150%; } }
   @media (min-width: 1600px) {
+    html body.solutions-template-solutions-fluid main section:not(#banner) p, html body.solutions-template-solutions-fluid main section#banner div.page_title p, html body.industries-template-single-industries-fluid main section:not(#banner) p, html body.industries-template-single-industries-fluid main section#banner div.page_title p, html body.page-template-fall-protection-101 main section:not(#banner) p, html body.page-template-fall-protection-101 main section#banner div.page_title p, html body.page-template-sample-fall-protection-plan main section:not(#banner) p, html body.page-template-sample-fall-protection-plan main section#banner div.page_title p {
+      font-size: 120%;
+      line-height: 170%;
+      font-weight: 300;
+      margin: 0 0 30px; }
     html body.solutions-template-solutions-fluid main section:not(#banner) a, html body.solutions-template-solutions-fluid main section#banner div.page_title a, html body.industries-template-single-industries-fluid main section:not(#banner) a, html body.industries-template-single-industries-fluid main section#banner div.page_title a, html body.page-template-fall-protection-101 main section:not(#banner) a, html body.page-template-fall-protection-101 main section#banner div.page_title a, html body.page-template-sample-fall-protection-plan main section:not(#banner) a, html body.page-template-sample-fall-protection-plan main section#banner div.page_title a {
       line-height: 1.75rem; }
     html body.solutions-template-solutions-fluid main section:not(#banner) div.title a, html body.solutions-template-solutions-fluid main section#banner div.page_title div.title a, html body.industries-template-single-industries-fluid main section:not(#banner) div.title a, html body.industries-template-single-industries-fluid main section#banner div.page_title div.title a, html body.page-template-fall-protection-101 main section:not(#banner) div.title a, html body.page-template-fall-protection-101 main section#banner div.page_title div.title a, html body.page-template-sample-fall-protection-plan main section:not(#banner) div.title a, html body.page-template-sample-fall-protection-plan main section#banner div.page_title div.title a {
