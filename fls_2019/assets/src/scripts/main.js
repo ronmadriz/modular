@@ -43,13 +43,6 @@ j(document).ready(function(){
         if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 400});
     });
 
-$('#version-select').change(function(){
-    var val = $(this).val();
-    var lastThreeChars = val.substring(val.length - 3);
-    $('div').hide();
-    $('div[class$="' + lastThreeChars + '"]').show();
-});
-
 });
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
