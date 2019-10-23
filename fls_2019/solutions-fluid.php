@@ -175,14 +175,7 @@ if ($solutions_footercs) {
 	echo '<section id="inline_solutions">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="title gray_bg col-12 text-center"><span>'.$solution_footers_title.'</span></div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
-	echo '<div class="row summary mt-4 align-content-center justify-content-center">'.PHP_EOL;
-	echo '<div class="col-12 col-md-8 text-center">'.PHP_EOL;
-	echo $solution_footers_text;
-	echo '</div>'.PHP_EOL;
+	echo '<div class="ection_title col-12"><span>'.$solution_footers_title.'</span></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	$solutions_repeater = get_sub_field('solutions');
 	if ($solutions_repeater) {
