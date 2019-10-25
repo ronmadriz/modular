@@ -52,12 +52,12 @@ if ($solutions_gallery['gallery_pics']) {
 		if ($gallery_pics) {
 			echo '<div class="carousel-inner">'.PHP_EOL;
 			$gal_counter = 0;
-			foreach ($gallery_pics as $gallery_pic) {
-				echo '<div class="carousel-item'.($gal_counter == 0?' active':'').'" data-slide-number="'.$gal_counter.'">'.PHP_EOL;
-				echo '<img src="'.$gallery_pic['sizes']['large'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid">'.PHP_EOL;
-				echo '</div>'.PHP_EOL;
-				$gal_counter++;
-			}
+			foreach ($gallery_pics as $gallery_pic):
+			echo '<div class="carousel-item'.($gal_counter == 0?' active':'').'" data-slide-number="'.$gal_counter.'">'.PHP_EOL;
+			echo '<img src="'.$gallery_pic['sizes']['large'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid">'.PHP_EOL;
+			echo '</div>'.PHP_EOL;
+			$gal_counter++;
+			endforeach;
 			$gall_count = 0;
 		}
 		echo '<div id="carousel_controls" class="col-12 d-flex d-sm-none">'.PHP_EOL;
