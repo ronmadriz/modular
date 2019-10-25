@@ -73,9 +73,9 @@ if ($solutions_gallery) {
 
 // QUOTE
 
-$industry_testimonials = get_field('industry_testimonials');
-if ($industry_testimonials) {
-	$testimonial = $industry_testimonials;
+$testimonials = get_field('testimonials');
+if ($testimonials) {
+	$testimonial = $testimonials;
 	setup_postdata($testimonial);
 	echo '<section id="testimonial">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
@@ -83,7 +83,7 @@ if ($industry_testimonials) {
 	echo '<div class="content col-12">'.PHP_EOL;
 	echo '<span class="sr-only">customer testimonial</span>'.PHP_EOL;
 	echo get_the_content();
-	echo '<p class="text-right">~ '.get_the_title($industry_testimonials).'</p>'.PHP_EOL;
+	echo '<p class="text-right">~ '.get_the_title($testimonials).'</p>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
