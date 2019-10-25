@@ -41,7 +41,7 @@ endif;
 
 $solutions_gallery = get_field('solutions_gallery');
 if ($solutions_gallery['title']) {
-	while (have_rows('solutions_gallery')){
+	while (have_rows('solutions_gallery')) {
 		the_row();
 		$gallery_title = get_sub_field('title');
 		$gallery_pics  = get_sub_field('gallery_pics');
@@ -49,26 +49,26 @@ if ($solutions_gallery['title']) {
 		echo '<div class="container-fluid">'.PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
 		echo '<div class="section_title col-12">'.PHP_EOL;
-		echo (!empty($gallery_title):'<h1>'.$gallery_title.'</h1>'.PHP_EOL:'');
+		echo (!empty($gallery_title)?'<h1>'.$gallery_title.'</h1>'.PHP_EOL:'');
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
 		echo '<div class="content col-12">'.PHP_EOL;
-		if ($gallery_pics){
+		if ($gallery_pics) {
 			echo '<ul class="gallery list-unstyled list-inline">'.PHP_EOL;
-			foreach ($gallery_pics as $gallery_pic){
+			foreach ($gallery_pics as $gallery_pic) {
 				echo '<li class="list-inline-item col-6 col-md-3 col-xl-2">'.PHP_EOL;
 				echo '<a href="'.$gallery_pic['url'].'" data-gallery="fls-gallery" data-toggle="lightbox">'.PHP_EOL;
 				echo '<img src="'.$gallery_pic['sizes']['thumbnail'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid">'.PHP_EOL;
 				echo '</a>'.PHP_EOL;
-				echo '</li>'.PHP_EOL;			
+				echo '</li>'.PHP_EOL;
 			}
-			echo '</ul>'.PHP_EOL;		
+			echo '</ul>'.PHP_EOL;
 		}
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
-		echo '</section>'.PHP_EOL;		
+		echo '</section>'.PHP_EOL;
 	}
 }
 
