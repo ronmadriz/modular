@@ -20,7 +20,7 @@ echo '<div id="pagewrapper" class="container">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
 
-// INDUSTRY CONTENT
+// CONTENT
 if (have_posts()):while (have_posts()):the_post();
 echo '<section id="main-content">'.PHP_EOL;
 echo '<div class="container">'.PHP_EOL;
