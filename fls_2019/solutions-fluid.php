@@ -169,8 +169,9 @@ if (have_rows('case_study_groups')) {
 	while (have_rows('case_study_groups')):the_row();
 	$study_section_title = get_sub_field('study_section_title');
 	$studies             = get_sub_field('studies');
+	$studies_count       = count($studies);
 	echo (!empty($study_section_title)?'<div class="row"><div class="section_title col-12"><h1>'.$study_section_title.'</h1></div></div>'.PHP_EOL:'');
-	if ($studies) {
+	if ($studies && $studies_count <= 3) {
 		while (have_rows('studies')) {
 			the_row();
 			$study_item = get_sub_field('case_study');
@@ -191,6 +192,30 @@ if (have_rows('case_study_groups')) {
 			echo '</div>'.PHP_EOL;
 			endif;
 		}
+		wp_reset_postdata();
+	} elseif ($studies && $studies_count > 3) {
+		echo '<div class="justify-content-center row">'.PHP_EOL;
+		while (have_rows('studies')) {
+			the_row();
+			$study_item = get_sub_field('case_study');
+			if ($study_item):
+			$study = $study_item;
+			setup_postdata($study);
+			$study_title   = get_field('case_study_title', $study->ID);
+			$study_summary = get_field('summary', $study->ID);
+			echo '<div class="item col-12 col-md-3">'.PHP_EOL;
+			echo '<span class="d-block img">'.PHP_EOL;
+			echo get_the_post_thumbnail($study->ID, 'medium', array('class' => 'img-fluid')).PHP_EOL;
+			echo '</span>'.PHP_EOL;
+			echo '<span class="d-block content text-center text-md-left align-self-center">'.PHP_EOL;
+			echo (!empty($case_study_title)?'<h4>'.$case_study_title.'</h4>'.PHP_EOL:'<h4>'.get_the_title($study->ID).'</h4>'.PHP_EOL);
+			echo '<p>'.$study_summary.'</p>'.PHP_EOL;
+			echo '<span class="d-block buttons"><a href="'.get_permalink($study->ID).'" class="btn btn-dark">View Case Study</a></span>';
+			echo '</span>'.PHP_EOL;
+			echo '</div>'.PHP_EOL;
+			endif;
+		}
+		echo '</div>'.PHP_EOL;
 		wp_reset_postdata();
 	}
 	endwhile;
