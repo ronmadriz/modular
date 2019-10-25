@@ -352,7 +352,7 @@ if (have_rows('osha')) {
 		$osha_content = get_sub_field('content');
 		echo (!empty($osha_title)?'<div class="row"><div class="section_title col-12"><h1>'.$osha_title.'</h1></div></div>'.PHP_EOL:'');
 		echo '<div class="row">'.PHP_EOL;
-		echo (!empty($osha_img)?'<div class="img col-12 col-md-4"><img src="'.$osha_img['url'].'" alt="'.$osha_img['alt'].'" class="img-fluid">':'').'</div>'.PHP_EOL:'');
+		echo (!empty($osha_img)?'<div class="img col-12 col-md-4"><img src="'.$osha_img['url'].'" alt="'.$osha_img['alt'].'" class="img-fluid"></div>'.PHP_EOL:'');
 		echo (!empty($osha_content)?'<div class="content col-12 col-md-8">'.$osha_content.'</div>'.PHP_EOL:'');
 		echo '</div>'.PHP_EOL;
 	}
