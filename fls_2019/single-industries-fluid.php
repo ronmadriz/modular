@@ -168,7 +168,6 @@ if (have_rows('download_literature')) {
 }
 
 // SOLUTIONS
-
 $solutions_footercs = get_field('solutions_footer');
 if ($solutions_footercs) {
 	while (have_rows('solutions_footer')):the_row();
