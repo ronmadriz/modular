@@ -362,6 +362,15 @@ html {
 					}
 				}
 			}
+		}
+		svg {
+			&#contacts {
+				path {
+					&:hover {
+					    opacity: .9;
+					}
+				}
+			}
 		}		
 	}
 }
