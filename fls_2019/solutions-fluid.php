@@ -40,7 +40,7 @@ endif;
 // GALLERY
 
 $solutions_gallery = get_field('solutions_gallery');
-if ($solutions_gallery['gallery_pics']):
+if (have_rows('solutions_gallery')):
 while (have_rows('solutions_gallery')):
 $gallery_title = get_sub_field('title');
 //$gallery_img   = get_sub_field('gallery_img');
