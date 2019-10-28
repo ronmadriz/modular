@@ -102,6 +102,37 @@ html {
 							}
 						}
 					}
+					&#icons {
+						padding-top:3rem;
+						h2 {
+							font-family:$tertiary;
+							text-transform:uppercase;
+						}
+						div {
+							&:not(:last-of-type) {
+								&.row {
+									margin-bottom:2rem;
+								}
+							}
+							.fl_thumb {
+								padding: 1rem 1rem 1rem 0;
+								img {
+									&.img-fluid {
+										max-width: 125px;
+									}
+								}
+							}
+							&.fl_content {
+								h2 {
+									text-transform:uppercase;
+									color:$accent_1;
+								}
+								p{
+									margin-bottom:0;
+								}
+							}
+						}
+					}
 					&#gallery {
 						padding:2rem 0 0;
 						@media(min-width:768px) {
