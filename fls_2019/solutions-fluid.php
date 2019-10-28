@@ -41,15 +41,20 @@ endif;
 
 $solutions_gallery = get_field('solutions_gallery');
 if (have_rows('solutions_gallery')):
-while (have_rows('solutions_gallery')):
-$gallery_title = get_sub_field('title');
-//$gallery_img   = get_sub_field('gallery_img');
 echo '<section id="gallery">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
 echo '<div class="row justify-content-center mb-md-3"><div class="content text-md-center col-12">'.PHP_EOL;
 echo '<div id="flsCarousel" class="carousel slide">'.PHP_EOL;
+while (have_rows('solutions_gallery')):
+$gallery_title = get_sub_field('title');
+//$gallery_img   = get_sub_field('gallery_img');
 $gallery_pics = get_sub_field('gallery_pics');
 endwhile;
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</section>'.PHP_EOL;
  else :
 endif;
 
