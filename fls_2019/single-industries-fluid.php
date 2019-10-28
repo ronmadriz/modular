@@ -14,7 +14,6 @@ echo '<div class="container-fluid">'.PHP_EOL;
 echo ($banner_img != null?'<div class="row w-image"><style type="text/css">section#banner{background-image:url('.$banner_img['url'].');}</style>':'<div class="row">').PHP_EOL;
 
 echo '<div class="page_title col-12">'.PHP_EOL;
-$alternate_page_title = get_field('alternate_page_title');
 echo '<h1>'.(!empty($alternate_page_title)?$alternate_page_title:get_the_title()).'</h1>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
@@ -23,7 +22,8 @@ echo '</section>'.PHP_EOL;
 
 the_breadcrumb();
 
-// INDUSTRY CONTENT
+// MAIN CONTENT
+
 if (have_posts()):while (have_posts()):the_post();
 echo '<section id="main-content">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
