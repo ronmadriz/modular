@@ -78,30 +78,6 @@ html {
 							}
 						}
 					}
-					&#banner {
-						div {
-							&.w-image {
-								@media(min-width:1600px){
-								    min-height: 600px;
-								    margin-bottom:0;
-								}								
-							}
-							&.page_title {
-								margin-bottom:0;
-								&::after{
-									height:0;
-									width:0;
-								}
-							}
-						}
-					}					
-					&#breadcrumbs {
-						ul {
-							&.list-inline {
-							    margin-bottom: 0;
-							}
-						}
-					}
 					&#icons {
 						padding-top:3rem;
 						h2 {
@@ -130,6 +106,30 @@ html {
 								p{
 									margin-bottom:0;
 								}
+							}
+						}
+					}
+					&#banner {
+						div {
+							&.w-image {
+								@media(min-width:1600px){
+								    min-height: 600px;
+								    margin-bottom:0;
+								}								
+							}
+							&.page_title {
+								margin-bottom:0;
+								&::after{
+									height:0;
+									width:0;
+								}
+							}
+						}
+					}					
+					&#breadcrumbs {
+						ul {
+							&.list-inline {
+							    margin-bottom: 0;
 							}
 						}
 					}
@@ -363,6 +363,6 @@ html {
 					}
 				}
 			}			
-		}		
+		}
 	}
 }
