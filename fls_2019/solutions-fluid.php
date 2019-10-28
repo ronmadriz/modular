@@ -82,6 +82,11 @@ if ($solutions_gallery['gallery_pics']) {
 			echo '<span id="thumb_right" class="th_nav d-flex align-self-end align-items-center justify-content-center"><i class="fa fa-chevron-right"></i></span>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 		}
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		echo '</section>'.PHP_EOL;
 	}
 }
 
