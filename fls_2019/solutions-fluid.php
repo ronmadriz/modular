@@ -136,9 +136,13 @@ if (have_rows('icon_row')) {
 
 // TABLES
 if (have_rows('measurement_tables')) {
+	echo '<section id="measurement_tables">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('measurement_tables')) {
 		the_row();
-		$table = get_sub_field('table');
+		$m_title = get_sub_field('title');
+		$m_table = get_sub_field('table');
+		echo (!empty($m_title)?'<div class="row"><div class="col-12">'.$m_title.'</div></div>':'').PHP_EOL;
 		if (!empty($table)) {
 			echo '<table border="0">';
 			if (!empty($table['caption'])) {
