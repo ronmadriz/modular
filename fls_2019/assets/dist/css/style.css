@@ -1411,6 +1411,8 @@ html body main #gallery .carousel-inner .carousel-item-left {
 
 html body main #flsCarousel {
   margin: 20px auto; }
+  html body main #flsCarousel .img-fluid {
+    min-width: 100%; }
   html body main #flsCarousel .carousel-indicators {
     margin: 10px 0 0;
     overflow: auto;

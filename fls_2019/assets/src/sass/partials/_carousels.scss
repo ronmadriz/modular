@@ -26,6 +26,9 @@ html {
 			}
 			#flsCarousel {
 			    margin: 20px auto;
+			    .img-fluid {
+			    	min-width:100%;
+			    }
 			    .carousel-indicators {
 			        margin: 10px 0 0;
 			        overflow: auto;
