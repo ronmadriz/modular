@@ -33,7 +33,7 @@ j(document).ready(function(){
     // carousel Nav
     var view = j("#thumb_list");
     var move = "100px";
-    var sliderLimit = -1050;
+    var sliderLimit = -1900;
     j("#thumb_right").click(function(){
         var currentPosition = parseInt(view.css("left"));
         if (currentPosition >= sliderLimit) view.stop(false,true).animate({left:"-="+move},{ duration: 100})
