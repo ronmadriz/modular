@@ -1091,7 +1091,7 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
           white-space: nowrap; }
       html body main table tbody tr + tr {
         margin-top: 1.5em; }
-      html body main table tbody tr:nth-of-type(odd) {
+      html body main table tbody tr:nth-of-type(even) {
         background-color: #156cb3; } }
 
 body footer section#foot_contact {
