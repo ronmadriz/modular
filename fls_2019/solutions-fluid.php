@@ -137,9 +137,9 @@ if (have_rows('icon_row')) {
 // TABLES
 if (have_rows('measurement_tables')) {
 	echo '<section id="measurement_tables">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('measurement_tables')) {
 		the_row();
-		echo '<div class="container-fluid">'.PHP_EOL;
 		$m_title = get_sub_field('title');
 		$m_image = get_sub_field('image');
 		$m_table = get_sub_field('table');
@@ -177,8 +177,8 @@ if (have_rows('measurement_tables')) {
 			echo '</table>';
 			echo '</div>'.PHP_EOL;
 		}
-		echo '</div>'.PHP_EOL;
 	}
+	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
 

@@ -1074,7 +1074,7 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
       left: -9999px; }
     html body main table tbody tr {
       display: block;
-      border: 1px solid #156cb3;
+      border: 1px solid #f0f0f0;
       padding: 1rem; }
       html body main table tbody tr td {
         display: block;
@@ -1092,7 +1092,7 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
       html body main table tbody tr + tr {
         margin-top: 1.5em; }
       html body main table tbody tr:nth-of-type(even) {
-        background-color: #0f8acf; } }
+        background-color: #f0f0f0; } }
 
 body footer section#foot_contact {
   background-color: #e6e7e9; }
