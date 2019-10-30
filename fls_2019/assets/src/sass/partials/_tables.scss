@@ -64,11 +64,10 @@
 					tbody {
 						tr {
 							display: block;
-							border: 1px solid $accent_1;
 							padding: 1rem;
 							td {
 								display: block;
-								border: none;
+								border: 1px solid $accent_1;
 								position: relative;
 								padding-left: 33.3%;
 								text-align: left;

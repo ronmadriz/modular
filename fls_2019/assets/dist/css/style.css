@@ -1076,11 +1076,10 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
       left: -9999px; }
     html body main table tbody tr {
       display: block;
-      border: 1px solid #156cb3;
       padding: 1rem; }
       html body main table tbody tr td {
         display: block;
-        border: none;
+        border: 1px solid #156cb3;
         position: relative;
         padding-left: 33.3%;
         text-align: left; }
