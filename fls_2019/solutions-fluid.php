@@ -137,21 +137,23 @@ if (have_rows('icon_row')) {
 // TABLES
 if (have_rows('measurement_tables')) {
 	echo '<section id="measurement_tables">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('measurement_tables')) {
 		the_row();
+		echo '<div class="container-fluid">'.PHP_EOL;
 		$m_title = get_sub_field('title');
 		$m_table = get_sub_field('table');
 		echo (!empty($m_title)?'<div class="row"><div class="col-12">'.$m_title.'</div></div>':'').PHP_EOL;
-		if (!empty($table)) {
-			echo '<table border="0">';
-			if (!empty($table['caption'])) {
-				echo '<caption>'.$table['caption'].'</caption>';
+		if (!empty($m_table)) {
+			echo '<div class="row">'.PHP_EOL;
+			echo '<div class="col-10">'.PHP_EOL;
+			echo '<table border="0">'.PHP_EOL;
+			if (!empty($m_table['caption'])) {
+				echo '<caption>'.$m_table['caption'].'</caption>';
 			}
-			if (!empty($table['header'])) {
+			if (!empty($m_table['header'])) {
 				echo '<thead>';
 				echo '<tr>';
-				foreach ($table['header'] as $th) {
+				foreach ($m_table['header'] as $th) {
 					echo '<th>';
 					echo $th['c'];
 					echo '</th>';
@@ -160,7 +162,7 @@ if (have_rows('measurement_tables')) {
 				echo '</thead>';
 			}
 			echo '<tbody>';
-			foreach ($table['body'] as $tr) {
+			foreach ($m_table['body'] as $tr) {
 				echo '<tr>';
 				foreach ($tr as $td) {
 					echo '<td>';
@@ -172,7 +174,9 @@ if (have_rows('measurement_tables')) {
 			echo '</tbody>';
 			echo '</table>';
 		}
+		echo '</div>'.PHP_EOL;
 	}
+	echo '</section>'.PHP_EOL;
 }
 
 // LITERATURE
