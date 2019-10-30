@@ -1058,7 +1058,9 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
       padding: .75rem 1rem;
       line-height: 115%; }
     html body main table tbody tr:nth-child(odd) {
-      background-color: #f0f0f0; } }
+      background-color: #f0f0f0; }
+    html body main table tr th:not(:first-of-type), html body main table tr td:not(:first-of-type) {
+      text-align: center; } }
 
 @media only screen and (max-width: 991px) {
   html body main table {

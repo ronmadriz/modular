@@ -31,6 +31,13 @@
 						    background-color: $not_quite_white;
 						}
 					}
+					tr {
+						th, td {
+							&:not(:first-of-type) {
+								text-align:center;
+							}
+						}
+					}
 				}
 			}
 		}
