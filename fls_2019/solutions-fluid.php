@@ -142,7 +142,7 @@ if (have_rows('measurement_tables')) {
 		echo '<div class="container-fluid">'.PHP_EOL;
 		$m_title = get_sub_field('title');
 		$m_table = get_sub_field('table');
-		echo (!empty($m_title)?'<div class="row"><div class="col-12">'.$m_title.'</div></div>':'').PHP_EOL;
+		echo (!empty($m_title)?'<div class="row"><div class="section_title col-12"><h1>'.$m_title.'</h1></div></div>':'').PHP_EOL;
 		if (!empty($m_table)) {
 			echo '<div class="row">'.PHP_EOL;
 			echo '<div class="col-10">'.PHP_EOL;
