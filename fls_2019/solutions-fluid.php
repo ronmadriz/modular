@@ -167,7 +167,7 @@ if (have_rows('measurement_tables')) {
 			foreach ($m_table['body'] as $tr) {
 				echo '<tr>';
 				foreach ($tr as $key => $td) {
-					echo '<td data-label="'.$table['header'][$key]['c'].'">';
+					echo '<td data-label="'.$m_table['header'][$key]['c'].'">';
 					echo $td['c'];
 					echo '</td>';
 				}
