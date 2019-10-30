@@ -1049,7 +1049,7 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
       text-transform: none;
       text-align: left; }
     html body main table thead th {
-      background-color: #156cb3;
+      background-color: #eeeeee;
       color: white;
       font-weight: 300;
       padding: .75rem 1rem;
@@ -1092,7 +1092,7 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
       html body main table tbody tr + tr {
         margin-top: 1.5em; }
       html body main table tbody tr:nth-of-type(even) {
-        background-color: #0f8acf; } }
+        background-color: #f0f0f0; } }
 
 body footer section#foot_contact {
   background-color: #e6e7e9; }
