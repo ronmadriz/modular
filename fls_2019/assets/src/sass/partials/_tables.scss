@@ -28,7 +28,7 @@
 						    line-height: 115%;
 						}
 						tr:nth-child(odd) {
-						    background-color: $accent_1;
+						    background-color: $light_blue;
 						}
 					}
 				}
@@ -57,7 +57,7 @@
 					tbody {
 						tr {
 							display: block;
-							border: 1px solid $not_quite_white;
+							border: 1px solid $accent_1;
 							padding: 1rem;
 							td {
 								display: block;
@@ -78,7 +78,7 @@
 								margin-top: 1.5em; 
 							}
 							&:nth-of-type(even){
-								background-color: $not_quite_white;
+								background-color: $light_blue;
 							}
 						}
 					}
