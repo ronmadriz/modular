@@ -1076,10 +1076,10 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
       left: -9999px; }
     html body main table tbody tr {
       display: block;
-      padding: 1rem; }
+      border: 1px solid #dcddde; }
       html body main table tbody tr td {
         display: block;
-        border: 1px solid #156cb3;
+        border-bottom: 1px solid #dcddde;
         position: relative;
         padding-left: 33.3%;
         text-align: left; }
@@ -1090,7 +1090,12 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
           margin-left: -100%;
           width: 100%;
           text-align: right;
-          white-space: nowrap; }
+          white-space: nowrap;
+          border-right: 1px solid #gris;
+          padding-right: .5rem;
+          margin-right: .25rem;
+          padding-bottom: .25rem;
+          padding-top: .25rem; }
       html body main table tbody tr + tr {
         margin-top: 1.5em; }
       html body main table tbody tr:nth-of-type(even) {
