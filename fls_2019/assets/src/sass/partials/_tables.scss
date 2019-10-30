@@ -85,7 +85,10 @@
 								    margin-right: .25rem;
 								    padding-bottom: .25rem;
 								    padding-top: .25rem;
-								}								
+								}
+								&:last-of-type:{
+									border-bottom:0;
+								}
 							}
 							+ tr {
 								margin-top: 1.5em; 
