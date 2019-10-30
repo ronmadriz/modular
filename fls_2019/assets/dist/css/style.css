@@ -1065,6 +1065,7 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
 @media only screen and (max-width: 991px) {
   html body main table {
     width: 100%;
+    margin-top: 1rem;
     margin-bottom: 1rem; }
     html body main table caption {
       font-size: 1.75rem;
