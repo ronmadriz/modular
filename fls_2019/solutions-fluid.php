@@ -145,9 +145,9 @@ if (have_rows('measurement_tables')) {
 		$m_table = get_sub_field('table');
 		echo (!empty($m_title)?'<div class="row"><div class="section_title col-12"><h1>'.$m_title.'</h1></div></div>':'').PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
-		echo ($m_image != null?'<div class="col-4"><img src="'.$m_image['url'].'" alt="'.$m_image['alt'].'" class="img-fluid"></div>':'');
+		echo ($m_image != null?'<div class="col-12 col-md-4"><img src="'.$m_image['url'].'" alt="'.$m_image['alt'].'" class="img-fluid"></div>':'');
 		if (!empty($m_table)) {
-			echo '<div class="col-8">'.PHP_EOL;
+			echo '<div class="col-12 col-md-8">'.PHP_EOL;
 			echo '<table border="0">'.PHP_EOL;
 			if (!empty($m_table['caption'])) {
 				echo '<caption>'.$m_table['caption'].'</caption>';
