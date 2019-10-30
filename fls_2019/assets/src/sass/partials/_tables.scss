@@ -66,6 +66,7 @@
 						tr {
 							display: block;
 							border: 1px solid $gris;
+							border-bottom:0;
 							td {
 								display: block;
 								border-bottom: 1px solid $gris;
@@ -85,9 +86,6 @@
 								    margin-right: .25rem;
 								    padding-bottom: .25rem;
 								    padding-top: .25rem;
-								}
-								&:last-of-type:{
-									border-bottom:0;
 								}
 							}
 							+ tr {

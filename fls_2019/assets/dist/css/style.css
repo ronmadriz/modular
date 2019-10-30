@@ -1077,7 +1077,8 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
       left: -9999px; }
     html body main table tbody tr {
       display: block;
-      border: 1px solid #dcddde; }
+      border: 1px solid #dcddde;
+      border-bottom: 0; }
       html body main table tbody tr td {
         display: block;
         border-bottom: 1px solid #dcddde;
