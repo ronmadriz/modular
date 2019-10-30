@@ -156,7 +156,7 @@ if (have_rows('measurement_tables')) {
 				echo '<thead>';
 				echo '<tr>';
 				foreach ($m_table['header'] as $th) {
-					echo '<th>';
+					echo '<th scope="col">';
 					echo $th['c'];
 					echo '</th>';
 				}
