@@ -141,11 +141,13 @@ if (have_rows('measurement_tables')) {
 		the_row();
 		echo '<div class="container-fluid">'.PHP_EOL;
 		$m_title = get_sub_field('title');
+		$m_image = get_sub_field('image');
 		$m_table = get_sub_field('table');
 		echo (!empty($m_title)?'<div class="row"><div class="section_title col-12"><h1>'.$m_title.'</h1></div></div>':'').PHP_EOL;
+		echo '<div class="row">'.PHP_EOL;
+		echo ($m_image != null?'<div class="col-4"><img src="'.$m_image['url'].'" alt="'.$m_image['alt'].'" class="img-fluid"></div>':'');
 		if (!empty($m_table)) {
-			echo '<div class="row">'.PHP_EOL;
-			echo '<div class="col-10">'.PHP_EOL;
+			echo '<div class="col-8">'.PHP_EOL;
 			echo '<table border="0">'.PHP_EOL;
 			if (!empty($m_table['caption'])) {
 				echo '<caption>'.$m_table['caption'].'</caption>';
@@ -173,6 +175,7 @@ if (have_rows('measurement_tables')) {
 			}
 			echo '</tbody>';
 			echo '</table>';
+			echo '</div>'.PHP_EOL;
 		}
 		echo '</div>'.PHP_EOL;
 	}
