@@ -1037,6 +1037,63 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
   text-transform: uppercase;
   width: 80%; }
 
+@media only screen and (min-width: 992px) {
+  html body main table {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    html body main table caption {
+      color: #404040;
+      padding: .75rem 0;
+      font-size: 2.5rem;
+      text-transform: none;
+      text-align: left; }
+    html body main table thead th {
+      background-color: #156cb3;
+      color: white;
+      font-weight: 300;
+      padding: .75rem 1rem;
+      line-height: 115%; }
+    html body main table tbody td {
+      padding: .75rem 1rem;
+      line-height: 115%; }
+    html body main table tbody tr:nth-child(odd) {
+      background-color: #156cb3; } }
+
+@media only screen and (max-width: 991px) {
+  html body main table {
+    width: 100%;
+    margin-bottom: 1rem; }
+    html body main table caption {
+      font-size: 1.75rem;
+      margin-bottom: .75rem;
+      font-weight: bold; }
+    html body main table thead {
+      position: absolute;
+      top: -9999px;
+      left: -9999px; }
+    html body main table tbody tr {
+      display: block;
+      border: 1px solid #156cb3;
+      padding: 1rem; }
+      html body main table tbody tr td {
+        display: block;
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: left; }
+        html body main table tbody tr td:before {
+          content: attr(data-label);
+          display: inline-block;
+          line-height: 1.5;
+          margin-left: -100%;
+          width: 100%;
+          white-space: nowrap; }
+      html body main table tbody tr + tr {
+        margin-top: 1.5em; }
+      html body main table tbody tr:nth-of-type(odd) {
+        background-color: #156cb3; } }
+
 body footer section#foot_contact {
   background-color: #e6e7e9; }
   body footer section#foot_contact > div.container-fluid {
