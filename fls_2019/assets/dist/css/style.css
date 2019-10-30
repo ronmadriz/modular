@@ -1086,7 +1086,7 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
         padding-left: 33.3%;
         text-align: left; }
         html body main table tbody tr td:before {
-          content: attr(data-label);
+          content: attr(data-label) " :";
           display: inline-block;
           line-height: 1.5;
           margin-left: -100%;

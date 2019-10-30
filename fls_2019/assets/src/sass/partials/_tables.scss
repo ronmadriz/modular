@@ -74,7 +74,7 @@
 								padding-left: 33.3%;
 								text-align: left;
 								&:before{
-								    content: attr(data-label);
+								    content: attr(data-label) " :";
 								    display: inline-block;
 								    line-height: 1.5;
 								    margin-left: -100%;
