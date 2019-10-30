@@ -1082,7 +1082,7 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
         display: block;
         border: none;
         position: relative;
-        padding-left: 50%;
+        padding-left: 33.3%;
         text-align: left; }
         html body main table tbody tr td:before {
           content: attr(data-label);
@@ -1090,6 +1090,7 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
           line-height: 1.5;
           margin-left: -100%;
           width: 100%;
+          text-align: right;
           white-space: nowrap; }
       html body main table tbody tr + tr {
         margin-top: 1.5em; }

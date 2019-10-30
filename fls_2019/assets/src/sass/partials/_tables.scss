@@ -70,7 +70,7 @@
 								display: block;
 								border: none;
 								position: relative;
-								padding-left: 50%;
+								padding-left: 33.3%;
 								text-align: left;
 								&:before{
 								    content: attr(data-label);
@@ -78,6 +78,7 @@
 								    line-height: 1.5;
 								    margin-left: -100%;
 								    width: 100%;
+								    text-align:right;
 								    white-space: nowrap;
 								}								
 							}
