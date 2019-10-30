@@ -36,11 +36,11 @@ j(document).ready(function(){
     var sliderLimit = -750;
     j("#thumb_right").click(function(){
         var currentPosition = parseInt(view.css("left"));
-        if (currentPosition >= sliderLimit) view.stop(false,true).animate({left:"-="+move},{ duration: 400})
+        if (currentPosition >= sliderLimit) view.stop(false,true).animate({left:"-="+move},{ duration: 100})
     });
     j("#thumb_left").click(function(){
         var currentPosition = parseInt(view.css("left"));
-        if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 400});
+        if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 100});
     });
 
 });
