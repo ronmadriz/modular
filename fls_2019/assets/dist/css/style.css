@@ -1387,6 +1387,54 @@ body section#gallery div#flsCarousel .thumb_nav {
   body section#gallery div#flsCarousel .thumb_nav span#thumb_right {
     right: 0px; }
 
+html body main #gallery .carousel-inner .carousel-item.active,
+html body main #gallery .carousel-inner .carousel-item-next,
+html body main #gallery .carousel-inner .carousel-item-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+html body main #gallery .carousel-inner .carousel-item-right.active,
+html body main #gallery .carousel-inner .carousel-item-next {
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%); }
+
+html body main #gallery .carousel-inner .carousel-item-left.active,
+html body main #gallery .carousel-inner .carousel-item-prev {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%); }
+
+html body main #gallery .carousel-inner .carousel-item-right,
+html body main #gallery .carousel-inner .carousel-item-left {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+html body main #flsCarousel {
+  margin: 20px auto; }
+  html body main #flsCarousel .carousel-indicators {
+    margin: 10px 0 0;
+    overflow: auto;
+    position: static;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%; }
+    html body main #flsCarousel .carousel-indicators li {
+      background-color: transparent;
+      border-radius: 0;
+      display: inline-block;
+      height: auto;
+      margin: 0 !important;
+      width: auto; }
+      html body main #flsCarousel .carousel-indicators li img {
+        display: block;
+        opacity: 0.5; }
+      html body main #flsCarousel .carousel-indicators li.active img {
+        opacity: 1; }
+      html body main #flsCarousel .carousel-indicators li:hover img {
+        opacity: 0.75; }
+  html body main #flsCarousel .carousel-outer {
+    position: relative; }
+
 html body.solutions-template-solutions-fluid main section:not(#banner), html body.solutions-template-solutions-fluid main section#banner div.page_title, html body.industries-template-single-industries-fluid main section:not(#banner), html body.industries-template-single-industries-fluid main section#banner div.page_title, html body.page-template-fall-protection-101 main section:not(#banner), html body.page-template-fall-protection-101 main section#banner div.page_title, html body.page-template-sample-fall-protection-plan main section:not(#banner), html body.page-template-sample-fall-protection-plan main section#banner div.page_title {
   padding-left: 5%;
   padding-right: 5%; }
