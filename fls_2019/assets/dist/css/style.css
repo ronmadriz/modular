@@ -1416,7 +1416,7 @@ html body main #flsCarousel {
   html body main #flsCarousel .carousel-indicators {
     margin: 10px 0 0;
     overflow-x: auto;
-    overflow-y: none;
+    overflow-y: hidden;
     position: static;
     text-align: left;
     white-space: nowrap;
