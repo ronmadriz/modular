@@ -45,6 +45,7 @@ html {
 			            height: auto;
 			            margin: 0 !important;
 			            width: auto;
+			            border:1px solid transparent;
 			            img {
 			                display: block;
 			                opacity: 1;
@@ -53,6 +54,7 @@ html {
 			                img {
 			                    opacity: 0.5;
 			                }
+			                border-color:$accent_1;
 			            }
 			            &:hover {
 			                img {

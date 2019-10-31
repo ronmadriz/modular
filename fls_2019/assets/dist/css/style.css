@@ -1427,12 +1427,15 @@ html body main #flsCarousel {
       display: inline-block;
       height: auto;
       margin: 0 !important;
-      width: auto; }
+      width: auto;
+      border: 1px solid transparent; }
       html body main #flsCarousel .carousel-indicators li img {
         display: block;
         opacity: 1; }
-      html body main #flsCarousel .carousel-indicators li.active img {
-        opacity: 0.5; }
+      html body main #flsCarousel .carousel-indicators li.active {
+        border-color: #156cb3; }
+        html body main #flsCarousel .carousel-indicators li.active img {
+          opacity: 0.5; }
       html body main #flsCarousel .carousel-indicators li:hover img {
         opacity: 0.75; }
   html body main #flsCarousel .carousel-outer {
