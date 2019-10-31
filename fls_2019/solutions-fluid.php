@@ -48,7 +48,7 @@ if ($solutions_gallery['gallery_pics']) {
 		echo '<section id="gallery">'.PHP_EOL;
 		echo '<div class="container-fluid">'.PHP_EOL;
 		echo '<div class="row justify-content-center mb-md-3"><div class="content text-md-center col-12">'.PHP_EOL;
-		echo '<div id="solutionsCarousel" class="carousel slide" data-ride="carousel">'.PHP_EOL;
+		echo '<div id="flsCarousel" class="carousel slide" data-ride="carousel">'.PHP_EOL;
 		$gallery_pics = get_sub_field('gallery_pics');
 		if ($gallery_pics) {
 			echo '<div class="carousel-outer"><div class="carousel-inner">'.PHP_EOL;
@@ -61,8 +61,8 @@ if ($solutions_gallery['gallery_pics']) {
 			endforeach;
 			$gall_count = 0;
 			echo '</div>';
-			echo '<a class="carousel-control left" href="#solutionsCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>'.PHP_EOL;
-			echo '<a class="carousel-control right" href="#solutionsCarousel" data-slide="next"><i class="fa fa-chevron-right"></i></a>'.PHP_EOL;
+			echo '<a class="carousel-control left" href="#flsCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>'.PHP_EOL;
+			echo '<a class="carousel-control right" href="#flsCarousel" data-slide="next"><i class="fa fa-chevron-right"></i></a>'.PHP_EOL;
 			echo '</div>';
 		}
 		$gallery_photos = get_sub_field('gallery_pics');
