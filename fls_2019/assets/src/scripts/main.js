@@ -32,7 +32,7 @@ j(document).ready(function(){
     });
     // carousel Nav
     var view = j("#thumb_list");
-    var move = "100px";
+    var move = "250px";
     var sliderLimit = -1900;
     j("#thumb_right").click(function(){
         var currentPosition = parseInt(view.css("left"));
