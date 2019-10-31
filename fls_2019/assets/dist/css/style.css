@@ -1415,7 +1415,8 @@ html body main #flsCarousel {
     min-width: 100%; }
   html body main #flsCarousel .carousel-indicators {
     margin: 10px 0 0;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: none;
     position: static;
     text-align: left;
     white-space: nowrap;
@@ -1429,9 +1430,9 @@ html body main #flsCarousel {
       width: auto; }
       html body main #flsCarousel .carousel-indicators li img {
         display: block;
-        opacity: 0.5; }
-      html body main #flsCarousel .carousel-indicators li.active img {
         opacity: 1; }
+      html body main #flsCarousel .carousel-indicators li.active img {
+        opacity: 0.5; }
       html body main #flsCarousel .carousel-indicators li:hover img {
         opacity: 0.75; }
   html body main #flsCarousel .carousel-outer {

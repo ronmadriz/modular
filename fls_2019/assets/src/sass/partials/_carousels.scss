@@ -31,7 +31,8 @@ html {
 			    }
 			    .carousel-indicators {
 			        margin: 10px 0 0;
-			        overflow: auto;
+			        overflow-x: auto;
+			        overflow-y: none;
 			        position: static;
 			        text-align: left;
 			        white-space: nowrap;
@@ -46,11 +47,11 @@ html {
 			            width: auto;
 			            img {
 			                display: block;
-			                opacity: 0.5;
+			                opacity: 1;
 			            }
 			            &.active {
 			                img {
-			                    opacity: 1;
+			                    opacity: 0.5;
 			                }
 			            }
 			            &:hover {
