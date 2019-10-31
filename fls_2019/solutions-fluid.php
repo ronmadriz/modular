@@ -45,7 +45,7 @@ if ($solutions_gallery['gallery_pics']) {
 		the_row();
 		$gallery_title = get_sub_field('title');
 		//$gallery_img   = get_sub_field('gallery_img');
-		echo '<section id="carousel">'.PHP_EOL;
+		echo '<section id="gallery">'.PHP_EOL;
 		echo '<div class="container-fluid">'.PHP_EOL;
 		echo '<div class="row justify-content-center mb-md-3"><div class="content text-md-center col-12">'.PHP_EOL;
 		echo '<div id="solutionsCarousel" class="carousel slide" data-ride="carousel">'.PHP_EOL;
