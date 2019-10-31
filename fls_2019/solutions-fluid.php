@@ -51,7 +51,7 @@ if ($solutions_gallery['gallery_pics']) {
 		echo '<div id="flsCarousel" class="carousel slide" data-ride="carousel">'.PHP_EOL;
 		$gallery_pics = get_sub_field('gallery_pics');
 		if ($gallery_pics) {
-			echo '<div class="carousel-outer"><div class="carousel-inner">'.PHP_EOL;
+			echo '<div class="carousel-inner">'.PHP_EOL;
 			$gal_counter = 0;
 			foreach ($gallery_pics as $gallery_pic):
 			echo '<div class="carousel-item'.($gal_counter == 0?' active':'').'" data-slide-number="'.$gal_counter.'">'.PHP_EOL;
@@ -78,7 +78,7 @@ if ($solutions_gallery['gallery_pics']) {
 		echo '</span>'.PHP_EOL;
 		$gall_count++;
 		endforeach;
-		echo '</div></div>';
+		echo '</div>';
 		echo '<span id="thumb_right" class="th_nav d-flex align-self-end align-items-center justify-content-center"><i class="fa fa-chevron-right"></i></span>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		endif;
