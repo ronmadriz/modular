@@ -1435,7 +1435,7 @@ html body main #flsCarousel {
       html body main #flsCarousel .carousel-indicators li.active {
         border-color: #156cb3; }
         html body main #flsCarousel .carousel-indicators li.active img {
-          opacity: 0.5; }
+          opacity: 0.35; }
       html body main #flsCarousel .carousel-indicators li:hover img {
         opacity: 0.75; }
   html body main #flsCarousel .carousel-outer {
