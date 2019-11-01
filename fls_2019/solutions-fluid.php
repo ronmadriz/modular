@@ -92,10 +92,10 @@ if ($solutions_gallery['gallery_pics']) {
 
 // QUOTE
 $quotes = get_field('quotes');
-if ($quotes['testimonials']) {
+if ($quotes['testimonial']) {
 	// loop through the rows of data
 	while (have_rows('quotes')) {
-		$testimonials = get_sub_field('testimonials');
+		$testimonials = get_sub_field('testimonial');
 		if ($testimonials) {
 			$testimonial = $testimonials;
 			setup_postdata($testimonial);
