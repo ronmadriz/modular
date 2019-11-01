@@ -61,9 +61,7 @@ function the_breadcrumb() {
 				echo '<li class="list-inline-item"><a class="breadcrumb-link-'.$bc_count.'" href="'.esc_url(get_permalink($ancestor)).'" title="'.get_the_title($ancestor).'">'.get_the_title($ancestor).'</a></li>';
 				$bc_count++;
 			}
-			if ($displayCurrent) {//If TRUE - output the current page title
-				echo '<li class="list-inline-item">'.get_the_title($post).'</li>';
-			}
+			echo '<li class="list-inline-item">'.get_the_title($post).'</li>';
 		}
 
 		// if you have a static page assigned to be you posts list page. It will find the title of the static page and display it. i.e Home >> Blog
