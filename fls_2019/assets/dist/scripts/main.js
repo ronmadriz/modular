@@ -211,7 +211,7 @@ j(document).ready(function(){
         var currentPosition = parseInt(view.css("left"));
         if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 100});
     });
-   // j(".mCustomScrollbar").mCustomScrollbar({axis:"x"});
+   j(".mCustomScrollbar").mCustomScrollbar({axis:"x"});
 
 });
 j(document).on('click', '#searchToggle', function(event) {
