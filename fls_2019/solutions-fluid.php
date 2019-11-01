@@ -97,6 +97,9 @@ if (have_rows('quotes')) {
 	echo '<section id="testimonial">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row justify-content-center">'.PHP_EOL;
+	while (have_rows('quotes')) {
+		echo '<!-- Im a row -->'.PHP_EOL;
+	}
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
