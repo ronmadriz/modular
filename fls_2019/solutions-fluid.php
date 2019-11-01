@@ -206,7 +206,7 @@ if (have_rows('download_literature')) {
 		$lit_file  = get_sub_field('file');
 		$lit_img   = get_sub_field('Image');
 		$lit_title = get_sub_field('title');
-		echo '<li class="col-6 col-md-4 text-center">';
+		echo '<li class="col-6 col-md-3 text-center">';
 		echo ($lit_file != null?'<a href="'.$lit_file['url'].'" class="d-block">':'');
 		echo ($lit_img != null?'<img src="'.$lit_img['url'].'" alt="'.$lit_img['alt'].'" class="img-fluid">':'');
 		echo ($lit_file != null?'</a>'.PHP_EOL:'');
