@@ -202,7 +202,7 @@ if (have_rows('download_literature')) {
 // SOLUTIONS
 
 $solutions_footercs = get_field('solutions_footer');
-if (have_rows('solutions_footer', $post_id)) {
+if ($solutions_footercs['solutions']) {
 	while (have_rows('solutions_footer', $post_id)):the_row();
 	$solution_footers_title = get_sub_field('title');
 	$solution_footers_text  = get_sub_field('text');
