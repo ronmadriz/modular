@@ -90,30 +90,6 @@ if ($solutions_gallery['gallery_pics']) {
 	endwhile;
 }
 
-// QUOTE
-$quotes = get_field('quotes');
-if (have_rows('quotes')) {
-	echo '<section id="testimonial">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
-	echo '<div class="row justify-content-center">'.PHP_EOL;
-	// loop through the rows of data
-	while (have_rows('quotes')) {
-		$testimonials = get_sub_field('testimonial');
-		if ($testimonials) {
-			$testimonial = $testimonials;
-			setup_postdata($testimonial);
-			echo '<div class="content col-12">'.PHP_EOL;
-			echo '<span class="sr-only">customer testimonial</span>'.PHP_EOL;
-			echo get_the_content();
-			echo '<p class="text-right">~ '.get_the_title($testimonials).'</p>'.PHP_EOL;
-			wp_reset_postdata();
-		}
-	}
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-}
-
 // CTA
 
 echo (!empty(get_the_content())?'<section id="cta_blue"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center"><a href="#cf_contactFormTitle">Speak with a fall protection specialist</a></div></div></div></section>'.PHP_EOL:'');
