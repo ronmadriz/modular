@@ -101,7 +101,6 @@ if (have_rows('quotes')) {
 		the_row();
 		echo '<!-- Im a row -->'.PHP_EOL;
 	}
-	}
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
