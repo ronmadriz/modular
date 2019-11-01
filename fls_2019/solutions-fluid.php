@@ -347,7 +347,8 @@ endif;
 
 // OSHA Content
 
-if (have_rows('osha', $post_id)) {
+$osha = get_field('osha');
+if ($osha['content']) {
 	echo '<section id="osha">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('osha', $post_id)) {
