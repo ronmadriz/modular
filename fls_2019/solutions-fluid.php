@@ -220,7 +220,7 @@ if (have_rows('download_literature')) {
 // SOLUTIONS
 
 $solutions_footercs = get_field('solutions_footer');
-if (have_rows('solutions_footer')) {
+if (have_rows('solutions_footer', 'page_id')) {
 	while (have_rows('solutions_footer')):the_row();
 	$solution_footers_title = get_sub_field('title');
 	$solution_footers_text  = get_sub_field('text');
@@ -253,8 +253,6 @@ if (have_rows('solutions_footer')) {
 	echo '</section>'.PHP_EOL;
 	endwhile;
 	wp_reset_query();
-} else {
-	echo '<!-- no quotes -->'.PHP_EOL;
 }
 
 // CASE STUDIES
