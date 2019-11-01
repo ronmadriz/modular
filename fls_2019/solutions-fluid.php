@@ -253,6 +253,8 @@ if (have_rows('solutions_footer')) {
 	echo '</section>'.PHP_EOL;
 	endwhile;
 	wp_reset_query();
+} else {
+	echo '<!-- no quotes -->'.PHP_EOL;
 }
 
 // CASE STUDIES
