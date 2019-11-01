@@ -221,7 +221,7 @@ if (have_rows('download_literature')) {
 
 $solutions_footercs = get_field('solutions_footer');
 if (have_rows('solutions_footer', 'page_id')) {
-	while (have_rows('solutions_footer')):the_row();
+	while (have_rows('solutions_footer', 'page_id')):the_row();
 	$solution_footers_title = get_sub_field('title');
 	$solution_footers_text  = get_sub_field('text');
 	echo '<section id="inline_solutions">'.PHP_EOL;
