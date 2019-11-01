@@ -1,6 +1,5 @@
 <?php
 function enqueue_my_scripts() {
-	wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.2.1.slim.min.js', array('jquery'), '', true, true);
 	wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', array('jquery'), '', true, true);
 	wp_enqueue_script('bootstrap-js', '//ajax.aspnetcdn.com/ajax/bootstrap/4.3.1/js/bootstrap.min.js', array('jquery'), true, true);
 	wp_enqueue_script('lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js', array('jquery'), '', true, true);
@@ -75,6 +74,7 @@ add_filter('upload_mimes', 'cc_mime_types');
 function site_scripts() {
 	wp_deregister_script('jquery');
 	wp_deregister_script('jquery-ui-core');
+	$pathTojQuery  = "https://code.jquery.com/jquery-3.2.1.slim.min.js";
 	$pathToScripts = THEME_JS."/main.min.js";
 	wp_enqueue_script('site_script', $pathToScripts, array('jquery'), '1.0', true);
 }
