@@ -228,7 +228,7 @@ if (have_rows('solutions_footer', $post_id)) {
 	echo '<section id="inline_solutions">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="section_title col-12"><h1>'.$solution_footers_title.'</h1></div>'.PHP_EOL;
+	echo (!empty($solution_footers_title)?'<div class="section_title col-12"><h1>'.$solution_footers_title.'</h1></div>'.PHP_EOL:'');
 	echo '</div>'.PHP_EOL;
 	$solutions_repeater = get_sub_field('solutions');
 	if ($solutions_repeater) {
@@ -374,7 +374,7 @@ if (have_rows('osha', $post_id)) {
 		$osha_title   = get_sub_field('title');
 		$osha_img     = get_sub_field('image');
 		$osha_content = get_sub_field('content');
-		echo '<div class="row"><div class="section_title col-12"><h1>'.$osha_title.'</h1></div></div>'.PHP_EOL;
+		echo (!empty($osha_title)?'<div class="row"><div class="section_title col-12"><h1>'.$osha_title.'</h1></div></div>'.PHP_EOL:'');
 		echo '<div class="row">'.PHP_EOL;
 		echo '<div class="img col-12 col-md-4">'.($osha_img?'<img src="'.$osha_img['url'].'" alt="'.$osha_img['alt'].'" class="img-fluid">':'').'</div>'.PHP_EOL;
 		echo '<div class="content col-12 col-md-8">'.$osha_content.'</div>'.PHP_EOL;
