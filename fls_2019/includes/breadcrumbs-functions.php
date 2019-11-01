@@ -6,8 +6,8 @@
 //  to include in functions.php
 function the_breadcrumb() {
 	global $post;// if outside the loop
-	$count = 1;
-	$postAncestors = get_post_ancestors($post);
+	$count               = 1;
+	$postAncestors       = get_post_ancestors($post);
 	$sortedAncestorArray = array();
 
 	if (!is_front_page()) {
@@ -48,21 +48,21 @@ function the_breadcrumb() {
 		}
 
 		// If the current page is a single post, show its title with the separator
-		if (is_single()) || is_page()) {
-			$bc_count = 1;
-			$postAncestors = get_post_ancestors($post);
+		if (is_single() || is_page()) {
+			$bc_count            = 1;
+			$postAncestors       = get_post_ancestors($post);
 			$sortedAncestorArray = array();
-			foreach ($postAncestors as $ancestor){
+			foreach ($postAncestors as $ancestor) {
 				$sortedAncestorArray[] = $ancestor;
 			}
-			krsort($sortedAncestorArray); // Sort an array by key in reverse order
+			krsort($sortedAncestorArray);// Sort an array by key in reverse order
 
-			foreach ($sortedAncestorArray as $ancestor){
-				echo '<li class="list-inline-item"><a class="breadcrumb-link-'. $bc_count .'" href="'. esc_url(get_permalink($ancestor)) .'" title="'. get_the_title($ancestor) .'">'. get_the_title($ancestor) .'</a></li>';
+			foreach ($sortedAncestorArray as $ancestor) {
+				echo '<li class="list-inline-item"><a class="breadcrumb-link-'.$bc_count.'" href="'.esc_url(get_permalink($ancestor)).'" title="'.get_the_title($ancestor).'">'.get_the_title($ancestor).'</a></li>';
 				$bc_count++;
 			}
-			if($displayCurrent){ //If TRUE - output the current page title
-				echo '<li class="list-inline-item">'. get_the_title($post) .'</li>';
+			if ($displayCurrent) {//If TRUE - output the current page title
+				echo '<li class="list-inline-item">'.get_the_title($post).'</li>';
 			}
 		}
 
