@@ -24,22 +24,19 @@ echo '</section>'.PHP_EOL;
 the_breadcrumb();
 
 // MAIN CONTENT
-$sol_content = get_the_content();
 
-if ($sol_content) {
-	echo '<section id="main-content">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
-	while (have_posts()){
-		the_post();
-		echo '<div class="col-12">';
-		the_content();
-		echo '</div>'.PHP_EOL;
-	}
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-}
+if (have_posts()):while (have_posts()):the_post();
+echo '<section id="main-content">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
+echo '<div class="row">'.PHP_EOL;
+echo '<div class="col-12">';
+the_content();
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</section>'.PHP_EOL;
+endwhile;
+endif;
 
 // GALLERY
 
@@ -95,7 +92,7 @@ if ($solutions_gallery['gallery_pics']) {
 
 // CTA
 
-echo (!empty()?'<section id="cta_blue"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center"><a href="#cf_contactFormTitle">Speak with a fall protection specialist</a></div></div></div></section>'.PHP_EOL:'');
+echo (!empty(get_the_content())?'<section id="cta_blue"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center"><a href="#cf_contactFormTitle">Speak with a fall protection specialist</a></div></div></div></section>'.PHP_EOL:'');
 
 // ICONS
 
