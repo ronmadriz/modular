@@ -366,10 +366,10 @@ endif;
 
 // OSHA Content
 
-if (have_rows('osha')) {
+if (have_rows('osha', $post_id)) {
 	echo '<section id="osha">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
-	while (have_rows('osha')) {
+	while (have_rows('osha', $post_id)) {
 		the_row();
 		$osha_title   = get_sub_field('title');
 		$osha_img     = get_sub_field('image');
