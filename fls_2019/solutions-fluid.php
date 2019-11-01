@@ -3,8 +3,9 @@
 Template Name: Solutions Fluid
 Template Post Type: Solutions
  */
-$pageID = get_the_id();
-$pageCF = get_post_custom($pageID);
+global $post;
+$post_id = $post->ID;
+
 include 'header-fluid.php';
 
 $banner_img = get_field('banner');
@@ -220,8 +221,8 @@ if (have_rows('download_literature')) {
 // SOLUTIONS
 
 $solutions_footercs = get_field('solutions_footer');
-if (have_rows('solutions_footer', 'page_id')) {
-	while (have_rows('solutions_footer', 'page_id')):the_row();
+if (have_rows('solutions_footer', $post_id)) {
+	while (have_rows('solutions_footer', $post_id)):the_row();
 	$solution_footers_title = get_sub_field('title');
 	$solution_footers_text  = get_sub_field('text');
 	echo '<section id="inline_solutions">'.PHP_EOL;
