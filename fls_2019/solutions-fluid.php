@@ -146,43 +146,49 @@ if (have_rows('measurement_tables')) {
 	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('measurement_tables')) {
 		the_row();
-		$m_title = get_sub_field('title');
-		$m_image = get_sub_field('image');
-		$m_table = get_sub_field('table');
+		$m_title  = get_sub_field('title');
+		$m_image  = get_sub_field('image');
+		$m_tables = get_sub_field('tables');
 		echo (!empty($m_title)?'<div class="row"><div class="section_title col-12"><h1>'.$m_title.'</h1></div></div>':'').PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
 		echo ($m_image != null?'<div class="col-12 col-md-4"><img src="'.$m_image['url'].'" alt="'.$m_image['alt'].'" class="img-fluid"></div>':'');
-		if (!empty($m_table)) {
-			echo '<div class="col-12 col-md-8">'.PHP_EOL;
-			echo '<table border="0">'.PHP_EOL;
-			if (!empty($m_table['caption'])) {
-				echo '<caption>'.$m_table['caption'].'</caption>';
-			}
-			if (!empty($m_table['header'])) {
-				echo '<thead>';
-				echo '<tr>';
-				foreach ($m_table['header'] as $th) {
-					echo '<th scope="col">';
-					echo $th['c'];
-					echo '</th>';
+		echo '<div class="col-12 col-md-8">'.PHP_EOL;
+		if (have_rows('tables')) {
+			while (have_rows('tables')) {
+				the_row();
+				$m_table = get_sub_field('table');
+				if (!empty($m_table)) {
+					echo '<table border="0">'.PHP_EOL;
+					if (!empty($m_table['caption'])) {
+						echo '<caption>'.$m_table['caption'].'</caption>';
+					}
+					if (!empty($m_table['header'])) {
+						echo '<thead>';
+						echo '<tr>';
+						foreach ($m_table['header'] as $th) {
+							echo '<th scope="col">';
+							echo $th['c'];
+							echo '</th>';
+						}
+						echo '</tr>';
+						echo '</thead>';
+					}
+					echo '<tbody>';
+					foreach ($m_table['body'] as $tr) {
+						echo '<tr>';
+						foreach ($tr as $key => $td) {
+							echo '<td data-label="'.$m_table['header'][$key]['c'].'">';
+							echo $td['c'];
+							echo '</td>';
+						}
+						echo '</tr>';
+					}
+					echo '</tbody>';
+					echo '</table>';
 				}
-				echo '</tr>';
-				echo '</thead>';
 			}
-			echo '<tbody>';
-			foreach ($m_table['body'] as $tr) {
-				echo '<tr>';
-				foreach ($tr as $key => $td) {
-					echo '<td data-label="'.$m_table['header'][$key]['c'].'">';
-					echo $td['c'];
-					echo '</td>';
-				}
-				echo '</tr>';
-			}
-			echo '</tbody>';
-			echo '</table>';
-			echo '</div>'.PHP_EOL;
 		}
+		echo '</div>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
