@@ -631,7 +631,7 @@ body header nav.navbar {
           padding: 0.65rem .5rem .65rem 1.25rem; } }
   @media (min-width: 786px) {
     body header nav.navbar {
-      padding: 0.75rem 0;
+      padding: 0.75rem 0 0 !important;
       background-color: white; }
       body header nav.navbar div#nav-holder {
         padding-top: 1.175rem;
