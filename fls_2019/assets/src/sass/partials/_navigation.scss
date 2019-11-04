@@ -3,7 +3,7 @@ body {
 		nav {
 			&.navbar {
 				box-shadow:1px 1px 15px 5px rgba(0,0,0,.24);
-				padding:1.25rem 0;
+				padding:1.25rem 0 0!important;
 				background-color: $white;
 				a {
 					&.navbar-brand {
