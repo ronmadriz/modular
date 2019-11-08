@@ -884,6 +884,13 @@ body main form {
     -webkit-transition: border-color 0.2s;
     transition: border-color 0.2s;
     color: #404040; }
+  body main form#newsletter {
+    margin-top: 1.25rem; }
+    body main form#newsletter button {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+      height: 38px;
+      margin-top: 4px; }
   body main form div.wpcf7-response-output {
     margin-left: auto;
     margin-right: auto;
@@ -1012,6 +1019,12 @@ body form {
     body form div.wpcf7-response-output.wpcf7-mail-sent-ok {
       background-color: #156cb3;
       border-color: #156cb3; }
+  body form#newsletter label {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+    color: #156cb3;
+    margin-bottom: 0; }
 
 html body div.gform_wrapper form div.gform_body ul.gform_fields li.gfield {
   padding-left: .5rem; }
@@ -1176,12 +1189,6 @@ body footer section#foot_connect {
     font-size: 2rem; }
     body footer section#foot_connect div#social ul li a {
       color: #156cb3; }
-  body footer section#foot_connect div#newsletter label {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-style: normal;
-    color: #156cb3;
-    margin-bottom: 0; }
 
 body footer section#boilerplate {
   background-color: white;

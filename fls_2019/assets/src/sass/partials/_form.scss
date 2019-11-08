@@ -124,6 +124,15 @@ body {
 				transition: border-color 0.2s;
 				color:$base;
 			}
+			&#newsletter {
+				margin-top:1.25rem;
+				button {
+					padding-top:0.25rem;
+					padding-bottom: 0.25rem;
+					height: 38px;
+					margin-top: 4px;					
+				}
+			}
 			div {
 				&.wpcf7-response-output {
 					margin-left: auto;
@@ -305,6 +314,15 @@ body {
 				}
 			}
 		}
+    	&#newsletter {
+    		label {
+				text-transform: uppercase;
+				font-weight: 700;
+				font-style: normal;
+				color: $accent_1;
+				margin-bottom: 0;
+    		}
+    	}		
 	}
 }
 
