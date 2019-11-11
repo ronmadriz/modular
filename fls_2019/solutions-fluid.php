@@ -132,6 +132,17 @@ if (have_rows('icons')) {
 				the_row();
 				$icon_title = get_sub_field('title');
 				echo (!empty($icon_title)?'<div class="row"><div class="section_title col-12"><h1>'.$icon_title.'</h1></div></div>'.PHP_EOL:'');
+				if (have_rows('icon')) {
+					while (have_rows('icon')) {
+						the_row();
+						$icon_image   = get_sub_field('image');
+						$icon_content = get_sub_field('content');
+						echo '<div class="row">'.PHP_EOL;
+						echo (!empty($icon_image)?'<div class="fl_thumb col-12 col-md-2 col-lg-1 text-md-center">'.$icon_image.'</div>'.PHP_EOL:'');
+						echo (!empty($icon_content)?'<div class="fl_content col-12 col-md-10 col-lg-11>'.$icon_content.'</div>'.PHP_EOL:'');
+						echo '</div>'.PHP_EOL;
+					}
+				}
 			}
 		}
 	}
