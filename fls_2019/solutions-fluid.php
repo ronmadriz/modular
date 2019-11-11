@@ -125,7 +125,16 @@ $icons = get_field('icons');
 if (have_rows('icons')) {
 	echo '<section id="icons">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
-
+	while (have_rows('icons')) {
+		the_row();
+		if (have_rows('icon_group')) {
+			while (have_rows('icon_group')) {
+				the_row();
+				$icon_title = get_sub_field('title');
+				echo (!empty($icon_title)?'<div class="row"><div class="section_title col-12"><h1>'.$icon_title.'</h1></div></div>'.PHP_EOL:'');
+			}
+		}
+	}
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
