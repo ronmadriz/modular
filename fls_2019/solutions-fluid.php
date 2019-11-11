@@ -139,7 +139,7 @@ if (have_rows('icons')) {
 							get_sub_field('')
 							$icon_image = get_sub_field('image');
 							$icon_content = get_sub_field('content');
-							echo '<div class="row">'.PHP_EO;
+							echo '<div class="row">'.PHP_EOL;
 							echo (!empty($icon_image)?'<div class="fl_thumb col-12 col-md-2 col-lg-1 text-md-center">'.$icon_image.'</div>'.PHP_EOL:'');
 							echo (!empty($icon_content)?'<div class="fl_content col-12 col-md-10 col-lg-11>'.$icon_content.'</div>'.PHP_EOL:'');
 							echo '</div>'.PHP_EOL;
