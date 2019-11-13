@@ -1842,3 +1842,7 @@ body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row {
     body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row.item:not(:last-of-type) {
       border-bottom: 1px solid gray;
       padding-bottom: 2rem; }
+
+html body.page-template-page-career div#pagewrapper section#avail_positions div.container {
+  padding-left: 15px;
+  padding-right: 15px; }
