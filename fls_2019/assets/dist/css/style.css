@@ -1846,8 +1846,8 @@ body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row {
 html body section#avail_positions h3 a {
   display: block; }
   html body section#avail_positions h3 a svg {
-    -webkit-transition: all .5s linear;
-    transition: all .5s linear;
+    -webkit-transition: all .25s linear;
+    transition: all .25s linear;
     margin-left: 1rem; }
   html body section#avail_positions h3 a:not(.collapsed) svg {
     -webkit-transform: rotate(90deg);
