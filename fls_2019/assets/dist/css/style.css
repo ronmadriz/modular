@@ -1843,6 +1843,12 @@ body.page-template-sample-fall-protection-plan main section#sfpp_plan div.row {
       border-bottom: 1px solid gray;
       padding-bottom: 2rem; }
 
-html body.page-template-page-career div#pagewrapper section#avail_positions div.container {
-  padding-left: 15px;
-  padding-right: 15px; }
+html body section#avail_positions h3 a {
+  display: block; }
+  html body section#avail_positions h3 a svg {
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+    margin-left: 1rem; }
+  html body section#avail_positions h3 a:not(.collapsed) svg {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }

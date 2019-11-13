@@ -1,15 +1,17 @@
 html {
 	body {
-		&.page-template-page-career {
-			div {
-				&#pagewrapper {
-					section {
-						&#avail_positions {
-							div {
-								&.container {
-									padding-left:15px;
-									padding-right:15px;
-								}
+		section {
+			&#avail_positions {	
+				h3 {
+					a {
+						display: block;
+						svg {
+							transition: all .5s linear;
+						    margin-left: 1rem;
+						}
+						&:not(.collapsed) {
+							svg {
+								transform: rotate(90deg);
 							}
 						}
 					}

@@ -52,7 +52,7 @@ if ($careers_query) {
 	while ($careers_query->have_posts()):$careers_query->the_post();
 	$count++;
 	echo '<div class="col-12">'.PHP_EOL;
-	echo '<h3><a data-toggle="collapse" href="#position_'.$count.'" role="button" aria-expanded="false" aria-controls="position_'.$count.'">'.get_the_title().'</a></h3>'.PHP_EOL;
+	echo '<h3><a data-toggle="collapse" href="#position_'.$count.'" role="button" aria-expanded="false" aria-controls="position_'.$count.'" class="collapsed">'.get_the_title().' <i class="fas fa-chevron-right"></i></a></h3>'.PHP_EOL;
 	echo '<div class="collapse" id="position_'.$count.'">'.PHP_EOL;
 	the_content();
 	echo '</div>'.PHP_EOL;
