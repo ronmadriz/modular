@@ -1852,3 +1852,7 @@ html body section#avail_positions h3 a {
   html body section#avail_positions h3 a:not(.collapsed) svg {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
+
+@media all and (-ms-high-contrast: none) and (min-width: 786px) {
+  body header nav.navbar ul.navbar-nav > li:first-of-type li a {
+    font-size: 14px; } }
