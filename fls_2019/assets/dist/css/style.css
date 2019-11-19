@@ -1855,18 +1855,16 @@ html body section#avail_positions h3 a {
 
 @media all and (-ms-high-contrast: none) {
   body .navbar-nav {
-    ms-flex-direction: unset !important;
+    -ms-flex-direction: unset !important;
     -webkit-box-orient: unset !important;
     -webkit-box-direction: unset !important;
-        -ms-flex-direction: unset !important;
             flex-direction: unset !important; } }
 
 @media screen and (-ms-high-contrast: active) and (min-width: 786px), (-ms-high-contrast: none) and (min-width: 786px) {
   body header nav.navbar-nav {
-    ms-flex-direction: unset !important;
+    -ms-flex-direction: unset !important;
     -webkit-box-orient: unset !important;
     -webkit-box-direction: unset !important;
-        -ms-flex-direction: unset !important;
             flex-direction: unset !important; }
   body header nav.navbar ul.navbar-nav > li:first-of-type li a {
     font-size: 14px; } }

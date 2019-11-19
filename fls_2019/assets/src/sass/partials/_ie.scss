@@ -1,13 +1,13 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	@media all {
 		body .navbar-nav {
-			ms-flex-direction:unset !important;
+			-ms-flex-direction:unset !important;
 			flex-direction:unset !important;
 		}		
 	}
 	@media (min-width: 786px) {
 		body header nav.navbar-nav {
-			ms-flex-direction:unset !important;
+			-ms-flex-direction:unset !important;
 			flex-direction:unset !important;
 		}			
 		body header nav.navbar ul.navbar-nav>li:first-of-type li a {
