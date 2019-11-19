@@ -1854,5 +1854,7 @@ html body section#avail_positions h3 a {
             transform: rotate(90deg); }
 
 @media all and (-ms-high-contrast: none) and (min-width: 786px) {
+  body header nav.navbar-nav {
+    display: block; }
   body header nav.navbar ul.navbar-nav > li:first-of-type li a {
     font-size: 14px; } }
