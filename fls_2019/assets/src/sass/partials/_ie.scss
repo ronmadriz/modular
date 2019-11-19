@@ -1,7 +1,8 @@
 @media all and (-ms-high-contrast:none) {
 	@media all {
 		body header nav.navbar-nav {
-			display:block;
+			ms-flex-direction:default;
+			flex-direction:default;
 		}		
 	}
 	@media (min-width: 786px) {

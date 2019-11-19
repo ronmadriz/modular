@@ -1855,7 +1855,11 @@ html body section#avail_positions h3 a {
 
 @media all and (-ms-high-contrast: none) {
   body header nav.navbar-nav {
-    display: block; } }
+    ms0flex-direction: default;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: default;
+            flex-direction: default; } }
 
 @media all and (-ms-high-contrast: none) and (min-width: 786px) {
   body header nav.navbar ul.navbar-nav > li:first-of-type li a {
