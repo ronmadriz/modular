@@ -50,12 +50,15 @@ if ($careers_query) {
 	echo '<div class="row">'.PHP_EOL;
 	$count = 0;
 	while ($careers_query->have_posts()):$careers_query->the_post();
+	$summary = get_field('summary');
 	$count++;
 	echo '<div class="col-12">'.PHP_EOL;
 	echo '<h3><a data-toggle="collapse" href="#position_'.$count.'" role="button" aria-expanded="false" aria-controls="position_'.$count.'" class="collapsed">'.get_the_title().' <i class="fas fa-chevron-right"></i></a></h3>'.PHP_EOL;
 	echo '<div class="collapse" id="position_'.$count.'">'.PHP_EOL;
+	echo $summary;
 	the_content();
 	echo '</div>'.PHP_EOL;
+	echo '<p><a class="btn btn-blue" href="/about/careers/apply-online/">Apply Online</a></p>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	endwhile;
 	wp_reset_query();

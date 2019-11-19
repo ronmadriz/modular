@@ -25,6 +25,7 @@ bloginfo('charset');
 echo '" />'.PHP_EOL;
 echo '<meta http-equiv="X-UA-Compatible" content="IE=edge" />'.PHP_EOL;
 echo '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />'.PHP_EOL;
+echo '<meta http-equiv="X-UA-Compatible" content="IE=edge">'.PHP_EOL;
 echo '<meta name="theme-color" content="#156CB3">'.PHP_EOL;
 echo '<link rel="shortcut icon" href="'.esc_url($site_favicon).'" type="image/x-icon">'.PHP_EOL;
 echo '<title>'.PHP_EOL;
