@@ -1,11 +1,15 @@
-@media all and (-ms-high-contrast:none) {
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	@media all {
 		body header nav.navbar-nav {
-			ms-flex-direction:default;
-			flex-direction:default;
+			ms-flex-direction:unset !important;
+			flex-direction:unset !important;
 		}		
 	}
 	@media (min-width: 786px) {
+		body header nav.navbar-nav {
+			ms-flex-direction:unset !important;
+			flex-direction:unset !important;
+		}			
 		body header nav.navbar ul.navbar-nav>li:first-of-type li a {
 			font-size:14px;
 		}
