@@ -1,6 +1,6 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	@media all {
-		body header nav.navbar-nav {
+		body .navbar-nav {
 			ms-flex-direction:unset !important;
 			flex-direction:unset !important;
 		}		

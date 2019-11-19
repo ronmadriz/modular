@@ -1854,7 +1854,7 @@ html body section#avail_positions h3 a {
             transform: rotate(90deg); }
 
 @media all and (-ms-high-contrast: none) {
-  body header nav.navbar-nav {
+  body .navbar-nav {
     ms-flex-direction: unset !important;
     -webkit-box-orient: unset !important;
     -webkit-box-direction: unset !important;
