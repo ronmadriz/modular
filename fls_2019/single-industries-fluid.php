@@ -122,17 +122,6 @@ if (have_rows('testimonials')) {
 	echo '</section>'.PHP_EOL;
 }
 
-if ($industry_testimonials) {
-	$testimonial = $industry_testimonials;
-	setup_postdata($testimonial);
-	echo '<div class="row justify-content-center">'.PHP_EOL;
-	echo '<div class="content col-12">'.PHP_EOL;
-	echo '<span class="sr-only">customer testimonial</span>'.PHP_EOL;
-	echo get_the_content();
-	echo '<p class="text-right">~ '.get_the_title($industry_testimonials).'</p>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	wp_reset_postdata();
-}
 // CTA
 echo '<section id="cta_blue"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center"><a href="#cf_contactFormTitle">Speak with a fall protection specialist</a></div></div></div></section>'.PHP_EOL;
 
