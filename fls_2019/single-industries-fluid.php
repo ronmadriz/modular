@@ -139,7 +139,7 @@ if (have_rows('icon_row')) {
 			echo '<div class="fl_thumb col-3 col-md-2 col-lg-1 text-md-center">'.($fl_icon_link?'<a href="'.$fl_link['url'].'"><img src="'.$fl_image['url'].'" class="img-fluid" alt=""></a>':'<img src="'.$fl_image['url'].'" class="img-fluid" alt="">').'</div>'.PHP_EOL;
 			echo '<div class="fl_content col-9 col-md-10 col-lg-11">'.PHP_EOL;
 			if ($fl_title && $fl_icon_link) {
-				echo '<h2><a href="'$fl_link['url']'">'.$fl_title.'</a></h2>'.PHP_EOL;
+				echo '<h2><a href="'.$fl_link['url'].'">'.$fl_title.'</a></h2>'.PHP_EOL;
 			} elseif ($fl_title) {
 				echo '<h2>'.$fl_title.'</h2>'.PHP_EOL;
 			}
