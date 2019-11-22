@@ -42,7 +42,6 @@ $industries = array(
 	'post_type'      => 'industries',
 	'posts_per_page' => -1,
 	'post__not_in'   => array(1116142),
-	'orderby'        => 'menu_index',
 	'order'          => 'ASC',
 );
 $industries_query = new WP_Query($industries);
