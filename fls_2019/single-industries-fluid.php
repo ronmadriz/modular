@@ -111,17 +111,25 @@ if ($industry_testimonials) {
 
 // TESTIMONIALS
 
-$industry_testimonials = get_field('testimonials');
 if (have_rows('testimonials')) {
 	echo '<section id="testimonial">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('testimonials')) {
 		the_row();
 		$custom_testimonial = get_sub_field('custom_testimonial');
+		$custom_quote       = get_sub_field('custom_quote');
+		$testimonials       = get_sub_field('testimonial');
 		echo '<div class="row justify-content-center">'.PHP_EOL;
 		echo '<div class="content col-12">'.PHP_EOL;
-		if ($custom_testimonial) {
-			echo '<p>hi</p>'.PHP_EOL;
+		echo '<span class="sr-only">customer testimonial</span>'.PHP_EOL;
+		if ($custom_testimonial && $custom_quote) {
+			echo $custom_quote.PHP_EOL;
+		} elseif ($testimonials) {
+			$testimonial = $testimonials;
+			setup_postdata($testimonial);
+			echo get_the_content();
+			echo '<p class="text-right">~ '.get_the_title($testimonials).'</p>'.PHP_EOL;
+			wp_reset_postdata();
 		}
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
