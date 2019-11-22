@@ -130,10 +130,12 @@ if (have_rows('icon_row')) {
 		echo '<div class="container-fluid">'.PHP_EOL;
 		while (have_rows('icon_row')) {
 			the_row();
-			$fl_image   = get_sub_field('icon_image');
-			$fl_content = get_sub_field('icon_content');
+			$fl_image     = get_sub_field('icon_image');
+			$fl_content   = get_sub_field('icon_content');
+			$fl_icon_link = get_sub_field('link_to_page');
+			$fl_link      = get_sub_field('link');
 			echo '<div class="row h-100 justify-content-center align-items-md-center">'.PHP_EOL;
-			echo '<div class="fl_thumb col-3 col-md-2 col-lg-1 text-md-center"><img src="'.$fl_image['url'].'" class="img-fluid" alt=""></div>'.PHP_EOL;
+			echo '<div class="fl_thumb col-3 col-md-2 col-lg-1 text-md-center">'.($fl_icon_link?'<a href="'.$fl_link['url'].'"><img src="'.$fl_image['url'].'" class="img-fluid" alt=""></a>':'<img src="'.$fl_image['url'].'" class="img-fluid" alt="">').'</div>'.PHP_EOL;
 			echo '<div class="fl_content col-9 col-md-10 col-lg-11">'.$fl_content.'</div>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 		}
