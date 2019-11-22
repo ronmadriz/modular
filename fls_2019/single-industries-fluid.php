@@ -115,7 +115,7 @@ $industry_testimonials = get_field('testimonials');
 if (have_rows('testimonials')) {
 	echo '<section id="testimonial">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
-	if (get_field('custom_testimonial') == true) {
+	if (get_field('custom_testimonial')) {
 		echo '<p>hi</p>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
