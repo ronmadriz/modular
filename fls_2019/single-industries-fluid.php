@@ -115,8 +115,14 @@ $industry_testimonials = get_field('testimonials');
 if (have_rows('testimonials')) {
 	echo '<section id="testimonial">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
-	if (get_field('custom_testimonial')) {
-		echo '<p>hi</p>'.PHP_EOL;
+	while (have_rows('testimonials')) {
+		echo '<div class="row justify-content-center">'.PHP_EOL;
+		echo '<div class="content col-12">'.PHP_EOL;
+		if (get_field('custom_testimonial')) {
+			echo '<p>hi</p>'.PHP_EOL;
+		}
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
