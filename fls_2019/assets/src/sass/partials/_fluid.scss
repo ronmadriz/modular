@@ -171,7 +171,8 @@ html {
 							&.literature_list {
 								li {
 									align-content: start;
-								    vertical-align: top;									
+								    vertical-align: top;
+							        margin-bottom: .75rem;
 									&.col-md-3 {
 										@media(min-width: 768px){
 											flex: 0 0 24%;

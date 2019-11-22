@@ -1559,7 +1559,8 @@ html body.solutions-template-solutions-fluid main section#literature, html body.
   html body.solutions-template-solutions-fluid main section#literature ul.literature_list li, html body.industries-template-single-industries-fluid main section#literature ul.literature_list li, html body.page-template-fall-protection-101 main section#literature ul.literature_list li, html body.page-template-sample-fall-protection-plan main section#literature ul.literature_list li {
     -ms-flex-line-pack: start;
         align-content: start;
-    vertical-align: top; }
+    vertical-align: top;
+    margin-bottom: .75rem; }
     @media (min-width: 768px) {
       html body.solutions-template-solutions-fluid main section#literature ul.literature_list li.col-md-3, html body.industries-template-single-industries-fluid main section#literature ul.literature_list li.col-md-3, html body.page-template-fall-protection-101 main section#literature ul.literature_list li.col-md-3, html body.page-template-sample-fall-protection-plan main section#literature ul.literature_list li.col-md-3 {
         -webkit-box-flex: 0;
