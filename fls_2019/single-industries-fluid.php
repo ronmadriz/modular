@@ -117,9 +117,10 @@ if (have_rows('testimonials')) {
 	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('testimonials')) {
 		the_row();
+		$custom_testimonial = get_sub_field('custom_testimonial');
 		echo '<div class="row justify-content-center">'.PHP_EOL;
 		echo '<div class="content col-12">'.PHP_EOL;
-		if (get_field('custom_testimonial')) {
+		if ($custom_testimonial) {
 			echo '<p>hi</p>'.PHP_EOL;
 		}
 		echo '</div>'.PHP_EOL;
