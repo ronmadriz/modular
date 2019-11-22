@@ -170,6 +170,12 @@ html {
 						ul {
 							&.literature_list {
 								li {
+									&.col-md-3 {
+										@media(min-width: 768px){
+											flex: 0 0 24.25%;
+											max-width: 24.25%;											
+										}
+									}
 									img {
 										&.img-fluid {
 											min-width:100%;
