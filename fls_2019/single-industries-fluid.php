@@ -124,12 +124,6 @@ if (have_rows('testimonials')) {
 		echo '<span class="sr-only">customer testimonial</span>'.PHP_EOL;
 		if ($custom_testimonial && $custom_quote) {
 			echo $custom_quote.PHP_EOL;
-		} elseif ($testimonials) {
-			$testimonial = $testimonials;
-			setup_postdata($testimonial);
-			echo get_the_content();
-			echo '<p class="text-right">~ '.get_the_title($testimonials).'</p>'.PHP_EOL;
-			wp_reset_postdata();
 		}
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
