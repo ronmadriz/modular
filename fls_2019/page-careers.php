@@ -58,7 +58,7 @@ if ($careers_query) {
 	echo $summary;
 	the_content();
 	echo '</div>'.PHP_EOL;
-	echo '<p><a class="btn btn-blue" href="/about/careers/apply-online/">Apply Online</a></p>'.PHP_EOL;
+	echo '<p><a class="btn btn-blue" href="/about/careers/apply-online/">Apply for this Position Online</a></p>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	endwhile;
 	wp_reset_query();

@@ -3,11 +3,9 @@
 Template Name: All Industries Post
 Template Post Type: industries
  */
-
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
 get_header();
-
 $banner_img = get_field('banner');
 // BANNER
 echo '<section id="banner">'.PHP_EOL;
@@ -20,7 +18,6 @@ echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
-
 // INDUSTRY CONTENT
 if (have_posts()):while (have_posts()):the_post();
 echo '<section id="main-content">'.PHP_EOL;
@@ -34,9 +31,7 @@ echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 endwhile;
 endif;
-
 // All Top Level Industries
-
 $industries = array(
 	'post_parent'    => 0,
 	'post_type'      => 'industries',
@@ -65,7 +60,6 @@ if ($industries_query) {
 	echo '</section>'.PHP_EOL;
 	wp_reset_query();
 }
-
 $base_content = get_field('base_content');
 if ($base_content) {
 	echo '<section id="base-content">'.PHP_EOL;
@@ -76,7 +70,6 @@ if ($base_content) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
-
 $featured_clients = get_field('featured_clients');
 if ($featured_clients):
 echo '<section id="logos">'.PHP_EOL;
@@ -88,20 +81,16 @@ $feat_clients_logos = get_sub_field('logos');
 echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
 echo '<div class="col-12 text-center"><h1>'.$feat_clients_title.'</h1></div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
-
 if ($feat_clients_logos):
 echo '<div class="row mb-3 mt-3 align-content-center justify-content-center">'.PHP_EOL;
 foreach ($feat_clients_logos as $logos):
 echo '<div class="col-12 col-md-3 align-self-center"><img src="'.$logos['url'].'" alt="'.$logos['alt'].'" class="img-fluid" /></div>'.PHP_EOL;
-
 endforeach;
 echo '</div>'.PHP_EOL;
 endif;
-
 endwhile;
 wp_reset_query();
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 endif;
-
 get_footer();?>
