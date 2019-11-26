@@ -153,12 +153,12 @@ if (have_rows('icons')) {
 // TABLES
 if (have_rows('measurement_tables')) {
 	echo '<section id="measurement_tables">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('measurement_tables')) {
 		the_row();
 		$m_title  = get_sub_field('title');
 		$m_image  = get_sub_field('image');
 		$m_tables = get_sub_field('tables');
+		echo '<div class="container-fluid">'.PHP_EOL;
 		echo (!empty($m_title)?'<div class="row"><div class="section_title col-12"><h1>'.$m_title.'</h1></div></div>':'').PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
 		echo ($m_image != null?'<div class="col-12 col-md-4"><img src="'.$m_image['url'].'" alt="'.$m_image['alt'].'" class="img-fluid"></div>':'');
@@ -199,8 +199,8 @@ if (have_rows('measurement_tables')) {
 			}
 		}
 		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
 	}
-	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
 
