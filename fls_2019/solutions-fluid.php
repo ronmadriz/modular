@@ -200,10 +200,10 @@ if (have_rows('measurement_tables')) {
 		}
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
 	}
 	echo '</section>'.PHP_EOL;
 }
-
 // LITERATURE
 
 if (have_rows('download_literature')) {
