@@ -9,7 +9,7 @@ get_header();
 $banner_img = get_field('banner');
 // BANNER
 echo '<section id="banner">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
 echo ($banner_img != null?'<div class="row w-image justify-content-center align-content-center"><style type="text/css">section#banner{background-image:url('.$banner_img['url'].');}</style>':'<div class="row justify-content-center align-content-center">').PHP_EOL;
 echo '<div class="page_title col-12 col-md-10">'.PHP_EOL;
 $alternate_page_title = get_field('alternate_page_title');
@@ -21,7 +21,7 @@ echo '</section>'.PHP_EOL;
 // INDUSTRY CONTENT
 if (have_posts()):while (have_posts()):the_post();
 echo '<section id="main-content">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
 echo '<div class="row justify-content-center align-content-center mb-3">'.PHP_EOL;
 echo '<div class="col-12">';
 the_content();
@@ -42,7 +42,7 @@ $industries = array(
 $industries_query = new WP_Query($industries);
 if ($industries_query) {
 	echo '<section id="child_grid">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row industries img_grid">'.PHP_EOL;
 	while ($industries_query->have_posts()):$industries_query->the_post();
 	$summary = get_field('summary');
@@ -63,7 +63,7 @@ if ($industries_query) {
 $base_content = get_field('base_content');
 if ($base_content) {
 	echo '<section id="base-content">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row justify-content-center align-content-center">'.PHP_EOL;
 	echo '<div class="col-12">'.$base_content.'</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
@@ -73,7 +73,7 @@ if ($base_content) {
 $featured_clients = get_field('featured_clients');
 if ($featured_clients):
 echo '<section id="logos">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
 while (have_rows('featured_clients')):
 the_row();
 $feat_clients_title = get_sub_field('title');
