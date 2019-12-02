@@ -363,6 +363,18 @@ html {
 							}
 						}
 					}
+					.img_grid {
+						.item {
+						    position: relative;
+						    overflow: hidden;
+						    padding-left: 0;
+						    padding-right: 0;
+						    @media(min-width:786px){
+							    margin: .75rem;
+							    flex: 0 0 23%;
+						    }
+						}
+					}
 				}
 			}
 			footer {

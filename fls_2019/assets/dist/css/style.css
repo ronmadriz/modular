@@ -402,6 +402,15 @@ html body main {
 html body svg#contacts path:hover {
   opacity: .9; }
 
+@media (min-width: 786px) {
+  html .max-width {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.85); }
+  html .navbar {
+    padding-bottom: 10px !important; } }
+
 body header a.navbar-brand {
   margin-right: 0;
   color: #156cb3; }
@@ -1720,6 +1729,18 @@ html body.solutions-template-solutions-fluid main section#testimonial, html body
       @media (min-width: 1300px) {
         html body.solutions-template-solutions-fluid main section#testimonial div.content:before, html body.solutions-template-solutions-fluid main section#testimonial_2 div.content:before, html body.industries-template-single-industries-fluid main section#testimonial div.content:before, html body.industries-template-single-industries-fluid main section#testimonial_2 div.content:before, html body.page-template-fall-protection-101 main section#testimonial div.content:before, html body.page-template-fall-protection-101 main section#testimonial_2 div.content:before, html body.page-template-sample-fall-protection-plan main section#testimonial div.content:before, html body.page-template-sample-fall-protection-plan main section#testimonial_2 div.content:before, html body.industries-template-single-all-industries main section#testimonial div.content:before, html body.industries-template-single-all-industries main section#testimonial_2 div.content:before {
           top: -2.5rem; } }
+
+html body.solutions-template-solutions-fluid main section .img_grid .item, html body.industries-template-single-industries-fluid main section .img_grid .item, html body.page-template-fall-protection-101 main section .img_grid .item, html body.page-template-sample-fall-protection-plan main section .img_grid .item, html body.industries-template-single-all-industries main section .img_grid .item {
+  position: relative;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0; }
+  @media (min-width: 786px) {
+    html body.solutions-template-solutions-fluid main section .img_grid .item, html body.industries-template-single-industries-fluid main section .img_grid .item, html body.page-template-fall-protection-101 main section .img_grid .item, html body.page-template-sample-fall-protection-plan main section .img_grid .item, html body.industries-template-single-all-industries main section .img_grid .item {
+      margin: .75rem;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 23%;
+              flex: 0 0 23%; } }
 
 html body.solutions-template-solutions-fluid footer section#foot_call_cta, html body.industries-template-single-industries-fluid footer section#foot_call_cta, html body.page-template-fall-protection-101 footer section#foot_call_cta, html body.page-template-sample-fall-protection-plan footer section#foot_call_cta, html body.industries-template-single-all-industries footer section#foot_call_cta {
   margin-top: 0; }
