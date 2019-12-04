@@ -216,7 +216,9 @@ if ($solutions_footercs) {
 			setup_postdata($solution);
 			$solution_summary = get_field('summary', $solution->ID);
 			echo '<div class="item col-12 col-md-3">'.PHP_EOL;
+			echo '<a href="'.get_permalink().'">';
 			echo get_the_post_thumbnail($solution->ID, 'full', array('class' => 'img-fluid')).PHP_EOL;
+			echo '</a>'.PHP_EOL;
 			echo '<div class="title"><a href="'.get_permalink($solution->ID).'">'.get_the_title($solution->ID).'</a></div>'.PHP_EOL;
 			echo '<div class="desc"><p><a href="'.get_the_permalink($solution->ID).'">'.$solution_summary.'</a></p></div>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
@@ -253,7 +255,9 @@ if (have_rows('case_study_groups')) {
 			$study_summary = get_field('summary', $study->ID);
 			echo '<div class="item justify-content-center row">'.PHP_EOL;
 			echo '<div class="img col-12 col-md-4 align-self-center">'.PHP_EOL;
+			echo '<a href="'.get_permalink().'">';
 			echo get_the_post_thumbnail($study->ID, 'medium', array('class' => 'img-fluid')).PHP_EOL;
+			echo '</a>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 			echo '<div class="content text-center text-md-left col-12 col-md-8 align-self-center">'.PHP_EOL;
 			echo (!empty($case_study_title)?'<h4>'.$case_study_title.'</h4>'.PHP_EOL:'<h4>'.get_the_title($study->ID).'</h4>'.PHP_EOL);
@@ -276,7 +280,9 @@ if (have_rows('case_study_groups')) {
 			$study_summary = get_field('summary', $study->ID);
 			echo '<div class="item col-12 col-md-3">'.PHP_EOL;
 			echo '<span class="d-block img">'.PHP_EOL;
+			echo '<a href="'.get_permalink().'">';
 			echo get_the_post_thumbnail($study->ID, 'medium', array('class' => 'img-fluid')).PHP_EOL;
+			echo '</a>'.PHP_EOL;
 			echo '</span>'.PHP_EOL;
 			echo '<span class="d-block content text-center text-md-left align-self-center">'.PHP_EOL;
 			echo (!empty($case_study_title)?'<h4>'.$case_study_title.'</h4>'.PHP_EOL:'<h4>'.get_the_title($study->ID).'</h4>'.PHP_EOL);

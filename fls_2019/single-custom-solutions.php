@@ -3,28 +3,23 @@
 Template Name: Custom Solutions
 Template Post Type: solutions
  */
-
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
 get_header();
-
 $banner_img = get_field('banner');
 // BANNER
 echo '<section id="banner">'.PHP_EOL;
 echo '<div class="container">'.PHP_EOL;
 echo ($banner_img != null?'<div class="row w-image"><style type="text/css">section#banner{background-image:url('.$banner_img['url'].');}</style>':'<div class="row">').PHP_EOL;
-
 echo '<div class="page_title col-12 col-md-7">'.PHP_EOL;
 echo '<h1>'.(!empty($alternate_page_title)?$alternate_page_title:get_the_title()).'</h1>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
-
 echo '<div id="pagewrapper" class="container">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
-
 // INDUSTRY CONTENT
 if (have_posts()):while (have_posts()):the_post();
 echo '<section id="main-content">'.PHP_EOL;
@@ -34,14 +29,11 @@ echo '<div class="col-12">';
 the_content();
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
-
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 endwhile;
 endif;
-
 // CASE STUDIES
-
 $case_studies = get_field('case_study_groups');
 if (have_rows('case_study_groups')) {
 	echo '<section id="case_study">'.PHP_EOL;
@@ -61,7 +53,9 @@ if (have_rows('case_study_groups')) {
 			$study_summary = get_field('summary', $study->ID);
 			echo '<div class="item justify-content-center row">'.PHP_EOL;
 			echo '<div class="img col-12 col-md-4 align-self-center">'.PHP_EOL;
+			echo '<a href="'.get_permalink().'">';
 			echo get_the_post_thumbnail($study->ID, 'medium', array('class' => 'img-fluid')).PHP_EOL;
+			echo '</a>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 			echo '<div class="content text-center text-md-left col-12 col-md-8 align-self-center">'.PHP_EOL;
 			echo (!empty($case_study_title)?'<h4>'.$case_study_title.'</h4>'.PHP_EOL:'<h4>'.get_the_title($study->ID).'</h4>'.PHP_EOL);

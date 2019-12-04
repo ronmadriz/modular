@@ -53,7 +53,8 @@ if ($solutions_group) {
 			$solution = $solutions_item;
 			setup_postdata($solution);
 			$solution_summary = get_field('summary', $solution->ID);
-			echo '<div class="item-thumb col-12 col-md-3">'.get_the_post_thumbnail($solution->ID, 'thumbnail', array('class' => 'img-fluid')).'</div>'.PHP_EOL;
+
+			echo '<div class="item-thumb col-12 col-md-3"><a href="'.get_permalink().'">'.get_the_post_thumbnail($solution->ID, 'thumbnail', array('class' => 'img-fluid')).'</a></div>'.PHP_EOL;
 			echo '<div class="item-desc align-content-center col-12 col-md-9 text-center text-md-left">'.PHP_EOL;
 			echo '<h4><a href="'.get_permalink($solution->ID).'">'.get_the_title($solution->ID).'</a></h4>'.PHP_EOL;
 			echo $solution_summary.PHP_EOL;
@@ -121,7 +122,9 @@ if (have_rows('case_study_groups')) {
 			$study_summary = get_field('summary', $study->ID);
 			echo '<div class="item justify-content-center row">'.PHP_EOL;
 			echo '<div class="img col-12 col-md-4 align-self-center">'.PHP_EOL;
+			echo '<a href="'.get_permalink().'">';
 			echo get_the_post_thumbnail($study->ID, 'medium', array('class' => 'img-fluid')).PHP_EOL;
+			echo '</a>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 			echo '<div class="content text-center text-md-left col-12 col-md-8 align-self-center">'.PHP_EOL;
 			echo (!empty($case_study_title)?'<h4>'.$case_study_title.'</h4>'.PHP_EOL:'<h4>'.get_the_title($study->ID).'</h4>'.PHP_EOL);
@@ -312,7 +315,9 @@ if ($solutions_footercs) {
 			setup_postdata($solution);
 			$solution_summary = get_field('summary', $solution->ID);
 			echo '<div class="item col-12 col-md-4">'.PHP_EOL;
+			echo '<a href="'.get_permalink().'">';
 			echo get_the_post_thumbnail($solution->ID, 'full', array('class' => 'img-fluid')).PHP_EOL;
+			echo '</a>'.PHP_EOL;
 			echo '<div class="title"><a href="'.get_permalink().'">'.get_the_title($solution->ID).'</a></div>'.PHP_EOL;
 			echo '<div class="caption text-center">'.PHP_EOL;
 			echo '<h2><a href="'.get_the_permalink($solution->ID).'">'.get_the_title($solution->ID).'</a></h2>'.PHP_EOL;
@@ -360,7 +365,9 @@ if ('has_2_solutions') {
 				setup_postdata($solution_2);
 				$solution_summary_2 = get_field('summary', $solution_2->ID);
 				echo '<div class="item col-12 col-md-4">'.PHP_EOL;
+				echo '<a href="'.get_permalink().'">';
 				echo get_the_post_thumbnail($solution_2->ID, 'full', array('class' => 'img-fluid')).PHP_EOL;
+				echo '</a>'.PHP_EOL;
 				echo '<div class="title"><a href="'.get_permalink().'">'.get_the_title($solution_2->ID).'</a></div>'.PHP_EOL;
 				echo '<div class="caption text-center">'.PHP_EOL;
 				echo '<h2><a href="'.get_the_permalink($solution_2->ID).'">'.get_the_title($solution_2->ID).'</a></h2>'.PHP_EOL;

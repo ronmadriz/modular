@@ -55,7 +55,9 @@ if (have_rows('case_study_groups')) {
 			$study_summary = get_field('summary', $study->ID);
 			echo '<div class="item justify-content-center row">'.PHP_EOL;
 			echo '<div class="img col-12 col-md-4 align-self-center">'.PHP_EOL;
+			echo '<a href="'.get_permalink().'">';
 			echo get_the_post_thumbnail($study->ID, 'medium', array('class' => 'img-fluid')).PHP_EOL;
+			echo '</a>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 			echo '<div class="content text-center text-md-left col-12 col-md-8 align-self-center">'.PHP_EOL;
 			echo (!empty($case_study_title)?'<h4>'.$case_study_title.'</h4>'.PHP_EOL:'<h4>'.get_the_title($study->ID).'</h4>'.PHP_EOL);

@@ -112,7 +112,9 @@ if ($solutions_query) {
 	echo ' '.$sol_term->slug;
 	endforeach;
 	echo '">'.PHP_EOL;
+	echo '<a href="'.get_permalink().'">';
 	the_post_thumbnail('full', array('class' => 'img-fluid'));
+	echo '</a>'.PHP_EOL;
 	echo '<div class="title"><a href="'.get_permalink().'">'.get_the_title().'</a></div>'.PHP_EOL;
 	echo '<div class="caption text-center">'.PHP_EOL;
 	echo '<h2><a href="'.get_the_permalink().'">'.get_the_title().'</a></h2>'.PHP_EOL;
@@ -136,7 +138,6 @@ if ($base_content) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
-
 // Testimonial
 $testimonials_args = array(
 	'post_type'      => 'testimonials',
@@ -161,7 +162,6 @@ if ($testimonials_query) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
-
 $featured_clients = get_field('featured_clients');
 if ($featured_clients):
 echo '<section id="logos">'.PHP_EOL;
@@ -173,20 +173,16 @@ $feat_clients_logos = get_sub_field('logos');
 echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
 echo '<div class="col-12 text-center"><h1>'.$feat_clients_title.'</h1></div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
-
 if ($feat_clients_logos):
 echo '<div class="row mb-3 mt-3 align-content-center justify-content-center">'.PHP_EOL;
 foreach ($feat_clients_logos as $logos):
 echo '<div class="col-12 col-md-3 align-self-center"><img src="'.$logos['url'].'" alt="'.$logos['alt'].'" class="img-fluid" /></div>'.PHP_EOL;
-
 endforeach;
 echo '</div>'.PHP_EOL;
 endif;
-
 endwhile;
 wp_reset_postdata();
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 endif;
-
 get_footer();?>
