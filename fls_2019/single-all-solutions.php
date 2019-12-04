@@ -112,9 +112,7 @@ if ($solutions_query) {
 	echo ' '.$sol_term->slug;
 	endforeach;
 	echo '">'.PHP_EOL;
-	echo '<a href="'.get_the_permalink().'">';
 	the_post_thumbnail('full', array('class' => 'img-fluid'));
-	echo '</a>'.PHP_EOL;
 	echo '<div class="title"><a href="'.get_the_permalink().'">'.get_the_title().'</a></div>'.PHP_EOL;
 	echo '<div class="caption text-center">'.PHP_EOL;
 	echo '<h2><a href="'.get_the_permalink().'">'.get_the_title().'</a></h2>'.PHP_EOL;
