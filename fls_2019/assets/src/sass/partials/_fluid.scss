@@ -232,7 +232,30 @@ html {
 							}
 						}
 					}
-					&#case_study, &#image_callout {
+					&#image_callout {
+						div {
+							&.item {
+								div {
+									&.img {
+										height: 275px;
+									}
+									&.content {
+										padding-left:30px;
+									}
+								}
+								span {
+									&.img {
+										img {
+											&.img-fluid {
+												min-width:100%;
+											}
+										}
+									}
+								}
+							}
+						}
+					}					
+					&#case_study {
 						div {
 							&.item {
 								div {
