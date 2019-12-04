@@ -130,7 +130,7 @@ if (have_rows('image_callout')) {
 		if (have_rows('callout')) {
 			while (have_rows('callout')) {
 				the_row();
-				echo '<div class="row">'.PHP_EOL;
+				echo '<div class="row item">'.PHP_EOL;
 				$callout_image   = get_sub_field('image');
 				$callout_title   = get_sub_field('title');
 				$callout_content = get_sub_field('content');
