@@ -1086,7 +1086,7 @@ html body div.gform_wrapper form#gform_2 div.gform_footer input[type="submit"] {
     html body main table tr th:not(:first-of-type), html body main table tr td:not(:first-of-type) {
       text-align: center; }
     html body main table tr:last-of-type {
-      border-bottom: 1px solid #f0f0f0; } }
+      border-bottom: 1px solid lightgray; } }
 
 @media only screen and (max-width: 991px) {
   html body main table {
