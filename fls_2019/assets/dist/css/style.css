@@ -1636,10 +1636,15 @@ html body.solutions-template-solutions-fluid main section#cf_contactForm, html b
       bottom: -1rem;
       max-height: 475px; } }
 
-html body.solutions-template-solutions-fluid main section#image_callout div.item div.content, html body.industries-template-single-industries-fluid main section#image_callout div.item div.content, html body.page-template-fall-protection-101 main section#image_callout div.item div.content, html body.page-template-sample-fall-protection-plan main section#image_callout div.item div.content, html body.industries-template-single-all-industries main section#image_callout div.item div.content {
-  padding-left: 30px; }
-  html body.solutions-template-solutions-fluid main section#image_callout div.item div.content h3, html body.industries-template-single-industries-fluid main section#image_callout div.item div.content h3, html body.page-template-fall-protection-101 main section#image_callout div.item div.content h3, html body.page-template-sample-fall-protection-plan main section#image_callout div.item div.content h3, html body.industries-template-single-all-industries main section#image_callout div.item div.content h3 {
-    font-size: 120%; }
+html body.solutions-template-solutions-fluid main section#image_callout, html body.industries-template-single-industries-fluid main section#image_callout, html body.page-template-fall-protection-101 main section#image_callout, html body.page-template-sample-fall-protection-plan main section#image_callout, html body.industries-template-single-all-industries main section#image_callout {
+  padding-top: 2rem; }
+  @media (min-width: 768px) {
+    html body.solutions-template-solutions-fluid main section#image_callout, html body.industries-template-single-industries-fluid main section#image_callout, html body.page-template-fall-protection-101 main section#image_callout, html body.page-template-sample-fall-protection-plan main section#image_callout, html body.industries-template-single-all-industries main section#image_callout {
+      padding-top: 2rem; } }
+  html body.solutions-template-solutions-fluid main section#image_callout div.item div.content, html body.industries-template-single-industries-fluid main section#image_callout div.item div.content, html body.page-template-fall-protection-101 main section#image_callout div.item div.content, html body.page-template-sample-fall-protection-plan main section#image_callout div.item div.content, html body.industries-template-single-all-industries main section#image_callout div.item div.content {
+    padding-left: 30px; }
+    html body.solutions-template-solutions-fluid main section#image_callout div.item div.content h3, html body.industries-template-single-industries-fluid main section#image_callout div.item div.content h3, html body.page-template-fall-protection-101 main section#image_callout div.item div.content h3, html body.page-template-sample-fall-protection-plan main section#image_callout div.item div.content h3, html body.industries-template-single-all-industries main section#image_callout div.item div.content h3 {
+      font-size: 120%; }
 
 html body.solutions-template-solutions-fluid main section#case_study div.item div.img, html body.industries-template-single-industries-fluid main section#case_study div.item div.img, html body.page-template-fall-protection-101 main section#case_study div.item div.img, html body.page-template-sample-fall-protection-plan main section#case_study div.item div.img, html body.industries-template-single-all-industries main section#case_study div.item div.img {
   height: 275px; }
