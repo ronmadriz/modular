@@ -41,18 +41,15 @@ $industries = array(
 );
 $industries_query = new WP_Query($industries);
 if ($industries_query) {
-	echo '<section id="child_grid">'.PHP_EOL;
+	echo '<section id="inline_solutions">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
-	echo '<div class="row industries img_grid">'.PHP_EOL;
+	echo '<div class="row">'.PHP_EOL;
 	while ($industries_query->have_posts()):$industries_query->the_post();
 	$summary = get_field('summary');
 	echo '<div class="item col-12 col-md-3">'.PHP_EOL;
 	the_post_thumbnail('full', array('class' => 'img-fluid'));
 	echo '<div class="title"><a href="'.get_permalink().'">'.get_the_title().'</a></div>'.PHP_EOL;
-	echo '<div class="caption text-center">'.PHP_EOL;
-	echo '<h2><a href="'.get_the_permalink().'">'.get_the_title().'</a></h2>'.PHP_EOL;
 	echo '<div class="desc"><p><a href="'.get_the_permalink().'">'.$summary.'</a></p></div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	endwhile;
 	echo '</div>'.PHP_EOL;
