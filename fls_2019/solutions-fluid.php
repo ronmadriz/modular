@@ -153,6 +153,7 @@ if (have_rows('image_callout')) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
+
 // ICONS
 
 $icons = get_field('icons');
