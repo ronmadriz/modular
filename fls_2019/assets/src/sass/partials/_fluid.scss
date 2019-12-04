@@ -240,6 +240,11 @@ html {
 						div {
 							&.item {
 								div {
+									&.img {
+										.img-fluid {
+											min-width:100%;
+										}
+									}
 									&.content {
 										padding-left:30px;
 										h3 {
