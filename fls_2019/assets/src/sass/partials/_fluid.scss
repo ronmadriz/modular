@@ -237,7 +237,12 @@ html {
 							&.item {
 								div {
 									&.img {
-										height: 275px;
+										img {
+											&.img-fluid {
+												max-height: 275px;
+												width:auto;
+											}
+										}
 									}
 									&.content {
 										padding-left:30px;
