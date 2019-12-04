@@ -1636,10 +1636,6 @@ html body.solutions-template-solutions-fluid main section#cf_contactForm, html b
       bottom: -1rem;
       max-height: 475px; } }
 
-html body.solutions-template-solutions-fluid main section#image_callout div.item div.img img.img-fluid, html body.industries-template-single-industries-fluid main section#image_callout div.item div.img img.img-fluid, html body.page-template-fall-protection-101 main section#image_callout div.item div.img img.img-fluid, html body.page-template-sample-fall-protection-plan main section#image_callout div.item div.img img.img-fluid, html body.industries-template-single-all-industries main section#image_callout div.item div.img img.img-fluid {
-  max-height: 275px;
-  width: auto; }
-
 html body.solutions-template-solutions-fluid main section#image_callout div.item div.content, html body.industries-template-single-industries-fluid main section#image_callout div.item div.content, html body.page-template-fall-protection-101 main section#image_callout div.item div.content, html body.page-template-sample-fall-protection-plan main section#image_callout div.item div.content, html body.industries-template-single-all-industries main section#image_callout div.item div.content {
   padding-left: 30px; }
   html body.solutions-template-solutions-fluid main section#image_callout div.item div.content h3, html body.industries-template-single-industries-fluid main section#image_callout div.item div.content h3, html body.page-template-fall-protection-101 main section#image_callout div.item div.content h3, html body.page-template-sample-fall-protection-plan main section#image_callout div.item div.content h3, html body.industries-template-single-all-industries main section#image_callout div.item div.content h3 {
