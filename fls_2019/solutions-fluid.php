@@ -263,7 +263,7 @@ if ($solutions_footercs['solutions']) {
 			setup_postdata($solution);
 			$solution_summary = get_field('summary', $solution->ID);
 			echo '<div class="item col-12 col-md-3">'.PHP_EOL;
-			echo '<a href="'.get_permalink().'">';
+			echo '<a href="'.get_permalink($solution->ID).'">';
 			echo get_the_post_thumbnail($solution->ID, 'full', array('class' => 'img-fluid')).PHP_EOL;
 			echo '</a>'.PHP_EOL;
 			echo '<div class="title"><a href="'.get_permalink($solution->ID).'">'.get_the_title($solution->ID).'</a></div>'.PHP_EOL;
