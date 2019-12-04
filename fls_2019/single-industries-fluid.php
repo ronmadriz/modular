@@ -130,6 +130,33 @@ if (have_rows('testimonials')) {
 // CTA
 echo '<section id="cta_blue"><div class="container-fluid"><div class="row"><div class="col-12"><h1 class="text-center"><a href="#cf_contactFormTitle">Speak with a fall protection specialist</a></div></div></div></section>'.PHP_EOL;
 
+// IMAGE CALLOUTS
+
+$image_callout = get_field('image_callout');
+if (have_rows('image_callout')) {
+	echo '<section id="image_callout">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
+	while (have_rows('image_callout')) {
+		the_row();
+		if (have_rows('callout')) {
+			while (have_rows('callout')) {
+				the_row();
+				echo '<div class="row justify-content-center item">'.PHP_EOL;
+				$callout_image   = get_sub_field('image');
+				$callout_title   = get_sub_field('title');
+				$callout_content = get_sub_field('content');
+				echo (!empty($callout_image)?'<div class="img col-12 col-md-4 align-self-center"><img src="'.$callout_image['url'].'" class="img-fluid"></div><div class="content text-center text-md-left col-12 col-md-8 align-self-center">'.PHP_EOL:'<div class="content text-center text-md-left col-12 align-self-center">');
+				echo (!empty($callout_title)?'<h3>'.$callout_title.'</h3>'.PHP_EOL:'');
+				echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
+				echo '</div>'.PHP_EOL;
+				echo '</div>'.PHP_EOL;
+			}
+		}
+	}
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+}
+
 // ICONS
 $icons = get_field('icon_row');
 if (have_rows('icon_row')) {

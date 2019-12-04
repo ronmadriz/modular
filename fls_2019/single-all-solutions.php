@@ -11,9 +11,9 @@ get_header();
 $banner_img = get_field('banner');
 // BANNER
 echo '<section id="banner">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
 echo ($banner_img != null?'<div class="row w-image justify-content-center align-content-center"><style type="text/css">section#banner{background-image:url('.$banner_img['url'].');}</style>':'<div class="row justify-content-center align-content-center">').PHP_EOL;
-echo '<div class="page_title col-12 col-md-10">'.PHP_EOL;
+echo '<div class="page_title col-12">'.PHP_EOL;
 $alternate_page_title = get_field('alternate_page_title');
 echo '<h1>'.get_the_title().'</h1>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
@@ -24,7 +24,7 @@ echo '</section>'.PHP_EOL;
 echo '<section id="main-content">'.PHP_EOL;
 // Fall Safety Solution CONTENT
 if (have_posts()):
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
 while (have_posts()):the_post();
 echo '<div class="row justify-content-center align-content-center mb-3">'.PHP_EOL;
 echo '<div class="col-12">';
@@ -38,104 +38,33 @@ endif;
 // All Top Level Fall Safety Solution
 echo '</section>'.PHP_EOL;
 
-$solutions = array(
-	'post_type'      => 'solutions',
-	'posts_per_page' => -1,
-	'orderby'        => 'menu_index',
-	'post__not_in'   => array(1116134),
-	'order'          => 'ASC',
-	'meta_query'     => array(
-		array(
-			'key'          => 'is_case_study',
-			'value'        => '0',
-			'meta_compare' => '!=',
-		),
-	),
-);
-$solutions_query = new WP_Query($solutions);
-if ($solutions_query) {
-	echo '<section id="child_grid">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
-	echo '<div id="solutions_filter" class="row">'.PHP_EOL;
-	// Solution Types
-	if ($sol_terms = get_terms(array(
-				'taxonomy' => 'solution_type', // to make it simple I use default categories
-				'orderby'  => 'name',
-			))):
-	// if categories exist, display the dropdown
-	echo '<div class="col-12 col-md-6 button-group" data-filter-group="solution_type">'.PHP_EOL;
-	echo '<div class="dropdown text-right">'.PHP_EOL;
-	echo '<button class="btn btn-blue dropdown-toggle" type="button" id="categoryFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</button>'.PHP_EOL;
-	echo '<div class="dropdown-menu" aria-labelledby="categoryFilter">'.PHP_EOL;
-	$count_sol = 0;
-	foreach ($sol_terms as $sol_term):
-	$sol_status = ($count_sol == 0?'active ':'');
-	$sol_all    = ($count_sol == 0?' id="all"':'');
-	echo '<a'.$sol_all.' class="'.$sol_status.'dropdown-item btn_filter" id="'.$sol_term->slug.'">'.$sol_term->name.'</a>'.PHP_EOL;// ID of the category as an option value
-	$count_sol++;
-	endforeach;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	endif;
-	// Industry
-	// $count_ind = 0;
-	if ($ind_terms = get_terms(array(
-				'taxonomy' => 'industry', // to make it simple I use default categories
-				'orderby'  => 'menu_index',
-			))):
-	// if categories exist, display the dropdown
-	echo '<div class="col-12 col-md-6 button-group" data-filter-group="industry">'.PHP_EOL;
-	echo '<div class="dropdown">'.PHP_EOL;
-	echo '<button class="btn btn-blue dropdown-toggle" type="button" id="industryFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</button>'.PHP_EOL;
-	echo '<div class="dropdown-menu" aria-labelledby="industryFilter">'.PHP_EOL;
-	$count_ind = 0;
-	foreach ($ind_terms as $ind_term):
-	$ind_status = ($count_ind == 0?'active ':'');
-	echo '<a class="'.$ind_status.'dropdown-item btn_filter" id="'.$ind_term->slug.'">'.$ind_term->name.'</a>'.PHP_EOL;// ID of the category as an option value
-	$count_ind++;
-	endforeach;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	endif;
+// IMAGE CALLOUTS
 
-	echo '</div>'.PHP_EOL;
-	echo '<div id="solutions_results" class="row industries img_grid">'.PHP_EOL;
-	while ($solutions_query->have_posts()):$solutions_query->the_post();
-	$summary   = get_field('summary');
-	$sol_terms = get_the_terms(
-		$post->ID, array('solution_type', 'industry')
-	);
-	echo '<div class="item col-12 col-md-4';
-	foreach ($sol_terms as $sol_term):
-	echo ' '.$sol_term->slug;
-	endforeach;
-	echo '">'.PHP_EOL;
-	the_post_thumbnail('full', array('class' => 'img-fluid'));
-	echo '<div class="title"><a href="'.get_the_permalink().'">'.get_the_title().'</a></div>'.PHP_EOL;
-	echo '<div class="caption text-center">'.PHP_EOL;
-	echo '<h2><a href="'.get_the_permalink().'">'.get_the_title().'</a></h2>'.PHP_EOL;
-	echo '<div class="desc"><p><a href="'.get_the_permalink().'">'.$summary.'</a></p></div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	endwhile;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-	wp_reset_postdata();
-}
-
-$base_content = get_field('base_content');
-if ($base_content) {
-	echo '<section id="base-content">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
-	echo '<div class="row justify-content-center align-content-center">'.PHP_EOL;
-	echo '<div class="col-12">'.$base_content.'</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
+$all_solutions = get_field('all_solutions');
+if (have_rows('all_solutions')) {
+	echo '<section id="all_solutions">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
+	while (have_rows('all_solutions')) {
+		the_row();
+		if (have_rows('solution')) {
+			while (have_rows('solution')) {
+				the_row();
+				echo '<div class="row justify-content-center item">'.PHP_EOL;
+				$callout_image   = get_sub_field('image');
+				$callout_title   = get_sub_field('title');
+				$callout_content = get_sub_field('content');
+				echo (!empty($callout_image)?'<div class="img col-12 col-md-4 align-self-center"><img src="'.$callout_image['url'].'" class="img-fluid"></div><div class="content text-center text-md-left col-12 col-md-8 align-self-center">'.PHP_EOL:'<div class="content text-center text-md-left col-12 align-self-center">');
+				echo (!empty($callout_title)?'<h3>'.$callout_title.'</h3>'.PHP_EOL:'');
+				echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
+				echo '</div>'.PHP_EOL;
+				echo '</div>'.PHP_EOL;
+			}
+		}
+	}
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
+
 // Testimonial
 $testimonials_args = array(
 	'post_type'      => 'testimonials',
@@ -146,7 +75,7 @@ $testimonials_args = array(
 $testimonials_query = new WP_Query($testimonials_args);
 if ($testimonials_query) {
 	echo '<section id="testimonials">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="col-12 testimonials">'.PHP_EOL;
 	while ($testimonials_query->have_posts()):$testimonials_query->the_post();
@@ -163,7 +92,7 @@ if ($testimonials_query) {
 $featured_clients = get_field('featured_clients');
 if ($featured_clients):
 echo '<section id="logos">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
 while (have_rows('featured_clients')):
 the_row();
 $feat_clients_title = get_sub_field('title');
