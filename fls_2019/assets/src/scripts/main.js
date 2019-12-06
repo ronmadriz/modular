@@ -36,7 +36,7 @@ j(document).ready(function(){
     var move = "250px";
     var sliderLimit = -1900;
     j("#thumb_right").click(function(){
-        var currentPosition = parseInt(view.css("left"));
+        var currentPosition = parseInt(view.css("right"));
         if (currentPosition >= sliderLimit) view.stop(false,true).animate({left:"-="+move},{ duration: 100})
     });
     j("#thumb_left").click(function(){
