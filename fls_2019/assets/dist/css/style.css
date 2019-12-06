@@ -1468,22 +1468,10 @@ html body main #flsCarousel {
       html body main #flsCarousel #carousel_controls a.carousel-control {
         color: white;
         opacity: .5;
-        height: 100%;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
+        height: 100%; }
         html body main #flsCarousel #carousel_controls a.carousel-control.left {
-          -webkit-box-pack: start;
-              -ms-flex-pack: start;
-                  justify-content: flex-start;
           text-align: left; }
         html body main #flsCarousel #carousel_controls a.carousel-control.right {
-          -webkit-box-pack: end;
-              -ms-flex-pack: end;
-                  justify-content: flex-end;
           text-align: right; }
         html body main #flsCarousel #carousel_controls a.carousel-control:hover {
           opacity: 1; } }
