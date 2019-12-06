@@ -128,6 +128,8 @@ if (have_rows('image_callout')) {
 	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('image_callout')) {
 		the_row();
+		$co_title = get_sub_field('callout_title');
+		echo (!empty($co_title)?'<div class="row"><div class="section_title col-12">'.$co_title.'</div></div>'.PHP_EOL:'');
 		if (have_rows('callout')) {
 			while (have_rows('callout')) {
 				the_row();
