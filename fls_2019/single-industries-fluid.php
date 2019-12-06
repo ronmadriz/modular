@@ -42,23 +42,23 @@ $industry_gallery = get_field('industry_gallery');
 if ($industry_gallery) {
 	while (have_rows('industry_gallery')):the_row();
 	$gallery_title = get_sub_field('title');
-	$gallery_img   = get_sub_field('gallery_img');
+	// $gallery_img   = get_sub_field('gallery_img');
 	echo '<section id="gallery">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row justify-content-center mb-md-3"><div class="content text-md-center col-12">'.PHP_EOL;
 	echo '<div id="flsCarousel" class="carousel slide">'.PHP_EOL;
 	$gallery_pics = get_sub_field('gallery_pics');
-	if ($gallery_pics):
-	echo '<div class="carousel-inner">'.PHP_EOL;
-	$gal_counter = 0;
-	foreach ($gallery_pics as $gallery_pic):
-	echo '<div class="carousel-item'.($gal_counter == 0?' active':'').'" data-slide-number="'.$gal_counter.'">'.PHP_EOL;
-	echo '<img src="'.$gallery_pic['sizes']['large'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid">'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	$gal_counter++;
-	endforeach;
-	$gall_count = 0;
-	endif;
+	if ($gallery_pics) {
+		echo '<div class="carousel-inner">'.PHP_EOL;
+		$gal_counter = 0;
+		foreach ($gallery_pics as $gallery_pic):
+		echo '<div class="carousel-item'.($gal_counter == 0?' active':'').'" data-slide-number="'.$gal_counter.'">'.PHP_EOL;
+		echo '<img src="'.$gallery_pic['sizes']['large'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid">'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		$gal_counter++;
+		endforeach;
+		$gall_count = 0;
+	}
 	echo '<div id="carousel_controls" class="col-12">'.PHP_EOL;
 	echo '<a class="carousel-control left pt-3" href="#flsCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>'.PHP_EOL;
 	echo '<a class="carousel-control right pt-3" href="#flsCarousel" data-slide="next"><i class="fa fa-chevron-right"></i></a>'.PHP_EOL;
