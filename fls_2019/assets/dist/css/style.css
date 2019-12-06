@@ -1474,7 +1474,8 @@ html body main #flsCarousel {
                 align-items: center;
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex; }
+        display: flex;
+        background: -moz-linear-gradient(left center, black, black) repeat scroll 0 0 transparent; }
         html body main #flsCarousel #carousel_controls a.carousel-control.left {
           -webkit-box-pack: start;
               -ms-flex-pack: start;
