@@ -61,10 +61,7 @@ if ($solutions_gallery['gallery_pics']) {
 		endforeach;
 		$gall_count = 0;
 	}
-	echo '<div id="carousel_controls" class="col-12">'.PHP_EOL;
-	echo '<a class="carousel-control left pt-3" href="#flsCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>'.PHP_EOL;
-	echo '<a class="carousel-control right pt-3" href="#flsCarousel" data-slide="next"><i class="fa fa-chevron-right"></i></a>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
+
 	echo '</div>'.PHP_EOL;
 	$gallery_photos = get_sub_field('gallery_pics');
 	if ($gallery_photos):
