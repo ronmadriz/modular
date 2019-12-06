@@ -63,13 +63,14 @@ if ($industry_gallery) {
 	echo '<a class="carousel-control left pt-3" href="#flsCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>'.PHP_EOL;
 	echo '<a class="carousel-control right pt-3" href="#flsCarousel" data-slide="next"><i class="fa fa-chevron-right"></i></a>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
 	$gallery_photos = get_sub_field('gallery_pics');
 	if ($gallery_photos):
 	echo '<div class="thumb_nav col-12 align-items-center justify-content-center d-none d-sm-flex">'.PHP_EOL;
 	echo '<span id="thumb_left" class="th_nav d-flex align-self-start align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></span>'.PHP_EOL;
 	echo '<div id="thumbs"><div id="thumb_list">'.PHP_EOL;
 	foreach ($gallery_photos as $gallery_photo):
-	echo '<span class="d-inline-block'.($gall_count == 0?' active':'').'"" data-slide-to="'.$gall_count.'" data-target="#flsCarousel">'.PHP_EOL;
+	echo '<span class="d-inline-block'.($gall_count == 0?' active':'').'"" data-slide-to="'.$gall_count.'">'.PHP_EOL;
 	echo '<a id="carousel-selector-'.$gall_count.'"'.($gall_count == 0?' class="selected"':'').'>'.PHP_EOL;
 	echo '<img src="'.$gallery_photo['url'].'" alt="'.$gallery_photo['alt'].'" class="img-fluid">'.PHP_EOL;
 	echo '</a>'.PHP_EOL;
