@@ -70,7 +70,7 @@ if ($industry_gallery) {
 	echo '<span id="thumb_left" class="th_nav d-flex align-self-start align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></span>'.PHP_EOL;
 	echo '<div id="thumbs"><div id="thumb_list">'.PHP_EOL;
 	foreach ($gallery_photos as $gallery_photo):
-	echo '<span class="d-inline-block'.($gall_count == 0?' active':'').'"" data-slide-to="'.$gall_count.'">'.PHP_EOL;
+	echo '<span class="d-inline-block'.($gall_count == 0?' active':'').'"" data-slide-to="'.$gall_count.'" data-target="#flsCarousel">'.PHP_EOL;
 	echo '<a id="carousel-selector-'.$gall_count.'"'.($gall_count == 0?' class="selected"':'').'>'.PHP_EOL;
 	echo '<img src="'.$gallery_photo['url'].'" alt="'.$gallery_photo['alt'].'" class="img-fluid">'.PHP_EOL;
 	echo '</a>'.PHP_EOL;
