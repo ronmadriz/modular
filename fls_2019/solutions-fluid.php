@@ -129,7 +129,7 @@ if (have_rows('image_callout')) {
 	while (have_rows('image_callout')) {
 		the_row();
 		$co_title = get_sub_field('callout_title');
-		echo (!empty($co_title)?'<div class="row"><div class="section_title col-12">'.$co_title.'</div></div>'.PHP_EOL:'');
+		echo (!empty($co_title)?'<div class="row"><div class="section_title col-12"><h1>'.$co_title.'</h1></div></div>'.PHP_EOL:'');
 		if (have_rows('callout')) {
 			while (have_rows('callout')) {
 				the_row();
