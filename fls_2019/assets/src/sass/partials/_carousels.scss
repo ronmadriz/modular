@@ -79,10 +79,10 @@ html {
 								display: inline-flex;
 								align-items: center;
 								&.left {
-									text-align: left;
+									justify-content: flex-start;
 								}
 								&.right {
-									text-align: right;
+									justify-content: flex-end;
 								}
 								&:hover {
 									opacity:1;
