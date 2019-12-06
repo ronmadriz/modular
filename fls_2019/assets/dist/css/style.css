@@ -1479,11 +1479,13 @@ html body main #flsCarousel {
         html body main #flsCarousel #carousel_controls a.carousel-control.left {
           -webkit-box-pack: start;
               -ms-flex-pack: start;
-                  justify-content: flex-start; }
+                  justify-content: flex-start;
+          float: left; }
         html body main #flsCarousel #carousel_controls a.carousel-control.right {
           -webkit-box-pack: end;
               -ms-flex-pack: end;
-                  justify-content: flex-end; }
+                  justify-content: flex-end;
+          float: right; }
         html body main #flsCarousel #carousel_controls a.carousel-control:hover {
           opacity: 1; } }
   html body main #flsCarousel .carousel-outer {

@@ -80,9 +80,11 @@ html {
 								align-items: center;
 								&.left {
 									justify-content: flex-start;
+									float: left;
 								}
 								&.right {
-									justify-content: flex-end;
+								    justify-content: flex-end;
+								    float: right;
 								}
 								&:hover {
 									opacity:1;
