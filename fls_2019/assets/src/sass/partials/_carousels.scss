@@ -66,12 +66,11 @@ html {
 			    @media (min-width:768px) {
 				    #carousel_controls {
 						position: absolute;
-						z-index: 10000;
+						z-index: 999;
 						height: 100%;
 						align-items: center;
 						top: 0;
 						font-size: 2rem;
-						padding-top: 25%;
 						a {
 							&.carousel-control {
 								color: $white;
