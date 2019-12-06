@@ -74,15 +74,14 @@ html {
 						padding-top: 25%;
 						a {
 							&.carousel-control {
+								color: $white;
 								&.left {
 									float: left;
 									text-align: left;
-									color: white;							
 								}
 								&.right {
 									float: right;
 									text-align: right;
-									color: white;							
 								}
 								opacity: .5;
 								&:hover {

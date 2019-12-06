@@ -1470,15 +1470,14 @@ html body main #flsCarousel {
       font-size: 2rem;
       padding-top: 25%; }
       html body main #flsCarousel #carousel_controls a.carousel-control {
+        color: white;
         opacity: .5; }
         html body main #flsCarousel #carousel_controls a.carousel-control.left {
           float: left;
-          text-align: left;
-          color: white; }
+          text-align: left; }
         html body main #flsCarousel #carousel_controls a.carousel-control.right {
           float: right;
-          text-align: right;
-          color: white; }
+          text-align: right; }
         html body main #flsCarousel #carousel_controls a.carousel-control:hover {
           opacity: 1; } }
   html body main #flsCarousel .carousel-outer {
