@@ -68,12 +68,13 @@ html {
 						position: absolute;
 						z-index: 999;
 						height: 100%;
-						align-items: center;
 						top: 0;
 						font-size: 2rem;
 						a {
 							&.carousel-control {
 								color: $white;
+								opacity: .5;
+							    height: 100%;
 								&.left {
 									float: left;
 									text-align: left;
@@ -82,7 +83,6 @@ html {
 									float: right;
 									text-align: right;
 								}
-								opacity: .5;
 								&:hover {
 									opacity:1;
 								}
