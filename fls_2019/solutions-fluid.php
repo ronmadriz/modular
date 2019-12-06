@@ -173,11 +173,20 @@ if (have_rows('icons')) {
 				if (have_rows('icon')) {
 					while (have_rows('icon')) {
 						the_row();
-						echo '<div class="row">'.PHP_EOL;
-						$icon_image   = get_sub_field('image');
-						$icon_content = get_sub_field('content');
-						echo (!empty($icon_image)?'<div class="fl_thumb col-12 col-md-2 col-lg-1 text-md-center"><img src="'.$icon_image['url'].'" alt="" class="img-fluid"></div>'.PHP_EOL:'');
-						echo (!empty($icon_content)?'<div class="fl_content col-12 col-md-10 col-lg-11 align-self-center">'.$icon_content.'</div>'.PHP_EOL:'');
+						$fl_image     = get_sub_field('image');
+						$fl_content   = get_sub_field('content');
+						$fl_title     = get_sub_field('icon_title');
+						$fl_icon_link = get_sub_field('link_to_page');
+						$fl_link      = get_sub_field('link');
+						echo '<div class="row h-100 justify-content-center align-items-md-center">'.PHP_EOL;
+						echo '<div class="fl_thumb col-3 col-md-2 col-lg-1 text-md-center">'.($fl_icon_link?'<a href="'.$fl_link['url'].'"><img src="'.$fl_image['url'].'" class="img-fluid" alt=""></a>':'<img src="'.$fl_image['url'].'" class="img-fluid" alt="">').'</div>'.PHP_EOL;
+						echo '<div class="fl_content col-9 col-md-10 col-lg-11">'.PHP_EOL;
+						if ($fl_title && $fl_icon_link) {
+							echo '<h2><a href="'.$fl_link['url'].'">'.$fl_title.'</a></h2>'.PHP_EOL;
+						} elseif ($fl_title) {
+							echo '<h2>'.$fl_title.'</h2>'.PHP_EOL;
+						}
+						echo $fl_content.'</div>'.PHP_EOL;
 						echo '</div>'.PHP_EOL;
 					}
 				}
