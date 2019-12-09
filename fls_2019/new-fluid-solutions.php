@@ -168,7 +168,7 @@ if (have_rows('fluid_icons')) {
 		if (have_rows('icon_group')) {
 			while (have_rows('icon_group')) {
 				the_row();
-				$icon_title = get_sub_field('title');
+				$icon_title = get_sub_field('fluid_title');
 				echo (!empty($icon_title)?'<div class="row"><div class="section_title col-12"><h1>'.$icon_title.'</h1></div></div>'.PHP_EOL:'');
 				if (have_rows('icon')) {
 					while (have_rows('icon')) {
