@@ -169,11 +169,13 @@ if (have_rows('image_callout')) {
 }
 
 // ICONS
-$icons = get_field('icon_row');
+$icon_section_title = get_field('icon_section_title');
+$icons              = get_field('icon_row');
 if (have_rows('icon_row')) {
 	if (have_rows('icon_row')) {
 		echo '<section id="icons">'.PHP_EOL;
 		echo '<div class="container-fluid">'.PHP_EOL;
+		echo (!empty($icon_section_title)?'<div class="row"><div class="section_title col-12"><h1>'.$icon_section_title.'</h1></div></div>'.PHP_EOL:'');
 		while (have_rows('icon_row')) {
 			the_row();
 			$fl_image     = get_sub_field('icon_image');
