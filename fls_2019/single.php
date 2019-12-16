@@ -24,7 +24,7 @@ echo '<section id="main-content">'.PHP_EOL;
 echo '<div class="container">'.PHP_EOL;
 if (have_posts()):while (have_posts()):the_post();
 echo '<div class="row">'.PHP_EOL;
-echo '<div class="col-12"><h1>'.get_the_title().'</h2></div>'.PHP_EOL;
+echo '<div class="section_title col-12"><h2>'.get_the_title().'</h2></div>'.PHP_EOL;
 echo '<div class="col-12">';
 the_content();
 echo '</div>'.PHP_EOL;
@@ -45,7 +45,7 @@ if (have_rows('post_gallery')) {
 	echo '<div class="container">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="section_title col-12">'.PHP_EOL;
-	echo '<h1>'.$gallery_title.'</h1>'.PHP_EOL;
+	echo '<h2>'.$gallery_title.'</h2>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;

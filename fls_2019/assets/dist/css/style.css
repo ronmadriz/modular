@@ -158,6 +158,20 @@ html body div#pagewrapper {
     padding-left: 0;
     padding-right: 0; }
 
+html body div.section_title, html body span.section_title {
+  border-bottom-width: 2px;
+  border-bottom-color: #404040;
+  padding-left: 0; }
+  html body div.section_title h2, html body span.section_title h2 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #404040;
+    text-transform: uppercase;
+    letter-spacing: .01em;
+    line-height: 1.2em;
+    margin-bottom: 1rem; }
+
 html body .btn {
   border-radius: 0; }
   html body .btn.btn-blue {
@@ -1531,11 +1545,6 @@ html body.solutions-template-solutions-fluid main section:not(#banner), html bod
     html body.solutions-template-solutions-fluid main section:not(#banner) .fp_icon, html body.solutions-template-solutions-fluid main section#banner div.page_title .fp_icon, html body.industries-template-single-industries-fluid main section:not(#banner) .fp_icon, html body.industries-template-single-industries-fluid main section#banner div.page_title .fp_icon, html body.page-template-fall-protection-101 main section:not(#banner) .fp_icon, html body.page-template-fall-protection-101 main section#banner div.page_title .fp_icon, html body.page-template-sample-fall-protection-plan main section:not(#banner) .fp_icon, html body.page-template-sample-fall-protection-plan main section#banner div.page_title .fp_icon, html body.industries-template-single-all-industries main section:not(#banner) .fp_icon, html body.industries-template-single-all-industries main section#banner div.page_title .fp_icon, html body.solutions-template-single-all-solutions main section:not(#banner) .fp_icon, html body.solutions-template-single-all-solutions main section#banner div.page_title .fp_icon {
       padding-left: 1.5rem;
       padding-right: 1.5rem; } }
-
-html body.solutions-template-solutions-fluid main section div.section_title, html body.solutions-template-solutions-fluid main section span.section_title, html body.industries-template-single-industries-fluid main section div.section_title, html body.industries-template-single-industries-fluid main section span.section_title, html body.page-template-fall-protection-101 main section div.section_title, html body.page-template-fall-protection-101 main section span.section_title, html body.page-template-sample-fall-protection-plan main section div.section_title, html body.page-template-sample-fall-protection-plan main section span.section_title, html body.industries-template-single-all-industries main section div.section_title, html body.industries-template-single-all-industries main section span.section_title, html body.solutions-template-single-all-solutions main section div.section_title, html body.solutions-template-single-all-solutions main section span.section_title {
-  border-bottom-width: 2px;
-  border-bottom-color: #404040;
-  padding-left: 0; }
 
 html body.solutions-template-solutions-fluid main section#main-content, html body.industries-template-single-industries-fluid main section#main-content, html body.page-template-fall-protection-101 main section#main-content, html body.page-template-sample-fall-protection-plan main section#main-content, html body.industries-template-single-all-industries main section#main-content, html body.solutions-template-single-all-solutions main section#main-content {
   padding-top: .5rem; }

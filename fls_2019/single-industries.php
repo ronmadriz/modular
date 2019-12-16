@@ -42,7 +42,7 @@ if ($solutions_group) {
 	$section_title = get_sub_field('section_title');
 	echo '<section id="child_solutions" class="imgs_captions">'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
-	echo (!empty($section_title)?'<div class="row"><div class="section_title col-12"><h1>'.$section_title.'</h1></div></div>'.PHP_EOL:'');
+	echo (!empty($section_title)?'<div class="row"><div class="section_title col-12"><h2>'.$section_title.'</h2></div></div>'.PHP_EOL:'');
 	$solutions_repeater = get_sub_field('solutions');
 	if ($solutions_repeater) {
 		while (have_rows('solutions')) {
@@ -86,7 +86,7 @@ if ($industry_testimonials) {
 	echo '<div class="container">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="section_title col-12">'.PHP_EOL;
-	echo '<h1>customer testimonial</h1>'.PHP_EOL;
+	echo '<h2>customer testimonial</h2>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
@@ -110,7 +110,7 @@ if (have_rows('case_study_groups')) {
 	while (have_rows('case_study_groups')):the_row();
 	$study_section_title = get_sub_field('study_section_title');
 	$studies             = get_sub_field('studies');
-	echo (!empty($study_section_title)?'<div class="row"><div class="section_title col-12"><h1>'.$study_section_title.'</h1></div></div>'.PHP_EOL:'');
+	echo (!empty($study_section_title)?'<div class="row"><div class="section_title col-12"><h2>'.$study_section_title.'</h2></div></div>'.PHP_EOL:'');
 	if ($studies) {
 		while (have_rows('studies')) {
 			the_row();
@@ -152,7 +152,7 @@ $v_title = get_sub_field('title');
 $v_embed = get_sub_field('v_embed');
 $v_desc  = get_sub_field('description');
 echo '<div class="row">'.PHP_EOL;
-echo '<div class="section_title col-12"><h1>'.$v_title.'</h1></div>'.PHP_EOL;
+echo '<div class="section_title col-12"><h2>'.$v_title.'</h2></div>'.PHP_EOL;
 echo '<div class="video col-12">'.$v_embed.'</div>'.PHP_EOL;
 echo '<div class="content col-12">'.PHP_EOL;
 echo $v_desc.PHP_EOL;
@@ -176,7 +176,7 @@ if ($industry_gallery) {
 	echo '<div class="container">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="section_title col-12">'.PHP_EOL;
-	echo '<h1>'.$gallery_title.'</h1>'.PHP_EOL;
+	echo '<h2>'.$gallery_title.'</h2>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
@@ -236,7 +236,7 @@ if (have_rows('download_literature')) {
 	echo '<div class="container">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="section_title col-12 col-md-10">'.PHP_EOL;
-	echo '<h1>download literature</h1>'.PHP_EOL;
+	echo '<h2>download literature</h2>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
@@ -295,7 +295,7 @@ if ($solutions_footercs) {
 	echo '<section id="child_grid">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="title gray_bg col-12 text-center"><span>'.$solution_footers_title.'</span></div>'.PHP_EOL;
+	echo '<div class="section_title gray_bg col-12 text-center"><h2>'.$solution_footers_title.'</h2></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
