@@ -195,7 +195,7 @@ if ($solutions_footercs) {
 	echo '<section id="child_grid">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="title gray_bg col-12 text-center"><h2>'.$solution_footers_title.'</h2></div>'.PHP_EOL;
+	echo '<div class="title gray_bg col-12 text-center">'.$solution_footers_title.'</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
