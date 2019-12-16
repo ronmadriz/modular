@@ -361,6 +361,19 @@ html {
 							}
 						}
 					}
+					&#cf_contactFormTitle {
+						div {
+							&.section_title {
+								border-bottom-width: 0;
+								border-bottom-color: transparent;
+								h2 {
+									a {
+										color: $white;
+									}
+								}
+							}
+						}
+					}
 					.img_grid {
 						.item {
 						    position: relative;
