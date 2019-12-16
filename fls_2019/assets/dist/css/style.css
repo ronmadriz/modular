@@ -311,6 +311,26 @@ html body main {
       margin-top: .75rem; }
       html body main section#main-content div#brochures div.item {
         margin-bottom: .75rem; }
+  html body main section#cta_blue {
+    background-color: #156cb3;
+    padding-top: 1.5rem;
+    padding-bottom: .75rem; }
+    @media (max-width: 786px) {
+      html body main section#cta_blue {
+        margin-top: 1rem; } }
+    html body main section#cta_blue a {
+      display: block;
+      color: white; }
+    html body main section#cta_blue h2 {
+      text-transform: uppercase;
+      font-size: 1.75rem;
+      font-weight: 400;
+      font-style: normal;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: .01em;
+      line-height: 1.2em;
+      margin-bottom: 1rem; }
   html body main section #solutions_filter {
     margin-bottom: 2rem; }
   @media (min-width: 786px) {
@@ -1616,17 +1636,6 @@ html body.solutions-template-solutions-fluid main section#literature, html body.
         max-width: 24%; } }
     html body.solutions-template-solutions-fluid main section#literature ul.literature_list li img.img-fluid, html body.industries-template-single-industries-fluid main section#literature ul.literature_list li img.img-fluid, html body.page-template-fall-protection-101 main section#literature ul.literature_list li img.img-fluid, html body.page-template-sample-fall-protection-plan main section#literature ul.literature_list li img.img-fluid, html body.industries-template-single-all-industries main section#literature ul.literature_list li img.img-fluid, html body.solutions-template-single-all-solutions main section#literature ul.literature_list li img.img-fluid {
       min-width: 100%; }
-
-html body.solutions-template-solutions-fluid main section#cta_blue, html body.industries-template-single-industries-fluid main section#cta_blue, html body.page-template-fall-protection-101 main section#cta_blue, html body.page-template-sample-fall-protection-plan main section#cta_blue, html body.industries-template-single-all-industries main section#cta_blue, html body.solutions-template-single-all-solutions main section#cta_blue {
-  background-color: #156cb3;
-  padding-top: 1.5rem;
-  padding-bottom: .75rem; }
-  @media (max-width: 786px) {
-    html body.solutions-template-solutions-fluid main section#cta_blue, html body.industries-template-single-industries-fluid main section#cta_blue, html body.page-template-fall-protection-101 main section#cta_blue, html body.page-template-sample-fall-protection-plan main section#cta_blue, html body.industries-template-single-all-industries main section#cta_blue, html body.solutions-template-single-all-solutions main section#cta_blue {
-      margin-top: 1rem; } }
-  html body.solutions-template-solutions-fluid main section#cta_blue a, html body.industries-template-single-industries-fluid main section#cta_blue a, html body.page-template-fall-protection-101 main section#cta_blue a, html body.page-template-sample-fall-protection-plan main section#cta_blue a, html body.industries-template-single-all-industries main section#cta_blue a, html body.solutions-template-single-all-solutions main section#cta_blue a {
-    display: block;
-    color: white; }
 
 html body.solutions-template-solutions-fluid main section#cf_contactFormTitle, html body.industries-template-single-industries-fluid main section#cf_contactFormTitle, html body.page-template-fall-protection-101 main section#cf_contactFormTitle, html body.page-template-sample-fall-protection-plan main section#cf_contactFormTitle, html body.industries-template-single-all-industries main section#cf_contactFormTitle, html body.solutions-template-single-all-solutions main section#cf_contactFormTitle {
   background-color: #156cb3;
