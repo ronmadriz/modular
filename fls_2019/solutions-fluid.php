@@ -125,11 +125,11 @@ echo (!empty(get_the_content())?'<section id="cta_blue"><div class="container-fl
 
 $image_callout = get_field('image_callout');
 if (have_rows('image_callout')) {
+	echo '<section id="image_callout">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('image_callout')) {
 		the_row();
 		$co_title = get_sub_field('callout_title');
-		echo '<section id="image_callout">'.PHP_EOL;
-		echo '<div class="container-fluid">'.PHP_EOL;
 		echo (!empty($co_title)?'<div class="row"><div class="section_title col-12"><h1>'.$co_title.'</h1></div></div>'.PHP_EOL:'');
 		if (have_rows('callout')) {
 			while (have_rows('callout')) {
@@ -153,9 +153,9 @@ if (have_rows('image_callout')) {
 				echo '</div>'.PHP_EOL;
 			}
 		}
-		echo '</div>'.PHP_EOL;
-		echo '</section>'.PHP_EOL;
 	}
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
 }
 
 // ICONS
@@ -170,7 +170,7 @@ if (have_rows('icons')) {
 			while (have_rows('icon_group')) {
 				the_row();
 				$icon_title = get_sub_field('title');
-				echo (!empty($icon_title)?'<div class="row"><div class="section_title col-12"><h1>'.$icon_title.'</h1></div></div>'.PHP_EOL:'');
+				echo (!empty($icon_title)?'<div class="row"><div class="section_title col-12"><h2>'.$icon_title.'</h2></div></div>'.PHP_EOL:'');
 				if (have_rows('icon')) {
 					while (have_rows('icon')) {
 						the_row();
@@ -207,7 +207,7 @@ if (have_rows('measurement_tables')) {
 		$m_image  = get_sub_field('image');
 		$m_tables = get_sub_field('tables');
 		echo '<div class="container-fluid">'.PHP_EOL;
-		echo (!empty($m_title)?'<div class="row"><div class="section_title col-12"><h1>'.$m_title.'</h1></div></div>':'').PHP_EOL;
+		echo (!empty($m_title)?'<div class="row"><div class="section_title col-12"><h2>'.$m_title.'</h2></div></div>':'').PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
 		echo ($m_image != null?'<div class="col-12 col-md-4"><img src="'.$m_image['url'].'" alt="'.$m_image['alt'].'" class="img-fluid"></div>':'');
 		echo '<div class="col-12 col-md-8">'.PHP_EOL;
@@ -258,9 +258,7 @@ if (have_rows('download_literature')) {
 	echo '<section id="literature">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="section_title col-12">'.PHP_EOL;
-	echo '<h1>download literature</h1>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
+	echo '<div class="section_title col-12"><h2>download literature</h2></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="content col-12">'.PHP_EOL;
@@ -298,7 +296,7 @@ if ($solutions_footercs['solutions']) {
 	echo '<section id="inline_solutions">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	echo (!empty($solution_footers_title)?'<div class="section_title col-12"><h1>'.$solution_footers_title.'</h1></div>'.PHP_EOL:'');
+	echo (!empty($solution_footers_title)?'<div class="section_title col-12"><h2>'.$solution_footers_title.'</h2></div>'.PHP_EOL:'');
 	echo '</div>'.PHP_EOL;
 	$solutions_repeater = get_sub_field('solutions');
 	if ($solutions_repeater) {
