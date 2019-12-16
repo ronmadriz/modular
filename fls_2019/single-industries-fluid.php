@@ -188,7 +188,7 @@ if (have_rows('icon_row')) {
 			echo '<div class="fl_thumb col-3 col-md-2 col-lg-1 text-md-center">'.($fl_icon_link?'<a href="'.$fl_link['url'].'"><img src="'.$fl_image['url'].'" class="img-fluid" alt=""></a>':'<img src="'.$fl_image['url'].'" class="img-fluid" alt="">').'</div>'.PHP_EOL;
 			echo '<div class="fl_content col-9 col-md-10 col-lg-11">'.PHP_EOL;
 			if ($fl_title && $fl_icon_link) {
-				echo '<h2><a href="'.$fl_link['url'].'">'.$fl_title.'</a></h2>'.PHP_EOL;
+				echo '<h3><a href="'.$fl_link['url'].'">'.$fl_title.'</a></h3>'.PHP_EOL;
 			} elseif ($fl_title) {
 				echo '<h2>'.$fl_title.'</h2>'.PHP_EOL;
 			}
@@ -221,11 +221,11 @@ if (have_rows('download_literature')) {
 		echo ($lit_file != null?'<a href="'.$lit_file['url'].'" class="d-block">':'');
 		echo ($lit_img != null?'<img src="'.$lit_img['url'].'" alt="'.$lit_img['alt'].'" class="img-fluid">':'');
 		echo ($lit_file != null?'</a>'.PHP_EOL:'');
-		echo '<h4 class="text-uppercase">';
+		echo '<h3 class="text-uppercase">';
 		echo ($lit_file != null?'<a href="'.$lit_file['url'].'">':'');
 		echo $lit_title;
 		echo ($lit_file != null?'</a>':'');
-		echo '</h4>'.PHP_EOL;
+		echo '</h3>'.PHP_EOL;
 		echo '</li>'.PHP_EOL;
 	}
 	echo '</ul>'.PHP_EOL;
@@ -294,14 +294,14 @@ if (have_rows('case_study_groups')) {
 			setup_postdata($study);
 			$study_title   = get_field('case_study_title', $study->ID);
 			$study_summary = get_field('summary', $study->ID);
-			echo '<div class="item justify-content-center row">'.PHP_EOL;
+			echo '<div class="item row">'.PHP_EOL;
 			echo '<div class="img col-12 col-md-4 align-self-center">'.PHP_EOL;
 			echo '<a href="'.get_permalink($study->ID).'">';
 			echo get_the_post_thumbnail($study->ID, 'medium', array('class' => 'img-fluid')).PHP_EOL;
 			echo '</a>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 			echo '<div class="content text-center text-md-left col-12 col-md-8 align-self-center">'.PHP_EOL;
-			echo (!empty($case_study_title)?'<h4>'.$case_study_title.'</h4>'.PHP_EOL:'<h4>'.get_the_title($study->ID).'</h4>'.PHP_EOL);
+			echo (!empty($case_study_title)?'<h3>'.$case_study_title.'</h3>'.PHP_EOL:'<h3>'.get_the_title($study->ID).'</h3>'.PHP_EOL);
 			echo '<p>'.$study_summary.'</p>'.PHP_EOL;
 			echo '<div class="buttons"><a href="'.get_permalink($study->ID).'" class="btn btn-dark">View Case Study</a></div>';
 			echo '</div>'.PHP_EOL;
@@ -326,7 +326,7 @@ if (have_rows('case_study_groups')) {
 			echo '</a>'.PHP_EOL;
 			echo '</span>'.PHP_EOL;
 			echo '<span class="d-block content text-center text-md-left align-self-center">'.PHP_EOL;
-			echo (!empty($case_study_title)?'<h4>'.$case_study_title.'</h4>'.PHP_EOL:'<h4>'.get_the_title($study->ID).'</h4>'.PHP_EOL);
+			echo (!empty($case_study_title)?'<h3>'.$case_study_title.'</h3>'.PHP_EOL:'<h3>'.get_the_title($study->ID).'</h3>'.PHP_EOL);
 			echo '<p>'.$study_summary.'</p>'.PHP_EOL;
 			echo '<span class="d-block buttons"><a href="'.get_permalink($study->ID).'" class="btn btn-dark">View Case Study</a></span>';
 			echo '</span>'.PHP_EOL;
@@ -404,7 +404,7 @@ if (have_rows('industry_faq')) {
 	while (have_rows('industry_faq')):the_row();
 	$faq_question = get_sub_field('question');
 	$faq_answer   = get_sub_field('answer');
-	echo '<dt><h4>'.$faq_question.'</h4></dt>'.PHP_EOL;
+	echo '<dt><h3>'.$faq_question.'</h3></dt>'.PHP_EOL;
 	echo '<dd>'.$faq_answer.'</dd>'.PHP_EOL;
 	endwhile;
 	echo '</dl>'.PHP_EOL;
