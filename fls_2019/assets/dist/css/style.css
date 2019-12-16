@@ -1770,7 +1770,8 @@ html body.solutions-template-solutions-fluid main section#testimonial, html body
 
 html body.solutions-template-solutions-fluid main section#cf_contactFormTitle div.section_title, html body.industries-template-single-industries-fluid main section#cf_contactFormTitle div.section_title, html body.page-template-fall-protection-101 main section#cf_contactFormTitle div.section_title, html body.page-template-sample-fall-protection-plan main section#cf_contactFormTitle div.section_title, html body.industries-template-single-all-industries main section#cf_contactFormTitle div.section_title, html body.solutions-template-single-all-solutions main section#cf_contactFormTitle div.section_title {
   border-bottom-width: 0;
-  border-bottom-color: transparent; }
+  border-bottom-color: transparent;
+  margin: 0; }
   html body.solutions-template-solutions-fluid main section#cf_contactFormTitle div.section_title h2, html body.industries-template-single-industries-fluid main section#cf_contactFormTitle div.section_title h2, html body.page-template-fall-protection-101 main section#cf_contactFormTitle div.section_title h2, html body.page-template-sample-fall-protection-plan main section#cf_contactFormTitle div.section_title h2, html body.industries-template-single-all-industries main section#cf_contactFormTitle div.section_title h2, html body.solutions-template-single-all-solutions main section#cf_contactFormTitle div.section_title h2 {
     color: white; }
 
