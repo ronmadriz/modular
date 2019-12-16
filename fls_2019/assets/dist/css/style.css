@@ -163,6 +163,7 @@ html body div.section_title, html body span.section_title {
   border-bottom-color: #404040;
   padding-left: 0; }
   html body div.section_title h2, html body span.section_title h2 {
+    font-family: "Oswald", helvetica, sans-serif;
     font-size: 1.75rem;
     font-weight: 400;
     font-style: normal;
