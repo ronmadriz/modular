@@ -294,7 +294,7 @@ if (have_rows('case_study_groups')) {
 			setup_postdata($study);
 			$study_title   = get_field('case_study_title', $study->ID);
 			$study_summary = get_field('summary', $study->ID);
-			echo '<div class="item row">'.PHP_EOL;
+			echo '<div class="item justify-content-center row">'.PHP_EOL;
 			echo '<div class="img col-12 col-md-4 align-self-center">'.PHP_EOL;
 			echo '<a href="'.get_permalink($study->ID).'">';
 			echo get_the_post_thumbnail($study->ID, 'medium', array('class' => 'img-fluid')).PHP_EOL;
