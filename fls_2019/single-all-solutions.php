@@ -106,7 +106,7 @@ the_row();
 $feat_clients_title = get_sub_field('title');
 $feat_clients_logos = get_sub_field('logos');
 echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
-echo '<div class="col-12 text-center"><h1>'.$feat_clients_title.'</h1></div>'.PHP_EOL;
+echo '<div class="col-12 text-center"><h2>'.$feat_clients_title.'</h2></div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 if ($feat_clients_logos):
 echo '<div class="row mb-3 mt-3 align-content-center justify-content-center">'.PHP_EOL;
