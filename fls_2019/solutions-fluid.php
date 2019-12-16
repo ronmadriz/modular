@@ -125,11 +125,11 @@ echo (!empty(get_the_content())?'<section id="cta_blue"><div class="container-fl
 
 $image_callout = get_field('image_callout');
 if (have_rows('image_callout')) {
-	echo '<section id="image_callout">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('image_callout')) {
 		the_row();
 		$co_title = get_sub_field('callout_title');
+		echo '<section id="image_callout">'.PHP_EOL;
+		echo '<div class="container-fluid">'.PHP_EOL;
 		echo (!empty($co_title)?'<div class="row"><div class="section_title col-12"><h1>'.$co_title.'</h1></div></div>'.PHP_EOL:'');
 		if (have_rows('callout')) {
 			while (have_rows('callout')) {
@@ -153,9 +153,9 @@ if (have_rows('image_callout')) {
 				echo '</div>'.PHP_EOL;
 			}
 		}
+		echo '</div>'.PHP_EOL;
+		echo '</section>'.PHP_EOL;
 	}
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
 }
 
 // ICONS
