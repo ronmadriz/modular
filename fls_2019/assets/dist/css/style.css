@@ -1698,7 +1698,8 @@ html body.solutions-template-solutions-fluid main section#inline_solutions div.t
         font-family: "Oswald", helvetica, sans-serif;
         line-height: 2.25rem; } }
     html body.solutions-template-solutions-fluid main section#inline_solutions div.title h2 a, html body.industries-template-single-industries-fluid main section#inline_solutions div.title h2 a, html body.page-template-fall-protection-101 main section#inline_solutions div.title h2 a, html body.page-template-sample-fall-protection-plan main section#inline_solutions div.title h2 a, html body.industries-template-single-all-industries main section#inline_solutions div.title h2 a, html body.solutions-template-single-all-solutions main section#inline_solutions div.title h2 a {
-      color: #156cb3; }
+      color: #156cb3;
+      display: block; }
 
 html body.solutions-template-solutions-fluid main section#inline_solutions div.desc, html body.industries-template-single-industries-fluid main section#inline_solutions div.desc, html body.page-template-fall-protection-101 main section#inline_solutions div.desc, html body.page-template-sample-fall-protection-plan main section#inline_solutions div.desc, html body.industries-template-single-all-industries main section#inline_solutions div.desc, html body.solutions-template-single-all-solutions main section#inline_solutions div.desc {
   margin-bottom: 2rem; }
