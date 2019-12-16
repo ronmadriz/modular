@@ -310,7 +310,7 @@ if ($solutions_footercs['solutions']) {
 			echo '<a href="'.get_permalink($solution->ID).'">';
 			echo get_the_post_thumbnail($solution->ID, 'full', array('class' => 'img-fluid')).PHP_EOL;
 			echo '</a>'.PHP_EOL;
-			echo '<div class="title"><a href="'.get_permalink($solution->ID).'">'.get_the_title($solution->ID).'</a></div>'.PHP_EOL;
+			echo '<div class="title"><h2><a href="'.get_permalink($solution->ID).'">'.get_the_title($solution->ID).'</a></h2></div>'.PHP_EOL;
 			echo '<div class="desc"><p><a href="'.get_the_permalink($solution->ID).'">'.$solution_summary.'</a></p></div>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 			endif;

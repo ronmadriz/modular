@@ -258,10 +258,8 @@ html {
 							&.title {
 								margin-top:.75rem;
 								margin-bottom:.75rem;
-								a {
-									display:block;
+								h2 {
 									text-align:center;
-									color:$accent_1;
 									line-height:2.25rem;
 									font-weight:700;
 									font-size:1.3rem;
@@ -272,6 +270,9 @@ html {
 									    margin-top: 1.25rem;
 									    font-family: $tertiary;
 										line-height:2.25rem;								    
+									}
+									a {
+										color:$accent_1;
 									}
 								}
 							}
