@@ -7,7 +7,8 @@ $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
 include 'header-fluid.php';
 
-$banner_img = get_field('banner');
+$banner_img           = get_field('banner');
+$alternate_page_title = get_field('alternate_page_title');
 // BANNER
 echo '<section id="banner">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
