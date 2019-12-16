@@ -322,6 +322,7 @@ html body main {
       display: block;
       color: white; }
     html body main section#cta_blue h2 {
+      font-family: "Oswald", helvetica, sans-serif;
       text-transform: uppercase;
       font-size: 1.75rem;
       font-weight: 400;
