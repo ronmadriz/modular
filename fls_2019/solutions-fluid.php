@@ -360,7 +360,7 @@ if (have_rows('case_study_groups')) {
 		}
 		wp_reset_postdata();
 	} elseif ($studies && $studies_count > 3) {
-		echo '<div class="justify-content-center row">'.PHP_EOL;
+		echo '<div class="row">'.PHP_EOL;
 		while (have_rows('studies')) {
 			the_row();
 			$study_item = get_sub_field('case_study');
