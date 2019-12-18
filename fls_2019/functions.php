@@ -23,7 +23,7 @@ function enqueue_my_styles() {
 	wp_enqueue_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 	wp_enqueue_style('lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css');
 	wp_enqueue_style('site-style', get_template_directory_uri().'/assets/dist/css/style.min.css');
-    wp_enqueue_style('my-style', get_template_directory_uri().'/style.css');
+	wp_enqueue_style('my-style', get_template_directory_uri().'/style.css');
 }
 add_action('wp_enqueue_scripts', 'enqueue_my_styles');
 define('THEME_DIRECTORY', get_stylesheet_directory());
@@ -640,4 +640,10 @@ add_filter('site-reviews/review/build/after', function ($renderedFields, $review
 	}, 10, 2);
 //show custom fields meta box
 add_filter('acf/settings/remove_wp_meta_box', '__return_false');
+/** "New user" email to john@snow.com instead of admin. */
+add_filter('wp_new_user_notification_email_admin', 'fls_new_admin_email', 10, 3);
+function fls_new_admin_email($notification, $user, $blogname) {
+	$notification['to'] = 'me@ronmadriz.com';
+	return $notification;
+}
 ?>
