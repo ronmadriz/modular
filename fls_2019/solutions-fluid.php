@@ -251,12 +251,13 @@ if (have_rows('measurement_tables')) {
 	echo '</section>'.PHP_EOL;
 }
 // LITERATURE
+$download_literature_title = get_field('download_literature_title');
 
 if (have_rows('download_literature')) {
 	echo '<section id="literature">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="section_title col-12"><h2>download literature</h2></div>'.PHP_EOL;
+	echo '<div class="section_title col-12"><h2>'.$download_literature_title.'</h2></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="content col-12">'.PHP_EOL;
