@@ -643,7 +643,7 @@ add_filter('acf/settings/remove_wp_meta_box', '__return_false');
 /** "New user" email to john@snow.com instead of admin. */
 add_filter('wp_new_user_notification_email_admin', 'fls_new_admin_email', 10, 3);
 function fls_new_admin_email($notification, $user, $blogname) {
-	$notification['to'] = 'me@ronmadriz.com';
+	$notification['to'] = 'firstcreativehouston@gmail.com';
 	return $notification;
 }
 ?>

@@ -49,21 +49,21 @@ function ronmadriz_settings_init() {
 function ronmadriz_header_extra_render() {
 	$options = get_option('ronmadriz_settings');
 	?>
-			<textarea cols='40' rows='5' name='ronmadriz_settings[ronmadriz_header_extra]'><?php echo $options['ronmadriz_header_extra'];?></textarea>
+				<textarea cols='40' rows='5' name='ronmadriz_settings[ronmadriz_header_extra]'><?php echo $options['ronmadriz_header_extra'];?></textarea>
 	<?php
 }
 function ronmadriz_body_extra_render() {
 
 	$options = get_option('ronmadriz_settings');
 	?>
-			<textarea cols='40' rows='5' name='ronmadriz_settings[ronmadriz_body_extra]'><?php echo $options['ronmadriz_body_extra'];?></textarea>
+				<textarea cols='40' rows='5' name='ronmadriz_settings[ronmadriz_body_extra]'><?php echo $options['ronmadriz_body_extra'];?></textarea>
 	<?php
 }
 function ronmadriz_footer_extra_render() {
 
 	$options = get_option('ronmadriz_settings');
 	?>
-			<textarea cols='40' rows='5' name='ronmadriz_settings[ronmadriz_footer_extra]'><?php echo $options['ronmadriz_footer_extra'];?></textarea>
+				<textarea cols='40' rows='5' name='ronmadriz_settings[ronmadriz_footer_extra]'><?php echo $options['ronmadriz_footer_extra'];?></textarea>
 	<?php
 }
 function ronmadriz_settings_section_callback() {
