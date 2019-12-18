@@ -49,40 +49,36 @@ function ronmadriz_settings_init() {
 function ronmadriz_header_extra_render() {
 	$options = get_option('ronmadriz_settings');
 	?>
-	<textarea cols='40' rows='5' name='ronmadriz_settings[ronmadriz_header_extra]'><?php echo $options['ronmadriz_header_extra'];?></textarea>
+			<textarea cols='40' rows='5' name='ronmadriz_settings[ronmadriz_header_extra]'><?php echo $options['ronmadriz_header_extra'];?></textarea>
 	<?php
 }
 function ronmadriz_body_extra_render() {
 
 	$options = get_option('ronmadriz_settings');
 	?>
-	<textarea cols='40' rows='5' name='ronmadriz_settings[ronmadriz_body_extra]'><?php echo $options['ronmadriz_body_extra'];?></textarea>
+			<textarea cols='40' rows='5' name='ronmadriz_settings[ronmadriz_body_extra]'><?php echo $options['ronmadriz_body_extra'];?></textarea>
 	<?php
 }
 function ronmadriz_footer_extra_render() {
 
 	$options = get_option('ronmadriz_settings');
 	?>
-	<textarea cols='40' rows='5' name='ronmadriz_settings[ronmadriz_footer_extra]'><?php echo $options['ronmadriz_footer_extra'];?></textarea>
+			<textarea cols='40' rows='5' name='ronmadriz_settings[ronmadriz_footer_extra]'><?php echo $options['ronmadriz_footer_extra'];?></textarea>
 	<?php
 }
 function ronmadriz_settings_section_callback() {
 	echo __('This area is where we will insert code that will apply globally throughout the website.', 'ronmadriz_options');
 }
 function ronmadriz_options_page() {
-	?>
-	<div class="wrap">
-				<div id="icon-themes" class="icon32"></div>
-				<h1>Theme Options</h1>
-	<?php settings_errors();?>
-	<form action='options.php' method='post'>
-	<?php
+	echo '<div class="wrap">'.PHP_EOL;
+	echo '<div id="icon-themes" class="icon32"></div>'.PHP_EOL;
+	echo '<h1>Theme Options</h1>'.PHP_EOL;
+	settings_errors();
+	echo '<form action="options.php" method="post">'.PHP_EOL;
 	settings_fields('ronmadriz_options_settings');
 	do_settings_sections('ronmadriz_options_settings');
 	submit_button();
-	?>
-	</form>
-			</div>
-	<?php
+	echo '</form>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
 }
 ?>
