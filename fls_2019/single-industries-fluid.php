@@ -190,7 +190,7 @@ if (have_rows('icon_row')) {
 			if ($fl_title && $fl_icon_link) {
 				echo '<h3><a href="'.$fl_link['url'].'">'.$fl_title.'</a></h3>'.PHP_EOL;
 			} elseif ($fl_title) {
-				echo '<h2>'.$fl_title.'</h2>'.PHP_EOL;
+				echo '<h3>'.$fl_title.'</h3>'.PHP_EOL;
 			}
 			echo $fl_content.'</div>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
