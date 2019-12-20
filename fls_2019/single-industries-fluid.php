@@ -221,9 +221,9 @@ if (have_rows('download_literature')) {
 		echo ($lit_img != null?'<img src="'.$lit_img['url'].'" alt="'.$lit_img['alt'].'" class="img-fluid">':'');
 		echo ($lit_file != null && is_user_logged_in()?'</a>'.PHP_EOL:'</a>');
 		echo '<h3 class="text-uppercase">';
-		echo ($lit_file != null && is_user_logged_in()?'<a href="'.$lit_file['url'].'">':'');
+		echo ($lit_file != null && is_user_logged_in()?'<a href="'.$lit_file['url'].'">':'<a class="lrm-login">');
 		echo $lit_title;
-		echo ($lit_file != null && is_user_logged_in()?'</a>':'');
+		echo ($lit_file != null && is_user_logged_in()?'</a>':'</a>');
 		echo '</h3>'.PHP_EOL;
 		echo '</li>'.PHP_EOL;
 	}
