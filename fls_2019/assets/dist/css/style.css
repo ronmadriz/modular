@@ -1586,6 +1586,14 @@ html body.solutions-template-solutions-fluid main section#icons, html body.indus
     padding: 1rem 1rem 1rem 0; }
     html body.solutions-template-solutions-fluid main section#icons div .fl_thumb img.img-fluid, html body.industries-template-single-industries-fluid main section#icons div .fl_thumb img.img-fluid, html body.page-template-fall-protection-101 main section#icons div .fl_thumb img.img-fluid, html body.page-template-sample-fall-protection-plan main section#icons div .fl_thumb img.img-fluid, html body.industries-template-single-all-industries main section#icons div .fl_thumb img.img-fluid, html body.solutions-template-single-all-solutions main section#icons div .fl_thumb img.img-fluid {
       max-width: 125px; }
+  html body.solutions-template-solutions-fluid main section#icons div h3, html body.industries-template-single-industries-fluid main section#icons div h3, html body.page-template-fall-protection-101 main section#icons div h3, html body.page-template-sample-fall-protection-plan main section#icons div h3, html body.industries-template-single-all-industries main section#icons div h3, html body.solutions-template-single-all-solutions main section#icons div h3 {
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    font-family: Oswald,helvetica,sans-serif;
+    font-weight: 600;
+    font-size: 1.375rem; }
   html body.solutions-template-solutions-fluid main section#icons div.fl_content h2, html body.industries-template-single-industries-fluid main section#icons div.fl_content h2, html body.page-template-fall-protection-101 main section#icons div.fl_content h2, html body.page-template-sample-fall-protection-plan main section#icons div.fl_content h2, html body.industries-template-single-all-industries main section#icons div.fl_content h2, html body.solutions-template-single-all-solutions main section#icons div.fl_content h2 {
     text-transform: uppercase;
     color: #156cb3; }
