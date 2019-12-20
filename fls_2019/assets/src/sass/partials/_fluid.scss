@@ -171,6 +171,16 @@ html {
 											min-width:100%;
 										}
 									}
+									h3 {
+									    font-size: 1.25rem;
+									    margin-bottom: .5rem;
+									    font-weight: 700;
+									    font-family: $tertiary;
+									    line-height: 1.2;
+										a {
+											color:$blue;
+										}
+									}
 								}
 							}
 						}
