@@ -42,16 +42,17 @@ if ($industries_query) {
 	echo '<section id="inline_solutions">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	while ($industries_query->have_posts()):$industries_query->the_post();
-	$summary = get_field('summary');
-	echo '<div class="item col-12 col-md-3">'.PHP_EOL;
-	echo '<a href="'.get_permalink().'">';
-	the_post_thumbnail('full', array('class' => 'img-fluid'));
-	echo '</a>'.PHP_EOL;
-	echo '<div class="title"><h2><a href="'.get_permalink().'">'.get_the_title().'</a></h2></div>'.PHP_EOL;
-	echo '<div class="desc"><p><a href="'.get_the_permalink().'">'.$summary.'</a></p></div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	endwhile;
+	while ($industries_query->have_posts()) {
+		$industries_query->the_post();
+		$summary = get_field('summary');
+		echo '<div class="item col-12 col-md-3">'.PHP_EOL;
+		echo '<a href="'.get_permalink().'">';
+		the_post_thumbnail('full', array('class' => 'img-fluid'));
+		echo '</a>'.PHP_EOL;
+		echo '<div class="title"><h2><a href="'.get_permalink().'">'.get_the_title().'</a></h2></div>'.PHP_EOL;
+		echo '<div class="desc"><p><a href="'.get_the_permalink().'">'.$summary.'</a></p></div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+	}
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
