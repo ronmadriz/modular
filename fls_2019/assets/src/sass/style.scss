@@ -272,6 +272,15 @@ html {
 								&.content {
 									margin-top:1rem;
 									margin-bottom:1rem;
+									h3 {
+										margin-top: 1.5rem;
+										text-transform: uppercase;
+										margin-bottom: .5rem;
+										line-height: 1.2;
+										font-family: $tertiary;
+										font-weight: 600;
+										font-size: 1.375rem;
+									}									
 								}
 								&.img {
 								    position: relative;

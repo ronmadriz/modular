@@ -350,6 +350,14 @@ html body main {
       html body main section#case_study div.item div.content {
         margin-top: 1rem;
         margin-bottom: 1rem; }
+        html body main section#case_study div.item div.content h3 {
+          margin-top: 1.5rem;
+          text-transform: uppercase;
+          margin-bottom: .5rem;
+          line-height: 1.2;
+          font-family: "Oswald", helvetica, sans-serif;
+          font-weight: 600;
+          font-size: 1.375rem; }
       html body main section#case_study div.item div.img {
         position: relative;
         overflow: hidden;
