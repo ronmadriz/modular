@@ -217,13 +217,13 @@ if (have_rows('download_literature')) {
 		$lit_img   = get_sub_field('Image');
 		$lit_title = get_sub_field('title');
 		echo '<li class="list-inline-item col-6 col-md-3 text-center">';
-		echo ($lit_file != null?'<a href="'.$lit_file['url'].'" class="d-block">':'');
+		echo ($lit_file != null && is_user_logged_in()?'<a href="'.$lit_file['url'].'" class="d-block">':'');
 		echo ($lit_img != null?'<img src="'.$lit_img['url'].'" alt="'.$lit_img['alt'].'" class="img-fluid">':'');
-		echo ($lit_file != null?'</a>'.PHP_EOL:'');
+		echo ($lit_file != null && is_user_logged_in()?'</a>'.PHP_EOL:'');
 		echo '<h3 class="text-uppercase">';
-		echo ($lit_file != null?'<a href="'.$lit_file['url'].'">':'');
+		echo ($lit_file != null && is_user_logged_in()?'<a href="'.$lit_file['url'].'">':'');
 		echo $lit_title;
-		echo ($lit_file != null?'</a>':'');
+		echo ($lit_file != null && is_user_logged_in()?'</a>':'');
 		echo '</h3>'.PHP_EOL;
 		echo '</li>'.PHP_EOL;
 	}
