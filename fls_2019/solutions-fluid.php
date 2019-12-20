@@ -168,7 +168,7 @@ if (have_rows('icons')) {
 			while (have_rows('icon_group')) {
 				the_row();
 				$icon_title = get_sub_field('title');
-				echo (!empty($icon_title)?'<div class="row"><div class="section_title col-12"><h3>'.$icon_title.'</h3></div></div>'.PHP_EOL:'');
+				echo (!empty($icon_title)?'<div class="row"><div class="section_title col-12"><h2>'.$icon_title.'</h2></div></div>'.PHP_EOL:'');
 				if (have_rows('icon')) {
 					while (have_rows('icon')) {
 						the_row();
@@ -181,7 +181,7 @@ if (have_rows('icons')) {
 						echo '<div class="fl_thumb col-3 col-md-2 col-lg-1 text-md-center">'.($fl_icon_link?'<a href="'.$fl_link['url'].'"><img src="'.$fl_image['url'].'" class="img-fluid" alt=""></a>':'<img src="'.$fl_image['url'].'" class="img-fluid" alt="">').'</div>'.PHP_EOL;
 						echo '<div class="fl_content col-9 col-md-10 col-lg-11">'.PHP_EOL;
 						if ($fl_title && $fl_icon_link) {
-							echo '<h2><a href="'.$fl_link['url'].'">'.$fl_title.'</a></h2>'.PHP_EOL;
+							echo '<h3><a href="'.$fl_link['url'].'">'.$fl_title.'</a></h3>'.PHP_EOL;
 						} elseif ($fl_title) {
 							echo '<h2>'.$fl_title.'</h2>'.PHP_EOL;
 						}
