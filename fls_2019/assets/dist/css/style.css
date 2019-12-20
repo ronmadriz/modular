@@ -348,10 +348,9 @@ html body main {
     html body main section#case_study div.item {
       margin-bottom: 1rem; }
       html body main section#case_study div.item div.content {
-        margin-top: 1rem;
         margin-bottom: 1rem; }
         html body main section#case_study div.item div.content h3 {
-          margin-top: 1.5rem;
+          margin-top: 0;
           text-transform: uppercase;
           margin-bottom: .5rem;
           line-height: 1.2;
