@@ -258,6 +258,19 @@ html {
 							&.title {
 								margin-top:.75rem;
 								margin-bottom:.75rem;
+								h2 {
+									font-size: 1.83rem;
+									font-weight: 300;
+									margin-bottom: 1.25rem;
+									margin-top: 1.25rem;
+									font-family: $tertiary;
+									line-height: 2.25rem;
+									display: block;
+									text-align: center;
+									a {
+										color: $blue;
+									}
+								}
 								h3 {
 									text-align:center;
 									line-height:2.25rem;

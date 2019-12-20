@@ -1684,6 +1684,17 @@ html body.solutions-template-solutions-fluid main section#case_study div.item sp
 html body.solutions-template-solutions-fluid main section#inline_solutions div.title, html body.industries-template-single-industries-fluid main section#inline_solutions div.title, html body.page-template-fall-protection-101 main section#inline_solutions div.title, html body.page-template-sample-fall-protection-plan main section#inline_solutions div.title, html body.industries-template-single-all-industries main section#inline_solutions div.title, html body.solutions-template-single-all-solutions main section#inline_solutions div.title {
   margin-top: .75rem;
   margin-bottom: .75rem; }
+  html body.solutions-template-solutions-fluid main section#inline_solutions div.title h2, html body.industries-template-single-industries-fluid main section#inline_solutions div.title h2, html body.page-template-fall-protection-101 main section#inline_solutions div.title h2, html body.page-template-sample-fall-protection-plan main section#inline_solutions div.title h2, html body.industries-template-single-all-industries main section#inline_solutions div.title h2, html body.solutions-template-single-all-solutions main section#inline_solutions div.title h2 {
+    font-size: 1.83rem;
+    font-weight: 300;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+    font-family: "Oswald", helvetica, sans-serif;
+    line-height: 2.25rem;
+    display: block;
+    text-align: center; }
+    html body.solutions-template-solutions-fluid main section#inline_solutions div.title h2 a, html body.industries-template-single-industries-fluid main section#inline_solutions div.title h2 a, html body.page-template-fall-protection-101 main section#inline_solutions div.title h2 a, html body.page-template-sample-fall-protection-plan main section#inline_solutions div.title h2 a, html body.industries-template-single-all-industries main section#inline_solutions div.title h2 a, html body.solutions-template-single-all-solutions main section#inline_solutions div.title h2 a {
+      color: #156cb3; }
   html body.solutions-template-solutions-fluid main section#inline_solutions div.title h3, html body.industries-template-single-industries-fluid main section#inline_solutions div.title h3, html body.page-template-fall-protection-101 main section#inline_solutions div.title h3, html body.page-template-sample-fall-protection-plan main section#inline_solutions div.title h3, html body.industries-template-single-all-industries main section#inline_solutions div.title h3, html body.solutions-template-single-all-solutions main section#inline_solutions div.title h3 {
     text-align: center;
     line-height: 2.25rem;
