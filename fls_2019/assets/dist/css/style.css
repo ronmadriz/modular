@@ -1661,7 +1661,8 @@ html body.solutions-template-solutions-fluid main section#literature, html body.
       line-height: 1.2;
       color: #404040; }
       html body.solutions-template-solutions-fluid main section#literature ul.literature_list li h3 a, html body.industries-template-single-industries-fluid main section#literature ul.literature_list li h3 a, html body.page-template-fall-protection-101 main section#literature ul.literature_list li h3 a, html body.page-template-sample-fall-protection-plan main section#literature ul.literature_list li h3 a, html body.industries-template-single-all-industries main section#literature ul.literature_list li h3 a, html body.solutions-template-single-all-solutions main section#literature ul.literature_list li h3 a {
-        color: #156cb3; }
+        color: #156cb3;
+        cursor: pointer; }
 
 html body.solutions-template-solutions-fluid main section#cf_contactFormTitle, html body.industries-template-single-industries-fluid main section#cf_contactFormTitle, html body.page-template-fall-protection-101 main section#cf_contactFormTitle, html body.page-template-sample-fall-protection-plan main section#cf_contactFormTitle, html body.industries-template-single-all-industries main section#cf_contactFormTitle, html body.solutions-template-single-all-solutions main section#cf_contactFormTitle {
   background-color: #156cb3;
