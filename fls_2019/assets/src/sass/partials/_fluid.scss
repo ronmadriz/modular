@@ -189,7 +189,11 @@ html {
 									    color:$base;
 										a {
 											color:$blue;
-											cursor: pointer;
+										}
+									}
+									a {
+										&.lrm-login {
+											cursor: pointer;											
 										}
 									}
 								}
