@@ -44,7 +44,7 @@ j(document).ready(function(){
         if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 100});
     });
    // j(".mCustomScrollbar").mCustomScrollbar({axis:"x"});
-
+    j(".--registration-done").location.reload(true);
 });
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
@@ -110,4 +110,3 @@ var $btns = j('.btn_filter').click(function() {
   $btns.removeClass('active');
   j(this).addClass('active');
 })
-
