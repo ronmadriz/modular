@@ -454,6 +454,12 @@ html body svg#contacts path:hover {
   html .navbar {
     padding-bottom: 10px !important; } }
 
+html form.lrm-form ul.acf-checkbox-list li {
+  width: 45%; }
+  html form.lrm-form ul.acf-checkbox-list li label {
+    cursor: pointer;
+    font-weight: normal; }
+
 body header a.navbar-brand {
   margin-right: 0;
   color: #156cb3; }
@@ -954,11 +960,6 @@ body main form {
     body main form div.wpcf7-response-output.wpcf7-mail-sent-ok {
       background-color: #156cb3;
       border-color: #156cb3; }
-  body main form.lrm-form ul.acf-checkbox-list li {
-    width: 45%; }
-    body main form.lrm-form ul.acf-checkbox-list li label {
-      cursor: pointer;
-      font-weight: normal; }
 
 body main aside.sidebar {
   padding-left: 0;

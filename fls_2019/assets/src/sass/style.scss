@@ -434,6 +434,21 @@ html {
 	        padding-bottom: 10px!important;
 	    }
 	}
+	form {
+		&.lrm-form {
+			ul {
+				&.acf-checkbox-list {
+					li {
+						width:45%;
+						label {
+							cursor:pointer;
+							font-weight:normal;
+						}
+					}
+				}
+			}
+		}		
+	}
 }
 @import 'partials/_header';
 @import 'partials/_navigation';
