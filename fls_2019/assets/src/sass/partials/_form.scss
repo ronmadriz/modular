@@ -147,7 +147,19 @@ body {
 						border-color: $accent_1;
 					}
 				}
-			}			
+			}
+			&.lrm-form {
+				ul {
+					&.acf-checkbox-list {
+						li {
+							width:45%;
+							label {
+								cursor:pointer;
+							}
+						}
+					}
+				}
+			}
 		}
 		aside {
 			&.sidebar {
