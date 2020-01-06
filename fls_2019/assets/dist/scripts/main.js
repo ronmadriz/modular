@@ -189,12 +189,6 @@ j(document).ready(function(){
 	       j('section').removeClass('focus');
 	    }
 	});
-    j("form#gform_3 .medium").addClass('form-control');
-    j("form#gform_2 .medium").addClass('form-control');
-    j("form#gform_2 input").removeClass('medium');
-    j("form#gform_2 .gfield").addClass('form-group');
-    j("form#gform_2 select").addClass('form-control');
-    j("form#gform_2 textarea").addClass('form-control');
     j(".phone").text(function(i, text) {text = text.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3"); return text; });
     // change SVG Target to TOP
     j('svg a').click(function(event){
@@ -213,7 +207,6 @@ j(document).ready(function(){
         if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 100});
     });
    // j(".mCustomScrollbar").mCustomScrollbar({axis:"x"});
-    j(".--registration-done").location.reload(true);
 });
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
@@ -230,9 +223,7 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
 function normalizeSlideHeights() {
     j('.carousel').each(function(){
       var items = j('.carousel-item img.background', this);
-      // reset the height
       items.css('min-height', 0);
-      // set the height
       var maxHeight = Math.max.apply(null, 
           items.map(function(){
           return j(this).outerHeight()}).get() 
@@ -249,7 +240,7 @@ function normalizeSlideHeights() {
           return j(this).outerHeight()}).get() 
       );
       items.css('min-height', maxHeight + 'px');
-    })
+    }) 
 }
 jQuery(
   function(j) {
