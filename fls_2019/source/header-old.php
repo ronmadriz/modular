@@ -58,7 +58,7 @@ echo '<span class="nav-bar"></span>'.PHP_EOL;
 echo '<span class="nav-bar"></span>'.PHP_EOL;
 echo '</span>'.PHP_EOL;
 echo '</button>'.PHP_EOL;
-echo '<button id="searchToggle"><i class="icons icon-magnifier"></i></button>'.PHP_EOL;
+echo '<button id="searchToggle"><i class="im im-magnifier"></i></button>'.PHP_EOL;
 get_search_form();
 echo '</div>'.PHP_EOL;
 echo '<div class="collapse navbar-collapse" id="navigation">'.PHP_EOL;

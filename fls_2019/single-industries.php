@@ -93,7 +93,7 @@ if ($industry_testimonials) {
 	echo '<div class="content col-12">'.PHP_EOL;
 	echo '<h2>'.get_the_title($industry_testimonials).'</h2>'.PHP_EOL;
 	echo get_the_content();
-	echo '<i class="icons fa-quote-left"></i>'.PHP_EOL;
+	echo '<i class="im fa-quote-left"></i>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
@@ -209,7 +209,7 @@ if (have_rows('industry_faq')) {
 	echo '<div class="content col-12">'.PHP_EOL;
 	echo '<ul class="nav nav-tabs">'.PHP_EOL;
 	echo '<li class="nav-item">'.PHP_EOL;
-	echo '<a class="nav-link active" href="#faq_content"><i class="icons icon-question"></i> <abbr title="Frequently Asked Questions">FAQ</abbr></a>'.PHP_EOL;
+	echo '<a class="nav-link active" href="#faq_content"><i class="im icon-question"></i> <abbr title="Frequently Asked Questions">FAQ</abbr></a>'.PHP_EOL;
 	echo '</li>'.PHP_EOL;
 	echo '</ul>'.PHP_EOL;
 	echo '<div class="tab-content" id="faq_content">'.PHP_EOL;
