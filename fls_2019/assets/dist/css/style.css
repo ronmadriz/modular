@@ -991,7 +991,7 @@ body button#searchToggle {
   width: 2.5rem;
   background-color: transparent;
   border: 0;
-  font-size: 1.35rem;
+  font-size: .8rem;
   color: #156cb3; }
   body button#searchToggle:focus {
     outline: 0; }
