@@ -40,7 +40,9 @@ body {
 			    a {
 			    	color:$accent_2;
 			    	i, svg {
-					    transform: rotate(90deg);
+					    transform: rotate(-15deg);
+					    top: 5px;
+					    position: relative;
 			    	}
 			    }
 			}

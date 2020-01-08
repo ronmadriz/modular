@@ -1208,8 +1208,10 @@ body footer section#foot_call_cta {
   body footer section#foot_call_cta a {
     color: #fecd06; }
     body footer section#foot_call_cta a i, body footer section#foot_call_cta a svg {
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg); }
+      -webkit-transform: rotate(-15deg);
+              transform: rotate(-15deg);
+      top: 5px;
+      position: relative; }
 
 body footer section#foot_info {
   padding-top: 2rem; }
