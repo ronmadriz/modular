@@ -53,7 +53,7 @@ if ($careers_query) {
 	$summary = get_field('summary');
 	$count++;
 	echo '<div class="col-12">'.PHP_EOL;
-	echo '<h3><a data-toggle="collapse" href="#position_'.$count.'" role="button" aria-expanded="false" aria-controls="position_'.$count.'" class="collapsed">'.get_the_title().' <i class="fas fa-chevron-right"></i></a></h3>'.PHP_EOL;
+	echo '<h3><a data-toggle="collapse" href="#position_'.$count.'" role="button" aria-expanded="false" aria-controls="position_'.$count.'" class="collapsed">'.get_the_title().' <i class="icons icon-arrow-right"></i></a></h3>'.PHP_EOL;
 	echo '<div class="collapse" id="position_'.$count.'">'.PHP_EOL;
 	echo $summary;
 	the_content();

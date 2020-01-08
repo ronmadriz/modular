@@ -46,7 +46,7 @@ jQuery(document).ready(function(e) {
         })
     })
 }), jQuery(document).ready(function(e) {
-    e(".fa.fa-search").click(function() {
+    e(".fa.icon-magnifier").click(function() {
         e(".toggleSearch").toggle("slide")
     })
 }), jQuery(document).ready(function(e) {

@@ -27,7 +27,7 @@ if (is_front_page()) {
 echo '<section id="foot_call_cta">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
 echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
-echo '<div class="col-12 col-md-8">Call today to speak with our fall protection experts: <a href="tel:'.$phone.'"><i class="fas fa-phone"></i> '.$phone.'</a></div>'.PHP_EOL;
+echo '<div class="col-12 col-md-8">Call today to speak with our fall protection experts: <a href="tel:'.$phone.'"><i class="icons icon-phone"></i> '.$phone.'</a></div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
@@ -122,7 +122,7 @@ echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 echo '</footer>'.PHP_EOL;
-echo '<span id="mobileCTA" class="fixed-bottom d-inline-block d-md-none"><a href="tel:'.$phone.'"><i class="fas fa-phone"></i></a></span>'.PHP_EOL;
+echo '<span id="mobileCTA" class="fixed-bottom d-inline-block d-md-none"><a href="tel:'.$phone.'"><i class="icons icon-phone"></i></a></span>'.PHP_EOL;
 wp_footer();
 echo $ronmadriz_settings['ronmadriz_footer_extra'];
 echo '</body>'.PHP_EOL;

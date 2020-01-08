@@ -61,14 +61,14 @@ if ($solutions_gallery['gallery_pics']) {
 		$gall_count = 0;
 	}
 	echo '<div id="carousel_controls" class="col-12">'.PHP_EOL;
-	echo '<a class="carousel-control left pt-3" href="#flsCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>'.PHP_EOL;
-	echo '<a class="carousel-control right pt-3" href="#flsCarousel" data-slide="next"><i class="fa fa-chevron-right"></i></a>'.PHP_EOL;
+	echo '<a class="carousel-control left pt-3" href="#flsCarousel" data-slide="prev"><i class="icons icon-arrow-left"></i></a>'.PHP_EOL;
+	echo '<a class="carousel-control right pt-3" href="#flsCarousel" data-slide="next"><i class="icons icon-arrow-right"></i></a>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	$gallery_photos = get_sub_field('gallery_pics');
 	if ($gallery_photos):
 	echo '<div class="thumb_nav col-12 align-items-center justify-content-center d-none d-sm-flex">'.PHP_EOL;
-	echo '<span id="thumb_left" class="th_nav d-flex align-self-start align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></span>'.PHP_EOL;
+	echo '<span id="thumb_left" class="th_nav d-flex align-self-start align-items-center justify-content-center"><i class="icons icon-arrow-left"></i></span>'.PHP_EOL;
 	echo '<div id="thumbs"><div id="thumb_list">'.PHP_EOL;
 	foreach ($gallery_photos as $gallery_photo):
 	echo '<span class="d-inline-block'.($gall_count == 0?' active':'').'"" data-slide-to="'.$gall_count.'" data-target="#flsCarousel">'.PHP_EOL;
@@ -79,7 +79,7 @@ if ($solutions_gallery['gallery_pics']) {
 	$gall_count++;
 	endforeach;
 	echo '</div></div>';
-	echo '<span id="thumb_right" class="th_nav d-flex align-self-end align-items-center justify-content-center"><i class="fa fa-chevron-right"></i></span>'.PHP_EOL;
+	echo '<span id="thumb_right" class="th_nav d-flex align-self-end align-items-center justify-content-center"><i class="icons icon-arrow-right"></i></span>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	endif;
 	echo '</div>'.PHP_EOL;
