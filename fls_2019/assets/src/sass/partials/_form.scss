@@ -193,10 +193,12 @@ body {
 			width: 2.5rem;
 			background-color: transparent;
 			border: 0;
-			font-size: .8rem;
 			color:$blue;
 			&:focus {
 			    outline: 0;
+			}
+			i {
+			    font-size: 1.3rem;
 			}
 		}
 	}
