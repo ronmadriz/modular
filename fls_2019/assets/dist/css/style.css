@@ -150,6 +150,8 @@ html body a {
     html body a.dropdown-item.active {
       background-color: #0f8acf;
       color: white; }
+  html body a.collapsed i.im {
+    font-size: 1rem; }
 
 html body div#pagewrapper {
   padding-top: 1rem;

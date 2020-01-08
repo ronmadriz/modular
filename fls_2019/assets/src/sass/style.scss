@@ -12,6 +12,13 @@ html {
 					color:$alternate;
 				}
 			}
+			&.collapsed {
+				i {
+					&.im {
+					    font-size: 1rem;
+					}
+				}
+			}
 		}
 		div {
 			&#pagewrapper {
