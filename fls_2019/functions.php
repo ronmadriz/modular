@@ -645,5 +645,5 @@ function fls_new_admin_email($notification, $user, $blogname) {
 	$notification['to'] = 'firstcreativehouston@gmail.com';
 	return $notification;
 }
-// include (THEME_INCLUDE.'/lrm_code.php');
+include (THEME_INCLUDE.'/lrm_code.php');
 ?>
