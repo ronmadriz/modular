@@ -135,7 +135,7 @@ echo '<section id="cta_blue"><div class="container-fluid"><div class="row"><div 
 // IMAGE CALLOUTS
 
 $image_callout = get_field('image_callout');
-if (have_rows('image_callout')) {
+if (have_rows('image_callout') && !empty($image_callout)) {
 	while (have_rows('image_callout')) {
 		the_row();
 		$co_title = get_sub_field('callout_title');
