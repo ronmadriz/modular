@@ -1594,7 +1594,11 @@ html body.solutions-template-solutions-fluid main section#main-content, html bod
     letter-spacing: .0125px; }
 
 html body.solutions-template-solutions-fluid main section#icons, html body.industries-template-single-industries-fluid main section#icons, html body.page-template-fall-protection-101 main section#icons, html body.page-template-sample-fall-protection-plan main section#icons, html body.industries-template-single-all-industries main section#icons, html body.solutions-template-single-all-solutions main section#icons {
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  @media (min-width: 786px) {
+    html body.solutions-template-solutions-fluid main section#icons, html body.industries-template-single-industries-fluid main section#icons, html body.page-template-fall-protection-101 main section#icons, html body.page-template-sample-fall-protection-plan main section#icons, html body.industries-template-single-all-industries main section#icons, html body.solutions-template-single-all-solutions main section#icons {
+      padding-bottom: 4rem; } }
   html body.solutions-template-solutions-fluid main section#icons h2, html body.industries-template-single-industries-fluid main section#icons h2, html body.page-template-fall-protection-101 main section#icons h2, html body.page-template-sample-fall-protection-plan main section#icons h2, html body.industries-template-single-all-industries main section#icons h2, html body.solutions-template-single-all-solutions main section#icons h2 {
     font-family: "Oswald", helvetica, sans-serif;
     text-transform: uppercase; }
