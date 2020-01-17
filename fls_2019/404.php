@@ -1,7 +1,7 @@
-<?php get_header();?>
 <?php
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
+get_header();
 echo '<section id="banner">'.PHP_EOL;
 echo '<div class="container">'.PHP_EOL;
 echo '<div class="row w-image"><style type="text/css">section#banner{background-image:url(https://fall-arrest.com/wp-content/uploads/2019/10/main_training2-2.jpg);}</style>'.PHP_EOL;
