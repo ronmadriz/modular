@@ -17,6 +17,12 @@ body {
 						min-width: 100%;
 					}
 				}
+				amp-img {
+				    height: 49px;
+					@media(min-width:786px){
+						height: 97px;
+					}
+				}
 			}
 		}
 		span {
