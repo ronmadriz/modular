@@ -1520,8 +1520,7 @@ html body main #flsCarousel {
         display: inline-block;
         border: 0.01rem solid rgba(0, 0, 0, 0.125);
         padding: .1rem .75rem .4rem;
-        margin-top: .35rem;
-        margin-bottom: .35rem; } }
+        margin-top: 1rem; } }
   @media (min-width: 786px) {
     html body main #flsCarousel #carousel_controls {
       position: absolute;
