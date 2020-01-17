@@ -1,5 +1,5 @@
 <?php
-echo '<form role="search" method="get" id="searchform" class="d-none"':'').' action="';
+echo '<form role="search" method="get" id="searchform" class="d-none" action="';
 bloginfo('url');
 echo '">'.PHP_EOL;
 echo '<label class="sr-only" for="s">Search for:</label>'.PHP_EOL;
