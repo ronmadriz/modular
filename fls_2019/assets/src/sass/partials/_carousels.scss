@@ -26,6 +26,9 @@ html {
 			}
 			#flsCarousel {
 			    margin: 20px auto;
+			    @media(max-width: 786px){
+		    	    z-index: 999;
+			    }
 			    .img-fluid {
 			    	min-width:100%;
 			    }

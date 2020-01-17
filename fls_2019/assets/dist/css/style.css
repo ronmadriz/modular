@@ -1485,6 +1485,9 @@ html body main #gallery .carousel-inner .carousel-item-left {
 
 html body main #flsCarousel {
   margin: 20px auto; }
+  @media (max-width: 786px) {
+    html body main #flsCarousel {
+      z-index: 999; } }
   html body main #flsCarousel .img-fluid {
     min-width: 100%; }
   html body main #flsCarousel .carousel-indicators {
