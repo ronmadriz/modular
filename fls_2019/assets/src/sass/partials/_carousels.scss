@@ -26,9 +26,6 @@ html {
 			}
 			#flsCarousel {
 			    margin: 20px auto;
-			    @media(max-width: 786px){
-		    	    z-index: 999;
-			    }
 			    .img-fluid {
 			    	min-width:100%;
 			    }
@@ -66,7 +63,22 @@ html {
 			            }
 			        }
 			    }
-			    @media (min-width:768px) {
+			    @media(max-width:786px){
+			    	#carousel_controls {
+			    		z-index: 999;
+		    		    text-align: center;
+			    		a {
+			    			&.carousel-control {
+								display: inline-block;
+								border: .01rem solid rgba(0,0,0,0.125);
+								padding: .1rem .75rem .4rem;
+								margin-top: .35rem;
+								margin-bottom: .35rem;			    				
+			    			}
+			    		}
+			    	}
+			    }
+			    @media (min-width:786px) {
 				    #carousel_controls {
 						position: absolute;
 						z-index: 999;

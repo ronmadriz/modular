@@ -1485,9 +1485,6 @@ html body main #gallery .carousel-inner .carousel-item-left {
 
 html body main #flsCarousel {
   margin: 20px auto; }
-  @media (max-width: 786px) {
-    html body main #flsCarousel {
-      z-index: 999; } }
   html body main #flsCarousel .img-fluid {
     min-width: 100%; }
   html body main #flsCarousel .carousel-indicators {
@@ -1515,7 +1512,17 @@ html body main #flsCarousel {
           opacity: 0.35; }
       html body main #flsCarousel .carousel-indicators li:hover img {
         opacity: 0.75; }
-  @media (min-width: 768px) {
+  @media (max-width: 786px) {
+    html body main #flsCarousel #carousel_controls {
+      z-index: 999;
+      text-align: center; }
+      html body main #flsCarousel #carousel_controls a.carousel-control {
+        display: inline-block;
+        border: 0.01rem solid rgba(0, 0, 0, 0.125);
+        padding: .1rem .75rem .4rem;
+        margin-top: .35rem;
+        margin-bottom: .35rem; } }
+  @media (min-width: 786px) {
     html body main #flsCarousel #carousel_controls {
       position: absolute;
       z-index: 999;
