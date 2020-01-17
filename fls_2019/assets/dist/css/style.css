@@ -1633,9 +1633,6 @@ html body.solutions-template-solutions-fluid main section#banner div.page_title,
     height: 0;
     width: 0; }
 
-html body.solutions-template-solutions-fluid main section#breadcrumbs ul.list-inline, html body.industries-template-single-industries-fluid main section#breadcrumbs ul.list-inline, html body.page-template-fall-protection-101 main section#breadcrumbs ul.list-inline, html body.page-template-sample-fall-protection-plan main section#breadcrumbs ul.list-inline, html body.industries-template-single-all-industries main section#breadcrumbs ul.list-inline, html body.solutions-template-single-all-solutions main section#breadcrumbs ul.list-inline {
-  margin-bottom: 0; }
-
 html body.solutions-template-solutions-fluid main section#gallery, html body.industries-template-single-industries-fluid main section#gallery, html body.page-template-fall-protection-101 main section#gallery, html body.page-template-sample-fall-protection-plan main section#gallery, html body.industries-template-single-all-industries main section#gallery, html body.solutions-template-single-all-solutions main section#gallery {
   padding: 2rem 0 0; }
   @media (min-width: 768px) {
