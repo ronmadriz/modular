@@ -84,11 +84,6 @@ body header a.navbar-brand {
     body header a.navbar-brand img {
       margin-right: 1rem;
       min-width: 100%; } }
-  body header a.navbar-brand amp-img {
-    height: 49px; }
-    @media (min-width: 786px) {
-      body header a.navbar-brand amp-img {
-        height: 97px; } }
 
 body header span.nav_tel {
   font-weight: bold;
@@ -481,11 +476,6 @@ body header a.navbar-brand {
     body header a.navbar-brand img {
       margin-right: 1rem;
       min-width: 100%; } }
-  body header a.navbar-brand amp-img {
-    height: 49px; }
-    @media (min-width: 786px) {
-      body header a.navbar-brand amp-img {
-        height: 97px; } }
 
 body header span.nav_tel {
   font-weight: bold;
