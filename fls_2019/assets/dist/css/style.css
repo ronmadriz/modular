@@ -73,9 +73,6 @@ body {
 body header a.navbar-brand {
   margin-right: 0;
   color: #156cb3; }
-  @media (min-width: 786px) {
-    body header a.navbar-brand {
-      min-width: 457.5px; } }
   @media (max-width: 786px) {
     body header a.navbar-brand img {
       max-height: 90px;
@@ -83,6 +80,7 @@ body header a.navbar-brand {
   @media (min-width: 786px) {
     body header a.navbar-brand img {
       margin-right: 1rem;
+      min-width: 457.5px;
       min-width: 100%; } }
 
 body header span.nav_tel {
@@ -465,9 +463,6 @@ html form.lrm-form ul.acf-checkbox-list li {
 body header a.navbar-brand {
   margin-right: 0;
   color: #156cb3; }
-  @media (min-width: 786px) {
-    body header a.navbar-brand {
-      min-width: 457.5px; } }
   @media (max-width: 786px) {
     body header a.navbar-brand img {
       max-height: 90px;
@@ -475,6 +470,7 @@ body header a.navbar-brand {
   @media (min-width: 786px) {
     body header a.navbar-brand img {
       margin-right: 1rem;
+      min-width: 457.5px;
       min-width: 100%; } }
 
 body header span.nav_tel {
