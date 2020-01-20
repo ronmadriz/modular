@@ -73,15 +73,18 @@ body {
 body header a.navbar-brand {
   margin-right: 0;
   color: #156cb3; }
-  @media (max-width: 786px) {
-    body header a.navbar-brand img {
-      max-height: 90px;
-      width: auto; } }
-  @media (min-width: 786px) {
-    body header a.navbar-brand img {
-      margin-right: 1rem;
-      min-width: 457.5px;
-      min-width: 100%; } }
+  body header a.navbar-brand img {
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease; }
+    @media (max-width: 786px) {
+      body header a.navbar-brand img {
+        max-height: 90px;
+        width: auto; } }
+    @media (min-width: 786px) {
+      body header a.navbar-brand img {
+        margin-right: 1rem;
+        min-width: 457.5px;
+        min-width: 100%; } }
 
 body header span.nav_tel {
   font-weight: bold;
@@ -463,15 +466,18 @@ html form.lrm-form ul.acf-checkbox-list li {
 body header a.navbar-brand {
   margin-right: 0;
   color: #156cb3; }
-  @media (max-width: 786px) {
-    body header a.navbar-brand img {
-      max-height: 90px;
-      width: auto; } }
-  @media (min-width: 786px) {
-    body header a.navbar-brand img {
-      margin-right: 1rem;
-      min-width: 457.5px;
-      min-width: 100%; } }
+  body header a.navbar-brand img {
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease; }
+    @media (max-width: 786px) {
+      body header a.navbar-brand img {
+        max-height: 90px;
+        width: auto; } }
+    @media (min-width: 786px) {
+      body header a.navbar-brand img {
+        margin-right: 1rem;
+        min-width: 457.5px;
+        min-width: 100%; } }
 
 body header span.nav_tel {
   font-weight: bold;
