@@ -451,5 +451,15 @@ if ($contact_form_code) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
+?>
+<section id="contactFormCTA">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-md-6"><?php echo do_shortcode('[contact-form-7 id="117830" title="Contact CTA"]');?></div>
+		</div>
+	</div>
+</section>
+
+<?php
 include 'footer-fluid.php';
 ?>
