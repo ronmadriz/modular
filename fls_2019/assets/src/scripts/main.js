@@ -101,5 +101,5 @@ var $btns = j('.btn_filter').click(function() {
   j(this).addClass('active');
 })
 j(document).scroll(function() {
-  j('a.navbar-brand').css({width: j(this).scrollTop() > 100? "280px":"457.5px"});
+  j('.navbar-brand').css({width: j(this).scrollTop() > 100? "280px":"457.5px"});
 });
