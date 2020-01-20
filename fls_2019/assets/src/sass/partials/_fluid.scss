@@ -412,6 +412,12 @@ html {
 						form {
 							background-color:$alternate;
 							padding:4rem;
+							label {
+								text-transform:uppercase;
+							}
+							label, input, select, textarea {
+								font-size:.9rem;
+							}
 						}
 					}
 					&#cf_contactFormTitle {
