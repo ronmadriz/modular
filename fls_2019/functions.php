@@ -646,4 +646,8 @@ function fls_new_admin_email($notification, $user, $blogname) {
 	return $notification;
 }
 include (THEME_INCLUDE.'/lrm_code.php');
+function post_title_shortcode() {
+	return get_the_title();
+}
+add_shortcode('post_title', 'post_title_shortcode');
 ?>

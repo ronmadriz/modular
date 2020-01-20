@@ -452,10 +452,17 @@ if ($contact_form_code) {
 	echo '</section>'.PHP_EOL;
 }
 ?>
+<style>
+	section#contactFormCTA {background-image: url(https://simplifiedsafety.com/media/wysiwyg/staff/ssi/staff-at-desk-michael.jpg);}
+</style>
 <section id="contactFormCTA">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12 col-md-6"><?php echo do_shortcode('[contact-form-7 id="117830" title="Contact CTA"]');?></div>
+			<div class="col-12 col-md-6">
+				<img src="https://simplifiedsafety.com/media/wysiwyg/staff/ssi/staff-at-desk-michael.jpg" alt="" class="img-fluid d-md-none">
+				<span>Michael Hannah <small>Fall Protection Specialist</small></span>
+			</div>
 		</div>
 	</div>
 </section>
