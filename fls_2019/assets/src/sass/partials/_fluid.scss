@@ -400,6 +400,19 @@ html {
 							}
 						}
 					}
+					&#contactFormCTA {
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size:cover;
+						padding:2rem;
+						@media(min-width:768px){
+							padding:10rem;
+						}
+						form {
+							background-color:$alternate;
+							padding:4rem;
+						}
+					}
 					&#cf_contactFormTitle {
 						div {
 							&.section_title {
