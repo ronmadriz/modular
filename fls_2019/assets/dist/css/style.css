@@ -78,8 +78,8 @@ body header a.navbar-brand {
     transition: 500ms all ease; }
     @media (max-width: 786px) {
       body header a.navbar-brand img {
-        min-width: 457.5px;
-        width: 457.5px; } }
+        min-width: 175px;
+        width: 175px; } }
     @media (min-width: 786px) {
       body header a.navbar-brand img {
         margin-right: 1rem;
@@ -470,8 +470,8 @@ body header a.navbar-brand {
     transition: 500ms all ease; }
     @media (max-width: 786px) {
       body header a.navbar-brand img {
-        min-width: 457.5px;
-        width: 457.5px; } }
+        min-width: 175px;
+        width: 175px; } }
     @media (min-width: 786px) {
       body header a.navbar-brand img {
         margin-right: 1rem;
