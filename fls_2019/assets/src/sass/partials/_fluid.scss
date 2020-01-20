@@ -421,7 +421,7 @@ html {
 						div {
 							&#cfCTA_Img {
 								div {
-								    display: inline-block;
+								    display:inline-flex;
 								    background-color: rgba(0,0,0,.4);
 								    padding: 2em;
 								    text-align: left;
@@ -429,7 +429,8 @@ html {
 									h3 {
 										color: $alternate;
 									    text-shadow: 0 0 0.6em rgba(30,43,50,.12);
-									    font-size: 1.5em;
+								        font-size: 1.75em;
+									    font-weight: bold;
 										small {
 										    font-size: 1.4rem;
 										    font-weight: 100;
