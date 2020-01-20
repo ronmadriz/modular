@@ -426,6 +426,9 @@ html {
 								    padding: 1em 2em 1.25em;
 								    text-align: left;
 								    border-radius: 4px;
+								    @media(min-width:786px){
+								    	margin-bottom:5rem;
+								    }
 									h3 {
 										color: $alternate;
 									    text-shadow: 0 0 0.6em rgba(30,43,50,.12);
