@@ -78,14 +78,11 @@ body header a.navbar-brand {
     transition: 500ms all ease; }
     @media (max-width: 786px) {
       body header a.navbar-brand img {
-        max-height: 90px;
-        min-width: 457.5px;
-        width: auto; } }
+        min-width: 457.5px; } }
     @media (min-width: 786px) {
       body header a.navbar-brand img {
         margin-right: 1rem;
-        min-width: 457.5px;
-        min-width: 100%; } }
+        width: 457.5px; } }
 
 body header span.nav_tel {
   font-weight: bold;
@@ -472,14 +469,11 @@ body header a.navbar-brand {
     transition: 500ms all ease; }
     @media (max-width: 786px) {
       body header a.navbar-brand img {
-        max-height: 90px;
-        min-width: 457.5px;
-        width: auto; } }
+        min-width: 457.5px; } }
     @media (min-width: 786px) {
       body header a.navbar-brand img {
         margin-right: 1rem;
-        min-width: 457.5px;
-        min-width: 100%; } }
+        width: 457.5px; } }
 
 body header span.nav_tel {
   font-weight: bold;

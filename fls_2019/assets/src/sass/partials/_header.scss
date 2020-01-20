@@ -7,14 +7,11 @@ body {
 				img {
 					transition: 500ms all ease;
 					@media (max-width: 786px) {
-					    max-height: 90px;
 					    min-width: 457.5px;
-					    width: auto;
 					}
 					@media (min-width: 786px) {
 						margin-right:1rem;
-						min-width: 457.5px;
-						min-width: 100%;
+						width: 457.5px;
 					}
 				}
 			}
