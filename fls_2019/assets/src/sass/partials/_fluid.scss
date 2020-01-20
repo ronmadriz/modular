@@ -421,9 +421,21 @@ html {
 						div {
 							&#cfCTA_Img {
 								span {
-									color: $alternate;
-									text-shadow: 0 0 0.6em rgba(30,43,50,0.12);
-									font-size: 2.5em;									
+									min-width: 20rem;
+								    background-color: rgba(0,0,0,0.4);
+								    padding: 2em;
+								    text-align: left;
+								    border-radius: 4px;
+									h3 {
+										color: $alternate;
+										text-shadow: 0 0 0.6em rgba(30,43,50,0.12);
+										font-size: 2.5em;
+										small {
+											font-size: 1.4em;
+											font-weight: 100;
+											letter-spacing: 0.6px;											
+										}										
+									}
 								}
 							}
 						}
