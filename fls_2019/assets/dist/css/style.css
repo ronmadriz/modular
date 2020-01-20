@@ -79,6 +79,7 @@ body header a.navbar-brand {
     @media (max-width: 786px) {
       body header a.navbar-brand img {
         max-height: 90px;
+        min-width: 457.5px;
         width: auto; } }
     @media (min-width: 786px) {
       body header a.navbar-brand img {
@@ -472,6 +473,7 @@ body header a.navbar-brand {
     @media (max-width: 786px) {
       body header a.navbar-brand img {
         max-height: 90px;
+        min-width: 457.5px;
         width: auto; } }
     @media (min-width: 786px) {
       body header a.navbar-brand img {
