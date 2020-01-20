@@ -461,7 +461,7 @@ if ($contact_form_code) {
 			<div id="cfCTA_form" class="col-12 col-md-6"><?php echo do_shortcode('[contact-form-7 id="117830" title="Contact CTA"]');?></div>
 			<div id="cfCTA_Img" class="col-12 col-md-6">
 				<img src="https://simplifiedsafety.com/media/wysiwyg/staff/ssi/staff-at-desk-michael.jpg" alt="" class="img-fluid d-md-none">
-				<span class="align-self-baseline">Michael Hannah <small>Fall Protection Specialist</small></span>
+				<span class="align-self-baseline"><h3>Michael Hannah <small>Fall Protection Specialist</small></h3></span>
 			</div>
 		</div>
 	</div>
