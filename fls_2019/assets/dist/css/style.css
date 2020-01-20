@@ -73,6 +73,9 @@ body {
 body header a.navbar-brand {
   margin-right: 0;
   color: #156cb3; }
+  @media (min-width: 786px) {
+    body header a.navbar-brand {
+      min-width: 457.5px; } }
   @media (max-width: 786px) {
     body header a.navbar-brand img {
       max-height: 90px;
@@ -462,6 +465,9 @@ html form.lrm-form ul.acf-checkbox-list li {
 body header a.navbar-brand {
   margin-right: 0;
   color: #156cb3; }
+  @media (min-width: 786px) {
+    body header a.navbar-brand {
+      min-width: 457.5px; } }
   @media (max-width: 786px) {
     body header a.navbar-brand img {
       max-height: 90px;
