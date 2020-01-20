@@ -1847,7 +1847,7 @@ html body.solutions-template-solutions-fluid main section#contactFormCTA, html b
   html body.solutions-template-solutions-fluid main section#contactFormCTA div#cfCTA_Img div, html body.industries-template-single-industries-fluid main section#contactFormCTA div#cfCTA_Img div, html body.page-template-fall-protection-101 main section#contactFormCTA div#cfCTA_Img div, html body.page-template-sample-fall-protection-plan main section#contactFormCTA div#cfCTA_Img div, html body.industries-template-single-all-industries main section#contactFormCTA div#cfCTA_Img div, html body.solutions-template-single-all-solutions main section#contactFormCTA div#cfCTA_Img div {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 2em;
+    padding: 1em 2em 1.25em;
     text-align: left;
     border-radius: 4px; }
     html body.solutions-template-solutions-fluid main section#contactFormCTA div#cfCTA_Img div h3, html body.industries-template-single-industries-fluid main section#contactFormCTA div#cfCTA_Img div h3, html body.page-template-fall-protection-101 main section#contactFormCTA div#cfCTA_Img div h3, html body.page-template-sample-fall-protection-plan main section#contactFormCTA div#cfCTA_Img div h3, html body.industries-template-single-all-industries main section#contactFormCTA div#cfCTA_Img div h3, html body.solutions-template-single-all-solutions main section#contactFormCTA div#cfCTA_Img div h3 {
