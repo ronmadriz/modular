@@ -1833,7 +1833,7 @@ html body.solutions-template-solutions-fluid main section#contactFormCTA, html b
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0; }
+  padding: 1rem 0; }
   @media (min-width: 768px) {
     html body.solutions-template-solutions-fluid main section#contactFormCTA, html body.industries-template-single-industries-fluid main section#contactFormCTA, html body.page-template-fall-protection-101 main section#contactFormCTA, html body.page-template-sample-fall-protection-plan main section#contactFormCTA, html body.industries-template-single-all-industries main section#contactFormCTA, html body.solutions-template-single-all-solutions main section#contactFormCTA {
       padding: 10rem; } }
