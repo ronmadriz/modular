@@ -74,8 +74,8 @@ body header a.navbar-brand {
   margin-right: 0;
   color: #156cb3; }
   body header a.navbar-brand img {
-    -webkit-transition: 1s all ease;
-    transition: 1s all ease; }
+    -webkit-transition: 750ms all ease;
+    transition: 750ms all ease; }
     @media (max-width: 786px) {
       body header a.navbar-brand img {
         max-height: 90px;
@@ -467,8 +467,8 @@ body header a.navbar-brand {
   margin-right: 0;
   color: #156cb3; }
   body header a.navbar-brand img {
-    -webkit-transition: 1s all ease;
-    transition: 1s all ease; }
+    -webkit-transition: 750ms all ease;
+    transition: 750ms all ease; }
     @media (max-width: 786px) {
       body header a.navbar-brand img {
         max-height: 90px;
