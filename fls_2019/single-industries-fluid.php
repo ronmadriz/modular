@@ -458,10 +458,10 @@ if ($contact_form_code) {
 <section id="contactFormCTA">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-12 col-md-6"><?php echo do_shortcode('[contact-form-7 id="117830" title="Contact CTA"]');?></div>
-			<div class="col-12 col-md-6">
+			<div id="cfCTA_form" class="col-12 col-md-6"><?php echo do_shortcode('[contact-form-7 id="117830" title="Contact CTA"]');?></div>
+			<div id="cfCTA_Img" class="col-12 col-md-6">
 				<img src="https://simplifiedsafety.com/media/wysiwyg/staff/ssi/staff-at-desk-michael.jpg" alt="" class="img-fluid d-md-none">
-				<span>Michael Hannah <small>Fall Protection Specialist</small></span>
+				<span class="align-self-baseline">Michael Hannah <small>Fall Protection Specialist</small></span>
 			</div>
 		</div>
 	</div>
