@@ -37,7 +37,6 @@ j(document).ready(function(){
         var currentPosition = parseInt(view.css("left"));
         if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 100});
     });
-   // j(".mCustomScrollbar").mCustomScrollbar({axis:"x"});
 });
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
@@ -101,3 +100,6 @@ var $btns = j('.btn_filter').click(function() {
   $btns.removeClass('active');
   j(this).addClass('active');
 })
+j(document).scroll(function() {
+  j('.navbar-brand').css({width: j(this).scrollTop() > 100? "280px":"457.5px"});
+});
