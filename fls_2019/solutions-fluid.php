@@ -137,7 +137,7 @@ if ($image_callout['callout']) {
 				$callout_title   = get_sub_field('title');
 				$callout_content = get_sub_field('content');
 				$callout_link    = get_sub_field('link');
-				if (get_sub_field('layout') == 0) {
+				if (get_sub_field('layout') == 'yes') {
 					echo '<!-- false -->'.PHP_EOL;
 					echo '<div class="img col-12 col-md-6">'.PHP_EOL;
 					echo (!empty($callout_image)?(!empty($callout_link)?'<a href="'.$callout_link.'">':'').'<img src="'.$callout_image['url'].'" class="img-fluid">'.(!empty($callout_link)?'</a>':'').'<div class="content text-center text-md-left">'.PHP_EOL:'<div class="content text-center text-md-left">');
@@ -145,7 +145,7 @@ if ($image_callout['callout']) {
 					echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
 					echo '</div>'.PHP_EOL;
 					echo '</div>'.PHP_EOL;
-				} elseif (get_sub_field('layout') == 1) {
+				} elseif (get_sub_field('layout') == 'no') {
 					echo '<!-- true -->'.PHP_EOL;
 					echo '<div class="img col-12 col-md-4">'.PHP_EOL;
 					echo (!empty($callout_image)?(!empty($callout_link)?'<a href="'.$callout_link.'">':'').'<img src="'.$callout_image['url'].'" class="img-fluid">'.(!empty($callout_link)?'</a>':'').'</div><div class="content text-center text-md-left col-12 col-md-8">'.PHP_EOL:'<div class="content text-center text-md-left col-12">');
