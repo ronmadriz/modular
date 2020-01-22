@@ -137,7 +137,7 @@ if ($image_callout['callout']) {
 				$callout_title   = get_sub_field('title');
 				$callout_content = get_sub_field('content');
 				$callout_link    = get_sub_field('link');
-				if (get_sub_field('layout') == 1) {
+				if (get_sub_field('layout') == 0) {
 					echo '<div class="img col-12 col-md-6">'.PHP_EOL;
 					echo (!empty($callout_image)?(!empty($callout_link)?'<a href="'.$callout_link.'">':'').'<img src="'.$callout_image['url'].'" class="img-fluid">'.(!empty($callout_link)?'</a>':'').'<div class="content text-center text-md-left">'.PHP_EOL:'<div class="content text-center text-md-left">');
 					echo (!empty($callout_title)?'<h3>'.(!empty($callout_link)?'<a href="'.$callout_link.'">':'').$callout_title.(!empty($callout_link)?'</a>':'').'</h3>'.PHP_EOL:'');
