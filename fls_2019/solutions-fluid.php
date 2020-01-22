@@ -137,7 +137,7 @@ if ($image_callout['callout']) {
 				$callout_title   = get_sub_field('title');
 				$callout_content = get_sub_field('content');
 				$callout_link    = get_sub_field('link');
-				if (get_sub_field('layout') == 0) {
+				if (get_sub_field('layout') == True) {
 					echo "off";
 				}
 				echo '<div class="img col-12 col-md-6">'.PHP_EOL;
