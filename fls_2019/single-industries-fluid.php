@@ -441,6 +441,13 @@ if (have_rows('contact_form_cta')) {
 	echo '<section id="contactFormCTA">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
+	while (have_rows('contact_form_cta')) {
+		the_row();
+		$cfcta_form          = get_sub_field('form');
+		$cfcta_img           = get_sub_field('image');
+		$cfcta_employee_name = get_sub_field('employee_name');
+		$cfcta_employee_role = get_sub_field('employee_role');
+	}
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
