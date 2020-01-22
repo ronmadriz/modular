@@ -454,10 +454,10 @@ if ($contact_form_code) {
 if (have_rows('contact_form_cta')) {
 	while (have_rows('contact_form_cta')) {
 		the_row();
-		$cfcta_form          = $get_subfield('form');
-		$cfcta_img           = $get_subfield('image');
-		$cfcta_employee_name = $get_subfield('employee_name');
-		$cfcta_employee_role = $get_subfield('employee_role');
+		$cfcta_form          = get_sub_field('form');
+		$cfcta_img           = get_sub_field('image');
+		$cfcta_employee_name = get_sub_field('employee_name');
+		$cfcta_employee_role = get_sub_field('employee_role');
 		echo '<style>section#contactFormCTA {background-image: url('.(!empty($cfcta_img)?$ctcta_img:'https://sandbox.fall-arrest.com/wp-content/uploads/2020/01/staff-at-desk-michael.jpg').');}</style>'.PHP_EOL;
 		echo '<section id="contactFormCTA">'.PHP_EOL;
 		echo '<div class="container-fluid">'.PHP_EOL;
