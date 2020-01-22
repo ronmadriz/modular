@@ -450,7 +450,7 @@ if (have_rows('contact_form_cta')) {
 		echo '<style>section#contactFormCTA {background-image: url('.(!empty($cfcta_img)?$ctcta_img['url']:'https://sandbox.fall-arrest.com/wp-content/uploads/2020/01/staff-at-desk-michael.jpg').');}</style>'.PHP_EOL;
 		echo '<div id="cfCTA_form" class="col-12 col-md-6">'.do_shortcode($ctcta_form).'</div>'.PHP_EOL;
 		echo '<div id="cfCTA_Img" class="d-md-flex justify-content-center align-items-md-end col-12 col-md-6">'.PHP_EOL;
-		echo '<img src="'.(!empty($cfcta_img)?$ctcta_img['url']:'https://sandbox.fall-arrest.com/wp-content/uploads/2020/01/staff-at-desk-michael.jpg').'" alt="" class="img-fluid d-md-none">'.PHP_EOL;
+		echo (!empty($cfcta_img)?'<img src="'.$ctcta_img['url'].'" alt="" class="img-fluid d-md-none">':'').PHP_EOL;
 		// echo '<div><h3>'.$cfcta_employee_name.' <small>'.$cfcta_employee_role.'</small></h3></div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 	}
