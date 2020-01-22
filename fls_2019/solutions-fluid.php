@@ -137,17 +137,15 @@ if ($image_callout['callout']) {
 				$callout_title   = get_sub_field('title');
 				$callout_content = get_sub_field('content');
 				$callout_link    = get_sub_field('link');
-				if ($callout_layout) {
-					echo (!empty($callout_image)?'<div class="img col-12 col-md-4">'.(!empty($callout_link)?'<a href="'.$callout_link.'">':'').'<img src="'.$callout_image['url'].'" class="img-fluid">'.(!empty($callout_link)?'</a>':'').'</div><div class="content text-center text-md-left col-12 col-md-8">'.PHP_EOL:'<div class="content text-center text-md-left col-12">');
-					echo (!empty($callout_title)?'<h3>'.(!empty($callout_link)?'<a href="'.$callout_link.'">':'').$callout_title.(!empty($callout_link)?'</a>':'').'</h3>'.PHP_EOL:'');
-					echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
-					echo '</div>'.PHP_EOL;
+				if (get_sub_field('layout') == 'Multi Column') {
+					echo '<div class="img col-12 col-md-12">'.PHP_EOL;
 				} else {
-					echo (!empty($callout_image)?'<div class="img col-12 col-md-4"><img src="'.$callout_image['url'].'" class="img-fluid"></div><div class="content text-center text-md-left col-12 col-md-8">'.PHP_EOL:'<div class="content text-center text-md-left col-12">');
-					echo (!empty($callout_title)?'<h3>'.$callout_title.'</h3>'.PHP_EOL:'');
-					echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
-					echo '</div>'.PHP_EOL;
+					echo '<div class="img col-12 col-md-4">'.PHP_EOL;
 				}
+				echo (!empty($callout_image)?(!empty($callout_link)?'<a href="'.$callout_link.'">':'').'<img src="'.$callout_image['url'].'" class="img-fluid">'.(!empty($callout_link)?'</a>':'').'</div><div class="content text-center text-md-left col-12 col-md-8">'.PHP_EOL:'<div class="content text-center text-md-left col-12">');
+				echo (!empty($callout_title)?'<h3>'.(!empty($callout_link)?'<a href="'.$callout_link.'">':'').$callout_title.(!empty($callout_link)?'</a>':'').'</h3>'.PHP_EOL:'');
+				echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
+				echo '</div>'.PHP_EOL;
 				echo '</div>'.PHP_EOL;
 			}
 		}
