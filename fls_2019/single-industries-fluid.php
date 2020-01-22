@@ -437,10 +437,10 @@ if (have_rows('osha') && !empty($osha)) {
 	echo '</section>'.PHP_EOL;
 }
 // Contact Form
+echo '<section id="contactFormCTA">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
+echo '<div class="row">'.PHP_EOL;
 if (have_rows('contact_form_cta')) {
-	echo '<section id="contactFormCTA">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
 	while (have_rows('contact_form_cta')) {
 		the_row();
 		$cfcta_form          = get_sub_field('form');
@@ -454,9 +454,9 @@ if (have_rows('contact_form_cta')) {
 		// echo '<div><h3>'.$cfcta_employee_name.' <small>'.$cfcta_employee_role.'</small></h3></div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 	}
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
 }
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</section>'.PHP_EOL;
 include 'footer-fluid.php';
 ?>
