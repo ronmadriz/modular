@@ -130,7 +130,7 @@ if ($image_callout['callout']) {
 		$co_title = get_sub_field('callout_title');
 		echo (!empty($co_title)?'<div class="row"><div class="section_title col-12"><h2>'.$co_title.'</h2></div></div>'.PHP_EOL:'');
 		if (have_rows('callout')) {
-			echo '<div class="row justify-content-center item">'.PHP_EOL;
+			echo '<div class="row item">'.PHP_EOL;
 			while (have_rows('callout')) {
 				the_row();
 				$callout_image   = get_sub_field('image');
