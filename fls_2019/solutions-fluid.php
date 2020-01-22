@@ -150,7 +150,6 @@ if ($image_callout['callout']) {
 					echo (!empty($callout_title)?'<h3>'.(!empty($callout_link)?'<a href="'.$callout_link.'">':'').$callout_title.(!empty($callout_link)?'</a>':'').'</h3>'.PHP_EOL:'');
 					echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
 					echo '</div>'.PHP_EOL;
-					echo '</div>'.PHP_EOL;
 				}
 			}
 			echo '</div>'.PHP_EOL;
