@@ -437,21 +437,10 @@ if (have_rows('osha') && !empty($osha)) {
 	echo '</section>'.PHP_EOL;
 }
 // Contact Form
-$contact_form_code = get_field('contact_form');
-$cf_contactForm    = do_shortcode($contact_form_code);
-if ($contact_form_code) {
-	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="col-12"><h2 class="text-center">How can we help?</h2></div></div></div></section>'.PHP_EOL;
-	echo '<section id="cf_contactForm">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;// made fluid
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="col-12">'.PHP_EOL;
-	echo $cf_contactForm;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-}
 if (have_rows('contact_form_cta')) {
+	echo '<section id="contactFormCTA">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="row">'.PHP_EOL;
 	while (have_rows('contact_form_cta')) {
 		the_row();
 		$cfcta_form          = get_sub_field('form');
@@ -459,18 +448,15 @@ if (have_rows('contact_form_cta')) {
 		$cfcta_employee_name = get_sub_field('employee_name');
 		$cfcta_employee_role = get_sub_field('employee_role');
 		echo '<style>section#contactFormCTA {background-image: url('.(!empty($cfcta_img)?$ctcta_img:'https://sandbox.fall-arrest.com/wp-content/uploads/2020/01/staff-at-desk-michael.jpg').');}</style>'.PHP_EOL;
-		echo '<section id="contactFormCTA">'.PHP_EOL;
-		echo '<div class="container-fluid">'.PHP_EOL;
-		echo '<div class="row">'.PHP_EOL;
 		echo '<div id="cfCTA_form" class="col-12 col-md-6">'.do_shortcode(''.$ctcta_form.'').'></div>'.PHP_EOL;
 		echo '<div id="cfCTA_Img" class="d-md-flex justify-content-center align-items-md-end col-12 col-md-6">'.PHP_EOL;
 		echo '<img src="'.(!empty($cfcta_img)?$ctcta_img:'https://sandbox.fall-arrest.com/wp-content/uploads/2020/01/staff-at-desk-michael.jpg').'" alt="" class="img-fluid d-md-none">'.PHP_EOL;
 		// echo '<div><h3>'.$cfcta_employee_name.' <small>'.$cfcta_employee_role.'</small></h3></div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
-		echo '</div>'.PHP_EOL;
-		echo '</div>'.PHP_EOL;
-		echo '</section>'.PHP_EOL;
 	}
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
 }
 include 'footer-fluid.php';
 ?>
