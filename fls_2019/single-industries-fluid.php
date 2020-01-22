@@ -437,6 +437,22 @@ if (have_rows('osha') && !empty($osha)) {
 	echo '</section>'.PHP_EOL;
 }
 // Contact Form
+
+$contact_form_code = get_field('contact_form');
+$cf_contactForm    = do_shortcode($contact_form_code);
+if ($contact_form_code) {
+	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="col-12"><h2 class="text-center">How can we help?</h2></div></div></div></section>'.PHP_EOL;
+	echo '<section id="cf_contactForm">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;// made fluid
+	echo '<div class="row">'.PHP_EOL;
+	echo '<div class="col-12">'.PHP_EOL;
+	echo $cf_contactForm;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+}
+
 echo '<section id="contactFormCTA">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
