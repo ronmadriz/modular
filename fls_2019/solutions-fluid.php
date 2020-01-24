@@ -147,6 +147,7 @@ if ($image_callout['callout']) {
 					echo '</div>'.PHP_EOL;
 					echo '</div>'.PHP_EOL;
 				} else {
+					echo '<div class="col-12 col-md-6">'.PHP_EOL;
 					echo '<img src="'.$callout_image['url'].'" alt="" class="img-fluid">'.PHP_EOL;
 					echo '<div class="content text-center text-md-left">'.PHP_EOL;
 					echo '<h3>'.$callout_title.'</h3>'.PHP_EOL;
@@ -173,6 +174,7 @@ if ($image_callout['callout']) {
 					echo '</div>'.PHP_EOL;
 					echo '</div>'.PHP_EOL;
 				} else {
+					echo '<div class="col-12">'.PHP_EOL;
 					echo '<img src="'.$callout_image['url'].'" alt="" class="img-fluid">'.PHP_EOL;
 					echo '<div class="content text-center text-md-left">'.PHP_EOL;
 					echo '<h3>'.$callout_title.'</h3>'.PHP_EOL;
