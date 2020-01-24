@@ -141,6 +141,7 @@ if ($image_callout['callout']) {
 				$layout          = $callout_layout['value'];
 				if ($layout == 'yes') {
 					echo '<div class="col-12 col-md-6">'.PHP_EOL;
+					echo '<!-- HI -->'.PHP_EOL;
 				} else {
 					echo '<div class="col-12">'.PHP_EOL;
 				}
