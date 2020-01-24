@@ -237,16 +237,17 @@ html {
 									min-width:100%;
 								}
 							}
+							h3 {
+								margin-top: 1.5rem;
+								text-transform: uppercase;
+								margin-bottom: .5rem;
+								line-height: 1.2;
+								font-family: $tertiary;
+								font-weight: 600;
+								font-size: 1.375rem;
+							}
 							&.content {
-								h3 {
-									margin-top: 1.5rem;
-									text-transform: uppercase;
-									margin-bottom: .5rem;
-									line-height: 1.2;
-									font-family: $tertiary;
-									font-weight: 600;
-									font-size: 1.375rem;
-								}
+								padding-left:30px;
 							}
 						}
 					}					
