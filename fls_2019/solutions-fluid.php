@@ -137,22 +137,16 @@ if ($image_callout['callout']) {
 				$callout_title   = get_sub_field('title');
 				$callout_content = get_sub_field('content');
 				$callout_link    = get_sub_field('link');
-				if (get_sub_field('layout') == 'yes') {
-					echo '<!-- yes -->'.PHP_EOL;
-					echo '<div class="img col-12 col-md-6">'.PHP_EOL;
-					echo (!empty($callout_image)?(!empty($callout_link)?'<a href="'.$callout_link.'">':'').'<img src="'.$callout_image['url'].'" class="img-fluid">'.(!empty($callout_link)?'</a>':'').'<div class="content text-center text-md-left">'.PHP_EOL:'<div class="content text-center text-md-left">');
-					echo (!empty($callout_title)?'<h3>'.(!empty($callout_link)?'<a href="'.$callout_link.'">':'').$callout_title.(!empty($callout_link)?'</a>':'').'</h3>'.PHP_EOL:'');
-					echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
-					echo '</div>'.PHP_EOL;
-					echo '</div>'.PHP_EOL;
-				} elseif (get_sub_field('layout') == 'no') {
-					echo '<!-- no -->'.PHP_EOL;
-					echo '<div class="img col-12 col-md-4">'.PHP_EOL;
-					echo (!empty($callout_image)?(!empty($callout_link)?'<a href="'.$callout_link.'">':'').'<img src="'.$callout_image['url'].'" class="img-fluid">'.(!empty($callout_link)?'</a>':'').'</div><div class="content text-center text-md-left col-12 col-md-8">'.PHP_EOL:'<div class="content text-center text-md-left col-12">');
-					echo (!empty($callout_title)?'<h3>'.(!empty($callout_link)?'<a href="'.$callout_link.'">':'').$callout_title.(!empty($callout_link)?'</a>':'').'</h3>'.PHP_EOL:'');
-					echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
-					echo '</div>'.PHP_EOL;
-				}
+				?>
+				<div class="item col-12">
+					<a href="" class="d-block d-md-inline-flex"><img src="https://via.placeholder.com/300x250" alt="" class="img-fluid"></a>
+					<span class="d-block d-md-inline-flex">
+						<h3><a href="#">Section Title</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tortor sit amet nunc consectetur dapibus vel at urna. Fusce faucibus quis lectus at scelerisque.</p>
+					</span>
+				</div>
+				<?php
+
 			}
 			echo '</div>'.PHP_EOL;
 		}
