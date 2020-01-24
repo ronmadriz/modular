@@ -130,7 +130,7 @@ if ($image_callout['callout']) {
 		$co_title = get_sub_field('callout_title');
 		echo (!empty($co_title)?'<div class="row"><div class="section_title col-12"><h2>'.$co_title.'</h2></div></div>'.PHP_EOL:'');
 		if (have_rows('callout')) {
-			echo '<div class="row item">'.PHP_EOL;
+			echo '<div class="row">'.PHP_EOL;
 			while (have_rows('callout')) {
 				the_row();
 				$callout_image   = get_sub_field('image');
@@ -139,12 +139,12 @@ if ($image_callout['callout']) {
 				$callout_link    = get_sub_field('link');
 				?>
 				<div class="item col-12">
-					<a href="" class="d-block d-md-inline-flex"><img src="https://via.placeholder.com/300x250" alt="" class="img-fluid"></a>
-					<span class="d-block d-md-inline-flex">
-						<h3><a href="#">Section Title</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tortor sit amet nunc consectetur dapibus vel at urna. Fusce faucibus quis lectus at scelerisque.</p>
-					</span>
-				</div>
+									<a href="" class="d-block d-md-inline-flex"><img src="https://via.placeholder.com/300x250" alt="" class="img-fluid"></a>
+									<span class="d-block d-md-inline-flex">
+										<h3><a href="#">Section Title</a></h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tortor sit amet nunc consectetur dapibus vel at urna. Fusce faucibus quis lectus at scelerisque.</p>
+									</span>
+								</div>
 				<?php
 
 			}
