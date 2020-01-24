@@ -164,7 +164,7 @@ if ($image_callout['callout']) {
 				$callout_title   = get_sub_field('title');
 				$callout_content = get_sub_field('content');
 				$callout_link    = get_sub_field('link');
-				echo '<div class="row">'.PHP_EOL;
+				echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
 				if ($callout_link) {
 					echo '<div class="img col-12 col-md-4">'.PHP_EOL;
 					echo '<a href="'.esc_url($callout_link).'"><img src="'.$callout_image['url'].'" alt="" class="img-fluid"></a>'.PHP_EOL;
