@@ -166,7 +166,7 @@ if ($image_callout['callout']) {
 				$callout_link    = get_sub_field('link');
 				echo '<div class="row">'.PHP_EOL;
 				if ($callout_link) {
-					echo '<div class="img col-12 col-md-4">'.PHP_EOL;
+					echo '<div class="img align-self-center col-12 col-md-4">'.PHP_EOL;
 					echo '<a href="'.esc_url($callout_link).'"><img src="'.$callout_image['url'].'" alt="" class="img-fluid"></a>'.PHP_EOL;
 					echo '</div>'.PHP_EOL;
 					echo '<div class="content col-12 col-md-8 align-self-center text-center text-md-left">'.PHP_EOL;
@@ -175,7 +175,7 @@ if ($image_callout['callout']) {
 					echo '</div>'.PHP_EOL;
 					echo '</div>'.PHP_EOL;
 				} else {
-					echo '<div class="img col-12 col-md-4">'.PHP_EOL;
+					echo '<div class="img align-self-center col-12 col-md-4">'.PHP_EOL;
 					echo '<img src="'.$callout_image['url'].'" alt="" class="img-fluid">'.PHP_EOL;
 					echo '</div>'.PHP_EOL;
 					echo '<div class="content col-12 col-md-8 align-self-center text-center text-md-left">'.PHP_EOL;
