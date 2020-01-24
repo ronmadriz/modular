@@ -138,10 +138,10 @@ if ($image_callout['callout']) {
 				$callout_content = get_sub_field('content');
 				$callout_link    = get_sub_field('link');
 				echo '<div class="img col-12 col-md-6">'.PHP_EOL;
-				echo '<a href="#"><img src="https://via.placeholder.com/1200x650" alt="" class="img-fluid"></a>'.PHP_EOL;
+				echo '<a href="'.$callout_link['url'].'"><img src="'.$callout_image['url'].'" alt="" class="img-fluid"></a>'.PHP_EOL;
 				echo '<div class="content text-center text-md-left">'.PHP_EOL;
-				echo '<h3><a href="#">Section Title</a></h3>'.PHP_EOL;
-				echo '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tortor sit amet nunc consectetur dapibus vel at urna. Fusce faucibus quis lectus at scelerisque.</p>'.PHP_EOL;
+				echo '<h3><a href="'.$callout_link['url'].'">'.$callout_title.'</a></h3>'.PHP_EOL;
+				echo (!empty($callout_content)?'<p>'.$callout_content.'</p>'.PHP_EOL:'');
 				echo '</div>'.PHP_EOL;
 				echo '</div>'.PHP_EOL;
 			}
