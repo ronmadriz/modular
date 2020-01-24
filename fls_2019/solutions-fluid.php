@@ -214,7 +214,7 @@ if (have_rows('icons')) {
 						$fl_icon_link = get_sub_field('link_to_page');
 						$fl_link      = get_sub_field('link');
 						echo '<div class="row h-100 justify-content-center align-items-md-center">'.PHP_EOL;
-						echo '<div class="fl_thumb col-3 col-md-2 col-lg-1 text-md-center">'.($fl_icon_link?'<a href="'.$fl_link['url'].'"><img src="'.$fl_image['url'].'" class="img-fluid" alt=""></a>':'<img src="'.$fl_image['url'].'" class="img-fluid" alt="">').'</div>'.PHP_EOL;
+						echo '<div class="fl_thumb col-3 col-md-2 col-lg-1 text-md-center">'.($fl_icon_link?'<a href="'.$fl_link['url'].'"><img src="'.$fl_image['url'].'" class="img-fluid" alt="'.$fl_title.'"></a>':'<img src="'.$fl_image['url'].'" class="img-fluid" alt="'.$fl_title.'">').'</div>'.PHP_EOL;
 						echo '<div class="fl_content col-9 col-md-10 col-lg-11">'.PHP_EOL;
 						if ($fl_title && $fl_icon_link) {
 							echo '<h3><a href="'.$fl_link['url'].'">'.$fl_title.'</a></h3>'.PHP_EOL;
