@@ -140,7 +140,7 @@ if ($image_callout['callout']) {
 				$callout_link    = get_sub_field('link');
 				if ($callout_link) {
 					echo '<div class="col-12 col-md-6">'.PHP_EOL;
-					echo '<a href="'.esc_url($callout_link).'"><img src="'.$callout_image['url'].'" alt="" class="img-fluid"></a>'.PHP_EOL;
+					echo '<a href="'.esc_url($callout_link).'"><img src="'.$callout_image['url'].'" alt="'.$callout_title.'" class="img-fluid"></a>'.PHP_EOL;
 					echo '<div class="text-center text-md-left">'.PHP_EOL;
 					echo '<h3><a href="'.esc_url($callout_link).'">'.$callout_title.'</a></h3>'.PHP_EOL;
 					echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
@@ -148,7 +148,7 @@ if ($image_callout['callout']) {
 					echo '</div>'.PHP_EOL;
 				} else {
 					echo '<div class="col-12 col-md-6">'.PHP_EOL;
-					echo '<img src="'.$callout_image['url'].'" alt="" class="img-fluid">'.PHP_EOL;
+					echo '<img src="'.$callout_image['url'].'" alt="'.$callout_title.'" class="img-fluid">'.PHP_EOL;
 					echo '<div class="text-center text-md-left">'.PHP_EOL;
 					echo '<h3>'.$callout_title.'</h3>'.PHP_EOL;
 					echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
@@ -167,7 +167,7 @@ if ($image_callout['callout']) {
 				echo '<div class="row">'.PHP_EOL;
 				if ($callout_link) {
 					echo '<div class="img col-12 col-md-4">'.PHP_EOL;
-					echo '<a href="'.esc_url($callout_link).'"><img src="'.$callout_image['url'].'" alt="" class="img-fluid"></a>'.PHP_EOL;
+					echo '<a href="'.esc_url($callout_link).'"><img src="'.$callout_image['url'].'" alt="'.$callout_title.'" class="img-fluid"></a>'.PHP_EOL;
 					echo '</div>'.PHP_EOL;
 					echo '<div class="content col-12 col-md-8 text-center text-md-left">'.PHP_EOL;
 					echo '<h3><a href="'.esc_url($callout_link).'">'.$callout_title.'</a></h3>'.PHP_EOL;
@@ -176,7 +176,7 @@ if ($image_callout['callout']) {
 					echo '</div>'.PHP_EOL;
 				} else {
 					echo '<div class="img col-12 col-md-4">'.PHP_EOL;
-					echo '<img src="'.$callout_image['url'].'" alt="" class="img-fluid">'.PHP_EOL;
+					echo '<img src="'.$callout_image['url'].'" alt="'.$callout_title.'" class="img-fluid">'.PHP_EOL;
 					echo '</div>'.PHP_EOL;
 					echo '<div class="content col-12 col-md-8 text-center text-md-left">'.PHP_EOL;
 					echo '<h3>'.$callout_title.'</h3>'.PHP_EOL;
