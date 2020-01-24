@@ -127,16 +127,11 @@ if ($image_callout['callout']) {
 	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('image_callout')) {
 		the_row();
-		$co_title = get_sub_field('callout_title');
+		$co_title  = get_sub_field('callout_title');
+		$co_layout = get_sub_field('layout');
 		echo (!empty($co_title)?'<div class="row"><div class="section_title col-12"><h2>'.$co_title.'</h2></div></div>'.PHP_EOL:'');
-		echo '<div class="row">'.PHP_EOL;
-		if (get_sub_field('layout')) {
-			echo '<div class="col-12 col-md-6">'.PHP_EOL;
-			echo '<!-- HI -->'.PHP_EOL;
-		} else {
-			echo '<div class="col-12">'.PHP_EOL;
-		}
-		if (have_rows('callout')) {
+		if ($co_layout && have_rows('callout')) {
+			echo '<div class="row">'.PHP_EOL;
 			while (have_rows('callout')) {
 				the_row();
 				$callout_image   = get_sub_field('image');
@@ -144,10 +139,12 @@ if ($image_callout['callout']) {
 				$callout_content = get_sub_field('content');
 				$callout_link    = get_sub_field('link');
 				if ($callout_link) {
+					echo '<div class="col-12 col-md-6">'.PHP_EOL;
 					echo '<a href="'.esc_url($callout_link).'"><img src="'.$callout_image['url'].'" alt="" class="img-fluid"></a>'.PHP_EOL;
 					echo '<div class="content text-center text-md-left">'.PHP_EOL;
 					echo '<h3><a href="'.esc_url($callout_link).'">'.$callout_title.'</a></h3>'.PHP_EOL;
 					echo (!empty($callout_content)?'<p>'.$callout_content.'</p>'.PHP_EOL:'');
+					echo '</div>'.PHP_EOL;
 					echo '</div>'.PHP_EOL;
 				} else {
 					echo '<img src="'.$callout_image['url'].'" alt="" class="img-fluid">'.PHP_EOL;
@@ -155,12 +152,37 @@ if ($image_callout['callout']) {
 					echo '<h3>'.$callout_title.'</h3>'.PHP_EOL;
 					echo (!empty($callout_content)?'<p>'.$callout_content.'</p>'.PHP_EOL:'');
 					echo '</div>'.PHP_EOL;
+					echo '</div>'.PHP_EOL;
 				}
-
+			}
+			echo '</div>'.PHP_EOL;
+		} elseif (have_rows('callout')) {
+			while (have_rows('callout')) {
+				the_row();
+				$callout_image   = get_sub_field('image');
+				$callout_title   = get_sub_field('title');
+				$callout_content = get_sub_field('content');
+				$callout_link    = get_sub_field('link');
+				echo '<div class="row">'.PHP_EOL;
+				if ($callout_link) {
+					echo '<div class="col-12">'.PHP_EOL;
+					echo '<a href="'.esc_url($callout_link).'"><img src="'.$callout_image['url'].'" alt="" class="img-fluid"></a>'.PHP_EOL;
+					echo '<div class="content text-center text-md-left">'.PHP_EOL;
+					echo '<h3><a href="'.esc_url($callout_link).'">'.$callout_title.'</a></h3>'.PHP_EOL;
+					echo (!empty($callout_content)?'<p>'.$callout_content.'</p>'.PHP_EOL:'');
+					echo '</div>'.PHP_EOL;
+					echo '</div>'.PHP_EOL;
+				} else {
+					echo '<img src="'.$callout_image['url'].'" alt="" class="img-fluid">'.PHP_EOL;
+					echo '<div class="content text-center text-md-left">'.PHP_EOL;
+					echo '<h3>'.$callout_title.'</h3>'.PHP_EOL;
+					echo (!empty($callout_content)?'<p>'.$callout_content.'</p>'.PHP_EOL:'');
+					echo '</div>'.PHP_EOL;
+					echo '</div>'.PHP_EOL;
+				}
+				echo '</div>'.PHP_EOL;
 			}
 		}
-		echo '</div>'.PHP_EOL;
-		echo '</div>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
