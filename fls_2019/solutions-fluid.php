@@ -138,8 +138,7 @@ if ($image_callout['callout']) {
 				$callout_content = get_sub_field('content');
 				$callout_link    = get_sub_field('link');
 				$callout_layout  = get_sub_field('layout');
-				$layout          = $callout_layout['value'];
-				if ($layout == 'yes') {
+				if ($callout_layout == 'yes') {
 					echo '<div class="col-12 col-md-6">'.PHP_EOL;
 					echo '<!-- HI -->'.PHP_EOL;
 				} else {
