@@ -48,7 +48,7 @@ if (have_rows('industry_gallery')) {
 		if ($gallery_img) {
 			echo '<ul id="lightSlider" class="gallery list-unstyled cS-hidden">'.PHP_EOL;
 			foreach ($gallery_img as $gImg) {
-				echo '<li data-thumb="'.$gImg['sizes']['medium'].'"><img src="'.$gImg['sizes']['full'].'" /></li>'.PHP_EOL;
+				echo '<li data-thumb="'.$gImg['sizes']['medium'].'"><img src="'.$gImg['sizes']['full'].'" alt="'.$gImg['alt'].'" class="img-fluid" /></li>'.PHP_EOL;
 			}
 			echo '</ul>'.PHP_EOL;
 		}
