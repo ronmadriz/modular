@@ -206,6 +206,7 @@ j(document).ready(function(){
         var currentPosition = parseInt(view.css("left"));
         if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 100});
     });
+    j("#lightSlider").lightSlider();
 });
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
