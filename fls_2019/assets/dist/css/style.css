@@ -1464,7 +1464,7 @@ body section#gallery div#flsCarousel .thumb_nav {
 body section#gallery .lSAction > a {
   opacity: 9; }
 
-@media (amx-width: 786px) {
+@media (max-width: 786px) {
   body section#gallery .lSPager .lSGallery {
     display: none; } }
 
