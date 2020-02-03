@@ -45,11 +45,11 @@ if ($solutions_gallery['gallery_pics']) {
 	echo '<div class="row justify-content-center mb-md-3"><div class="content text-md-center col-12">'.PHP_EOL;
 	while (have_rows('industry_gallery')) {
 		the_row();
-		$gallery_photos = get_sub_field('gallery_pics');
-		if (!empty($gallery_photos)) {
+		$gallery_pics = get_sub_field('gallery_pics');
+		if (!empty($gallery_pics)) {
 			echo '<ul id="lightSlider" class="gallery list-unstyled cS-hidden">'.PHP_EOL;
-			foreach ($gallery_photos as $gImg):
-			echo '<li data-thumb="'.$gImg['sizes']['medium'].'"><img src="'.$gImg['sizes']['full'].'" alt="'.$gImg['alt'].'" class="img-fluid" /></li>'.PHP_EOL;
+			foreach ($gallery_pics as $gallery_pic):
+			echo '<li data-thumb="'.$gallery_pic['sizes']['medium'].'"><img src="'.$gallery_pic['sizes']['full'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid" /></li>'.PHP_EOL;
 			endforeach;
 			echo '</ul>'.PHP_EOL;
 		}
