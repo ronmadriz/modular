@@ -38,7 +38,6 @@ j(document).ready(function(){
         if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 100});
     });
     j("#lightSlider").lightSlider({
-      gallery:true,
       item:1,
       loop:true,
       thumbItem:9,
