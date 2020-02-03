@@ -84,7 +84,7 @@ body {
 			}
 			@media(max-width:786px){
 				.lSPager {
-					.lSGallery {
+					&.lSGallery {
 						display: none;
 					}
 				}				

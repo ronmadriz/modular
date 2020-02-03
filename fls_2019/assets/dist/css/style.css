@@ -1465,7 +1465,7 @@ body section#gallery .lSAction > a {
   opacity: 9; }
 
 @media (max-width: 786px) {
-  body section#gallery .lSPager .lSGallery {
+  body section#gallery .lSPager.lSGallery {
     display: none; } }
 
 html body main #gallery .carousel-inner .carousel-item.active,
