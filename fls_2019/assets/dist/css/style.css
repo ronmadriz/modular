@@ -1461,6 +1461,9 @@ body section#gallery div#flsCarousel .thumb_nav {
   body section#gallery div#flsCarousel .thumb_nav span#thumb_right {
     right: 0px; }
 
+body section#gallery .lSAction > a {
+  opacity: 9; }
+
 html body main #gallery .carousel-inner .carousel-item.active,
 html body main #gallery .carousel-inner .carousel-item-next,
 html body main #gallery .carousel-inner .carousel-item-prev {
