@@ -48,9 +48,9 @@ if ($solutions_gallery['gallery_pics']) {
 		$gallery_photos = get_sub_field('gallery_pics');
 		if ($gallery_photos) {
 			echo '<ul id="lightSlider" class="gallery list-unstyled cS-hidden">'.PHP_EOL;
-			foreach ($gallery_photos as $gImg) {
-				echo '<li data-thumb="'.$gImg['sizes']['medium'].'"><img src="'.$gImg['sizes']['full'].'" alt="'.$gImg['alt'].'" class="img-fluid" /></li>'.PHP_EOL;
-			}
+			foreach ($gallery_photos as $gImg):
+			echo '<li data-thumb="'.$gImg['sizes']['medium'].'"><img src="'.$gImg['sizes']['full'].'" alt="'.$gImg['alt'].'" class="img-fluid" /></li>'.PHP_EOL;
+			endforeach;
 			echo '</ul>'.PHP_EOL;
 		}
 	}
