@@ -47,6 +47,11 @@ j(document).ready(function(){
       enableTouch:true,
       currentPagerPosition:'left',
       speed:600,
+      onSliderLoad: function(el) {
+        el.lightGallery({
+            selector: '#lightSlider .lslide'
+        });
+      },
       responsive : [
           {
               breakpoint:800,
@@ -56,19 +61,7 @@ j(document).ready(function(){
                   slideMargin:6,
                 }
           },
-          {
-              breakpoint:480,
-              settings: {
-                  item:2,
-                  slideMove:1
-                }
-          }
-      ]      
-      onSliderLoad: function(el) {
-        el.lightGallery({
-            selector: '#lightSlider .lslide'
-        });
-      }
+      ]          
     });
     lightGallery(document.getElementById('lightSlider'))
 });

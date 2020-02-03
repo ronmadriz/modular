@@ -1464,6 +1464,10 @@ body section#gallery div#flsCarousel .thumb_nav {
 body section#gallery .lSAction > a {
   opacity: 9; }
 
+@media (min-width: 786px) {
+  body section#gallery .lSPager .lSGallery {
+    display: none; } }
+
 html body main #gallery .carousel-inner .carousel-item.active,
 html body main #gallery .carousel-inner .carousel-item-next,
 html body main #gallery .carousel-inner .carousel-item-prev {
