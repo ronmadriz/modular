@@ -49,7 +49,7 @@ if ($solutions_gallery['gallery_pics']) {
 		if ($gallery_pics) {
 			echo '<ul id="lightSlider" class="gallery list-unstyled">'.PHP_EOL;
 			foreach ($gallery_pics as $gallery_pic) {
-				echo '<li data-thumb="'.$gallery_pic['sizes']['medium'].'"><img src="'.$gallery_pic['url'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid" /></li>'.PHP_EOL;
+				echo '<li data-thumb="'.$gallery_pic['sizes']['medium'].'"><a href="'.$gallery_pic['url'].'"><img src="'.$gallery_pic['url'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid" /></a></li>'.PHP_EOL;
 			}
 			echo '</ul>'.PHP_EOL;
 		}

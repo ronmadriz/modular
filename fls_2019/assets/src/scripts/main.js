@@ -43,6 +43,8 @@ j(document).ready(function(){
       loop:true,
       thumbItem:6,
       slideMargin:0,
+      enableDrag:true,
+      enableTouch:true,
       currentPagerPosition:'left',
       onSliderLoad: function(el) {
         el.lightGallery({
