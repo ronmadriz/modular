@@ -52,6 +52,7 @@ j(document).ready(function(){
         });
       }
     });
+    lightGallery(document.getElementById('lightSlider'))
 });
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
