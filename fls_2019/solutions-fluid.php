@@ -46,7 +46,7 @@ if ($solutions_gallery['gallery_pics']) {
 	while (have_rows('solutions_gallery')) {
 		the_row();
 		$gallery_pics      = get_sub_field('gallery_pics');
-		$gallery_img_large = $gallery_pic['url'];
+		$gallery_img_large = $gallery_pics['url'];
 		if ($gallery_pics) {
 			echo '<ul id="lightSlider" class="gallery list-unstyled cS-hidden">'.PHP_EOL;
 			foreach ($gallery_pics as $gallery_pic):
