@@ -220,7 +220,18 @@ j(document).ready(function(){
         el.lightGallery({
             selector: '#lightSlider .lslide'
         });
-      }    
+      },
+      responsive : [
+          {
+              breakpoint:800,
+              settings: {
+                  item:1,
+                  slideMove:1,
+                  slideMargin:6,
+                  gallery:false,
+                }
+          },
+      ]          
     });
     lightGallery(document.getElementById('lightSlider'))
 });
