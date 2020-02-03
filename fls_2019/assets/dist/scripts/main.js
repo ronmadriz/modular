@@ -210,7 +210,7 @@ j(document).ready(function(){
       gallery:true,
       item:1,
       loop:true,
-      thumbItem:9,
+      thumbItem:6,
       slideMargin:0,
       currentPagerPosition:'left',
       onSliderLoad: function(el) {
