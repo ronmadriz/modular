@@ -212,7 +212,6 @@ j(document).ready(function(){
       loop:true,
       thumbItem:9,
       slideMargin:0,
-      enableDrag: false,
       currentPagerPosition:'left',
       onSliderLoad: function(el) {
         el.lightGallery({
