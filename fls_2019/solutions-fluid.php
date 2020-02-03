@@ -39,14 +39,14 @@ endif;
 
 // GALLERY
 $solutions_gallery = get_field('solutions_gallery');
-if ($solutions_gallery['gallery_pics']) {
+if ($solutions_gallery['solutions_gallery']) {
 	echo '<section id="gallery">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row justify-content-center mb-md-3"><div class="content text-md-center col-12">'.PHP_EOL;
 	while (have_rows('industry_gallery')) {
 		the_row();
 		$gallery_photos = get_sub_field('gallery_pics');
-		if ($gallery_photos) {
+		if (!empty($gallery_photos)) {
 			echo '<ul id="lightSlider" class="gallery list-unstyled cS-hidden">'.PHP_EOL;
 			foreach ($gallery_photos as $gImg):
 			echo '<li data-thumb="'.$gImg['sizes']['medium'].'"><img src="'.$gImg['sizes']['full'].'" alt="'.$gImg['alt'].'" class="img-fluid" /></li>'.PHP_EOL;
