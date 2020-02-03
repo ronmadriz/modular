@@ -39,7 +39,7 @@ endif;
 
 // GALLERY
 $solutions_gallery = get_field('solutions_gallery');
-if ($solutions_gallery['solutions_gallery']) {
+if ($solutions_gallery['gallery_pics']) {
 	echo '<section id="gallery">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row justify-content-center mb-md-3"><div class="content text-md-center col-12">'.PHP_EOL;
