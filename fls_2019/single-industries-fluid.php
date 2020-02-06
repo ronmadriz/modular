@@ -455,7 +455,7 @@ echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 }
  */
-echo '<section id="cta_blue"><h2>Tell Us About Your Fall Hazard</h2></div></section>'.PHP_EOL;
+echo '<section id="cta_blue"><h2 class="text-md-center">Tell Us About Your Fall Hazard</h2></div></section>'.PHP_EOL;
 echo '<section id="contactFormCTA">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
