@@ -129,8 +129,9 @@ if (have_rows('testimonials')) {
 	}
 }
 
-// CTA
-echo '<section id="cta_blue"><div class="container-fluid"><div class="row"><div class="col-12"><h2 class="text-center"><a href="#cf_contactFormTitle">Speak with a fall protection specialist</a></h2></div></div></div></section>'.PHP_EOL;
+// Ugly CTA formerly cta_blue
+
+echo '<section id="cta_speak"><div class="container-fluid"><div class="row"><div class="col-12"><h2 class="text-center"><a href="#cf_contactFormTitle">Speak with a fall protection specialist <i class="im im-angle-right-circle"></i></a></h2></div></div></div></section>'.PHP_EOL;
 
 // IMAGE CALLOUTS
 

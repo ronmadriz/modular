@@ -1662,6 +1662,18 @@ html body.solutions-template-solutions-fluid main section#gallery, html body.ind
     html body.solutions-template-solutions-fluid main section#gallery div#gallery_img, html body.industries-template-single-industries-fluid main section#gallery div#gallery_img, html body.page-template-fall-protection-101 main section#gallery div#gallery_img, html body.page-template-sample-fall-protection-plan main section#gallery div#gallery_img, html body.industries-template-single-all-industries main section#gallery div#gallery_img, html body.solutions-template-single-all-solutions main section#gallery div#gallery_img {
       margin-bottom: .25rem; } }
 
+html body.solutions-template-solutions-fluid main section#cta_speak, html body.industries-template-single-industries-fluid main section#cta_speak, html body.page-template-fall-protection-101 main section#cta_speak, html body.page-template-sample-fall-protection-plan main section#cta_speak, html body.industries-template-single-all-industries main section#cta_speak, html body.solutions-template-single-all-solutions main section#cta_speak {
+  background: #fecd06;
+  padding-top: 1.5rem;
+  padding-bottom: .75rem;
+  border-top: 2px solid #156cb3;
+  border-bottom: 2px solid #156cb3; }
+  html body.solutions-template-solutions-fluid main section#cta_speak h2, html body.industries-template-single-industries-fluid main section#cta_speak h2, html body.page-template-fall-protection-101 main section#cta_speak h2, html body.page-template-sample-fall-protection-plan main section#cta_speak h2, html body.industries-template-single-all-industries main section#cta_speak h2, html body.solutions-template-single-all-solutions main section#cta_speak h2 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1rem; }
+
 html body.solutions-template-solutions-fluid main section#literature, html body.industries-template-single-industries-fluid main section#literature, html body.page-template-fall-protection-101 main section#literature, html body.page-template-sample-fall-protection-plan main section#literature, html body.industries-template-single-all-industries main section#literature, html body.solutions-template-single-all-solutions main section#literature {
   padding-top: 0;
   padding-bottom: 0; }
