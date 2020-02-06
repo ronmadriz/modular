@@ -155,12 +155,17 @@ html {
 						}
 					}
 					&#cta_speak {
-						background:$accent_2;
-						padding-top: 1.5rem;
-						padding-bottom: .75rem;
-						border-top: 2px solid $accent_1;
-						border-bottom: 2px solid $accent_1;
+						&:not(#banner), .container-fluid {
+						    padding-left: 0px !important;
+						    padding-right: 0px !important;
+						}
 						a {
+							background:$accent_2;
+							padding: 1.5rem 6.25rem .75rem;
+							border-top: 2px solid $accent_1;
+							border-bottom: 2px solid $accent_1;
+							font-size: 131%;
+							line-height: 150%;
 						    transition: ease .42s all;
 							&:hover {
 							    font-size: 110%;
