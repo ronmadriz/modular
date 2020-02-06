@@ -188,6 +188,17 @@ html body .btn {
     html body .btn.btn-blue:hover {
       background-color: #0f8acf;
       border-color: #0f8acf; }
+  html body .btn.btn-yellow {
+    background-color: #fecd06;
+    border-color: #fecd06;
+    color: #404040;
+    -webkit-transition-duration: .35s;
+            transition-duration: .35s;
+    -webkit-transition-delay: 50ms;
+            transition-delay: 50ms; }
+    html body .btn.btn-yellow:hover {
+      background-color: #156cb3;
+      border-color: #156cb3; }
 
 html body .buttons .btn, html body .buttons .glsr-button {
   font-size: .75rem; }

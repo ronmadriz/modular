@@ -65,6 +65,17 @@ html {
 					border-color:$accent_5;
 				}
 			}
+			&.btn-yellow {
+				background-color:$accent_2;
+				border-color:$accent_2;
+				color:$base;
+			    transition-duration: .35s;
+			    transition-delay: 50ms;
+				&:hover {
+					background-color:$accent_1;
+					border-color:$accent_1;
+				}
+			}
 		}
 		.buttons {
 			.btn, .glsr-button {
