@@ -450,17 +450,16 @@ html {
 							}
 						}
 						div {
-							&#cfCTA_Img {
-								div {
-								    display:inline-block;
-								    background-color: rgba(0,0,0,.4);
-								    padding: 1em 2em 1.25em;
-								    text-align: left;
-								    border-radius: 4px;
-								    @media(min-width:786px){
-								    	margin-bottom:5rem;
-								    }
+							&#cfCTA_employeeInfo {
 									h3 {
+									    display:inline-block;
+									    background-color: rgba(0,0,0,.4);
+									    padding: 1em 2em 1.25em;
+									    text-align: left;
+									    border-radius: 4px;
+									    @media(min-width:786px){
+									    	margin-bottom:5rem;
+									    }
 										color: $alternate;
 									    text-shadow: 0 0 0.6em rgba(30,43,50,.12);
 								        font-size: 1.75em;
@@ -472,7 +471,6 @@ html {
 										    display: block;										
 										}										
 									}
-								}
 							}
 						}
 					}
