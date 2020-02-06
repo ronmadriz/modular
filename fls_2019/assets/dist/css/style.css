@@ -1669,6 +1669,7 @@ html body.solutions-template-solutions-fluid main section#cta_speak:not(#banner)
   line-height: inherit; }
 
 html body.solutions-template-solutions-fluid main section#cta_speak a, html body.industries-template-single-industries-fluid main section#cta_speak a, html body.page-template-fall-protection-101 main section#cta_speak a, html body.page-template-sample-fall-protection-plan main section#cta_speak a, html body.industries-template-single-all-industries main section#cta_speak a, html body.solutions-template-single-all-solutions main section#cta_speak a {
+  display: block;
   background: #fecd06;
   padding: 1.5rem 6.25rem .75rem;
   border-top: 2px solid #156cb3;
