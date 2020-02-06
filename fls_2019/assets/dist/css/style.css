@@ -1676,8 +1676,8 @@ html body.solutions-template-solutions-fluid main section#cta_speak a, html body
   border-bottom: 2px solid #156cb3;
   font-size: 1.75rem;
   line-height: 150%;
-  -webkit-transition: ease .42s all;
-  transition: ease .42s all; }
+  -webkit-transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s;
+  transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s; }
   html body.solutions-template-solutions-fluid main section#cta_speak a:hover, html body.industries-template-single-industries-fluid main section#cta_speak a:hover, html body.page-template-fall-protection-101 main section#cta_speak a:hover, html body.page-template-sample-fall-protection-plan main section#cta_speak a:hover, html body.industries-template-single-all-industries main section#cta_speak a:hover, html body.solutions-template-single-all-solutions main section#cta_speak a:hover {
     font-size: 110%;
     text-decoration: none;

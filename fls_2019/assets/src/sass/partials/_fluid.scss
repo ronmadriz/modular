@@ -169,7 +169,7 @@ html {
 							border-bottom: 2px solid $accent_1;
 							font-size: 1.75rem;
 							line-height: 150%;
-						    transition: ease .42s all;
+						    transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s;
 							&:hover {
 							    font-size: 110%;
 							    text-decoration: none;
