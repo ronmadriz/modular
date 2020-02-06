@@ -1664,7 +1664,9 @@ html body.solutions-template-solutions-fluid main section#gallery, html body.ind
 
 html body.solutions-template-solutions-fluid main section#cta_speak:not(#banner), html body.solutions-template-solutions-fluid main section#cta_speak .container-fluid, html body.industries-template-single-industries-fluid main section#cta_speak:not(#banner), html body.industries-template-single-industries-fluid main section#cta_speak .container-fluid, html body.page-template-fall-protection-101 main section#cta_speak:not(#banner), html body.page-template-fall-protection-101 main section#cta_speak .container-fluid, html body.page-template-sample-fall-protection-plan main section#cta_speak:not(#banner), html body.page-template-sample-fall-protection-plan main section#cta_speak .container-fluid, html body.industries-template-single-all-industries main section#cta_speak:not(#banner), html body.industries-template-single-all-industries main section#cta_speak .container-fluid, html body.solutions-template-single-all-solutions main section#cta_speak:not(#banner), html body.solutions-template-single-all-solutions main section#cta_speak .container-fluid {
   padding-left: 0px !important;
-  padding-right: 0px !important; }
+  padding-right: 0px !important;
+  font-size: inherit;
+  line-height: inherit; }
 
 html body.solutions-template-solutions-fluid main section#cta_speak a, html body.industries-template-single-industries-fluid main section#cta_speak a, html body.page-template-fall-protection-101 main section#cta_speak a, html body.page-template-sample-fall-protection-plan main section#cta_speak a, html body.industries-template-single-all-industries main section#cta_speak a, html body.solutions-template-single-all-solutions main section#cta_speak a {
   background: #fecd06;

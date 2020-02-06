@@ -158,6 +158,8 @@ html {
 						&:not(#banner), .container-fluid {
 						    padding-left: 0px !important;
 						    padding-right: 0px !important;
+						    font-size:inherit;
+						    line-height:inherit;
 						}
 						a {
 							background:$accent_2;
