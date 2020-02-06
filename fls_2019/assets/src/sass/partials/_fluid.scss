@@ -440,13 +440,16 @@ html {
 							padding:10rem;
 						}
 						form {
-							background-color:$alternate;
+							background-color:$accent_3;
 							padding:3rem;
 							label {
 								text-transform:uppercase;
 							}
 							label, input, select, textarea {
 								font-size:.9rem;
+							}
+							.btn-large {
+							    padding: 1rem 6rem;
 							}
 						}
 						div {
