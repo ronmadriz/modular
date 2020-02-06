@@ -162,11 +162,12 @@ html {
 						    line-height:inherit;
 						}
 						a {
+
 							background:$accent_2;
 							padding: 1.5rem 6.25rem .75rem;
 							border-top: 2px solid $accent_1;
 							border-bottom: 2px solid $accent_1;
-							font-size: 131%;
+							font-size: 1.75rem;
 							line-height: 150%;
 						    transition: ease .42s all;
 							&:hover {
