@@ -1668,6 +1668,12 @@ html body.solutions-template-solutions-fluid main section#cta_speak, html body.i
   padding-bottom: .75rem;
   border-top: 2px solid #156cb3;
   border-bottom: 2px solid #156cb3; }
+  html body.solutions-template-solutions-fluid main section#cta_speak a, html body.industries-template-single-industries-fluid main section#cta_speak a, html body.page-template-fall-protection-101 main section#cta_speak a, html body.page-template-sample-fall-protection-plan main section#cta_speak a, html body.industries-template-single-all-industries main section#cta_speak a, html body.solutions-template-single-all-solutions main section#cta_speak a {
+    -webkit-transition: ease .42s all;
+    transition: ease .42s all; }
+    html body.solutions-template-solutions-fluid main section#cta_speak a:hover, html body.industries-template-single-industries-fluid main section#cta_speak a:hover, html body.page-template-fall-protection-101 main section#cta_speak a:hover, html body.page-template-sample-fall-protection-plan main section#cta_speak a:hover, html body.industries-template-single-all-industries main section#cta_speak a:hover, html body.solutions-template-single-all-solutions main section#cta_speak a:hover {
+      font-size: 110%;
+      text-decoration: none; }
   html body.solutions-template-solutions-fluid main section#cta_speak h2, html body.industries-template-single-industries-fluid main section#cta_speak h2, html body.page-template-fall-protection-101 main section#cta_speak h2, html body.page-template-sample-fall-protection-plan main section#cta_speak h2, html body.industries-template-single-all-industries main section#cta_speak h2, html body.solutions-template-single-all-solutions main section#cta_speak h2 {
     font-size: 1.75rem;
     font-weight: 400;

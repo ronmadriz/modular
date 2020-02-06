@@ -160,6 +160,13 @@ html {
 						padding-bottom: .75rem;
 						border-top: 2px solid $accent_1;
 						border-bottom: 2px solid $accent_1;
+						a {
+						    transition: ease .42s all;
+							&:hover {
+							    font-size: 110%;
+							    text-decoration: none;
+							}						
+						}
 						h2 {
 							font-size: 1.75rem;
 							font-weight: 400;
