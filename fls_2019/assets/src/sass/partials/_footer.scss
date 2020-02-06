@@ -171,4 +171,28 @@ body {
 			}
 		}
 	}
+	&.solutions-template-solutions-fluid, &.industries-template-single-industries-fluid, &.page-template-fall-protection-101, &.page-template-sample-fall-protection-plan, &.industries-template-single-all-industries, &.solutions-template-single-all-solutions {
+		main {
+			section {		
+				&#foot_call_cta {
+					background-color: $accent_1;
+					border-bottom:3px solid $accent_5;
+				    text-align: center;
+				    color: $alternate;
+				    padding: 1.25rem 0;
+			    	font-weight: bold;
+				    font-size:1.2rem;
+				    margin-top: 20px;
+				    a {
+				    	color:$accent_2;
+				    	i, svg {
+						    transform: rotate(-15deg);
+						    top: 5px;
+						    position: relative;
+				    	}
+				    }
+				}				
+			}
+		}
+	}
 }

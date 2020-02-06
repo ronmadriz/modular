@@ -1306,6 +1306,23 @@ body span#mobileCTA {
     body span#mobileCTA a[href^="tel"] {
       cursor: normal; }
 
+body.solutions-template-solutions-fluid main section#foot_call_cta, body.industries-template-single-industries-fluid main section#foot_call_cta, body.page-template-fall-protection-101 main section#foot_call_cta, body.page-template-sample-fall-protection-plan main section#foot_call_cta, body.industries-template-single-all-industries main section#foot_call_cta, body.solutions-template-single-all-solutions main section#foot_call_cta {
+  background-color: #156cb3;
+  border-bottom: 3px solid #0f8acf;
+  text-align: center;
+  color: white;
+  padding: 1.25rem 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 20px; }
+  body.solutions-template-solutions-fluid main section#foot_call_cta a, body.industries-template-single-industries-fluid main section#foot_call_cta a, body.page-template-fall-protection-101 main section#foot_call_cta a, body.page-template-sample-fall-protection-plan main section#foot_call_cta a, body.industries-template-single-all-industries main section#foot_call_cta a, body.solutions-template-single-all-solutions main section#foot_call_cta a {
+    color: #fecd06; }
+    body.solutions-template-solutions-fluid main section#foot_call_cta a i, body.solutions-template-solutions-fluid main section#foot_call_cta a svg, body.industries-template-single-industries-fluid main section#foot_call_cta a i, body.industries-template-single-industries-fluid main section#foot_call_cta a svg, body.page-template-fall-protection-101 main section#foot_call_cta a i, body.page-template-fall-protection-101 main section#foot_call_cta a svg, body.page-template-sample-fall-protection-plan main section#foot_call_cta a i, body.page-template-sample-fall-protection-plan main section#foot_call_cta a svg, body.industries-template-single-all-industries main section#foot_call_cta a i, body.industries-template-single-all-industries main section#foot_call_cta a svg, body.solutions-template-single-all-solutions main section#foot_call_cta a i, body.solutions-template-single-all-solutions main section#foot_call_cta a svg {
+      -webkit-transform: rotate(-15deg);
+              transform: rotate(-15deg);
+      top: 5px;
+      position: relative; }
+
 html body#page-home main {
   padding-top: 6.5rem; }
   html body#page-home main section#home_banner {
@@ -1925,9 +1942,6 @@ html body.solutions-template-solutions-fluid main section#logos, html body.indus
   html body.solutions-template-solutions-fluid main section#logos h1, html body.industries-template-single-industries-fluid main section#logos h1, html body.page-template-fall-protection-101 main section#logos h1, html body.page-template-sample-fall-protection-plan main section#logos h1, html body.industries-template-single-all-industries main section#logos h1, html body.solutions-template-single-all-solutions main section#logos h1 {
     padding-top: 3rem;
     padding-bottom: 2rem; }
-
-html body.solutions-template-solutions-fluid footer section#foot_call_cta, html body.industries-template-single-industries-fluid footer section#foot_call_cta, html body.page-template-fall-protection-101 footer section#foot_call_cta, html body.page-template-sample-fall-protection-plan footer section#foot_call_cta, html body.industries-template-single-all-industries footer section#foot_call_cta, html body.solutions-template-single-all-solutions footer section#foot_call_cta {
-  margin-top: 0; }
 
 body.solutions-template div.testimonials {
   background-color: #f7f7f7;
