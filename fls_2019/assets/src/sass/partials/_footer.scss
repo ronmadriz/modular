@@ -182,7 +182,10 @@ body {
 				    padding: 1.25rem 0;
 			    	font-weight: bold;
 				    font-size:1.2rem;
-				    margin-top: 20px;
+				    @media(min-width:992px){
+						position: relative;
+						top: -8rem;				    	
+				    }
 				    a {
 				    	color:$accent_2;
 				    	i, svg {

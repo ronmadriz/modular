@@ -1313,8 +1313,11 @@ body.solutions-template-solutions-fluid main section#foot_call_cta, body.industr
   color: white;
   padding: 1.25rem 0;
   font-weight: bold;
-  font-size: 1.2rem;
-  margin-top: 20px; }
+  font-size: 1.2rem; }
+  @media (min-width: 992px) {
+    body.solutions-template-solutions-fluid main section#foot_call_cta, body.industries-template-single-industries-fluid main section#foot_call_cta, body.page-template-fall-protection-101 main section#foot_call_cta, body.page-template-sample-fall-protection-plan main section#foot_call_cta, body.industries-template-single-all-industries main section#foot_call_cta, body.solutions-template-single-all-solutions main section#foot_call_cta {
+      position: relative;
+      top: -8rem; } }
   body.solutions-template-solutions-fluid main section#foot_call_cta a, body.industries-template-single-industries-fluid main section#foot_call_cta a, body.page-template-fall-protection-101 main section#foot_call_cta a, body.page-template-sample-fall-protection-plan main section#foot_call_cta a, body.industries-template-single-all-industries main section#foot_call_cta a, body.solutions-template-single-all-solutions main section#foot_call_cta a {
     color: #fecd06; }
     body.solutions-template-solutions-fluid main section#foot_call_cta a i, body.solutions-template-solutions-fluid main section#foot_call_cta a svg, body.industries-template-single-industries-fluid main section#foot_call_cta a i, body.industries-template-single-industries-fluid main section#foot_call_cta a svg, body.page-template-fall-protection-101 main section#foot_call_cta a i, body.page-template-fall-protection-101 main section#foot_call_cta a svg, body.page-template-sample-fall-protection-plan main section#foot_call_cta a i, body.page-template-sample-fall-protection-plan main section#foot_call_cta a svg, body.industries-template-single-all-industries main section#foot_call_cta a i, body.industries-template-single-all-industries main section#foot_call_cta a svg, body.solutions-template-single-all-solutions main section#foot_call_cta a i, body.solutions-template-single-all-solutions main section#foot_call_cta a svg {
