@@ -1904,7 +1904,7 @@ html body.solutions-template-solutions-fluid main section#contactFormCTA, html b
   padding: 1rem 0; }
   @media (min-width: 768px) {
     html body.solutions-template-solutions-fluid main section#contactFormCTA, html body.industries-template-single-industries-fluid main section#contactFormCTA, html body.page-template-fall-protection-101 main section#contactFormCTA, html body.page-template-sample-fall-protection-plan main section#contactFormCTA, html body.industries-template-single-all-industries main section#contactFormCTA, html body.solutions-template-single-all-solutions main section#contactFormCTA {
-      padding: 10rem; } }
+      padding: 4rem; } }
   html body.solutions-template-solutions-fluid main section#contactFormCTA form, html body.industries-template-single-industries-fluid main section#contactFormCTA form, html body.page-template-fall-protection-101 main section#contactFormCTA form, html body.page-template-sample-fall-protection-plan main section#contactFormCTA form, html body.industries-template-single-all-industries main section#contactFormCTA form, html body.solutions-template-single-all-solutions main section#contactFormCTA form {
     background-color: #e6e7e9;
     padding: 1.5rem 2.5rem; }
