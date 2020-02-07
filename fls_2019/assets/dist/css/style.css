@@ -1918,7 +1918,12 @@ html body.solutions-template-solutions-fluid main section#contactFormCTA, html b
         padding-left: 0;
         margin-bottom: .25rem; }
     html body.solutions-template-solutions-fluid main section#contactFormCTA form .btn-large, html body.industries-template-single-industries-fluid main section#contactFormCTA form .btn-large, html body.page-template-fall-protection-101 main section#contactFormCTA form .btn-large, html body.page-template-sample-fall-protection-plan main section#contactFormCTA form .btn-large, html body.industries-template-single-all-industries main section#contactFormCTA form .btn-large, html body.solutions-template-single-all-solutions main section#contactFormCTA form .btn-large {
-      padding: 1rem 6rem; }
+      display: block;
+      width: 100%;
+      padding: .75rem 2.5rem;
+      text-transform: uppercase;
+      border: 2px solid #156cb3;
+      font-weight: bold; }
   html body.solutions-template-solutions-fluid main section#contactFormCTA div#cfCTA_employeeInfo h3, html body.industries-template-single-industries-fluid main section#contactFormCTA div#cfCTA_employeeInfo h3, html body.page-template-fall-protection-101 main section#contactFormCTA div#cfCTA_employeeInfo h3, html body.page-template-sample-fall-protection-plan main section#contactFormCTA div#cfCTA_employeeInfo h3, html body.industries-template-single-all-industries main section#contactFormCTA div#cfCTA_employeeInfo h3, html body.solutions-template-single-all-solutions main section#contactFormCTA div#cfCTA_employeeInfo h3 {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.4);
