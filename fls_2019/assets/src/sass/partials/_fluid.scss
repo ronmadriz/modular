@@ -441,12 +441,18 @@ html {
 						}
 						form {
 							background-color:$accent_3;
-							padding:3rem;
+						    padding: 1.5rem 2.5rem;
 							label {
 								text-transform:uppercase;
-							}
-							label, input, select, textarea {
 								font-size:.9rem;
+							}
+							.form-control {
+								padding:.0125rem;
+								font-size: 1.25rem;
+								&.col-12 {
+								    padding-left: 0;
+								    margin-bottom: .25rem;
+								}								
 							}
 							.btn-large {
 							    padding: 1rem 6rem;
@@ -454,26 +460,26 @@ html {
 						}
 						div {
 							&#cfCTA_employeeInfo {
-									h3 {
-									    display:inline-block;
-									    background-color: rgba(0,0,0,.4);
-									    padding: 1em 2em 1.25em;
-									    text-align: left;
-									    border-radius: 4px;
-									    @media(min-width:786px){
-									    	margin-bottom:5rem;
-									    }
-										color: $alternate;
-									    text-shadow: 0 0 0.6em rgba(30,43,50,.12);
-								        font-size: 1.75em;
-									    font-weight: bold;
-										small {
-										    font-size: 1.4rem;
-										    font-weight: 100;
-										    letter-spacing: .6px;
-										    display: block;										
-										}										
-									}
+								h3 {
+								    display:inline-block;
+								    background-color: rgba(0,0,0,.4);
+								    padding: 1em 2em 1.25em;
+								    text-align: left;
+								    border-radius: 4px;
+								    @media(min-width:786px){
+								    	margin-bottom:5rem;
+								    }
+									color: $alternate;
+								    text-shadow: 0 0 0.6em rgba(30,43,50,.12);
+							        font-size: 1.75em;
+								    font-weight: bold;
+									small {
+									    font-size: 1.4rem;
+									    font-weight: 100;
+									    letter-spacing: .6px;
+									    display: block;										
+									}										
+								}
 							}
 						}
 					}
