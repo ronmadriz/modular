@@ -84,9 +84,9 @@ if (have_rows('quotes')) {
 	echo '</section>'.PHP_EOL;
 }
 
-// CTA
+// Ugly CTA formerly cta_blue
 
-echo (!empty(get_the_content())?'<section id="cta_blue"><div class="container-fluid"><div class="row"><div class="col-12"><h2 class="text-center"><a href="#cf_contactFormTitle">Speak with a fall protection specialist</a></h2></div></div></div></section>'.PHP_EOL:'');
+echo (!empty(get_the_content())?'<section id="cta_speak"><div class="container-fluid"><div class="row"><div class="col-12"><h2 class="text-center text-uppercase"><a href="#contactFormCTA">Speak with a fall protection specialist <i class="im im-angle-right-circle"></i></a></h2></div></div></div></section>'.PHP_EOL:'');
 
 // IMAGE CALLOUTS
 
@@ -465,20 +465,41 @@ if ($osha['content']) {
 }
 
 // Contact Form
-
+/*
 $contact_form_code = get_field('contact_form');
 $cf_contactForm    = do_shortcode($contact_form_code);
 if ($contact_form_code) {
-	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="section_title col-12"><h2 class="text-center">How can we help?</h2></div></div></div></section>'.PHP_EOL;
-	echo '<section id="cf_contactForm">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;// made fluid
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="col-12">'.PHP_EOL;
-	echo $cf_contactForm;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
+echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="section_title col-12"><h2 class="text-center">How can we help?</h2></div></div></div></section>'.PHP_EOL;
+echo '<section id="cf_contactForm">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;// made fluid
+echo '<div class="row">'.PHP_EOL;
+echo '<div class="col-12">'.PHP_EOL;
+echo $cf_contactForm;
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</section>'.PHP_EOL;
 }
+ */
+echo '<section id="cta_blue"><h2 class="text-md-center">Tell Us About Your Fall Hazard</h2></div></section>'.PHP_EOL;
+echo '<section id="contactFormCTA">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
+echo '<div class="row">'.PHP_EOL;
+if (have_rows('contact_form_cta')) {
+	while (have_rows('contact_form_cta')) {
+		the_row();
+		$cfcta_form          = get_sub_field('form');
+		$cfcta_img           = get_sub_field('image');
+		$cfcta_employee_name = get_sub_field('employee_name');
+		$cfcta_employee_role = get_sub_field('employee_role');
+		echo '<style>section#contactFormCTA {background-image: url("'.(!empty($cfcta_img)?$cfcta_img['url']:get_bloginfo('url').'/wp-content/uploads/2020/01/contactFormCta.jpg').'");}</style>'.PHP_EOL;
+		echo '<div id="cfCTA_form" class="col-12 col-md-5">'.do_shortcode('[contact-form-7 id="1117830" title="Contact CTA"]').'</div>'.PHP_EOL;
+		echo (!empty($cfcta_img)?'<div id="cfCTA_Img" class="d-flex d-md-none justify-content-center align-items-md-end col-12"><img src="'.$cfcta_img['url'].'" alt="" class="img-fluid"></div>':'').PHP_EOL;
+		echo (!empty($cfcta_employee_name) || !empty($cfcta_employee_role)?'<div class="col-12 col-md-7 text-right align-self-end" id="cfCTA_employeeInfo"><h3>'.$cfcta_employee_name.' <small>'.$cfcta_employee_role.'</small></h3></div>':'').PHP_EOL;
+	}
+}
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</section>'.PHP_EOL;
 include 'footer-fluid.php';
 ?>
