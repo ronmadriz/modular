@@ -152,6 +152,29 @@ html {
 									margin-bottom: .25rem;
 								}						
 							}
+							&.lSSlideWrapper {
+								ul {
+									&.lSPager {
+										&.lSGallery {
+											li {
+												a {
+													img {
+														opacity: .6;
+													}
+												}
+												
+												&.active {
+													a {
+														img {
+															opacity: 1;
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
 						}
 					}
 					&#cta_speak {

@@ -47,6 +47,7 @@ j(document).ready(function(){
       enableTouch:true,
       currentPagerPosition:'left',
       speed:600,
+      vertical:true,
       onSliderLoad: function(el) {
         el.lightGallery({
             selector: '#lightSlider .lslide'
