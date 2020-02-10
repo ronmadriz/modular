@@ -211,7 +211,7 @@ j(document).ready(function(){
       item:1,
       loop:true,
       thumbItem:4,
-      slideMargin:0,
+      slideMargin:5,
       verticalHeight:675,
       enableDrag:true,
       enableTouch:true,
@@ -219,6 +219,7 @@ j(document).ready(function(){
       speed:600,
       vertical:true,
       vThumbWidth:350,
+      thumbMargin:5,
       onSliderLoad: function(el) {
         el.lightGallery({
             selector: '#lightSlider .lslide'
