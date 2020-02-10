@@ -217,7 +217,7 @@ j(document).ready(function(){
       currentPagerPosition:'left',
       speed:600,
       vertical:true,
-      vThumbWidth:250,
+      vThumbWidth:400,
       onSliderLoad: function(el) {
         el.lightGallery({
             selector: '#lightSlider .lslide'
