@@ -684,7 +684,7 @@ function solutionsDropDown($tag, $unused) {
 }
 add_filter('wpcf7_form_tag', 'industryDropDown', 10, 2);
 // for Custom Post Type return in Contact Form 7
-function solutionsDropDown($tag, $unused) {
+function industryDropDown($tag, $unused) {
 	if ($tag['name'] != 'cf_industry') {
 		return $tag;
 	}
