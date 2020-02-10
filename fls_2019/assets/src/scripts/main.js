@@ -49,7 +49,7 @@ j(document).ready(function(){
       currentPagerPosition:'left',
       speed:600,
       vertical:true,
-      vThumbWidth:350,
+      vThumbWidth:300,
       thumbMargin:5,
       onSliderLoad: function(el) {
         el.lightGallery({
