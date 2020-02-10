@@ -666,10 +666,11 @@ function solutionsDropDown($tag, $unused) {
 		return $tag;
 	}
 	$args = array(
-		'numberposts' => -1,
-		'post_type'   => 'solutions',
-		'orderby'     => 'title',
-		'order'       => 'ASC',
+		'numberposts'  => -1,
+		'post_type'    => 'solutions',
+		'orderby'      => 'menu_order',
+		'post_parent'  => 0,
+		'post__not_in' => 1,
 	);
 	$custom_posts = get_posts($args);
 	if (!$custom_posts) {
@@ -689,10 +690,11 @@ function industryDropDown($tag, $unused) {
 		return $tag;
 	}
 	$args = array(
-		'numberposts' => -1,
-		'post_type'   => 'industries',
-		'orderby'     => 'menu_order',
-		'post_parent' => 0,
+		'numberposts'  => -1,
+		'post_type'    => 'industries',
+		'orderby'      => 'menu_order',
+		'post_parent'  => 0,
+		'post__not_in' => 1,
 	);
 	$custom_posts = get_posts($args);
 	if (!$custom_posts) {
