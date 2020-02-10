@@ -212,6 +212,7 @@ j(document).ready(function(){
       loop:true,
       thumbItem:4,
       slideMargin:0,
+      verticalHeight:675,
       enableDrag:true,
       enableTouch:true,
       currentPagerPosition:'left',
