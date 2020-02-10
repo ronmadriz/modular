@@ -693,6 +693,7 @@ function industryDropDown($tag, $unused) {
 		'post_type'   => 'industries',
 		'orderby'     => 'title',
 		'order'       => 'ASC',
+		'parent' => 0,
 	);
 	$custom_posts = get_posts($args);
 	if (!$custom_posts) {
