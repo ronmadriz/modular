@@ -210,7 +210,7 @@ j(document).ready(function(){
       gallery:true,
       item:1,
       loop:true,
-      thumbItem:6,
+      thumbItem:4,
       slideMargin:0,
       enableDrag:true,
       enableTouch:true,
