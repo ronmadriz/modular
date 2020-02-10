@@ -217,7 +217,6 @@ j(document).ready(function(){
       enableTouch:true,
       currentPagerPosition:'left',
       speed:600,
-      vertical:true,
       vThumbWidth:300,
       thumbMargin:5,
       onSliderLoad: function(el) {
