@@ -659,4 +659,28 @@ function post_title_shortcode() {
 }
 add_shortcode('post_title', 'post_title_shortcode');
 add_filter('wpcf7_form_elements', 'do_shortcode');
+
+// for Custom Post Type return in Contact Form 7
+function solutionsDropDown($tag, $unused) {
+	if ($tag['name'] != 'solutionsDropDown') {
+		return $tag;
+	}
+	$args = array(
+		'numberposts' => -1,
+		'post_type'   => 'solutions',
+		'orderby'     => 'title',
+		'order'       => 'ASC',
+	);
+	$custom_posts = get_posts($args);
+	if (!$custom_posts) {
+		return $tag;
+	}
+	foreach ($custom_posts as $custom_post) {
+		$tag['raw_values'][] = $custom_post->post_title;
+		$tag['values'][]     = $custom_post->post_title;
+		$tag['labels'][]     = $custom_post->post_title;
+	}
+	return $tag;
+}
+add_filter('wpcf7_form_tag', 'solutionsDropDown', 10, 2);
 ?>
