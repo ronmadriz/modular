@@ -662,7 +662,7 @@ add_filter('wpcf7_form_elements', 'do_shortcode');
 
 // for Custom Post Type return in Contact Form 7
 function solutionsDropDown($tag, $unused) {
-	if ($tag['name'] != 'solutionsDropDown') {
+	if ($tag['name'] != 'cf_industry') {
 		return $tag;
 	}
 	$args = array(
