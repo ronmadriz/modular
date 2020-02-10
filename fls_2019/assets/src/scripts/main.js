@@ -41,7 +41,7 @@ j(document).ready(function(){
       gallery:true,
       item:1,
       loop:true,
-      thumbItem:4,
+      thumbItem:6,
       slideMargin:5,
       verticalHeight:675,
       enableDrag:true,
@@ -49,7 +49,6 @@ j(document).ready(function(){
       currentPagerPosition:'left',
       speed:600,
       vThumbWidth:300,
-      thumbMargin:5,
       onSliderLoad: function(el) {
         el.lightGallery({
             selector: '#lightSlider .lslide'
