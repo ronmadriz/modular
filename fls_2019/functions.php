@@ -691,8 +691,7 @@ function industryDropDown($tag, $unused) {
 	$args = array(
 		'numberposts' => -1,
 		'post_type'   => 'industries',
-		'orderby'     => 'menuindex',
-		'order'       => 'ASC',
+		'orderby'     => array('title'     => 'DESC'),
 		'parent'      => 0,
 	);
 	$custom_posts = get_posts($args);
