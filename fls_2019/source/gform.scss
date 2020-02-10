@@ -1,0 +1,135 @@
+	input {
+		&[type="submit"] {
+			&.gform_button {
+				background-color: $accent_1;
+				border-color: $accent_1;
+				color: $alternate;
+				-webkit-transition-duration: .35s;
+				transition-duration: .35s;
+				-webkit-transition-delay: 50ms;
+				transition-delay: 50ms;
+				display: inline-block;
+				font-weight: 400;
+				text-align: center;
+				white-space: nowrap;
+				vertical-align: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				border: 1px solid transparent;
+				padding: .375rem .75rem;
+				font-size: 1rem;
+				line-height: 1.5;
+				border-radius: .25rem;
+				transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;						
+			}			
+		}
+	}
+	footer {
+		div {
+			&.gform_wrapper {
+				margin:0;
+				form {
+					&#gform_3 {
+						div {
+							&.gform_footer {
+								text-align:center;
+								input {
+									&[type="submit"] {
+										background-color: $accent_1;
+										border-color: $accent_1;
+										color: $alternate;
+										-webkit-transition-duration: .35s;
+										transition-duration: .35s;
+										-webkit-transition-delay: 50ms;
+										transition-delay: 50ms;
+										display: inline-block;
+										font-weight: 400;
+										text-align: center;
+										white-space: nowrap;
+										vertical-align: middle;
+										-webkit-user-select: none;
+										-moz-user-select: none;
+										-ms-user-select: none;
+										user-select: none;
+										border: 1px solid transparent;
+										padding: .375rem .75rem;
+										font-size: 1rem;
+										line-height: 1.5;
+										border-radius: .25rem;
+										transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;								
+									}
+								}
+							}
+						}
+					}			
+				}
+			}
+		}
+	}
+// Gravity Form overrides 
+html {
+	body {
+		div {
+			&.gform_wrapper {
+				form {
+					div {
+						&.gform_body {
+							ul{
+								&.gform_fields {
+									li{
+										&.gfield {
+											padding-left:.5rem;
+											@media only screen and (min-width: 641px){
+												padding-right:.5rem;
+											}
+											&:first-of-type {
+												padding-left:0;
+												padding-right:0;
+												p {
+													margin:.75rem .5rem;
+												}
+											}
+										}
+									}						
+								}
+							}
+						}
+						&.gform_footer {
+							text-align:center;
+						}
+					}
+					&#gform_2 {
+						div {
+							&.gform_body {
+								ul{
+									&.gform_fields {
+										li{
+											&.gfield {
+												label {
+													display:none;
+												}
+											}
+										}
+									}
+								}
+							}							
+							&.gform_footer {
+								input {
+									&[type="submit"] {
+										background-color:$warning;
+										border-color:$warning;
+										color:$charcoal;
+										text-transform:uppercase;
+									    width: 80%;
+									}
+								}
+							}							
+						}
+					}
+				}
+			}
+		}
+	}
+}

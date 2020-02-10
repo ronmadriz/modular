@@ -459,8 +459,11 @@ html {
 						background-repeat: no-repeat;
 						background-size:cover;
 						padding:1rem 0;
-						@media(min-width:768px){
+						@media(min-width:1200px){
 							padding:10rem;
+						}
+						@media(min-width:768px) and (max-width:1199.99px){
+							padding:2rem;
 						}
 						form {
 							background-color:$accent_3;
