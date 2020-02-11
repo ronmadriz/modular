@@ -1673,6 +1673,15 @@ html body.solutions-template-solutions-fluid main section#literature, html body.
         color: #156cb3; }
     html body.solutions-template-solutions-fluid main section#literature ul.literature_list li a.lrm-login, html body.industries-template-single-industries-fluid main section#literature ul.literature_list li a.lrm-login, html body.page-template-fall-protection-101 main section#literature ul.literature_list li a.lrm-login, html body.page-template-sample-fall-protection-plan main section#literature ul.literature_list li a.lrm-login, html body.industries-template-single-all-industries main section#literature ul.literature_list li a.lrm-login, html body.solutions-template-single-all-solutions main section#literature ul.literature_list li a.lrm-login {
       cursor: pointer; }
+  html body.solutions-template-solutions-fluid main section#literature#resource_area h3, html body.industries-template-single-industries-fluid main section#literature#resource_area h3, html body.page-template-fall-protection-101 main section#literature#resource_area h3, html body.page-template-sample-fall-protection-plan main section#literature#resource_area h3, html body.industries-template-single-all-industries main section#literature#resource_area h3, html body.solutions-template-single-all-solutions main section#literature#resource_area h3 {
+    font-size: 1.83rem;
+    font-weight: 300;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+    font-family: "Oswald", helvetica, sans-serif;
+    line-height: 2.25rem; }
+    html body.solutions-template-solutions-fluid main section#literature#resource_area h3 a, html body.industries-template-single-industries-fluid main section#literature#resource_area h3 a, html body.page-template-fall-protection-101 main section#literature#resource_area h3 a, html body.page-template-sample-fall-protection-plan main section#literature#resource_area h3 a, html body.industries-template-single-all-industries main section#literature#resource_area h3 a, html body.solutions-template-single-all-solutions main section#literature#resource_area h3 a {
+      display: block; }
 
 html body.solutions-template-solutions-fluid main section#cf_contactFormTitle, html body.industries-template-single-industries-fluid main section#cf_contactFormTitle, html body.page-template-fall-protection-101 main section#cf_contactFormTitle, html body.page-template-sample-fall-protection-plan main section#cf_contactFormTitle, html body.industries-template-single-all-industries main section#cf_contactFormTitle, html body.solutions-template-single-all-solutions main section#cf_contactFormTitle {
   background-color: #156cb3;
