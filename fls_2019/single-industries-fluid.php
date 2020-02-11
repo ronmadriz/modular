@@ -324,7 +324,7 @@ if ($videos && $video_count == 1) {
 		$v_embed = get_sub_field('v_embed');
 		$v_desc  = get_sub_field('description');
 		echo '<div class="row justify-content-center align-content-center">'.PHP_EOL;
-		echo '<div class="col-12"><span class="section_title"><h2>'.$v_title.'</h2></span></div>'.PHP_EOL;
+		echo '<div class="videos single col-12"><span class="section_title"><h2>'.$v_title.'</h2></span></div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '<div class="row justify-content-center align-content-center">'.PHP_EOL;
 		echo '<div class="videos single col-12 col-md-9">'.PHP_EOL;
