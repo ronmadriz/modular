@@ -11,7 +11,7 @@ $footer_newsletter  = get_theme_mod('footer_newsletter');
 echo '<section id="foot_call_cta">'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
 echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
-echo '<div class="col-12 col-md-8">Call today to speak with our fall protection experts: <a href="tel:'.$phone.'"><i class="im im-phone"></i> '.$phone.'</a></div>'.PHP_EOL;
+echo '<div class="col-12 col-md-8">Talk to Fall Protection Expert Now <a href="tel:'.$phone.'"><i class="im im-phone"></i> '.$phone.'</a></div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
