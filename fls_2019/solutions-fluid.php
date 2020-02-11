@@ -309,7 +309,13 @@ if (have_rows('resource_area')) {
 				$document_file  = get_sub_field('file');
 				$document_url   = $document_file['url'];
 				echo '<figure class="col-3 col-md-2">'.PHP_EOL;
-				echo '<a href="'.esc_attr($document_url).'"><img src="'.get_stylesheet_directory_uri().'/images/word.svg" alt="Word Document'.(!empty($document_title)?' - '.$document_title:'').'" class="img-fluid"></a>'.PHP_EOL;
+				echo '<a href="'.esc_attr($document_url).'">';
+				if (substr($document_url, -4) == '.pdf') {
+					echo '<img src="'.get_stylesheet_directory_uri().'/images/pdf.svg" alt="Word Document'.(!empty($document_title)?' - '.$document_title:'').'" class="img-fluid">';
+				} elseif (substr($document_url, -4) == '.doc') {
+					echo '<img src="'.get_stylesheet_directory_uri().'/images/word.svg" alt="Word Document'.(!empty($document_title)?' - '.$document_title:'').'" class="img-fluid">';
+				}
+				echo '</a>'.PHP_EOL;
 				echo (!empty($document_title)?'<figcaption><h3><a href="'.esc_attr($document_url).'">'.$document_title.'</a></h3></figcaption>'.PHP_EOL:'');
 				echo '</figure>'.PHP_EOL;
 			}
