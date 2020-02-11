@@ -308,7 +308,7 @@ if (have_rows('resource_area')) {
 				$document_title = get_sub_field('document_title');
 				$document_file  = get_sub_field('file');
 				$document_url   = $document_file['url'];
-				echo '<figure class="col-6 col-md-1">'.PHP_EOL;
+				echo '<figure class="col-6 col-md-4 col-lg-1">'.PHP_EOL;
 				echo '<a href="'.esc_attr($document_url).'">';
 				if (substr($document_url, -4) == '.pdf') {
 					echo '<img src="'.get_stylesheet_directory_uri().'/images/pdf.svg" alt="Word Document'.(!empty($document_title)?' - '.$document_title:'').'" class="img-fluid">';
