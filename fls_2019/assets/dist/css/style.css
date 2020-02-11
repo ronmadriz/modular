@@ -1862,7 +1862,7 @@ html body.solutions-template-solutions-fluid main section#contactFormCTA, html b
     font-weight: bold; }
     @media (min-width: 786px) {
       html body.solutions-template-solutions-fluid main section#contactFormCTA div#cfCTA_employeeInfo h3, html body.industries-template-single-industries-fluid main section#contactFormCTA div#cfCTA_employeeInfo h3, html body.page-template-fall-protection-101 main section#contactFormCTA div#cfCTA_employeeInfo h3, html body.page-template-sample-fall-protection-plan main section#contactFormCTA div#cfCTA_employeeInfo h3, html body.industries-template-single-all-industries main section#contactFormCTA div#cfCTA_employeeInfo h3, html body.solutions-template-single-all-solutions main section#contactFormCTA div#cfCTA_employeeInfo h3 {
-        margin-bottom: 5rem; } }
+        margin-bottom: 0rem; } }
     html body.solutions-template-solutions-fluid main section#contactFormCTA div#cfCTA_employeeInfo h3 small, html body.industries-template-single-industries-fluid main section#contactFormCTA div#cfCTA_employeeInfo h3 small, html body.page-template-fall-protection-101 main section#contactFormCTA div#cfCTA_employeeInfo h3 small, html body.page-template-sample-fall-protection-plan main section#contactFormCTA div#cfCTA_employeeInfo h3 small, html body.industries-template-single-all-industries main section#contactFormCTA div#cfCTA_employeeInfo h3 small, html body.solutions-template-single-all-solutions main section#contactFormCTA div#cfCTA_employeeInfo h3 small {
       font-size: 1.4rem;
       font-weight: 100;
