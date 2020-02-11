@@ -301,7 +301,7 @@ if (have_rows('resource_area')) {
 		$resource_area_title = get_sub_field('title');
 		$resource_documents  = get_sub_field('documents');
 		echo '<div class="row">'.PHP_EOL;
-		echo '<div class="title col-12"><span class="section_title"><h2>'.$resource_area_title.'</h2></span></div>'.PHP_EOL;
+		echo '<div class="title col-12 section_title"><h2>'.$resource_area_title.'</h2></div>'.PHP_EOL;
 		if (have_rows('documents')) {
 			while (have_rows('documents')) {
 				the_row();
