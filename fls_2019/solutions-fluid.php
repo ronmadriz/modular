@@ -257,7 +257,6 @@ if (have_rows('measurement_tables')) {
 }
 // LITERATURE
 $download_literature_title = get_field('download_literature_title');
-
 if (have_rows('download_literature')) {
 	echo '<section id="literature">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
@@ -266,21 +265,21 @@ if (have_rows('download_literature')) {
 	echo '</div>'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="content col-12">'.PHP_EOL;
-	echo '<ul class="row list-unstyled literature_list">'.PHP_EOL;
+	echo '<ul class="list-inline literature_list">'.PHP_EOL;
 	while (have_rows('download_literature')) {
 		the_row();
 		$lit_file  = get_sub_field('file');
 		$lit_img   = get_sub_field('Image');
 		$lit_title = get_sub_field('title');
-		echo '<li class="col-6 col-md-3 text-center">';
-		echo ($lit_file != null?'<a href="'.$lit_file['url'].'" class="d-block">':'');
-		echo ($lit_img != null?'<img src="'.$lit_img['url'].'" alt="'.$lit_img['alt'].'" class="img-fluid">':'');
-		echo ($lit_file != null?'</a>'.PHP_EOL:'');
-		echo '<h4 class="text-uppercase">';
-		echo ($lit_file != null?'<a href="'.$lit_file['url'].'">':'');
+		echo '<li class="list-inline-item col-6 col-md-3 text-center">';
+		echo (!empty($lit_file) && is_user_logged_in()?'<a href="'.$lit_file['url'].'" class="d-block">':'<a class="lrm-login">');
+		echo (!empty($lit_img)?'<img src="'.$lit_img['url'].'" alt="'.$lit_img['alt'].'" class="img-fluid">':'');
+		echo (!empty($lit_file) && is_user_logged_in()?'</a>'.PHP_EOL:'</a>');
+		echo '<h3 class="text-uppercase">';
+		echo (!empty($lit_file) && is_user_logged_in()?'<a href="'.$lit_file['url'].'">':'<a class="lrm-login">');
 		echo $lit_title;
-		echo ($lit_file != null?'</a>':'');
-		echo '</h4>'.PHP_EOL;
+		echo (!empty($lit_file) && is_user_logged_in()?'</a>':'</a>');
+		echo '</h3>'.PHP_EOL;
 		echo '</li>'.PHP_EOL;
 	}
 	echo '</ul>'.PHP_EOL;
@@ -291,8 +290,6 @@ if (have_rows('download_literature')) {
 }
 
 // RESOURCE AREAS
-$resource_area = get_field('resource_area');
-
 if (have_rows('resource_area')) {
 	echo '<section id="resource_area">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
@@ -321,7 +318,6 @@ if (have_rows('resource_area')) {
 			}
 		}
 	}
-
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
@@ -436,46 +432,47 @@ if (have_rows('case_study_groups')) {
 // VIDEOS
 $videos      = get_field('videos');
 $video_count = count(get_field('videos'));
-if ($videos && $video_count == 1):
-echo '<section id="videos">'.PHP_EOL;
-echo '<div class="container-fluid">'.PHP_EOL;
-while (have_rows('videos')):the_row();
-$v_title = get_sub_field('title');
-$v_embed = get_sub_field('v_embed');
-$v_desc  = get_sub_field('description');
-echo '<div class="row">'.PHP_EOL;
-echo '<div class="videos single col-12">'.PHP_EOL;
-echo '<span class="section_title"><h2>'.$v_title.'</h2></span>'.PHP_EOL;
-echo '<span class="video">'.$v_embed.'</span>'.PHP_EOL;
-echo '<span class="content">'.PHP_EOL;
-echo $v_desc.PHP_EOL;
-echo '</span>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-endwhile;
-wp_reset_query();
-echo '</div>'.PHP_EOL;
-echo '</section>'.PHP_EOL;
- elseif ($video_count > 1):
-echo '<section id="videos">'.PHP_EOL;
-echo '<div class="container-fluid">'.PHP_EOL;
-echo '<div class="row">'.PHP_EOL;
-while (have_rows('videos')):the_row();
-$v_title = get_sub_field('title');
-$v_embed = get_sub_field('v_embed');
-$v_desc  = get_sub_field('description');
-echo '<div class="videos multi col-12 col-md-6">'.PHP_EOL;
-echo '<span class="section_title"><h2>'.$v_title.'</h2></span>'.PHP_EOL;
-echo '<span class="video">'.$v_embed.'</span>'.PHP_EOL;
-echo ($v_desc?'<span class="content">'.$v_desc.'</span>'.PHP_EOL:'');
-echo '</div>'.PHP_EOL;
-endwhile;
-wp_reset_query();
-echo '</div>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-echo '</section>'.PHP_EOL;
- else :
-endif;
+if ($videos && $video_count == 1) {
+	echo '<section id="videos">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
+	while (have_rows('videos')) {
+		the_row();
+		$v_title = get_sub_field('title');
+		$v_embed = get_sub_field('v_embed');
+		$v_desc  = get_sub_field('description');
+		echo '<div class="row">'.PHP_EOL;
+		echo '<div class="videos single col-12 col-md-9">'.PHP_EOL;
+		echo '<span class="section_title"><h2>'.$v_title.'</h2></span>'.PHP_EOL;
+		echo '<span class="video">'.$v_embed.'</span>'.PHP_EOL;
+		echo '<span class="content">'.PHP_EOL;
+		echo $v_desc.PHP_EOL;
+		echo '</span>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		wp_reset_query();
+	}
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+} elseif ($video_count > 1) {
+	echo '<section id="videos">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="row">'.PHP_EOL;
+	while (have_rows('videos')) {
+		the_row();
+		$v_title = get_sub_field('title');
+		$v_embed = get_sub_field('v_embed');
+		$v_desc  = get_sub_field('description');
+		echo '<div class="videos multi col-12 col-md-6">'.PHP_EOL;
+		echo '<span class="section_title"><h2>'.$v_title.'</h2></span>'.PHP_EOL;
+		echo '<span class="video">'.$v_embed.'</span>'.PHP_EOL;
+		echo ($v_desc?'<span class="content">'.$v_desc.'</span>'.PHP_EOL:'');
+		echo '</div>'.PHP_EOL;
+		wp_reset_query();
+	}
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+}
 
 // OSHA Content
 

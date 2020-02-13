@@ -170,7 +170,7 @@ if (have_rows('icon_row')) {
 	}
 }
 
-// DOWNLOADABLE FILES
+// LITERATURE
 $download_literature_title = get_field('download_literature_title');
 if (have_rows('download_literature')) {
 	echo '<section id="literature">'.PHP_EOL;
