@@ -707,7 +707,13 @@ function industryDropDown($tag, $unused) {
 }
 add_filter('wpcf7_form_tag', 'industryDropDown', 10, 2);
 
-$new_user_registration_message = '<p>Username:'.$user->nickname
-//wp_mail('ron@firstcreative.com', 'New User Has Registered', $new_user_registration_message);
+// $new_user_registration_message = '<p>Username:'.$user->nickname
+
+add_filter('wp_new_user_notification_email_admin', 'fc_wp_new_user_notification_email_admin', $fc_message);
+function fc_wp_new_user_notification_email_admin() {
+
+	$fc_message = '<p>New user registered to the website with a username'.$user->nickname.'</p>';
+
+}
 
 ?>
