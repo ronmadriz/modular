@@ -890,14 +890,6 @@ body main form {
       color: #404040; }
   body main form input[type=submit].btn {
     border-radius: 0; }
-  body main form input.full-width.has-padding.has-border {
-    background-color: #f7f7f7;
-    color: #000;
-    font-weight: 300;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border-radius: 0.25em;
-    padding-left: 2.75rem; }
   body main form button[type=submit].btn {
     border-radius: 0; }
   body main form button[type=submit].glsr-button {
@@ -1001,6 +993,14 @@ body form#searchform {
     border-right: 0;
     outline: 0;
     margin-right: 0; }
+  body form#searchform input.full-width.has-padding.has-border {
+    background-color: #f7f7f7;
+    color: #000;
+    font-weight: 300;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0.25em;
+    padding-left: 2.75rem; }
   body form#searchform button {
     background-color: white;
     color: #156cb3;
