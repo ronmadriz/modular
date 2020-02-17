@@ -1048,6 +1048,8 @@ body form {
             box-shadow: none;
     border-radius: 0.25em;
     padding-left: 2.75rem; }
+  body form.lrm-form.--registration-done > i .lrm-integrations {
+    display: none; }
 
 @media only screen and (min-width: 992px) {
   html body main table {
