@@ -203,7 +203,6 @@ if (have_rows('download_literature')) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
-// downloadable has the is_user_logged_in() feature
 
 // SOLUTIONS
 $solutions_footercs = get_field('solutions_footer');

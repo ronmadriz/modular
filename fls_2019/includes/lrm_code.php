@@ -47,15 +47,15 @@ add_action('edit_user_profile', 'lrm_show_extra_profile_fields');
 
 function lrm_show_extra_profile_fields($user) {
 	?>
-	    <table class="form-table">
-	        <tr>
-	            <th><label for="phone"><?php esc_html_e('Phone', 'LANG_DOMAIN');?></label></th>
-	            <td><?php echo esc_html(get_user_meta($user->ID, 'phone', true));?></td>
-	        </tr>
-	        <tr>
-	            <th><label for="solution"><?php esc_html_e('Solution of Interest', 'LANG_DOMAIN');?></label></th>
-	            <td><?php echo esc_html(get_user_meta($user->ID, 'solution', true));?></td>
-	        </tr>
-	    </table>
+		    <table class="form-table">
+		        <tr>
+		            <th><label for="phone"><?php esc_html_e('Phone', 'LANG_DOMAIN');?></label></th>
+		            <td><?php echo esc_html(get_user_meta($user->ID, 'phone', true));?></td>
+		        </tr>
+		        <tr>
+		            <th><label for="solution"><?php esc_html_e('Solution of Interest', 'LANG_DOMAIN');?></label></th>
+		            <td><?php echo esc_html(get_user_meta($user->ID, 'solution', true));?></td>
+		        </tr>
+		    </table>
 	<?php
 }

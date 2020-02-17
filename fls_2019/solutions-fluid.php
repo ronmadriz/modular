@@ -289,38 +289,6 @@ if (have_rows('download_literature')) {
 	echo '</section>'.PHP_EOL;
 }
 
-// RESOURCE AREAS
-if (have_rows('resource_area')) {
-	echo '<section id="resource_area">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
-	while (have_rows('resource_area')) {
-		the_row();
-		$resource_area_title = get_sub_field('title');
-		$resource_documents  = get_sub_field('documents');
-		echo '<div class="row">'.PHP_EOL;
-		echo '<div class="title col-12 section_title"><h2>'.$resource_area_title.'</h2></div>'.PHP_EOL;
-		if (have_rows('documents')) {
-			while (have_rows('documents')) {
-				the_row();
-				$document_title = get_sub_field('document_title');
-				$document_file  = get_sub_field('file');
-				$document_url   = $document_file['url'];
-				echo '<figure class="col-6 col-md-4 col-lg-3 col-xl-2">'.PHP_EOL;
-				echo '<a href="'.esc_attr($document_url).'">';
-				if (substr($document_url, -4) == '.pdf') {
-					echo '<img src="'.get_stylesheet_directory_uri().'/images/pdf.svg" alt="Word Document'.(!empty($document_title)?' - '.$document_title:'').'" class="img-fluid">';
-				} elseif (substr($document_url, -4) == '.doc') {
-					echo '<img src="'.get_stylesheet_directory_uri().'/images/word.svg" alt="Word Document'.(!empty($document_title)?' - '.$document_title:'').'" class="img-fluid">';
-				}
-				echo '</a>'.PHP_EOL;
-				echo (!empty($document_title)?'<figcaption><h3><a href="'.esc_attr($document_url).'">'.$document_title.'</a></h3></figcaption>'.PHP_EOL:'');
-				echo '</figure>'.PHP_EOL;
-			}
-		}
-	}
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-}
 // SOLUTIONS
 
 $solutions_footercs = get_field('solutions_footer');
