@@ -29,7 +29,8 @@ if (have_posts()) {
 	while (have_posts()) {
 		the_post();
 		echo '<div class="col-12">';
-		the_content();
+		$all_meta_for_user = get_user_meta(45);
+		print_r($all_meta_for_user);
 		echo '</div>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
