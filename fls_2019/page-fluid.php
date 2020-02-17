@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Test
+ * Template Name: Fluid
  */
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
