@@ -647,12 +647,7 @@ add_filter('site-reviews/review/build/after', function ($renderedFields, $review
 	}, 10, 2);
 //show custom fields meta box
 // add_filter('acf/settings/remove_wp_meta_box', '__return_false');
-/** "New user" email to john@snow.com instead of admin. */
-add_filter('wp_new_user_notification_email_admin', 'fls_new_admin_email', 10, 3);
-function fls_new_admin_email($notification, $user, $blogname) {
-	$notification['to'] = 'firstcreativehouston@gmail.com';
-	return $notification;
-}
+
 include (THEME_INCLUDE.'/lrm_code.php');
 function post_title_shortcode() {
 	return get_the_title();
@@ -707,13 +702,11 @@ function industryDropDown($tag, $unused) {
 }
 add_filter('wpcf7_form_tag', 'industryDropDown', 10, 2);
 
-// $new_user_registration_message = '<p>Username:'.$user->nickname
-
-add_filter('wp_new_user_notification_email_admin', 'fc_wp_new_user_notification_email_admin', $fc_message);
-function fc_wp_new_user_notification_email_admin() {
-
-	$fc_message = '<p>New user registered to the website with a username'.$user->nickname.'</p>';
-
+//89 "New user" email to john@snow.com instead of admin.
+add_filter('wp_new_user_notification_email_admin', 'fls_new_admin_email', 10, 3);
+function fls_new_admin_email($notification, $user, $blogname) {
+	$notification['to']      = 'ron@firstcreative.com';
+	$notification['message'] = '<p>New user registered to the website with a username'.$user->nickname.'</p>';
+	return $notification;
 }
-
 ?>
