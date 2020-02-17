@@ -707,8 +707,8 @@ add_filter('wp_new_user_notification_email_admin', 'fls_new_admin_email', 10, 3)
 function fls_new_admin_email($notification, $user, $blogname) {
 	$user_login              = stripslashes($user->user_login);
 	$user_email              = stripslashes($user->user_email);
-	$notification['to']      = 'ron@firstcreative.com, lyle@firstcreative.com';
-	$notification['message'] = 'You just registered on {{SITE_NAME}}.<br>Url to login: {{LOGIN_URL}}<br>Username: {{USERNAME}}<br>Your password is: {{PASSWORD}}';
+	$notification['to']      = 'ron@firstcreative.com';// , lyle@firstcreative.com
+	$notification['message'] = '<p>A new user has registered with the following information <br>Username: '.$user_login.'</p>';
 	return $notification;
 }
 ?>
