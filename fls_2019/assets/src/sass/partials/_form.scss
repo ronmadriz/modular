@@ -57,6 +57,15 @@ body {
 						border-radius: 0;
 					}
 				}
+				// Registration 
+				&.full-width.has-padding.has-border {
+					background-color: #f7f7f7;
+					color: #000;
+					font-weight: 300;
+					box-shadow: none;
+					border-radius: 0.25em;
+					padding-left: 2.75rem;
+				}				
 			}
 			button {
 				&[type=submit] {
