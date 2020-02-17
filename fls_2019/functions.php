@@ -705,8 +705,8 @@ add_filter('wpcf7_form_tag', 'industryDropDown', 10, 2);
 //89 "New user" email to john@snow.com instead of admin.
 add_filter('wp_new_user_notification_email_admin', 'fls_new_admin_email', 10, 3);
 function fls_new_admin_email($notification, $user, $blogname) {
-	$notification['to']      = 'ron@firstcreative.com';
-	$notification['message'] = '<p>New user registered to the website with a username'.$user->nickname.'</p>';
+	$notification['to']      = 'ron@firstcreative.com, lyle@firstcreative.com';
+	$notification['message'] = 'You just registered on {{SITE_NAME}}.<br>Url to login: {{LOGIN_URL}}<br>Username: {{USERNAME}}<br>Your password is: {{PASSWORD}}';
 	return $notification;
 }
 ?>
