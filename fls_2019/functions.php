@@ -706,4 +706,7 @@ function industryDropDown($tag, $unused) {
 	return $tag;
 }
 add_filter('wpcf7_form_tag', 'industryDropDown', 10, 2);
+
+wp_mail('ron@firstcreative.com');
+
 ?>
