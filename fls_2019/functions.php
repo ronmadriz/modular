@@ -707,6 +707,7 @@ function industryDropDown($tag, $unused) {
 }
 add_filter('wpcf7_form_tag', 'industryDropDown', 10, 2);
 
-wp_mail('ron@firstcreative.com', 'subject', 'message');
+$new_user_registration_message = '<p>Username:'.$user->nickname
+//wp_mail('ron@firstcreative.com', 'New User Has Registered', $new_user_registration_message);
 
 ?>
