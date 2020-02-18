@@ -7,11 +7,24 @@ body {
 				background-color: $white;
 				a {
 					&.navbar-brand {
+						margin-right: 0;
+						color:$accent_1;
 						@media (max-width:786px) {
-							width:225px;
+							width:250px;
 						    margin-top: .75rem;
 							margin-bottom: .75rem;
 						    font-size: 100%;
+						}
+						img {
+							transition: 500ms all ease;
+							@media (max-width: 786px) {
+							    min-width: 250px;
+							    width: 250px;
+							}
+							@media (min-width: 786px) {
+								margin-right:1rem;
+								width: 457.5px;
+							}
 						}
 					}
 				}

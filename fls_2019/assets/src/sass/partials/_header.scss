@@ -1,22 +1,5 @@
 body {
 	header {
-		a {
-			&.navbar-brand {
-				margin-right: 0;
-				color:$accent_1;
-				img {
-					transition: 500ms all ease;
-					@media (max-width: 786px) {
-					    min-width: 225px;
-					    width: 225px;
-					}
-					@media (min-width: 786px) {
-						margin-right:1rem;
-						width: 457.5px;
-					}
-				}
-			}
-		}
 		span {
 			&.nav_tel {
 				font-weight: bold;
