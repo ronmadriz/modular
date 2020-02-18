@@ -52,7 +52,7 @@ echo '</a>'.PHP_EOL;
 endif;
 echo '<span class="nav_tel d-none d-sm-block ml-md-auto"><a href="tel:+1'.$phoneND.'">'.$phone.'</a></span>'.PHP_EOL;
 echo '<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Menu">'.PHP_EOL;
-// echo '<span class="menu-text">Menu</span>'.PHP_EOL;
+echo '<span class="menu-text">Menu</span>'.PHP_EOL;
 echo '<span class="menu-icon">'.PHP_EOL;
 echo '<span class="nav-bar"></span>'.PHP_EOL;
 echo '<span class="nav-bar"></span>'.PHP_EOL;

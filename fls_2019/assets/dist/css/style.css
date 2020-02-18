@@ -570,14 +570,17 @@ body header nav.navbar {
         padding-left: .75rem;
         padding-right: .75rem; } }
     body header nav.navbar button.navbar-toggler span.menu-text {
-      display: inline-block;
-      top: -10px;
-      margin-right: 0px;
-      position: relative;
-      left: 0;
-      font-size: 15px;
-      font-weight: bold;
-      color: #156cb3; }
+      display: none; }
+      @media (min-width: 786px) {
+        body header nav.navbar button.navbar-toggler span.menu-text {
+          display: inline-block;
+          top: -10px;
+          margin-right: 0px;
+          position: relative;
+          left: 0;
+          font-size: 15px;
+          font-weight: bold;
+          color: #156cb3; } }
     body header nav.navbar button.navbar-toggler span.menu-icon {
       display: inline-block;
       line-height: 0px;

@@ -34,14 +34,17 @@ body {
 						}
 						span {
 							&.menu-text {
-							    display: inline-block;
-							    top: -10px;
-								margin-right: 0px;
-							    position: relative;
-							    left: 0;
-							    font-size: 15px;
-							    font-weight: bold;
-							    color: $accent_1;
+								display:none;
+								@media(min-width:786px){
+								    display: inline-block;
+								    top: -10px;
+									margin-right: 0px;
+								    position: relative;
+								    left: 0;
+								    font-size: 15px;
+								    font-weight: bold;
+								    color: $accent_1;
+								}
 							}
 							&.menu-icon {
 							    display: inline-block;
