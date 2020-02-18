@@ -1635,13 +1635,17 @@ html body.solutions-template-solutions-fluid main section#cta_speak:not(#banner)
 html body.solutions-template-solutions-fluid main section#cta_speak a, html body.industries-template-single-industries-fluid main section#cta_speak a, html body.page-template-fall-protection-101 main section#cta_speak a, html body.page-template-sample-fall-protection-plan main section#cta_speak a, html body.industries-template-single-all-industries main section#cta_speak a, html body.solutions-template-single-all-solutions main section#cta_speak a, html body.page-template-fluid main section#cta_speak a {
   display: block;
   background: #fecd06;
-  padding: 1.5rem 6.25rem;
+  padding: 1.5rem 3.25rem;
   border-top: 2px solid #156cb3;
   border-bottom: 2px solid #156cb3;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   line-height: 150%;
   -webkit-transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s;
   transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s; }
+  @media (min-width: 786px) {
+    html body.solutions-template-solutions-fluid main section#cta_speak a, html body.industries-template-single-industries-fluid main section#cta_speak a, html body.page-template-fall-protection-101 main section#cta_speak a, html body.page-template-sample-fall-protection-plan main section#cta_speak a, html body.industries-template-single-all-industries main section#cta_speak a, html body.solutions-template-single-all-solutions main section#cta_speak a, html body.page-template-fluid main section#cta_speak a {
+      padding: 1.5rem 6.25rem;
+      font-size: 1.75rem; } }
   html body.solutions-template-solutions-fluid main section#cta_speak a:hover, html body.industries-template-single-industries-fluid main section#cta_speak a:hover, html body.page-template-fall-protection-101 main section#cta_speak a:hover, html body.page-template-sample-fall-protection-plan main section#cta_speak a:hover, html body.industries-template-single-all-industries main section#cta_speak a:hover, html body.solutions-template-single-all-solutions main section#cta_speak a:hover, html body.page-template-fluid main section#cta_speak a:hover {
     font-size: 110%;
     text-decoration: none;
@@ -1654,7 +1658,12 @@ html body.solutions-template-solutions-fluid main section#cta_speak h2, html bod
   color: white;
   margin-bottom: 1rem; }
   html body.solutions-template-solutions-fluid main section#cta_speak h2 i.im, html body.industries-template-single-industries-fluid main section#cta_speak h2 i.im, html body.page-template-fall-protection-101 main section#cta_speak h2 i.im, html body.page-template-sample-fall-protection-plan main section#cta_speak h2 i.im, html body.industries-template-single-all-industries main section#cta_speak h2 i.im, html body.solutions-template-single-all-solutions main section#cta_speak h2 i.im, html body.page-template-fluid main section#cta_speak h2 i.im {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    position: relative;
+    top: 3px; }
+    @media (min-width: 786px) {
+      html body.solutions-template-solutions-fluid main section#cta_speak h2 i.im, html body.industries-template-single-industries-fluid main section#cta_speak h2 i.im, html body.page-template-fall-protection-101 main section#cta_speak h2 i.im, html body.page-template-sample-fall-protection-plan main section#cta_speak h2 i.im, html body.industries-template-single-all-industries main section#cta_speak h2 i.im, html body.solutions-template-single-all-solutions main section#cta_speak h2 i.im, html body.page-template-fluid main section#cta_speak h2 i.im {
+        top: 0; } }
 
 html body.solutions-template-solutions-fluid main section#literature, html body.industries-template-single-industries-fluid main section#literature, html body.page-template-fall-protection-101 main section#literature, html body.page-template-sample-fall-protection-plan main section#literature, html body.industries-template-single-all-industries main section#literature, html body.solutions-template-single-all-solutions main section#literature, html body.page-template-fluid main section#literature {
   padding-top: 0;

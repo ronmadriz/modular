@@ -187,18 +187,22 @@ html {
 						a {
 							display:block;
 							background:$accent_2;
-							padding: 1.5rem 6.25rem;
+							padding: 1.5rem 3.25rem;
 							border-top: 2px solid $accent_1;
 							border-bottom: 2px solid $accent_1;
-							font-size: 1.75rem;
+							font-size: 1.25rem;
 							line-height: 150%;
 						    transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s;
+							@media(min-width:786px) {
+								padding: 1.5rem 6.25rem;
+								font-size: 1.75rem;
+							}
 							&:hover {
 							    font-size: 110%;
 							    text-decoration: none;
 							    background-color:$accent_1;
 							    color:$accent_2;
-							}						
+							}
 						}
 						h2 {
 							font-size: 1.75rem;
@@ -208,6 +212,11 @@ html {
 							i {
 								&.im {
 								    font-size: 1.5rem;
+									position: relative;
+									top: 3px;
+									@media(min-width:786px){
+										top:0;
+									}
 								}
 							}
 						}
