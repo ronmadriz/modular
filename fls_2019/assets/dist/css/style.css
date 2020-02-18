@@ -78,8 +78,8 @@ body header a.navbar-brand {
     transition: 500ms all ease; }
     @media (max-width: 786px) {
       body header a.navbar-brand img {
-        min-width: 245px;
-        width: 245px; } }
+        min-width: 225px;
+        width: 225px; } }
     @media (min-width: 786px) {
       body header a.navbar-brand img {
         margin-right: 1rem;
@@ -481,8 +481,8 @@ body header a.navbar-brand {
     transition: 500ms all ease; }
     @media (max-width: 786px) {
       body header a.navbar-brand img {
-        min-width: 245px;
-        width: 245px; } }
+        min-width: 225px;
+        width: 225px; } }
     @media (min-width: 786px) {
       body header a.navbar-brand img {
         margin-right: 1rem;
@@ -553,7 +553,7 @@ body header nav.navbar {
   background-color: white; }
   @media (max-width: 786px) {
     body header nav.navbar a.navbar-brand {
-      width: 60%;
+      width: 225px;
       margin-top: .75rem;
       margin-bottom: .75rem;
       font-size: 100%; } }
