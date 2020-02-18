@@ -198,10 +198,12 @@ html {
 								font-size: 1.75rem;
 							}
 							&:hover {
-							    font-size: 110%;
 							    text-decoration: none;
 							    background-color:$accent_1;
 							    color:$accent_2;
+							    @media(min-width:786px){
+								    font-size: 110%;
+							    }
 							}
 						}
 						h2 {
