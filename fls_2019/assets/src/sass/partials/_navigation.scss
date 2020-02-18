@@ -34,7 +34,6 @@ body {
 						}
 						span {
 							&.menu-text {
-								display:none;
 								@media(min-width:786px){
 								    display: inline-block;
 								    top: -10px;
@@ -44,6 +43,14 @@ body {
 								    font-size: 15px;
 								    font-weight: bold;
 								    color: $accent_1;
+								}
+								
+								@supports (-webkit-touch-callout: none) {
+									display:none;
+								}
+
+								@supports not (-webkit-touch-callout: none) {
+									display:none;
 								}
 							}
 							&.menu-icon {

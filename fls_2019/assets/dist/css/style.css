@@ -569,18 +569,22 @@ body header nav.navbar {
       body header nav.navbar button.navbar-toggler {
         padding-left: .75rem;
         padding-right: .75rem; } }
-    body header nav.navbar button.navbar-toggler span.menu-text {
-      display: none; }
-      @media (min-width: 786px) {
-        body header nav.navbar button.navbar-toggler span.menu-text {
-          display: inline-block;
-          top: -10px;
-          margin-right: 0px;
-          position: relative;
-          left: 0;
-          font-size: 15px;
-          font-weight: bold;
-          color: #156cb3; } }
+    @media (min-width: 786px) {
+      body header nav.navbar button.navbar-toggler span.menu-text {
+        display: inline-block;
+        top: -10px;
+        margin-right: 0px;
+        position: relative;
+        left: 0;
+        font-size: 15px;
+        font-weight: bold;
+        color: #156cb3; } }
+    @supports (-webkit-touch-callout: none) {
+      body header nav.navbar button.navbar-toggler span.menu-text {
+        display: none; } }
+    @supports not (-webkit-touch-callout: none) {
+      body header nav.navbar button.navbar-toggler span.menu-text {
+        display: none; } }
     body header nav.navbar button.navbar-toggler span.menu-icon {
       display: inline-block;
       line-height: 0px;
