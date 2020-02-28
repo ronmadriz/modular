@@ -298,7 +298,7 @@ if (have_rows('download_literature')) {
 	echo '<div class="section_title col-12"><h2>'.(!empty($download_literature_title)?$download_literature_title:'download literature').'</h2></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="content col-12 col-md-10">'.PHP_EOL;
+	echo '<div class="content col-12">'.PHP_EOL;
 	echo '<ul class="list-inline literature_list">'.PHP_EOL;
 	while (have_rows('download_literature')) {
 		the_row();

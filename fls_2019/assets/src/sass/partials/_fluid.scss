@@ -232,12 +232,7 @@ html {
 									align-content: start;
 								    vertical-align: top;
 							        margin-bottom: .75rem;
-									&.col-md-3 {
-										@media(min-width: 768px){
-											flex: 0 0 24%;
-											max-width: 24%;											
-										}
-									}
+							        margin-right:0;
 									img {
 										&.img-fluid {
 											min-width:100%;
