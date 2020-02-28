@@ -705,7 +705,7 @@ add_filter('wpcf7_form_tag', 'industryDropDown', 10, 2);
 //89 "New user" email to john@snow.com instead of admin.
 add_filter('wp_new_user_notification_email_admin', 'fls_new_admin_email', 10, 3);
 function fls_new_admin_email($notification, $user, $blogname) {
-
+	$user       = get_userdata($user_id);
 	$user_name  = $user->display_name;
 	$user_email = $user->user_email;
 	//	$user_phone      = $user->phone;
