@@ -707,9 +707,9 @@ add_filter('wp_new_user_notification_email_admin', 'fls_new_admin_email', 10, 3)
 function fls_new_admin_email($notification, $user, $blogname) {
 	$all_meta_for_user = get_user_meta($user->ID);
 
-	$notification['to']        = 'ron@firstcreative.com';// , lyle@firstcreative.com
-	$notification['message']   = sprintf("%s ( %s ) has registerd to your website %s.", $user->user_login, $user->user_email, $blogname);
-	$notification['firstname'] = sprintf("%s", $all_meta_for_user['first_name']);
+	$notification['to']      = 'ron@firstcreative.com';// , lyle@firstcreative.com
+	$notification['message'] = sprintf(__('Username: %s'), $user->user_login)."\r\n";
+	$notification['message'] .= sprintf(__('Password: %s'), $plaintext_pass)."\r\n";
 	return $notification;
 }
 ?>
