@@ -714,7 +714,7 @@ function fls_new_admin_email($notification, $user, $blogname) {
 	$user_solution   = stripslashes($user->solution);
 
 	$notification['to']      = 'ron@firstcreative.com';// , lyle@firstcreative.com
-	$notification['message'] = '<p>A new user has registered with the following information: Full Name:'.$user_first_name.' '.$user_last_name.' Email:'.$user_email.' Phone:'.$user['phone'].' Interest:'.$user['phone'].'</p>';
+	$notification['message'] = '<p>A new user has registered with the following information: Full Name:'.$user_first_name.' '.$user_last_name.' Email:'.$user_email.' Phone:'.$user_phone.' Interest:'.$user['phone'].'</p>';
 	return $notification;
 }
 ?>
