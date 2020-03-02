@@ -1663,9 +1663,6 @@ html body.solutions-template-solutions-fluid main section#literature, html body.
   padding-top: 0;
   padding-bottom: 0; }
   html body.solutions-template-solutions-fluid main section#literature ul.literature_list li, html body.industries-template-single-industries-fluid main section#literature ul.literature_list li, html body.page-template-fall-protection-101 main section#literature ul.literature_list li, html body.page-template-sample-fall-protection-plan main section#literature ul.literature_list li, html body.industries-template-single-all-industries main section#literature ul.literature_list li, html body.solutions-template-single-all-solutions main section#literature ul.literature_list li, html body.page-template-fluid main section#literature ul.literature_list li {
-    -ms-flex-line-pack: start;
-        align-content: start;
-    vertical-align: top;
     margin-bottom: .75rem;
     margin-right: 0; }
     html body.solutions-template-solutions-fluid main section#literature ul.literature_list li img.img-fluid, html body.industries-template-single-industries-fluid main section#literature ul.literature_list li img.img-fluid, html body.page-template-fall-protection-101 main section#literature ul.literature_list li img.img-fluid, html body.page-template-sample-fall-protection-plan main section#literature ul.literature_list li img.img-fluid, html body.industries-template-single-all-industries main section#literature ul.literature_list li img.img-fluid, html body.solutions-template-single-all-solutions main section#literature ul.literature_list li img.img-fluid, html body.page-template-fluid main section#literature ul.literature_list li img.img-fluid {
