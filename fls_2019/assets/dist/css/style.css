@@ -432,6 +432,8 @@ html body main {
           color: #156cb3;
           font-size: 1.125rem;
           font-weight: bold; }
+      html body main section#literature ul.literature_list li.list-inline-item:not(:last-child) {
+        margin-right: 0; }
   html body main section#child_grid .img_grid .item img {
     margin-top: 0;
     margin-bottom: 0; }
@@ -1665,13 +1667,8 @@ html body.solutions-template-solutions-fluid main section#literature, html body.
     -ms-flex-line-pack: start;
         align-content: start;
     vertical-align: top;
-    margin-bottom: .75rem; }
-    @media (min-width: 768px) {
-      html body.solutions-template-solutions-fluid main section#literature ul.literature_list li.col-md-3, html body.industries-template-single-industries-fluid main section#literature ul.literature_list li.col-md-3, html body.page-template-fall-protection-101 main section#literature ul.literature_list li.col-md-3, html body.page-template-sample-fall-protection-plan main section#literature ul.literature_list li.col-md-3, html body.industries-template-single-all-industries main section#literature ul.literature_list li.col-md-3, html body.solutions-template-single-all-solutions main section#literature ul.literature_list li.col-md-3, html body.page-template-fluid main section#literature ul.literature_list li.col-md-3 {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 0 24%;
-                flex: 0 0 24%;
-        max-width: 24%; } }
+    margin-bottom: .75rem;
+    margin-right: 0; }
     html body.solutions-template-solutions-fluid main section#literature ul.literature_list li img.img-fluid, html body.industries-template-single-industries-fluid main section#literature ul.literature_list li img.img-fluid, html body.page-template-fall-protection-101 main section#literature ul.literature_list li img.img-fluid, html body.page-template-sample-fall-protection-plan main section#literature ul.literature_list li img.img-fluid, html body.industries-template-single-all-industries main section#literature ul.literature_list li img.img-fluid, html body.solutions-template-single-all-solutions main section#literature ul.literature_list li img.img-fluid, html body.page-template-fluid main section#literature ul.literature_list li img.img-fluid {
       min-width: 100%; }
     html body.solutions-template-solutions-fluid main section#literature ul.literature_list li h3, html body.industries-template-single-industries-fluid main section#literature ul.literature_list li h3, html body.page-template-fall-protection-101 main section#literature ul.literature_list li h3, html body.page-template-sample-fall-protection-plan main section#literature ul.literature_list li h3, html body.industries-template-single-all-industries main section#literature ul.literature_list li h3, html body.solutions-template-single-all-solutions main section#literature ul.literature_list li h3, html body.page-template-fluid main section#literature ul.literature_list li h3 {
