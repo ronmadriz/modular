@@ -1912,6 +1912,9 @@ html body.solutions-template-solutions-fluid main section#logos, html body.indus
     padding-top: 3rem;
     padding-bottom: 2rem; }
 
+html body#page-all main section#breadcrumbs ul li:nth-of-type(2) {
+  display: none; }
+
 body.solutions-template div.testimonials {
   background-color: #f7f7f7;
   border-radius: 5px;

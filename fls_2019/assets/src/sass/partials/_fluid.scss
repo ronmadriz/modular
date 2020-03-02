@@ -569,5 +569,8 @@ html {
 				}
 			}
 		}
+		&#page-all main section#breadcrumbs ul li:nth-of-type(2) {
+			display:none;
+		}
 	}
 }
