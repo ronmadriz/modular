@@ -421,8 +421,7 @@ html body main {
           html body main section#faq div.tab-content dl dd p {
             font-size: .85rem; }
   html body main section#literature {
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
+    padding: 2rem 0; }
     html body main section#literature ul.literature_list li {
       padding-left: 0;
       padding-right: 0; }
