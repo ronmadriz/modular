@@ -348,7 +348,6 @@ if (have_rows('case_study_groups')) {
 // VIDEOS
 $videos = get_field('videos');
 if ($videos) {
-	// echo '<!-- hi -->';
 	$video_count = 0;
 	if (is_array($videos)) {
 		$video_count = count($videos);
@@ -361,9 +360,7 @@ if ($videos) {
 				$v_embed = get_sub_field('v_embed');
 				$v_desc  = get_sub_field('description');
 				echo '<div class="row justify-content-center">'.PHP_EOL;
-				echo '<div class="single col-12">'.PHP_EOL;
-				echo '<span class="section_title"><h2>'.$v_title.'</h2></span>'.PHP_EOL;
-				echo '</div>'.PHP_EOL;
+				echo '<div class="videos single col-12"><span class="section_title"><h2>'.$v_title.'</h2></span></div>'.PHP_EOL;
 				echo '</div>'.PHP_EOL;
 				echo '<div class="row justify-content-center">'.PHP_EOL;
 				echo '<div class="videos single col-12 col-md-9">'.PHP_EOL;
