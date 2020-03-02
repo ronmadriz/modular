@@ -144,26 +144,26 @@ if (have_rows('case_study_groups')) {
 
 // VIDEOS
 $videos = get_field('videos');
-if ($videos):
-echo '<section id="solution_videos">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
-while (have_rows('videos')):the_row();
-$v_title = get_sub_field('title');
-$v_embed = get_sub_field('v_embed');
-$v_desc  = get_sub_field('description');
-echo '<div class="row">'.PHP_EOL;
-echo '<div class="section_title col-12"><h2>'.$v_title.'</h2></div>'.PHP_EOL;
-echo '<div class="video col-12">'.$v_embed.'</div>'.PHP_EOL;
-echo '<div class="content col-12">'.PHP_EOL;
-echo $v_desc.PHP_EOL;
-echo '</div>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-endwhile;
-wp_reset_query();
-echo '</div>'.PHP_EOL;
-echo '</section>'.PHP_EOL;
-endif;
-// GALLERY
+if ($videos) {
+	echo '<section id="solution_videos">'.PHP_EOL;
+	echo '<div class="container">'.PHP_EOL;
+	while (have_rows('videos')) {
+		the_row();
+		$v_title = get_sub_field('title');
+		$v_embed = get_sub_field('v_embed');
+		$v_desc  = get_sub_field('description');
+		echo '<div class="row">'.PHP_EOL;
+		echo '<div class="section_title col-12"><h2>'.$v_title.'</h2></div>'.PHP_EOL;
+		echo '<div class="video col-12">'.$v_embed.'</div>'.PHP_EOL;
+		echo '<div class="content col-12">'.PHP_EOL;
+		echo $v_desc.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+	}
+	wp_reset_query();
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+}
 
 // GALLERY
 
@@ -215,12 +215,13 @@ if (have_rows('industry_faq')) {
 	echo '<div class="tab-content" id="faq_content">'.PHP_EOL;
 	echo '<div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">'.PHP_EOL;
 	echo '<dl>'.PHP_EOL;
-	while (have_rows('industry_faq')):the_row();
-	$faq_question = get_sub_field('question');
-	$faq_answer   = get_sub_field('answer');
-	echo '<dt><h4>'.$faq_question.'</h4></dt>'.PHP_EOL;
-	echo '<dd>'.$faq_answer.'</dd>'.PHP_EOL;
-	endwhile;
+	while (have_rows('industry_faq')) {
+		the_row();
+		$faq_question = get_sub_field('question');
+		$faq_answer   = get_sub_field('answer');
+		echo '<dt><h4>'.$faq_question.'</h4></dt>'.PHP_EOL;
+		echo '<dd>'.$faq_answer.'</dd>'.PHP_EOL;
+	}
 	echo '</dl>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
@@ -247,7 +248,7 @@ if (have_rows('download_literature')) {
 		$lit_file  = get_sub_field('file');
 		$lit_img   = get_sub_field('Image');
 		$lit_title = get_sub_field('title');
-		echo '<li class="list-inline-item col-6 col-md-3 text-center">';
+		echo '<li class="list-inline-item col-6 col-md-4 text-center">';
 		echo ($lit_file != null?'<a href="'.$lit_file['url'].'" class="d-block">':'');
 		echo ($lit_img != null?'<img src="'.$lit_img['url'].'" alt="'.$lit_img['alt'].'" class="img-fluid">':'');
 		echo ($lit_file != null?'</a>'.PHP_EOL:'');
