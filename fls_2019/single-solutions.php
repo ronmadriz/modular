@@ -99,35 +99,36 @@ endif;
 // GALLERY
 
 $solutions_gallery = get_field('solutions_gallery');
-if ($solutions_gallery) {
-	while (have_rows('solutions_gallery')):the_row();
-	$gallery_title = get_sub_field('title');
-	$gallery_pics  = get_sub_field('gallery_pics');
-	echo '<section id="gallery">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="section_title col-12">'.PHP_EOL;
-	echo '<h2>'.$gallery_title.'</h2>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="content col-12">'.PHP_EOL;
-	if ($gallery_pics):
-	echo '<ul class="gallery list-unstyled list-inline">'.PHP_EOL;
-	foreach ($gallery_pics as $gallery_pic):
-	echo '<li class="list-inline-item col-6 col-md-3 col-xl-2">'.PHP_EOL;
-	echo '<a href="'.$gallery_pic['url'].'" data-gallery="fls-gallery" data-toggle="lightbox">'.PHP_EOL;
-	echo '<img src="'.$gallery_pic['sizes']['thumbnail'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid">'.PHP_EOL;
-	echo '</a>'.PHP_EOL;
-	echo '</li>'.PHP_EOL;
-	endforeach;
-	echo '</ul>'.PHP_EOL;
-	endif;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-	endwhile;
+if ($solutions_gallery['gallery_pics']) {
+	while (have_rows('solutions_gallery')) {
+		the_row();
+		$gallery_title = get_sub_field('title');
+		$gallery_pics  = get_sub_field('gallery_pics');
+		echo '<section id="gallery">'.PHP_EOL;
+		echo '<div class="container">'.PHP_EOL;
+		echo '<div class="row">'.PHP_EOL;
+		echo '<div class="section_title col-12">'.PHP_EOL;
+		echo '<h2>'.$gallery_title.'</h2>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		echo '<div class="row">'.PHP_EOL;
+		echo '<div class="content col-12">'.PHP_EOL;
+		if ($gallery_pics) {
+			echo '<ul class="gallery list-unstyled list-inline">'.PHP_EOL;
+			foreach ($gallery_pics as $gallery_pic) {
+				echo '<li class="list-inline-item col-6 col-md-3 col-xl-2">'.PHP_EOL;
+				echo '<a href="'.$gallery_pic['url'].'" data-gallery="fls-gallery" data-toggle="lightbox">'.PHP_EOL;
+				echo '<img src="'.$gallery_pic['sizes']['thumbnail'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid">'.PHP_EOL;
+				echo '</a>'.PHP_EOL;
+				echo '</li>'.PHP_EOL;
+			}
+			echo '</ul>'.PHP_EOL;
+		}
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		echo '</section>'.PHP_EOL;
+	}
 }
 
 // DOWNLOADABLE FILES
