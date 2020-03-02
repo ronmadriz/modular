@@ -241,7 +241,7 @@ if (have_rows('download_literature')) {
 	echo '</div>'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="content col-12 col-md-10">'.PHP_EOL;
-	echo '<ul class="list-inline literature_list">'.PHP_EOL;
+	echo '<ul class="d-flex align-items-center justify-content-center literature_list">'.PHP_EOL;
 	while (have_rows('download_literature')) {
 		the_row();
 		$lit_file  = get_sub_field('file');
