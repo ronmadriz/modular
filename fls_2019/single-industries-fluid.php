@@ -47,7 +47,7 @@ if ($industry_gallery['gallery_pics']) {
 	while (have_rows('industry_gallery')) {
 		the_row();
 		$gallery_pics = get_sub_field('gallery_pics');
-		if ($gallery_pics) {
+		if (!empty($gallery_pics)) {
 			echo '<ul id="lightSlider" class="gallery list-unstyled">'.PHP_EOL;
 			foreach ($gallery_pics as $gallery_pic) {
 				echo '<li data-thumb="'.$gallery_pic['sizes']['medium'].'" data-src="'.$gallery_pic['url'].'"><img src="'.$gallery_pic['url'].'" alt="'.$gallery_pic['alt'].'" class="img-fluid" /></li>'.PHP_EOL;
