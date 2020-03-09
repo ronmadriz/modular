@@ -366,18 +366,16 @@ if ($solutions_footercs['solutions']) {
 // CASE STUDIES
 
 $case_studies = get_field('case_study_groups');
-if ($case_studies) {
-	$cs_count = 0;
-	if (is_array($case_studies)) {
-		$cs_count = count($case_studies);
-		echo '<section id="case_study">'.PHP_EOL;
-		echo '<div class="container-fluid">'.PHP_EOL;
-		while (have_rows('case_study_groups')):the_row();
+if (have_rows('case_study_groups')) {
+	echo '<section id="case_study">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
+	while (have_rows('case_study_groups')) {
+		the_row();
 		$study_section_title = get_sub_field('study_section_title');
 		$studies             = get_sub_field('studies');
 		$studies_count       = count($studies);
 		echo (!empty($study_section_title)?'<div class="row"><div class="section_title col-12"><h2>'.$study_section_title.'</h2></div></div>'.PHP_EOL:'');
-		if ($studies && $studies_count <= 3) {
+		if ($studies_count <= 3) {
 			while (have_rows('studies')) {
 				the_row();
 				$study_item = get_sub_field('case_study');
@@ -401,7 +399,7 @@ if ($case_studies) {
 				endif;
 			}
 			wp_reset_postdata();
-		} elseif ($studies && $studies_count > 3) {
+		} elseif ($studies_count > 3) {
 			echo '<div class="row">'.PHP_EOL;
 			while (have_rows('studies')) {
 				the_row();
@@ -428,12 +426,12 @@ if ($case_studies) {
 			echo '</div>'.PHP_EOL;
 			wp_reset_postdata();
 		}
-		endwhile;
-		wp_reset_postdata();
-		echo '</div>'.PHP_EOL;
-		echo '</section>'.PHP_EOL;
 	}
+	wp_reset_postdata();
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
 }
+
 // VIDEOS
 $videos = get_field('videos');
 if ($videos) {
