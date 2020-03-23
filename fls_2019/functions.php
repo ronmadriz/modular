@@ -8,10 +8,8 @@ function enqueue_my_scripts() {
 	wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', array('jquery'), '', true, true);
 	wp_enqueue_script('bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), true, true);
 	wp_enqueue_script('lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js', array('jquery'), '', true, true);
-	if (is_singular(array('solutions', 'industries'))) {
-		wp_enqueue_script('lightgallery_js', 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery.min.js', array('jquery'), '', true, true);
-		wp_enqueue_script('lightslide_js', 'https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js', array('jquery'), '', true, true);
-	}
+	wp_enqueue_script('lightgallery_js', 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery.min.js', array('jquery'), '', true, true);
+	wp_enqueue_script('lightslide_js', 'https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js', array('jquery'), '', true, true);
 	wp_enqueue_script('site_script', $pathToScripts, array('jquery'), false);
 }
 add_action('wp_enqueue_scripts', 'enqueue_my_scripts');
@@ -34,10 +32,8 @@ function enqueue_my_styles() {
 	wp_enqueue_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 	wp_enqueue_style('lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css');
 	wp_enqueue_style('iconmonstr', 'https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css');
-	if (is_singular(array('solutions', 'industries'))) {
-		wp_enqueue_style('lightgallery_css', 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css');
-		wp_enqueue_style('lightslide_css', 'https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css');
-	}
+	wp_enqueue_style('lightgallery_css', 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css');
+	wp_enqueue_style('lightslide_css', 'https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css');
 	wp_enqueue_style('site-style', get_template_directory_uri().'/assets/dist/css/style.min.css');
 	wp_enqueue_style('my-style', get_template_directory_uri().'/style.css');
 }
