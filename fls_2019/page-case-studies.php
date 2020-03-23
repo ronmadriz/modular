@@ -59,71 +59,71 @@ if ($studies_query) {
 	if ($sol_studies = get_terms(array(
 				'taxonomy' => 'solution_type', // to make it simple I use default categories
 				'orderby'  => 'name',
-			))):
-	// if categories exist, display the dropdown
-	echo '<div class="col-6 button-group" data-filter-group="solution_type">'.PHP_EOL;
-	echo '<div class="dropdown text-right">'.PHP_EOL;
-	echo '<button class="btn btn-blue dropdown-toggle" type="button" id="categoryFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</button>'.PHP_EOL;
-	echo '<div class="dropdown-menu" aria-labelledby="categoryFilter">'.PHP_EOL;
-	$count_sol = 0;
-	foreach ($sol_studies as $sol_study):
-	$sol_status = ($count_sol == 0?'active ':'');
-	$sol_all    = ($count_sol == 0?' id="all"':'');
-	echo '<a'.$sol_all.' class="'.$sol_status.'dropdown-item btn_filter" id="'.$sol_study->slug.'">'.$sol_study->name.'</a>'.PHP_EOL;// ID of the category as an option value
-	$count_sol++;
-	endforeach;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	endif;
+			))) {
+		// if categories exist, display the dropdown
+		echo '<div class="col-6 button-group" data-filter-group="solution_type">'.PHP_EOL;
+		echo '<div class="dropdown text-right">'.PHP_EOL;
+		echo '<button class="btn btn-blue dropdown-toggle" type="button" id="categoryFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</button>'.PHP_EOL;
+		echo '<div class="dropdown-menu" aria-labelledby="categoryFilter">'.PHP_EOL;
+		$count_sol = 0;
+		foreach ($sol_studies as $sol_study) {
+			$sol_status = ($count_sol == 0?'active ':'');
+			$sol_all    = ($count_sol == 0?' id="all"':'');
+			echo '<a'.$sol_all.' class="'.$sol_status.'dropdown-item btn_filter" id="'.$sol_study->slug.'">'.$sol_study->name.'</a>'.PHP_EOL;// ID of the category as an option value
+			$count_sol++;
+
+		}
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+
+	}
 	wp_reset_postdata();
 	// Industry
 	// $count_ind = 0;
-	if ($ind_studies = get_terms(array(
-				'taxonomy' => 'industry', // to make it simple I use default categories
-				'orderby'  => 'menu_index',
-			))):
-	// if categories exist, display the dropdown
-	echo '<div class="col-6 button-group" data-filter-group="industry">'.PHP_EOL;
-	echo '<div class="dropdown">'.PHP_EOL;
-	echo '<button class="btn btn-blue dropdown-toggle" type="button" id="industryFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</button>'.PHP_EOL;
-	echo '<div class="dropdown-menu" aria-labelledby="industryFilter">'.PHP_EOL;
-	echo '<a id="all" class="dropdown-item btn_filter" id="all-industries">All Industries</a>'.PHP_EOL;
-	$count_ind = 0;
-	foreach ($ind_studies as $ind_study):
-	$ind_status = ($count_ind == 0?'active ':'');
-	echo '<a class="dropdown-item btn_filter" id="'.$ind_study->slug.'">'.$ind_study->name.'</a>'.PHP_EOL;// ID of the category as an option value
-	$count_ind++;
-	endforeach;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	endif;
+	if ($ind_studies = get_terms(array('taxonomy' => 'industry', 'orderby' => 'menu_index', ))) {
+		echo '<div class="col-6 button-group" data-filter-group="industry">'.PHP_EOL;
+		echo '<div class="dropdown">'.PHP_EOL;
+		echo '<button class="btn btn-blue dropdown-toggle" type="button" id="industryFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</button>'.PHP_EOL;
+		echo '<div class="dropdown-menu" aria-labelledby="industryFilter">'.PHP_EOL;
+		echo '<a id="all" class="dropdown-item btn_filter" id="all-industries">All Industries</a>'.PHP_EOL;
+		$count_ind = 0;
+		foreach ($ind_studies as $ind_study) {
+			$ind_status = ($count_ind == 0?'active ':'');
+			echo '<a class="dropdown-item btn_filter" id="'.$ind_study->slug.'">'.$ind_study->name.'</a>'.PHP_EOL;// ID of the category as an option value
+			$count_ind++;
+		}
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+
+	}
 	wp_reset_postdata();
 	echo '</div>'.PHP_EOL;
 	echo '<div id="solutions_results" class="row industries img_grid">'.PHP_EOL;
-	while ($studies_query->have_posts()):$studies_query->the_post();
-	$summary     = get_field('summary');
-	$studies_cat = get_the_terms($post->ID, array('solution_type', 'industry'));
-	echo '<div class="item col-12 col-md-4';
-	if ($studies_cat) {
-		foreach ($studies_cat as $study_cat):
-		echo ' '.$study_cat->slug;
-		endforeach;
+	while ($studies_query->have_posts()) {
+		$studies_query->the_post();
+		$summary     = get_field('summary');
+		$studies_cat = get_the_terms($post->ID, array('solution_type', 'industry'));
+		echo '<div class="item col-12 col-md-4';
+		if ($studies_cat) {
+			foreach ($studies_cat as $study_cat) {
+				echo ' '.$study_cat->slug;
+			}
+		}
+		echo '">'.PHP_EOL;
+		the_post_thumbnail('full', array('class' => 'img-fluid'));
+		echo '<div class="title"><a href="'.get_permalink().'">'.get_the_title().'</a></div>'.PHP_EOL;
+		echo '<div class="caption text-center align-content-center justify-content-center">'.PHP_EOL;
+		echo '<h2><a href="'.get_the_permalink().'">'.get_the_title().'</a></h2>'.PHP_EOL;
+		echo '<div class="desc"><p><a href="'.get_the_permalink().'">'.$summary.'</a></p></div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
 	}
-	echo '">'.PHP_EOL;
-	the_post_thumbnail('full', array('class' => 'img-fluid'));
-	echo '<div class="title"><a href="'.get_permalink().'">'.get_the_title().'</a></div>'.PHP_EOL;
-	echo '<div class="caption text-center align-content-center justify-content-center">'.PHP_EOL;
-	echo '<h2><a href="'.get_the_permalink().'">'.get_the_title().'</a></h2>'.PHP_EOL;
-	echo '<div class="desc"><p><a href="'.get_the_permalink().'">'.$summary.'</a></p></div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	endwhile;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 	wp_reset_postdata();
 }
-
-get_footer();?>
+get_footer();
+?>
