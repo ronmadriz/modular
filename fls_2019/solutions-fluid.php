@@ -92,7 +92,7 @@ echo (!empty(get_the_content())?'<section id="cta_speak"><div class="container-f
 
 $image_callout = get_field('image_callout');
 if ($image_callout['callout']) {
-	echo '<section id="image_callout">'.PHP_EOL;
+	echo '<section id="image_callout" class="image_callout">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('image_callout')) {
 		the_row();
@@ -108,7 +108,7 @@ if ($image_callout['callout']) {
 				$callout_content = get_sub_field('content');
 				$callout_link    = get_sub_field('link');
 				if ($callout_link) {
-					echo '<div class="col-12 col-md-6">'.PHP_EOL;
+					echo '<div class="col-12 col-md-6 image_callout__item">'.PHP_EOL;
 					echo '<a href="'.esc_url($callout_link).'"><img src="'.$callout_image['url'].'" alt="'.$callout_title.'" class="img-fluid"></a>'.PHP_EOL;
 					echo '<div class="text-center text-md-left">'.PHP_EOL;
 					echo '<h3><a href="'.esc_url($callout_link).'">'.$callout_title.'</a></h3>'.PHP_EOL;
