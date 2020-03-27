@@ -30,6 +30,7 @@ if (have_posts()) {
 		the_post();
 		echo '<div class="col-12">';
 		$content = wpautop($post->post_content);
+		echo $content;
 		echo '</div>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
