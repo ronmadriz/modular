@@ -28,7 +28,9 @@ if (have_posts()) {
 	echo '<div class="row">'.PHP_EOL;
 	while (have_posts()) {
 		the_post();
-		echo '<div class="col-12">'.get_the_content().'</div>'.PHP_EOL;
+		echo '<div class="col-12">';
+		$content = wpautop($post->post_content);
+		echo '</div>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
