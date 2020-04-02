@@ -73,7 +73,7 @@ j(document).ready(function(){
         var fifteenDays = 1000*60*60*24*15;
         var expires = new Date((new Date()).valueOf() + fifteenDays);
         document.cookie = "visited=true;expires=" + expires.toUTCString();
-        jQuery.modal({width:"580px", inline:true, href:"#update"});
+        j.modal({width:"580px", inline:true, href:"#update"});
     }
 
 });
