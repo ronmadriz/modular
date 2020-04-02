@@ -38,14 +38,8 @@ echo '<body id="page-'.$slug.'"';
 body_class();
 echo '>'.PHP_EOL;
 echo $ronmadriz_settings['ronmadriz_body_extra'];
+echo '<section id="update" class="update"><div class="container"><div class="row"><div class="col-12 update__content">COVID-19 We are closely monitoring the situation and are taking precautions to ensure a safe and clean work environment. We are fully operational and here to serve you in this difficult, disruptive time. <a href="/contact-us/">Contact our team</a> of specialists.</div></div></div></section>'.PHP_EOL;
 echo '<header>'.PHP_EOL;
-echo '<section id="update" class="update">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
-echo '<div class="row">'.PHP_EOL;
-echo '<div class="col-12 update__content">COVID-19 We are closely monitoring the situation and are taking precautions to ensure a safe and clean work environment. We are fully operational and here to serve you in this difficult, disruptive time. <a href="/contact-us/">Contact our team</a> of specialists.</div>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-echo '</section>'.PHP_EOL;
 echo '<nav class="navbar navbar-light fixed-top">'.PHP_EOL;
 echo '<div id="nav-holder" class="container">'.PHP_EOL;
 if (!empty($site_logo_header)):
