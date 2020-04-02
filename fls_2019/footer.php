@@ -126,7 +126,7 @@ echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 echo '</footer>'.PHP_EOL;
 echo '<span id="mobileCTA" class="fixed-bottom d-inline-block d-md-none"><a href="tel:'.$phone.'"><i class="im im-phone"></i></a></span>'.PHP_EOL;
-echo '<div id="update" class="update modal" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-body">COVID-19 We are closely monitoring the situation and are taking precautions to ensure a safe and clean work environment. We are fully operational and here to serve you in this difficult, disruptive time. <a href="/contact-us/">Contact our team</a> of specialists.</div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button></div></div></div></div>'.PHP_EOL;
+echo '<div id="update">COVID-19 We are closely monitoring the situation and are taking precautions to ensure a safe and clean work environment. We are fully operational and here to serve you in this difficult, disruptive time. <a href="/contact-us/">Contact our team</a> of specialists.</div>'.PHP_EOL;
 wp_footer();
 echo $ronmadriz_settings['ronmadriz_footer_extra'];
 echo '</body>'.PHP_EOL;

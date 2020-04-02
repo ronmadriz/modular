@@ -469,16 +469,6 @@ html {
 			}
 		}		
 	}
-	.update {
-		background-color: $accent_2;
-		color:$accent_1;
-		padding-bottom:.75rem;
-		padding-top:.75rem;
-		a {
-			color:$accent_1;
-			text-decoration: underline;
-		}
-	}
 }
 @import 'partials/_header';
 @import 'partials/_navigation';
@@ -497,3 +487,4 @@ html {
 @import 'partials/_sfpp';
 @import 'partials/_careers';
 @import 'partials/_ie';
+@import 'partials/_update';
