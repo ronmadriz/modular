@@ -1,6 +1,6 @@
 #fvpp-blackout {
   display: none;
-  z-index: 499;
+  z-index: 10000;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -10,7 +10,7 @@
   opacity: 0.5;
 }
 
-#my-welcome-message {
+#update {
   display: none;
   z-index: 500;
   position: fixed;
