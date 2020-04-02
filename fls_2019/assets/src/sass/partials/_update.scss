@@ -1,4 +1,4 @@
-#fls__blackout {
+#fvpp-blackout {
   display: none;
   z-index: 499;
   position: fixed;
@@ -10,7 +10,7 @@
   opacity: 0.5;
 }
 
-#update {
+#my-welcome-message {
   display: none;
   z-index: 500;
   position: fixed;
@@ -22,18 +22,16 @@
   color:$accent_1;
 }
 
-#fls__close {
+#fvpp-close {
   position: absolute;
   top: 10px;
   right: 20px;
   cursor: pointer;
 }
 
-#fls__dialog h2 {
+#fvpp-dialog h2 {
   font-size: 2em;
   margin: 0;
 }
 
-#fls__dialog p { 
-	margin: 0; 
-}
+#fvpp-dialog p { margin: 0; }
