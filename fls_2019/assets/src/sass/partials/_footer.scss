@@ -198,4 +198,10 @@ body {
 			}
 		}
 	}
+	#olark-wrapper .olark-launch-button {
+		z-index:999 !important;
+	}
+	#mobileCTA.fixed-bottom {
+		z-index: 1029;
+	}
 }
