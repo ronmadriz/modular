@@ -1262,6 +1262,8 @@ body #olark-wrapper .olark-launch-button {
   z-index: 999 !important; }
 
 body #mobileCTA.fixed-bottom {
+  position: relative;
+  top: .275rem;
   z-index: 1029; }
 
 html body#page-home main {

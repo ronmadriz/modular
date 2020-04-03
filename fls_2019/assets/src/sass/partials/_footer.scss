@@ -202,6 +202,8 @@ body {
 		z-index:999 !important;
 	}
 	#mobileCTA.fixed-bottom {
+		position: relative;		
+		top: .275rem;
 		z-index: 1029;
 	}
 }
