@@ -61,7 +61,8 @@ if ($studies_query) {
 			))) {
 		echo '<div class="col-6 button-group" data-filter-group="solution_type">'.PHP_EOL;
 		echo '<div class="dropdown text-right">'.PHP_EOL;
-		echo '<select class="dropdown-toggle" id="solution_filter">'.PHP_EOL;
+		echo '<label class="case__studies__label">'.PHP_EOL;
+		echo '<select class="dropdown-toggle case__studies__dropdown" id="solution_filter">'.PHP_EOL;
 		$count_sol = 0;
 		foreach ($sol_studies as $sol_study) {
 			$sol_status = ($count_sol == 0?'active ':'');
@@ -70,6 +71,7 @@ if ($studies_query) {
 			$count_sol++;
 		}
 		echo '</select>'.PHP_EOL;
+		echo '</label>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 
@@ -80,7 +82,8 @@ if ($studies_query) {
 	if ($ind_studies = get_terms(array('taxonomy' => 'industry', 'orderby' => 'menu_index', ))) {
 		echo '<div class="col-6 button-group" data-filter-group="industry">'.PHP_EOL;
 		echo '<div class="dropdown">'.PHP_EOL;
-		echo '<select class="dropdown-toggle" id="industry_filter">'.PHP_EOL;
+		echo '<label class="case__studies__label">'.PHP_EOL;
+		echo '<select class="dropdown-toggle case__studies__dropdown" id="industry_filter">'.PHP_EOL;
 		$count_ind = 0;
 		foreach ($ind_studies as $ind_study) {
 			$ind_status = ($count_ind == 0?'active ':'');
@@ -88,6 +91,7 @@ if ($studies_query) {
 			$count_ind++;
 		}
 		echo '</select>'.PHP_EOL;
+		echo '</label>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 
