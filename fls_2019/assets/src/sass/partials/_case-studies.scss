@@ -18,9 +18,9 @@
             position: relative;
             &:after {
                   color: $alternate;
-                  content:'\f107';
+                  content:'>';
                   font-size: .75rem;
-                  font-family:"Font Awesome 5 Free";
+                  font-family:"Consolas", monospace;
                   padding: 0 0 .125rem;
                   position: absolute;
                   pointer-events: none;

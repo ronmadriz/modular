@@ -2160,9 +2160,9 @@ html body section#avail_positions h3 a {
   position: relative; }
   .case__studies__label:after {
     color: white;
-    content: '\f107';
+    content: '>';
     font-size: .75rem;
-    font-family: "Font Awesome 5 Free";
+    font-family: "Consolas", monospace;
     padding: 0 0 .125rem;
     position: absolute;
     pointer-events: none;
