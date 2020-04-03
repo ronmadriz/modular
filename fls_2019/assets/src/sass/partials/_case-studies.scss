@@ -1,44 +1,45 @@
 .case__studies {
       &__dropdown {
-            width: auto;
-            height: 2.5rem;
-            padding:.5rem 1.75rem .5rem 1rem;
-            border-radius:.25rem;
+            appearance: none;
             background: $accent_1;
             border: none;
-            outline: none;
+            border-radius:0;
+            color:$alternate;
+            cursor: pointer;
             display: inline-block;
+            height: 2.5rem;
+            outline: none;
+            padding:.5rem 1.75rem .5rem 1rem;
+            width: auto;
             -webkit-appearance:none;
             -moz-appearance: none;
-            appearance: none;
-            cursor: pointer;
       }
       &__label {
             position: relative;
             &:after {
+                  color: $alternate;
                   content:'<>';
                   font: .75rem "Consolas", monospace;
-                  color: $alternate;
-                  -webkit-transform: rotate(90deg);
-                  -moz-transform: rotate(90deg);
-                  -ms-transform: rotate(90deg);
-                  transform: rotate(90deg);
-                  right: .5rem; 
-                  top:.125rem;
                   padding: 0 0 .125rem;
                   position: absolute;
                   pointer-events: none;
+                  right: .5rem; 
+                  top:.125rem;
+                  transform: rotate(90deg);
+                  -webkit-transform: rotate(90deg);
+                  -moz-transform: rotate(90deg);
+                  -ms-transform: rotate(90deg);
             }
             &:before {
+                  background: $accent_1;
                   content: '';
+                  display: block;
+                  height: 1.25rem;
+                  pointer-events: none;
+                  position: absolute;
                   right: .375rem; 
                   top:0px;
                   width: 1.25rem; 
-                  height: 1.25rem;
-                  background: $accent_1;
-                  position: absolute;
-                  pointer-events: none;
-                  display: block;
             }
       }
 }
