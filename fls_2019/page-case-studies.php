@@ -55,25 +55,21 @@ if ($studies_query) {
 	echo '<section id="child_grid">'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
 	echo '<div id="solutions_filter" class="row">'.PHP_EOL;
-	// Solution Types
 	if ($sol_studies = get_terms(array(
-				'taxonomy' => 'solution_type', // to make it simple I use default categories
+				'taxonomy' => 'solution_type',
 				'orderby'  => 'name',
 			))) {
-		// if categories exist, display the dropdown
 		echo '<div class="col-6 button-group" data-filter-group="solution_type">'.PHP_EOL;
 		echo '<div class="dropdown text-right">'.PHP_EOL;
-		echo '<button class="btn btn-blue dropdown-toggle" type="button" id="categoryFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</button>'.PHP_EOL;
-		echo '<div class="dropdown-menu" aria-labelledby="categoryFilter">'.PHP_EOL;
+		echo '<select class="dropdown-toggle" id="solution_filter">'.PHP_EOL;
 		$count_sol = 0;
 		foreach ($sol_studies as $sol_study) {
 			$sol_status = ($count_sol == 0?'active ':'');
 			$sol_all    = ($count_sol == 0?' id="all"':'');
-			echo '<a'.$sol_all.' class="'.$sol_status.'dropdown-item btn_filter" id="'.$sol_study->slug.'">'.$sol_study->name.'</a>'.PHP_EOL;// ID of the category as an option value
+			echo '<option'.$sol_all.' class="'.$sol_status.'dropdown-item btn_filter" value="'.$sol_study->slug.'">'.$sol_study->name.'</option>'.PHP_EOL;// ID of the category as an option value
 			$count_sol++;
-
 		}
-		echo '</div>'.PHP_EOL;
+		echo '</select>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 
@@ -84,16 +80,14 @@ if ($studies_query) {
 	if ($ind_studies = get_terms(array('taxonomy' => 'industry', 'orderby' => 'menu_index', ))) {
 		echo '<div class="col-6 button-group" data-filter-group="industry">'.PHP_EOL;
 		echo '<div class="dropdown">'.PHP_EOL;
-		echo '<button class="btn btn-blue dropdown-toggle" type="button" id="industryFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</button>'.PHP_EOL;
-		echo '<div class="dropdown-menu" aria-labelledby="industryFilter">'.PHP_EOL;
-		echo '<a id="all" class="dropdown-item btn_filter" id="all-industries">All Industries</a>'.PHP_EOL;
+		echo '<select class="dropdown-toggle" id="industry_filter">'.PHP_EOL;
 		$count_ind = 0;
 		foreach ($ind_studies as $ind_study) {
 			$ind_status = ($count_ind == 0?'active ':'');
-			echo '<a class="dropdown-item btn_filter" id="'.$ind_study->slug.'">'.$ind_study->name.'</a>'.PHP_EOL;// ID of the category as an option value
+			echo '<option class="dropdown-item btn_filter" value="'.$ind_study->slug.'">'.$ind_study->name.'</option>'.PHP_EOL;// ID of the category as an option value
 			$count_ind++;
 		}
-		echo '</div>'.PHP_EOL;
+		echo '</select>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 
