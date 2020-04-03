@@ -239,10 +239,17 @@ j(document).ready(function(){
       cookieName : 'flsUpdate'
     });
     lightGallery(document.getElementById('lightSlider'))
-    j('input[name="phone]').mask('(999) 999-9999');
-    
-
+    j('input[name="phone]').mask('(999) 999-9999');   
 });
+
+// Case Studies
+j(function() {
+    j('#solution_filter, #industry_filter').change(function(){
+        j('.all-solutions').hide();
+        j('.' + j(this).val()).show();
+    });
+}); 
+
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
    j('form#searchform').addClass('d-block');
