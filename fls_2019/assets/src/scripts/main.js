@@ -70,7 +70,7 @@ j(document).ready(function(){
       cookieName : 'flsUpdate'
     });
     // lightGallery(document.getElementById('lightSlider'))
-    j('input[name="phone]').mask('(999) 999-9999');   
+    // j('input[name="phone]').mask('(999) 999-9999');   
 });
 
 // Case Studies
