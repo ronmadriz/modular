@@ -2161,13 +2161,13 @@ html body section#avail_positions h3 a {
   .case__studies__label:after {
     color: white;
     content: '>';
-    font-size: .75rem;
+    font-size: 1rem;
     font-family: "Consolas", monospace;
     padding: 0 0 .125rem;
     position: absolute;
     pointer-events: none;
     right: .5rem;
-    top: .125rem;
+    top: .45rem;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
