@@ -238,7 +238,7 @@ j(document).ready(function(){
     j('#update').firstVisitPopup({
       cookieName : 'flsUpdate'
     });
-    lightGallery(document.getElementById('lightSlider'))
+    // lightGallery(document.getElementById('lightSlider'))
     j('input[name="phone]').mask('(999) 999-9999');   
 });
 
