@@ -1262,9 +1262,10 @@ body #olark-wrapper .olark-launch-button {
   z-index: 999 !important; }
 
 body #mobileCTA.fixed-bottom {
-  position: relative;
-  top: .275rem;
   z-index: 1029; }
+  body #mobileCTA.fixed-bottom i {
+    position: relative;
+    top: .275rem; }
 
 html body#page-home main {
   padding-top: 6.5rem; }
