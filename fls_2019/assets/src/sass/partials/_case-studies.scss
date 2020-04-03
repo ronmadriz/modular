@@ -1,11 +1,10 @@
 .case__studies {
       &__dropdown {
-            width: 140px;
-            height: 35px;
-            padding: 4px;
-            border-radius:4px;
-            box-shadow: 2px 2px 8px #999;
-            background: #eee;
+            width: auto;
+            height: 2.5rem;
+            padding:.5rem 1.75rem .5rem 1rem;
+            border-radius:.25rem;
+            background: $accent_1;
             border: none;
             outline: none;
             display: inline-block;
@@ -18,26 +17,25 @@
             position: relative;
             &:after {
                   content:'<>';
-                  font: 11px "Consolas", monospace;
-                  color: #666;
+                  font: .75rem "Consolas", monospace;
+                  color: $alternate;
                   -webkit-transform: rotate(90deg);
                   -moz-transform: rotate(90deg);
                   -ms-transform: rotate(90deg);
                   transform: rotate(90deg);
-                  right: 8px; 
-                  top:2px;
-                  padding: 0 0 2px;
-                  border-bottom: 1px solid #ddd;
+                  right: .5rem; 
+                  top:.125rem;
+                  padding: 0 0 .125rem;
                   position: absolute;
                   pointer-events: none;
             }
             &:before {
                   content: '';
-                  right: 6px; 
+                  right: .375rem; 
                   top:0px;
-                  width: 20px; 
-                  height: 20px;
-                  background: #eee;
+                  width: 1.25rem; 
+                  height: 1.25rem;
+                  background: $accent_1;
                   position: absolute;
                   pointer-events: none;
                   display: block;
