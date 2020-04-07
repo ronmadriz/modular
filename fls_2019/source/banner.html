@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>New Banners</title>
+    <style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+		@import url('https://fonts.googleapis.com/css?family=Oswald');
+		.banners .container-fluid, .banners .row {
+		    padding-left: 0;
+		    padding-right: 0;
+		}    	
+    	.banner__item {
+		    display: flex;
+		    flex-wrap: wrap;
+    	}
+    	.banner__item img {
+		    height: auto;
+		    width: 100%;
+    	}
+		.banner__caption {
+			align-self: center;
+			background-color: rgba(86,104,124,.875);
+			color: rgb(255,255,255);
+			display: flex;
+			flex-direction: column;
+			padding: 1.5rem 2rem;
+			position: absolute;
+			top: 22%;
+			width: 50%;
+			z-index: 2;
+		}
+		.banner__caption--left {
+			left:0;
+		}
+		.banner__caption--right {
+			right:0;
+		}
+		.banner__title {
+			font-family:'Oswald', helvetica, sans-serif;
+			font-size: 1.875rem;
+			font-weight: 700;
+			letter-spacing: .075rem;			
+			text-transform: uppercase;
+		}
+		.banner__content {
+			font-family:'Oswald', helvetica, sans-serif;
+			font-size: 1.125rem;
+			font-weight: lighter;			
+		}
+		.banner__btn {
+			background-color: rgb(254,205,6);
+			border: 1px solid transparent;
+			border-radius: 5rem;
+			color: rgb(21,108,179);
+			display: inline-block;
+			font-size: .875rem;
+			font-weight: 700;
+			line-height: 1.5;
+			padding: .375rem 1rem;
+			text-align: center;
+			text-transform: uppercase;
+			transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;			
+			transition-delay: 50ms;
+			transition-duration: .35s;
+			vertical-align: middle;
+			user-select: none;
+			white-space: nowrap;
+		}
+    </style>
+  </head>
+  <body class="home">
+  	<section id="banners" class="banners">
+  		<div class="container-fluid">
+  			<div class="row banner">
+  				<div class="col-12 banner__item">
+  					<img src="https://fall-arrest.com/wp-content/uploads/2020/04/fall-hazard-assessment.jpg" alt="" class="img-fluid banner__img">
+  					<span class="banner__caption">
+  						<h2 class="banner__title">Identify & address your hazards</h2>
+						<p class="banner__content">Conduct a fall hazard assessment and explore potential solutions with one of our specialists. Virtual Online of In-person Onsite.</p>
+						<p class="banner__link text-right"><a href="#" class="banner__btn"> Learn More</a></p>
+  					</span>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
