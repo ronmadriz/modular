@@ -70,7 +70,14 @@ j(document).ready(function(){
       cookieName : 'flsUpdate'
     });
     // lightGallery(document.getElementById('lightSlider'))
-    // j('input[name="phone]').mask('(999) 999-9999');   
+    // j('input[name="phone]').mask('(999) 999-9999');
+    j("form").submit(function(event) {
+      event.preventDefault();
+      if(j('#discreet').val() != '') {
+        j("#alert_ajax_error").show();
+        return false;
+      }
+    });    
 });
 
 // Case Studies
