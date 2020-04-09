@@ -155,3 +155,12 @@ j(document).scroll(function() {
     j('.navbar-brand img').css({width: j(this).scrollTop() > 100? "280px":"457.5px"});  
   }
 });
+
+
+function required(){
+  var empt = document.forms["form"]["form-control"].value;
+  if (empt == ""){
+        alert("Please fill out all required fields");
+        return false;
+   }
+}
