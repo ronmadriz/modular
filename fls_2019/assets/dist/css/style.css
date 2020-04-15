@@ -1242,8 +1242,8 @@ body.solutions-template-solutions-fluid main section#foot_call_cta, body.industr
   background-color: #156cb3;
   border-bottom: 3px solid #0f8acf;
   text-align: center;
-  color: white;
   padding: 1.25rem 0;
+  color: white;
   font-weight: bold;
   font-size: 1.2rem; }
   @media (min-width: 1200px) {
@@ -1257,6 +1257,9 @@ body.solutions-template-solutions-fluid main section#foot_call_cta, body.industr
               transform: rotate(-15deg);
       top: 5px;
       position: relative; }
+
+body.solutions-template-solutions-fluid main section#cf_contactFormTitle, body.industries-template-single-industries-fluid main section#cf_contactFormTitle, body.page-template-fall-protection-101 main section#cf_contactFormTitle, body.page-template-sample-fall-protection-plan main section#cf_contactFormTitle, body.industries-template-single-all-industries main section#cf_contactFormTitle, body.solutions-template-single-all-solutions main section#cf_contactFormTitle, body.page-template-fluid main section#cf_contactFormTitle {
+  color: white; }
 
 @media (min-width: 1200px) {
   body.solutions-template-solutions-fluid#page-all main section#foot_call_cta, body.industries-template-single-industries-fluid#page-all main section#foot_call_cta, body.page-template-fall-protection-101#page-all main section#foot_call_cta, body.page-template-sample-fall-protection-plan#page-all main section#foot_call_cta, body.industries-template-single-all-industries#page-all main section#foot_call_cta, body.solutions-template-single-all-solutions#page-all main section#foot_call_cta, body.page-template-fluid#page-all main section#foot_call_cta {
