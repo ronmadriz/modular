@@ -50,7 +50,7 @@ echo '<a href="/" class="navbar-brand">'.get_bloginfo('name');
 echo (!empty($slogan))?'<br><small>'.$slogan.'</small>':'';
 echo '</a>'.PHP_EOL;
 endif;
-echo '<span class="nav_tel d-none d-sm-block ml-md-auto"><a href="tel:+1'.$phoneND.'">'.$phone.'</a></span>'.PHP_EOL;
+echo '<span class="nav_tel d-none d-sm-block ml-md-auto"><a href="tel:+1'.$phoneND.'" rel="noopener noreferrer">'.$phone.'</a></span>'.PHP_EOL;
 echo '<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Menu">'.PHP_EOL;
 echo '<span class="menu-text">Menu</span>'.PHP_EOL;
 echo '<span class="menu-icon">'.PHP_EOL;
