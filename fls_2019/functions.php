@@ -247,7 +247,7 @@ function social_media_icons() {
 			if ($active_site == 'email') {
 
 			} else {
-				echo '<li class="list-inline-item"><a class="'.$active_site.' ?>" target="_blank" href="'.get_theme_mod($active_site).'" rel="noopener" rel="noreferrer"> <i class="'.esc_attr($class).'" title="';
+				echo '<li class="list-inline-item"><a class="'.$active_site.' ?>" target="_blank" href="'.get_theme_mod($active_site).'"  rel="noopener noreferrer"> <i class="'.esc_attr($class).'" title="';
 				printf(__('%s icon', 'text-domain'), $active_site);
 				echo '"></i> </a> </li>';
 			}
