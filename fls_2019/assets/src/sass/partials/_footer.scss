@@ -196,7 +196,10 @@ body {
 				    }
 				}
 				&#cf_contactFormTitle {
-					color:$alternate;
+					h2 {
+						color:$alternate;
+						padding-bottom:.6275rem;
+					}
 				}
 			}
 		}
