@@ -1258,6 +1258,10 @@ body.solutions-template-solutions-fluid main section#foot_call_cta, body.industr
       top: 5px;
       position: relative; }
 
+@media (min-width: 1200px) {
+  body.solutions-template-solutions-fluid#page-all main section#foot_call_cta, body.industries-template-single-industries-fluid#page-all main section#foot_call_cta, body.page-template-fall-protection-101#page-all main section#foot_call_cta, body.page-template-sample-fall-protection-plan#page-all main section#foot_call_cta, body.industries-template-single-all-industries#page-all main section#foot_call_cta, body.solutions-template-single-all-solutions#page-all main section#foot_call_cta, body.page-template-fluid#page-all main section#foot_call_cta {
+    top: 0; } }
+
 body #olark-wrapper .olark-launch-button {
   z-index: 999 !important; }
 

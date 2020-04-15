@@ -197,6 +197,17 @@ body {
 				}				
 			}
 		}
+		&#page-all {
+			main {
+				section{
+					&#foot_call_cta{
+					    @media(min-width:1200px){
+							top:0;
+						}
+					}
+				}
+			}
+		}
 	}
 	#olark-wrapper .olark-launch-button {
 		z-index:999 !important;
