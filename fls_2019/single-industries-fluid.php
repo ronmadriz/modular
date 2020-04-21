@@ -136,6 +136,7 @@ if (have_rows('image_callout') && !empty($image_callout)) {
 					echo '<h3>'.$callout_title.'</h3>'.PHP_EOL;
 					echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
 					echo '</div>'.PHP_EOL;
+					echo '</div>'.PHP_EOL;
 				}
 			}
 			echo '</div>'.PHP_EOL;
