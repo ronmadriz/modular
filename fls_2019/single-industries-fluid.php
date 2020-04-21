@@ -123,7 +123,7 @@ if (have_rows('image_callout') && !empty($image_callout)) {
 				$callout_content = get_sub_field('content');
 				$callout_link    = get_sub_field('link');
 				if ($callout_link) {
-					echo (!empty($callout_image)?'<div class="col-12 col-md-6 image_callout__item"><a href="'.$callout_link.'"><img src="'.$callout_image['url'].'" alt="'.$callout_title.'" class="img-fluid"></a>'.PHP_EOL;
+					echo '<div class="col-12 col-md-6 image_callout__item"><a href="'.$callout_link.'"><img src="'.$callout_image['url'].'" alt="'.$callout_title.'" class="img-fluid"></a>'.PHP_EOL;
 					echo '<div class="image_callout__content text-center text-md-left">').PHP_EOL;
 					echo '<h3><a href="'.$callout_link.'">'.$callout_title.'</a></h3>'.PHP_EOL;
 					echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
