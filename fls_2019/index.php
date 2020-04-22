@@ -9,7 +9,9 @@ echo '<div class="container">'.PHP_EOL;
 echo ($banner_img != null?'<div class="row w-image"><style type="text/css">section#banner{background-image:url('.$banner_img['url'].');}</style>':'<div class="row">').PHP_EOL;
 
 echo '<div class="page_title col-12 col-md-7">'.PHP_EOL;
-echo '<h1>'.get_the_title($pageID).'</h1>'.PHP_EOL;
+echo '<h1>';
+single_post_title();
+echo '</h1>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
