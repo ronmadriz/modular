@@ -10,7 +10,7 @@ include 'header-fluid.php';
 
 $banner_img = get_field('banner');
 // BANNER
-echo '<section id="banner">'.PHP_EOL;
+echo '<section id="banner"'.(empty($banner_img)?' class="no_img"':'').'>'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
 echo ($banner_img != null?'<div class="row w-image justify-content-center align-content-center"><style type="text/css">section#banner{background-image:url('.$banner_img['url'].');}</style>':'<div class="row justify-content-center align-content-center">').PHP_EOL;
 echo '<div class="page_title col-12">'.PHP_EOL;
