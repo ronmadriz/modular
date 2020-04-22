@@ -4,7 +4,7 @@ $pageCF = get_post_custom($pageID);
 get_header();
 $banner_img = get_field('banner');
 // BANNER
-echo '<section id="banner">'.PHP_EOL;
+echo '<section id="banner"'.($banner_img?' class="no_img"':'').'>'.PHP_EOL;
 echo '<div class="container">'.PHP_EOL;
 echo ($banner_img != null?'<div class="row w-image"><style type="text/css">section#banner{background-image:url('.$banner_img['url'].');}</style>':'<div class="row">').PHP_EOL;
 
