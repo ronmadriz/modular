@@ -31,6 +31,11 @@ body {
 				@media(min-width: 786px){
 					min-height: 6rem;					
 				}
+				&.no_img {
+					@media(min-width: 786px){
+						min-height: 10rem;
+					}
+				}
 				div {
 					&.page_title {
 						background-color: $accent_1;

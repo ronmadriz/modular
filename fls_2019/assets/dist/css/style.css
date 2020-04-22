@@ -93,6 +93,9 @@ body main section#banner {
   @media (min-width: 786px) {
     body main section#banner {
       min-height: 6rem; } }
+  @media (min-width: 786px) {
+    body main section#banner.no_img {
+      min-height: 10rem; } }
   body main section#banner div.page_title {
     background-color: #156cb3;
     color: white;
@@ -482,6 +485,9 @@ body main section#banner {
   @media (min-width: 786px) {
     body main section#banner {
       min-height: 6rem; } }
+  @media (min-width: 786px) {
+    body main section#banner.no_img {
+      min-height: 10rem; } }
   body main section#banner div.page_title {
     background-color: #156cb3;
     color: white;
