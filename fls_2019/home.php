@@ -3,7 +3,7 @@ $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
 get_header();
 $banner_img           = get_field('banner');
-$alternate_page_title = get_field('alternate_page_title', 'fls-blog');
+$alternate_page_title = get_field('alternate_page_title', $pageID);
 echo '<!-- home -->';
 // BANNER
 echo '<section id="banner"'.(empty($banner_img)?' class="no_img"':'').'>'.PHP_EOL;
