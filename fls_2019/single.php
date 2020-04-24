@@ -9,7 +9,7 @@ echo '<div class="container">'.PHP_EOL;
 echo ($banner_img != null?'<div class="row w-image"><style type="text/css">section#banner{background-image:url('.$banner_img['url'].');}</style>':'<div class="row">').PHP_EOL;
 
 echo '<div class="page_title col-12 col-md-7">'.PHP_EOL;
-echo '<h1>Fall Safety Protection Blog</h1>'.PHP_EOL;
+echo '<h1>'.get_the_title().'</h1>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
@@ -24,7 +24,6 @@ echo '<section id="main-content">'.PHP_EOL;
 echo '<div class="container">'.PHP_EOL;
 if (have_posts()):while (have_posts()):the_post();
 echo '<div class="row">'.PHP_EOL;
-echo '<div class="section_title col-12"><h2>'.get_the_title().'</h2></div>'.PHP_EOL;
 echo '<div class="col-12">';
 the_content();
 echo '</div>'.PHP_EOL;
