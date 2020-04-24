@@ -2,8 +2,9 @@
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
 get_header();
+$page_for_posts       = get_option('page_for_posts');
 $banner_img           = get_field('banner');
-$alternate_page_title = get_field('alternate_page_title', 1116799);
+$alternate_page_title = get_field('alternate_page_title', $page_for_posts);
 echo '<!-- home -->';
 // BANNER
 echo '<section id="banner"'.(empty($banner_img)?' class="no_img"':'').'>'.PHP_EOL;
