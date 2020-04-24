@@ -2,16 +2,15 @@
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
 get_header();
-$banner_img = get_field('banner');
+$banner_img           = get_field('banner');
+$alternate_page_title = get_field('alternate_page_title', $page->ID);
 // BANNER
 echo '<section id="banner"'.(empty($banner_img)?' class="no_img"':'').'>'.PHP_EOL;
 echo '<div class="container">'.PHP_EOL;
 echo ($banner_img != null?'<div class="row w-image"><style type="text/css">section#banner{background-image:url('.$banner_img['url'].');}</style>':'<div class="row">').PHP_EOL;
 
 echo '<div class="page_title col-12 col-md-7">'.PHP_EOL;
-echo '<h1>';
-single_post_title();
-echo '</h1>'.PHP_EOL;
+echo '<h1>'.$alternate_page_title.'</h1>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
