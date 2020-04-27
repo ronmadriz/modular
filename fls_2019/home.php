@@ -30,7 +30,7 @@ $featured_posts = get_posts($args);
 foreach ($featured_posts as $post) {
 	setup_postdata($post)
 	echo '<article>'.PHP_EOL;
-	echo '<a href="'.get_the_permalink().'">'.get_the_title().'</a></li>'.PHP_EOL
+	echo '<a href="'.get_the_permalink().'">'.get_the_title().'</a></li>'.PHP_EOL;
 	echo '</article>'.PHP_EOL;
 }
 endforeach;
