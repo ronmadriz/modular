@@ -33,7 +33,7 @@ foreach ($featured_posts as $post) {
 	echo '<a href="'.get_the_permalink().'">'.get_the_title().'</a></li>'.PHP_EOL
 	echo '</article>'.PHP_EOL;
 }
-<?php endforeach;
+endforeach;
 wp_reset_postdata();
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
