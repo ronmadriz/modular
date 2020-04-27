@@ -20,7 +20,7 @@ echo '</section>'.PHP_EOL;
 
 the_breadcrumb();
 
-echo '<section>'.PHP_EOL;
+echo '<section id="featured" class="featured">'.PHP_EOL;
 echo '<div class="container">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div class="col-12">'.PHP_EOL;
