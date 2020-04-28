@@ -8,7 +8,7 @@ $alternate_page_title = get_field('alternate_page_title', $page_for_posts);
 echo '<!-- home -->';
 // BANNER
 echo '<section id="banner"'.(empty($banner_img)?' class="no_img"':'').'>'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
 echo ($banner_img != null?'<div class="row w-image"><style type="text/css">section#banner{background-image:url('.$banner_img['url'].');}</style>':'<div class="row">').PHP_EOL;
 
 echo '<div class="page_title col-12 col-md-7">'.PHP_EOL;
