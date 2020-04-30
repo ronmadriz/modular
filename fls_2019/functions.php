@@ -100,6 +100,7 @@ function register_my_menu() {
 	register_nav_menu('industry', __('industry-pages', 'industry-pages'));
 	register_nav_menu('primary', __('company-pages', 'company-pages'));
 	register_nav_menu('sidenav', __('Side Navigation'));
+	register_nav_menu('footer__solution', __('footer__solution', 'footer__solution'));
 }
 function my_mce_buttons_2($buttons) {
 	$buttons[] = 'sup';
@@ -712,4 +713,11 @@ function fls_new_admin_email($notification, $user_id, $blogname) {
 	$notification['message'] .= sprintf(__('Password: %s'), $user_email)."\r\n\r\n";
 	return $notification;
 }
+
+// Changing excerpt more
+   function new_excerpt_more($more) {
+   global $post;
+   return '… <a href="'. get_permalink($post->ID) . '">' . 'Read More &raquo;' . '</a>';
+   }
+   add_filter('excerpt_more', 'new_excerpt_more');
 ?>

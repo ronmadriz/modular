@@ -58,24 +58,21 @@ if ($featInd_query) {
 	echo '</div>'.PHP_EOL;
 }
 
-$featSol_args = array(
-	'post_type'    => 'solutions',
-	'orderby'      => 'menu_index',
-	'order'        => 'ASC',
-	'post__not_in' => array(1116134),
-);
-$featSol_query = new WP_Query($featSol_args);
-if ($featSol_query) {
+
 	echo '<div class="item col-6 col-md-3">'.PHP_EOL;
 	echo '<h2><a href="/fall-protection-solutions/all/">Solutions</a></h2>'.PHP_EOL;
-	echo '<ul class="list-unstyled">'.PHP_EOL;
-	while ($featSol_query->have_posts()):$featSol_query->the_post();
-	echo '<li><a href="'.get_the_permalink().'">'.get_the_title().'</a></li>'.PHP_EOL;
-	wp_reset_postdata();
-	endwhile;
-	echo '</ul>'.PHP_EOL;
+	$footer__solution_args = array(
+		'theme_location' => 'footer__solution',
+		'menu'           => 'footer__solution',
+		'menu_class'	 => 'list-unstyled footer__nav',
+		'container'      => false,
+		'container'      => false,
+		'depth'          => 2,
+		'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
+		'walker'         => new WP_Bootstrap_Navwalker(),
+	);
+	wp_nav_menu($footer__solution_args);	
 	echo '</div>'.PHP_EOL;
-}
 
 $service_args = array(
 	'post_type'      => 'page',

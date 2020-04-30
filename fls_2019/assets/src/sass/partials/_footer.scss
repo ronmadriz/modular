@@ -171,7 +171,7 @@ body {
 			}
 		}
 	}
-	&.solutions-template-solutions-fluid, &.industries-template-single-industries-fluid, &.page-template-fall-protection-101, &.page-template-sample-fall-protection-plan, &.industries-template-single-all-industries, &.solutions-template-single-all-solutions, &.page-template-fluid {
+	&.solutions-template-solutions-fluid, &.industries-template-single-industries-fluid, &.page-template-fall-protection-101, &.page-template-sample-fall-protection-plan, &.industries-template-single-all-industries, &.solutions-template-single-all-solutions, &.page-template-fluid, &.blog {
 		main {
 			section {		
 				&#foot_call_cta {
@@ -224,5 +224,11 @@ body {
 			position: relative;		
 			top: .275rem;			
 		}
+	}
+}
+.footer__nav {
+	line-height: 1.4286rem;
+	.nav-link {
+		padding:0;
 	}
 }

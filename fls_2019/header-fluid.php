@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * The template for displaying the header
  *
@@ -34,7 +34,7 @@ echo '</title>'.PHP_EOL;
 wp_head();
 echo $ronmadriz_settings['ronmadriz_header_extra'];
 echo '</head>'.PHP_EOL;
-echo '<body id="page-'.$slug.'"';
+echo '<body id="page-'.$slug.'" ';
 body_class();
 echo '>'.PHP_EOL;
 echo $ronmadriz_settings['ronmadriz_body_extra'];

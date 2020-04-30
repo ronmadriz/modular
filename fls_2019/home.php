@@ -18,18 +18,26 @@ echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 
 the_breadcrumb();
+
 global $post;
-$args           = array('posts_per_page' => 1, 'tag' => 'featured');
-$featured_posts = get_posts($args);
+$blog_args           = array('posts_per_page' => 1, 'tag' => 'featured');
+$featured_posts = get_posts($blog_args);
 if ($featured_posts) {
 	echo '<section id="featured" class="featured">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="col-12">'.PHP_EOL;
 	foreach ($featured_posts as $post) {
 		setup_postdata($post);
-		echo '<article>'.PHP_EOL;
-		echo '<a href="'.get_the_permalink().'">'.get_the_title().'</a></li>'.PHP_EOL;
+		echo '<article class="featured__article">'.PHP_EOL;
+		the_post_thumbnail( 'full', ['class' => 'img-fluid featured__article--img']);
+		echo '<header class="featured__article--summary">'.PHP_EOL;
+		echo '<h2 class="featured__article--title"><a href="'.get_the_permalink().'">'.get_the_title().'</a></h2>'.PHP_EOL;
+		echo '<span class="featured__article--sub"><a href="'.get_the_permalink().'">'.get_the_title().'</a></span>'.PHP_EOL;
+		echo '</header>'.PHP_EOL;
+		echo '<span class="featured__article--desc">'.PHP_EOL;
+		the_excerpt();
+		echo '</span>'.PHP_EOL;
 		echo '</article>'.PHP_EOL;
 	}
 	wp_reset_postdata();
@@ -39,16 +47,23 @@ if ($featured_posts) {
 	echo '</section>'.PHP_EOL;
 }
 
+echo '<section id="cta_speak" class="blog__cta"><div class="container-fluid"><div class="row"><div class="col-12"><h2 class="text-center text-uppercase"><a href="#cta_blue">Speak with a fall protection specialist <i class="im im-angle-right-circle"></i></a></h2></div></div></div></section>'.PHP_EOL;
+
 echo '<div id="pagewrapper" class="container">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
 
+$fls_blog_arg = array(
+    'tag__not_in' => array(3640)
+);
+
+$fls_blog = new WP_Query( $fls_blog_arg );
 // MAIN CONTENT
-if (have_posts()) {
+if ($fls_blog) {
 	echo '<section id="main-content">'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	while (have_posts()):the_post();
+	while ($fls_blog->have_posts()):$fls_blog->the_post();
 	$post_th = get_the_post_thumbnail('full', array('class' => 'img-fluid'));
 	echo '<div class="col-12"><h3><a href="'.get_the_permalink().'">'.get_the_title().'</a></h3></div>'.PHP_EOL;
 	if (!empty($post_th)):
@@ -63,6 +78,7 @@ if (have_posts()) {
 	echo '<a href="'.get_the_permalink().'" class="btn btn-dark">Read More</a>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	endwhile;
+	wp_reset_query();
 	echo '</div>'.PHP_EOL;
 	echo '<div class="row">';
 	echo '<div class="col-12 text-center">';
@@ -108,4 +124,14 @@ echo '</aside>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 
+	echo '<section id="cta_blue"><h2 class="text-md-center">Tell Us About Your Fall Hazard</h2></div></section>'.PHP_EOL;
+	echo '<section id="contactFormCTA">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="row">'.PHP_EOL;
+	echo '<style>section#contactFormCTA {background-image: url("'.get_stylesheet_directory_uri().'/images/cfImage.jpg");}</style>'.PHP_EOL;
+	echo '<div id="cfCTA_form" class="col-12 col-md-7 col-lg-7 col-xl-6">'.do_shortcode('[contact-form-7 id="1117830" title="Contact CTA"]').'</div>'.PHP_EOL;
+	echo '<div id="cfCTA_Img" class="d-flex d-md-none justify-content-center align-items-md-end col-12"><img src="'.get_stylesheet_directory_uri().'/images/cfImage.jpg" alt="" class="img-fluid"></div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
 get_footer();?>
