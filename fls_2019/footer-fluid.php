@@ -59,20 +59,19 @@ if ($featInd_query) {
 	echo '</div>'.PHP_EOL;
 }
 
-
 echo '<div class="item col-6 col-md-3">'.PHP_EOL;
 echo '<h2><a href="/fall-protection-solutions/all/">Solutions</a></h2>'.PHP_EOL;
 $footer__solution_args = array(
 	'theme_location' => 'footer__solution',
 	'menu'           => 'footer__solution',
-	'menu_class'	 => 'list-unstyled footer__nav',
+	'menu_class'     => 'list-unstyled footer__nav',
 	'container'      => false,
 	'container'      => false,
 	'depth'          => 2,
 	'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
 	'walker'         => new WP_Bootstrap_Navwalker(),
 );
-wp_nav_menu($footer__solution_args);	
+wp_nav_menu($footer__solution_args);
 echo '</div>'.PHP_EOL;
 
 $service_args = array(

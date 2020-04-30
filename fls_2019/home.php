@@ -134,5 +134,5 @@ echo '<div id="cfCTA_Img" class="d-flex d-md-none justify-content-center align-i
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
-include 'header-fluid.php';
+include 'footer-fluid.php';
 ?>
