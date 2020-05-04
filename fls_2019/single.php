@@ -2,7 +2,7 @@
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
 include 'header-fluid.php';
-$banner_img = get_the_post_thumbnail_url('full');
+$banner_img = get_the_post_thumbnail_url();
 // BANNER
 echo '<section id="banner"'.(empty($banner_img)?' class="no_img"':'').'>'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
