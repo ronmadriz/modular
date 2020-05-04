@@ -7,7 +7,7 @@ $banner_img = get_field('banner');
 echo '<section id="banner"'.(empty($banner_img)?' class="no_img"':'').'>'.PHP_EOL;
 echo '<div class="container-fluid">'.PHP_EOL;
 echo ($banner_img != null?'<div class="row w-image"><style type="text/css">section#banner{background-image:url('.$banner_img['url'].');}</style>':'<div class="row">').PHP_EOL;
-echo '<div class="page_title col-12 col-md-7">'.PHP_EOL;
+echo '<div class="page_title col-12">'.PHP_EOL;
 echo '<h1>'.get_the_title().'</h1>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
