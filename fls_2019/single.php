@@ -94,7 +94,6 @@ if ($fls_blog_query) {
 	echo '</ul>'.PHP_EOL;
 	echo '</nav>'.PHP_EOL;
 }
-get_sidebar();
 echo '</aside>'.PHP_EOL;
 
 echo '</div>'.PHP_EOL;
