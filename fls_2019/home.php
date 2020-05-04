@@ -33,7 +33,7 @@ if ($featured_posts) {
 		the_post_thumbnail('full', ['class' => 'img-fluid featured__article--img']);
 		echo '<header class="featured__article--summary">'.PHP_EOL;
 		echo '<h2 class="featured__article--title"><a href="'.get_the_permalink().'">'.get_the_title().'</a></h2>'.PHP_EOL;
-//		echo '<span class="featured__article--sub"><a href="'.get_the_permalink().'">'.get_the_title().'</a></span>'.PHP_EOL;
+		//		echo '<span class="featured__article--sub"><a href="'.get_the_permalink().'">'.get_the_title().'</a></span>'.PHP_EOL;
 		echo '</header>'.PHP_EOL;
 		echo '<span class="featured__article--desc">'.PHP_EOL;
 		the_excerpt();
