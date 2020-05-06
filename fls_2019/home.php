@@ -82,9 +82,8 @@ if ($fls_blog) {
 	echo '</div>'.PHP_EOL;
 	echo '<div class="row">';
 	echo '<div class="col-12 text-center">';
-	the_posts_pagination(array(
-			'screen_reader_text' => '',
-		));
+	posts_nav_link(' — ', __('&laquo; Newer Posts'), __('Older Posts &raquo;'));
+	//	the_posts_pagination(array('screen_reader_text' => ''));
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
