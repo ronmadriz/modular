@@ -34,13 +34,14 @@ if ($fls_blog) {
 		echo '<a href="'.get_the_permalink().'" class="btn btn-dark">Read More</a>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 	}
-	wp_reset_query();
 	echo '</div>'.PHP_EOL;
 	echo '<div class="row">';
 	echo '<div class="col-12 blog__nav">';
 
 	previous_posts_link('Older Posts');
 	next_posts_link('Newer Posts', $fls_blog->max_num_pages);
+
+	wp_reset_query();
 
 	// the_posts_pagination(array('screen_reader_text' => ''));
 
