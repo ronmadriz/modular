@@ -2326,6 +2326,9 @@ html body section#avail_positions h3 a {
   margin-top: 1rem; }
 
 .blog__nav {
-  margin: 1rem 0 0; }
-  .blog__nav a:nth-of-type(2) {
-    float: right; }
+  margin: 1rem 0 0;
+  /* a {
+	    	&:nth-of-type(2) {
+			    float: right;
+			}
+	    } */ }
