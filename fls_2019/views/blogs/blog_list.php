@@ -22,7 +22,7 @@ if ($fls_blog->have_posts()) {
 		echo '<header><h3><a href="'.get_the_permalink().'">'.get_the_title().'</a></h3></header>'.PHP_EOL;
 		if (!empty($post_th)) {
 			echo '<figure class="col-12 col-md-3">';
-			the_post_thumbnail('full', array('class' => 'img-fluid blog__post--img');
+			the_post_thumbnail('full', array('class' => 'img-fluid blog__post--img'));
 			echo '<figcaption class="col-12 col-md-9 post_desc">'.PHP_EOL;
 		} else {
 			echo '<figcaption class="col-12 post_desc">'.PHP_EOL;
