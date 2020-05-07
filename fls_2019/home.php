@@ -19,12 +19,14 @@ echo '</section>'.PHP_EOL;
 
 the_breadcrumb();
 
+$fls_paged = (get_query_var('page'))?get_query_var('page'):1;
+
 $fls_blog_arg = array(
-	'tag__not_in' => array(3640)
+	'tag__not_in' => array(3640),
+	'paged'       => $fls_paged
 );
 
-$fls_blog_arg['paged'] = get_query_var('paged', 1);
-$fls_blog              = new WP_Query($fls_blog_arg);
+$fls_blog = new WP_Query($fls_blog_arg);
 
 // Pagination fix
 $temp_query = $wp_query;
