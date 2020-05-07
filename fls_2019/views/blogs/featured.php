@@ -7,8 +7,9 @@ if ($featured_posts && !is_paged()) {
 	echo '<div class="row">'.PHP_EOL;
 	foreach ($featured_posts as $post) {
 		setup_postdata($post);
-		echo '<article class="featured__article col-12">'.PHP_EOL;
+		echo '<article class="featured__article col-12"><a href="'.get_the_permalink().'">'.PHP_EOL;
 		the_post_thumbnail('full', ['class' => 'img-fluid featured__article--img']);
+		echo '</a>'.PHP_EOL;
 		echo '<header class="featured__article--summary">'.PHP_EOL;
 		echo '<h2 class="featured__article--title"><a href="'.get_the_permalink().'">'.get_the_title().'</a></h2>'.PHP_EOL;
 		//		echo '<span class="featured__article--sub"><a href="'.get_the_permalink().'">'.get_the_title().'</a></span>'.PHP_EOL;
