@@ -14,7 +14,7 @@ $fls_blog = new WP_Query($fls_blog_arg);
 if ($fls_blog->have_posts()) {
 	echo '<section id="main-content">'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
+	echo '<div class="row blog__list">'.PHP_EOL;
 	while ($fls_blog->have_posts()) {
 		$fls_blog->the_post();
 		$post_th = get_the_post_thumbnail();
