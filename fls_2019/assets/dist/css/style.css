@@ -2305,7 +2305,9 @@ html .blog main section.blog:not(#banner)__post {
 
 html .blog .featured__article {
   display: block;
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  padding: 0; }
   html .blog .featured__article--img {
     display: block;
     width: 100%;

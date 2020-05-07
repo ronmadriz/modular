@@ -26,6 +26,8 @@ html {
 			&__article {
 				display: block;
 				position: relative;
+				overflow: hidden;
+				padding: 0;
 				&--img {
 					display: block;
 					width: 100%;
