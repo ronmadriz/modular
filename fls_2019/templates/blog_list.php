@@ -14,7 +14,7 @@ $wp_query   = NULL;
 $wp_query   = $fls_blog;
 
 // MAIN CONTENT
-if ($fls_blog) {
+if ($fls_blog->have_posts()) {
 	echo '<section id="main-content">'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
