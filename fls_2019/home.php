@@ -67,9 +67,10 @@ if ($fls_blog) {
 	echo '<div class="row">';
 	echo '<div class="col-12 blog__nav">';
 	previous_posts_link('Older Posts');
-	next_posts_link('Newer Posts', $fls_blog->max_num_pages);
+	// next_posts_link('Newer Posts', $fls_blog->max_num_pages);
 
-	//	the_posts_pagination(array('screen_reader_text' => ''));
+	the_posts_pagination(array('screen_reader_text' => ''));
+
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
