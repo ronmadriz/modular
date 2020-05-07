@@ -32,10 +32,7 @@ echo '<aside class="sidebar d-none d-sm-block col-md-3">'.PHP_EOL;
 $secondary_logo = get_field('secondary_logo');
 echo (!empty($secondary_logo)?'<div id="sidebar_logo" class="d-block text-center"><img src="'.$secondary_logo['url'].'" alt="'.$secondary_logo['alt'].'"></div>':'<img src="'.get_bloginfo('url').'/wp-content/uploads/2019/02/fls-works.svg" alt="Fall Safety Protection - Works">').PHP_EOL;
 // latest Posts
-
 include 'views/blogs/blog_list_sidebar.php';
-
-get_sidebar();
 echo '</aside>'.PHP_EOL;
 
 echo '</div>'.PHP_EOL;
