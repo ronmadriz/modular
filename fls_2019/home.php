@@ -20,7 +20,7 @@ echo '</section>'.PHP_EOL;
 
 the_breadcrumb();
 
-include '/templates/featured.php';
+include 'templates/featured.php';
 
 echo '<div id="pagewrapper" class="container">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
