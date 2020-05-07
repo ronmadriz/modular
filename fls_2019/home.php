@@ -19,34 +19,6 @@ echo '</section>'.PHP_EOL;
 
 the_breadcrumb();
 
-$blog_args      = array('posts_per_page' => 1, 'tag' => 'featured');
-$featured_posts = get_posts($blog_args);
-if ($featured_posts) {
-	echo '<section id="featured" class="featured">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="col-12">'.PHP_EOL;
-	foreach ($featured_posts as $post) {
-		setup_postdata($post);
-		echo '<article class="featured__article">'.PHP_EOL;
-		the_post_thumbnail('full', ['class' => 'img-fluid featured__article--img']);
-		echo '<header class="featured__article--summary">'.PHP_EOL;
-		echo '<h2 class="featured__article--title"><a href="'.get_the_permalink().'">'.get_the_title().'</a></h2>'.PHP_EOL;
-		//		echo '<span class="featured__article--sub"><a href="'.get_the_permalink().'">'.get_the_title().'</a></span>'.PHP_EOL;
-		echo '</header>'.PHP_EOL;
-		echo '<span class="featured__article--desc">'.PHP_EOL;
-		the_excerpt();
-		echo '</span>'.PHP_EOL;
-		echo '</article>'.PHP_EOL;
-	}
-	wp_reset_postdata();
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-	echo '<section id="cta_speak" class="blog__cta"><div class="container-fluid"><div class="row"><div class="col-12"><h2 class="text-center text-uppercase"><a href="#cta_blue">Speak with a fall protection specialist <i class="im im-angle-right-circle"></i></a></h2></div></div></div></section>'.PHP_EOL;
-}
-
 echo '<div id="pagewrapper" class="container">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
