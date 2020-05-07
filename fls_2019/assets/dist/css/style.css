@@ -2289,49 +2289,49 @@ html body section#avail_positions h3 a {
   letter-spacing: .075rem;
   text-transform: uppercase; }
 
-html main section:not(#banner) .blog .featured__article {
+html.blog main section.blog:not(#banner)__cta {
+  margin-top: 1rem; }
+
+html.blog main section.blog:not(#banner)__nav {
+  margin: 1rem 0 0;
+  /* a {
+						    	&:nth-of-type(2) {
+								    float: right;
+								}
+						    } */ }
+
+html.blog main section.blog:not(#banner)__post {
+  font-size: .9rem; }
+
+html.blog main section.featured__article {
   display: block;
   position: relative; }
-  html main section:not(#banner) .blog .featured__article--img {
+  html.blog main section.featured__article--img {
     display: block;
     width: 100%;
     height: auto; }
-  html main section:not(#banner) .blog .featured__article--summary {
+  html.blog main section.featured__article--summary {
     display: block;
     padding: 1rem 0 0;
     width: 100%; }
-    html main section:not(#banner) .blog .featured__article--summary a {
+    html.blog main section.featured__article--summary a {
       color: #404040; }
     @media (min-width: 786px) {
-      html main section:not(#banner) .blog .featured__article--summary {
+      html.blog main section.featured__article--summary {
         background-color: rgba(51, 51, 51, 0.75);
         position: absolute;
         top: 65%;
         padding: 1rem 2rem; }
-        html main section:not(#banner) .blog .featured__article--summary a {
+        html.blog main section.featured__article--summary a {
           color: white; } }
-  html main section:not(#banner) .blog .featured__article--title {
+  html.blog main section.featured__article--title {
     font-size: 2rem; }
-  html main section:not(#banner) .blog .featured__article--sub {
+  html.blog main section.featured__article--sub {
     font-size: 1.15rem;
     font-weight: 300;
     line-height: 170%;
     margin: 0; }
-  html main section:not(#banner) .blog .featured__article--desc {
+  html.blog main section.featured__article--desc {
     display: block;
     margin-top: 1rem;
     margin-bottom: 2rem; }
-
-html main section:not(#banner) .blog__cta {
-  margin-top: 1rem; }
-
-html main section:not(#banner) .blog__nav {
-  margin: 1rem 0 0;
-  /* a {
-					    	&:nth-of-type(2) {
-							    float: right;
-							}
-					    } */ }
-
-html main section:not(#banner) .blog__post {
-  font-size: .9rem; }
