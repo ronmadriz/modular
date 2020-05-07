@@ -1,7 +1,7 @@
 <?php
 $blog_args      = array('posts_per_page' => 1, 'tag' => 'featured');
 $featured_posts = get_posts($blog_args);
-if ($featured_posts) {
+if ($featured_posts && !is_paged()) {
 	echo '<section id="featured" class="featured">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
