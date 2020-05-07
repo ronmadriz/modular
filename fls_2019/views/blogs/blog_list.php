@@ -21,14 +21,14 @@ if ($fls_blog->have_posts()) {
 		echo '<article class="blog__post col-12">'.PHP_EOL;
 		echo '<header><h3><a href="'.get_the_permalink().'">'.get_the_title().'</a></h3></header>'.PHP_EOL;
 		if (!empty($post_th)) {
-			echo '<figure class="col-12 col-md-3">';
+			echo '<figure>';
 			the_post_thumbnail('full', array('class' => 'img-fluid blog__post--img'));
-			echo '<figcaption class="col-12 col-md-9 post_desc">'.PHP_EOL;
+			echo '<figcaption class="blog__post--content">'.PHP_EOL;
 		} else {
-			echo '<figcaption class="col-12 post_desc">'.PHP_EOL;
+			echo '<figcaption class="blog__post--content">'.PHP_EOL;
 		}
 		echo '<p class="blog__post--date">Posted on '.get_the_date().'</p>'.PHP_EOL;
-		echo '<p class="blog__post--content">'.get_the_excerpt().'</p>'.PHP_EOL;
+		echo '<p class="blog__post--excerpt">'.get_the_excerpt().'</p>'.PHP_EOL;
 		echo '<a href="'.get_the_permalink().'" class="blog__post--btn btn btn-dark">Read More</a>'.PHP_EOL;
 		echo '</figcaption>'.PHP_EOL;
 		echo '</article>'.PHP_EOL;
