@@ -33,13 +33,11 @@ $wp_query   = $fls_blog;
 
 // MAIN CONTENT
 if ($fls_blog) {
-	/* are we on page one?
-	if(1 == $paged) {
-	//true
+	// are we on page one?
+	if (1 == $paged) {
+		//true
+		echo '<section id="cta_speak" class="blog__cta"><div class="container-fluid"><div class="row"><div class="col-12"><h2 class="text-center text-uppercase"><a href="#cta_blue">Speak with a fall protection specialist <i class="im im-angle-right-circle"></i></a></h2></div></div></div></section>'.PHP_EOL;
 	}
-	 */
-	echo '<section id="cta_speak" class="blog__cta"><div class="container-fluid"><div class="row"><div class="col-12"><h2 class="text-center text-uppercase"><a href="#cta_blue">Speak with a fall protection specialist <i class="im im-angle-right-circle"></i></a></h2></div></div></div></section>'.PHP_EOL;
-
 	echo '<div id="pagewrapper" class="container">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
