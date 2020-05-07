@@ -715,9 +715,16 @@ function fls_new_admin_email($notification, $user_id, $blogname) {
 }
 
 // Changing excerpt more
-   function new_excerpt_more($more) {
-   global $post;
-   return '… <a href="'. get_permalink($post->ID) . '">' . 'Read More &raquo;' . '</a>';
-   }
-   add_filter('excerpt_more', 'new_excerpt_more');
+function new_excerpt_more($more) {
+	global $post;
+	return '… <a href="'.get_permalink($post->ID).'">'.'Read More &raquo;'.'</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+	return 'class="btn btn-large btn-yellow"';
+}
 ?>
