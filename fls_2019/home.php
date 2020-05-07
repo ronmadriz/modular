@@ -17,13 +17,13 @@ echo '</section>'.PHP_EOL;
 
 the_breadcrumb();
 
-include 'templates/featured.php';
+include 'views/blogs/featured.php';
 
 echo '<div id="pagewrapper" class="container">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
 
-include 'templates/blog_list.php';
+include 'views/blogs/blog_list.php';
 
 // Sidebar
 echo '</div>'.PHP_EOL;
@@ -32,25 +32,9 @@ echo '<aside class="sidebar d-none d-sm-block col-md-3">'.PHP_EOL;
 $secondary_logo = get_field('secondary_logo');
 echo (!empty($secondary_logo)?'<div id="sidebar_logo" class="d-block text-center"><img src="'.$secondary_logo['url'].'" alt="'.$secondary_logo['alt'].'"></div>':'<img src="'.get_bloginfo('url').'/wp-content/uploads/2019/02/fls-works.svg" alt="Fall Safety Protection - Works">').PHP_EOL;
 // latest Posts
-$fls_blog_args = array(
-	'post_type'      => 'post',
-	'post_status'    => 'publish',
-	'posts_per_page' => 5,
-);
-$fls_blog_query = new WP_Query($fls_blog_args);
-if ($fls_blog_query) {
-	echo '<nav>'.PHP_EOL;
-	echo '<ul>'.PHP_EOL;
-	echo '<li> Recent Blog Posts'.PHP_EOL;
-	echo '<ul>'.PHP_EOL;
-	while ($fls_blog_query->have_posts()):$fls_blog_query->the_post();
-	echo '<li><a href="'.get_the_permalink().'">'.get_the_title().'</a></li>'.PHP_EOL;
-	endwhile;
-	wp_reset_query();
-	echo '</ul></li>'.PHP_EOL;
-	echo '</ul>'.PHP_EOL;
-	echo '</nav>'.PHP_EOL;
-}
+
+include 'views/blogs/blog_list_sidebar.php';
+
 get_sidebar();
 echo '</aside>'.PHP_EOL;
 
