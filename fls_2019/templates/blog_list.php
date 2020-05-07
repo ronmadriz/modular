@@ -38,12 +38,11 @@ if ($fls_blog) {
 	echo '<div class="row">';
 	echo '<div class="col-12 blog__nav">';
 
-	next_posts_link('Older Posts', $fls_blog->max_num_pages);
-	previous_posts_link('Newer Posts');
+	// next_posts_link('Older Posts', $fls_blog->max_num_pages);
+	// previous_posts_link('Newer Posts');
+	the_posts_pagination(array('screen_reader_text' => ''));
 
 	wp_reset_query();
-
-	// the_posts_pagination(array('screen_reader_text' => ''));
 
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
