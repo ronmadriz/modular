@@ -2332,3 +2332,6 @@ html main section:not(#banner) .blog__nav {
 							    float: right;
 							}
 					    } */ }
+
+html main section:not(#banner) .blog__post {
+  font-size: .9rem; }
