@@ -2,6 +2,7 @@
 $fls_paged = (get_query_var('page'))?get_query_var('page'):1;
 
 $fls_blog_arg = array(
+	'post_type'   => 'post',
 	'tag__not_in' => array(3640),
 	'paged'       => $fls_paged
 );
