@@ -5,7 +5,6 @@ include 'header-fluid.php';
 $page_for_posts       = get_option('page_for_posts');
 $banner_img           = get_field('banner');
 $alternate_page_title = get_field('alternate_page_title', $page_for_posts);
-$theme_dir            = get_bloginfo('stylesheet_directory');
 
 echo '<!-- home -->';
 // BANNER
@@ -21,7 +20,7 @@ echo '</section>'.PHP_EOL;
 
 the_breadcrumb();
 
-include $theme_dir.'/templates/footer-fluid.php';
+include get_bloginfo('stylesheet_directory').'/templates/footer-fluid.php';
 
 echo '<div id="pagewrapper" class="container">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
