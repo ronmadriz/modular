@@ -5,10 +5,9 @@ if ($featured_posts && !is_paged()) {
 	echo '<section id="featured" class="featured">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="col-12">'.PHP_EOL;
 	foreach ($featured_posts as $post) {
 		setup_postdata($post);
-		echo '<article class="featured__article">'.PHP_EOL;
+		echo '<article class="featured__article col-12">'.PHP_EOL;
 		the_post_thumbnail('full', ['class' => 'img-fluid featured__article--img']);
 		echo '<header class="featured__article--summary">'.PHP_EOL;
 		echo '<h2 class="featured__article--title"><a href="'.get_the_permalink().'">'.get_the_title().'</a></h2>'.PHP_EOL;
@@ -20,7 +19,6 @@ if ($featured_posts && !is_paged()) {
 		echo '</article>'.PHP_EOL;
 	}
 	wp_reset_postdata();
-	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
