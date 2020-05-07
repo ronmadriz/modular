@@ -20,7 +20,7 @@ echo '</section>'.PHP_EOL;
 
 the_breadcrumb();
 
-include get_bloginfo('stylesheet_directory').'/templates/footer-fluid.php';
+include '/templates/footer-fluid.php';
 
 echo '<div id="pagewrapper" class="container">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
