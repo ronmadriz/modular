@@ -2,9 +2,10 @@
 $fls_paged = (get_query_var('page'))?get_query_var('page'):1;
 
 $fls_blog_arg = array(
-	'post_type'   => 'post',
-	'tag__not_in' => array(3640),
-	'paged'       => $fls_paged
+	'post_type'      => 'post',
+	'post_status'    => 'publish',
+	'tag__not_in'    => array(3640),
+	'posts_per_page' => 10,
 );
 
 $fls_blog = new WP_Query($fls_blog_arg);
