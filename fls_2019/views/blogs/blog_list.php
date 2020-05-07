@@ -20,9 +20,9 @@ if ($fls_blog->have_posts()) {
 		$post_th = get_the_post_thumbnail();
 		echo '<article class="blog__post col-12">'.PHP_EOL;
 		echo '<header><h3><a href="'.get_the_permalink().'">'.get_the_title().'</a></h3></header>'.PHP_EOL;
+		echo '<figure>';
 		if (!empty($post_th)) {
-			echo '<figure>';
-			the_post_thumbnail('full', array('class' => 'img-fluid blog__post--img'));
+			// the_post_thumbnail('full', array('class' => 'img-fluid blog__post--img'));
 			echo '<figcaption class="blog__post--content">'.PHP_EOL;
 		} else {
 			echo '<figcaption class="blog__post--content">'.PHP_EOL;
@@ -31,6 +31,7 @@ if ($fls_blog->have_posts()) {
 		echo '<p class="blog__post--excerpt">'.get_the_excerpt().'</p>'.PHP_EOL;
 		echo '<a href="'.get_the_permalink().'" class="blog__post--btn btn btn-dark">Read More</a>'.PHP_EOL;
 		echo '</figcaption>'.PHP_EOL;
+		echo '</figure>'.PHP_EOL;
 		echo '</article>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
