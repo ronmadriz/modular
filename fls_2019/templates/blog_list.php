@@ -2,16 +2,11 @@
 $fls_paged = (get_query_var('page'))?get_query_var('page'):1;
 
 $fls_blog_arg = array(
-	'tag__not_in' => array(3640),
-	'paged'       => $fls_paged
+	// 'tag__not_in' => array(3640),
+	//	'paged'       => $fls_paged
 );
 
 $fls_blog = new WP_Query($fls_blog_arg);
-
-// Pagination fix
-$temp_query = $wp_query;
-$wp_query   = NULL;
-$wp_query   = $fls_blog;
 
 // MAIN CONTENT
 if ($fls_blog->have_posts()) {
@@ -49,9 +44,5 @@ if ($fls_blog->have_posts()) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 	// Custom query loop pagination
-
-	// Reset main query object
-	$wp_query = NULL;
-	$wp_query = $temp_query;
 
 }
