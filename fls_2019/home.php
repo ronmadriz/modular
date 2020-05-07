@@ -23,7 +23,7 @@ $fls_blog_arg = array(
 	'tag__not_in' => array(3640)
 );
 
-$fls_blog_arg['paged'] = get_query_var('paged')?get_query_var('paged'):1;
+$fls_blog_arg['paged'] = get_query_var('paged', 1);
 $fls_blog              = new WP_Query($fls_blog_arg);
 
 // Pagination fix
