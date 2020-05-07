@@ -17,7 +17,7 @@ if ($fls_blog->have_posts()) {
 	echo '<div class="row">'.PHP_EOL;
 	while ($fls_blog->have_posts()) {
 		$fls_blog->the_post();
-		$post_th = get_the_post_thumbnail());
+		$post_th = get_the_post_thumbnail();
 		echo '<article class="blog__post col-12">'.PHP_EOL;
 		echo '<header><h3><a href="'.get_the_permalink().'">'.get_the_title().'</a></h3></header>'.PHP_EOL;
 		if (!empty($post_th)) {
