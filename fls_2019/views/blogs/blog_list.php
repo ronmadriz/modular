@@ -21,6 +21,7 @@ if ($fls_blog->have_posts()) {
 		echo '<div class="col-12"><h3><a href="'.get_the_permalink().'">'.get_the_title().'</a></h3></div>'.PHP_EOL;
 		if (!empty($post_th)) {
 			echo '<div class="col-12 col-md-3 post_th">';
+			echo $post_th;
 			echo '</div>'.PHP_EOL;
 			echo '<div class="col-12 col-md-9 post_desc">'.PHP_EOL;
 		} else {
