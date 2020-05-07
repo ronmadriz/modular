@@ -81,7 +81,7 @@ if ($fls_blog) {
 	wp_reset_query();
 	echo '</div>'.PHP_EOL;
 	echo '<div class="row">';
-	echo '<div class="col-12 blog_nav">';
+	echo '<div class="col-12 blog__nav">';
 	posts_nav_link(' — ', __(' Newer Posts &raquo;'), __('Older Posts &laquo;'));
 	//	the_posts_pagination(array('screen_reader_text' => ''));
 	echo '</div>'.PHP_EOL;
