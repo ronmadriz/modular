@@ -1,10 +1,16 @@
 <?php
-$temp     = $wp_query;
-$wp_query = null;
-$wp_query = new WP_Query();
-$tag      = get_term_by('slug', 'featured', 'post_tag');
-$featured = $tag->term_id;
-$wp_query->query('tag__not_in='.$featured.'posts_per_page=10'.'&paged='.$paged);
+$temp      = $wp_query;
+$wp_query  = null;
+$wp_query  = new WP_Query();
+$tag       = get_term_by('slug', 'featured', 'post_tag');
+$featured  = $tag->term_id;
+$blog_args = array(
+	'orderby'        => 'date',
+	'tag__not_in'    => $featured,
+	'posts_per_page' => 10,
+	'paged'          => $paged,
+);
+$wp_query->query($blog_args);
 // MAIN CONTENT
 echo '<section id="main-content">'.PHP_EOL;
 echo '<div class="container">'.PHP_EOL;
