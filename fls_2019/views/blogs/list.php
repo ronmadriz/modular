@@ -40,7 +40,7 @@ if ($fls_blog->have_posts()) {
 	// previous_posts_link('Newer Posts');
 	the_posts_pagination(array('screen_reader_text' => ''));
 
-	wp_reset_query();
+	wp_reset_postdata();
 
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
