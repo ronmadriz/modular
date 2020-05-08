@@ -2,7 +2,8 @@
 $temp     = $wp_query;
 $wp_query = null;
 $wp_query = new WP_Query();
-$featured = 4028;
+$tag      = get_term_by('slug', 'featured', 'post_tag');
+$featured = $tag->term_id;
 $wp_query->query('tag__not_in='.$featured.'posts_per_page=10'.'&paged='.$paged);
 // MAIN CONTENT
 echo '<section id="main-content">'.PHP_EOL;
