@@ -9,7 +9,7 @@ $blog_args = array(
 	'tag__not_in'    => $featured,
 	'posts_per_page' => 10,
 	'paged'          => $paged,
-	'order'          => DESC
+	'order'          => 'DESC',
 );
 $wp_query->query($blog_args);
 // MAIN CONTENT
