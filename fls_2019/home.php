@@ -23,7 +23,7 @@ echo '<div id="pagewrapper" class="container">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
 
-include 'views/blogs/list.php';
+// include 'views/blogs/list.php';
 
 // Sidebar
 echo '</div>'.PHP_EOL;
