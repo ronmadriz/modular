@@ -2,7 +2,8 @@
 $temp     = $wp_query;
 $wp_query = null;
 $wp_query = new WP_Query();
-$wp_query->query('posts_per_page=10'.'&paged='.$paged);
+$featured = 4028;
+$wp_query->query('tag__not_in='.$featured.'posts_per_page=10'.'&paged='.$paged);
 // MAIN CONTENT
 echo '<section id="main-content">'.PHP_EOL;
 echo '<div class="container">'.PHP_EOL;
@@ -29,11 +30,7 @@ while ($wp_query->have_posts()) {
 echo '</div>'.PHP_EOL;
 echo '<div class="row">';
 echo '<div class="col-12 blog__nav">';
-
-// next_posts_link('Older Posts', $wp_query->max_num_pages);
-// previous_posts_link('Newer Posts');
 the_posts_pagination(array('screen_reader_text' => ''));
-
 wp_reset_postdata();
 
 echo '</div>'.PHP_EOL;

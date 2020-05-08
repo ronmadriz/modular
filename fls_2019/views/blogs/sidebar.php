@@ -14,7 +14,7 @@ if ($fls_blog_query) {
 		$fls_blog_query->the_post();
 		echo '<li><a href="'.get_the_permalink().'">'.get_the_title().'</a></li>'.PHP_EOL;
 	}
-	wp_reset_query();
+	wp_reset_postdata();
 	echo '</ul></li>'.PHP_EOL;
 	echo '</ul>'.PHP_EOL;
 	echo '</nav>'.PHP_EOL;
