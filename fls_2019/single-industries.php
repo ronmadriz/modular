@@ -191,7 +191,7 @@ if (have_rows('measurement_tables')) {
 }
 $additional_content = get_field('additional_content');
 if ($additional_content) {
-	echo '<section id="solution_videos">'.PHP_EOL;
+	echo '<section id="additional_content">'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="content col-12">'.$additional_content.'</div>'.PHP_EOL;
