@@ -223,9 +223,9 @@ if (have_rows('measurement_tables')) {
 				$m_table = get_sub_field('table');
 				if (!empty($m_table)) {
 					if (!empty($m_table['caption'])) {
-						echo '<h3 class="measurement_tables__caption">'.$m_table['caption'].'</h3>';
+						echo '<h3 class="measurement_tables--caption">'.$m_table['caption'].'</h3>';
 					}
-					echo '<table border="0">'.PHP_EOL;
+					echo '<table class="measurement_tables--tables">'.PHP_EOL;
 					if (!empty($m_table['header'])) {
 						echo '<thead>';
 						echo '<tr>';
