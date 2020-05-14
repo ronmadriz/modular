@@ -130,13 +130,20 @@ if (have_rows('measurement_tables')) {
 	echo '</section>'.PHP_EOL;
 }
 
-$additional_content = get_field('additional_content');
-if ($additional_content) {
+// Additional Content
+if (have_rows('additional_content')) {
 	echo '<section id="additional_content">'.PHP_EOL;
 	echo '<div class="container">'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="content col-12">'.$additional_content.'</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
+	while (have_rows('additional_content')) {
+		the_row();
+		$ac_title     = get_sub_field('title');
+		$ac_content   = get_sub_field('content');
+		$ac_has_title = get_sub_field('has_title');
+		echo '<div class="row">'.PHP_EOL;
+		echo ($ac_has_title == 1?'<div class="col-12"><span class="section_title"><h2>'.$ac_title.'</h2></span></div>':'').PHP_EOL;
+		echo '<div class="content col-12">'.$ac_content.'</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+	}
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
