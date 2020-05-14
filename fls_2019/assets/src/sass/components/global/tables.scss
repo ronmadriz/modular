@@ -1,106 +1,101 @@
 @media only screen and  (min-width: 992px) {
-	html {
-		body {
-			main {
-				table {
-					width:100%;
-					margin-top:2rem;
-					margin-bottom:2rem;
-					caption {
-					    color: $base;
-						padding: 1rem 0;
-						font-size: 1.75rem;
-						text-transform: none;
-						text-align: left;
-						caption-side: top;
-					}
-					thead {
-						th {
-						    background-color: $accent_1;
-						    border-bottom:1px solid $accent_1;
-						    font-weight: 300;
-						    padding: .75rem 1rem;
-						    line-height: 115%;
-						    color:$alternate;
-						}
-					}
-					tbody {
-						td {
-						    padding: .75rem 1rem;
-						    line-height: 115%;
-						}
-						tr:nth-child(odd) {
-						    background-color: $not_quite_white;
-						}
-					}
-					tr {
-						th, td {
-							&:not(:first-of-type) {
-								text-align:center;
-							}
-						}
-						&:last-of-type {
-							border-bottom:1px solid lightgray;
-						}
-					}
+	table {
+		width:100%;
+		margin-top:2rem;
+		margin-bottom:2rem;
+		caption {
+		    color: $base;
+			padding: 1rem 0;
+			font-size: 1.75rem;
+			text-transform: none;
+			text-align: left;
+			caption-side: top;
+		}
+		thead {
+			th {
+			    background-color: $accent_1;
+			    border-bottom:1px solid $accent_1;
+			    font-weight: 300;
+			    padding: .75rem 1rem;
+			    line-height: 115%;
+			    color:$alternate;
+			}
+		}
+		tbody {
+			td {
+			    padding: .75rem 1rem;
+			    line-height: 115%;
+			}
+			tr:nth-child(odd) {
+			    background-color: $not_quite_white;
+			}
+		}
+		tr {
+			th, td {
+				&:not(:first-of-type) {
+					text-align:center;
 				}
+			}
+			&:last-of-type {
+				border-bottom:1px solid $light_gray;
 			}
 		}
 	}
 }
 
 @media only screen and  (max-width: 991px) {
-	html {
-		body {
-			main {
-				table {
-					width:100%;			
-					margin-top:1rem;		
-					margin-bottom:1rem;
-					caption {
-						font-size: 1.75rem;
-						margin-bottom: .75rem;
-						font-weight: bold;
+	h3.table__caption {
+	    color: #404040;
+	    padding: 1rem 0;
+	    font-size: 1.75rem;
+	    text-transform: none;
+	    text-align: left;
+	}
+	table {
+		width:100%;			
+		margin-top:1rem;		
+		margin-bottom:1rem;
+		caption {
+			font-size: 1.75rem;
+			margin-bottom: .75rem;
+			font-weight: bold;
+		}
+		thead {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		tbody {
+			tr {
+				display: block;
+				border: 1px solid $gris;
+				border-bottom:0;
+				td {
+					display: block;
+					border-bottom: 1px solid $gris;
+					position: relative;
+					padding-left: 33.3%;
+					text-align: left;
+					&:before{
+					    content: attr(data-label) " :";
+					    display: inline-block;
+					    line-height: 1.5;
+					    margin-left: -100%;
+					    width: 100%;
+					    text-align:right;
+					    white-space: nowrap;
+					    border-right: 1px solid $gris;
+					    padding-right: .5rem;
+					    margin-right: .25rem;
+					    padding-bottom: .25rem;
+					    padding-top: .25rem;
 					}
-					thead {
-						position: absolute;
-						top: -9999px;
-						left: -9999px;
-					}
-					tbody {
-						tr {
-							display: block;
-							border: 1px solid $gris;
-							border-bottom:0;
-							td {
-								display: block;
-								border-bottom: 1px solid $gris;
-								position: relative;
-								padding-left: 33.3%;
-								text-align: left;
-								&:before{
-								    content: attr(data-label) " :";
-								    display: inline-block;
-								    line-height: 1.5;
-								    margin-left: -100%;
-								    width: 100%;
-								    text-align:right;
-								    white-space: nowrap;
-								    border-right: 1px solid $gris;
-								    padding-right: .5rem;
-								    margin-right: .25rem;
-								    padding-bottom: .25rem;
-								    padding-top: .25rem;
-								}
-							}
-							+ tr {
-								margin-top: 1.5em; 
-							}
-							&:nth-of-type(even){
-								background-color: $not_quite_white;
-							}
-						}
-					}
+				}
+				+ tr {
+					margin-top: 1.5em; 
+				}
+				&:nth-of-type(even){
+					background-color: $not_quite_white;
 				}
 			}
 		}

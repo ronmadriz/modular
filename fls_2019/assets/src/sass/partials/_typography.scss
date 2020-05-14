@@ -8,55 +8,50 @@ $fontawesome:"Font Awesome 5 Free";
 
 body {
 	font-size:16px;
-	h1, h2, h3, h4, h5, h6 {
-		font-family: $primary;
-	}
-	h1 {
-	    font-family: $tertiary;
-	    font-size: 1.4375rem;
-	    font-weight: 400;
-	    font-style: normal;	    
-		color: $black;
-	    text-transform: uppercase;
-	    letter-spacing: 0.01em;
-	    line-height: 1.2em;
-		margin-bottom:1rem;
-	}
-	h2 {
-	    color: $accent_1;
-	    font-family: $primary;
-	    font-weight: 600;
-	    font-size:1.375rem;
-	}
-	h3 {}
-	p, li, dd, dt, blockquote, code, span, div, section, small, address {
-		font-family: $secondary;
-	}
-	p, li, td, dd {
-		font-size:90%;
-	} 
-	main {
-		h1 {
-		}
-		h3 {
-			font-family:$secondary;
-			margin-top:1.5rem;
-			margin-bottom:1.5rem;
-			font-size: 1.35rem;
-			color:$accent_1;
-		}		
-		h4 {
-			color: $blue;
-		    font-family: $primary;
-	        font-size: 1.25rem;				
-		}
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $primary;
+}
+h1 {
+    font-family: $tertiary;
+    font-size: 1.4375rem;
+    font-weight: 400;
+    font-style: normal;	    
+	color: $black;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 1.2em;
+	margin-bottom:1rem;
+}
+h2 {
+    color: $accent_1;
+    font-family: $primary;
+    font-weight: 600;
+    font-size:1.375rem;
+}
+h3 {
+	font-family:$secondary;
+	margin-top:1.5rem;
+	margin-bottom:1.5rem;
+	font-size: 1.35rem;
+	color:$accent_1;
+}		
+h4 {
+	color: $blue;
+    font-family: $primary;
+    font-size: 1.25rem;				
+}
 
-		p {
-			margin-bottom:1.75rem;
-		}
-		.section_title {
-		    margin: 1.5rem 0 1.5rem 0;
-		    border-bottom:1px solid $light_gray;
-		}
-	}
+p {
+	margin-bottom:1.75rem;
+}
+.section_title {
+    margin: 1.5rem 0 1.5rem 0;
+    border-bottom:1px solid $light_gray;
+}	
+p, li, dd, dt, blockquote, code, span, div, section, small, address {
+	font-family: $secondary;
+}
+p, li, td, dd {
+	font-size:90%;
 }

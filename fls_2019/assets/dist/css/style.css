@@ -33,42 +33,51 @@
 
 body {
   font-size: 16px; }
-  body h1, body h2, body h3, body h4, body h5, body h6 {
-    font-family: "Open Sans", arial, helvetica, sans-serif; }
-  body h1 {
-    font-family: "Oswald", helvetica, sans-serif;
-    font-size: 1.4375rem;
-    font-weight: 400;
-    font-style: normal;
-    color: #404040;
-    text-transform: uppercase;
-    letter-spacing: 0.01em;
-    line-height: 1.2em;
-    margin-bottom: 1rem; }
-  body h2 {
-    color: #156cb3;
-    font-family: "Open Sans", arial, helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 1.375rem; }
-  body p, body li, body dd, body dt, body blockquote, body code, body span, body div, body section, body small, body address {
-    font-family: Helvetica, Arial, sans-serif; }
-  body p, body li, body td, body dd {
-    font-size: 90%; }
-  body main h3 {
-    font-family: Helvetica, Arial, sans-serif;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.35rem;
-    color: #156cb3; }
-  body main h4 {
-    color: #156cb3;
-    font-family: "Open Sans", arial, helvetica, sans-serif;
-    font-size: 1.25rem; }
-  body main p {
-    margin-bottom: 1.75rem; }
-  body main .section_title {
-    margin: 1.5rem 0 1.5rem 0;
-    border-bottom: 1px solid #eeeeee; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", arial, helvetica, sans-serif; }
+
+h1 {
+  font-family: "Oswald", helvetica, sans-serif;
+  font-size: 1.4375rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #404040;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1.2em;
+  margin-bottom: 1rem; }
+
+h2 {
+  color: #156cb3;
+  font-family: "Open Sans", arial, helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.375rem; }
+
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.35rem;
+  color: #156cb3; }
+
+h4 {
+  color: #156cb3;
+  font-family: "Open Sans", arial, helvetica, sans-serif;
+  font-size: 1.25rem; }
+
+p {
+  margin-bottom: 1.75rem; }
+
+.section_title {
+  margin: 1.5rem 0 1.5rem 0;
+  border-bottom: 1px solid #eeeeee; }
+
+p, li, dd, dt, blockquote, code, span, div, section, small, address {
+  font-family: Helvetica, Arial, sans-serif; }
+
+p, li, td, dd {
+  font-size: 90%; }
 
 body header span.nav_tel {
   font-weight: bold;
@@ -2269,58 +2278,64 @@ html body main #flsCarousel {
     position: relative; }
 
 @media only screen and (min-width: 992px) {
-  html body main table {
+  table {
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem; }
-    html body main table caption {
+    table caption {
       color: #404040;
       padding: 1rem 0;
       font-size: 1.75rem;
       text-transform: none;
       text-align: left;
       caption-side: top; }
-    html body main table thead th {
+    table thead th {
       background-color: #156cb3;
       border-bottom: 1px solid #156cb3;
       font-weight: 300;
       padding: .75rem 1rem;
       line-height: 115%;
       color: white; }
-    html body main table tbody td {
+    table tbody td {
       padding: .75rem 1rem;
       line-height: 115%; }
-    html body main table tbody tr:nth-child(odd) {
+    table tbody tr:nth-child(odd) {
       background-color: #f0f0f0; }
-    html body main table tr th:not(:first-of-type), html body main table tr td:not(:first-of-type) {
+    table tr th:not(:first-of-type), table tr td:not(:first-of-type) {
       text-align: center; }
-    html body main table tr:last-of-type {
-      border-bottom: 1px solid lightgray; } }
+    table tr:last-of-type {
+      border-bottom: 1px solid #eeeeee; } }
 
 @media only screen and (max-width: 991px) {
-  html body main table {
+  h3.table__caption {
+    color: #404040;
+    padding: 1rem 0;
+    font-size: 1.75rem;
+    text-transform: none;
+    text-align: left; }
+  table {
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem; }
-    html body main table caption {
+    table caption {
       font-size: 1.75rem;
       margin-bottom: .75rem;
       font-weight: bold; }
-    html body main table thead {
+    table thead {
       position: absolute;
       top: -9999px;
       left: -9999px; }
-    html body main table tbody tr {
+    table tbody tr {
       display: block;
       border: 1px solid #dcddde;
       border-bottom: 0; }
-      html body main table tbody tr td {
+      table tbody tr td {
         display: block;
         border-bottom: 1px solid #dcddde;
         position: relative;
         padding-left: 33.3%;
         text-align: left; }
-        html body main table tbody tr td:before {
+        table tbody tr td:before {
           content: attr(data-label) " :";
           display: inline-block;
           line-height: 1.5;
@@ -2333,9 +2348,9 @@ html body main #flsCarousel {
           margin-right: .25rem;
           padding-bottom: .25rem;
           padding-top: .25rem; }
-      html body main table tbody tr + tr {
+      table tbody tr + tr {
         margin-top: 1.5em; }
-      html body main table tbody tr:nth-of-type(even) {
+      table tbody tr:nth-of-type(even) {
         background-color: #f0f0f0; } }
 
 .additional_content {
