@@ -93,10 +93,10 @@ if (have_rows('measurement_tables')) {
 				the_row();
 				$m_table = get_sub_field('table');
 				if (!empty($m_table)) {
-					echo '<table border="0">'.PHP_EOL;
 					if (!empty($m_table['caption'])) {
-						echo '<caption>'.$m_table['caption'].'</caption>';
+						echo '<h3 class="measurement_tables__caption">'.$m_table['caption'].'</h3>';
 					}
+					echo '<table border="0">'.PHP_EOL;
 					if (!empty($m_table['header'])) {
 						echo '<thead>';
 						echo '<tr>';

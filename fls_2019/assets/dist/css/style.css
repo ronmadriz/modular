@@ -2307,12 +2307,6 @@ html body main #flsCarousel {
       border-bottom: 1px solid #eeeeee; } }
 
 @media only screen and (max-width: 991px) {
-  h3.table__caption {
-    color: #404040;
-    padding: 1rem 0;
-    font-size: 1.75rem;
-    text-transform: none;
-    text-align: left; }
   table {
     width: 100%;
     margin-top: 1rem;
@@ -2355,3 +2349,10 @@ html body main #flsCarousel {
 
 .additional_content {
   padding-bottom: 2rem; }
+
+.measurement_tables__caption {
+  color: #404040;
+  padding: 1rem 0;
+  font-size: 1.75rem;
+  text-transform: none;
+  text-align: left; }
