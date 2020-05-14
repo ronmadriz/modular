@@ -841,284 +841,6 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
   margin-bottom: .5rem;
   display: block; }
 
-body main form {
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease; }
-  body main form label {
-    line-height: 175%; }
-  body main form input.form-control[type=text], body main form input.form-control[type=email], body main form input.form-control[type=password], body main form input.form-control[type=date], body main form input.form-control[type=tel], body main form input.medium[type=text], body main form input.medium[type=email], body main form input.medium[type=password], body main form input.medium[type=date], body main form input.medium[type=tel] {
-    margin-top: .25rem;
-    margin-bottom: .75rem;
-    font-size: 1rem;
-    font-weight: normal;
-    border-style: solid;
-    border-radius: 0;
-    outline: none;
-    -webkit-transition: border-color 0.2s;
-    transition: border-color 0.2s;
-    color: #404040; }
-    body main form input.form-control[type=text]::-webkit-input-placeholder, body main form input.form-control[type=email]::-webkit-input-placeholder, body main form input.form-control[type=password]::-webkit-input-placeholder, body main form input.form-control[type=date]::-webkit-input-placeholder, body main form input.form-control[type=tel]::-webkit-input-placeholder, body main form input.medium[type=text]::-webkit-input-placeholder, body main form input.medium[type=email]::-webkit-input-placeholder, body main form input.medium[type=password]::-webkit-input-placeholder, body main form input.medium[type=date]::-webkit-input-placeholder, body main form input.medium[type=tel]::-webkit-input-placeholder {
-      color: #156cb3;
-      font-style: italic; }
-    body main form input.form-control[type=text]:-ms-input-placeholder, body main form input.form-control[type=email]:-ms-input-placeholder, body main form input.form-control[type=password]:-ms-input-placeholder, body main form input.form-control[type=date]:-ms-input-placeholder, body main form input.form-control[type=tel]:-ms-input-placeholder, body main form input.medium[type=text]:-ms-input-placeholder, body main form input.medium[type=email]:-ms-input-placeholder, body main form input.medium[type=password]:-ms-input-placeholder, body main form input.medium[type=date]:-ms-input-placeholder, body main form input.medium[type=tel]:-ms-input-placeholder {
-      color: #156cb3;
-      font-style: italic; }
-    body main form input.form-control[type=text]::-ms-input-placeholder, body main form input.form-control[type=email]::-ms-input-placeholder, body main form input.form-control[type=password]::-ms-input-placeholder, body main form input.form-control[type=date]::-ms-input-placeholder, body main form input.form-control[type=tel]::-ms-input-placeholder, body main form input.medium[type=text]::-ms-input-placeholder, body main form input.medium[type=email]::-ms-input-placeholder, body main form input.medium[type=password]::-ms-input-placeholder, body main form input.medium[type=date]::-ms-input-placeholder, body main form input.medium[type=tel]::-ms-input-placeholder {
-      color: #156cb3;
-      font-style: italic; }
-    body main form input.form-control[type=text]::placeholder, body main form input.form-control[type=email]::placeholder, body main form input.form-control[type=password]::placeholder, body main form input.form-control[type=date]::placeholder, body main form input.form-control[type=tel]::placeholder, body main form input.medium[type=text]::placeholder, body main form input.medium[type=email]::placeholder, body main form input.medium[type=password]::placeholder, body main form input.medium[type=date]::placeholder, body main form input.medium[type=tel]::placeholder {
-      color: #156cb3;
-      font-style: italic; }
-  body main form input.form-control:focus[type=text], body main form input.form-control:focus[type=email], body main form input.form-control:focus[type=password], body main form input.form-control:focus[type=date], body main form input.form-control:focus[type=tel], body main form input.medium:focus[type=text], body main form input.medium:focus[type=email], body main form input.medium:focus[type=password], body main form input.medium:focus[type=date], body main form input.medium:focus[type=tel] {
-    border-color: #000333; }
-  body main form input.form-control[type=date]::-webkit-datetime-edit-month-field, body main form input.medium[type=date]::-webkit-datetime-edit-month-field {
-    color: #404040; }
-  body main form input.form-control[type=date]::-webkit-datetime-edit-day-field, body main form input.medium[type=date]::-webkit-datetime-edit-day-field {
-    color: #404040; }
-  body main form input.form-control[type=date]::-webkit-datetime-edit-year-field, body main form input.medium[type=date]::-webkit-datetime-edit-year-field {
-    color: #404040; }
-  body main form input.form-control[type=date]::-webkit-inner-spin-button, body main form input.medium[type=date]::-webkit-inner-spin-button {
-    display: none; }
-  body main form input.form-control[type=date]::-webkit-calendar-picker-indicator, body main form input.medium[type=date]::-webkit-calendar-picker-indicator {
-    color: #404040; }
-    body main form input.form-control[type=date]::-webkit-calendar-picker-indicator:hover, body main form input.medium[type=date]::-webkit-calendar-picker-indicator:hover {
-      color: #404040;
-      cursor: pointer; }
-    body main form input.form-control[type=date]::-webkit-calendar-picker-indicator:active, body main form input.medium[type=date]::-webkit-calendar-picker-indicator:active {
-      color: #404040; }
-  body main form input[type=submit].btn {
-    border-radius: 0; }
-  body main form button[type=submit].btn {
-    border-radius: 0; }
-  body main form button[type=submit].glsr-button {
-    background-color: #156cb3;
-    border-color: #156cb3;
-    color: white;
-    -webkit-transition-duration: .35s;
-    transition-duration: .35s;
-    -webkit-transition-delay: 50ms;
-    transition-delay: 50ms;
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out; }
-  body main form textarea, body main form select {
-    margin-top: .25rem;
-    margin-bottom: .75rem;
-    font-size: 1rem;
-    font-weight: normal;
-    border-style: solid;
-    border-radius: 0;
-    outline: none;
-    -webkit-transition: border-color 0.2s;
-    transition: border-color 0.2s;
-    color: #404040; }
-  body main form#newsletter {
-    margin-top: 1.25rem; }
-    body main form#newsletter button {
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
-      height: 38px;
-      margin-top: 4px; }
-  body main form div.wpcf7-response-output {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: red;
-    color: white;
-    text-align: center;
-    padding-top: .5rem;
-    padding-bottom: .5rem; }
-    body main form div.wpcf7-response-output.wpcf7-mail-sent-ok {
-      background-color: #156cb3;
-      border-color: #156cb3; }
-
-body main aside.sidebar {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 2rem; }
-  body main aside.sidebar form {
-    background-color: #eeeeee;
-    padding-bottom: 1rem; }
-    body main aside.sidebar form div.form_title {
-      background-color: #156cb3;
-      color: white;
-      text-transform: capitalize;
-      font-weight: bold;
-      padding: .45rem 0 .6rem;
-      text-align: center; }
-    body main aside.sidebar form div.form-group {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      margin-top: 1rem; }
-      body main aside.sidebar form div.form-group input.form-control, body main aside.sidebar form div.form-group textarea.form-control, body main aside.sidebar form div.form-group select.form-control {
-        font-size: .85rem; }
-      body main aside.sidebar form div.form-group textarea {
-        height: 5rem; }
-    body main aside.sidebar form div .btn {
-      font-size: .85rem; }
-
-body button#searchToggle {
-  height: 2.25rem;
-  width: 2.5rem;
-  background-color: transparent;
-  border: 0;
-  color: #156cb3; }
-  body button#searchToggle:focus {
-    outline: 0; }
-  body button#searchToggle i {
-    font-size: 1.3rem; }
-
-body form#searchform {
-  padding: 0 0.25rem;
-  background: white; }
-  body form#searchform input[type=text] {
-    padding: .25rem .5rem .25rem 1rem;
-    border: 1px solid #eeeeee;
-    border-right: 0;
-    outline: 0;
-    margin-right: 0; }
-  body form#searchform button {
-    background-color: white;
-    color: #156cb3;
-    padding: .25rem .75rem;
-    border: 1px solid #eeeeee;
-    margin-left: -4px;
-    outline: 0; }
-    body form#searchform button#searchsubmit {
-      border: 1px solid #eeeeee;
-      border-left: 0; }
-    body form#searchform button#searchClose:focus {
-      outline: 0; }
-
-body header form#searchform {
-  position: absolute;
-  right: 15px;
-  top: 13px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-  @media (min-width: 786px) {
-    body header form#searchform {
-      top: 2.5rem; } }
-
-body form {
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease; }
-  body form.sent div.form-group, body form.sent div.inside {
-    display: none; }
-  body form.sent p {
-    display: none; }
-  body form div.wpcf7-response-output {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: red;
-    color: white;
-    text-align: center;
-    padding-top: .5rem;
-    padding-bottom: .5rem; }
-    body form div.wpcf7-response-output.wpcf7-mail-sent-ok {
-      background-color: #156cb3;
-      border-color: #156cb3; }
-  body form#newsletter label {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-style: normal;
-    color: #156cb3;
-    margin-bottom: 0; }
-  body form .full-width.has-padding.has-border {
-    background-color: #f7f7f7;
-    color: #000;
-    font-weight: 300;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border-radius: 0.25em;
-    padding-left: 2.75rem; }
-  body form.lrm-form.--registration-done > i .lrm-integrations {
-    display: none; }
-
-@media only screen and (min-width: 992px) {
-  html body main table {
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
-    html body main table caption {
-      color: #404040;
-      padding: 1rem 0;
-      font-size: 1.75rem;
-      text-transform: none;
-      text-align: left;
-      caption-side: top; }
-    html body main table thead th {
-      background-color: #156cb3;
-      border-bottom: 1px solid #156cb3;
-      font-weight: 300;
-      padding: .75rem 1rem;
-      line-height: 115%;
-      color: white; }
-    html body main table tbody td {
-      padding: .75rem 1rem;
-      line-height: 115%; }
-    html body main table tbody tr:nth-child(odd) {
-      background-color: #f0f0f0; }
-    html body main table tr th:not(:first-of-type), html body main table tr td:not(:first-of-type) {
-      text-align: center; }
-    html body main table tr:last-of-type {
-      border-bottom: 1px solid lightgray; } }
-
-@media only screen and (max-width: 991px) {
-  html body main table {
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem; }
-    html body main table caption {
-      font-size: 1.75rem;
-      margin-bottom: .75rem;
-      font-weight: bold; }
-    html body main table thead {
-      position: absolute;
-      top: -9999px;
-      left: -9999px; }
-    html body main table tbody tr {
-      display: block;
-      border: 1px solid #dcddde;
-      border-bottom: 0; }
-      html body main table tbody tr td {
-        display: block;
-        border-bottom: 1px solid #dcddde;
-        position: relative;
-        padding-left: 33.3%;
-        text-align: left; }
-        html body main table tbody tr td:before {
-          content: attr(data-label) " :";
-          display: inline-block;
-          line-height: 1.5;
-          margin-left: -100%;
-          width: 100%;
-          text-align: right;
-          white-space: nowrap;
-          border-right: 1px solid #dcddde;
-          padding-right: .5rem;
-          margin-right: .25rem;
-          padding-bottom: .25rem;
-          padding-top: .25rem; }
-      html body main table tbody tr + tr {
-        margin-top: 1.5em; }
-      html body main table tbody tr:nth-of-type(even) {
-        background-color: #f0f0f0; } }
-
 body footer section#foot_contact {
   background-color: #e6e7e9; }
   body footer section#foot_contact > div.container-fluid {
@@ -1387,159 +1109,6 @@ html body#page-home main {
 
 html body#page-home footer section#foot_call_cta {
   margin-top: 0; }
-
-body ul.gallery li {
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0; }
-  @media (min-width: 786px) {
-    body ul.gallery li {
-      margin-bottom: 1rem; } }
-  @media (max-width: 786px) {
-    body ul.gallery li {
-      width: 47.5%;
-      margin-bottom: .25rem; }
-      body ul.gallery li:not(:last-child) {
-        margin-right: 0; } }
-
-body section#gallery div#flsCarousel .thumb_nav {
-  white-space: nowrap;
-  z-index: 1000;
-  padding: .5rem 1rem;
-  height: 170px; }
-  body section#gallery div#flsCarousel .thumb_nav #thumbs {
-    width: 100%;
-    overflow-x: auto;
-    position: absolute;
-    height: 150px; }
-    body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list {
-      position: absolute;
-      left: 0;
-      width: auto; }
-      body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span.active {
-        border: 1px solid #156cb3;
-        background-color: none; }
-        body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span.active img {
-          opacity: 0.7; }
-      body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span:hover {
-        cursor: pointer; }
-      body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span img {
-        max-height: 145px; }
-  body section#gallery div#flsCarousel .thumb_nav span.th_nav {
-    width: 40px;
-    height: 150px;
-    position: absolute;
-    color: #333333;
-    z-index: 1000;
-    opacity: 1;
-    top: .5rem;
-    background: white; }
-    body section#gallery div#flsCarousel .thumb_nav span.th_nav:hover {
-      cursor: pointer; }
-  body section#gallery div#flsCarousel .thumb_nav span#thumb_left {
-    left: 0px; }
-  body section#gallery div#flsCarousel .thumb_nav span#thumb_right {
-    right: 0px; }
-
-body section#gallery .lSAction > a {
-  opacity: 9; }
-
-@media (max-width: 786px) {
-  body section#gallery .lSPager.lSGallery {
-    display: none; } }
-
-html body main #gallery .carousel-inner .carousel-item.active,
-html body main #gallery .carousel-inner .carousel-item-next,
-html body main #gallery .carousel-inner .carousel-item-prev {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-html body main #gallery .carousel-inner .carousel-item-right.active,
-html body main #gallery .carousel-inner .carousel-item-next {
-  -webkit-transform: translateX(25%);
-          transform: translateX(25%); }
-
-html body main #gallery .carousel-inner .carousel-item-left.active,
-html body main #gallery .carousel-inner .carousel-item-prev {
-  -webkit-transform: translateX(-25%);
-          transform: translateX(-25%); }
-
-html body main #gallery .carousel-inner .carousel-item-right,
-html body main #gallery .carousel-inner .carousel-item-left {
-  -webkit-transform: translateX(0);
-          transform: translateX(0); }
-
-html body main #flsCarousel {
-  margin: 20px auto; }
-  html body main #flsCarousel .img-fluid {
-    min-width: 100%; }
-  html body main #flsCarousel .carousel-indicators {
-    margin: 10px 0 0;
-    overflow-x: auto;
-    overflow-y: hidden;
-    position: static;
-    text-align: left;
-    white-space: nowrap;
-    width: 100%; }
-    html body main #flsCarousel .carousel-indicators li {
-      background-color: transparent;
-      border-radius: 0;
-      display: inline-block;
-      height: auto;
-      margin: 0 !important;
-      width: auto;
-      border: 1px solid transparent; }
-      html body main #flsCarousel .carousel-indicators li img {
-        display: block;
-        opacity: 1; }
-      html body main #flsCarousel .carousel-indicators li.active {
-        border-color: #156cb3; }
-        html body main #flsCarousel .carousel-indicators li.active img {
-          opacity: 0.35; }
-      html body main #flsCarousel .carousel-indicators li:hover img {
-        opacity: 0.75; }
-  @media (max-width: 786px) {
-    html body main #flsCarousel #carousel_controls {
-      z-index: 999;
-      text-align: center; }
-      html body main #flsCarousel #carousel_controls a.carousel-control {
-        display: inline-block;
-        border: 0.01rem solid rgba(0, 0, 0, 0.125);
-        padding: .1rem .75rem .4rem;
-        margin-top: 1rem; } }
-  @media (min-width: 786px) {
-    html body main #flsCarousel #carousel_controls {
-      position: absolute;
-      z-index: 999;
-      height: 100%;
-      top: 0;
-      font-size: 2rem; }
-      html body main #flsCarousel #carousel_controls a.carousel-control {
-        color: white;
-        opacity: .5;
-        height: 100%;
-        width: 25%;
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        html body main #flsCarousel #carousel_controls a.carousel-control.left {
-          -webkit-box-pack: start;
-              -ms-flex-pack: start;
-                  justify-content: flex-start;
-          float: left; }
-        html body main #flsCarousel #carousel_controls a.carousel-control.right {
-          -webkit-box-pack: end;
-              -ms-flex-pack: end;
-                  justify-content: flex-end;
-          float: right; }
-        html body main #flsCarousel #carousel_controls a.carousel-control:hover {
-          opacity: 1; } }
-  html body main #flsCarousel .carousel-outer {
-    position: relative; }
 
 html body.solutions-template-solutions-fluid main section:not(#banner), html body.solutions-template-solutions-fluid main section#banner div.page_title, html body.industries-template-single-industries-fluid main section:not(#banner), html body.industries-template-single-industries-fluid main section#banner div.page_title, html body.page-template-fall-protection-101 main section:not(#banner), html body.page-template-fall-protection-101 main section#banner div.page_title, html body.page-template-sample-fall-protection-plan main section:not(#banner), html body.page-template-sample-fall-protection-plan main section#banner div.page_title, html body.industries-template-single-all-industries main section:not(#banner), html body.industries-template-single-all-industries main section#banner div.page_title, html body.solutions-template-single-all-solutions main section:not(#banner), html body.solutions-template-single-all-solutions main section#banner div.page_title, html body.page-template-fluid main section:not(#banner), html body.page-template-fluid main section#banner div.page_title, html body.blog main section:not(#banner), html body.blog main section#banner div.page_title, html body.single-post main section:not(#banner), html body.single-post main section#banner div.page_title {
   padding-left: 5%;
@@ -2337,6 +1906,437 @@ html .blog .featured__article {
     display: block;
     margin-top: 1rem;
     margin-bottom: 2rem; }
+
+body main form {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
+  body main form label {
+    line-height: 175%; }
+  body main form input.form-control[type=text], body main form input.form-control[type=email], body main form input.form-control[type=password], body main form input.form-control[type=date], body main form input.form-control[type=tel], body main form input.medium[type=text], body main form input.medium[type=email], body main form input.medium[type=password], body main form input.medium[type=date], body main form input.medium[type=tel] {
+    margin-top: .25rem;
+    margin-bottom: .75rem;
+    font-size: 1rem;
+    font-weight: normal;
+    border-style: solid;
+    border-radius: 0;
+    outline: none;
+    -webkit-transition: border-color 0.2s;
+    transition: border-color 0.2s;
+    color: #404040; }
+    body main form input.form-control[type=text]::-webkit-input-placeholder, body main form input.form-control[type=email]::-webkit-input-placeholder, body main form input.form-control[type=password]::-webkit-input-placeholder, body main form input.form-control[type=date]::-webkit-input-placeholder, body main form input.form-control[type=tel]::-webkit-input-placeholder, body main form input.medium[type=text]::-webkit-input-placeholder, body main form input.medium[type=email]::-webkit-input-placeholder, body main form input.medium[type=password]::-webkit-input-placeholder, body main form input.medium[type=date]::-webkit-input-placeholder, body main form input.medium[type=tel]::-webkit-input-placeholder {
+      color: #156cb3;
+      font-style: italic; }
+    body main form input.form-control[type=text]:-ms-input-placeholder, body main form input.form-control[type=email]:-ms-input-placeholder, body main form input.form-control[type=password]:-ms-input-placeholder, body main form input.form-control[type=date]:-ms-input-placeholder, body main form input.form-control[type=tel]:-ms-input-placeholder, body main form input.medium[type=text]:-ms-input-placeholder, body main form input.medium[type=email]:-ms-input-placeholder, body main form input.medium[type=password]:-ms-input-placeholder, body main form input.medium[type=date]:-ms-input-placeholder, body main form input.medium[type=tel]:-ms-input-placeholder {
+      color: #156cb3;
+      font-style: italic; }
+    body main form input.form-control[type=text]::-ms-input-placeholder, body main form input.form-control[type=email]::-ms-input-placeholder, body main form input.form-control[type=password]::-ms-input-placeholder, body main form input.form-control[type=date]::-ms-input-placeholder, body main form input.form-control[type=tel]::-ms-input-placeholder, body main form input.medium[type=text]::-ms-input-placeholder, body main form input.medium[type=email]::-ms-input-placeholder, body main form input.medium[type=password]::-ms-input-placeholder, body main form input.medium[type=date]::-ms-input-placeholder, body main form input.medium[type=tel]::-ms-input-placeholder {
+      color: #156cb3;
+      font-style: italic; }
+    body main form input.form-control[type=text]::placeholder, body main form input.form-control[type=email]::placeholder, body main form input.form-control[type=password]::placeholder, body main form input.form-control[type=date]::placeholder, body main form input.form-control[type=tel]::placeholder, body main form input.medium[type=text]::placeholder, body main form input.medium[type=email]::placeholder, body main form input.medium[type=password]::placeholder, body main form input.medium[type=date]::placeholder, body main form input.medium[type=tel]::placeholder {
+      color: #156cb3;
+      font-style: italic; }
+  body main form input.form-control:focus[type=text], body main form input.form-control:focus[type=email], body main form input.form-control:focus[type=password], body main form input.form-control:focus[type=date], body main form input.form-control:focus[type=tel], body main form input.medium:focus[type=text], body main form input.medium:focus[type=email], body main form input.medium:focus[type=password], body main form input.medium:focus[type=date], body main form input.medium:focus[type=tel] {
+    border-color: #000333; }
+  body main form input.form-control[type=date]::-webkit-datetime-edit-month-field, body main form input.medium[type=date]::-webkit-datetime-edit-month-field {
+    color: #404040; }
+  body main form input.form-control[type=date]::-webkit-datetime-edit-day-field, body main form input.medium[type=date]::-webkit-datetime-edit-day-field {
+    color: #404040; }
+  body main form input.form-control[type=date]::-webkit-datetime-edit-year-field, body main form input.medium[type=date]::-webkit-datetime-edit-year-field {
+    color: #404040; }
+  body main form input.form-control[type=date]::-webkit-inner-spin-button, body main form input.medium[type=date]::-webkit-inner-spin-button {
+    display: none; }
+  body main form input.form-control[type=date]::-webkit-calendar-picker-indicator, body main form input.medium[type=date]::-webkit-calendar-picker-indicator {
+    color: #404040; }
+    body main form input.form-control[type=date]::-webkit-calendar-picker-indicator:hover, body main form input.medium[type=date]::-webkit-calendar-picker-indicator:hover {
+      color: #404040;
+      cursor: pointer; }
+    body main form input.form-control[type=date]::-webkit-calendar-picker-indicator:active, body main form input.medium[type=date]::-webkit-calendar-picker-indicator:active {
+      color: #404040; }
+  body main form input[type=submit].btn {
+    border-radius: 0; }
+  body main form button[type=submit].btn {
+    border-radius: 0; }
+  body main form button[type=submit].glsr-button {
+    background-color: #156cb3;
+    border-color: #156cb3;
+    color: white;
+    -webkit-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-delay: 50ms;
+    transition-delay: 50ms;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out; }
+  body main form textarea, body main form select {
+    margin-top: .25rem;
+    margin-bottom: .75rem;
+    font-size: 1rem;
+    font-weight: normal;
+    border-style: solid;
+    border-radius: 0;
+    outline: none;
+    -webkit-transition: border-color 0.2s;
+    transition: border-color 0.2s;
+    color: #404040; }
+  body main form#newsletter {
+    margin-top: 1.25rem; }
+    body main form#newsletter button {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+      height: 38px;
+      margin-top: 4px; }
+  body main form div.wpcf7-response-output {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem; }
+    body main form div.wpcf7-response-output.wpcf7-mail-sent-ok {
+      background-color: #156cb3;
+      border-color: #156cb3; }
+
+body main aside.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 2rem; }
+  body main aside.sidebar form {
+    background-color: #eeeeee;
+    padding-bottom: 1rem; }
+    body main aside.sidebar form div.form_title {
+      background-color: #156cb3;
+      color: white;
+      text-transform: capitalize;
+      font-weight: bold;
+      padding: .45rem 0 .6rem;
+      text-align: center; }
+    body main aside.sidebar form div.form-group {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-top: 1rem; }
+      body main aside.sidebar form div.form-group input.form-control, body main aside.sidebar form div.form-group textarea.form-control, body main aside.sidebar form div.form-group select.form-control {
+        font-size: .85rem; }
+      body main aside.sidebar form div.form-group textarea {
+        height: 5rem; }
+    body main aside.sidebar form div .btn {
+      font-size: .85rem; }
+
+body button#searchToggle {
+  height: 2.25rem;
+  width: 2.5rem;
+  background-color: transparent;
+  border: 0;
+  color: #156cb3; }
+  body button#searchToggle:focus {
+    outline: 0; }
+  body button#searchToggle i {
+    font-size: 1.3rem; }
+
+body form#searchform {
+  padding: 0 0.25rem;
+  background: white; }
+  body form#searchform input[type=text] {
+    padding: .25rem .5rem .25rem 1rem;
+    border: 1px solid #eeeeee;
+    border-right: 0;
+    outline: 0;
+    margin-right: 0; }
+  body form#searchform button {
+    background-color: white;
+    color: #156cb3;
+    padding: .25rem .75rem;
+    border: 1px solid #eeeeee;
+    margin-left: -4px;
+    outline: 0; }
+    body form#searchform button#searchsubmit {
+      border: 1px solid #eeeeee;
+      border-left: 0; }
+    body form#searchform button#searchClose:focus {
+      outline: 0; }
+
+body header form#searchform {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  @media (min-width: 786px) {
+    body header form#searchform {
+      top: 2.5rem; } }
+
+body form {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
+  body form.sent div.form-group, body form.sent div.inside {
+    display: none; }
+  body form.sent p {
+    display: none; }
+  body form div.wpcf7-response-output {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem; }
+    body form div.wpcf7-response-output.wpcf7-mail-sent-ok {
+      background-color: #156cb3;
+      border-color: #156cb3; }
+  body form#newsletter label {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+    color: #156cb3;
+    margin-bottom: 0; }
+  body form .full-width.has-padding.has-border {
+    background-color: #f7f7f7;
+    color: #000;
+    font-weight: 300;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0.25em;
+    padding-left: 2.75rem; }
+  body form.lrm-form.--registration-done > i .lrm-integrations {
+    display: none; }
+
+body ul.gallery li {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0; }
+  @media (min-width: 786px) {
+    body ul.gallery li {
+      margin-bottom: 1rem; } }
+  @media (max-width: 786px) {
+    body ul.gallery li {
+      width: 47.5%;
+      margin-bottom: .25rem; }
+      body ul.gallery li:not(:last-child) {
+        margin-right: 0; } }
+
+body section#gallery div#flsCarousel .thumb_nav {
+  white-space: nowrap;
+  z-index: 1000;
+  padding: .5rem 1rem;
+  height: 170px; }
+  body section#gallery div#flsCarousel .thumb_nav #thumbs {
+    width: 100%;
+    overflow-x: auto;
+    position: absolute;
+    height: 150px; }
+    body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list {
+      position: absolute;
+      left: 0;
+      width: auto; }
+      body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span.active {
+        border: 1px solid #156cb3;
+        background-color: none; }
+        body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span.active img {
+          opacity: 0.7; }
+      body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span:hover {
+        cursor: pointer; }
+      body section#gallery div#flsCarousel .thumb_nav #thumbs #thumb_list span img {
+        max-height: 145px; }
+  body section#gallery div#flsCarousel .thumb_nav span.th_nav {
+    width: 40px;
+    height: 150px;
+    position: absolute;
+    color: #333333;
+    z-index: 1000;
+    opacity: 1;
+    top: .5rem;
+    background: white; }
+    body section#gallery div#flsCarousel .thumb_nav span.th_nav:hover {
+      cursor: pointer; }
+  body section#gallery div#flsCarousel .thumb_nav span#thumb_left {
+    left: 0px; }
+  body section#gallery div#flsCarousel .thumb_nav span#thumb_right {
+    right: 0px; }
+
+body section#gallery .lSAction > a {
+  opacity: 9; }
+
+@media (max-width: 786px) {
+  body section#gallery .lSPager.lSGallery {
+    display: none; } }
+
+html body main #gallery .carousel-inner .carousel-item.active,
+html body main #gallery .carousel-inner .carousel-item-next,
+html body main #gallery .carousel-inner .carousel-item-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+html body main #gallery .carousel-inner .carousel-item-right.active,
+html body main #gallery .carousel-inner .carousel-item-next {
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%); }
+
+html body main #gallery .carousel-inner .carousel-item-left.active,
+html body main #gallery .carousel-inner .carousel-item-prev {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%); }
+
+html body main #gallery .carousel-inner .carousel-item-right,
+html body main #gallery .carousel-inner .carousel-item-left {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+html body main #flsCarousel {
+  margin: 20px auto; }
+  html body main #flsCarousel .img-fluid {
+    min-width: 100%; }
+  html body main #flsCarousel .carousel-indicators {
+    margin: 10px 0 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: static;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%; }
+    html body main #flsCarousel .carousel-indicators li {
+      background-color: transparent;
+      border-radius: 0;
+      display: inline-block;
+      height: auto;
+      margin: 0 !important;
+      width: auto;
+      border: 1px solid transparent; }
+      html body main #flsCarousel .carousel-indicators li img {
+        display: block;
+        opacity: 1; }
+      html body main #flsCarousel .carousel-indicators li.active {
+        border-color: #156cb3; }
+        html body main #flsCarousel .carousel-indicators li.active img {
+          opacity: 0.35; }
+      html body main #flsCarousel .carousel-indicators li:hover img {
+        opacity: 0.75; }
+  @media (max-width: 786px) {
+    html body main #flsCarousel #carousel_controls {
+      z-index: 999;
+      text-align: center; }
+      html body main #flsCarousel #carousel_controls a.carousel-control {
+        display: inline-block;
+        border: 0.01rem solid rgba(0, 0, 0, 0.125);
+        padding: .1rem .75rem .4rem;
+        margin-top: 1rem; } }
+  @media (min-width: 786px) {
+    html body main #flsCarousel #carousel_controls {
+      position: absolute;
+      z-index: 999;
+      height: 100%;
+      top: 0;
+      font-size: 2rem; }
+      html body main #flsCarousel #carousel_controls a.carousel-control {
+        color: white;
+        opacity: .5;
+        height: 100%;
+        width: 25%;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        html body main #flsCarousel #carousel_controls a.carousel-control.left {
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          float: left; }
+        html body main #flsCarousel #carousel_controls a.carousel-control.right {
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end;
+          float: right; }
+        html body main #flsCarousel #carousel_controls a.carousel-control:hover {
+          opacity: 1; } }
+  html body main #flsCarousel .carousel-outer {
+    position: relative; }
+
+@media only screen and (min-width: 992px) {
+  html body main table {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    html body main table caption {
+      color: #404040;
+      padding: 1rem 0;
+      font-size: 1.75rem;
+      text-transform: none;
+      text-align: left;
+      caption-side: top; }
+    html body main table thead th {
+      background-color: #156cb3;
+      border-bottom: 1px solid #156cb3;
+      font-weight: 300;
+      padding: .75rem 1rem;
+      line-height: 115%;
+      color: white; }
+    html body main table tbody td {
+      padding: .75rem 1rem;
+      line-height: 115%; }
+    html body main table tbody tr:nth-child(odd) {
+      background-color: #f0f0f0; }
+    html body main table tr th:not(:first-of-type), html body main table tr td:not(:first-of-type) {
+      text-align: center; }
+    html body main table tr:last-of-type {
+      border-bottom: 1px solid lightgray; } }
+
+@media only screen and (max-width: 991px) {
+  html body main table {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    html body main table caption {
+      font-size: 1.75rem;
+      margin-bottom: .75rem;
+      font-weight: bold; }
+    html body main table thead {
+      position: absolute;
+      top: -9999px;
+      left: -9999px; }
+    html body main table tbody tr {
+      display: block;
+      border: 1px solid #dcddde;
+      border-bottom: 0; }
+      html body main table tbody tr td {
+        display: block;
+        border-bottom: 1px solid #dcddde;
+        position: relative;
+        padding-left: 33.3%;
+        text-align: left; }
+        html body main table tbody tr td:before {
+          content: attr(data-label) " :";
+          display: inline-block;
+          line-height: 1.5;
+          margin-left: -100%;
+          width: 100%;
+          text-align: right;
+          white-space: nowrap;
+          border-right: 1px solid #dcddde;
+          padding-right: .5rem;
+          margin-right: .25rem;
+          padding-bottom: .25rem;
+          padding-top: .25rem; }
+      html body main table tbody tr + tr {
+        margin-top: 1.5em; }
+      html body main table tbody tr:nth-of-type(even) {
+        background-color: #f0f0f0; } }
 
 .additional_content {
   padding-bottom: 2rem; }

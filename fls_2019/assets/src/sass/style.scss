@@ -472,12 +472,8 @@ html {
 }
 @import 'partials/_header';
 @import 'partials/_navigation';
-@import 'partials/_form';
-@import 'partials/_tables';
 @import 'partials/_footer';
 @import 'partials/_home';
-@import 'partials/_gallery';
-@import 'partials/_carousels';
 @import 'partials/_fluid';
 @import 'partials/_industry-solution';
 @import 'partials/_testimonials';
@@ -492,5 +488,10 @@ html {
 @import 'partials/_banner';
 @import 'partials/_blog';
 
-//
+// Components
+@import 'components/global/form';
+@import 'components/global/gallery';
+@import 'components/global/carousels';
+@import 'components/global/tables';
 @import 'components/global/additional_content';
+
