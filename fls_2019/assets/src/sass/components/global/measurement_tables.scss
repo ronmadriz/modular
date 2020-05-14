@@ -5,9 +5,12 @@
 	    font-size: 1.75rem;
 	    text-transform: none;
 	    text-align: left;
+		margin-bottom:0;	    
 	}
 	&--tables {
-		margin-top:0;
-		margin-bottom:0;
+		&.w_caption {
+			margin-top:0;
+			margin-bottom:0;			
+		}
 	}
 }

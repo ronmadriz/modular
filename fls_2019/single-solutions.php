@@ -96,7 +96,7 @@ if (have_rows('measurement_tables')) {
 					if (!empty($m_table['caption'])) {
 						echo '<h3 class="measurement_tables--caption">'.$m_table['caption'].'</h3>';
 					}
-					echo '<table class="measurement_tables--tables">'.PHP_EOL;
+					echo '<table class="measurement_tables--tables'.(!empty($m_table['caption'])?' w_caption':'').'">'.PHP_EOL;
 					if (!empty($m_table['header'])) {
 						echo '<thead>';
 						echo '<tr>';

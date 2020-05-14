@@ -2355,8 +2355,9 @@ html body main #flsCarousel {
   padding: 1rem 0;
   font-size: 1.75rem;
   text-transform: none;
-  text-align: left; }
+  text-align: left;
+  margin-bottom: 0; }
 
-.measurement_tables--tables {
+.measurement_tables--tables.w_caption {
   margin-top: 0;
   margin-bottom: 0; }
