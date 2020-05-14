@@ -2350,9 +2350,13 @@ html body main #flsCarousel {
 .additional_content {
   padding-bottom: 2rem; }
 
-.measurement_tables__caption {
+.measurement_tables--caption {
   color: #404040;
   padding: 1rem 0;
   font-size: 1.75rem;
   text-transform: none;
   text-align: left; }
+
+.measurement_tables--tables {
+  margin-top: 0;
+  margin-bottom: 0; }
