@@ -2337,3 +2337,6 @@ html .blog .featured__article {
     display: block;
     margin-top: 1rem;
     margin-bottom: 2rem; }
+
+.additional_content {
+  padding-bottom: 2rem; }
