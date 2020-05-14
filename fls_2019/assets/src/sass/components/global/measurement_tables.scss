@@ -5,7 +5,10 @@
 	    font-size: 1.75rem;
 	    text-transform: none;
 	    text-align: left;
-		margin-bottom:0;	    
+		margin-bottom:0;
+	    &:first-of-type {
+		    margin-top: 0;
+		}
 	}
 	&--tables {
 		&.w_caption {

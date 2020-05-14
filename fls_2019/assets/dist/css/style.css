@@ -2357,6 +2357,8 @@ html body main #flsCarousel {
   text-transform: none;
   text-align: left;
   margin-bottom: 0; }
+  .measurement_tables--caption:first-of-type {
+    margin-top: 0; }
 
 .measurement_tables--tables.w_caption {
   margin-top: 0;
