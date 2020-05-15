@@ -1049,7 +1049,8 @@ html body#page-home main {
         margin-bottom: 0;
         background-color: #156cb3;
         color: white;
-        padding: 1.25rem 1.5rem; }
+        padding: 1.25rem 1.5rem;
+        font-size: 1.4375rem; }
         @media (min-width: 786px) {
           html body#page-home main section#home_banner div.carousel div.carousel-inner div.carousel-item h1 {
             padding: 1.25rem 1.5rem 1.25rem 18rem; } }
