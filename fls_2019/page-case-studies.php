@@ -20,22 +20,24 @@ echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 
-echo '<section id="main-content">'.PHP_EOL;
 // Fall Safety Solution CONTENT
-if (have_posts()):
-echo '<div class="container">'.PHP_EOL;
-while (have_posts()):the_post();
-echo '<div class="row justify-content-center align-content-center mb-2">'.PHP_EOL;
-echo '<div class="col-12">';
-the_content();
-echo '</div>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-endwhile;
-echo '</div>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-endif;
+if (have_posts()) {
+	echo '<section id="main-content">'.PHP_EOL;
+	echo '<div class="container">'.PHP_EOL;
+	while (have_posts()) {
+		the_post();
+		echo '<div class="row justify-content-center align-content-center mb-2">'.PHP_EOL;
+		echo '<div class="col-12">';
+		the_content();
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+	}
+	wp_reset_postdata();
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+}
 // All Top Level Fall Safety Solution
-echo '</section>'.PHP_EOL;
 
 $studies_args = array(
 	'post_type'      => array('solutions', 'industries'),
