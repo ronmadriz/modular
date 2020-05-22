@@ -473,6 +473,12 @@ html {
 @import 'partials/_header';
 @import 'partials/_navigation';
 @import 'partials/_footer';
+@import 'partials/_form';
+@import 'partials/_gallery';
+@import 'partials/_carousels';
+@import 'partials/_tables';
+@import 'partials/_additional_content';
+@import 'partials/_measurement_tables';
 @import 'partials/_home';
 @import 'partials/_fluid';
 @import 'partials/_industry-solution';
@@ -487,12 +493,3 @@ html {
 @import 'partials/_case-studies';
 @import 'partials/_banner';
 @import 'partials/_blog';
-
-// Components
-@import 'components/global/form';
-@import 'components/global/gallery';
-@import 'components/global/carousels';
-@import 'components/global/tables';
-@import 'components/global/additional_content';
-@import 'components/global/measurement_tables';
-
