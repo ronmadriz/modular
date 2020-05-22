@@ -352,7 +352,7 @@ if (have_rows('case_study_groups')) {
 
 if (have_rows('additional_content')) {
 	echo '<section id="additional_content" class="additional_content">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
 	while (have_rows('additional_content')) {
 		the_row();
 		$ac_title     = get_sub_field('title');
