@@ -250,7 +250,6 @@ if (have_rows('subnav')) {
 		echo ''.PHP_EOL;
 		echo (!empty($subnav_title)?'<div class="row"><div class="section_title col-12"><h2>'.$subnav_title.'</h2></div>'.PHP_EOL:'');
 		echo ($subnav_has_description == 1?'<div class="row"><div class="content col-12">'.$subnav_desc.'</div></div>'.PHP_EOL:'');
-		echo '</div>'.PHP_EOL;
 		if (have_rows('links')) {
 			echo '<div class="row">'.PHP_EOL;
 			while (have_rows('links')) {
