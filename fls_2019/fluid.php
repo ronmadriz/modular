@@ -347,6 +347,81 @@ if (have_rows('case_study_groups')) {
 	echo '</section>'.PHP_EOL;
 }
 
+// Additional Content
+
+if (have_rows('additional_content')) {
+	echo '<section id="additional_content" class="additional_content">'.PHP_EOL;
+	echo '<div class="container">'.PHP_EOL;
+	while (have_rows('additional_content')) {
+		the_row();
+		$ac_title     = get_sub_field('title');
+		$ac_content   = get_sub_field('content');
+		$ac_has_title = get_sub_field('has_title');
+		echo ($ac_has_title == 1?'<div class="row"><div class="col-12 section_title"><h2>'.$ac_title.'</h2></div></div>':'').PHP_EOL;
+		echo '<div class="row">'.PHP_EOL;
+		echo '<div class="content col-12">'.$ac_content.'</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+	}
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+}
+
+// TABLES
+
+if (have_rows('measurement_tables')) {
+	echo '<section id="measurement_tables">'.PHP_EOL;
+	while (have_rows('measurement_tables')) {
+		the_row();
+		$m_title  = get_sub_field('title');
+		$m_image  = get_sub_field('image');
+		$m_tables = get_sub_field('tables');
+		echo '<div class="container-fluid">'.PHP_EOL;
+		echo (!empty($m_title)?'<div class="row"><div class="section_title col-12"><h2>'.$m_title.'</h2></div></div>':'').PHP_EOL;
+		echo '<div class="row">'.PHP_EOL;
+		echo ($m_image != null?'<div class="col-12 col-md-4"><img src="'.$m_image['url'].'" alt="'.$m_image['alt'].'" class="img-fluid"></div>':'');
+		echo '<div class="col-12 col-md-8">'.PHP_EOL;
+		if (have_rows('tables')) {
+			while (have_rows('tables')) {
+				the_row();
+				$m_table = get_sub_field('table');
+				if (!empty($m_table)) {
+					if (!empty($m_table['caption'])) {
+						echo '<h3 class="measurement_tables--caption">'.$m_table['caption'].'</h3>';
+					}
+					echo '<table class="measurement_tables--tables'.(!empty($m_table['caption'])?' w_caption':'').'">'.PHP_EOL;
+					if (!empty($m_table['header'])) {
+						echo '<thead>';
+						echo '<tr>';
+						foreach ($m_table['header'] as $th) {
+							echo '<th scope="col">';
+							echo $th['c'];
+							echo '</th>';
+						}
+						echo '</tr>';
+						echo '</thead>';
+					}
+					echo '<tbody>';
+					foreach ($m_table['body'] as $tr) {
+						echo '<tr>';
+						foreach ($tr as $key => $td) {
+							echo '<td data-label="'.$m_table['header'][$key]['c'].'">';
+							echo $td['c'];
+							echo '</td>';
+						}
+						echo '</tr>';
+					}
+					echo '</tbody>';
+					echo '</table>';
+				}
+			}
+		}
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+	}
+	echo '</section>'.PHP_EOL;
+}
+
 // VIDEOS
 
 $videos = get_field('videos');
