@@ -38,7 +38,6 @@ if ($image_callout['callout']) {
 				}
 				echo '</div>'.PHP_EOL;
 			}
-			echo '</div>'.PHP_EOL;
 		} elseif (have_rows('callout')) {
 			while (have_rows('callout')) {
 				the_row();
