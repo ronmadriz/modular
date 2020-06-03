@@ -11,7 +11,7 @@ if ($image_callout['callout']) {
 		$co_small  = get_sub_field('small_images');
 		$co_layout = get_sub_field('layout');
 		echo (!empty($co_title)?'<div class="row"><div class="section_title col-12"><h2>'.$co_title.'</h2></div></div>'.PHP_EOL:'');
-		echo '<div class="row">'.PHP_EOL;
+		echo '<div class="row'.($co_small == 1?' small':'').'">'.PHP_EOL;
 		if ($co_layout && have_rows('callout')) {
 			while (have_rows('callout')) {
 				the_row();
@@ -37,6 +37,7 @@ if ($image_callout['callout']) {
 					echo '</div>'.PHP_EOL;
 				}
 			}
+			echo '</div>'.PHP_EOL;
 		} elseif (have_rows('callout')) {
 			while (have_rows('callout')) {
 				the_row();
@@ -44,6 +45,7 @@ if ($image_callout['callout']) {
 				$callout_title   = get_sub_field('title');
 				$callout_content = get_sub_field('content');
 				$callout_link    = get_sub_field('link');
+				echo '<div class="row'.($co_small == 1?' small':'').'">'.PHP_EOL;
 				if ($callout_link) {
 					echo '<div class="img col-12 col-md-4">'.PHP_EOL;
 					echo '<a href="'.esc_url($callout_link).'"><img src="'.$callout_image['url'].'" alt="'.$callout_title.'" class="img-fluid"></a>'.PHP_EOL;
@@ -63,9 +65,9 @@ if ($image_callout['callout']) {
 					echo '</div>'.PHP_EOL;
 					echo '</div>'.PHP_EOL;
 				}
+				echo '</div>'.PHP_EOL;
 			}
 		}
-		echo '</div>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
