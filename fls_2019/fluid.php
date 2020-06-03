@@ -89,78 +89,7 @@ if (have_rows('quotes')) {
 
 echo (!empty(get_the_content())?'<section id="cta_speak"><div class="container-fluid"><div class="row"><div class="col-12"><h2 class="text-center text-uppercase"><a href="#cta_blue">Speak with a fall protection specialist <i class="im im-angle-right-circle"></i></a></h2></div></div></div></section>'.PHP_EOL:'');
 
-// IMAGE CALLOUTS
-
-$image_callout = get_field('image_callout');
-if ($image_callout['callout']) {
-	echo '<section id="image_callout">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
-	while (have_rows('image_callout')) {
-		the_row();
-		$co_title  = get_sub_field('callout_title');
-		$co_layout = get_sub_field('layout');
-		echo (!empty($co_title)?'<div class="row"><div class="section_title col-12"><h2>'.$co_title.'</h2></div></div>'.PHP_EOL:'');
-		if ($co_layout && have_rows('callout')) {
-			echo '<div class="row">'.PHP_EOL;
-			while (have_rows('callout')) {
-				the_row();
-				$callout_image   = get_sub_field('image');
-				$callout_title   = get_sub_field('title');
-				$callout_content = get_sub_field('content');
-				$callout_link    = get_sub_field('link');
-				if ($callout_link) {
-					echo '<div class="col-12 col-md-6">'.PHP_EOL;
-					echo '<a href="'.esc_url($callout_link).'"><img src="'.$callout_image['url'].'" alt="'.$callout_title.'" class="img-fluid"></a>'.PHP_EOL;
-					echo '<div class="text-center text-md-left">'.PHP_EOL;
-					echo '<h3><a href="'.esc_url($callout_link).'">'.$callout_title.'</a></h3>'.PHP_EOL;
-					echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
-					echo '</div>'.PHP_EOL;
-					echo '</div>'.PHP_EOL;
-				} else {
-					echo '<div class="col-12 col-md-6">'.PHP_EOL;
-					echo '<img src="'.$callout_image['url'].'" alt="'.$callout_title.'" class="img-fluid">'.PHP_EOL;
-					echo '<div class="text-center text-md-left">'.PHP_EOL;
-					echo '<h3>'.$callout_title.'</h3>'.PHP_EOL;
-					echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
-					echo '</div>'.PHP_EOL;
-					echo '</div>'.PHP_EOL;
-				}
-			}
-			echo '</div>'.PHP_EOL;
-		} elseif (have_rows('callout')) {
-			while (have_rows('callout')) {
-				the_row();
-				$callout_image   = get_sub_field('image');
-				$callout_title   = get_sub_field('title');
-				$callout_content = get_sub_field('content');
-				$callout_link    = get_sub_field('link');
-				echo '<div class="row">'.PHP_EOL;
-				if ($callout_link) {
-					echo '<div class="img col-12 col-md-4">'.PHP_EOL;
-					echo '<a href="'.esc_url($callout_link).'"><img src="'.$callout_image['url'].'" alt="'.$callout_title.'" class="img-fluid"></a>'.PHP_EOL;
-					echo '</div>'.PHP_EOL;
-					echo '<div class="content col-12 col-md-8 text-center text-md-left">'.PHP_EOL;
-					echo '<h3><a href="'.esc_url($callout_link).'">'.$callout_title.'</a></h3>'.PHP_EOL;
-					echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
-					echo '</div>'.PHP_EOL;
-					echo '</div>'.PHP_EOL;
-				} else {
-					echo '<div class="img col-12 col-md-4">'.PHP_EOL;
-					echo '<img src="'.$callout_image['url'].'" alt="'.$callout_title.'" class="img-fluid">'.PHP_EOL;
-					echo '</div>'.PHP_EOL;
-					echo '<div class="content col-12 col-md-8 text-center text-md-left">'.PHP_EOL;
-					echo '<h3>'.$callout_title.'</h3>'.PHP_EOL;
-					echo (!empty($callout_content)?$callout_content.PHP_EOL:'');
-					echo '</div>'.PHP_EOL;
-					echo '</div>'.PHP_EOL;
-				}
-				echo '</div>'.PHP_EOL;
-			}
-		}
-	}
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-}
+@include 'views/components/image-callouts.php';
 
 // ICONS
 
@@ -279,9 +208,7 @@ if (have_rows('subnav')) {
 				setup_postdata($subLink);
 				$subLink_summary = get_field('summary', $subLink->ID);
 				echo '<div class="item col-12 col-md-3">'.PHP_EOL;
-				echo '<a href="'.get_permalink($subLink->ID).'">';
-				echo get_the_post_thumbnail($subLink->ID, 'full', array('class' => 'img-fluid')).PHP_EOL;
-				echo '</a>'.PHP_EOL;
+				echo '<a href="'.get_permalink($subLink->ID).'">'.get_the_post_thumbnail($subLink->ID, 'full', array('class' => 'img-fluid')).'</a>'.PHP_EOL;
 				echo '<div class="title"><h3><a href="'.get_permalink($subLink->ID).'">'.get_the_title($subLink->ID).'</a></h3></div>'.PHP_EOL;
 				echo '<div class="desc"><p><a href="'.get_the_permalink($subLink->ID).'">'.$subLink_summary.'</a></p></div>'.PHP_EOL;
 				echo '</div>'.PHP_EOL;
