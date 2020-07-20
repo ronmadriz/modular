@@ -65,8 +65,8 @@ if (!is_404() || !is_search()) {
 }
 echo '</div>'.PHP_EOL;
 echo '<div class="collapse navbar-collapse" id="navigation">'.PHP_EOL;
-echo '<ul class="nav-item order-2 order-md-1">'.PHP_EOL;
-echo '<li class="nav-item"><span class="sr-only">Industries We Service</span>'.PHP_EOL;
+echo '<ul class="navbar-nav">'.PHP_EOL;
+echo '<li class="nav-item order-2 order-md-1"><span class="sr-only">Industries We Service</span>'.PHP_EOL;
 $industry_pages_args = array(
 	'theme_location' => 'industry-pages',
 	'menu'           => 'industry-pages',
@@ -76,7 +76,7 @@ $industry_pages_args = array(
 );
 wp_nav_menu($industry_pages_args);
 echo '</li>'.PHP_EOL;
-echo '<li class="nav-item order-2 order-md-1"><span class="sr-only">Fall Protection Solutions</span>'.PHP_EOL;
+echo '<li class="nav-item order-1 order-md-2"><span class="sr-only">Fall Protection Solutions</span>'.PHP_EOL;
 $solution_pages_args = array(
 	'theme_location' => 'solution-pages',
 	'menu'           => 'solution-pages',
