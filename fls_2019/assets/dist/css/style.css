@@ -1158,6 +1158,15 @@ body form#searchform {
     border-right: 0;
     outline: 0;
     margin-right: 0; }
+  body form#searchform input[type=submit] {
+    background-color: #eeeeee;
+    color: #848587;
+    cursor: pointer;
+    border-color: #eeeeee;
+    border-style: solid;
+    border-width: 1px 0;
+    padding: .25rem 1rem;
+    margin-left: -11px; }
   body form#searchform button {
     background-color: white;
     color: #156cb3;
@@ -1168,6 +1177,8 @@ body form#searchform {
     body form#searchform button#searchsubmit {
       border: 1px solid #eeeeee;
       border-left: 0; }
+    body form#searchform button#searchClose i {
+      font-size: .9325rem; }
     body form#searchform button#searchClose:focus {
       outline: 0; }
 
