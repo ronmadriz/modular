@@ -1190,7 +1190,7 @@ body header form#searchform {
   transition: all 0.5s ease; }
   @media (min-width: 786px) {
     body header form#searchform {
-      top: 2.5rem; } }
+      top: 1.5rem; } }
 
 body form {
   -webkit-transition: all 0.25s ease;
