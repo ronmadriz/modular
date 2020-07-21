@@ -191,8 +191,8 @@ body {
 					margin-right:0;
 				}
 				&[type=submit] {
-					background-color: $light_gray;
-					color: $dark_gray;
+					background-color: $accent_1;
+					color: $alternate;
 					cursor: pointer;					
 					border-color: $light_gray;
 					border-style: solid;

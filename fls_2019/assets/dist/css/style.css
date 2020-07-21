@@ -1159,8 +1159,8 @@ body form#searchform {
     outline: 0;
     margin-right: 0; }
   body form#searchform input[type=submit] {
-    background-color: #eeeeee;
-    color: #848587;
+    background-color: #156cb3;
+    color: white;
     cursor: pointer;
     border-color: #eeeeee;
     border-style: solid;
