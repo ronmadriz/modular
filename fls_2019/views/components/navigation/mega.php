@@ -28,11 +28,21 @@ echo '</button>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '<div class="collapse navbar-collapse" id="navigation">'.PHP_EOL;
 $mega_args = array(
-	'theme_location' => 'mega',
-	'menu'           => 'mega',
-	'container'      => false,
-	'container'      => false,
-	'depth'          => 3,
+	'theme_location'  => 'mega',
+	'menu'            => 'mega',
+	'container'       => '',
+	'container_class' => '',
+	'container_id'    => '',
+	'echo'            => true,
+	'menu_class'      => 'menu__list',
+	'container'       => false,
+	'container'       => false,
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+	'depth'           => 3,
 );
 wp_nav_menu($mega_args);
 echo '</div>'.PHP_EOL;
