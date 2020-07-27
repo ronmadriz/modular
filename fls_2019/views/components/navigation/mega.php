@@ -12,7 +12,7 @@ echo '<a href="/" class="navbar-brand"><img src="'.esc_url($site_logo_header).'"
 bloginfo('name');
 echo '" class="img-fluid"></a>'.PHP_EOL;
  else :
-echo '<a href="/" class="navbar-brand">'.get_bloginfo('name');
+echo '<a href="'.get_bloginfo('url').'" class="navbar-brand">'.get_bloginfo('name');
 echo (!empty($slogan))?'<br><small>'.$slogan.'</small>':'';
 echo '</a>'.PHP_EOL;
 endif;
