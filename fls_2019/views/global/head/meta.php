@@ -1,0 +1,20 @@
+<?php
+$site_favicon       = get_theme_mod('site_favicon');
+$ronmadriz_settings = get_option('ronmadriz_settings');
+echo '<!DOCTYPE html>'.PHP_EOL;
+echo '<html lang="en">'.PHP_EOL;
+echo '<head>'.PHP_EOL;
+echo '<meta charset="'.PHP_EOL;
+bloginfo('charset');
+echo '" />'.PHP_EOL;
+echo '<meta http-equiv="X-UA-Compatible" content="IE=edge" />'.PHP_EOL;
+echo '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />'.PHP_EOL;
+echo '<meta http-equiv="X-UA-Compatible" content="IE=edge">'.PHP_EOL;
+echo '<meta name="theme-color" content="#156CB3">'.PHP_EOL;
+echo '<link rel="shortcut icon" href="'.esc_url($site_favicon).'" type="image/x-icon">'.PHP_EOL;
+echo '<title>'.PHP_EOL;
+wp_title('', true, 'right');
+echo '</title>'.PHP_EOL;
+wp_head();
+echo $ronmadriz_settings['ronmadriz_header_extra'];
+echo '</head>'.PHP_EOL;
