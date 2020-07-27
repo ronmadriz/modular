@@ -8,7 +8,7 @@ $slogan            = get_bloginfo('description');
 echo '<nav class="navbar navbar-light fixed-top">'.PHP_EOL;
 echo '<div id="nav-holder" class="container-fluid">'.PHP_EOL;
 if (!empty($site_logo_header)):
-echo '<a href="/" class="navbar-brand"><img src="'.esc_url($site_logo_header).'" alt="';
+echo '<a href="'.get_bloginfo('url').'" class="navbar-brand"><img src="'.esc_url($site_logo_header).'" alt="';
 bloginfo('name');
 echo '" class="img-fluid"></a>'.PHP_EOL;
  else :
