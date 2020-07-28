@@ -10,7 +10,9 @@ echo '<body id="page-'.$slug.'" ';
 body_class();
 echo '>'.PHP_EOL;
 echo $ronmadriz_settings['ronmadriz_body_extra'];
-echo '<header class="fluid">'.PHP_EOL;
+echo '<section id="topbar">'.PHP_EOL;
+echo '<span class="nav_tel d-none d-sm-block ml-md-auto"><a href="tel:+1'.$phoneND.'" rel="noopener noreferrer">'.$phone.'</a></span>'.PHP_EOL;
+echo '</section>'.PHP_EOL;
 echo '<nav class="navbar navbar-expand-md navbar-light fixed-top">'.PHP_EOL;
 echo '<div id="nav-holder" class="container-fluid">'.PHP_EOL;
 if (!empty($site_logo_header)):
@@ -22,7 +24,6 @@ echo '<a href="'.get_bloginfo('url').'" class="navbar-brand">'.get_bloginfo('nam
 echo (!empty($slogan))?'<br><small>'.$slogan.'</small>':'';
 echo '</a>'.PHP_EOL;
 endif;
-echo '<span class="nav_tel d-none d-sm-block ml-md-auto"><a href="tel:+1'.$phoneND.'" rel="noopener noreferrer">'.$phone.'</a></span>'.PHP_EOL;
 echo '<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Menu">'.PHP_EOL;
 echo '<span class="menu-text">Menu</span>'.PHP_EOL;
 echo '<span class="menu-icon">'.PHP_EOL;
@@ -38,5 +39,4 @@ echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</nav>'.PHP_EOL;
-echo '</header>'.PHP_EOL;
 echo '<main>'.PHP_EOL;
