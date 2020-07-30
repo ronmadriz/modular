@@ -15,13 +15,9 @@ echo $ronmadriz_settings['ronmadriz_body_extra'];
 include (get_template_directory().'/views/global/head/topbar.php');
 echo '<nav class="menus">'.PHP_EOL;
 if (!empty($site_logo_header)) {
-	echo '<a href="'.get_bloginfo('url').'" class="menus__brand"><img src="'.esc_url($site_logo_header).'" alt="';
-	bloginfo('name');
-	echo '" class="menus__brand--img img-fluid"></a>'.PHP_EOL;
+	echo '<a class="menus__brand" href="'.get_bloginfo('url').'"><img alt="'.get_bloginfo('name').'" class="menus__brand--img img-fluid" src="'.esc_url($site_logo_header).'"></a>'.PHP_EOL;
 } else {
-	echo '<a href="'.get_bloginfo('url').'" class="menus__brand">'.get_bloginfo('name');
-	echo (!empty($slogan))?'<br><small>'.$slogan.'</small>':'';
-	echo '</a>'.PHP_EOL;
+	echo '<a class="menus__brand" href="'.get_bloginfo('url').'" title="'.get_bloginfo('name').'">'.get_bloginfo('name').'</a>'.PHP_EOL;
 }
 include (get_template_directory().'/views/components/navigation/mega.php');
 echo '<div class="menus__toggler">'.PHP_EOL;
