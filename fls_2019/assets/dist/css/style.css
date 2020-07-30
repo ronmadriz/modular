@@ -156,8 +156,8 @@ body main section#banner {
     .topbar__email--link {
       color: #FFFFFF; }
   .topbar__connect {
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
+    -ms-flex-line-pack: center;
+        align-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
