@@ -18,7 +18,7 @@ function social_media_icons() {
 			if ($active_site == 'email') {
 				echo '<span class="topbar__social--item">';
 				echo '<a class="email topbar__social--link" href="mailto:'.antispambot(is_email(get_theme_mod($active_site))).'">';
-				echo file_get_contents(get_template_directory().'/sprites/email.svg';
+				echo file_get_contents(get_template_directory().'/sprites/email.svg');
 				echo '</a>';
 				echo '</span>'.PHP_EOL;
 			} else {
