@@ -176,10 +176,10 @@ body main section#banner {
     .topbar__phone--link {
       color: #FFFFFF; }
   .topbar .social__item {
-    height: 1.5rem;
+    height: 1.15rem;
     margin-left: .25rem;
     margin-right: .25rem;
-    width: 1.5rem; }
+    width: 1.15rem; }
     .topbar .social__item svg {
       fill: #FFFFFF; }
 
