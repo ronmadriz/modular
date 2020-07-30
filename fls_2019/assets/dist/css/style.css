@@ -146,7 +146,9 @@ body main section#banner {
 
 .topbar {
   background-color: #156cb3;
-  color: white; }
+  color: white;
+  padding-bottom: .5rem;
+  padding-top: .5rem; }
   .topbar__email {
     display: inline-block; }
     .topbar__email--link {
@@ -165,10 +167,10 @@ body main section#banner {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-left: auto;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+    margin-left: auto; }
   .topbar .social__item {
     height: 1.5rem;
     width: 1.5rem; }

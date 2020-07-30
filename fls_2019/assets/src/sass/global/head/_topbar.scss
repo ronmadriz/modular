@@ -1,6 +1,8 @@
 .topbar {
 	background-color: $accent_1;
 	color:$alternate;
+	padding-bottom: .5rem;
+	padding-top: .5rem;	
 	&__email {
 		display:inline-block;
 		&--link {
@@ -17,8 +19,8 @@
 		align-content: flex-end;
 		display:flex;
 		flex-direction: row;
-		margin-left: auto;
 		justify-content: flex-end;
+		margin-left: auto;
 	}
 	.social{
 		&__item {
