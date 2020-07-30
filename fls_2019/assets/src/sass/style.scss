@@ -3,7 +3,9 @@
 @import 'utils/mixins';
 @import 'utils/typography';
 
-@import 'global/head/_header';
+@import 'global/head/header';
+@import 'global/head/topbar';
+
 html {
 	body {
 		a {
@@ -477,7 +479,9 @@ html {
 @import 'components/navigation/menu';
 @import 'components/navigation/navigation';
 
+// Global
 @import 'global/foot/footer';
+
 @import 'partials/_form';
 @import 'partials/_gallery';
 @import 'partials/_carousels';

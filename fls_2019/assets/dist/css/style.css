@@ -131,6 +131,10 @@ body main section#banner {
   body.industries-template-single-industries-fluid main section#banner div.page_title::after, body.page-template-sample-fall-protection-plan main section#banner div.page_title::after, body.page-template-fall-protection-101 main section#banner div.page_title::after {
     display: none; } }
 
+.topbar {
+  background-color: #156cb3;
+  color: white; }
+
 html body a {
   color: #156cb3; }
   html body a.dropdown-item {
