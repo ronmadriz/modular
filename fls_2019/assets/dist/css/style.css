@@ -74,6 +74,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-left: auto;
   margin-right: auto;
   max-width: 1360px;
@@ -161,6 +165,7 @@ body main section#banner {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-left: auto;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
