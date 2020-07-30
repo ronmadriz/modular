@@ -5,7 +5,7 @@ function ronmadriz_register_social_customizer($wp_customize) {
 	function ronmadriz_social_array() {
 
 		/* store social site names in array */
-		$social_sites = array('facebook-f', 'linkedin', 'instagram', 'twitter', 'youtube', 'google-plus', 'email', 'rss');
+		$social_sites = array('facebook', 'linkedin', 'instagram', 'twitter', 'youtube', 'email', 'rss');
 
 		return $social_sites;
 	}

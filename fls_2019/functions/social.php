@@ -6,7 +6,7 @@ function social_media_icons() {
 	function ronmadriz_social_media_array() {
 
 		/* store social site names in array */
-		$social_sites = array('facebook-f', 'linkedin', 'instagram', 'twitter', 'youtube', 'google-plus', 'email', 'rss');
+		$social_sites = array('facebook', 'linkedin', 'instagram', 'twitter', 'youtube', 'email', 'rss');
 
 		return $social_sites;
 	}
