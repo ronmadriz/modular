@@ -22,3 +22,10 @@ class Modular_Walker extends Walker_Nav_Menu {
 		}
 	}
 }
+
+// add custom class to submenu
+function menu__sub__class($classes) {
+	$classes[] = 'menu__sub';
+	return $classes;
+}
+add_filter('nav_menu_submenu_css_class', 'menu__sub__class');
