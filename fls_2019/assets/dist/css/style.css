@@ -550,7 +550,8 @@ html form.lrm-form ul.acf-checkbox-list li {
     list-style: none;
     text-transform: uppercase; }
     .menus__item span {
-      color: #156CB3; }
+      color: #156CB3;
+      cursor: pointer; }
     .menus__item:not(:last-of-type) {
       margin-right: .5rem; }
       .menus__item:not(:last-of-type):after {
