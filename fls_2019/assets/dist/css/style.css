@@ -544,7 +544,10 @@ html form.lrm-form ul.acf-checkbox-list li {
     margin-bottom: 0;
     width: 40%; }
   .menus__item {
-    list-style: none; }
+    list-style: none;
+    text-transform: uppercase; }
+    .menus__item span {
+      color: #156cb3; }
   .menus__link {
     color: #156cb3;
     font-size: 14px;

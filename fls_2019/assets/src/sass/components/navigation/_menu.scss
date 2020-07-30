@@ -22,6 +22,10 @@
 	}
 	&__item {
 		list-style: none;
+		text-transform: uppercase;
+		span {
+			color:$accent_1;
+		}
 	}
 	&__link {
 		color:$accent_1;
