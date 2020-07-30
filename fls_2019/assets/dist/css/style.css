@@ -462,6 +462,83 @@ html form.lrm-form ul.acf-checkbox-list li {
     cursor: pointer;
     font-weight: normal; }
 
+.menus {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #5d4954;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 8vh; }
+  .menus__brand {
+    color: #e2e2e2;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-decoration: none;
+    text-transform: uppercase; }
+  .menus__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 40%; }
+  .menus__item {
+    list-style: none; }
+  .menus__link {
+    color: #e2e2e2;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none; }
+  .menus__sub:first-of-type {
+    display: none; }
+  .menus__toggle {
+    cursor: pointer;
+    display: none; }
+    .menus__toggle--item {
+      background-color: #e2e2e2;
+      display: block;
+      height: 2px;
+      margin: 5px;
+      width: 25px; }
+
+@media (max-width: 786px) {
+  body {
+    overflow-x: hidden; }
+  .menus__toggle {
+    display: block;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+  .menus__list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #5d4954;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 92vh;
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    width: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
+  .menus__link {
+    opacity: 0; }
+  .active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%); } }
+
 body header nav.navbar {
   -webkit-box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.24);
           box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.24);
@@ -2306,80 +2383,3 @@ html .blog .featured__article {
     display: block;
     margin-top: 1rem;
     margin-bottom: 2rem; }
-
-.menus {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #5d4954;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  min-height: 8vh; }
-  .menus__brand {
-    color: #e2e2e2;
-    font-size: 20px;
-    letter-spacing: 5px;
-    text-decoration: none;
-    text-transform: uppercase; }
-  .menus__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 40%; }
-  .menus__item {
-    list-style: none; }
-  .menus__link {
-    color: #e2e2e2;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-decoration: none; }
-  .menus__sub:first-of-type {
-    display: none; }
-  .menus__toggle {
-    cursor: pointer;
-    display: none; }
-    .menus__toggle--item {
-      background-color: #e2e2e2;
-      display: block;
-      height: 2px;
-      margin: 5px;
-      width: 25px; }
-
-@media (max-width: 786px) {
-  body {
-    overflow-x: hidden; }
-  .menus__toggle {
-    display: block;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease; }
-  .menus__list {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #5d4954;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 92vh;
-    position: absolute;
-    right: 0;
-    top: 8vh;
-    width: 100%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.5s ease;
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
-  .menus__link {
-    opacity: 0; }
-  .active {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%); } }

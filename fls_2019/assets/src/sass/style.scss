@@ -473,6 +473,9 @@ html {
 		}		
 	}
 }
+// Components
+@import 'components/navigation/menu';
+
 @import 'partials/_navigation';
 @import 'partials/_footer';
 @import 'partials/_form';
@@ -495,9 +498,3 @@ html {
 @import 'partials/_case-studies';
 @import 'partials/_banner';
 @import 'partials/_blog';
-
-// Modular
-
-
-// Components
-@import 'components/navigation/menu';
