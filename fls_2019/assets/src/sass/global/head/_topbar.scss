@@ -22,9 +22,11 @@
 	}
 	.social{
 		&__item {
-			background-color: $alternate;
 			height: 1.5rem;
 			width: 1.5rem;
+			svg {
+				fill:$alternate;
+			}
 		}
 	}
 }
