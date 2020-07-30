@@ -70,6 +70,15 @@ body {
     margin: 1.5rem 0 1.5rem 0;
     border-bottom: 1px solid #eeeeee; }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1360px;
+  width: 100%; }
+
 body header span.nav_tel {
   font-weight: bold;
   font-size: 1.175rem;
@@ -133,14 +142,7 @@ body main section#banner {
 
 .topbar {
   background-color: #156cb3;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+  color: white; }
   .topbar__email {
     display: inline-block; }
     .topbar__email--link {
@@ -161,7 +163,7 @@ body main section#banner {
             flex-direction: row;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end; }
+            justify-content: flex-end; }
   .topbar .social__item {
     background-color: white;
     height: 1.5rem;
