@@ -44,6 +44,13 @@
 		}
 	}
 }
+@include for-tablet-up {
+	.menus {
+		&__list {
+			margin-left: auto;
+		}
+	}
+}
 @include for-phone-only {
 	body {
 		overflow-x: hidden;

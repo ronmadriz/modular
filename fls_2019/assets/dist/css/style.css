@@ -559,6 +559,10 @@ html form.lrm-form ul.acf-checkbox-list li {
       margin: 5px;
       width: 25px; }
 
+@media (min-width: 786px) {
+  .menus__list {
+    margin-left: auto; } }
+
 @media (max-width: 786px) {
   body {
     overflow-x: hidden; }
