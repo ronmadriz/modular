@@ -4,11 +4,13 @@
     display: flex;
     flex-direction: row;
 	&__email {
+		display:inline-block;
 		&--link {
 			color:$alternate;
 		}
 	}
 	&__phone {
+		display:inline-block;
 		&--link {
 			color:$alternate;
 		}
