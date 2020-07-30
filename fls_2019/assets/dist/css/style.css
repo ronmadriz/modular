@@ -2385,3 +2385,5 @@ html .blog .featured__article {
       -ms-flex-item-align: center;
           align-self: center;
       max-width: 100%; }
+  .menu__sub:first-of-type {
+    display: none; }
