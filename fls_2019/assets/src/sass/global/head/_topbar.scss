@@ -1,4 +1,18 @@
 .topbar{
 	background-color: $accent_1;
 	color:$alternate;
+    display: flex;
+    flex-direction: row;
+	&__email {
+
+	}
+	&__phone {
+
+	}
+	&__social {
+		align-content: flex-end;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
 }
