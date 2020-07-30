@@ -1,12 +1,7 @@
 <?php
 global $post;
-$header_cta_top     = get_theme_mod('header_cta_top');
-$header_cta_bottom  = get_theme_mod('header_cta_bottom');
 $site_logo_header   = get_theme_mod('site_logo_header');
-$phone              = get_theme_mod('footer_phone');
-$phoneND            = str_replace("-", "", $phone);
 $ronmadriz_settings = get_option('ronmadriz_settings');
-$slogan             = get_bloginfo('description');
 $slug               = get_post($post)->post_name;
 echo '<body id="page-'.$slug.'" ';
 body_class();
