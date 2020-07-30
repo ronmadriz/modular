@@ -54,6 +54,7 @@ include (THEME_INCLUDE.'/options/default.php');
 include (THEME_INCLUDE.'/breadcrumbs-functions.php');
 include (THEME_INCLUDE.'/class-wp-bootstrap-navwalker.php');
 include (THEME_INCLUDE.'/wp-bootstrap4.1-pagination.php');
+require_once ('functions/Modular_Walker.php');
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wp_generator');
 remove_action('wp_head', 'feed_links', 2);
