@@ -1,4 +1,8 @@
 @import 'partials/_variables';
+
+// Utils
+@import 'utils/mixins';
+
 @import 'partials/_typography';
 @import 'partials/_header';
 html {
@@ -495,4 +499,7 @@ html {
 @import 'partials/_blog';
 
 // Modular
+
+
+// Components
 @import 'components/navigation/menu';
