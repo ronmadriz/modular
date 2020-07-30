@@ -21,6 +21,7 @@
 		width: 40%;
 	}
 	&__item {
+		font-weight: 700;
 		list-style: none;
 		text-transform: uppercase;
 		span {
@@ -31,7 +32,6 @@
 		color:$accent_1;
 		font-size: 14px;
 		font-weight: bold;
-		letter-spacing: 2px;
 		text-decoration: none;
 	}
 	&__sub {
