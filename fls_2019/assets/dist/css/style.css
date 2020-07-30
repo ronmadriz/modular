@@ -563,6 +563,8 @@ html form.lrm-form ul.acf-checkbox-list li {
     font-size: 14px;
     font-weight: bold;
     text-decoration: none; }
+    .menus__link:hover {
+      text-decoration: none; }
   .menus__sub:first-of-type {
     display: none; }
   .menus__toggle {

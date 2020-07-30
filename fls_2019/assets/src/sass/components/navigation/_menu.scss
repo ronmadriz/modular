@@ -42,6 +42,9 @@
 		font-size: 14px;
 		font-weight: bold;
 		text-decoration: none;
+		&:hover {
+			text-decoration:none;
+		}
 	}
 	&__sub {
 		&:first-of-type {
