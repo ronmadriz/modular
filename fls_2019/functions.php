@@ -1,6 +1,7 @@
 <?php
 require_once ('functions/scripts-styles.php');
 require_once ('functions/reset.php');
+require_once ('functions/includes.php');
 require_once ('functions/breadcrumbs-functions.php');
 require_once ('functions/menus.php');
 require_once ('functions/class-wp-bootstrap-navwalker.php');
