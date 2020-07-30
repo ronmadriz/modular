@@ -534,11 +534,14 @@ html form.lrm-form ul.acf-checkbox-list li {
       .menus__brand {
         width: 28.59375rem; } }
   .menus__list {
+    -ms-flex-item-align: center;
+        align-self: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin-bottom: 0;
     width: 40%; }
   .menus__item {
     list-style: none; }
