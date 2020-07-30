@@ -553,7 +553,8 @@ html form.lrm-form ul.acf-checkbox-list li {
     .menus__item:not(:last-of-type):after {
       color: #E6E7E9;
       content: '/';
-      margin-left: .25rem; }
+      margin-left: .25rem;
+      margin-right: .25rem; }
   .menus__link {
     color: #156CB3;
     font-size: 14px;
