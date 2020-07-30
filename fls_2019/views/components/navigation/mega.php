@@ -1,5 +1,4 @@
 <?php
-
 $mega_args = array(
 	'theme_location'  => 'mega',
 	'menu'            => 'mega',
