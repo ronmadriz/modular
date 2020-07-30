@@ -157,7 +157,7 @@ body main section#banner {
     display: inline-block; }
     .topbar__phone--link {
       color: white; }
-  .topbar__social {
+  .topbar__connect {
     -ms-flex-line-pack: end;
         align-content: flex-end;
     display: -webkit-box;
