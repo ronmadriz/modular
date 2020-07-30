@@ -18,7 +18,9 @@
 		display:flex;
 		flex-direction: row;
 		justify-content: end;
-		&--item {
+	}
+	.social{
+		&__item {
 			background-color: $alternate;
 			height: 1.5rem;
 			width: 1.5rem;
