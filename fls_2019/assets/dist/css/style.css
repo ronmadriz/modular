@@ -153,10 +153,6 @@ body main section#banner {
     display: inline-block; }
     .topbar__email--link {
       color: white; }
-  .topbar__phone {
-    display: inline-block; }
-    .topbar__phone--link {
-      color: white; }
   .topbar__connect {
     -ms-flex-line-pack: end;
         align-content: flex-end;
@@ -171,8 +167,16 @@ body main section#banner {
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin-left: auto; }
+  .topbar__phone {
+    display: inline-block;
+    margin-left: .25rem;
+    margin-right: .25rem; }
+    .topbar__phone--link {
+      color: white; }
   .topbar .social__item {
     height: 1.5rem;
+    margin-left: .25rem;
+    margin-right: .25rem;
     width: 1.5rem; }
     .topbar .social__item svg {
       fill: white; }

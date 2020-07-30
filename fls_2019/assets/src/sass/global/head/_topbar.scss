@@ -9,12 +9,6 @@
 			color:$alternate;
 		}
 	}
-	&__phone {
-		display:inline-block;
-		&--link {
-			color:$alternate;
-		}
-	}
 	&__connect {
 		align-content: flex-end;
 		display:flex;
@@ -22,9 +16,19 @@
 		justify-content: flex-end;
 		margin-left: auto;
 	}
+	&__phone {
+		display:inline-block;
+		margin-left:.25rem;
+		margin-right:.25rem;
+		&--link {
+			color:$alternate;
+		}
+	}
 	.social{
 		&__item {
 			height: 1.5rem;
+			margin-left:.25rem;
+			margin-right:.25rem;
 			width: 1.5rem;
 			svg {
 				fill:$alternate;
