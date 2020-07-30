@@ -141,7 +141,17 @@ body main section#banner {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
+  .topbar__email {
+    display: inline-block; }
+    .topbar__email--link {
+      color: white; }
+  .topbar__phone {
+    display: inline-block; }
+    .topbar__phone--link {
+      color: white; }
   .topbar__social {
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -149,8 +159,13 @@ body main section#banner {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end; }
+  .topbar .social__item {
+    background-color: white;
+    height: 1.5rem;
+    width: 1.5rem; }
 
 html body a {
   color: #156cb3; }
