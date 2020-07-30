@@ -569,6 +569,14 @@ html form.lrm-form ul.acf-checkbox-list li {
       height: 2px;
       margin: 5px;
       width: 25px; }
+  .menus .caret {
+    background: url(../../sprites/down.svg) no-repeat center center;
+    background-size: cover;
+    display: inline-block;
+    -webkit-filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
+            filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
+    height: 1rem;
+    width: 1rem; }
 
 @media (min-width: 786px) {
   .menus__list {
