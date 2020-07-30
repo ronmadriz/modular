@@ -150,7 +150,8 @@ body main section#banner {
   padding-bottom: .5rem;
   padding-top: .5rem; }
   .topbar__email {
-    display: inline-block; }
+    display: inline-block;
+    margin-left: .5rem; }
     .topbar__email--link {
       color: white; }
   .topbar__connect {
