@@ -3,7 +3,7 @@
 @import 'utils/mixins';
 @import 'utils/typography';
 
-@import 'partials/_header';
+@import 'global/head/_header';
 html {
 	body {
 		a {
@@ -475,9 +475,9 @@ html {
 }
 // Components
 @import 'components/navigation/menu';
-
 @import 'components/navigation/navigation';
-@import 'partials/_footer';
+
+@import 'global/foot/footer';
 @import 'partials/_form';
 @import 'partials/_gallery';
 @import 'partials/_carousels';

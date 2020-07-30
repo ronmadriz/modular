@@ -466,7 +466,6 @@ html form.lrm-form ul.acf-checkbox-list li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #5d4954;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,11 +473,17 @@ html form.lrm-form ul.acf-checkbox-list li {
       justify-content: space-around;
   min-height: 8vh; }
   .menus__brand {
-    color: #e2e2e2;
-    font-size: 20px;
-    letter-spacing: 5px;
-    text-decoration: none;
-    text-transform: uppercase; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+    .menus__brand--img {
+      -ms-flex-item-align: center;
+          align-self: center;
+      max-width: 100%; }
+    @media (min-width: 786px) {
+      .menus__brand {
+        width: 28.59375rem; } }
   .menus__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -489,7 +494,7 @@ html form.lrm-form ul.acf-checkbox-list li {
   .menus__item {
     list-style: none; }
   .menus__link {
-    color: #e2e2e2;
+    color: #fecd06;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -500,7 +505,6 @@ html form.lrm-form ul.acf-checkbox-list li {
     cursor: pointer;
     display: none; }
     .menus__toggle--item {
-      background-color: #e2e2e2;
       display: block;
       height: 2px;
       margin: 5px;

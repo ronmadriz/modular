@@ -1,15 +1,18 @@
 .menus {
 	align-items: center;
-	background-color:#5d4954;
 	display: flex;
 	justify-content: space-around;
 	min-height: 8vh;
 	&__brand {
-		color:#e2e2e2;
-		font-size:20px;
-		letter-spacing: 5px;
-		text-decoration:none;
-		text-transform:uppercase;
+		display:flex;
+		width:100%;
+		&--img {
+			align-self: center;
+			max-width: 100%;
+		}
+		@include for-tablet-up {
+			width:28.59375rem;
+		}
 	}
 	&__list {
 		display: flex;
@@ -20,7 +23,7 @@
 		list-style: none;
 	}
 	&__link {
-		color: #e2e2e2;
+		color:$accent_2;
 		font-size: 14px;
 		font-weight: bold;
 		letter-spacing: 2px;
@@ -35,7 +38,6 @@
 		cursor: pointer;
 		display: none;
 		&--item {
-			background-color: #e2e2e2;
 			display: block;
 			height: 2px;
 			margin: 5px;
