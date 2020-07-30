@@ -9,3 +9,9 @@ function register_my_menu() {
 	register_nav_menu('sidenav', __('Side Navigation'));
 	register_nav_menu('footer__solution', __('footer__solution', 'footer__solution'));
 }
+
+function menu__sub__class($classes) {
+	$classes[] = 'menu__sub';
+	return $classes;
+}
+add_filter('nav_menu_submenu_css_class', 'menu__sub__class');
