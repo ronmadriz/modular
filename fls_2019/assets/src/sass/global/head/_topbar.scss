@@ -27,12 +27,16 @@
 	}
 	.social{
 		&__item {
+			display: none;
 			height: 1.15rem;
 			margin-left:.25rem;
 			margin-right:.25rem;
 			width: 1.15rem;
 			svg {
 				fill:$alternate;
+			}
+			@include for-tablet-up {
+				display: inline-block;
 			}
 		}
 	}
