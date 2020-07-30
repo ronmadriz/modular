@@ -12,9 +12,7 @@ echo '<body id="page-'.$slug.'" ';
 body_class();
 echo '>'.PHP_EOL;
 echo $ronmadriz_settings['ronmadriz_body_extra'];
-echo '<section id="topbar" class="topbar">'.PHP_EOL;
-echo '<span class="topbar__phone"><a href="tel:+1'.$phoneND.'" rel="noopener noreferrer">'.$phone.'</a></span>'.PHP_EOL;
-echo '</section>'.PHP_EOL;
+include (get_template_directory().'/views/global/head/topbar.php');
 echo '<nav class="menus">'.PHP_EOL;
 if (!empty($site_logo_header)):
 echo '<a href="'.get_bloginfo('url').'" class="menus__brand"><img src="'.esc_url($site_logo_header).'" alt="';
@@ -30,6 +28,6 @@ echo '<span class="menus__toggler--item"></span>'.PHP_EOL;
 echo '<span class="menus__toggler--item"></span>'.PHP_EOL;
 echo '<span class="menus__toggler--item"></span>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
-include (get_stylesheet_directory().'/views/components/navigation/mega.php');
+include (get_template_directory().'/views/components/navigation/mega.php');
 echo '</nav>'.PHP_EOL;
 echo '<main>'.PHP_EOL;
