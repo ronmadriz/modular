@@ -575,8 +575,9 @@ html form.lrm-form ul.acf-checkbox-list li {
     display: inline-block;
     -webkit-filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
             filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
-    height: .75rem;
-    width: .75rem; }
+    height: .5rem;
+    margin-left: .5rem;
+    width: .5rem; }
 
 @media (min-width: 786px) {
   .menus__list {

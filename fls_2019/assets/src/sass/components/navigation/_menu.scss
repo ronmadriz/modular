@@ -61,8 +61,9 @@
 		background-size:cover;
 		display:inline-block;
 		filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
-		height: .75rem;
-		width: .75rem;
+		height: .5rem;
+		margin-left: .5rem;
+		width: .5rem;
 	}
 }
 @include for-tablet-up {
