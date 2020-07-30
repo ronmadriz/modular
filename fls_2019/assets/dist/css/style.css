@@ -1,36 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Oswald");
-@-webkit-keyframes growOut {
-  from {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
-@keyframes growOut {
-  from {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
-
-@-webkit-keyframes growIn {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  to {
-    -webkit-transform: scale(0);
-            transform: scale(0); } }
-
-@keyframes growIn {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  to {
-    -webkit-transform: scale(0);
-            transform: scale(0); } }
-
 body {
   font-size: 16px; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -69,6 +38,38 @@ body {
   body main .section_title {
     margin: 1.5rem 0 1.5rem 0;
     border-bottom: 1px solid #EEEEEE; }
+
+@-webkit-keyframes growOut {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes growOut {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes growIn {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0); } }
+
+@keyframes growIn {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0); } }
 
 .wrapper {
   display: -webkit-box;
@@ -550,7 +551,7 @@ html form.lrm-form ul.acf-checkbox-list li {
     .menus__item span {
       color: #156CB3; }
     .menus__item:not(:last-of-type):after {
-      color: #999;
+      color: #E6E7E9;
       content: '/';
       margin-left: .25rem; }
   .menus__link {
