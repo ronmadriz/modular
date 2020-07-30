@@ -540,8 +540,9 @@ html form.lrm-form ul.acf-checkbox-list li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     margin-bottom: 0;
     width: 50%; }
   .menus__item {
@@ -550,11 +551,13 @@ html form.lrm-form ul.acf-checkbox-list li {
     text-transform: uppercase; }
     .menus__item span {
       color: #156CB3; }
-    .menus__item:not(:last-of-type):after {
-      color: #E6E7E9;
-      content: '/';
-      margin-left: .25rem;
-      margin-right: .25rem; }
+    .menus__item:not(:last-of-type) {
+      margin-right: .5rem; }
+      .menus__item:not(:last-of-type):after {
+        color: #E6E7E9;
+        content: '/';
+        margin-left: .25rem;
+        margin-right: .25rem; }
   .menus__link {
     color: #156CB3;
     font-size: 14px;
