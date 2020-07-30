@@ -13,6 +13,11 @@
 		align-content: flex-end;
 		display:flex;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: end;
+		&--item {
+			background-color: $alternate;
+			height: 1.5rem;
+			width: 1.5rem;
+		}
 	}
 }
