@@ -5,5 +5,7 @@ $topbar_phoneND = str_replace("-", "", $topbar_phone);
 echo '<section id="topbar" class="topbar">'.PHP_EOL;
 echo '<span class="topbar__email"><a class="topbar__email--link" href="mailto:'.$topbar_email.'?Subject=Information about Flexible Lifeline Safety">'.$topbar_email.'</a></span>'.PHP_EOL;
 echo '<span class="topbar__phone"><a href="tel:+1'.$topbar_phoneND.'" rel="noopener noreferrer">'.$topbar_phone.'</a></span>'.PHP_EOL;
-
+echo '<span class="social">'.PHP_EOL;
+social_media_icons();
+echo '</span>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
