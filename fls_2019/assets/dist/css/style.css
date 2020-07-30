@@ -2367,3 +2367,21 @@ html .blog .featured__article {
     display: block;
     margin-top: 1rem;
     margin-bottom: 2rem; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .menu__brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%; }
+    .menu__brand--img {
+      -ms-flex-item-align: center;
+          align-self: center;
+      max-width: 100%; }

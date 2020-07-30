@@ -1,5 +1,14 @@
 .menu {
-	&__brand {}
+	display:flex;
+	flex-direction: row;
+	&__brand {
+		display:flex;
+		width:50%;
+		&--img {
+			align-self: center;
+			max-width: 100%;
+		}
+	}
 	&__list {}
 	&__item {}
 	&__link {}
