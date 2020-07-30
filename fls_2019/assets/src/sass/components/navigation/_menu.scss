@@ -27,6 +27,13 @@
 		span {
 			color:$accent_1;
 		}
+		&:not(:last-of-type) {
+			&:after {
+				color: $accent_3;
+				content: '/';
+				margin-left: .25rem;				
+			}
+		}
 	}
 	&__link {
 		color:$accent_1;
