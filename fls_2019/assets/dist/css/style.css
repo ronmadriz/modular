@@ -524,8 +524,7 @@ html form.lrm-form ul.acf-checkbox-list li {
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  min-height: 15vh; }
+  display: flex; }
   .menus__brand {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -538,69 +537,15 @@ html form.lrm-form ul.acf-checkbox-list li {
     @media (min-width: 786px) {
       .menus__brand {
         width: 28.59375rem; } }
-  .menus__list {
-    -ms-flex-item-align: center;
-        align-self: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-bottom: 0;
-    width: 50%; }
-  .menus__item {
-    font-weight: 700;
-    list-style: none;
-    text-transform: uppercase; }
-    .menus__item span {
-      color: #156CB3;
-      cursor: pointer; }
-    .menus__item:not(:last-of-type) {
-      margin-right: .5rem; }
-      .menus__item:not(:last-of-type):after {
-        color: #E6E7E9;
-        content: '/';
-        margin-left: .25rem;
-        margin-right: .25rem; }
-  .menus__link {
-    color: #156CB3;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none; }
-    .menus__link:hover {
-      text-decoration: none; }
-  .menus__sub:first-of-type {
-    display: none; }
   .menus__toggle {
-    cursor: pointer;
-    display: none; }
+    display: block;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
     .menus__toggle--item {
       display: block;
       height: 2px;
       margin: 5px;
       width: 25px; }
-  .menus .caret {
-    background: url(../../../sprites/down.svg) no-repeat center center;
-    background-size: cover;
-    display: inline-block;
-    -webkit-filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
-            filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
-    height: .5rem;
-    margin-left: .5rem;
-    width: .5rem; }
-
-@media (min-width: 786px) {
-  .menus__list {
-    margin-left: auto; } }
-
-@media (max-width: 786px) {
-  body {
-    overflow-x: hidden; }
-  .menus__toggle {
-    display: block;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease; }
   .menus__list {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -623,9 +568,65 @@ html form.lrm-form ul.acf-checkbox-list li {
     transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
   .menus__link {
     opacity: 0; }
-  .active {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%); } }
+
+.active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%); }
+
+@media (min-width: 786px) {
+  .menus {
+    min-height: 15vh; }
+    .menus__list {
+      -ms-flex-item-align: center;
+          align-self: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin-bottom: 0;
+      width: 50%; }
+    .menus__item {
+      font-weight: 700;
+      list-style: none;
+      text-transform: uppercase; }
+      .menus__item span {
+        color: #156CB3;
+        cursor: pointer; }
+      .menus__item:not(:last-of-type) {
+        margin-right: .5rem; }
+        .menus__item:not(:last-of-type):after {
+          color: #E6E7E9;
+          content: '/';
+          margin-left: .25rem;
+          margin-right: .25rem; }
+    .menus__link {
+      color: #156CB3;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none; }
+      .menus__link:hover {
+        text-decoration: none; }
+    .menus__sub:first-of-type {
+      display: none; }
+    .menus__list {
+      margin-left: auto; }
+    .menus__toggle {
+      display: none; }
+    .menus .caret {
+      background: url(../../../sprites/down.svg) no-repeat center center;
+      background-size: cover;
+      display: inline-block;
+      -webkit-filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
+              filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
+      height: .5rem;
+      margin-left: .5rem;
+      width: .5rem; } }
+
+@media (max-width: 786px) {
+  body {
+    overflow-x: hidden; } }
 
 body header nav.navbar {
   -webkit-box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.24);
