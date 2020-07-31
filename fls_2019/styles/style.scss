@@ -3,11 +3,12 @@
 @import 'utils/mixins';
 @import 'utils/typography';
 @import 'utils/animation';
+@import 'utils/ie';
 
 @import 'global/default';
 @import 'global/head/header';
 @import 'global/head/topbar';
-
+@import 'global/foot/footer';
 html {
 	body {
 		a {
@@ -477,30 +478,30 @@ html {
 		}		
 	}
 }
+
 // Components
 @import 'components/navigation/menu';
 @import 'components/navigation/navigation';
+@import 'components/form/form';
+@import 'components/gallery/gallery';
+@import 'components/carousel/carousels';
+@import 'components/table/tables';
+@import 'components/content/additional_content';
+@import 'components/table/measurement_tables';
+@import 'components/reviews/site-reviews';
+@import 'components/map/map';
+@import 'components/fvpp/update';
+@import 'components/banner/banner';
 
-// Global
-@import 'global/foot/footer';
+// Templates
+@import 'templates/home';
+@import 'templates/fluid';
+@import 'templates/industry-solution';
+@import 'templates/blog';
 
-@import 'partials/_form';
-@import 'partials/_gallery';
-@import 'partials/_carousels';
-@import 'partials/_tables';
-@import 'partials/_additional_content';
-@import 'partials/_measurement_tables';
-@import 'partials/_home';
-@import 'partials/_fluid';
-@import 'partials/_industry-solution';
-@import 'partials/_testimonials';
-@import 'partials/_site-reviews';
-@import 'partials/_map';
-@import 'partials/_fp_101';
-@import 'partials/_sfpp';
-@import 'partials/_careers';
-@import 'partials/_ie';
-@import 'partials/_update';
-@import 'partials/_case-studies';
-@import 'partials/_banner';
-@import 'partials/_blog';
+// Single Page Styles
+@import 'pages/careers';
+@import 'pages/case-studies';
+@import 'pages/fp_101';
+@import 'pages/sfpp';
+@import 'pages/testimonials';
