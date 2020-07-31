@@ -529,6 +529,8 @@ html form.lrm-form ul.acf-checkbox-list li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     width: 65%; }
     .menus__brand--img {
       -ms-flex-item-align: center;
