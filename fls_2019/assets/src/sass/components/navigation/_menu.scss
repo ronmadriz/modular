@@ -41,6 +41,11 @@
 .active {
 	transform: translateX(0%);	
 }
+@include for-phone-only {
+	body {
+		overflow-x: hidden;
+	}
+}
 @include for-tablet-up {
 	.menus {
 		min-height: 15vh;
@@ -98,10 +103,5 @@
 			margin-left: .5rem;
 			width: .5rem;
 		}		
-	}
-}
-@include for-phone-only {
-	body {
-		overflow-x: hidden;
 	}
 }
