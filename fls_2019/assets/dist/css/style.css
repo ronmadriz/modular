@@ -529,7 +529,7 @@ html form.lrm-form ul.acf-checkbox-list li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%; }
+    width: 65%; }
     .menus__brand--img {
       -ms-flex-item-align: center;
           align-self: center;
