@@ -543,6 +543,8 @@ html form.lrm-form ul.acf-checkbox-list li {
     -webkit-transition: all 1s ease;
     transition: all 1s ease; }
     .menus__toggle--item {
+      background-color: #156CB3;
+      border-radius: 3px;
       display: block;
       height: 2px;
       margin: 5px;
