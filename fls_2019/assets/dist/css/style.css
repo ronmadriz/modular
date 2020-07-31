@@ -539,7 +539,11 @@ html form.lrm-form ul.acf-checkbox-list li {
       .menus__brand {
         width: 28.59375rem; } }
   .menus__toggle {
+    -ms-flex-item-align: center;
+        align-self: center;
     display: block;
+    margin-left: auto;
+    margin-right: .5rem;
     -webkit-transition: all 1s ease;
     transition: all 1s ease; }
     .menus__toggle--item {
