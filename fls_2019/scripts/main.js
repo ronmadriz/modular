@@ -1,26 +1,3 @@
-const navSlide = () => {
-  const toggler = document.querySelector('.menus__toggle');
-  const nav = document.querySelector('.menus__list');
-  const navLinks = document.querySelectorAll('.menus__link');
-  
-  toggler.addEventListener('click', () => {
-    // toggle nav
-    nav.classList.toggle('menus__active');
-    // animate links
-    navLinks.forEach((link, index)=>{
-      if(link.style.animation) {
-        link.style.animation = '';
-      } else {
-        link.style.animation = `menuLinkFade 0.5s ease forwards ${index / 7 + .25}s`;
-      }
-    });
-    // toggler animation
-    toggler.classList.toggle('toggle');
-  });
-}
-navSlide();
-
-/*
 var j = jQuery.noConflict();
 j(document).ready(function(){
 	j('a').not('[href*="mailto:"]').each(function () {
@@ -92,8 +69,10 @@ j(document).ready(function(){
     j('#update').firstVisitPopup({
       cookieName : 'flsUpdate'
     });
-    // lightGallery(document.getElementById('lightSlider'))
-    // j('input[name="phone]').mask('(999) 999-9999');   
+});
+
+j('.menus__toggle').click(function(){
+  this.toggleClass('menus__active');
 });
 
 // Case Studies
@@ -103,15 +82,18 @@ j(function() {
         j('.' + j(this).val()).show();
     });
 }); 
-
+// Search Toggle 
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
    j('form#searchform').addClass('d-block');
 });
+
 j(document).on('click', '#searchClose', function(event) {
    j('form#searchform').removeClass('d-block');
    j('form#searchform').addClass('d-none');
 });
+
+// Gallery Lightbox
 j(document).on('click', '[data-toggle="lightbox"]', function(event) {
 	event.preventDefault();
 	j(this).ekkoLightbox();
@@ -138,23 +120,6 @@ function normalizeSlideHeights() {
       items.css('min-height', maxHeight + 'px');
     }) 
 }
-jQuery(
-  function(j) {
-    if (j(window).width() > 769) {
-      j('.navbar .dropdown > a').click(function() {
-        location.href = this.href;
-      });
-    }
-  }
-  function offsetAnchor() {
-      if(location.hash.length !== 0) {
-          window.scrollTo(window.scrollX, window.scrollY - 250);
-      }
-  }
-  window.addEventListener("hashchange", offsetAnchor);
-  window.setTimeout(offsetAnchor, 1)  
-);
-
 // Solutions Filter
 var $btns = j('.btn_filter').click(function() {
   if (this.id == 'all') {
@@ -171,5 +136,3 @@ j(document).scroll(function() {
     j('.navbar-brand img').css({width: j(this).scrollTop() > 100? "280px":"457.5px"});  
   }
 });
-
-*/
