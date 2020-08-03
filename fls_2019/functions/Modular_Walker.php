@@ -15,7 +15,7 @@ class Modular_Walker extends Walker_Nav_Menu {
 		if ($item->url && $item->url != '#') {
 			$output .= '<a href="'.$item->url.'" class="menus__link">';
 		} else {
-			$output .= '<span class="menu__link">';
+			$output .= '<span class="menus__link">';
 		}
 
 		$output .= $item->title;
