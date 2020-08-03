@@ -94,6 +94,19 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
 	event.preventDefault();
 	j(this).ekkoLightbox();
 });
+
+var j = jQuery.noConflict();
+j(document).ready(function(){
+  // toggle nav
+  j('.menus__toggle').click(function(){
+    j('.menus__list').toggleClass('menus__list--active');
+  });
+});
+
+j('.menus__item--parent').children().click(function(){
+    event.preventDefault();
+    j(this).children('.menus__sub').toggleClass('menus__sub--active');     
+});
 function normalizeSlideHeights() {
     j('.carousel').each(function(){
       var items = j('.carousel-item img.background', this);
@@ -131,16 +144,4 @@ j(document).scroll(function() {
   if (screen.width > 786) {
     j('.navbar-brand img').css({width: j(this).scrollTop() > 100? "280px":"457.5px"});  
   }
-});
-var j = jQuery.noConflict();
-j(document).ready(function(){
-  // toggle nav
-  j('.menus__toggle').click(function(){
-    j('.menus__list').toggleClass('menus__list--active');
-  });
-});
-
-j('.menus__item--parent').children().click(function(){
-    event.preventDefault();
-    j(this).children('.menus__sub').toggleClass('menus__sub--active');     
 });
