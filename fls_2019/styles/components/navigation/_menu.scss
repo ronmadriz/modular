@@ -48,8 +48,11 @@
 	    }	    
 	}
 	&__item {
+		border-bottom: 0.0625rem solid $accent_1;
 		list-style:none;
+		padding-left:1rem;
 		&:before {
+			color:$accent_1;
 		    content: '\2022';
 		    font-size: 1.5rem;
 		    margin-right: .5rem;
@@ -58,13 +61,13 @@
 		}
 	}
 	&__link {
-		border-bottom: 0.0625rem solid $accent_1;
 		color:$accent_1;
-		display: block;
+		display: inline-block;
 		font-size: .9375rem;
 		font-weight:700;
-		padding:.5rem 0 .5rem 1rem;
+		padding:.5rem 0 .5rem;
 		text-transform: uppercase;
+		width:95%;
 	}
 	&__sub {
 		display:none;
