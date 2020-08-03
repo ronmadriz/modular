@@ -751,6 +751,8 @@ html form.lrm-form ul.acf-checkbox-list li {
     height: 100vh;
     -webkit-margin-before: 0;
             margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
     -webkit-padding-start: 0;
             padding-inline-start: 0;
     position: absolute;
