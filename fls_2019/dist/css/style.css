@@ -764,7 +764,8 @@ html form.lrm-form ul.acf-checkbox-list li {
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
     transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-    width: 100%; }
+    width: 100%;
+    z-index: 1000; }
   .menus__link {
     opacity: 0; }
   .menus__sub {

@@ -42,6 +42,7 @@
 		transform: translateX(0%);
 		transition: transform 0.5s ease;
 		width: 100%;
+	    z-index: 1000;
 	}
 	&__link {
 		opacity: 0;
