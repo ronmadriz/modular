@@ -763,10 +763,6 @@ html form.lrm-form ul.acf-checkbox-list li {
   -webkit-transform: translateX(0%);
           transform: translateX(0%); }
 
-@media (max-width: 786px) {
-  body {
-    overflow-x: hidden; } }
-
 @media (min-width: 786px) {
   .menus {
     min-height: 15vh; }
@@ -817,6 +813,10 @@ html form.lrm-form ul.acf-checkbox-list li {
       height: .5rem;
       margin-left: .5rem;
       width: .5rem; } }
+
+@media (max-width: 786px) {
+  body {
+    overflow-x: hidden; } }
 
 body header nav.navbar {
   -webkit-box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.24);
