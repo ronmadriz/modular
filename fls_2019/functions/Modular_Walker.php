@@ -26,23 +26,7 @@ class Modular_Walker extends Walker_Nav_Menu {
 
 // add custom class to submenu
 function menus__sub__class($classes) {
-
-	$parents = array();
-
-	// Collect menu items with parents.
-	foreach ($items as $item) {
-		if ($item->menu_item_parent && $item->menu_item_parent > 0) {
-			$parents[] = $item->menu_item_parent;
-		}
-	}
-
-	// Add class.
-	foreach ($items as $item) {
-		if (in_array($item->ID, $parents)) {
-			$item->classes[] = 'menus__sub';
-		}
-	}
-	return $items;
-
+	$classes[] = 'menus__sub';
+	return $classes;
 }
 add_filter('nav_menu_submenu_css_class', 'menus__sub__class');
