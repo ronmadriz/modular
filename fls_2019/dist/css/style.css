@@ -808,7 +808,7 @@ html form.lrm-form ul.acf-checkbox-list li {
     .menus__toggle {
       display: none; }
     .menus .caret {
-      background: url(../../../sprites/down.svg) no-repeat center center;
+      background: url(../../sprites/down.svg) no-repeat center center;
       background-size: cover;
       display: inline-block;
       -webkit-filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
