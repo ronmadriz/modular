@@ -787,6 +787,8 @@ html form.lrm-form ul.acf-checkbox-list li {
     list-style: none;
     margin-left: 0;
     padding-left: 0; }
+    .menus__tertiary .menus__link {
+      padding-left: 2rem; }
 
 .active {
   -webkit-transform: translateX(0%);

@@ -71,6 +71,9 @@
 	    list-style: none;
 		margin-left: 0;
 		padding-left: 0;
+		.menus__link {
+			padding-left: 2rem;			
+		}
 	}
 }
 .active {
