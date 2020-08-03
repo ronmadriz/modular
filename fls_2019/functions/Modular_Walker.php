@@ -12,6 +12,8 @@ class Modular_Walker extends Walker_Nav_Menu {
 	function start_el(&$output, $item, $depth = 0, $args = [], $id = 0) {
 		if ($args->has_children) {
 			$output .= '<li class="menus__item menus__item--parent">';
+		} elseif ($args->has_children && depth == 1) {
+			$output .= '<li class="menus__item  menus__item--subparent">';
 		} else {
 			$output .= '<li class="menus__item">';
 		}
