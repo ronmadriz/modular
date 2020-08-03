@@ -124,13 +124,6 @@ jQuery(
     }
   }
 );
-function offsetAnchor() {
-    if(location.hash.length !== 0) {
-        window.scrollTo(window.scrollX, window.scrollY - 250);
-    }
-}
-window.addEventListener("hashchange", offsetAnchor);
-window.setTimeout(offsetAnchor, 1)
 
 // Solutions Filter
 var $btns = j('.btn_filter').click(function() {
@@ -151,6 +144,14 @@ j(document).scroll(function() {
 
 
 /*
+function offsetAnchor() {
+    if(location.hash.length !== 0) {
+        window.scrollTo(window.scrollX, window.scrollY - 250);
+    }
+}
+window.addEventListener("hashchange", offsetAnchor);
+window.setTimeout(offsetAnchor, 1)
+
 const navSlide = () => {
   const toggler = document.querySelector('.menus__toggle');
   const nav = document.querySelector('.menus__list');
