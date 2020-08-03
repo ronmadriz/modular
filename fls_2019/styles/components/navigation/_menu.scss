@@ -44,8 +44,11 @@
 		width: 100%;
 	    z-index: 1000;
 	}
+	&__item {
+		color:$accent_1;
+	}
 	&__link {
-		opacity: 0;
+		color:$accent_1;
 	}
 	&__sub {
 		display:none;
