@@ -757,14 +757,14 @@ html form.lrm-form ul.acf-checkbox-list li {
     .menus__list--active {
       -webkit-transform: translateX(0%);
               transform: translateX(0%); }
-    .menus__list:before {
+  .menus__item {
+    list-style: none; }
+    .menus__item:before {
       content: '\2022';
       font-size: 1.5rem;
       margin-right: .5rem;
       position: relative;
       top: .175rem; }
-  .menus__item {
-    list-style: none; }
   .menus__link {
     border-bottom: 0.0625rem solid #156CB3;
     color: #156CB3;

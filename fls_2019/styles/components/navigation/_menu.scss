@@ -45,17 +45,17 @@
 	    z-index: 1000;
 	    &--active {
 	    	transform:translateX(0%);
-	    }
+	    }	    
+	}
+	&__item {
+		list-style:none;
 		&:before {
 		    content: '\2022';
 		    font-size: 1.5rem;
 		    margin-right: .5rem;
 		    position: relative;
 		    top: .175rem;
-		}	    
-	}
-	&__item {
-		list-style:none;
+		}
 	}
 	&__link {
 		border-bottom: 0.0625rem solid $accent_1;
