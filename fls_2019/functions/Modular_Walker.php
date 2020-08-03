@@ -32,10 +32,10 @@ class Modular_Walker extends Walker_Nav_Menu {
 	}
 	public function start_lvl(&$output, $depth = 0, $args = array()) {
 		if ($depth == 0) {
-			$output .= '<ul class="menu__sub">';
+			$output .= '<ul class="menus__sub">';
 		}
 		if ($depth == 1) {
-			$output .= '<ul class="menu__tertiary">';
+			$output .= '<ul class="menus__tertiary">';
 		}
 	}
 }
