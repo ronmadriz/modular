@@ -771,9 +771,11 @@ html form.lrm-form ul.acf-checkbox-list li {
     padding-bottom: .5rem;
     padding-top: .5rem; }
   .menus__link {
-    color: #156CB3;
-    padding-bottom: .5rem;
-    padding-top: .5rem; }
+    color: #156CB3; }
+    .menus__link span {
+      display: inline-block;
+      padding-bottom: .5rem;
+      padding-top: .5rem; }
   .menus__sub {
     display: none; }
 
