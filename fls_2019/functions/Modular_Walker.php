@@ -34,6 +34,9 @@ class Modular_Walker extends Walker_Nav_Menu {
 		if ($depth == 0) {
 			$output .= "\n<ul class='menu__sub'>\n";
 		}
+		if ($depth == 1) {
+			$output .= "\n<ul class='menu__tertiary'>\n";
+		}
 	}
 }
 
