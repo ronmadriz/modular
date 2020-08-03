@@ -793,6 +793,9 @@ html form.lrm-form ul.acf-checkbox-list li {
         font-size: 1rem;
         top: .125rem; }
   .menus__caret {
+    background-image: url(../../sprites/down.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     display: inline-block;
     height: 1rem;
     width: 1rem; }
