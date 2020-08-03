@@ -150,7 +150,7 @@ j(document).scroll(function() {
 });
 
 
-
+/*
 const navSlide = () => {
   const toggler = document.querySelector('.menus__toggle');
   const nav = document.querySelector('.menus__list');
@@ -172,3 +172,5 @@ const navSlide = () => {
   });
 }
 navSlide();
+
+*/
