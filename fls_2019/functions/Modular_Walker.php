@@ -31,7 +31,7 @@ class Modular_Walker extends Walker_Nav_Menu {
 		}
 	}
 	public function start_lvl(&$output, $depth = 0, $args = array()) {
-		$output .= "<ul class='menu__sub'>\n";
+		$output .= "\n<ul class='menu__sub'>\n";
 	}
 }
 
