@@ -45,6 +45,7 @@
 	    z-index: 1000;
 	}
 	&__item {
+		list-style:none;
 	}
 	&__link {
 		border-bottom: 0.0625rem solid $accent_1;
@@ -52,7 +53,6 @@
 		display: block;
 		font-size: .9375rem;
 		font-weight:700;
-		list-style:none;
 		padding:.5rem 0 .5rem 1rem;
 		text-transform: uppercase;
 		&:before {
