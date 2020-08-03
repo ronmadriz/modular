@@ -141,5 +141,5 @@ j(document).ready(function(){
 });
 
 j( document ).on( 'click', function( event ) {
-  j( event.target ).closest('menus__item').toggleClass( "menus__item--active" );
+  j('.menus__item').closest('.menus__sub').toggleClass( "menus__item--active" );
 });
