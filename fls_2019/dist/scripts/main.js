@@ -69,7 +69,11 @@ j(document).ready(function(){
     j('#update').firstVisitPopup({
       cookieName : 'flsUpdate'
     });
+    j('.menus__toggle').click(function(){
+      this.toggleClass('menus__active');
+    });
 });
+
 
 // Case Studies
 j(function() {
@@ -131,7 +135,4 @@ j(document).scroll(function() {
   if (screen.width > 786) {
     j('.navbar-brand img').css({width: j(this).scrollTop() > 100? "280px":"457.5px"});  
   }
-});
-j('.menus__toggle').click(function(){
-  this.toggleClass('menus__active');
 });
