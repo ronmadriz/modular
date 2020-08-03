@@ -46,6 +46,11 @@
 	    &--active {
 	    	transform:translateX(0%);
 	    }
+	    @include for-phone-only {
+	    	&--parent {
+	    		pointer-events: none;
+	    	}
+	    }
 	}
 	&__item {
 		list-style:none;
