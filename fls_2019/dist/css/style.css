@@ -757,9 +757,6 @@ html form.lrm-form ul.acf-checkbox-list li {
     .menus__list--active {
       -webkit-transform: translateX(0%);
               transform: translateX(0%); }
-    @media (max-width: 786px) {
-      .menus__list--parent {
-        pointer-events: none; } }
   .menus__item {
     list-style: none; }
   .menus__link {

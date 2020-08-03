@@ -140,6 +140,7 @@ j(document).ready(function(){
   });
 });
 
-j( document ).on( 'click', function( event ) {
-  j('.menus__item').closest('.menus__sub').toggleClass( "menus__item--active" );
+j('.menus__list--parent').children().click(function(){
+    event.preventDefault();
+    j(this).children('.menus__sub').toggleClass('menus__sub--active');     
 });
