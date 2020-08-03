@@ -167,6 +167,7 @@ $(document).ready(function(){
 
 })(jQuery);
 
+/*
 var j = jQuery.noConflict();
 j(document).ready(function(){
 	j('a').not('[href*="mailto:"]').each(function () {
@@ -319,7 +320,7 @@ j(document).scroll(function() {
 });
 
 
-/*
+
 
 
 const navSlide = () => {
