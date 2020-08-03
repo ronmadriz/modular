@@ -21,6 +21,9 @@ class Modular_Walker extends Walker_Nav_Menu {
 			$output .= '<i class="caret"></i>';
 		}
 	}
+	function start_lvl(&$output, $depth = 2, $args = array()) {
+		$output .= '\n<ul class="menus__tertiary">\n';
+	}
 }
 
 // add custom class to submenu
