@@ -6,7 +6,7 @@ j(document).ready(function(){
   });
 });
 
-j('.menus__list--parent').children().click(function(){
+j('.menus__item--parent').children().click(function(){
     event.preventDefault();
     j(this).children('.menus__sub').toggleClass('menus__sub--active');     
 });
