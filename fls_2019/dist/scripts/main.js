@@ -1,10 +1,5 @@
 var j = jQuery.noConflict();
 j(document).ready(function(){
-  // toggle nav
-  j('.menus__toggle').click(function(){
-    j('.menus__list').toggleClass('menus__list--active');
-  });
-
 	j('a').not('[href*="mailto:"]').each(function () {
 		var isInternalLink = new RegExp('/' + window.location.host + '/');
 		if ( ! isInternalLink.test(this.href) ) {
@@ -136,4 +131,15 @@ j(document).scroll(function() {
   if (screen.width > 786) {
     j('.navbar-brand img').css({width: j(this).scrollTop() > 100? "280px":"457.5px"});  
   }
+});
+var j = jQuery.noConflict();
+j(document).ready(function(){
+  // toggle nav
+  j('.menus__toggle').click(function(){
+    j('.menus__list').toggleClass('menus__list--active');
+  });
+});
+
+j( document ).on( 'click', function( event ) {
+  j( event.target ).closest('menus__item').toggleClass( "menus__item--active" );
 });

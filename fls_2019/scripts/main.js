@@ -1,10 +1,5 @@
 var j = jQuery.noConflict();
 j(document).ready(function(){
-  // toggle nav
-  j('.menus__toggle').click(function(){
-    j('.menus__list').toggleClass('menus__list--active');
-  });
-
 	j('a').not('[href*="mailto:"]').each(function () {
 		var isInternalLink = new RegExp('/' + window.location.host + '/');
 		if ( ! isInternalLink.test(this.href) ) {
