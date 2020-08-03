@@ -105,7 +105,7 @@ j(document).ready(function(){
 
 j('.menus__item--parent').children().click(function(){
     event.preventDefault();
-    j(this).children('.menus__sub').toggleClass('menus__sub--active');     
+    // j(this).children('.menus__sub').toggleClass('menus__sub--active');     
 });
 function normalizeSlideHeights() {
     j('.carousel').each(function(){
