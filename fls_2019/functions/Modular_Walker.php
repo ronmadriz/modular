@@ -23,7 +23,7 @@ class Modular_Walker extends Walker_Nav_Menu {
 
 	}
 	function start_lvl(&$output, $depth = 0, $args = array()) {
-		if ($depth == 2) {
+		if ($depth == 1) {
 			$output .= '<ul class="tertiary">';
 		}
 	}
