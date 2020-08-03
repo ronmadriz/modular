@@ -32,23 +32,10 @@ class Modular_Walker extends Walker_Nav_Menu {
 	}
 	public function start_lvl(&$output, $depth = 0, $args = array()) {
 		if ($depth == 0) {
-			$output .= "\n<ul class='menu__sub'>\n";
+			$output .= '<ul class="menu__sub">';
 		}
 		if ($depth == 1) {
-			$output .= "\n<ul class='menu__tertiary'>\n";
+			$output .= '<ul class="menu__tertiary">';
 		}
 	}
 }
-
-/* add custom class to submenu
-function menus__sub__class($classes) {
-if ($depth == 0) {
-$classes[] = 'menus__sub';
-}
-if ($depth == 1) {
-$classes[] = 'menus__tertiary';
-}
-return $classes;
-}
-add_filter('nav_menu_submenu_css_class', 'menus__sub__class');
- */
