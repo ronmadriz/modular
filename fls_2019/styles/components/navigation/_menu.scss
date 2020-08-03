@@ -53,6 +53,13 @@
 		font-size: 1.125rem;
 		padding:.5rem 0 .5rem 1rem;
 		text-transform: uppercase;
+		&:before {
+		    content: '\2022';
+		    font-size: 1.5rem;
+		    margin-right: .5rem;
+		    position: relative;
+		    top: .13725rem;
+		}
 	}
 	&__sub {
 		// display:none;
