@@ -69,9 +69,10 @@ j(document).ready(function(){
     j('#update').firstVisitPopup({
       cookieName : 'flsUpdate'
     });
-    j('.menus__toggle').click(function(){
-      this.toggleClass('menus__active');
-    });
+});
+
+j('.menus__toggle').click(function(){
+  this.toggleClass('menus__active');
 });
 
 
