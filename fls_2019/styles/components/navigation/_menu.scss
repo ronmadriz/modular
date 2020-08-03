@@ -43,6 +43,9 @@
 		transition: transform 0.5s ease;
 		width: 100%;
 	    z-index: 1000;
+	    &--active {
+	    	transform:translateX(0%);
+	    }
 	}
 	&__item {
 		list-style:none;
