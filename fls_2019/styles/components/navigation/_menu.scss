@@ -47,10 +47,13 @@
 	&__item {
 	}
 	&__link {
+		border-bottom: 0.0625rem solid $accent_1;
 		color:$accent_1;
-		display:block;
+		display: block;
+		font-size: 1.125rem;
 		padding-bottom: .5rem;
 		padding-top: .5rem;
+		text-transform: uppercase;
 	}
 	&__sub {
 		// display:none;
