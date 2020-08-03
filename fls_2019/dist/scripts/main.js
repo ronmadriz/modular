@@ -1,5 +1,10 @@
 var j = jQuery.noConflict();
 j(document).ready(function(){
+  // toggle nav
+  j('.menus__toggle').click(function(event){
+    this.toggleClass('menus__active');
+  });
+
 	j('a').not('[href*="mailto:"]').each(function () {
 		var isInternalLink = new RegExp('/' + window.location.host + '/');
 		if ( ! isInternalLink.test(this.href) ) {
@@ -70,11 +75,6 @@ j(document).ready(function(){
       cookieName : 'flsUpdate'
     });
 });
-
-j('.menus__toggle').click(function(){
-  this.toggleClass('menus__active');
-});
-
 
 // Case Studies
 j(function() {
