@@ -748,7 +748,7 @@ html form.lrm-form ul.acf-checkbox-list li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100vh;
+    height: 100%;
     -webkit-margin-before: 0;
             margin-block-start: 0;
     -webkit-margin-after: 0;
