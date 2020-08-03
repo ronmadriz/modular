@@ -45,17 +45,12 @@
 	    z-index: 1000;
 	}
 	&__item {
-		color:$accent_1;
-		padding-bottom: .5rem;		
-		padding-top: .5rem;
 	}
 	&__link {
 		color:$accent_1;
-		span {
-			display:inline-block;
-			padding-bottom: .5rem;		
-			padding-top: .5rem;
-		}
+		display:block;
+		padding-bottom: .5rem;
+		padding-top: .5rem;
 	}
 	&__sub {
 		// display:none;
