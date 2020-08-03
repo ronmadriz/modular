@@ -775,7 +775,7 @@ html form.lrm-form ul.acf-checkbox-list li {
     font-weight: 700;
     padding: .5rem 0 .5rem;
     text-transform: uppercase;
-    width: 95%; }
+    width: 90%; }
   .menus__sub {
     display: none;
     list-style: none;
@@ -792,6 +792,10 @@ html form.lrm-form ul.acf-checkbox-list li {
       .menus__tertiary .menus__link:before {
         font-size: 1rem;
         top: .125rem; }
+  .menus__caret {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem; }
 
 .active {
   -webkit-transform: translateX(0%);

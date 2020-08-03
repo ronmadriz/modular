@@ -67,7 +67,7 @@
 		font-weight:700;
 		padding:.5rem 0 .5rem;
 		text-transform: uppercase;
-		width:95%;
+		width:90%;
 	}
 	&__sub {
 		display:none;
@@ -88,6 +88,11 @@
 			    top: .125rem;
 			}
 		}
+	}
+	&__caret {
+		display:inline-block;
+		height:1rem;
+		width:1rem;
 	}
 }
 .active {
