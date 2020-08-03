@@ -10,7 +10,11 @@ class Modular_Walker extends Walker_Nav_Menu {
 		return parent::display_element($element, $children_elements, $max_depth, $depth, $args, $output);
 	}
 	function start_el(&$output, $item, $depth = 0, $args = [], $id = 0) {
-		$output .= '<li class="menus__item">';
+		if ($args->has_children) {
+			$output .= '<li class="menus__item menus__item--parent">';
+		} else {
+			$output .= '<li class="menus__item">';
+		}
 
 		if ($item->url && $item->url != '#') {
 			$output .= '<a href="'.$item->url.'" class="menus__link">';
