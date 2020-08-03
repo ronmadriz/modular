@@ -758,8 +758,8 @@ html form.lrm-form ul.acf-checkbox-list li {
     position: absolute;
     right: 0;
     top: 0;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     -webkit-transition: -webkit-transform 0.5s ease;
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
