@@ -20,9 +20,10 @@ class Modular_Walker extends Walker_Nav_Menu {
 		if ($args->walker->has_children) {
 			$output .= '<i class="caret"></i>';
 		}
-	}
-	function start_lvl(&$output, $depth = 3, $args = array()) {
-		$output .= "\n<ul class='menus__tertiary'>\n";
+
+		if ($depth == 2) {
+			$output .= '<ul class="tertiary"'.PHP_EOL;
+		}
 	}
 }
 
