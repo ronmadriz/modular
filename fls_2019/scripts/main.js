@@ -71,10 +71,6 @@ j(document).ready(function(){
     });
 });
 
-j('.menus__toggle').click(function(){
-  this.toggleClass('menus__active');
-});
-
 // Case Studies
 j(function() {
     j('#solution_filter, #industry_filter').change(function(){
