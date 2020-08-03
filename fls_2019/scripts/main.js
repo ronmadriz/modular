@@ -2,7 +2,7 @@ var j = jQuery.noConflict();
 j(document).ready(function(){
   // toggle nav
   j('.menus__toggle').click(function(){
-    this.toggleClass('menus__active');
+    j(this).toggleClass('menus__active');
   });
 
 	j('a').not('[href*="mailto:"]').each(function () {
