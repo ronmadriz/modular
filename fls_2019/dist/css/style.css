@@ -743,22 +743,22 @@ html form.lrm-form ul.acf-checkbox-list li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #5d4954;
+    background-color: #FFFFFF;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 92vh;
+    height: 100vh;
     position: absolute;
     right: 0;
-    top: 8vh;
-    width: 100%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    top: 0;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
     -webkit-transition: -webkit-transform 0.5s ease;
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    width: 100%; }
   .menus__link {
     opacity: 0; }
   .menus__sub {
