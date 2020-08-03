@@ -34,10 +34,10 @@ class Modular_Walker extends Walker_Nav_Menu {
 
 // add custom class to submenu
 function menus__sub__class($classes) {
-	if (0 == $depth) {
+	if (1 == $depth) {
 		$classes[] = 'sub';
 	}
-	if (1 == $depth) {
+	if (2 == $depth) {
 		$classes[] = 'subsub';
 	}
 	return $classes;
