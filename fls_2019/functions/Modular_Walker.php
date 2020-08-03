@@ -29,10 +29,6 @@ class Modular_Walker extends Walker_Nav_Menu {
 		if ($args->walker->has_children) {
 			$output .= '<i class="caret"></i>';
 		}
-		if ($args->has_children) {
-			$item->classes[] = 'menus__parent';
-		}
-		parent::start_el($output, $item, $depth, $args);
 	}
 }
 
