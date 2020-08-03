@@ -1,7 +1,7 @@
 var j = jQuery.noConflict();
 j(document).ready(function(){
   // toggle nav
-  j('.menus__toggle').click(function(event){
+  j('.menus__toggle').click(function(){
     this.toggleClass('menus__active');
   });
 
