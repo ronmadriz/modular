@@ -16,5 +16,5 @@ echo '<title>'.PHP_EOL;
 wp_title('', true, 'right');
 echo '</title>'.PHP_EOL;
 wp_head();
-echo $ronmadriz_settings['ronmadriz_header_extra'];
+// echo $ronmadriz_settings['ronmadriz_header_extra'];
 echo '</head>'.PHP_EOL;
