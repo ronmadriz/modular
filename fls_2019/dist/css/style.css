@@ -776,6 +776,12 @@ html form.lrm-form ul.acf-checkbox-list li {
       display: inline-block;
       padding-bottom: .5rem;
       padding-top: .5rem; }
+  .menus__sub {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0; }
+  .menus__tertiary {
+    list-style: none; }
 
 .active {
   -webkit-transform: translateX(0%);
