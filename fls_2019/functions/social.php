@@ -33,10 +33,6 @@ function social_media_header() {
 
 // Footer
 function social_media_footer() {
-	function fc_social_media_array() {
-		$social_sites = array('facebook', 'linkedin', 'instagram', 'twitter', 'youtube', 'email', 'rss');
-		return $social_sites;
-	}
 	$social_sites = fc_social_media_array();
 	foreach ($social_sites as $social_site) {
 		if (strlen(get_theme_mod($social_site)) > 0) {
