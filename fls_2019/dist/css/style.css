@@ -412,7 +412,7 @@ body #mobileCTA.fixed-bottom {
       background-color: #FECD06;
       content: '';
       display: block;
-      height: 1px;
+      height: .125rem;
       width: 15%; }
     .footer__connect:after {
       margin-top: 1rem; }
