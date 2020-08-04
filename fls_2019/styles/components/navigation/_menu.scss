@@ -96,4 +96,27 @@
 			}
 		}
 	}
+	&__icon {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;		
+		display: inline-block;
+		height: 1rem;
+		width: 1rem;
+		&--solution {
+			background-image: url(../../sprites/solution.jpg);
+		}
+		&--industries {
+			background-image: url(../../sprites/industries.jpg);
+		}
+		&--resources {
+			background-image: url(../../sprites/resources.jpg);
+		}
+		&--about {
+			background-image: url(../../sprites/about.jpg);
+		}
+		&--contact {
+			background-image: url(../../sprites/contact.jpg);
+		}
+	}
 }
