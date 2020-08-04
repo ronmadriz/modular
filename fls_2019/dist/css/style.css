@@ -385,6 +385,10 @@ body #mobileCTA.fixed-bottom {
     position: absolute;
     width: 100%;
     z-index: 1; }
+  .footer__boiler {
+    margin-bottom: 2rem; }
+  .footer__connect {
+    margin-top: 2rem; }
   .footer .wrapper {
     z-index: 3; }
 
