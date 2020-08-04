@@ -361,13 +361,19 @@ body #mobileCTA.fixed-bottom {
   .footer__nav .nav-link {
     padding: 0; }
 
-.footer:before {
-  background-color: rgba(0, 0, 0, 0.75);
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  width: 100%; }
+.footer {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: sepia(600%) hue-rotate(180deg) saturate(900%);
+          filter: sepia(600%) hue-rotate(180deg) saturate(900%); }
+  .footer:before {
+    background-color: rgba(0, 0, 0, 0.75);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%; }
 
 html body a {
   color: #156CB3; }
