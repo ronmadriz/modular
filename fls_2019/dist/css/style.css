@@ -782,11 +782,15 @@ html form.lrm-form ul.acf-checkbox-list li {
     list-style: none;
     margin-left: 0;
     padding-left: 0; }
+    .menus__sub--active {
+      display: block; }
   .menus__tertiary {
     display: none;
     list-style: none;
     margin-left: 0;
     padding-left: 0; }
+    .menus__tertiary--active {
+      display: block; }
     .menus__tertiary .menus__link {
       font-weight: 300;
       padding-left: 2rem; }

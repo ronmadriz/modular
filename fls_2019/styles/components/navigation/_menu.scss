@@ -81,12 +81,18 @@
 	    list-style: none;
 		margin-left: 0;
 		padding-left: 0;
+		&--active {
+			display:block;
+		}
 	}
 	&__tertiary {
 		display:none;
 	    list-style: none;
 		margin-left: 0;
 		padding-left: 0;
+		&--active {
+			display:block;
+		}
 		.menus__link {
 			font-weight:300;
 			padding-left: 2rem;
