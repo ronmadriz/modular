@@ -380,13 +380,12 @@ body #mobileCTA.fixed-bottom {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
     text-align: center;
     width: 33%; }
     .footer__connect--title {
       display: block;
       font-weight: 300;
+      margin-top: 1rem;
       margin-bottom: 1rem;
       width: 100%; }
     .footer__connect--list {
@@ -398,7 +397,7 @@ body #mobileCTA.fixed-bottom {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin: 0;
+      margin: 0 0 1;
       padding: 0; }
     .footer__connect--item {
       display: inline;
