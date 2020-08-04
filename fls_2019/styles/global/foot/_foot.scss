@@ -21,6 +21,9 @@
 	&__columns {
 	}
 	&__connect {
+		border-bottom: 2px solid $accent_2;
+		border-top: 2px solid $accent_2;
+		color: $alternate;		
 	}
 	&__logo {
 		margin-top:2rem;

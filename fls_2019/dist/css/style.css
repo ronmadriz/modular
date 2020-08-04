@@ -387,6 +387,10 @@ body #mobileCTA.fixed-bottom {
     z-index: 1; }
   .footer__boiler {
     margin-bottom: 2rem; }
+  .footer__connect {
+    border-bottom: 2px solid #FECD06;
+    border-top: 2px solid #FECD06;
+    color: #FFFFFF; }
   .footer__logo {
     margin-top: 2rem; }
   .footer .wrapper {
