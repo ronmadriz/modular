@@ -373,7 +373,10 @@ body #mobileCTA.fixed-bottom {
     display: block;
     height: 100%;
     position: absolute;
-    width: 100%; }
+    width: 100%;
+    z-index: 1; }
+  .footer .wrapper {
+    z-index: 3; }
 
 html body a {
   color: #156CB3; }
