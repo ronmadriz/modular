@@ -4,4 +4,4 @@
  */
 include 'header2020.php';
 echo '<section id="mega"></section>'.PHP_EOL;
-include 'footer-fluid.php';
+include 'footer2020.php';
