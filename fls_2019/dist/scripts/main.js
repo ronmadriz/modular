@@ -103,8 +103,10 @@ j(document).ready(function(){
   });
 });
 
-j('.menus__item--parent').children().click(function(){
+j('.menus__item--parent').click(function(e){
     event.preventDefault();
+	j(this).next().slideToggle(300);
+	return false;
     // j(this).children('.menus__sub').toggleClass('menus__sub--active');     
 });
 function normalizeSlideHeights() {
