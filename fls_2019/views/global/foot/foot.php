@@ -9,6 +9,7 @@ $fax                = get_theme_mod('footer_fax');
 $email              = get_theme_mod('footer_email');
 $footer_newsletter  = get_theme_mod('footer_newsletter');
 $privacy_policy     = get_privacy_policy_url();
+echo '</main">'.PHP_EOL;
 // echo (!empty($footer_image)?'<style>.footer {background-image:url('.esc_url($footer_image).');}</style>'.PHP_EOL:'');
 echo '<footer class="footer">'.PHP_EOL;
 echo '<div class="wrapper">'.PHP_EOL;
