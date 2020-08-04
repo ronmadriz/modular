@@ -800,8 +800,8 @@ html form.lrm-form ul.acf-checkbox-list li {
     display: inline-block;
     height: 1rem;
     width: 1rem; }
-    .menus__icon--solution {
-      background-image: url(../../sprites/solution.jpg); }
+    .menus__icon--solutions {
+      background-image: url(../../sprites/solutions.jpg); }
     .menus__icon--industries {
       background-image: url(../../sprites/industries.jpg); }
     .menus__icon--resources {
