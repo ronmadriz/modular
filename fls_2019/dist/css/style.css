@@ -831,6 +831,8 @@ html form.lrm-form ul.acf-checkbox-list li {
           -ms-flex-pack: end;
               justify-content: flex-end;
       margin-bottom: 0;
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
       width: 50%; }
     .menus__item {
       font-weight: 700;
