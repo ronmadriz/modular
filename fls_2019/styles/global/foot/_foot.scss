@@ -16,10 +16,14 @@
 		color: $alternate;
 		display: flex;
 		flex-direction: column;
+		padding-bottom: 1rem;
+		padding-top: 1rem;			
 	    text-align: center;
 		width: 33%;
 		&--title {
 			display: block;
+			font-weight: 300;
+			margin-bottom: 1rem;			
 			width: 100%;			
 		}
 		&--list {

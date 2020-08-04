@@ -382,10 +382,14 @@ body #mobileCTA.fixed-bottom {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     text-align: center;
     width: 33%; }
     .footer__connect--title {
       display: block;
+      font-weight: 300;
+      margin-bottom: 1rem;
       width: 100%; }
     .footer__connect--list {
       -ms-flex-line-pack: center;
