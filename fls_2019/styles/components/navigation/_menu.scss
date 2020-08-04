@@ -45,7 +45,14 @@
 	    z-index: 1000;
 	    &--active {
 	    	transform:translateX(0%);
-	    }	    
+	    }
+	    > .menus__item {
+	    	> .menus__link {
+	    		&:before {
+	    			display:none;
+	    		}
+	    	}
+	    }
 	}
 	&__item {
 		list-style:none;
