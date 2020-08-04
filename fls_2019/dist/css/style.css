@@ -365,6 +365,7 @@ body #mobileCTA.fixed-bottom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #156CB3;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
