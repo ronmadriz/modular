@@ -793,13 +793,6 @@ html form.lrm-form ul.acf-checkbox-list li {
       .menus__tertiary .menus__link:before {
         font-size: 1rem;
         top: .125rem; }
-  .menus__caret {
-    background-image: url(../../sprites/down.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 1rem;
-    width: 1rem; }
 
 @media (min-width: 786px) {
   .menus {

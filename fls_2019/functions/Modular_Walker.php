@@ -31,10 +31,6 @@ class Modular_Walker extends Walker_Nav_Menu {
 		} else {
 			$output .= '</span>';
 		}
-
-		if ($args->walker->has_children) {
-			$output .= '<i class="menus__caret"></i>';
-		}
 	}
 	public function start_lvl(&$output, $depth = 0, $args = array()) {
 		if ($depth == 0) {
