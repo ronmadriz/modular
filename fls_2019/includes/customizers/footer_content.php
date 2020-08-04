@@ -13,6 +13,19 @@ function ronmadriz_register_cta_customizer($wp_customize) {
 		)
 	);
 
+	// header CTA BOTTOM
+	$wp_customize->add_setting('footer_image');
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize, 'footer_image',
+			array(
+				'label'    => __('Footer Background Image', 'ronmadriz_core'),
+				'section'  => 'footer_content',
+				'settings' => 'footer_image',
+			)
+		)
+	);
+
 	$wp_customize->add_setting('footer_address');
 	$wp_customize->add_control(
 
