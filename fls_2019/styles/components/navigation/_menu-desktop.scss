@@ -3,9 +3,12 @@
 		min-height: 15vh;
 		&__list {
 			align-self: center;
+			background-color: transparent;
 			display: flex;
+			flex-direction: row;
 			justify-content:flex-end;
 			margin-bottom: 0;
+		    position: relative;
 			transform: translateX(0%);
 			width: 50%;
 		}
