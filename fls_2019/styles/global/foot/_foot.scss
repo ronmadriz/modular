@@ -19,6 +19,10 @@
 		display: flex;
 		flex-direction: row;
 		width: 33%;
+		&--title {
+			display: block;
+			width: 100%;			
+		}
 		&--list {
 			margin:0;
 			padding:0;

@@ -390,6 +390,9 @@ body #mobileCTA.fixed-bottom {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 33%; }
+    .footer__connect--title {
+      display: block;
+      width: 100%; }
     .footer__connect--list {
       margin: 0;
       padding: 0; }
