@@ -2,12 +2,14 @@
 date_default_timezone_set('America/Chicago');
 $ronmadriz_settings = get_option('ronmadriz_settings');
 $site_logo_footer   = get_theme_mod('site_logo_footer');
+$footer_image       = get_theme_mod('footer_image');
 $address            = get_theme_mod('footer_address');
 $phone              = get_theme_mod('footer_phone');
 $fax                = get_theme_mod('footer_fax');
 $email              = get_theme_mod('footer_email');
 $footer_newsletter  = get_theme_mod('footer_newsletter');
 $privacy_policy     = get_privacy_policy_url();
+echo (!empty($footer_image)?'<style>.footer {background-image:url('.esc_url($footer_image).');}</style>'.PHP_EOL:'');
 echo '<footer class="footer">'.PHP_EOL;
 echo '<div class="footer__connect">'.PHP_EOL;
 echo '<div class="wrapper">'.PHP_EOL;
