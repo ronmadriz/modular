@@ -362,11 +362,23 @@ body #mobileCTA.fixed-bottom {
     padding: 0; }
 
 .footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-filter: sepia(600%) hue-rotate(180deg) saturate(900%);
-          filter: sepia(600%) hue-rotate(180deg) saturate(900%); }
+          filter: sepia(600%) hue-rotate(180deg) saturate(900%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
   .footer:before {
     background-color: rgba(0, 0, 0, 0.75);
     content: '';

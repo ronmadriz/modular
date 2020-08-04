@@ -1,8 +1,13 @@
 .footer {
+    align-items: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: sepia(600%) hue-rotate(180deg) saturate(900%);	
+	display: flex;
+    filter: sepia(600%) hue-rotate(180deg) saturate(900%);
+    flex-direction: column;
+    padding-bottom:1rem;
+    padding-top:1rem;
 	&:before {
 		background-color: rgba($accent_6,.75);
 		content: '';
