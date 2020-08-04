@@ -400,6 +400,11 @@ body #mobileCTA.fixed-bottom {
       margin-start-block: 0; }
   .footer__logo {
     margin-top: 2rem; }
+  .footer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
 
 html body a {
   color: #156CB3; }
