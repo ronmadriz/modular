@@ -7,7 +7,6 @@
 	display: flex;
     // filter: sepia(600%) hue-rotate(180deg) saturate(900%);
     flex-direction: column;
-	
 	&__boiler {
 		margin-bottom:2rem;
 	}
@@ -16,12 +15,11 @@
 	&__connect {
 		border-bottom: 2px solid $accent_2;
 		border-top: 2px solid $accent_2;
-		color: $alternate;		
+		color: $alternate;
+		display: flex;
+		flex-direction: row;
 	}
 	&__logo {
 		margin-top:2rem;
-	}
-	.wrapper {
-		z-index:3;
 	}
 }

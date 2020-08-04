@@ -381,11 +381,16 @@ body #mobileCTA.fixed-bottom {
   .footer__connect {
     border-bottom: 2px solid #FECD06;
     border-top: 2px solid #FECD06;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
   .footer__logo {
     margin-top: 2rem; }
-  .footer .wrapper {
-    z-index: 3; }
 
 html body a {
   color: #156CB3; }
