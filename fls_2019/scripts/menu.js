@@ -6,7 +6,7 @@ j(document).ready(function(){
   });
 });
 
-j('.menus__item--parent a').click(function(e){
+j('.menus__item--parent>.menus__link').click(function(e){
     event.preventDefault();
 });
 j('.menus__item--parent').click(function(e){
