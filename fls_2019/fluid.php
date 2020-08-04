@@ -446,5 +446,4 @@ if (have_rows('contact_form_cta')) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
-include 'footer-fluid.php';
-?>
+get_footer();
