@@ -388,7 +388,8 @@ body #mobileCTA.fixed-bottom {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    width: 33%; }
     .footer__connect--list {
       margin: 0;
       padding: 0; }
@@ -398,7 +399,9 @@ body #mobileCTA.fixed-bottom {
       height: 1rem;
       width: 1rem;
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      margin-start-block: 0;
+      margin-start-block: 0; }
   .footer__logo {
     margin-top: 2rem; }
 
