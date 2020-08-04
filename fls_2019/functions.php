@@ -7,6 +7,8 @@ require_once ('functions/menus.php');
 require_once ('functions/class-wp-bootstrap-navwalker.php');
 require_once ('functions/wp-bootstrap4.1-pagination.php');
 require_once ('functions/Modular_Walker.php');
+require_once ('functions/Footer_Walker.php');
+require_once ('functions/Boiler_Walker.php');
 require_once ('functions/social.php');
 require_once ('functions/gallery.php');
 require_once ('functions/custom-reviews.php');
