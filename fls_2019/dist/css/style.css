@@ -858,8 +858,10 @@ html form.lrm-form ul.acf-checkbox-list li {
           margin-right: .25rem; }
     .menus__link {
       color: #156CB3;
+      display: inline;
       font-size: 14px;
       font-weight: bold;
+      padding: 0;
       text-decoration: none; }
       .menus__link:hover {
         text-decoration: none; }

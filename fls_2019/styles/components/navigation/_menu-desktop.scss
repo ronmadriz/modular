@@ -35,8 +35,10 @@
 		}
 		&__link {
 			color:$accent_1;
+			display:inline;
 			font-size: 14px;
 			font-weight: bold;
+			padding:0;
 			text-decoration: none;
 			&:hover {
 				text-decoration:none;
