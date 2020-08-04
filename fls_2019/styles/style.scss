@@ -1,4 +1,5 @@
-// Utils
+//
+/// Utils
 @import 'utils/reset';
 @import 'utils/variables';
 @import 'utils/mixins';
@@ -6,11 +7,18 @@
 @import 'utils/animation';
 @import 'utils/ie';
 
+//
+/// Global 
 @import 'global/default';
+// header 
 @import 'global/head/header';
 @import 'global/head/topbar';
+// footer 
 @import 'global/foot/footer';
 @import 'global/foot/foot';
+@import 'global/foot/columns';
+@import 'global/foot/connect';
+@import 'global/foot/social';
 html {
 	body {
 		a {
@@ -481,7 +489,8 @@ html {
 	}
 }
 
-// Components
+//
+/// Components
 @import 'components/navigation/menu';
 @import 'components/navigation/menu-desktop';
 @import 'components/navigation/navigation';
@@ -496,13 +505,15 @@ html {
 @import 'components/fvpp/update';
 @import 'components/banner/banner';
 
-// Templates
+//
+/// Templates
 @import 'templates/home';
 @import 'templates/fluid';
 @import 'templates/industry-solution';
 @import 'templates/blog';
 
-// Single Page Styles
+//
+/// Single Page Styles
 @import 'pages/careers';
 @import 'pages/case-studies';
 @import 'pages/fp_101';
