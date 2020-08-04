@@ -62,7 +62,7 @@ function social_media_footer() {
 // old
 
 function social_media_icons() {
-	$social_sites = ronmadriz_social_media_array();
+	$social_sites = fc_social_media_array();
 	foreach ($social_sites as $social_site) {
 		if (strlen(get_theme_mod($social_site)) > 0) {
 			$active_sites[] = $social_site;
