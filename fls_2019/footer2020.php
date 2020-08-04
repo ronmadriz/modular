@@ -1,2 +1,2 @@
 <?php
-include ('views/foot/foot.php');
+include ('views/global/foot/foot.php');
