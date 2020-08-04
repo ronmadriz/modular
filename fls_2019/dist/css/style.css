@@ -372,8 +372,6 @@ body #mobileCTA.fixed-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-filter: sepia(600%) hue-rotate(180deg) saturate(900%);
-          filter: sepia(600%) hue-rotate(180deg) saturate(900%);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
