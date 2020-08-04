@@ -389,6 +389,16 @@ body #mobileCTA.fixed-bottom {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
+    .footer__connect--list {
+      margin: 0;
+      padding: 0; }
+    .footer__connect--item {
+      display: inline;
+      list-style: none;
+      height: 1rem;
+      width: 1rem;
+      padding: 0;
+      margin: 0; }
   .footer__logo {
     margin-top: 2rem; }
 
