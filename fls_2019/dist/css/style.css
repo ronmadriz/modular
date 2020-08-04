@@ -376,14 +376,6 @@ body #mobileCTA.fixed-bottom {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .footer:before {
-    background-color: rgba(0, 0, 0, 0.75);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: 1; }
   .footer__boiler {
     margin-bottom: 2rem; }
   .footer__connect {
