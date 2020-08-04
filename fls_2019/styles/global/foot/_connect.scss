@@ -1,0 +1,44 @@
+.footer {
+	&__connect {
+		color: $alternate;
+		display: flex;
+		flex-direction: column;
+	    text-align: center;
+		width: 33%;
+		&--title {
+			display: block;
+			font-weight: 300;
+			margin-bottom: .5rem;
+			width: 100%;			
+		}
+		&--list {
+			align-content: center;
+			display:flex;
+		    justify-content: center;
+			margin:0 0 .5rem;
+			padding:0;
+		}
+		&--item {
+		    display: inline;
+		    list-style: none;
+		    height: 1.25rem;
+		    width: 1.25rem;
+		    padding: 0;
+		    margin: 0 .5rem;
+		}
+		&:after, &:before {
+			align-self: center;			
+			background-color: $accent_2;
+			content: '';
+			display: block;
+			height: .125rem;
+			width: 15%;
+		}
+		&:after {
+			margin-top: .5rem;
+		}
+		&:before {
+			margin-bottom: .5rem;
+		}
+	}
+}
