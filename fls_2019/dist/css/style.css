@@ -840,6 +840,8 @@ html form.lrm-form ul.acf-checkbox-list li {
       -webkit-transform: translateX(0%);
               transform: translateX(0%);
       width: 50%; }
+    .menus__icon {
+      display: none; }
     .menus__item {
       font-weight: 700;
       list-style: none;

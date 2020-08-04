@@ -12,6 +12,9 @@
 			transform: translateX(0%);
 			width: 50%;
 		}
+		&__icon {
+			display:none;
+		}
 		&__item {
 			font-weight: 700;
 			list-style: none;
