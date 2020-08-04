@@ -361,6 +361,14 @@ body #mobileCTA.fixed-bottom {
   .footer__nav .nav-link {
     padding: 0; }
 
+.footer:before {
+  background-color: rgba(0, 0, 0, 0.75);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%; }
+
 html body a {
   color: #156CB3; }
   html body a.dropdown-item {
