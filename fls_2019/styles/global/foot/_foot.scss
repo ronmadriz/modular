@@ -19,15 +19,14 @@
 		&--title {
 			display: block;
 			font-weight: 300;
-			margin-top: 1rem;			
-			margin-bottom: 1rem;			
+			margin-bottom: .5rem;
 			width: 100%;			
 		}
 		&--list {
 			align-content: center;
 			display:flex;
 		    justify-content: center;
-			margin:0 0 1;
+			margin:0 0 .5rem;
 			padding:0;
 		}
 		&--item {
@@ -47,10 +46,10 @@
 			width: 15%;
 		}
 		&:after {
-			margin-top: 1rem;
+			margin-top: .5rem;
 		}
 		&:before {
-			margin-bottom: 1rem;
+			margin-bottom: .5rem;
 		}
 	}
 	&__logo {

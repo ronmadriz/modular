@@ -385,8 +385,7 @@ body #mobileCTA.fixed-bottom {
     .footer__connect--title {
       display: block;
       font-weight: 300;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: .5rem;
       width: 100%; }
     .footer__connect--list {
       -ms-flex-line-pack: center;
@@ -397,7 +396,7 @@ body #mobileCTA.fixed-bottom {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin: 0 0 1;
+      margin: 0 0 .5rem;
       padding: 0; }
     .footer__connect--item {
       display: inline;
@@ -415,9 +414,9 @@ body #mobileCTA.fixed-bottom {
       height: .125rem;
       width: 15%; }
     .footer__connect:after {
-      margin-top: 1rem; }
+      margin-top: .5rem; }
     .footer__connect:before {
-      margin-bottom: 1rem; }
+      margin-bottom: .5rem; }
   .footer__logo {
     margin-top: 2rem; }
   .footer .social__link svg {
