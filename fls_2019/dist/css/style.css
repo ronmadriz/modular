@@ -378,15 +378,21 @@ body #mobileCTA.fixed-bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
     width: 33%; }
     .footer__connect--title {
       display: block;
       width: 100%; }
     .footer__connect--list {
+      -ms-flex-line-pack: center;
+          align-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       margin: 0;
       padding: 0; }
     .footer__connect--item {
