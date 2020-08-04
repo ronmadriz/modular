@@ -46,6 +46,12 @@
 			height: 1px;
 			width: 15%;
 		}
+		&:after {
+			margin-top: 1rem;
+		}
+		&:before {
+			margin-bottom: 1rem;
+		}
 	}
 	&__logo {
 		margin-top:2rem;

@@ -414,6 +414,10 @@ body #mobileCTA.fixed-bottom {
       display: block;
       height: 1px;
       width: 15%; }
+    .footer__connect:after {
+      margin-top: 1rem; }
+    .footer__connect:before {
+      margin-bottom: 1rem; }
   .footer__logo {
     margin-top: 2rem; }
   .footer .social__link svg {
