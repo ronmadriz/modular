@@ -14,6 +14,7 @@ $mega_args = array(
 	'link_before'     => '',
 	'link_after'      => '',
 	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-	'depth'           => 3,
+	'walker'          => new Footer_Walker(),
+	'depth'           => 2,
 );
 wp_nav_menu($mega_args);
