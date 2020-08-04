@@ -8,4 +8,6 @@ function register_my_menu() {
 	register_nav_menu('sidenav', __('Side Navigation'));
 	register_nav_menu('footer__solution', __('footer__solution', 'footer__solution'));
 	register_nav_menu('mega', __('mega', 'mega'));
+	register_nav_menu('mega_footer', __('mega_footer', 'mega_footer'));
+	register_nav_menu('mega_boiler', __('mega_boiler', 'mega_boiler'));
 }
