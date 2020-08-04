@@ -391,6 +391,25 @@ body #mobileCTA.fixed-bottom {
       -ms-flex-direction: row;
           flex-direction: row; }
 
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 75%; }
+  .footer__menu--list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    list-style: none; }
+
 .footer__connect {
   color: #FFFFFF;
   display: -webkit-box;

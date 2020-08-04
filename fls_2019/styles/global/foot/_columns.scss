@@ -2,5 +2,15 @@
 	&__columns {
 		display: flex;
 		flex-direction: row;		
-	}	
+	}
+	&__menu {
+		display: flex;
+		flex-direction: row;
+		width: 75%;
+		&--list {
+			display: flex;
+			flex-direction: row;
+			list-style: none;			
+		}
+	}
 }
