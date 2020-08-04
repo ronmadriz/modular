@@ -857,6 +857,7 @@ html form.lrm-form ul.acf-checkbox-list li {
           margin-left: .25rem;
           margin-right: .25rem; }
     .menus__link {
+      border: 0;
       color: #156CB3;
       display: inline;
       font-size: 14px;
