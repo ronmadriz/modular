@@ -29,7 +29,7 @@ echo '<ul id="hqinfo" class="footer__menu">'.PHP_EOL;
 echo '<li class="footer__item footer__item--parent">'.PHP_EOL;
 echo '<span class="footer__link">';
 _e('FLS Headquarters', 'fls_core');
-'</span>'.PHP_EOL;
+echo '</span>'.PHP_EOL;
 echo '<ul class="footer__sub">'.PHP_EOL;
 echo '<li class="footer__item"><address>'.$address.'</address>'.PHP_EOL;
 echo '<li class="footer__item"><strong>Phone:</strong> '.$fax.'</li><li class="footer__item"><strong>Fax:</strong> '.$fax.'</li><li class="footer__item"><strong>Email:</strong> <a class="footer__email" href="mailto:'.$email.'?Subject=Information Email from Website Footer">'.$email.'</a></li>'.PHP_EOL;
