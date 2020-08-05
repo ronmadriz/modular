@@ -995,15 +995,15 @@ html form.lrm-form ul.acf-checkbox-list li {
     .menus__item span {
       color: #156CB3;
       cursor: pointer; }
-    .menus__item:not(:last-of-type) {
+    .menus__item:hover .menus__sub {
+      display: block; }
+    .menus__item--parent:not(:last-of-type) {
       margin-right: .5rem; }
-      .menus__item:not(:last-of-type):after {
+      .menus__item--parent:not(:last-of-type):after {
         color: #E6E7E9;
         content: '/';
         margin-left: .25rem;
         margin-right: .25rem; }
-    .menus__item:hover .menus__sub {
-      display: block; }
   .menus__link {
     border: 0;
     color: #156CB3;
@@ -1015,14 +1015,10 @@ html form.lrm-form ul.acf-checkbox-list li {
     .menus__link:hover {
       text-decoration: none; }
   .menus__sub {
-    -webkit-box-shadow: 0.0625rem 0 0.25rem rgba(0, 0, 0, 0.35);
-            box-shadow: 0.0625rem 0 0.25rem rgba(0, 0, 0, 0.35);
+    background: transparent;
+    padding: 1.5rem .5rem 0;
     position: absolute;
-    background: white;
-    padding: .5rem;
-    list-style: none;
-    -webkit-transform: translateY(1.85rem);
-            transform: translateY(1.85rem); }
+    list-style: none; }
     .menus__sub:first-of-type {
       display: none; }
   .menus__list {

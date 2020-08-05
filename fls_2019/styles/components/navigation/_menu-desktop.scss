@@ -22,19 +22,21 @@
 				color:$accent_1;
 				cursor:pointer;
 			}
-			&:not(:last-of-type) {
-			    margin-right: .5rem;
-				&:after {
-					color: $accent_3;
-					content: '/';
-					margin-left: .25rem;
-					margin-right: .25rem;				
-				}
-			}
 			&:hover {
 				.menus__sub {
 					display:block;
 				}
+			}
+			&--parent {
+				&:not(:last-of-type) {
+				    margin-right: .5rem;
+					&:after {
+						color: $accent_3;
+						content: '/';
+						margin-left: .25rem;
+						margin-right: .25rem;				
+					}
+				}				
 			}
 		}
 		&__link {
@@ -50,12 +52,10 @@
 			}
 		}
 		&__sub {
-		    box-shadow: 0.0625rem 0 0.25rem rgba($accent_6,.35);
-			position: absolute;
-		    background: white;
-		    padding: .5rem;
+		    background: transparent;
+		    padding: 1.5rem .5rem 0;
+		    position: absolute;
 		    list-style: none;
-		    transform: translateY(1.85rem);
 			&:first-of-type {
 				display:none;
 			}
