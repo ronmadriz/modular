@@ -28,7 +28,15 @@ echo '<div class="footer__columns">'.PHP_EOL;
 echo '<span class="footer__column footer__menus">'.PHP_EOL;
 include (get_template_directory().'/views/components/navigation/mega-foot.php');
 echo '</span>'.PHP_EOL;
-echo '<span class="footer__column footer__info">'.PHP_EOL;
+echo '<span class="footer__column footer__info">'.PHP_EOL;?>
+<h4 class="footer__info--title">FLS Headquarters</h4>
+<address>2437 Peyton Road<br>Houston, TX 77032 (<a>map</a>)</address>
+<p>
+	<strong>Phone:</strong> 1-800-353-9425<br>
+	<strong>Fax:</strong> 281.448.9225<br>
+	<strong>Email:</strong> info@flexiblelifeline.com
+</p>
+<?
 echo '</span>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '<div class="footer__boiler">'.PHP_EOL;
