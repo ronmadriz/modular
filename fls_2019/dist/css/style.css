@@ -663,159 +663,164 @@ html body .img {
   html body .img .title {
     margin-bottom: 2rem; }
 
-html body main {
-  padding-top: 6.45rem; }
-  @media (min-width: 786px) {
-    html body main {
-      padding-top: 7rem; } }
-  html body main section#breadcrumbs {
-    padding-top: 2rem;
-    font-size: 130%; }
-    html body main section#breadcrumbs ul li:not(:last-of-type):after {
-      content: '/';
-      margin-left: .5rem; }
-  html body main section#main-content {
-    padding-top: 2rem; }
-    html body main section#main-content h1, html body main section#main-content h2, html body main section#main-content h4, html body main section#main-content h5, html body main section#main-content h6 {
-      margin-bottom: 1.75rem; }
-    html body main section#main-content img {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      max-width: 100%; }
-    html body main section#main-content div#brochures {
-      margin-top: .75rem; }
-      html body main section#main-content div#brochures div.item {
-        margin-bottom: .75rem; }
-  html body main section#cta_blue {
-    background-color: #156CB3;
-    padding-top: 1.5rem;
-    padding-bottom: .75rem; }
-    @media (max-width: 786px) {
-      html body main section#cta_blue {
-        margin-top: 1rem; } }
-    html body main section#cta_blue a {
-      display: block;
-      color: #FFFFFF; }
-    html body main section#cta_blue h2 {
-      font-family: "Oswald", helvetica, sans-serif;
-      text-transform: uppercase;
-      font-size: 1.75rem;
-      font-weight: 400;
-      font-style: normal;
-      color: #FFFFFF;
-      text-transform: uppercase;
-      letter-spacing: .01em;
-      line-height: 1.2em;
-      margin-bottom: 1rem; }
-  html body main section #solutions_filter {
-    margin-bottom: 2rem; }
-  @media (min-width: 786px) {
-    html body main section#child_solutions div.item {
-      margin-bottom: 1.4375rem; } }
+html body main section#breadcrumbs {
+  padding-top: 2rem;
+  font-size: 130%; }
+  html body main section#breadcrumbs ul li:not(:last-of-type):after {
+    content: '/';
+    margin-left: .5rem; }
+
+html body main section#main-content {
+  padding-top: 2rem; }
+  html body main section#main-content h1, html body main section#main-content h2, html body main section#main-content h4, html body main section#main-content h5, html body main section#main-content h6 {
+    margin-bottom: 1.75rem; }
+  html body main section#main-content img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%; }
+  html body main section#main-content div#brochures {
+    margin-top: .75rem; }
+    html body main section#main-content div#brochures div.item {
+      margin-bottom: .75rem; }
+
+html body main section#cta_blue {
+  background-color: #156CB3;
+  padding-top: 1.5rem;
+  padding-bottom: .75rem; }
   @media (max-width: 786px) {
-    html body main section#child_solutions div.item .item-thumb {
-      text-align: center;
-      margin-bottom: 1rem; } }
-  html body main section#case_study {
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
-    html body main section#case_study div.item {
+    html body main section#cta_blue {
+      margin-top: 1rem; } }
+  html body main section#cta_blue a {
+    display: block;
+    color: #FFFFFF; }
+  html body main section#cta_blue h2 {
+    font-family: "Oswald", helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: .01em;
+    line-height: 1.2em;
+    margin-bottom: 1rem; }
+
+html body main section #solutions_filter {
+  margin-bottom: 2rem; }
+
+@media (min-width: 786px) {
+  html body main section#child_solutions div.item {
+    margin-bottom: 1.4375rem; } }
+
+@media (max-width: 786px) {
+  html body main section#child_solutions div.item .item-thumb {
+    text-align: center;
+    margin-bottom: 1rem; } }
+
+html body main section#case_study {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  html body main section#case_study div.item {
+    margin-bottom: 1rem; }
+    html body main section#case_study div.item div.content {
       margin-bottom: 1rem; }
-      html body main section#case_study div.item div.content {
-        margin-bottom: 1rem; }
-        html body main section#case_study div.item div.content h3 {
-          margin-top: 0;
-          text-transform: uppercase;
-          margin-bottom: .5rem;
-          line-height: 1.2;
-          font-family: "Oswald", helvetica, sans-serif;
-          font-weight: 600;
-          font-size: 1.375rem; }
-      html body main section#case_study div.item div.img {
-        position: relative;
-        overflow: hidden;
-        height: 175px;
-        width: 100%; }
-        html body main section#case_study div.item div.img img {
-          position: absolute;
-          left: -100%;
-          right: -100%;
-          top: -100%;
-          bottom: -100%;
-          margin: auto;
-          min-height: 100%;
-          min-width: -webkit-fit-content;
-          min-width: -moz-fit-content;
-          min-width: fit-content; }
-          @media (min-width: 786px) {
-            html body main section#case_study div.item div.img img {
-              width: 100%; } }
-  html body main section#testimonial .content {
-    border-color: #f0f0f0;
-    background-color: #f7f7f7;
-    border-radius: .25rem;
-    padding: 2.18rem 2.18rem 1.25rem 2.4rem;
-    word-wrap: break-word;
-    margin-bottom: 2.18rem; }
-    html body main section#testimonial .content i.fas {
-      font-family: 'Font Awesome 5 Free';
-      content: '\f099';
-      display: block;
-      position: absolute;
-      z-index: 1;
-      color: #000;
-      left: -.75rem;
-      top: 40%;
-      font-size: 1.75rem; }
-  html body main section#faq {
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
-    html body main section#faq ul.nav.nav-tabs {
-      border-color: #EEEEEE; }
-      html body main section#faq ul.nav.nav-tabs li.nav-item a.nav-link {
-        border-bottom: 0;
-        padding: .875rem 1.25rem; }
-        html body main section#faq ul.nav.nav-tabs li.nav-item a.nav-link.active {
-          font-weight: bold;
-          border-color: #EEEEEE;
-          background-color: #F8F8F8; }
-    html body main section#faq div.tab-content {
-      padding: 1.25rem;
-      border-width: 1px;
-      border-style: solid;
-      border-top: 0 solid transparent;
-      border-color: #EEEEEE;
-      background-color: #F8F8F8; }
-      html body main section#faq div.tab-content dl {
-        padding-left: 1.5275rem; }
-        html body main section#faq div.tab-content dl dt h4 {
-          font-size: 1.125rem;
-          font-weight: bold;
-          color: #333333; }
-        html body main section#faq div.tab-content dl dd {
-          margin-top: .85rem; }
-          html body main section#faq div.tab-content dl dd p {
-            font-size: .85rem; }
-  html body main section#literature {
-    padding: 2rem 0; }
-    html body main section#literature ul.literature_list li {
-      padding-left: 0;
-      padding-right: 0; }
-      html body main section#literature ul.literature_list li h4 {
-        margin-top: 1rem; }
-        html body main section#literature ul.literature_list li h4 a {
-          color: #156CB3;
-          font-size: 1.125rem;
-          font-weight: bold; }
-      html body main section#literature ul.literature_list li.list-inline-item:not(:last-child) {
-        margin-right: 0; }
-  html body main section#child_grid .img_grid .item img {
-    margin-top: 0;
-    margin-bottom: 0; }
-    @media (min-width768px) {
-      html body main section#child_grid .img_grid .item img {
-        height: 100%;
-        width: 100%; } }
+      html body main section#case_study div.item div.content h3 {
+        margin-top: 0;
+        text-transform: uppercase;
+        margin-bottom: .5rem;
+        line-height: 1.2;
+        font-family: "Oswald", helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 1.375rem; }
+    html body main section#case_study div.item div.img {
+      position: relative;
+      overflow: hidden;
+      height: 175px;
+      width: 100%; }
+      html body main section#case_study div.item div.img img {
+        position: absolute;
+        left: -100%;
+        right: -100%;
+        top: -100%;
+        bottom: -100%;
+        margin: auto;
+        min-height: 100%;
+        min-width: -webkit-fit-content;
+        min-width: -moz-fit-content;
+        min-width: fit-content; }
+        @media (min-width: 786px) {
+          html body main section#case_study div.item div.img img {
+            width: 100%; } }
+
+html body main section#testimonial .content {
+  border-color: #f0f0f0;
+  background-color: #f7f7f7;
+  border-radius: .25rem;
+  padding: 2.18rem 2.18rem 1.25rem 2.4rem;
+  word-wrap: break-word;
+  margin-bottom: 2.18rem; }
+  html body main section#testimonial .content i.fas {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f099';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    color: #000;
+    left: -.75rem;
+    top: 40%;
+    font-size: 1.75rem; }
+
+html body main section#faq {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  html body main section#faq ul.nav.nav-tabs {
+    border-color: #EEEEEE; }
+    html body main section#faq ul.nav.nav-tabs li.nav-item a.nav-link {
+      border-bottom: 0;
+      padding: .875rem 1.25rem; }
+      html body main section#faq ul.nav.nav-tabs li.nav-item a.nav-link.active {
+        font-weight: bold;
+        border-color: #EEEEEE;
+        background-color: #F8F8F8; }
+  html body main section#faq div.tab-content {
+    padding: 1.25rem;
+    border-width: 1px;
+    border-style: solid;
+    border-top: 0 solid transparent;
+    border-color: #EEEEEE;
+    background-color: #F8F8F8; }
+    html body main section#faq div.tab-content dl {
+      padding-left: 1.5275rem; }
+      html body main section#faq div.tab-content dl dt h4 {
+        font-size: 1.125rem;
+        font-weight: bold;
+        color: #333333; }
+      html body main section#faq div.tab-content dl dd {
+        margin-top: .85rem; }
+        html body main section#faq div.tab-content dl dd p {
+          font-size: .85rem; }
+
+html body main section#literature {
+  padding: 2rem 0; }
+  html body main section#literature ul.literature_list li {
+    padding-left: 0;
+    padding-right: 0; }
+    html body main section#literature ul.literature_list li h4 {
+      margin-top: 1rem; }
+      html body main section#literature ul.literature_list li h4 a {
+        color: #156CB3;
+        font-size: 1.125rem;
+        font-weight: bold; }
+    html body main section#literature ul.literature_list li.list-inline-item:not(:last-child) {
+      margin-right: 0; }
+
+html body main section#child_grid .img_grid .item img {
+  margin-top: 0;
+  margin-bottom: 0; }
+  @media (min-width768px) {
+    html body main section#child_grid .img_grid .item img {
+      height: 100%;
+      width: 100%; } }
 
 html body svg#contacts path:hover {
   opacity: .9; }
@@ -2057,106 +2062,108 @@ svg .region path {
   letter-spacing: .075rem;
   text-transform: uppercase; }
 
-html body#page-home main {
-  padding-top: 6.5rem; }
-  html body#page-home main section#home_banner {
-    overflow-y: hidden; }
-    html body#page-home main section#home_banner div.container, html body#page-home main section#home_banner div.container-fluid, html body#page-home main section#home_banner div.row, html body#page-home main section#home_banner div.col-12 {
-      padding-left: 0;
-      padding-right: 0; }
-    html body#page-home main section#home_banner div.row {
-      margin-left: 0;
-      margin-right: 0; }
-    html body#page-home main section#home_banner div.carousel div.carousel-inner div.carousel-item {
-      max-height: 650px; }
-      html body#page-home main section#home_banner div.carousel div.carousel-inner div.carousel-item img.brand {
-        position: absolute;
-        z-index: 2;
-        top: 20%;
-        left: 20%;
-        height: 7rem; }
-      html body#page-home main section#home_banner div.carousel div.carousel-inner div.carousel-item img.background {
-        display: block;
-        min-width: 100%;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-        z-index: 2; }
-      html body#page-home main section#home_banner div.carousel div.carousel-inner div.carousel-item h1 {
-        position: absolute;
-        z-index: 4;
-        bottom: 0;
-        margin-bottom: 0;
-        background-color: #156CB3;
-        color: #FFFFFF;
-        padding: 1.25rem 1.5rem;
-        font-size: 1.4375rem;
-        font-family: "Oswald", helvetica, sans-serif; }
-        @media (min-width: 786px) {
-          html body#page-home main section#home_banner div.carousel div.carousel-inner div.carousel-item h1 {
-            padding: 1.25rem 1.5rem 1.25rem 18rem; } }
-      html body#page-home main section#home_banner div.carousel div.carousel-inner div.carousel-item a {
-        position: absolute;
-        display: block;
-        height: 100%;
-        width: 100%;
-        z-index: 3; }
-    html body#page-home main section#home_banner div.carousel ol.carousel-indicators {
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end; }
-      html body#page-home main section#home_banner div.carousel ol.carousel-indicators li {
-        height: 1rem;
-        width: 1rem;
-        background-color: rgba(255, 255, 255, 0.85);
-        border: 1px solid #FFFFFF;
-        cursor: pointer; }
-        html body#page-home main section#home_banner div.carousel ol.carousel-indicators li.active {
-          background-color: #156CB3; }
-  html body#page-home main section#home_summary {
-    padding-top: 2rem;
-    padding-bottom: 0rem; }
-    html body#page-home main section#home_summary p {
-      font-size: 1.1275rem;
-      margin-bottom: 1.75rem; }
-  html body#page-home main section#home_industries {
-    padding-top: 1rem;
-    padding-bottom: 2rem; }
-    html body#page-home main section#home_industries .title {
-      margin-bottom: 2rem; }
-    html body#page-home main section#home_industries div.img_grid div.item:first-of-type {
-      background-color: #E6E7E9; }
-      html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption {
-        top: 0; }
-        html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption h2 {
-          color: #156CB3;
-          font-size: 1.4375rem; }
-          html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption h2 a {
-            color: #404040; }
-            html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption h2 a:hover {
-              text-decoration: none; }
-        html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption span {
-          font-size: 1.1875rem;
-          line-height: 2.5rem; }
-          html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption span a {
-            color: #404040; }
-            html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption span a:hover {
-              text-decoration: none; }
-    @media (max-width: 786px) {
-      html body#page-home main section#home_industries div.img_grid div.item {
-        border-bottom: 5px solid #FFFFFF;
-        border-right: 5px solid #FFFFFF; } }
-  html body#page-home main section#home_testimonials {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+html body#page-home main section#home_banner {
+  overflow-y: hidden; }
+  html body#page-home main section#home_banner div.container, html body#page-home main section#home_banner div.container-fluid, html body#page-home main section#home_banner div.row, html body#page-home main section#home_banner div.col-12 {
+    padding-left: 0;
+    padding-right: 0; }
+  html body#page-home main section#home_banner div.row {
+    margin-left: 0;
+    margin-right: 0; }
+  html body#page-home main section#home_banner div.carousel div.carousel-inner div.carousel-item {
+    max-height: 650px; }
+    html body#page-home main section#home_banner div.carousel div.carousel-inner div.carousel-item img.brand {
+      position: absolute;
+      z-index: 2;
+      top: 20%;
+      left: 20%;
+      height: 7rem; }
+    html body#page-home main section#home_banner div.carousel div.carousel-inner div.carousel-item img.background {
+      display: block;
+      min-width: 100%;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      z-index: 2; }
+    html body#page-home main section#home_banner div.carousel div.carousel-inner div.carousel-item h1 {
+      position: absolute;
+      z-index: 4;
+      bottom: 0;
+      margin-bottom: 0;
+      background-color: #156CB3;
+      color: #FFFFFF;
+      padding: 1.25rem 1.5rem;
+      font-size: 1.4375rem;
+      font-family: "Oswald", helvetica, sans-serif; }
+      @media (min-width: 786px) {
+        html body#page-home main section#home_banner div.carousel div.carousel-inner div.carousel-item h1 {
+          padding: 1.25rem 1.5rem 1.25rem 18rem; } }
+    html body#page-home main section#home_banner div.carousel div.carousel-inner div.carousel-item a {
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      z-index: 3; }
+  html body#page-home main section#home_banner div.carousel ol.carousel-indicators {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    html body#page-home main section#home_banner div.carousel ol.carousel-indicators li {
+      height: 1rem;
+      width: 1rem;
+      background-color: rgba(255, 255, 255, 0.85);
+      border: 1px solid #FFFFFF;
+      cursor: pointer; }
+      html body#page-home main section#home_banner div.carousel ol.carousel-indicators li.active {
+        background-color: #156CB3; }
+
+html body#page-home main section#home_summary {
+  padding-top: 2rem;
+  padding-bottom: 0rem; }
+  html body#page-home main section#home_summary p {
+    font-size: 1.1275rem;
+    margin-bottom: 1.75rem; }
+
+html body#page-home main section#home_industries {
+  padding-top: 1rem;
+  padding-bottom: 2rem; }
+  html body#page-home main section#home_industries .title {
+    margin-bottom: 2rem; }
+  html body#page-home main section#home_industries div.img_grid div.item:first-of-type {
     background-color: #E6E7E9; }
-    html body#page-home main section#home_testimonials .carousel-inner {
-      margin-top: 2rem;
-      margin-bottom: 2rem; }
+    html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption {
+      top: 0; }
+      html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption h2 {
+        color: #156CB3;
+        font-size: 1.4375rem; }
+        html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption h2 a {
+          color: #404040; }
+          html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption h2 a:hover {
+            text-decoration: none; }
+      html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption span {
+        font-size: 1.1875rem;
+        line-height: 2.5rem; }
+        html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption span a {
+          color: #404040; }
+          html body#page-home main section#home_industries div.img_grid div.item:first-of-type div.caption span a:hover {
+            text-decoration: none; }
   @media (max-width: 786px) {
-    html body#page-home main section#home_clients div.item {
+    html body#page-home main section#home_industries div.img_grid div.item {
       border-bottom: 5px solid #FFFFFF;
       border-right: 5px solid #FFFFFF; } }
+
+html body#page-home main section#home_testimonials {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #E6E7E9; }
+  html body#page-home main section#home_testimonials .carousel-inner {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+
+@media (max-width: 786px) {
+  html body#page-home main section#home_clients div.item {
+    border-bottom: 5px solid #FFFFFF;
+    border-right: 5px solid #FFFFFF; } }
 
 html body#page-home footer section#foot_call_cta {
   margin-top: 0; }
