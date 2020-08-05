@@ -437,7 +437,11 @@ body #mobileCTA.fixed-bottom {
 
 .footer__link {
   color: #FFFFFF;
+  display: block;
   line-height: 1.75; }
+  .footer__link:hover {
+    color: #FECD06;
+    text-decoration: none; }
 
 .footer__sub {
   list-style: none;
