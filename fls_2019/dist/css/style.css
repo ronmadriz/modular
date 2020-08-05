@@ -484,7 +484,7 @@ body #mobileCTA.fixed-bottom {
     content: '';
     display: block;
     height: .125rem;
-    width: 15%; }
+    width: 25%; }
   .footer__connect:after {
     margin-top: .5rem; }
   .footer__connect:before {
