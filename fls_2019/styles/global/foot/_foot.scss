@@ -14,10 +14,11 @@
 			justify-content: center;			
 		}
 		&--link {
+		    border-right: 1px solid;
 			color:$alternate;
 		    font-style: normal;
 		    margin-left: .5rem;
-		    border-right: 1px solid;
+	        margin-right: .5rem;
 		    padding-right: .5rem;
 		    &:first-of-type {
 		    	margin-left:0;

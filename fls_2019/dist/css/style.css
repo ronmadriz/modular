@@ -381,10 +381,11 @@ body #mobileCTA.fixed-bottom {
           -ms-flex-pack: center;
               justify-content: center; }
     .footer__boiler--link {
+      border-right: 1px solid;
       color: #FFFFFF;
       font-style: normal;
       margin-left: .5rem;
-      border-right: 1px solid;
+      margin-right: .5rem;
       padding-right: .5rem; }
       .footer__boiler--link:first-of-type {
         margin-left: 0; }
