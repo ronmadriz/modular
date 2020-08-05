@@ -5,6 +5,10 @@
 	}
 	&__link {
 		color:$alternate;
+	    font-size: 1.0625rem;
+	    padding-left: .5rem;
+	    padding-right: .5rem;
+	    text-transform: uppercase;
 		&:hover {
 			color:$accent_2;
 			text-decoration:none;

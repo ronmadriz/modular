@@ -1369,7 +1369,11 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
   list-style: none; }
 
 .boiler__link {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  font-size: 1.0625rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  text-transform: uppercase; }
   .boiler__link:hover {
     color: #FECD06;
     text-decoration: none; }
