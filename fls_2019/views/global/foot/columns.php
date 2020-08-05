@@ -7,7 +7,26 @@ $email   = get_theme_mod('footer_email');
 echo '<div class="footer__columns">'.PHP_EOL;
 echo '<span class="footer__column footer__menus">'.PHP_EOL;
 echo '<ul id="mega_footer" class="footer__menu">'.PHP_EOL;
-include (get_template_directory().'/views/components/navigation/mega-foot.php');
+$mega_args = array(
+	'theme_location'  => 'mega_footer',
+	'menu'            => 'mega_footer',
+	'container'       => '',
+	'container_class' => '',
+	'container_id'    => '',
+	'echo'            => true,
+	'menu_class'      => 'footer__menu',
+	'container'       => false,
+	'container'       => false,
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'items_wrap'      => '',
+	'items_wrap'      => '',
+	'walker'          => new Footer_Walker(),
+	'depth'           => 2,
+);
+wp_nav_menu($mega_args);
 echo '<li class="footer__item footer__item--parent">'.PHP_EOL;
 echo '<span class="footer__link">';
 _e('FLS Headquarters', 'fls_core');
