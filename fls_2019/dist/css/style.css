@@ -418,6 +418,7 @@ body #mobileCTA.fixed-bottom {
   width: 100%; }
 
 .footer__info {
+  color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

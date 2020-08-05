@@ -19,6 +19,7 @@
 		width:100%;
 	}
 	&__info {
+		color:$alternate;
 		display: flex;
 	    flex-direction: column;
 	    width: 25%;
