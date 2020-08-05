@@ -2,12 +2,12 @@
 	&__columns {
 		display: flex;
 		flex-direction: row;
+		padding: 2rem 0;
 		width: 100%;		
 	}
 	&__menus {
 		display: flex;
 		flex-direction: row;
-		padding: 2rem 0;
 		width: 75%;
 	}
 	&__menu {
@@ -27,12 +27,14 @@
 		&--parent {
 		    width: 33%;
 		    > .footer__link {
-		    	border-color:$accent_2;
-				color: $accent_2;
-				display: block;
-				margin-right: .5rem;
-				max-width: 80%;
-				text-transform: uppercase;
+		    	&--parent {
+					border-bottom:0.0625rem solid $accent_2;
+					color: $accent_2;
+					display: block;
+					margin-right: .5rem;
+					max-width: 80%;
+					text-transform: uppercase;	
+		    	}
 		    }
 		}
 	}
