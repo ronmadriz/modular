@@ -9,12 +9,14 @@
 	}
 	&__item {
 		color:$alternate;
-		&:not(:last-of-type):after {
-		    color: $alternate;
-		    content: '/';
-		    margin-right: .5rem;
-		    margin-left: .75rem;
-		}		
+		@include for-tablet-up {
+			&:not(:last-of-type):after {
+			    color: $alternate;
+			    content: '/';
+			    margin-right: .5rem;
+			    margin-left: .75rem;
+			}
+		}
 	}
 	&__link {
 		color:$alternate;
