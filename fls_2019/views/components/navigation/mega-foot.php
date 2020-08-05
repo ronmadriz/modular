@@ -13,8 +13,7 @@ $mega_args = array(
 	'after'           => '',
 	'link_before'     => '',
 	'link_after'      => '',
-	'items_wrap'      => '',
-	'items_wrap'      => '',
+	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 	'walker'          => new Footer_Walker(),
 	'depth'           => 2,
 );
