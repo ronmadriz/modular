@@ -177,4 +177,5 @@ wp_reset_postdata();
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 endif;
-get_footer();?>
+get_footer();
+?>
