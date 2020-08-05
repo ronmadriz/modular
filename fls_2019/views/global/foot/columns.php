@@ -11,7 +11,7 @@ echo '</span>'.PHP_EOL;
 echo '<span class="footer__column footer__info">'.PHP_EOL;
 echo '<h4 class="footer__title">';
 _e('FLS Headquarters', 'fls_core');
-'</h4>'.PHP_EOL;
+echo '</h4>'.PHP_EOL;
 echo '<address>'.$address.'</address>'.PHP_EOL;
 echo '<p><strong>Phone:</strong> '.$fax.'<br><strong>Fax:</strong> '.$fax.'<br><strong>Email:</strong> <a class="footer__email" href="mailto:'.$email.'?Subject=Information Email from Website Footer">'.$email.'</a></p>'.PHP_EOL;
 echo '</span>'.PHP_EOL;
