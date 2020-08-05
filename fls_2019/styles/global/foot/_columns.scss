@@ -27,14 +27,12 @@
 		&--parent {
 		    width: 33%;
 		    > .footer__link {
-		    	&--parent {
-					border-bottom:0.0625rem solid $accent_2;
-					color: $accent_2;
-					display: block;
-					margin-right: .5rem;
-					max-width: 80%;
-					text-transform: uppercase;	
-		    	}
+				border-bottom:0.0625rem solid $accent_2;
+				color: $accent_2;
+				display: block;
+				margin-right: .5rem;
+				max-width: 80%;
+				text-transform: uppercase;
 		    }
 		}
 	}

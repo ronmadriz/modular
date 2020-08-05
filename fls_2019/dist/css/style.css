@@ -427,7 +427,7 @@ body #mobileCTA.fixed-bottom {
   color: #FFFFFF; }
   .footer__item--parent {
     width: 33%; }
-    .footer__item--parent > .footer__link--parent {
+    .footer__item--parent > .footer__link {
       border-bottom: 0.0625rem solid #FECD06;
       color: #FECD06;
       display: block;
