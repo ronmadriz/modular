@@ -1344,6 +1344,28 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
     margin: 0;
     padding: 0;
     width: 100%; }
+  .footer__info {
+    color: #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: .81rem;
+    font-weight: 500;
+    width: 25%; }
+    .footer__info--title {
+      border-bottom: 0.0625rem solid #FECD06;
+      color: #FECD06;
+      display: block;
+      font-size: .9rem;
+      font-weight: 700;
+      line-height: 1.75;
+      margin-right: .5rem;
+      max-width: 80%;
+      text-transform: uppercase; }
   .footer__item {
     color: #FFFFFF; }
     .footer__item--parent {
