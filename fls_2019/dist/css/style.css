@@ -438,7 +438,10 @@ body #mobileCTA.fixed-bottom {
 .footer__link {
   color: #FFFFFF;
   display: block;
-  line-height: 1.75; }
+  font-weight: 500;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
   .footer__link:hover {
     color: #FECD06;
     text-decoration: none; }

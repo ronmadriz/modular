@@ -39,7 +39,10 @@
 	&__link {
 		color:$alternate;
 		display: block;
+	    font-weight: 500;
 	    line-height: 1.75;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	    &:hover {
 	    	color:$accent_2;
 	    	text-decoration: none;
