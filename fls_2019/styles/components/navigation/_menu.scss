@@ -67,13 +67,15 @@
 		padding:.5rem 0 .5rem 1rem;
 		text-transform: uppercase;
 		width:100%;
-		&:before {
-			color:$accent_1;
-		    content: '\2022';
-		    font-size: 1.5rem;
-		    margin-right: .5rem;
-		    position: relative;
-		    top: .175rem;
+		@include for-phone-only {
+			&:before {
+				color:$accent_1;
+			    content: '\2022';
+			    font-size: 1.5rem;
+			    margin-right: .5rem;
+			    position: relative;
+			    top: .175rem;
+			}
 		}
 	}
 	&__sub {

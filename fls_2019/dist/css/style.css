@@ -918,13 +918,14 @@ html form.lrm-form ul.acf-checkbox-list li {
     padding: .5rem 0 .5rem 1rem;
     text-transform: uppercase;
     width: 100%; }
-    .menus__link:before {
-      color: #156CB3;
-      content: '\2022';
-      font-size: 1.5rem;
-      margin-right: .5rem;
-      position: relative;
-      top: .175rem; }
+    @media (max-width: 786px) {
+      .menus__link:before {
+        color: #156CB3;
+        content: '\2022';
+        font-size: 1.5rem;
+        margin-right: .5rem;
+        position: relative;
+        top: .175rem; } }
   .menus__sub {
     display: none;
     list-style: none;
