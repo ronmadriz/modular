@@ -1368,6 +1368,14 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
   display: flex;
   list-style: none; }
 
+.boiler__item {
+  color: #FFFFFF; }
+  .boiler__item:not(:last-of-type):after {
+    color: #FFFFFF;
+    content: '/';
+    margin-right: .5rem;
+    margin-left: .75rem; }
+
 .boiler__link {
   color: #FFFFFF;
   font-size: 1.0625rem;
