@@ -1045,6 +1045,8 @@ html form.lrm-form ul.acf-checkbox-list li {
       padding: .25rem 1rem;
       text-align: center;
       text-transform: none; }
+      .menus__sub .menus__link:hover {
+        color: #156CB3; }
     .menus__sub .menus__item:first-of-type .menus__link {
       border-radius: .625rem .625rem 0 0;
       padding-top: 1rem; }
