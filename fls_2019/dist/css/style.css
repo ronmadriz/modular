@@ -436,12 +436,14 @@ body #mobileCTA.fixed-bottom {
       text-transform: uppercase; }
 
 .footer__link {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  line-height: 1.75; }
 
 .footer__sub {
   list-style: none;
   -webkit-padding-start: 0;
-          padding-inline-start: 0; }
+          padding-inline-start: 0;
+  padding-top: 1rem; }
 
 .footer__connect {
   color: #FFFFFF;

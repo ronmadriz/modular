@@ -38,9 +38,11 @@
 	}
 	&__link {
 		color:$alternate;
+	    line-height: 1.75;
 	}
 	&__sub {
 	    list-style: none;
 		padding-inline-start: 0;
+	    padding-top: 1rem;
 	}
 }
