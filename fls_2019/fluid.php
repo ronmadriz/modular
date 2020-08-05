@@ -4,7 +4,7 @@
  */
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
-include 'header-fluid.php';
+get_header();
 
 $banner_img           = get_field('banner');
 $alternate_page_title = get_field('alternate_page_title');

@@ -1,7 +1,7 @@
 <?php
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
-include 'header-fluid.php';
+get_header();
 $banner_img = get_the_post_thumbnail_url();
 // BANNER
 echo '<section id="banner"'.(empty($banner_img)?' class="no_img"':'').'>'.PHP_EOL;
@@ -108,5 +108,5 @@ echo '<div id="cfCTA_Img" class="d-flex d-md-none justify-content-center align-i
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
-include 'footer-fluid.php';
+get_footer();
 ?>

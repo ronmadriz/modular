@@ -1,7 +1,7 @@
 <?php
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
-include 'header-fluid.php';
+get_header();
 $page_for_posts       = get_option('page_for_posts');
 $banner_img           = get_field('banner');
 $alternate_page_title = get_field('alternate_page_title', $page_for_posts);
@@ -39,5 +39,5 @@ echo '<div id="cfCTA_Img" class="d-flex d-md-none justify-content-center align-i
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
-include 'footer-fluid.php';
+get_footer();
 ?>

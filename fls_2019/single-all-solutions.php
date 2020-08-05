@@ -6,7 +6,7 @@ Template Post Type: solutions
 
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
-include 'header-fluid.php';
+get_header();
 
 $banner_img = get_field('banner');
 // BANNER
@@ -120,5 +120,5 @@ wp_reset_postdata();
 echo '</div>'.PHP_EOL;
 echo '</section>'.PHP_EOL;
 endif;
-include 'footer-fluid.php';
+get_footer();
 ?>

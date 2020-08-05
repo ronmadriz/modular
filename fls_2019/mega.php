@@ -2,6 +2,6 @@
 /**
  * Template Name: Mega
  */
-include 'header2020.php';
+get_header();
 echo '<section id="mega"></section>'.PHP_EOL;
 get_footer();

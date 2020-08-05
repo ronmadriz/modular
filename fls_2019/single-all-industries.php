@@ -5,7 +5,7 @@ Template Post Type: industries
  */
 $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
-include 'header-fluid.php';
+get_header();
 $banner_img = get_field('banner');
 // BANNER
 echo '<section id="banner"'.(empty($banner_img)?' class="no_img"':'').'>'.PHP_EOL;
@@ -106,4 +106,4 @@ if ($contact_form_code) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
-include 'footer-fluid.php';?>
+get_footer();?>

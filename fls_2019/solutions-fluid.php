@@ -6,7 +6,7 @@ Template Post Type: Solutions
 global $post;
 $post_id = $post->ID;
 
-include 'header-fluid.php';
+get_header();
 
 $banner_img           = get_field('banner');
 $alternate_page_title = get_field('alternate_page_title');
@@ -563,5 +563,5 @@ if (have_rows('contact_form_cta')) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
-include 'footer-fluid.php';
+get_footer();
 ?>
