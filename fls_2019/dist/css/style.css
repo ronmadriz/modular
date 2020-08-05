@@ -1365,6 +1365,8 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
