@@ -21,7 +21,7 @@
 		&--parent {
 		    width:50%;
 		    @include for-tablet-up {
-		    	width:18.75rem;
+		    	width:25%;
 		    }
 		    > .footer__link {
 				border-bottom:0.0625rem solid $accent_2;

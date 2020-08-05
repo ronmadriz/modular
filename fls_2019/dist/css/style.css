@@ -1378,7 +1378,7 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
       width: 50%; }
       @media (min-width: 786px) {
         .footer__item--parent {
-          width: 18.75rem; } }
+          width: 25%; } }
       .footer__item--parent > .footer__link {
         border-bottom: 0.0625rem solid #FECD06;
         color: #FECD06;
