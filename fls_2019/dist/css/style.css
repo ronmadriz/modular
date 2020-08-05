@@ -388,9 +388,9 @@ body #mobileCTA.fixed-bottom {
       padding-right: .5rem; }
       .footer__boiler--link:first-of-type {
         margin-left: 0; }
-      .footer__boiler--link:last-of-type {
-        border-color: transparent;
-        padding-right: 0; }
+    .footer__boiler--privacy {
+      border-color: transparent;
+      padding-right: 0; }
   .footer__logo {
     margin-top: 2rem; }
   .footer .wrapper {
