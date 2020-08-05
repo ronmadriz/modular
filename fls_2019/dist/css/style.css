@@ -400,6 +400,7 @@ body #mobileCTA.fixed-bottom {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 2rem 0;
   width: 75%; }
 
 .footer__menu {
