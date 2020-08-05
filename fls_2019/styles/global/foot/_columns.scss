@@ -20,7 +20,17 @@
 	}
 	&__info {
 		display: flex;
+	    flex-direction: column;
 	    width: 25%;
+	    &--title {
+			border-bottom: .0625rem solid $accent_2;
+			color: $accent_2;
+			display: block;
+			font-size:.9rem;
+			margin-right: .5rem;
+			max-width: 80%;
+			text-transform: uppercase;	    	
+	    }
 	}
 	&__item {
 		color:$alternate;

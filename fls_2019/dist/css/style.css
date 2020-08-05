@@ -421,7 +421,19 @@ body #mobileCTA.fixed-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 25%; }
+  .footer__info--title {
+    border-bottom: 0.0625rem solid #FECD06;
+    color: #FECD06;
+    display: block;
+    font-size: .9rem;
+    margin-right: .5rem;
+    max-width: 80%;
+    text-transform: uppercase; }
 
 .footer__item {
   color: #FFFFFF; }
