@@ -1026,7 +1026,9 @@ html form.lrm-form ul.acf-checkbox-list li {
             filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
     height: .5rem;
     margin-left: .5rem;
-    width: .5rem; } }
+    width: .5rem; }
+  .menus__list > .menus__item--parent:nth-of-type(2) {
+    display: none; } }
 
 body header nav.navbar {
   -webkit-box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.24);
