@@ -34,7 +34,7 @@ echo '<span class="footer__column footer__info">'.PHP_EOL;?>
 <p>
 	<strong>Phone:</strong> 1-800-353-9425<br>
 	<strong>Fax:</strong> 281.448.9225<br>
-	<strong>Email:</strong> <a href="mailto:info@flexiblelifeline.com?Subject=Information Email from Website Footer">info@flexiblelifeline.com</a>
+	<strong>Email:</strong> <a class="footer__email" href="mailto:info@flexiblelifeline.com?Subject=Information Email from Website Footer">info@flexiblelifeline.com</a>
 </p>
 <?
 echo '</span>'.PHP_EOL;

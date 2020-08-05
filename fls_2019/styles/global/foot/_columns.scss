@@ -39,6 +39,13 @@
 			text-transform: uppercase;	    	
 	    }
 	}
+	&__email {
+		color:$alternate;
+		&:hover {
+			color:$accent_2;
+			text-decoration:none;
+		}
+	}
 	&__item {
 		color:$alternate;
 		&--parent {

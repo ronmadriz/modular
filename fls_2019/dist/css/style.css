@@ -442,6 +442,12 @@ body #mobileCTA.fixed-bottom {
     max-width: 80%;
     text-transform: uppercase; }
 
+.footer__email {
+  color: #FFFFFF; }
+  .footer__email:hover {
+    color: #FECD06;
+    text-decoration: none; }
+
 .footer__item {
   color: #FFFFFF; }
   .footer__item--parent {
