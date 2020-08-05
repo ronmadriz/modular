@@ -4,7 +4,7 @@
 	&__menus {
 		display: flex;
 		flex-direction: row;
-		width: 100%;
+		width: 56.25rem;
 	}
 	&__menu {
 		display: flex;
@@ -20,7 +20,7 @@
 		&--parent {
 		    width:50%;
 		    @include for-tablet-up {
-		    	width:25%;
+		    	width:18.75rem;
 		    }
 		    > .footer__link {
 				border-bottom:0.0625rem solid $accent_2;

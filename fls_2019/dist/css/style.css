@@ -436,7 +436,7 @@ body #mobileCTA.fixed-bottom {
           flex-direction: column;
   font-size: .81rem;
   font-weight: 500;
-  width: 25%; }
+  width: 18.75rem; }
   .footer__info--title {
     border-bottom: 0.0625rem solid #FECD06;
     color: #FECD06;
@@ -1354,7 +1354,7 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100%; }
+    width: 56.25rem; }
   .footer__menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1376,7 +1376,7 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
       width: 50%; }
       @media (min-width: 786px) {
         .footer__item--parent {
-          width: 25%; } }
+          width: 18.75rem; } }
       .footer__item--parent > .footer__link {
         border-bottom: 0.0625rem solid #FECD06;
         color: #FECD06;
