@@ -386,8 +386,8 @@ body #mobileCTA.fixed-bottom {
       font-style: normal;
       margin-left: .5rem;
       padding-right: .5rem; }
-      .footer__boiler--link:first-of-type {
-        margin-left: 0; }
+    .footer__boiler--copyright {
+      margin-left: 0; }
     .footer__boiler--privacy {
       border-color: transparent;
       padding-right: 0; }
