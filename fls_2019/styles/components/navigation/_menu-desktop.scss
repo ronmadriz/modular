@@ -27,7 +27,7 @@
 					display:block;
 				}
 			}
-			&--parent {
+			>.menus__item--parent {
 				&:not(:last-of-type) {
 				    margin-right: .5rem;
 					&:after {
