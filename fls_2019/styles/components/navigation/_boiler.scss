@@ -3,4 +3,11 @@
 		display: flex;
 		list-style: none;
 	}
+	&__link {
+		color:$alternate;
+		&:hover {
+			color:$accent_2;
+			text-decoration:none;
+		}
+	}
 }
