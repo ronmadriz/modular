@@ -27,17 +27,17 @@
 					display:block;
 				}
 			}
-			>.menus__item--parent {
-				&:not(:last-of-type) {
-				    margin-right: .5rem;
-					&:after {
-						color: $accent_3;
-						content: '/';
-						margin-left: .25rem;
-						margin-right: .25rem;				
-					}
-				}				
-			}
+		}
+		&>.menus__item--parent {
+			&:not(:last-of-type) {
+			    margin-right: .5rem;
+				&:after {
+					color: $accent_3;
+					content: '/';
+					margin-left: .25rem;
+					margin-right: .25rem;				
+				}
+			}				
 		}
 		&__link {
 			background-color:$alternate;
