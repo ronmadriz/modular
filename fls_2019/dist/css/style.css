@@ -425,12 +425,15 @@ body #mobileCTA.fixed-bottom {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 25%; }
+  width: 25%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
   .footer__info--title {
     border-bottom: 0.0625rem solid #FECD06;
     color: #FECD06;
     display: block;
     font-size: .9rem;
+    line-height: 1.75;
     margin-right: .5rem;
     max-width: 80%;
     text-transform: uppercase; }
