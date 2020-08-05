@@ -7,6 +7,35 @@
     // filter: sepia(600%) hue-rotate(180deg) saturate(900%);
 	&__boiler {
 		margin-bottom:2rem;
+		&--info {
+			color: $alternate;
+			display: flex;
+			font-size: .75rem;
+			justify-content: center;			
+		}
+		&--link {
+			color:$alternate;
+		    font-style: normal;
+		    margin-left: .5rem;
+		    border-right: 1px solid;
+		    padding-right: .5rem;
+		    &:first-of-type {
+		    	margin-left:0;
+		    }
+		    &:last-of-type {
+		    	border-color:transparent;
+		    	padding-right:0;
+		    }
+		}
+		&--copyright {
+
+		}
+		&--rights {
+
+		}
+		&--privacy {
+
+		}
 	}
 	&__logo {
 		margin-top:2rem;
