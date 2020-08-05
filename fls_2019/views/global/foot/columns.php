@@ -24,7 +24,7 @@ $mega_args = array(
 	'walker'          => new Footer_Walker(),
 	'depth'           => 2,
 );
-wp_nav_menu($mega_args);
+wp_nav_menu($mega_args).PHP_EOL;
 echo '<ul id="hqinfo" class="footer__menu">'.PHP_EOL;
 echo '<li class="footer__item footer__item--parent">'.PHP_EOL;
 echo '<span class="footer__link">';
