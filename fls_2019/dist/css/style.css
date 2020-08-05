@@ -1036,8 +1036,6 @@ html form.lrm-form ul.acf-checkbox-list li {
     position: absolute;
     -webkit-transform: translateX(-1.75rem);
             transform: translateX(-1.75rem); }
-    .menus__sub:first-of-type {
-      display: none; }
     .menus__sub .menus__link {
       color: #848587;
       display: block;
