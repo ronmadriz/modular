@@ -1354,7 +1354,9 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 56.25rem; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%; }
   .footer__menu {
     display: -webkit-box;
     display: -ms-flexbox;
