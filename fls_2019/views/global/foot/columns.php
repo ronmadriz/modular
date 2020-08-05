@@ -22,7 +22,6 @@ $mega_args = array(
 	'link_before'     => '',
 	'link_after'      => '',
 	'items_wrap'      => '',
-	'items_wrap'      => '',
 	'walker'          => new Footer_Walker(),
 	'depth'           => 2,
 );
