@@ -1408,7 +1408,8 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none; }
+  list-style: none;
+  padding-left: 0; }
   @media (max-width: 786px) {
     .boiler__menu {
       -webkit-box-align: center;
