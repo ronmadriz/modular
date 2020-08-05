@@ -36,6 +36,9 @@
 		    }
 		}
 	}
+	&__link {
+		color:$alternate;
+	}
 	&__sub {
 	    list-style: none;
 		padding-inline-start: 0;

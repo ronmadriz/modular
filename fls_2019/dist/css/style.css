@@ -435,6 +435,9 @@ body #mobileCTA.fixed-bottom {
       max-width: 80%;
       text-transform: uppercase; }
 
+.footer__link {
+  color: #FFFFFF; }
+
 .footer__sub {
   list-style: none;
   -webkit-padding-start: 0;
