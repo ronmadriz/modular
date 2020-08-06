@@ -103,13 +103,10 @@ j(document).ready(function(){
   });
 });
 
-j('.menus__item--parent>.menus__link').click(function(e){
-    event.preventDefault();
-});
-j('.menus__item--parent').click(function(e){
-	j(this).next().slideToggle(300);
-	return false;
-    // j(this).children('.menus__sub').toggleClass('menus__sub--active');     
+j('.menus .menus__item--parent:has(ul.sub-navigation)').click(function(e){
+	j(this).children('a').click(function (e) {
+        return false;
+    });     
 });
 function normalizeSlideHeights() {
     j('.carousel').each(function(){
