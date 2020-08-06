@@ -149,6 +149,7 @@
 							font-weight:700;
 						}
 						&--item {
+							margin-bottom: .5rem;
 							width:25%;
 							&:last-of-type {
 								padding-bottom: 1rem;
@@ -178,7 +179,7 @@
 									margin-top: 1rem;
 								}
 								.menus__tertiary--item {
-									color:$accent_1;
+									color:$dark_gray;
 									display:inline;
 									font-weight:700;
 								}
