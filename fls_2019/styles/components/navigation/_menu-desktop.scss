@@ -134,34 +134,41 @@
 			}
 			// Solutions 
 			&--1 {
-				.menus__sub {
-					background-color: rgba($alternate,.95);
-					border-radius: 0;
-					flex-direction: row;
-					flex-wrap: wrap;					
-					transform: translateX(-60vw);
-					width: 100vw;
-					&--link {
-						color:$accent_1;
-						font-weight:700;
-					}
-					&--item {
-						width:25%;
-						&:last-of-type {
-							padding-bottom: 1rem;
-							padding-top: 1.5rem;
-							text-align: center;
-							width: 100%;
-							.menus__tertiary--item {
-								color:$accent_1;
-								display:inline;
-								font-weight:700;
+				.menus{				
+					&__sub {
+						background-color: rgba($alternate,.95);
+						border-radius: 0;
+						flex-direction: row;
+						flex-wrap: wrap;					
+						transform: translateX(-60vw);
+						width: 100vw;
+						&--link {
+							color:$accent_1;
+							font-weight:700;
+						}
+						&--item {
+							width:25%;
+							&:last-of-type {
+								padding-bottom: 1rem;
+								padding-top: 1.5rem;
+								text-align: center;
+								width: 100%;
+								.menus__tertiary--item {
+									color:$accent_1;
+									display:inline;
+									font-weight:700;
+								}
 							}
 						}
+						@include for-tv-up {
+							padding-left: 25%;
+							padding-right: 25%;
+						}
 					}
-					@include for-tv-up {
-						padding-left: 25%;
-						padding-right: 25%;
+					&__tertiary {
+						&--item {
+							font-size:.625rem;							
+						}
 					}
 				}
 				&:hover {
