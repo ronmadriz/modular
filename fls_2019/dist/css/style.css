@@ -999,7 +999,7 @@ html form.lrm-form ul.acf-checkbox-list li {
     .menus__item:hover .menus__sub {
       display: block; }
     .menus__item--parent {
-      line-height: 5.25; }
+      line-height: 5.65; }
       .menus__item--parent:not(:last-of-type) {
         margin-right: .5rem; }
         .menus__item--parent:not(:last-of-type):after {
