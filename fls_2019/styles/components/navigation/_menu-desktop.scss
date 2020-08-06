@@ -118,8 +118,21 @@
 			}			
 		}
 	}
-	// Temp fix
-	#menus__item--2 {
-	    display: none;
-	}	
+	// Special Cases
+	#menus {
+		&__item {
+			&--2 {
+				display: none;
+			}
+			// Solutions 
+			&--1 {
+				.menus__sub {
+					background-color: rgba($alternate,.95);
+					border-radius: 0;
+					transform: translateX(-60vw);
+					width: 100vw;
+				}
+			}
+		}
+	}
 }
