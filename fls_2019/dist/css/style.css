@@ -1031,8 +1031,9 @@ html form.lrm-form ul.acf-checkbox-list li {
     width: .5rem; }
   .menus__sub {
     background: 0 0;
+    border-radius: .5rem;
     list-style: none;
-    padding-top: 2.25rem;
+    padding: .5rem 1rem;
     position: absolute;
     -webkit-transform: translateX(-1.75rem);
             transform: translateX(-1.75rem); }
