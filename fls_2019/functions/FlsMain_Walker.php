@@ -28,7 +28,7 @@ class FlsMain_Walker extends Walker_Nav_Menu {
 			$output .= '<a href="'.$item->url.'" class="menus__link">';
 		} elseif ($item->url && $item->url != '#' && $depth == 1) {
 			$output .= '<a href="'.$item->url.'" class="menus__sub--link">';
-		} elseif ($item->url && $item->url != '#' && $depth == 3) {
+		} elseif ($item->url && $item->url != '#' && $depth == 2) {
 			$output .= '<a href="'.$item->url.'" class="menus__tertiary--link">';
 		} else {
 			$output .= '<span class="menus__link">';
