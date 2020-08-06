@@ -139,13 +139,19 @@
 							width: 100%;
 						}
 					}
+					&--link {
+						color:$accent_1;
+						font-weight:700;
+					}
+				}
+				.menus__tertiary {
+					font-weight: 500;
+					line-height: 1.75;
+					text-align: center;
 				}
 				&:hover {
 					.menus__tertiary {
-						display: block;
-						font-weight: 500;
-						line-height: 1.75;						
-						text-align: center;
+						display: block;						
 					}
 				}
 			}
