@@ -1033,7 +1033,7 @@ html form.lrm-form ul.acf-checkbox-list li {
     width: .5rem; }
   .menus__sub {
     background: #FFFFFF;
-    border-radius: .5rem;
+    border-radius: .35rem;
     list-style: none;
     padding: .5rem 1rem;
     position: absolute;
