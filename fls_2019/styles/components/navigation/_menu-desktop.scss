@@ -121,6 +121,7 @@
 	// Special Cases
 	#menus {
 		&__item {
+			// hide industries in main nav
 			&--2 {
 				display: none;
 			}
@@ -133,21 +134,27 @@
 					flex-wrap: wrap;
 					transform: translateX(-60vw);
 					width: 100vw;
+					&--link {
+						color:$accent_1;
+						font-weight:700;
+					}
 					&--item {
 						width:25%;
 						&:last-of-type {
 							width: 100%;
+							.menus__tertiary--item {
+								display:inline;
+							}
 						}
-					}
-					&--link {
-						color:$accent_1;
-						font-weight:700;
 					}
 				}
 				.menus__tertiary {
 					font-weight: 500;
 					line-height: 1.75;
 					text-align: center;
+					&--item {
+
+					}
 				}
 				&:hover {
 					.menus__tertiary {
