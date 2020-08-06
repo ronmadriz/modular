@@ -9,9 +9,6 @@
 			align-self: center;
 			max-width: 100%;
 		}
-		@include for-tablet-up {
-			width:28.59375rem;
-		}
 	}
 	&__toggle {
 	    align-self: center;
@@ -67,16 +64,6 @@
 		padding:.5rem 0 .5rem 1rem;
 		text-transform: uppercase;
 		width:100%;
-		@include for-phone-only {
-			&:before {
-				color:$accent_1;
-			    content: '\2022';
-			    font-size: 1.5rem;
-			    margin-right: .5rem;
-			    position: relative;
-			    top: .175rem;
-			}
-		}
 	}
 	&__sub {
 		display:none;
@@ -102,33 +89,6 @@
 			    font-size: 1rem;
 			    top: .125rem;
 			}
-		}
-	}
-	&__icon {
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;		
-		display: inline-block;
-		height: 1rem;
-		margin-right:.5rem;
-		width: 1rem;
-		&--solutions {
-			background-image: url(../../sprites/solutions.jpg);
-		}
-		&--industries {
-			background-image: url(../../sprites/industries.jpg);
-		}
-		&--resources {
-			background-image: url(../../sprites/resources.jpg);
-		}
-		&--services {
-			background-image: url(../../sprites/services.jpg);
-		}
-		&--about {
-			background-image: url(../../sprites/about.jpg);
-		}
-		&--contact {
-			background-image: url(../../sprites/contact.jpg);
 		}
 	}
 }

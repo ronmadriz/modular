@@ -857,9 +857,6 @@ html form.lrm-form ul.acf-checkbox-list li {
       -ms-flex-item-align: center;
           align-self: center;
       max-width: 100%; }
-    @media (min-width: 786px) {
-      .menus__brand {
-        width: 28.59375rem; } }
   .menus__toggle {
     -ms-flex-item-align: center;
         align-self: center;
@@ -918,14 +915,6 @@ html form.lrm-form ul.acf-checkbox-list li {
     padding: .5rem 0 .5rem 1rem;
     text-transform: uppercase;
     width: 100%; }
-    @media (max-width: 786px) {
-      .menus__link:before {
-        color: #156CB3;
-        content: '\2022';
-        font-size: 1.5rem;
-        margin-right: .5rem;
-        position: relative;
-        top: .175rem; } }
   .menus__sub {
     display: none;
     list-style: none;
@@ -946,6 +935,15 @@ html form.lrm-form ul.acf-checkbox-list li {
       .menus__tertiary .menus__link:before {
         font-size: 1rem;
         top: .125rem; }
+
+@media (max-width: 786px) {
+  .menus__link:before {
+    color: #156CB3;
+    content: '\2022';
+    font-size: 1.5rem;
+    margin-right: .5rem;
+    position: relative;
+    top: .175rem; }
   .menus__icon {
     background-position: center;
     background-repeat: no-repeat;
@@ -965,9 +963,11 @@ html form.lrm-form ul.acf-checkbox-list li {
     .menus__icon--about {
       background-image: url(../../sprites/about.jpg); }
     .menus__icon--contact {
-      background-image: url(../../sprites/contact.jpg); }
+      background-image: url(../../sprites/contact.jpg); } }
 
 @media (min-width: 786px) {
+  .menus__brand {
+    width: 28.59375rem; }
   .menus__list {
     -ms-flex-item-align: center;
         align-self: center;

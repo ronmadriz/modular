@@ -1,5 +1,8 @@
 @include for-tablet-up {
 	.menus {
+		&__brand {
+			width:28.59375rem;			
+		}
 		&__list {
 			align-self: center;
 			background-color: transparent;
