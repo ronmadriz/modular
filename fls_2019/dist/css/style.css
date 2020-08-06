@@ -986,7 +986,7 @@ html form.lrm-form ul.acf-checkbox-list li {
       display: inline-block;
       font-size: .9375rem;
       font-weight: 500;
-      padding: .5rem 0 .5rem 1rem;
+      padding: .5rem 0 .5rem 3rem;
       text-transform: uppercase;
       width: 100%; }
       .menus__tertiary--link:before {
