@@ -1,5 +1,7 @@
 @include for-phone-only {
 	.menus {
+		&__list {}
+		&__item {}
 		&__link {
 			&:before {
 				color:$accent_1;
@@ -36,6 +38,14 @@
 			&--contact {
 				background-image: url(../../sprites/contact.jpg);
 			}
+		}
+		&__sub {
+			&--item {}
+			&--link {}
+		}
+		&__tertiary {
+			&--item {}
+			&--link {}			
 		}
 	}
 }
