@@ -1,5 +1,5 @@
 <?php
-class Modular_Walker extends Walker_Nav_Menu {
+class FlsMain_Walker extends Walker_Nav_Menu {
 	function display_element($element, &$children_elements, $max_depth, $depth = 0, $args, &$output) {
 		$id_field = $this->db_fields['id'];
 
@@ -11,11 +11,11 @@ class Modular_Walker extends Walker_Nav_Menu {
 	}
 	function start_el(&$output, $item, $depth = 0, $args = [], $id = 0) {
 		if ($args->has_children) {
-			$output .= '<li class="menus__item menus__item--parent'.$class_names.'">';
+			$output .= '<li id="menus__item--'.$item->ID.'" class="menus__item menus__item--parent'.$class_names.'">';
 		} elseif ($args->has_children && depth == 1) {
-			$output .= '<li class="menus__item  menus__item--subparent'.$class_names.'">';
+			$output .= '<li id="menus__item--'.$item->ID.'" class="menus__item  menus__item--subparent'.$class_names.'">';
 		} else {
-			$output .= '<li class="menus__item'.$class_names.'">';
+			$output .= '<li id="menus__item--'.$item->ID.'" class="menus__item'.$class_names.'">';
 		}
 
 		if ($item->url && $item->url != '#') {
