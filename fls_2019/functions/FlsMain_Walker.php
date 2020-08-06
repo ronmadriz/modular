@@ -1,5 +1,6 @@
 <?php
 class FlsMain_Walker extends Walker_Nav_Menu {
+	var $number = 1;
 	function display_element($element, &$children_elements, $max_depth, $depth = 0, $args, &$output) {
 		$id_field = $this->db_fields['id'];
 
@@ -11,11 +12,11 @@ class FlsMain_Walker extends Walker_Nav_Menu {
 	}
 	function start_el(&$output, $item, $depth = 0, $args = [], $id = 0) {
 		if ($args->has_children) {
-			$output .= '<li id="menus__item--'.$item->ID.'" class="menus__item menus__item--parent'.$class_names.'">';
+			$output .= '<li id="menus__item--'.$this->number++ .'" class="menus__item menus__item--parent'.$class_names.'">';
 		} elseif ($args->has_children && depth == 1) {
-			$output .= '<li id="menus__item--'.$item->ID.'" class="menus__item  menus__item--subparent'.$class_names.'">';
+			$output .= '<li id="menus__item--'.$this->number++ .'" class="menus__item  menus__item--subparent'.$class_names.'">';
 		} else {
-			$output .= '<li id="menus__item--'.$item->ID.'" class="menus__item'.$class_names.'">';
+			$output .= '<li id="menus__item--'.$this->number++ .'" class="menus__item'.$class_names.'">';
 		}
 
 		if ($item->url && $item->url != '#') {
