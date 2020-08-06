@@ -1122,7 +1122,7 @@ html form.lrm-form ul.acf-checkbox-list li {
         #menus__item--1 .menus__sub--item:last-of-type .menus__tertiary {
           margin-top: 1rem; }
         #menus__item--1 .menus__sub--item:last-of-type .menus__tertiary--item {
-          color: #848587;
+          color: #156CB3;
           display: inline;
           font-weight: 700; } }
   @media (min-width: 786px) and (min-width: 1360px) {
@@ -1135,7 +1135,7 @@ html form.lrm-form ul.acf-checkbox-list li {
   #menus__item--1 .menus__tertiary--item {
     font-size: .625rem; }
   #menus__item--1 .menus__tertiary--link {
-    color: #156CB3;
+    color: #848587;
     font-size: .75rem;
     padding-left: .5rem;
     padding-right: .5rem; }
