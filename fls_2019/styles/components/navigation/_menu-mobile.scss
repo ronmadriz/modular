@@ -1,6 +1,9 @@
 @include for-phone-only {
 	.menus {
-		&__list {}
+		&__list {
+			height: 100vh;
+			overflow-y: scroll;
+		}
 		&__item {}
 		&__link {}
 		&__icon {

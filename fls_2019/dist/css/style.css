@@ -937,6 +937,9 @@ html form.lrm-form ul.acf-checkbox-list li {
         top: .125rem; }
 
 @media (max-width: 786px) {
+  .menus__list {
+    height: 100vh;
+    overflow-y: scroll; }
   .menus__icon {
     background-position: center;
     background-repeat: no-repeat;
