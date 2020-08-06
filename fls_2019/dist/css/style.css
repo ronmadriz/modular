@@ -1077,6 +1077,9 @@ html form.lrm-form ul.acf-checkbox-list li {
   #menus__item--1 .menus__sub {
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1094,7 +1097,12 @@ html form.lrm-form ul.acf-checkbox-list li {
       #menus__item--1 .menus__sub--item:last-of-type {
         width: 100%; }
         #menus__item--1 .menus__sub--item:last-of-type .menus__tertiary--item {
-          display: inline; }
+          display: inline; } }
+  @media (min-width: 786px) and (min-width: 1360px) {
+    #menus__item--1 .menus__sub {
+      padding-left: 15vw; } }
+
+@media (min-width: 786px) {
   #menus__item--1 .menus__tertiary {
     font-weight: 500;
     line-height: 1.75;

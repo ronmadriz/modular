@@ -130,6 +130,7 @@
 				.menus__sub {
 					background-color: rgba($alternate,.95);
 					border-radius: 0;
+					display: flex;
 					flex-direction: row;
 					flex-wrap: wrap;
 					transform: translateX(-60vw);
@@ -146,6 +147,9 @@
 								display:inline;
 							}
 						}
+					}
+					@include for-tv-up {
+						padding-left:15vw;
 					}
 				}
 				.menus__tertiary {
