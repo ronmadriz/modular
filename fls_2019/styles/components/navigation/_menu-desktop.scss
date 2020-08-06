@@ -137,7 +137,6 @@
 				.menus__sub {
 					background-color: rgba($alternate,.95);
 					border-radius: 0;
-					display: flex;
 					flex-direction: row;
 					flex-wrap: wrap;
 					transform: translateX(-60vw);
@@ -165,6 +164,9 @@
 					}
 				}
 				&:hover {
+					.menus__sub {
+						display: flex;
+					}
 					.menus__tertiary {
 						display: block;						
 					}

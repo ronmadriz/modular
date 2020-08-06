@@ -1082,9 +1082,6 @@ html form.lrm-form ul.acf-checkbox-list li {
   #menus__item--1 .menus__sub {
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1113,6 +1110,10 @@ html form.lrm-form ul.acf-checkbox-list li {
       padding-left: 15vw; } }
 
 @media (min-width: 786px) {
+  #menus__item--1:hover .menus__sub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   #menus__item--1:hover .menus__tertiary {
     display: block; } }
 
