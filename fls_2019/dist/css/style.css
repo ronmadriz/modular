@@ -1109,11 +1109,11 @@ html form.lrm-form ul.acf-checkbox-list li {
           position: relative; }
           #menus__item--1 .menus__sub--item:last-of-type .menus__link:before, #menus__item--1 .menus__sub--item:last-of-type .menus__link:after {
             content: '';
-            height: 9px;
+            height: 1px;
             position: absolute;
             width: 15vw;
             background-color: #404040;
-            top: 3px; }
+            top: 9px; }
           #menus__item--1 .menus__sub--item:last-of-type .menus__link:after {
             left: -175%; }
           #menus__item--1 .menus__sub--item:last-of-type .menus__link:before {

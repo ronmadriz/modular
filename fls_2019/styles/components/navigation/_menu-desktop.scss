@@ -161,11 +161,11 @@
 									position:relative;
 									&:before, &:after {
 										content: '';
-										height: 9px;
+										height: 1px;
 										position: absolute;
 										width: 15vw;
 										background-color: $base;
-										top: 3px;										
+										top: 9px;										
 									}
 									&:after {
 										left:-175%;
