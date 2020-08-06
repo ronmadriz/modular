@@ -167,6 +167,12 @@
 										background-color: black;
 										top: 3px;										
 									}
+									&:after {
+										left:0;
+									}
+									&:before {
+										right:0;
+									}
 								}
 								.menus__tertiary {
 									margin-top: 1rem;
