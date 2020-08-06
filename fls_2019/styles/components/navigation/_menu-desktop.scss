@@ -158,6 +158,15 @@
 								.menus__sub--link {
 									background-color: transparent;
 									font-size: 1.03125rem;
+									position:relative;
+									&:before, &:after {
+										content: '';
+										height: 1px;
+										position: absolute;
+										width: 15%;
+										background-color: black;
+										top: 3px;										
+									}
 								}
 								.menus__tertiary {
 									margin-top: 1rem;
