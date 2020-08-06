@@ -11,7 +11,7 @@ class FlsMain_Walker extends Walker_Nav_Menu {
 		return parent::display_element($element, $children_elements, $max_depth, $depth, $args, $output);
 	}
 	function start_el(&$output, $item, $depth = 0, $args = [], $id = 0) {
-		if ($args->has_children) {
+		if ($args->has_children && $depth == 0) {
 			$output .= '<li id="menus__item--'.$this->number++ .'" class="menus__item menus__item--parent">';
 		} else {
 			$output .= '<li class="menus__item">';
