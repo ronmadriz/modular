@@ -1109,15 +1109,15 @@ html form.lrm-form ul.acf-checkbox-list li {
           position: relative; }
           #menus__item--1 .menus__sub--item:last-of-type .menus__link:before, #menus__item--1 .menus__sub--item:last-of-type .menus__link:after {
             content: '';
-            height: 1px;
+            height: 9px;
             position: absolute;
-            width: 15%;
-            background-color: black;
+            width: 15vw;
+            background-color: #404040;
             top: 3px; }
           #menus__item--1 .menus__sub--item:last-of-type .menus__link:after {
-            left: 0; }
+            left: -175%; }
           #menus__item--1 .menus__sub--item:last-of-type .menus__link:before {
-            right: 0; }
+            right: -175%; }
         #menus__item--1 .menus__sub--item:last-of-type .menus__tertiary {
           margin-top: 1rem; }
         #menus__item--1 .menus__sub--item:last-of-type .menus__tertiary--item {

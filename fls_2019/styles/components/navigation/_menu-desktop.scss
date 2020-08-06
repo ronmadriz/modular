@@ -161,17 +161,17 @@
 									position:relative;
 									&:before, &:after {
 										content: '';
-										height: 1px;
+										height: 9px;
 										position: absolute;
-										width: 15%;
-										background-color: black;
+										width: 15vw;
+										background-color: $base;
 										top: 3px;										
 									}
 									&:after {
-										left:0;
+										left:-175%;
 									}
 									&:before {
-										right:0;
+										right:-175%;
 									}
 								}
 								.menus__tertiary {
