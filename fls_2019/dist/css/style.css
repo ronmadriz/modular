@@ -966,8 +966,26 @@ html form.lrm-form ul.acf-checkbox-list li {
       background-image: url(../../sprites/contact.jpg); }
   .menus__sub {
     display: block; }
+    .menus__sub--link {
+      border-bottom: 0.0625rem solid #156CB3;
+      color: #156CB3;
+      display: inline-block;
+      font-size: .9375rem;
+      font-weight: 700;
+      padding: .5rem 0 .5rem 1rem;
+      text-transform: uppercase;
+      width: 100%; }
   .menus__tertiary {
-    display: block; } }
+    display: block; }
+    .menus__tertiary--link {
+      border-bottom: 0.0625rem solid #156CB3;
+      color: #156CB3;
+      display: inline-block;
+      font-size: .9375rem;
+      font-weight: 700;
+      padding: .5rem 0 .5rem 1rem;
+      text-transform: uppercase;
+      width: 100%; } }
 
 @media (min-width: 786px) {
   .menus__brand {
