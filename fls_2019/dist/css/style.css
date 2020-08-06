@@ -1100,6 +1100,9 @@ html form.lrm-form ul.acf-checkbox-list li {
     #menus__item--1 .menus__sub--item {
       width: 25%; }
       #menus__item--1 .menus__sub--item:last-of-type {
+        padding-bottom: 1rem;
+        padding-top: 1.5rem;
+        text-align: center;
         width: 100%; }
         #menus__item--1 .menus__sub--item:last-of-type .menus__tertiary--item {
           color: #156CB3;

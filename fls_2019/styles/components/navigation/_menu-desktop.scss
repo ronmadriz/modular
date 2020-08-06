@@ -149,6 +149,9 @@
 					&--item {
 						width:25%;
 						&:last-of-type {
+							padding-bottom: 1rem;
+							padding-top: 1.5rem;
+							text-align: center;
 							width: 100%;
 							.menus__tertiary--item {
 								color:$accent_1;
