@@ -978,8 +978,6 @@ html form.lrm-form ul.acf-checkbox-list li {
         margin-right: .875rem;
         position: relative;
         top: .175rem; }
-    .menus__sub--parent:last-of-type {
-      display: none; }
   .menus__tertiary--link {
     border-bottom: 0.0625rem solid #156CB3;
     color: #156CB3;
@@ -995,7 +993,9 @@ html form.lrm-form ul.acf-checkbox-list li {
       font-size: 1.875rem;
       margin-right: .875rem;
       position: relative;
-      top: .3275rem; } }
+      top: .3275rem; }
+  #menus__item--1 .menus__sub .menus__sub--parent:last-of-type {
+    display: none; } }
 
 @media (min-width: 786px) {
   .menus__brand {

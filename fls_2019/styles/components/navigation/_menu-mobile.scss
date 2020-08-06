@@ -54,11 +54,6 @@
 				    top: .175rem;
 				}
 			}
-			&--parent {
-				&:last-of-type {
-					display:none;
-				}
-			}
 		}
 		&__tertiary {
 			&--item {}
@@ -80,6 +75,13 @@
 				    top:.3275rem;
 				}
 			}			
+		}
+	}
+	&#menus__item--1 {
+		.menus__sub .menus__sub--parent {
+			&:last-of-type {
+				display:none;
+			}
 		}
 	}
 }
