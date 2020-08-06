@@ -937,13 +937,6 @@ html form.lrm-form ul.acf-checkbox-list li {
         top: .125rem; }
 
 @media (max-width: 786px) {
-  .menus__link:before {
-    color: #156CB3;
-    content: '\2022';
-    font-size: 1.5rem;
-    margin-right: .5rem;
-    position: relative;
-    top: .175rem; }
   .menus__icon {
     background-position: center;
     background-repeat: no-repeat;
@@ -975,6 +968,13 @@ html form.lrm-form ul.acf-checkbox-list li {
       padding: .5rem 0 .5rem 1rem;
       text-transform: uppercase;
       width: 100%; }
+      .menus__sub--link:before {
+        color: #156CB3;
+        content: '\2022';
+        font-size: 1.5rem;
+        margin-right: .5rem;
+        position: relative;
+        top: .175rem; }
   .menus__tertiary {
     display: block; }
     .menus__tertiary--link {

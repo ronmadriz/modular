@@ -2,16 +2,7 @@
 	.menus {
 		&__list {}
 		&__item {}
-		&__link {
-			&:before {
-				color:$accent_1;
-			    content: '\2022';
-			    font-size: 1.5rem;
-			    margin-right: .5rem;
-			    position: relative;
-			    top: .175rem;
-			}			
-		}
+		&__link {}
 		&__icon {
 			background-position: center;
 			background-repeat: no-repeat;
@@ -50,7 +41,15 @@
 				font-weight:700;
 				padding:.5rem 0 .5rem 1rem;
 				text-transform: uppercase;
-				width:100%;				
+				width:100%;
+				&:before {
+					color:$accent_1;
+				    content: '\2022';
+				    font-size: 1.5rem;
+				    margin-right: .5rem;
+				    position: relative;
+				    top: .175rem;
+				}				
 			}
 		}
 		&__tertiary {
