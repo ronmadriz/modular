@@ -998,13 +998,15 @@ html form.lrm-form ul.acf-checkbox-list li {
       cursor: pointer; }
     .menus__item:hover .menus__sub {
       display: block; }
-    .menus__item--parent:not(:last-of-type) {
-      margin-right: .5rem; }
-      .menus__item--parent:not(:last-of-type):after {
-        color: #E6E7E9;
-        content: '/';
-        margin-left: .25rem;
-        margin-right: .25rem; }
+    .menus__item--parent {
+      line-height: 5.25; }
+      .menus__item--parent:not(:last-of-type) {
+        margin-right: .5rem; }
+        .menus__item--parent:not(:last-of-type):after {
+          color: #E6E7E9;
+          content: '/';
+          margin-left: .25rem;
+          margin-right: .25rem; }
   .menus__link {
     background-color: #FFFFFF;
     border: 0;
