@@ -971,7 +971,7 @@ html form.lrm-form ul.acf-checkbox-list li {
       .menus__sub--link:before {
         color: #156CB3;
         content: '\2022';
-        font-size: 1.5rem;
+        font-size: 1.875rem;
         margin-right: .5rem;
         position: relative;
         top: .175rem; }
@@ -989,10 +989,10 @@ html form.lrm-form ul.acf-checkbox-list li {
       .menus__tertiary--link:before {
         color: #156CB3;
         content: '\2022';
-        font-size: 1.5rem;
+        font-size: 1.875rem;
         margin-right: .5rem;
         position: relative;
-        top: .175rem; } }
+        top: .3275rem; } }
 
 @media (min-width: 786px) {
   .menus__brand {
