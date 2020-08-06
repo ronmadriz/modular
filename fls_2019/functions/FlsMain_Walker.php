@@ -17,8 +17,10 @@ class FlsMain_Walker extends Walker_Nav_Menu {
 			$output .= '<li class="menus__item">';
 		} elseif ($args->has_children && $depth == 1) {
 			$output .= '<li class="menus__item--sub  menus__item--subparent">';
-		} else {
+		} elseif ($depth == 1) {
 			$output .= '<li class="menus__item--sub">';
+		} else {
+			$output .= '<li class="menus__item--tertiary">';
 		}
 
 		if ($item->url && $item->url != '#') {
