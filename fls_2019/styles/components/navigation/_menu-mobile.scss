@@ -49,7 +49,7 @@
 				    margin-right: .5rem;
 				    position: relative;
 				    top: .175rem;
-				}				
+				}
 			}
 		}
 		&__tertiary {
@@ -63,7 +63,15 @@
 				font-weight:500;
 				padding:.5rem 0 .5rem 1rem;
 				text-transform: uppercase;
-				width:100%;				
+				width:100%;
+				&:before {
+					color:$accent_1;
+				    content: '\2022';
+				    font-size: 1.5rem;
+				    margin-right: .5rem;
+				    position: relative;
+				    top: .175rem;
+				}
 			}			
 		}
 	}
