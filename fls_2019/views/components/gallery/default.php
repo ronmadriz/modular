@@ -1,7 +1,6 @@
 <?
 // GALLERY
-$solutions_gallery = get_field('solutions_gallery', $pageID);
-if ($solutions_gallery['gallery_pics']) {
+if (have_rows('solutions_gallery')) {
 	echo '<section class="galleries" id="galleries">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="galleries__content">'.PHP_EOL;
