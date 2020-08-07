@@ -1900,6 +1900,18 @@ body form {
       top: 5px;
       position: relative; }
 
+.galleries {
+  padding: 2rem 0 0; }
+  @media (min-width: 768px) {
+    .galleries {
+      padding: 2rem 100px; } }
+  .galleries__img.img-fluid {
+    min-width: 100%; }
+  .galleries .lSGallery li a img {
+    opacity: .6; }
+  .galleries .lSGallery li.active a img {
+    opacity: 1; }
+
 body ul.gallery li {
   padding-left: 0;
   padding-right: 0;

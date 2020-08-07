@@ -1,0 +1,27 @@
+.galleries {
+	padding:2rem 0 0;
+	@media(min-width:768px) {
+		padding:2rem 100px;
+	}
+	&__img {
+		&.img-fluid {
+			min-width: 100%;
+		}
+	}
+	.lSGallery {
+		li {
+			a {
+				img {
+					opacity: .6;
+				}
+			}			
+			&.active {
+				a {
+					img {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}					
+}
