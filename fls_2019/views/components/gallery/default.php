@@ -8,7 +8,7 @@ if ($solutions_gallery['gallery_pics']) {
 	echo '<div class="galleries__content">'.PHP_EOL;
 	while (have_rows('solutions_gallery')) {
 		the_row();
-		$gallery_pics = get_sub_field('gallery_pics');
+		$gallery_pics = get_sub_field('gallery_pics', $post_ID);
 		if ($gallery_pics) {
 			echo '<ul class="galleries__list list-unstyled" id="lightSlider">'.PHP_EOL;
 			foreach ($gallery_pics as $gallery_pic) {
