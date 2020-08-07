@@ -1,7 +1,7 @@
 <?php
 $content = wpautop($post->post_content);
 if (have_posts()) {
-	echo '<section id="main-content" class="content">'.PHP_EOL;
+	echo '<section id="main-content" class="main-content">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_posts()) {
 		the_post();

@@ -1,0 +1,10 @@
+.main-content {
+	padding-top: .5rem;
+	h2 {
+		&:first-of-type {
+		    text-transform: uppercase;
+		    font-weight: bold;
+		    letter-spacing: .0125px;
+		}
+	}	
+}
