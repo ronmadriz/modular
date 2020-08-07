@@ -1596,6 +1596,13 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
     color: #FECD06;
     text-decoration: none; }
 
+.main-content {
+  padding-top: .5rem; }
+  .main-content h2:first-of-type {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .0125px; }
+
 body main form {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease; }

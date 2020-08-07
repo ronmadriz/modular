@@ -487,13 +487,17 @@ html {
 
 //
 /// Components
+// Nav 
 @import 'components/navigation/menu';
 @import 'components/navigation/menu-mobile';
 @import 'components/navigation/menu-desktop';
 @import 'components/navigation/navigation';
+// Footer
 @import 'components/navigation/footer';
 @import 'components/navigation/boiler';
-
+// Main Content
+@import 'components/content/default';
+// Form
 @import 'components/form/form';
 @import 'components/form/footer';
 @import 'components/gallery/gallery';
