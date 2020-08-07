@@ -947,6 +947,7 @@ html form.lrm-form ul.acf-checkbox-list li {
       display: inline-block;
       height: 1rem;
       position: absolute;
+      right: 1rem;
       width: 1rem;
       z-index: 3; }
   .menus__icon {
