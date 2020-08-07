@@ -1,9 +1,11 @@
 <?php
-$site_logo_footer = get_theme_mod('site_logo_footer');
+$footer_logo = get_theme_mod('footer_logo');
 // Logo
-echo '<div class="footer__logo">'.PHP_EOL;
-echo '<span class="footer__holder">'.$site_logo_footer.'</span>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
+if ($footer_logo) {
+	echo '<div class="footer__logo">'.PHP_EOL;
+	echo '<span class="footer__holder">'.$footer_logo.'</span>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+}
 // Connect to Social Media
 echo '<div class="footer__connect">'.PHP_EOL;
 echo '<span class="footer__connect--title">';
