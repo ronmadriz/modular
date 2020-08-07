@@ -102,9 +102,6 @@ j(document).ready(function(){
   });
 
 });
-j(document).on('click', '.menus__link', function(event) {
-  console.log('clicked');
-}
 function normalizeSlideHeights() {
     j('.carousel').each(function(){
       var items = j('.carousel-item img.background', this);

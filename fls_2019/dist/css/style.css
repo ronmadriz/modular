@@ -454,6 +454,23 @@ body #mobileCTA.fixed-bottom {
     color: #FECD06;
     text-decoration: none; }
 
+.footer__logo {
+  margin-bottom: 2rem;
+  width: 80%; }
+  @media (min-width: 786px) and (max-width: 991px) {
+    .footer__logo {
+      width: 50%; } }
+  @media (min-width: 991px) {
+    .footer__logo {
+      width: 40%; } }
+  .footer__logo--holder {
+    display: block;
+    width: 100%; }
+  .footer__logo--img {
+    display: block;
+    height: auto;
+    width: 100%; }
+
 .footer__connect {
   color: #FFFFFF;
   display: -webkit-box;

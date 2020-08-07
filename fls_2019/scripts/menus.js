@@ -5,6 +5,3 @@ j(document).ready(function(){
   });
 
 });
-j(document).on('click', '.menus__link', function(event) {
-  console.log('clicked');
-}
