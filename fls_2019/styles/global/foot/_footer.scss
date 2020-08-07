@@ -31,12 +31,13 @@ body {
 			&#foot_call_cta {
 				background-color: $accent_1;
 				border-bottom:3px solid $accent_5;
-			    text-align: center;
 			    color: $alternate;
-			    padding: 1.25rem 0;
-		    	font-weight: bold;
 			    font-size:1.2rem;
-			    margin-top: 20px;
+		    	font-weight: bold;
+				margin-top: -8rem;			    
+			    padding: 1.25rem 0;
+			    text-align: center;
+				transform: translateY(-8rem);
 			    a {
 			    	color:$accent_2;
 			    	i, svg {

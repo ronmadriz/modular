@@ -215,12 +215,14 @@ body footer section#foot_contact {
 body footer section#foot_call_cta {
   background-color: #156CB3;
   border-bottom: 3px solid #0F8ACF;
-  text-align: center;
   color: #FFFFFF;
-  padding: 1.25rem 0;
-  font-weight: bold;
   font-size: 1.2rem;
-  margin-top: 20px; }
+  font-weight: bold;
+  margin-top: -8rem;
+  padding: 1.25rem 0;
+  text-align: center;
+  -webkit-transform: translateY(-8rem);
+          transform: translateY(-8rem); }
   body footer section#foot_call_cta a {
     color: #FECD06; }
     body footer section#foot_call_cta a i, body footer section#foot_call_cta a svg {
