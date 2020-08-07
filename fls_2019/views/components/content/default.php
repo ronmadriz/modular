@@ -5,7 +5,7 @@ if (have_posts()) {
 	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_posts()) {
 		the_post();
-		echo '<span class="content__main">'.$content'</span>'.PHP_EOL;
+		echo '<span class="content__main">'.$content.'</span>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
