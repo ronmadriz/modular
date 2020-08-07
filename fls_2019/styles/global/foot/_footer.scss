@@ -174,43 +174,11 @@ body {
 	}
 	&.solutions-template-solutions-fluid, &.industries-template-single-industries-fluid, &.page-template-fall-protection-101, &.page-template-sample-fall-protection-plan, &.industries-template-single-all-industries, &.solutions-template-single-all-solutions, &.page-template-fluid, &.blog, &.single-post {
 		main {
-			section {		
-				&#foot_call_cta {
-					background-color: $accent_1;
-					border-bottom:3px solid $accent_5;
-				    text-align: center;
-				    padding: 1.25rem 0;
-				    color: $alternate;
-			    	font-weight: bold;
-				    font-size:1.2rem;
-				    @media(min-width:1200px){
-						position: relative;
-						top: -8rem;				    	
-				    }
-				    a {
-				    	color:$accent_2;
-				    	i, svg {
-						    transform: rotate(-15deg);
-						    top: 5px;
-						    position: relative;
-				    	}
-				    }
-				}
+			section {
 				&#cf_contactFormTitle {
 					h2 {
 						color:$alternate;
 						padding-bottom:.6275rem;
-					}
-				}
-			}
-		}
-		&#page-all {
-			main {
-				section{
-					&#foot_call_cta{
-					    @media(min-width:1200px){
-							top:0;
-						}
 					}
 				}
 			}
