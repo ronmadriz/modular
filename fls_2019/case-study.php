@@ -1,4 +1,8 @@
 <?php
+/*
+Template Name: Case Study
+Template Post Type: case_study
+ */
 get_header();
 include (get_template_directory().'/views/components/banner/default.php');
 include (get_template_directory().'/views/components/content/default.php');
