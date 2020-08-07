@@ -6,8 +6,8 @@ j(document).ready(function(){
   });
 });
 
-j('.menus li:has(ul)').append('<span class="toChild">+</span>');
-j('.menus li.toChild').click(function (e) {
+j('.menus__list li:has(ul)').append('<span class="toChild">+</span>');
+j('.menus__list li.toChild').click(function (e) {
 	j('> ul', this).slideToggle(300);
 	return false;
 });
