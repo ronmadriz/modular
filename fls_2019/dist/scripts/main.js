@@ -95,6 +95,7 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
 	j(this).ekkoLightbox();
 });
 
+/*
 var j = jQuery.noConflict();
 j(document).ready(function(){
   // toggle nav
@@ -102,12 +103,7 @@ j(document).ready(function(){
     j('.menus__list').toggleClass('menus__list--active');
   });
 });
-
-j('.menus .menus__item--parent:has(ul.sub-navigation)').click(function(e){
-	j(this).children('a').click(function (e) {
-        return false;
-    });     
-});
+*/ 
 function normalizeSlideHeights() {
     j('.carousel').each(function(){
       var items = j('.carousel-item img.background', this);
@@ -146,3 +142,4 @@ j(document).scroll(function() {
     j('.navbar-brand img').css({width: j(this).scrollTop() > 100? "280px":"457.5px"});  
   }
 });
+var toggler= document.querySelector('.');
