@@ -3,7 +3,7 @@ $footer_logo = get_theme_mod('footer_logo');
 // Logo
 if ($footer_logo) {
 	echo '<div class="footer__logo">'.PHP_EOL;
-	echo '<span class="footer__holder"><img alt="'.get_bloginfo('name').' Logo" class="footer__logo--img" src="'.$footer_logo.'"></span>'.PHP_EOL;
+	echo '<span class="footer__logo--holder"><img alt="'.get_bloginfo('name').' Logo" class="footer__logo--img" src="'.$footer_logo.'"></span>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 }
 // Connect to Social Media

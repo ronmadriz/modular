@@ -1,4 +1,20 @@
 .footer {
+	&__logo {
+		margin-bottom:2rem;
+		width:80%;
+		@include for-tablet-up {
+			width:50%;
+		}
+		&--holder {
+			display:block;
+			width:100%;
+		}
+		&--img {
+			display: block;			
+			height: auto;
+			width: 100%;
+		}
+	}
 	&__connect {
 		color: $alternate;
 		display: flex;
