@@ -6,8 +6,11 @@ j(document).ready(function(){
   });
 });
 
-j('.menus__list li:has(ul)').append('<span class="toChild">+</span>');
-    j('.menus__list .toChild').click(function (e) {
+j(function(){
+	var children=j('.menus__list li a').filter(function(){return j(this).nextAll().length>0})
+	j('<span class="menus__caret">+</span>').insertAfter(children)
+	j('.menus__list .menus__caret').click(function (e) {
 		j(this).next().slideToggle(300);
-		return false;
-    });
+		  return false;
+	});
+})
