@@ -1,5 +1,10 @@
 var j = jQuery.noConflict();
 j(document).ready(function(){
+
+  j('.menus__toggle').click(function(){
+    j('.menus__list').toggleClass('menus__list--active');
+  });
+
 	j('a').not('[href*="mailto:"]').each(function () {
 		var isInternalLink = new RegExp('/' + window.location.host + '/');
 		if ( ! isInternalLink.test(this.href) ) {
@@ -94,7 +99,11 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
 	event.preventDefault();
 	j(this).ekkoLightbox();
 });
+  // toggle nav
 
+j(function() {
+  j('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('menus__current');
+});
 function normalizeSlideHeights() {
     j('.carousel').each(function(){
       var items = j('.carousel-item img.background', this);
@@ -135,8 +144,12 @@ j(document).scroll(function() {
 });
 var j = jQuery.noConflict();
 j(document).ready(function(){
-  // toggle nav
-  j('.menus__toggle').click(function(){
-    j('.menus__list').toggleClass('menus__list--active');
-  });
+	// toggle nav
+	j('.menus__toggle').click(function(){
+		j('.menus__list').toggleClass('menus__list--active');
+	});
+});
+
+j(function() {
+  j('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('menus__current');
 });
