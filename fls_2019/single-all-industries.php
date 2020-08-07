@@ -69,41 +69,27 @@ if ($base_content) {
 	echo '</section>'.PHP_EOL;
 }
 $featured_clients = get_field('featured_clients');
-if ($featured_clients):
-echo '<section id="logos">'.PHP_EOL;
-echo '<div class="container-fluid">'.PHP_EOL;
-while (have_rows('featured_clients')):
-the_row();
-$feat_clients_title = get_sub_field('title');
-$feat_clients_logos = get_sub_field('logos');
-echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
-echo '<div class="col-12 text-center"><h2>'.$feat_clients_title.'</h2></div>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-if ($feat_clients_logos):
-echo '<div class="row mb-3 mt-3 align-content-center justify-content-center">'.PHP_EOL;
-foreach ($feat_clients_logos as $logos):
-echo '<div class="col-12 col-md-3 align-self-center"><img src="'.$logos['url'].'" alt="'.$logos['alt'].'" class="img-fluid" /></div>'.PHP_EOL;
-endforeach;
-echo '</div>'.PHP_EOL;
-endif;
-endwhile;
-wp_reset_query();
-echo '</div>'.PHP_EOL;
-echo '</section>'.PHP_EOL;
-endif;
-// Contact Form
-$contact_form_code = get_field('contact_form');
-$cf_contactForm    = do_shortcode($contact_form_code);
-if ($contact_form_code) {
-	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="col-12"><h2 class="text-center">How can we help?</h2></div></div></div></section>'.PHP_EOL;
-	echo '<section id="cf_contactForm">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;// made fluid
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="col-12">'.PHP_EOL;
-	echo $cf_contactForm;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
+if ($featured_clients) {
+	echo '<section id="logos">'.PHP_EOL;
+	echo '<div class="container-fluid">'.PHP_EOL;
+	while (have_rows('featured_clients')) {
+		the_row();
+		$feat_clients_title = get_sub_field('title');
+		$feat_clients_logos = get_sub_field('logos');
+		echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
+		echo '<div class="col-12 text-center"><h2>'.$feat_clients_title.'</h2></div>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		if ($feat_clients_logos) {
+			echo '<div class="row mb-3 mt-3 align-content-center justify-content-center">'.PHP_EOL;
+			foreach ($feat_clients_logos as $logos) {
+				echo '<div class="col-12 col-md-3 align-self-center"><img src="'.$logos['url'].'" alt="'.$logos['alt'].'" class="img-fluid" /></div>'.PHP_EOL;
+			}
+			echo '</div>'.PHP_EOL;
+		}
+	}
+	wp_reset_query();
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
-get_footer();?>
+get_footer();
+?>
