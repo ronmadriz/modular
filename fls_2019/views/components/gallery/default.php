@@ -1,6 +1,6 @@
 <?
 // GALLERY
-$solutions_gallery = get_field('solutions_gallery');
+$solutions_gallery = get_field('solutions_gallery', $post->ID);
 if ($solutions_gallery['gallery_pics']) {
 	echo '<section class="galleries" id="galleries">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
