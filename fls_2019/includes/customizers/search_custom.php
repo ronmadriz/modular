@@ -21,7 +21,7 @@ function ronmadriz_search_customizer($wp_customize) {
 		new WP_Customize_Image_Control(
 			$wp_customize, 'search_banner',
 			array(
-				'label'    => __('Search Banner', 'ronmadriz_core'),
+				'label'    => __('Search Banner', 'fc_core'),
 				'section'  => 'search_banner_section',
 				'settings' => 'search_results_settings',
 			)

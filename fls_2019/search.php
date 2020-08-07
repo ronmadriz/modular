@@ -47,7 +47,7 @@ endwhile;
  else :
 echo '<div class="col-12 col-md-10">'.PHP_EOL;
 echo '<p>';
-esc_html_e('Sorry, no results matching your search terms were found. Please try searching again with different keywords.', 'ronmadriz_core');
+esc_html_e('Sorry, no results matching your search terms were found. Please try searching again with different keywords.', 'fc_core');
 echo '</p>'.PHP_EOL;
 get_search_form();
 echo '</div>'.PHP_EOL;

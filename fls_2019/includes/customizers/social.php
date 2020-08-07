@@ -7,7 +7,7 @@ function ronmadriz_register_social_customizer($wp_customize) {
 		return $social_sites;
 	}
 	$wp_customize->add_section('ronmadriz_social_settings', array(
-			'title'    => __('Social Media Links', 'ronmadriz_core'),
+			'title'    => __('Social Media Links', 'fc_core'),
 			'priority' => 30,
 		));
 	$social_sites = ronmadriz_social_array();
@@ -19,7 +19,7 @@ function ronmadriz_register_social_customizer($wp_customize) {
 				'sanitize_callback' => 'esc_url_raw',
 			));
 		$wp_customize->add_control($social_site, array(
-				'label'    => __("$social_site url:", 'ronmadriz_core'),
+				'label'    => __("$social_site url:", 'fc_core'),
 				'section'  => 'ronmadriz_social_settings',
 				'type'     => 'text',
 				'priority' => $priority,
