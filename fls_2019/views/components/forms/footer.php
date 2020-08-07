@@ -1,4 +1,5 @@
 <?
+$form_phone = get_theme_mod('footer_phone');
 // End Industry Main Column
 if (have_rows('contact_form_cta')) {
 	echo '<section id="cta_blue"><h2 class="text-md-center">';
@@ -22,3 +23,10 @@ if (have_rows('contact_form_cta')) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
+echo '<section id="foot_call_cta">'.PHP_EOL;
+echo '<div class="container-fluid">'.PHP_EOL;
+echo '<div class="row align-content-center justify-content-center">'.PHP_EOL;
+echo '<div class="col-12 col-md-8">Talk to Fall Protection Expert Now <a href="tel:'.$form_phone.'" rel="noopener noreferrer"><i class="im im-phone"></i> '.$form_phone.'</a></div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
+echo '</section>'.PHP_EOL;

@@ -11,5 +11,4 @@ include (get_template_directory().'/views/components/content/additional.php');
 include (get_template_directory().'/views/components/downloads/literature.php');
 include (get_template_directory().'/views/components/navigation/subnav.php');
 include (get_template_directory().'/views/components/content/videos.php');
-include (get_template_directory().'/views/components/forms/footer.php');
 get_footer();
