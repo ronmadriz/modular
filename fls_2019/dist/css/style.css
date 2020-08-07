@@ -940,6 +940,15 @@ html form.lrm-form ul.acf-checkbox-list li {
   .menus__list {
     height: 100vh;
     overflow-y: scroll; }
+  .menus__item--parent {
+    position: relative; }
+    .menus__item--parent .menus__link:after {
+      content: '+';
+      display: inline-block;
+      height: 1rem;
+      position: absolute;
+      width: 1rem;
+      z-index: 3; }
   .menus__icon {
     background-position: center;
     background-repeat: no-repeat;

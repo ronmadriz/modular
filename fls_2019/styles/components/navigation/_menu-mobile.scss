@@ -4,7 +4,21 @@
 			height: 100vh;
 			overflow-y: scroll;
 		}
-		&__item {}
+		&__item {
+			&--parent {
+				position:relative;
+				.menus__link {
+					&:after {
+						content:'+';
+						display:inline-block;
+						height:1rem;
+						position:absolute;
+						width:1rem;
+						z-index: 3
+					}
+				}
+			}
+		}
 		&__link {}
 		&__icon {
 			background-position: center;
