@@ -2237,6 +2237,12 @@ svg .region path {
 #fvpp-dialog p {
   margin: 0; }
 
+.hero .has_bg {
+  min-height: 50vh; }
+  @media (min-width: 786px) {
+    .hero .has_bg {
+      min-height: 20rem; } }
+
 .banners .container-fluid, .banners .row {
   padding-left: 0;
   padding-right: 0; }
