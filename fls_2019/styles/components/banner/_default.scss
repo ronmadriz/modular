@@ -1,5 +1,6 @@
 .hero {
-	.has_bg {
+	min-height:6rem;
+	&.has_bg {
 		min-height:50vh;
 		@include for-tablet-up {
 			min-height:20rem;
