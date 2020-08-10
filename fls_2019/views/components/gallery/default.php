@@ -6,7 +6,7 @@ if (have_rows('solutions_gallery')) {
 	echo '<div class="galleries__content">'.PHP_EOL;
 	while (have_rows('solutions_gallery')) {
 		the_row();
-		$gallery_pics = get_sub_field('gallery_pics', $pageID);
+		$gallery_pics = get_sub_field('gallery_pics');
 		if ($gallery_pics) {
 			echo '<ul class="galleries__list list-unstyled" id="lightSlider">'.PHP_EOL;
 			foreach ($gallery_pics as $gallery_pic) {
