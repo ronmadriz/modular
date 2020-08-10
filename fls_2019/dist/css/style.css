@@ -1529,7 +1529,7 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
 
 .solutions__content--desc {
   display: block;
-  line-height: 2.15rem;
+  line-height: 1.3725;
   font-size: 1.5625rem;
   font-weight: 300;
   margin: 0 0 30px;
