@@ -22,14 +22,14 @@
 }
 
 // Commonly Used
-@mixin bars($bars_bg){
+@mixin bars($bars_bg, $bars_pos){
 	&:before, &:after {
 		content: '';
 		height: 1px;
 		position: absolute;
 		width: 15vw;
 		background-color: $bars_bg;
-		top: 9px;										
+		top: $bars_pos;										
 	}
 	&:after {
 		left:-175%;

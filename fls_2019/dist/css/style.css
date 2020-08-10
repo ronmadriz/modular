@@ -1174,7 +1174,7 @@ html form.lrm-form ul.acf-checkbox-list li {
             position: absolute;
             width: 15vw;
             background-color: #404040;
-            top: 9px; }
+            top: 0.5625rem; }
           #menus__item--1 .menus__sub--item:last-of-type .menus__link:after {
             left: -175%; }
           #menus__item--1 .menus__sub--item:last-of-type .menus__link:before {
@@ -2159,7 +2159,7 @@ body section#gallery .lSAction > a {
       position: absolute;
       width: 15vw;
       background-color: #156CB3;
-      top: 9px; }
+      top: 0.875rem; }
     .featured__title--text:after {
       left: -175%; }
     .featured__title--text:before {
