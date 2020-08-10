@@ -2162,9 +2162,9 @@ body section#gallery .lSAction > a {
       background-color: #156CB3;
       top: 0.875rem; }
     .featured__title--text:after {
-      left: -100%; }
+      left: -120%; }
     .featured__title--text:before {
-      right: -100%; }
+      right: -120%; }
 
 .featured .wrapper {
   -webkit-box-orient: vertical;
