@@ -93,6 +93,11 @@ body {
     .wrapper {
       padding-left: 0;
       padding-right: 0; } }
+  .wrapper p {
+    font-size: 120%;
+    font-weight: 300;
+    line-height: 170%;
+    margin: 0 0 30px; }
 
 .has_bg {
   background-position: center;
