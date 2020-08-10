@@ -2081,7 +2081,7 @@ body section#gallery .lSAction > a {
   .speak__text--text {
     font-size: 1.75rem;
     padding: 1.5rem 6.25rem; }
-  .speak__text--link {
+  .speak__link {
     display: block;
     padding: 1.5rem 3.25rem;
     font-size: 1.25rem;
@@ -2089,15 +2089,15 @@ body section#gallery .lSAction > a {
     -webkit-transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s;
     transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s; }
     @media (min-width: 786px) {
-      .speak__text--link {
+      .speak__link {
         padding: 1.5rem 6.25rem;
         font-size: 1.75rem; } }
-    .speak__text--link:hover {
+    .speak__link:hover {
       background-color: #156CB3;
       color: #FECD06;
       text-decoration: none; }
       @media (min-width: 786px) {
-        .speak__text--link:hover {
+        .speak__link:hover {
           font-size: 110%; } }
 
 html body main #gallery .carousel-inner .carousel-item.active,
