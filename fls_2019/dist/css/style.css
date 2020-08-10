@@ -1521,8 +1521,14 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
     .solutions__item {
       width: 25%; } }
 
+.solutions__link {
+  color: #404040; }
+
+.solutions__content--title {
+  display: block;
+  text-align: center; }
+
 .solutions__content--desc {
-  color: #404040;
   display: block;
   line-height: 2.15;
   font-size: 1.5625rem;
