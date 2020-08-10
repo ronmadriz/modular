@@ -11,7 +11,7 @@ include (get_template_directory().'/views/components/banner/default.php');
 ?>
 <section id="featured_case_studies" class="featured">
 	<div class="wrapper">
-		<span class="featured__title"><h2 class="featured__title--text">Feature Projects</h2></span>
+		<span class="featured__title"><h2 class="featured__title--text">Featured Projects</h2></span>
 		<div class="crsl-items">
 			<div class="crsl-wrap">
 				<figure class="crsl-item">

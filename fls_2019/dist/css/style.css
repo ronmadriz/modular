@@ -2153,6 +2153,17 @@ body section#gallery .lSAction > a {
   .featured__title--text {
     display: inline-block;
     position: relative; }
+    .featured__title--text:before, .featured__title--text:after {
+      content: '';
+      height: 1px;
+      position: absolute;
+      width: 15vw;
+      background-color: #156CB3;
+      top: 9px; }
+    .featured__title--text:after {
+      left: -175%; }
+    .featured__title--text:before {
+      right: -175%; }
 
 .featured .wrapper {
   -webkit-box-orient: vertical;

@@ -8,6 +8,7 @@
         &--text {
             display:inline-block;
             position:relative;
+            @include bars($accent_1);
         }
     }
     .wrapper {
