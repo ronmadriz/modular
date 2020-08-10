@@ -1,0 +1,9 @@
+.featured {
+    &__title {
+        display:block;
+        width:100%;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+}
