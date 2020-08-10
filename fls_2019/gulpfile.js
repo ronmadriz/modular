@@ -3,8 +3,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
-//var terser = require('gulp-terser');
-var uglify = require('gulp-uglify');
+var terser = require('gulp-terser');
+// var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin'),
     cache = require('gulp-cache');
 var minifycss = require('gulp-minify-css');
@@ -47,8 +47,8 @@ gulp.task('scripts', function(){
     .pipe(concat('main.js'))
     .pipe(gulp.dest('dist/scripts/'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
-    // .pipe(terser())
+    // .pipe(uglify())
+    .pipe(terser())
     .pipe(gulp.dest('dist/scripts/'))
 //    .pipe(browserSync.reload({stream:true}))
 });
