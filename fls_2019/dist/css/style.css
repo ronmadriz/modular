@@ -1516,6 +1516,9 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
   width: 50%; }
   @media (min-width: 786px) {
     .solutions__item {
+      width: 33%; } }
+  @media (min-width: 991px) {
+    .solutions__item {
       width: 25%; } }
 
 .solutions .wrapper {
