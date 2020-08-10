@@ -1,6 +1,12 @@
 .speak {
 	border-bottom: .125rem solid $accent_1;
 	border-top: .125rem solid $accent_1;
+	&__text {
+		&--text {
+			font-size: 1.75rem;			
+			padding: 1.5rem 6.25rem;
+		}
+	}
 	&__link {
 		display:block;
 		background:$accent_2;
