@@ -2161,9 +2161,9 @@ body section#gallery .lSAction > a {
       background-color: #156CB3;
       top: 0.875rem; }
     .featured__title--text:after {
-      left: -175%; }
+      left: -100%; }
     .featured__title--text:before {
-      right: -175%; }
+      right: -100%; }
 
 .featured .wrapper {
   -webkit-box-orient: vertical;

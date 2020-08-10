@@ -22,7 +22,7 @@
 }
 
 // Commonly Used
-@mixin bars($bars_bg, $bars_pos){
+@mixin bars($bars_bg, $bars_pos, $bars_dist){
 	&:before, &:after {
 		content: '';
 		height: 1px;
@@ -32,9 +32,9 @@
 		top: $bars_pos;										
 	}
 	&:after {
-		left:-175%;
+		left:$bars_dist;
 	}
 	&:before {
-		right:-175%;
+		right:$bars_dist;
 	}	
 }
