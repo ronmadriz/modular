@@ -2074,34 +2074,6 @@ body section#gallery .lSAction > a {
   letter-spacing: .075rem;
   text-transform: uppercase; }
 
-.speak {
-  background: #FECD06;
-  border-bottom: 0.125rem solid #156CB3;
-  border-top: 0.125rem solid #156CB3; }
-  .speak__title--text {
-    font-size: 1.75rem; }
-  .speak__link {
-    display: block;
-    padding: 1.5rem 3.25rem;
-    line-height: 150%;
-    -webkit-transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s;
-    transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s; }
-    @media (min-width: 786px) {
-      .speak__link {
-        padding: 1.5rem 6.25rem;
-        font-size: 1.75rem; } }
-    .speak__link:hover {
-      background-color: #156CB3;
-      color: #FECD06;
-      text-decoration: none; }
-      @media (min-width: 786px) {
-        .speak__link:hover {
-          font-size: 110%; } }
-  .speak .wrapper {
-    display: block;
-    max-width: 100%;
-    text-align: center; }
-
 html body main #gallery .carousel-inner .carousel-item.active,
 html body main #gallery .carousel-inner .carousel-item-next,
 html body main #gallery .carousel-inner .carousel-item-prev {
@@ -2197,6 +2169,34 @@ html body main #flsCarousel {
 
 .additional_content {
   padding-bottom: 2rem; }
+
+.speak {
+  background: #FECD06;
+  border-bottom: 0.125rem solid #156CB3;
+  border-top: 0.125rem solid #156CB3; }
+  .speak__title--text {
+    font-size: 1.75rem; }
+  .speak__link {
+    display: block;
+    padding: 1.5rem 3.25rem;
+    line-height: 150%;
+    -webkit-transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s;
+    transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s; }
+    @media (min-width: 786px) {
+      .speak__link {
+        padding: 1.5rem 6.25rem;
+        font-size: 1.75rem; } }
+    .speak__link:hover {
+      background-color: #156CB3;
+      color: #FECD06;
+      text-decoration: none; }
+      @media (min-width: 786px) {
+        .speak__link:hover {
+          font-size: 110%; } }
+  .speak .wrapper {
+    display: block;
+    max-width: 100%;
+    text-align: center; }
 
 #fvpp-blackout {
   display: none;
