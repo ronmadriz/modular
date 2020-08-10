@@ -21,7 +21,12 @@
 		}
 	}
 	&__text {
+		font-family:$tertiary;
 		font-size: 1.25rem;
+		font-weight:700;
+		margin-top: 1rem;
+		text-align: center;
+		text-transform: uppercase;		
 	}
 	&__link {
 		color:$accent_1;
