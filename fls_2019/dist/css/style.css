@@ -2084,7 +2084,6 @@ body section#gallery .lSAction > a {
   .speak__link {
     display: block;
     padding: 1.5rem 3.25rem;
-    font-size: 1.25rem;
     line-height: 150%;
     -webkit-transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s;
     transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s; }
