@@ -2,7 +2,7 @@
 $download_literature_title = get_field('download_literature_title');
 $download_literature       = get_field('download_literature');
 if (have_rows('download_literature')) {
-	echo '<section id="literature">'.PHP_EOL;
+	echo '<section class="literature" id="literature">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<span class="section_title col-12"><h2>'.(!empty($download_literature_title)?$download_literature_title:'download literature').'</h2></span>'.PHP_EOL;
 	echo '<span class="content col-12">'.PHP_EOL;
