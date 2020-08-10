@@ -2023,10 +2023,27 @@ body section#gallery .lSAction > a {
 .hero {
   background-color: #156CB3; }
   .hero__holder {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     min-height: 6rem;
     width: 100%; }
+    @media (min-width: 991px) {
+      .hero__holder {
+        max-height: 60vh;
+        overflow-x: hidden; } }
   .hero__img {
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%; }
   .hero__title {
     padding-top: 1rem;
