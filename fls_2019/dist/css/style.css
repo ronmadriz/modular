@@ -1977,25 +1977,24 @@ body section#gallery .lSAction > a {
   body section#gallery .lSPager.lSGallery {
     display: none; } }
 
-.hero__holder {
-  display: block;
-  min-height: 6rem;
-  width: 100vw; }
-
-.hero__img {
-  width: 100%; }
-
-.hero__title {
-  background-color: #156CB3;
-  color: #FFFFFF;
-  padding-top: 1rem;
-  width: 100vw; }
-
-.hero .wrapper {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+.hero {
+  background-color: #156CB3; }
+  .hero__holder {
+    display: block;
+    min-height: 6rem;
+    width: 100vw; }
+  .hero__img {
+    width: 100%; }
+  .hero__title {
+    padding-top: 1rem;
+    width: 100vw; }
+    .hero__title--text {
+      color: #FFFFFF; }
+  .hero .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
 
 .banners .container-fluid, .banners .row {
   padding-left: 0;
