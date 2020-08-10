@@ -2,8 +2,6 @@
 	background-color: $accent_1;
 	&__holder {
 		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
 		min-height:6rem;
 		width: 100%;
 		@include for-laptop-up {
