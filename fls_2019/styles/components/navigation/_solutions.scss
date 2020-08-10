@@ -14,7 +14,15 @@
 	&__image {}
 	&__content {
 		&--title {}
-		&--desc {}		
+		&--desc {
+			color: $base;
+			display: block;
+			line-height: 2.15;
+			font-size: 1.5625rem;
+			font-weight: 300;
+			margin: 0 0 30px;
+			text-align: center;
+		}
 	}
 	.wrapper {
 		flex-direction: column;
