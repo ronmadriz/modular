@@ -2079,8 +2079,7 @@ body section#gallery .lSAction > a {
   border-bottom: 0.125rem solid #156CB3;
   border-top: 0.125rem solid #156CB3; }
   .speak__title--text {
-    font-size: 1.75rem;
-    padding: 1.5rem 6.25rem; }
+    font-size: 1.75rem; }
   .speak__link {
     display: block;
     padding: 1.5rem 3.25rem;
