@@ -15,6 +15,6 @@ include (get_template_directory().'/views/components/image-callouts.php');
 include (get_template_directory().'/views/components/icons/default.php');
 include (get_template_directory().'/views/components/content/additional.php');
 include (get_template_directory().'/views/components/downloads/literature.php');
-include (get_template_directory().'/views/components/navigation/subnav.php');
+include (get_template_directory().'/views/components/navigation/solutions.php');
 include (get_template_directory().'/views/components/content/videos.php');
 get_footer();
