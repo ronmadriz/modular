@@ -6,6 +6,7 @@ j(document).ready(function(){
 		  j(this).attr('target', '_blank');
 		};
 	});
+  j('.crsl-items').carousel();
 	j('#myModal').on('shown.bs.modal', function () {
 		j('#myInput').trigger('focus')
 	})	
