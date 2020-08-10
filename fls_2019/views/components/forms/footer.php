@@ -1,6 +1,6 @@
 <?
 $form_phone = get_theme_mod('footer_phone');
-echo '<section id="cta_blue"><h2 class="text-md-center">';
+echo '<section id="cta_blue"><div class="wrapper"><h2 class="text-md-center">';
 _e('Tell Us About Your Fall Hazard', 'fc_core');
 echo '</h2></div></section>'.PHP_EOL;
 echo '<section id="contactFormCTA">'.PHP_EOL;
