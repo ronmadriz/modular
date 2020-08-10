@@ -9,7 +9,7 @@ if (have_rows('additional_content')) {
 		$ac_title     = get_sub_field('title');
 		$ac_content   = get_sub_field('content');
 		$ac_has_title = get_sub_field('has_title');
-		echo ($ac_has_title == 1?'<div class="row"><div class="col-12 section_title"><h2>'.$ac_title.'</h2></div></div>':'').PHP_EOL;
+		echo ($ac_has_title == 1?'<div class="row"><div class="col-12 section__title"><h2>'.$ac_title.'</h2></div></div>':'').PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
 		echo '<div class="content col-12">'.$ac_content.'</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;

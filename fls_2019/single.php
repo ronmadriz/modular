@@ -43,7 +43,7 @@ if (have_rows('post_gallery')) {
 		echo '<section id="gallery-'.$count.'">'.PHP_EOL;
 		echo '<div class="container">'.PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
-		echo '<div class="section_title col-12">'.PHP_EOL;
+		echo '<div class="section__title col-12">'.PHP_EOL;
 		echo '<h2>'.$gallery_title.'</h2>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;

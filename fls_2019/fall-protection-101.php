@@ -73,7 +73,7 @@ if (!empty($fp_info)) {
 $cf_contactForm_code = get_field('cf_contactForm_code');
 $cf_contactForm      = do_shortcode($cf_contactForm_code);
 if ($cf_contactForm) {
-	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="section_title col-12"><h2 class="text-center">How can we help?</h2></div></div></div></section>'.PHP_EOL;
+	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="section__title col-12"><h2 class="text-center">How can we help?</h2></div></div></div></section>'.PHP_EOL;
 	echo '<section id="cf_contactForm">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;// made fluid
 	echo '<div class="row">'.PHP_EOL;

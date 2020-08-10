@@ -11,7 +11,7 @@ if (have_rows('icons')) {
 			while (have_rows('icon_group')) {
 				the_row();
 				$icon_title = get_sub_field('title');
-				echo (!empty($icon_title)?'<div class="row"><div class="section_title col-12"><h2>'.$icon_title.'</h2></div></div>'.PHP_EOL:'');
+				echo (!empty($icon_title)?'<div class="row"><div class="section__title col-12"><h2>'.$icon_title.'</h2></div></div>'.PHP_EOL:'');
 				if (have_rows('icon')) {
 					while (have_rows('icon')) {
 						the_row();

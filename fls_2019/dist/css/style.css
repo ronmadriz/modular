@@ -38,9 +38,6 @@ body {
     font-size: 1.25rem; }
   body main p {
     margin-bottom: 1.75rem; }
-  body main .section_title {
-    margin: 1.5rem 0 1.5rem 0;
-    border-bottom: 1px solid #EEEEEE; }
 
 @-webkit-keyframes menuLinkFade {
   from {
@@ -101,6 +98,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.section__title {
+  margin: 1.5rem 0 1.5rem 0;
+  border-bottom: 1px solid #EEEEEE; }
 
 body header span.nav_tel {
   font-weight: bold;
@@ -527,11 +528,11 @@ html body div#pagewrapper {
     padding-left: 0;
     padding-right: 0; }
 
-html body div.section_title, html body span.section_title {
+html body div.section__title, html body span.section__title {
   border-bottom-width: 2px;
   border-bottom-color: #404040;
   padding-left: 0; }
-  html body div.section_title h2, html body span.section_title h2 {
+  html body div.section__title h2, html body span.section__title h2 {
     font-family: "Oswald", helvetica, sans-serif;
     font-size: 1.75rem;
     font-weight: 400;
@@ -1882,11 +1883,11 @@ body form {
       letter-spacing: .6px;
       display: block; }
 
-#cf_contactFormTitle div.section_title {
+#cf_contactFormTitle div.section__title {
   border-bottom-width: 0;
   border-bottom-color: transparent;
   margin: 0; }
-  #cf_contactFormTitle div.section_title h2 {
+  #cf_contactFormTitle div.section__title h2 {
     color: #FFFFFF; }
 
 #foot_call_cta {
@@ -2203,6 +2204,12 @@ html body main #flsCarousel {
     display: block;
     max-width: 100%;
     text-align: center; }
+
+.literature .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 #fvpp-blackout {
   display: none;
@@ -2777,7 +2784,7 @@ html body.solutions-template-solutions-fluid main section#testimonial, html body
   background-color: #f7f7f7;
   padding-top: 3rem;
   padding-bottom: 1rem; }
-  html body.solutions-template-solutions-fluid main section#testimonial div.section_title, html body.solutions-template-solutions-fluid main section#testimonial_2 div.section_title, html body.industries-template-single-industries-fluid main section#testimonial div.section_title, html body.industries-template-single-industries-fluid main section#testimonial_2 div.section_title, html body.page-template-fall-protection-101 main section#testimonial div.section_title, html body.page-template-fall-protection-101 main section#testimonial_2 div.section_title, html body.page-template-sample-fall-protection-plan main section#testimonial div.section_title, html body.page-template-sample-fall-protection-plan main section#testimonial_2 div.section_title, html body.industries-template-single-all-industries main section#testimonial div.section_title, html body.industries-template-single-all-industries main section#testimonial_2 div.section_title, html body.solutions-template-single-all-solutions main section#testimonial div.section_title, html body.solutions-template-single-all-solutions main section#testimonial_2 div.section_title, html body.page-template-fluid main section#testimonial div.section_title, html body.page-template-fluid main section#testimonial_2 div.section_title, html body.blog main section#testimonial div.section_title, html body.blog main section#testimonial_2 div.section_title, html body.single-post main section#testimonial div.section_title, html body.single-post main section#testimonial_2 div.section_title {
+  html body.solutions-template-solutions-fluid main section#testimonial div.section__title, html body.solutions-template-solutions-fluid main section#testimonial_2 div.section__title, html body.industries-template-single-industries-fluid main section#testimonial div.section__title, html body.industries-template-single-industries-fluid main section#testimonial_2 div.section__title, html body.page-template-fall-protection-101 main section#testimonial div.section__title, html body.page-template-fall-protection-101 main section#testimonial_2 div.section__title, html body.page-template-sample-fall-protection-plan main section#testimonial div.section__title, html body.page-template-sample-fall-protection-plan main section#testimonial_2 div.section__title, html body.industries-template-single-all-industries main section#testimonial div.section__title, html body.industries-template-single-all-industries main section#testimonial_2 div.section__title, html body.solutions-template-single-all-solutions main section#testimonial div.section__title, html body.solutions-template-single-all-solutions main section#testimonial_2 div.section__title, html body.page-template-fluid main section#testimonial div.section__title, html body.page-template-fluid main section#testimonial_2 div.section__title, html body.blog main section#testimonial div.section__title, html body.blog main section#testimonial_2 div.section__title, html body.single-post main section#testimonial div.section__title, html body.single-post main section#testimonial_2 div.section__title {
     margin-bottom: 0; }
   html body.solutions-template-solutions-fluid main section#testimonial div.content, html body.solutions-template-solutions-fluid main section#testimonial_2 div.content, html body.industries-template-single-industries-fluid main section#testimonial div.content, html body.industries-template-single-industries-fluid main section#testimonial_2 div.content, html body.page-template-fall-protection-101 main section#testimonial div.content, html body.page-template-fall-protection-101 main section#testimonial_2 div.content, html body.page-template-sample-fall-protection-plan main section#testimonial div.content, html body.page-template-sample-fall-protection-plan main section#testimonial_2 div.content, html body.industries-template-single-all-industries main section#testimonial div.content, html body.industries-template-single-all-industries main section#testimonial_2 div.content, html body.solutions-template-single-all-solutions main section#testimonial div.content, html body.solutions-template-single-all-solutions main section#testimonial_2 div.content, html body.page-template-fluid main section#testimonial div.content, html body.page-template-fluid main section#testimonial_2 div.content, html body.blog main section#testimonial div.content, html body.blog main section#testimonial_2 div.content, html body.single-post main section#testimonial div.content, html body.single-post main section#testimonial_2 div.content {
     border: 1px solid #156CB3;

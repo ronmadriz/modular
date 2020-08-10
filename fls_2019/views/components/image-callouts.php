@@ -10,7 +10,7 @@ if ($image_callout['callout']) {
 		$co_title  = get_sub_field('callout_title');
 		$co_small  = get_sub_field('small_images');
 		$co_layout = get_sub_field('layout');
-		echo (!empty($co_title)?'<div class="row"><div class="section_title col-12"><h2>'.$co_title.'</h2></div></div>'.PHP_EOL:'');
+		echo (!empty($co_title)?'<div class="row"><div class="section__title col-12"><h2>'.$co_title.'</h2></div></div>'.PHP_EOL:'');
 		if ($co_layout && have_rows('callout')) {
 			while (have_rows('callout')) {
 				the_row();
