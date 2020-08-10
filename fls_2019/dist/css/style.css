@@ -2141,8 +2141,18 @@ body section#gallery .lSAction > a {
   text-transform: uppercase; }
 
 .featured__title {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   width: 100%; }
+  .featured__title--text {
+    display: inline-block;
+    position: relative; }
 
 .featured .wrapper {
   -webkit-box-orient: vertical;

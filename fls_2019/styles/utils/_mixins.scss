@@ -1,3 +1,4 @@
+// Screen Breaks
 @mixin for-phone-only {
   @media (max-width: 786px) { @content; }
 }
@@ -18,4 +19,22 @@
 }
 @mixin for-tv-up {
   @media (min-width: 1360px) { @content; }
+}
+
+// Commonly Used
+@mixin bars($bars_bg){
+	&:before, &:after {
+		content: '';
+		height: 1px;
+		position: absolute;
+		width: 15vw;
+		background-color: $bars_bg;
+		top: 9px;										
+	}
+	&:after {
+		left:-175%;
+	}
+	&:before {
+		right:-175%;
+	}	
 }

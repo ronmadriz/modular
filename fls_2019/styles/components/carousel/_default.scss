@@ -1,7 +1,14 @@
 .featured {
     &__title {
-        display:block;
-        width:100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        width: 100%;
+        &--text {
+            display:inline-block;
+            position:relative;
+        }
     }
     .wrapper {
         flex-direction: column;
