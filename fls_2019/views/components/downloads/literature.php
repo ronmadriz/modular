@@ -5,8 +5,7 @@ if (have_rows('download_literature')) {
 	echo '<section class="literature" id="literature">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<span class="literature__content section__title col-12"><h2>'.(!empty($download_literature_title)?$download_literature_title:'download literature').'</h2></span>'.PHP_EOL;
-	echo '<span class="literature__content">'.PHP_EOL;
-	echo '<div class="literature__list">'.PHP_EOL;
+	echo '<span class="literature__list">'.PHP_EOL;
 	while (have_rows('download_literature')) {
 		the_row();
 		$lit_file  = get_sub_field('file');
@@ -23,7 +22,6 @@ if (have_rows('download_literature')) {
 		echo '</figcaption>'.PHP_EOL;
 		echo '</figure>'.PHP_EOL;
 	}
-	echo '</div>'.PHP_EOL;
 	echo '</span>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
