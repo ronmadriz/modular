@@ -12,12 +12,11 @@
 		}
 	}
 	&__image {}
-	&__link {
-		color:$base;
-	}
 	&__content {
 		&--title {
 			display:block;
+			font-size: 1.6rem;
+			line-height: 1.75rem;			
 			text-align:center;
 		}
 		&--desc {
@@ -27,6 +26,9 @@
 			font-weight: 300;
 			margin: 0 0 30px;
 			text-align: center;
+			a {
+				color:$base;
+			}
 		}
 	}
 	.wrapper {
