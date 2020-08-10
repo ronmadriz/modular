@@ -47,8 +47,8 @@ gulp.task('scripts', function(){
     .pipe(concat('main.js'))
     .pipe(gulp.dest('dist/scripts/'))
     .pipe(rename({suffix: '.min'}))
-    // .pipe(uglify())
-    .pipe(terser())
+    .pipe(uglify())
+    // .pipe(terser())
     .pipe(gulp.dest('dist/scripts/'))
 //    .pipe(browserSync.reload({stream:true}))
 });
