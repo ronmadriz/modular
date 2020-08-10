@@ -1,4 +1,5 @@
 .speak {
+	background:$accent_2;
 	border-bottom: .125rem solid $accent_1;
 	border-top: .125rem solid $accent_1;
 	&__text {
@@ -9,7 +10,6 @@
 	}
 	&__link {
 		display:block;
-		background:$accent_2;
 		padding: 1.5rem 3.25rem;
 		font-size: 1.25rem;
 		line-height: 150%;
