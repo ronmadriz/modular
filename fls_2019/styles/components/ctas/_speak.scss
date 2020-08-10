@@ -1,5 +1,5 @@
 .speak {
-	background:$accent_2;
+	background: $accent_2;
 	border-bottom: .125rem solid $accent_1;
 	border-top: .125rem solid $accent_1;
 	&__text {
@@ -26,5 +26,10 @@
 			    font-size: 110%;
 		    }
 		}		
-	}	
+	}
+	.wrapper {
+	    display: block;
+	    max-width: 100%;
+	    text-align: center;
+	}
 }
