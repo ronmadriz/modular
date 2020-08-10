@@ -1512,6 +1512,14 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
   margin-bottom: .5rem;
   display: block; }
 
+.solutions .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 .footer {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
