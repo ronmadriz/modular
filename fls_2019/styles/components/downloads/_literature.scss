@@ -1,4 +1,28 @@
 .literature {
+	&__title {
+		display: flex;
+		width:100%;
+	}
+	&__list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width:100%;
+	}
+	&__item {
+		padding-left:0.9375rem;
+		padding-right:0.9375rem;
+		width:50%;
+		@include for-tablet-up {
+			width:33.3%;
+		}
+		@include for-laptop-up {
+			width:25%;
+		}
+	}
+	&__text {}
+	&__link {}
+	&__img {}
 	.wrapper {
 		flex-direction: column;
 	}

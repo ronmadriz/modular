@@ -6,7 +6,7 @@ if (have_rows('download_literature')) {
 	while (have_rows('download_literature')) {
 		the_row();
 		$download_literature_title = get_sub_field('dl_section_title');
-		echo '<span class="literature__content section__title col-12"><h2>'.(!empty($download_literature_title)?$download_literature_title:'download literature').'</h2></span>'.PHP_EOL;
+		echo '<span class="literature__title section__title col-12"><h2>'.(!empty($download_literature_title)?$download_literature_title:'download literature').'</h2></span>'.PHP_EOL;
 		if (have_rows('dl_documents')) {
 			echo '<span class="literature__list">'.PHP_EOL;
 			while (have_rows('dl_documents')) {
