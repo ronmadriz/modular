@@ -7,24 +7,24 @@
 			font-size: 1.75rem;			
 			padding: 1.5rem 6.25rem;
 		}
+		&--link {
+			display:block;
+			padding: 1.5rem 3.25rem;
+			font-size: 1.25rem;
+			line-height: 150%;
+		    transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s;
+			@media(min-width:786px) {
+				padding: 1.5rem 6.25rem;
+				font-size: 1.75rem;
+			}
+			&:hover {
+			    background-color:$accent_1;
+			    color:$accent_2;
+			    text-decoration: none;
+			    @media(min-width:786px){
+				    font-size: 110%;
+			    }
+			}		
+		}	
 	}
-	&__link {
-		display:block;
-		padding: 1.5rem 3.25rem;
-		font-size: 1.25rem;
-		line-height: 150%;
-	    transition: font-size ease .35s, color ease-in 0.45s, background-color ease-in .8s;
-		@media(min-width:786px) {
-			padding: 1.5rem 6.25rem;
-			font-size: 1.75rem;
-		}
-		&:hover {
-		    background-color:$accent_1;
-		    color:$accent_2;
-		    text-decoration: none;
-		    @media(min-width:786px){
-			    font-size: 110%;
-		    }
-		}		
-	}	
 }
