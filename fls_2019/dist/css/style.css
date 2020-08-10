@@ -2231,7 +2231,12 @@ html body main #flsCarousel {
       width: 25%; } }
 
 .literature__text {
-  font-size: 1.25rem; }
+  font-family: "Oswald", helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  text-align: center;
+  text-transform: uppercase; }
 
 .literature__link {
   color: #156CB3; }
