@@ -1,5 +1,7 @@
 .hero {
 	&__holder {
+		display: block;
 		min-height:6rem;
+		width: 100vw;
 	}
 }

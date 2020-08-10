@@ -2238,7 +2238,9 @@ svg .region path {
   margin: 0; }
 
 .hero__holder {
-  min-height: 6rem; }
+  display: block;
+  min-height: 6rem;
+  width: 100vw; }
 
 .banners .container-fluid, .banners .row {
   padding-left: 0;
