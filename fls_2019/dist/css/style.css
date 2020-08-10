@@ -1982,6 +1982,12 @@ body section#gallery .lSAction > a {
   min-height: 6rem;
   width: 100vw; }
 
+.hero .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 .banners .container-fluid, .banners .row {
   padding-left: 0;
   padding-right: 0; }
