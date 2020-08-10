@@ -12,16 +12,16 @@ include (get_template_directory().'/views/components/banner/default.php');
 <section id="featured_case_studies" class="featured">
 	<div class="wrapper">
 		<span class="featured__title"><h2 class="featured__title--text">Featured Projects</h2></span>
-		<div class="crsl-items">
-			<div class="crsl-wrap">
-				<figure class="crsl-item">
-					<img src="https://via.placeholder.com/480x360">
+		<div class="featured__items crsl-items">
+			<div class="featured__wrap crsl-wrap">
+				<figure class="featured__item crsl-item">
+					<img alt="" class="featured__image" src="https://via.placeholder.com/480x360">
 				</figure>
-				<figure class="crsl-item">
-					<img src="https://via.placeholder.com/480x360">
+				<figure class="featured__item crsl-item">
+					<img alt="" class="featured__image" src="https://via.placeholder.com/480x360">
 				</figure>
-				<figure class="crsl-item">
-					<img src="https://via.placeholder.com/480x360">
+				<figure class="featured__item crsl-item">
+					<img alt="" class="featured__image" src="https://via.placeholder.com/480x360">
 				</figure>
 			</div>
 		</div>
