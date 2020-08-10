@@ -2147,6 +2147,7 @@ body section#gallery .lSAction > a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
   width: 100%; }
