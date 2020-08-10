@@ -3,6 +3,9 @@
 	@media(min-width:768px) {
 		padding:2rem 100px;
 	}
+	&__content {
+		width:100%;
+	}
 	&__img {
 		&.img-fluid {
 			min-width: 100%;

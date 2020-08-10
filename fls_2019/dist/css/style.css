@@ -1951,6 +1951,8 @@ body form {
   @media (min-width: 768px) {
     .galleries {
       padding: 2rem 100px; } }
+  .galleries__content {
+    width: 100%; }
   .galleries__img.img-fluid {
     min-width: 100%; }
   .galleries .lSGallery li a img {
