@@ -100,8 +100,19 @@ body {
   background-size: cover; }
 
 .section__title {
+  border-bottom: 0.125rem solid #404040;
   margin: 1.5rem 0 1.5rem 0;
-  border-bottom: 1px solid #EEEEEE; }
+  padding-left: 0; }
+  .section__title h2 {
+    color: #404040;
+    font-family: "Oswald", helvetica, sans-serif;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .01em;
+    line-height: 1.2em;
+    margin-bottom: 1rem;
+    text-transform: uppercase; }
 
 body header span.nav_tel {
   font-weight: bold;
@@ -527,21 +538,6 @@ html body div#pagewrapper {
   html body div#pagewrapper section div.container {
     padding-left: 0;
     padding-right: 0; }
-
-html body div.section__title, html body span.section__title {
-  border-bottom-width: 2px;
-  border-bottom-color: #404040;
-  padding-left: 0; }
-  html body div.section__title h2, html body span.section__title h2 {
-    font-family: "Oswald", helvetica, sans-serif;
-    font-size: 1.75rem;
-    font-weight: 400;
-    font-style: normal;
-    color: #404040;
-    text-transform: uppercase;
-    letter-spacing: .01em;
-    line-height: 1.2em;
-    margin-bottom: 1rem; }
 
 html body .btn {
   border-radius: 0; }

@@ -51,25 +51,7 @@ html {
 					}
 				}
 			}
-		}
-		div, span {
-			&.section__title {
-				border-bottom-width: 2px;
-				border-bottom-color: $black;
-				padding-left: 0;
-				h2 {
-				    font-family: $tertiary;
-					font-size: 1.75rem;
-					font-weight: 400;
-					font-style: normal;
-					color: #404040;
-					text-transform: uppercase;
-					letter-spacing: .01em;
-					line-height: 1.2em;
-					margin-bottom: 1rem
-				}
-			}
-		}		
+		}	
 		.btn {
 			border-radius:0;
 			&.btn-blue {
