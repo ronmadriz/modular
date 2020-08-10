@@ -2153,14 +2153,15 @@ body section#gallery .lSAction > a {
   .featured__title--text {
     display: inline-block;
     font-size: 2rem;
-    position: relative; }
+    position: relative;
+    text-transform: uppercase; }
     .featured__title--text:before, .featured__title--text:after {
       content: '';
       height: 1px;
       position: absolute;
       width: 15vw;
       background-color: #156CB3;
-      top: 0.875rem; }
+      top: 1.25rem; }
     .featured__title--text:after {
       left: -120%; }
     .featured__title--text:before {

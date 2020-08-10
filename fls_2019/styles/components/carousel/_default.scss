@@ -9,7 +9,8 @@
             display:inline-block;
             font-size:2rem;
             position:relative;
-            @include bars($accent_1, .875rem, -120%);
+            text-transform:uppercase;
+            @include bars($accent_1, 1.25rem, -120%);
         }
     }
     .wrapper {
