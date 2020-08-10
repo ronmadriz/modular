@@ -12,7 +12,7 @@ if (have_rows('affiliated_solutions')) {
 		$as_summary  = get_field('summary', $as_solution->ID);
 		echo '<figure class="solutions__item">'.PHP_EOL;
 		echo '<a class="solutions__link" href="'.get_permalink($as_solution->ID).'">'.get_the_post_thumbnail($as_solution->ID, 'full', array('class' => 'solutions__image img-fluid')).'</a>'.PHP_EOL;
-		echo '<figcaption class="solutions__content"><h3 class="solutions__content--title"><a class="solutions__link" href="'.get_permalink($as_solution->ID).'">'.get_the_title($as_solution->ID).'</a></h3></div>'.PHP_EOL;
+		echo '<figcaption class="solutions__content"><h3 class="solutions__content--title"><a class="solutions__link" href="'.get_permalink($as_solution->ID).'">'.get_the_title($as_solution->ID).'</a></h3>'.PHP_EOL;
 		echo '<span class="solutions__content--desc"><a class="solutions__link" href="'.get_the_permalink($as_solution->ID).'">'.$as_summary.'</a></span></figcaption>'.PHP_EOL;
 		echo '</figure>'.PHP_EOL;
 	}
