@@ -1,11 +1,11 @@
 <?php
 $download_literature_title = get_field('download_literature_title');
+$download_literature       = get_field('download_literature');
 if (have_rows('download_literature')) {
 	echo '<section id="literature">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
-	echo '<div class="section_title col-12"><h2>'.(!empty($download_literature_title)?$download_literature_title:'download literature').'</h2></div>'.PHP_EOL;
-	echo '<div class="row">'.PHP_EOL;
-	echo '<div class="content col-12">'.PHP_EOL;
+	echo '<span class="section_title col-12"><h2>'.(!empty($download_literature_title)?$download_literature_title:'download literature').'</h2></span>'.PHP_EOL;
+	echo '<span class="content col-12">'.PHP_EOL;
 	echo '<ul class="d-flex align-items-start flex-wrap literature_list">'.PHP_EOL;
 	while (have_rows('download_literature')) {
 		the_row();
@@ -24,8 +24,7 @@ if (have_rows('download_literature')) {
 		echo '</li>'.PHP_EOL;
 	}
 	echo '</ul>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
+	echo '</span>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
