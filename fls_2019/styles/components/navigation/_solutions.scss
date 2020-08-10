@@ -1,4 +1,11 @@
 // Solutions in page Sub Navigation - links pages to their respective sibling/child solutions
 .solutions {
-	
+	&__title {}
+	&__list {}
+	&__item {}
+	&__image {}
+	&__content {
+		&--title {}
+		&--desc {}		
+	}
 }
