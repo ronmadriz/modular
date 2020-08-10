@@ -2,12 +2,12 @@
     &__title {
         display: flex;
         justify-content: center;
-        font-size:2rem;
         margin-bottom: 2rem;
         margin-top: 2rem;
         width: 100%;
         &--text {
             display:inline-block;
+            font-size:2rem;
             position:relative;
             @include bars($accent_1, .875rem, -100%);
         }
