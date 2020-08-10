@@ -8,26 +8,40 @@ $pageCF = get_post_custom($pageID);
 get_header();
 
 include (get_template_directory().'/views/components/banner/default.php');
-
-// Fall Safety Solution CONTENT
-if (have_posts()) {
-	echo '<section id="main-content">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
-	while (have_posts()) {
-		the_post();
-		echo '<div class="row justify-content-center align-content-center mb-2">'.PHP_EOL;
-		echo '<div class="col-12">';
-		the_content();
-		echo '</div>'.PHP_EOL;
-		echo '</div>'.PHP_EOL;
-	}
-	wp_reset_postdata();
-	echo '</div>'.PHP_EOL;
-	echo '</div>'.PHP_EOL;
-	echo '</section>'.PHP_EOL;
-}
-// All Top Level Fall Safety Solution
-
+?>
+<section id="featured_case_studies" class="featured">
+	<div class="wrapper">
+		<span class="featured__title"><h2 class="featured__title--text">Feature Projects</h2></span>
+		<div class="plant-carousel">
+			<div class="slide fade">
+				<img class="plant-1" src="https://images.unsplash.com/photo-1519162808019-7de1683fa2ad" alt="">
+				<div class="plant-caption">
+					<h1>avocado</h1>
+				</div>
+			</div>
+			<div class="slide fade">
+				<img class="plant-2" src="https://images.unsplash.com/photo-1531730802399-67fca7529b13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80g" alt="">
+				<div class="plant-caption">
+					<h1>tomato</h1>
+				</div>
+			</div>
+			<div class="slide fade">
+				<img class="plant-3" src="https://images.pexels.com/photos/51312/kiwi-fruit-vitamins-healthy-eating-51312.jpeg" alt="">
+				<div class="plant-caption">
+					<h1>kiwi</h1>
+				</div>
+			</div>
+			<a class="prev" onclick="nextSlide(-1)"></a>
+			<a class="next" onclick="nextSlide(1)"></a>
+			<div class="dot-container">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
+	</div>
+</section>
+<?
 $studies_args = array(
 	'post_type'      => array('solutions', 'industries'),
 	'posts_per_page' => -1,
