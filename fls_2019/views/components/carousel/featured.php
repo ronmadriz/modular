@@ -9,10 +9,10 @@ if ($featured_query->have_posts()) {
 	while ($featured_query->have_posts()) {
 		$featured_query->the_post();
 		echo '<figure class="featured__item">'.PHP_EOL;
-		echo '<a class="featured__link" href="#"><img alt="" class="featured__image" src="https://via.placeholder.com/480x360"></a>'.PHP_EOL;
+		echo '<a class="featured__link" href="'.get_the_permalink().'"><img alt="'.get_the_title().'" class="featured__image" src="'.get_the_post_thumbnail_url($size = 'medium').'"></a>'.PHP_EOL;
 		echo '<figcaption class="featured__content">'.PHP_EOL;
-		echo '<span class="featured__item--title"></span>'.PHP_EOL;
-		echo '<span class="featured__item--desc"></span>'.PHP_EOL;
+		echo '<span class="featured__item--title">'.get_the_title().'</span>'.PHP_EOL;
+		echo '<span class="featured__item--desc">'.get_the_excerpt().'</span>'.PHP_EOL;
 		echo '</figcaption>'.PHP_EOL;
 		echo '</figure>'.PHP_EOL;
 	}
