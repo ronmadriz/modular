@@ -1,7 +1,10 @@
 // Solutions in page Sub Navigation - links pages to their respective sibling/child solutions
 .solutions {
 	&__title {}
-	&__list {}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;		
+	}
 	&__item {
 		width: 50%;
 		@include for-tablet-up {

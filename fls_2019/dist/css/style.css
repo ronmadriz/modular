@@ -1524,6 +1524,13 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
   margin-bottom: .5rem;
   display: block; }
 
+.solutions__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 .solutions__item {
   width: 50%; }
   @media (min-width: 786px) {
