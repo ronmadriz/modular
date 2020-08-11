@@ -8,8 +8,9 @@ if ($featured_query->have_posts()) {
 	echo '<div class="featured__list">'.PHP_EOL;
 	while ($featured_query->have_posts()) {
 		$featured_query->the_post();
+		$featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
 		echo '<figure class="featured__item">'.PHP_EOL;
-		echo '<a class="featured__link" href="'.get_the_permalink().'"><img alt="'.get_the_title().'" class="featured__image" src="'.get_the_post_thumbnail_url($size = 'medium').'"></a>'.PHP_EOL;
+		echo '<a class="featured__link" href="'.get_the_permalink().'"><img alt="'.get_the_title().'" class="featured__image" src="'.$featured_img_url.'"></a>'.PHP_EOL;
 		echo '<figcaption class="featured__content">'.PHP_EOL;
 		echo '<span class="featured__item--title">'.get_the_title().'</span>'.PHP_EOL;
 		echo '<span class="featured__item--desc">'.get_the_excerpt().'</span>'.PHP_EOL;
