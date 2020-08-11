@@ -2160,10 +2160,18 @@ body section#gallery .lSAction > a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+.featured__image {
+  width: 100%; }
+  .featured__image--link {
+    display: block; }
+
 .featured__item {
-  width: 33%;
+  width: 100%;
   padding-left: .9375rem;
   padding-right: .9375rem; }
+  @media (min-width: 991px) {
+    .featured__item {
+      width: 33%; } }
 
 .featured__title {
   display: -webkit-box;

@@ -4,10 +4,19 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
+    &__image {
+        width:100%;
+        &--link {
+            display:block;
+        }
+    }
     &__item {
-        width:33%;
+        width:100%;
         padding-left:.9375rem;
         padding-right:.9375rem;
+        @include for-laptop-up {
+            width:33%;        
+        }
     }
     &__title {
         display: flex;
