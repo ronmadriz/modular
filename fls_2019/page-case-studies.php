@@ -15,6 +15,7 @@ $featured_args = array(
 	'meta_key'       => 'featured_item',
 	'meta_value'     => '1',
 );
+$featured__link__text = 'View Project';
 include (get_template_directory().'/views/components/carousel/featured.php');
 $studies_args = array(
 	'post_type'      => array('solutions', 'industries'),
