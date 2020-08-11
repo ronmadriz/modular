@@ -1532,6 +1532,8 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
       flex-wrap: wrap; }
 
 .solutions__item {
+  padding-bottom: .9375rem;
+  padding-right: .9375rem;
   width: 50%; }
   @media (min-width: 786px) {
     .solutions__item {
