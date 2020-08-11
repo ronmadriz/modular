@@ -1,4 +1,14 @@
 .featured {
+    &__list {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width:33%;
+        padding-left:.9375rem;
+        padding-right:.9375rem;
+    }
     &__title {
         display: flex;
         justify-content: center;

@@ -2149,6 +2149,22 @@ body section#gallery .lSAction > a {
   letter-spacing: .075rem;
   text-transform: uppercase; }
 
+.featured__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.featured__item {
+  width: 33%;
+  padding-left: .9375rem;
+  padding-right: .9375rem; }
+
 .featured__title {
   display: -webkit-box;
   display: -ms-flexbox;
