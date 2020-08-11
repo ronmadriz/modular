@@ -8,26 +8,7 @@ $pageCF = get_post_custom($pageID);
 get_header();
 
 include (get_template_directory().'/views/components/banner/default.php');
-?>
-<section id="featured_case_studies" class="featured">
-	<div class="wrapper">
-		<span class="featured__title"><h2 class="featured__title--text">Featured Projects</h2></span>
-		<div class="featured__items crsl-items">
-			<div class="featured__wrap crsl-wrap">
-				<figure class="featured__item crsl-item">
-					<img alt="" class="featured__image" src="https://via.placeholder.com/480x360">
-				</figure>
-				<figure class="featured__item crsl-item">
-					<img alt="" class="featured__image" src="https://via.placeholder.com/480x360">
-				</figure>
-				<figure class="featured__item crsl-item">
-					<img alt="" class="featured__image" src="https://via.placeholder.com/480x360">
-				</figure>
-			</div>
-		</div>
-	</div>
-</section>
-<?
+include (get_template_directory().'/views/components/carousel/featured.php');
 $studies_args = array(
 	'post_type'      => array('solutions', 'industries'),
 	'posts_per_page' => -1,
