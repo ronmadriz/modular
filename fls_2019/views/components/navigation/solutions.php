@@ -6,6 +6,7 @@ if (have_rows('affiliated_solutions')) {
 	echo '<span class="solutions__title section__title"><h2>';
 	_e('Solutions', 'fc_core');
 	echo '</h2></span>'.PHP_EOL;
+	echo '<span class="solutions__list">'.PHP_EOL;
 	while (have_rows('affiliated_solutions')) {
 		the_row();
 		$as_solution = get_sub_field('as_solution');
@@ -16,6 +17,7 @@ if (have_rows('affiliated_solutions')) {
 		echo '<span class="solutions__content--desc"><a class="solutions__link" href="'.get_the_permalink($as_solution->ID).'">'.$as_summary.'</a></span></figcaption>'.PHP_EOL;
 		echo '</figure>'.PHP_EOL;
 	}
+	echo '</span>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
