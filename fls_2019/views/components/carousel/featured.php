@@ -8,7 +8,7 @@ if ($featured_query->have_posts()) {
 	echo '<div class="featured__list">'.PHP_EOL;
 	while ($featured_query->have_posts()) {
 		$featured_query->the_post();
-		$featured_img_url  = get_the_post_thumbnail_url(get_the_ID(), 'medium');
+		$featured_img_url  = get_the_post_thumbnail_url(get_the_ID(), 'full');
 		$featured_title    = get_field('sidebar__title');
 		$featured__summary = get_field('sidebar__summary');
 		echo '<figure class="featured__item">'.PHP_EOL;
