@@ -16,7 +16,7 @@ if ($featured_query->have_posts()) {
 		echo '<figcaption class="featured__content">'.PHP_EOL;
 		echo '<span class="featured__content--title">'.$featured_title.'</span>'.PHP_EOL;
 		echo '<span class="featured__content--desc">'.$featured__summary.'</span>'.PHP_EOL;
-		echo '<span class="featured__content--link">'.$featured__link__text.'</span>'.PHP_EOL;
+		echo '<span class="featured__content--link"><a href="'.get_the_permalink().'">'.$featured__link__text.'</a></span>'.PHP_EOL;
 		echo '</figcaption>'.PHP_EOL;
 		echo '</figure>'.PHP_EOL;
 	}
