@@ -1,13 +1,8 @@
 <?
 $featured_cs_args = array(
-	'post_type' => 'post',
-	'tax_query' => array(
-		array(
-			'taxonomy' => 'people',
-			'field'    => 'slug',
-			'terms'    => 'bob',
-		),
-	),
+	'post_type'      => array('case_study'),
+	'post_status'    => array('publish'),
+	'posts_per_page' => '3',
 );
 $featured_cs_query = new WP_Query($featured_cs_args);
 
