@@ -8,6 +8,13 @@ $pageCF = get_post_custom($pageID);
 get_header();
 
 include (get_template_directory().'/views/components/banner/default.php');
+$featured_args = array(
+	'post_type'      => array('case_study'),
+	'post_status'    => array('publish'),
+	'posts_per_page' => '3',
+	'meta_key'       => 'featured_item',
+	'meta_value'     => '1',
+);
 include (get_template_directory().'/views/components/carousel/featured.php');
 $studies_args = array(
 	'post_type'      => array('solutions', 'industries'),
