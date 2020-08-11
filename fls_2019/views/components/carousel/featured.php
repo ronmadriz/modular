@@ -12,10 +12,10 @@ if ($featured_query->have_posts()) {
 		$featured_title    = get_field('sidebar__title');
 		$featured__summary = get_field('sidebar__summary');
 		echo '<figure class="featured__item">'.PHP_EOL;
-		echo '<a class="featured__link" href="'.get_the_permalink().'"><img alt="'.get_the_title().'" class="featured__image" src="'.$featured_img_url.'"></a>'.PHP_EOL;
+		echo '<a class="featured__link" href="'.get_the_permalink().'"><img alt="'.$featured_title.'" class="featured__image" src="'.$featured_img_url.'"></a>'.PHP_EOL;
 		echo '<figcaption class="featured__content">'.PHP_EOL;
-		echo '<span class="featured__item--title">'.get_the_title().'</span>'.PHP_EOL;
-		echo '<span class="featured__item--desc">'.get_the_excerpt().'</span>'.PHP_EOL;
+		echo '<span class="featured__item--title">'.$featured_title.'</span>'.PHP_EOL;
+		echo '<span class="featured__item--desc">'.$featured__summary.'</span>'.PHP_EOL;
 		echo '</figcaption>'.PHP_EOL;
 		echo '</figure>'.PHP_EOL;
 	}
