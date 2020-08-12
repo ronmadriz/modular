@@ -1648,7 +1648,10 @@ body form {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 10vh; }
+  padding-bottom: 5vh; }
+  @media (min-width: 786px) {
+    .studies__results {
+      padding-bottom: 10vh; } }
 
 .studies__title {
   display: -webkit-box;
