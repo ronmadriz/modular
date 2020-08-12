@@ -1103,11 +1103,25 @@ html body main #flsCarousel {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 0 2rem;
   position: relative;
   width: 100%; }
 
 .featured__nav {
-  position: absolute; }
+  position: absolute;
+  top: 25%; }
+  .featured__nav--text {
+    display: none; }
+
+.featured__icon {
+  background: url(../../sprites/arrow.svg) no-repeat center center;
+  background-size: cover;
+  display: inline-block;
+  -webkit-filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
+          filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
+  height: .5rem;
+  margin-left: .5rem;
+  width: .5rem; }
 
 .featured__image {
   width: 100%; }
@@ -2066,7 +2080,7 @@ svg .region path {
   .menus__toggle {
     display: none; }
   .menus .caret {
-    background: url(../../sprites/down.svg) no-repeat center center;
+    background: url(../../sprites/arrow.svg) no-repeat center center;
     background-size: cover;
     display: inline-block;
     -webkit-filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
