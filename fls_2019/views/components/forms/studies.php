@@ -15,7 +15,7 @@ if ($studies_query) {
 				'orderby'  => 'name',
 			))) {
 		echo '<div class="studies__drop button-group" data-filter-group="solution_type">'.PHP_EOL;
-		echo '<div class="dropdown text-right">'.PHP_EOL;
+		echo '<span class="dropdown text-right">'.PHP_EOL;
 		echo '<label class="studies__label">'.PHP_EOL;
 		echo '<select class="dropdown-toggle studies__dropdown" id="solution_filter">'.PHP_EOL;
 		$count_sol = 0;
@@ -27,7 +27,7 @@ if ($studies_query) {
 		}
 		echo '</select>'.PHP_EOL;
 		echo '</label>'.PHP_EOL;
-		echo '</div>'.PHP_EOL;
+		echo '</span>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 
 	}
@@ -36,7 +36,7 @@ if ($studies_query) {
 	// $count_ind = 0;
 	if ($ind_studies = get_terms(array('taxonomy' => 'industry', 'orderby' => 'menu_index', ))) {
 		echo '<div class="studies__drop button-group" data-filter-group="industry">'.PHP_EOL;
-		echo '<div class="dropdown">'.PHP_EOL;
+		echo '<span class="dropdown">'.PHP_EOL;
 		echo '<label class="studies__label">'.PHP_EOL;
 		echo '<select class="dropdown-toggle studies__dropdown" id="industry_filter">'.PHP_EOL;
 		$count_ind = 0;
@@ -47,7 +47,7 @@ if ($studies_query) {
 		}
 		echo '</select>'.PHP_EOL;
 		echo '</label>'.PHP_EOL;
-		echo '</div>'.PHP_EOL;
+		echo '</span>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 
 	}
