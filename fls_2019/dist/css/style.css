@@ -1113,6 +1113,7 @@ html body main #flsCarousel {
   .featured__nav--text {
     display: none; }
   .featured__nav--prev {
+    left: 0;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
   .featured__nav--next {
