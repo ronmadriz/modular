@@ -48,8 +48,10 @@
 		}
 	}
 	&__text {
+		font-size: .8375rem;
 		@include for-tablet-up {
 			bottom: 0;
+			font-size:1rem;
 			max-width: 90%;
 			padding: .5rem;
 			position: absolute;

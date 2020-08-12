@@ -1620,13 +1620,16 @@ body form {
     .studies__link {
       color: #FFFFFF; } }
 
-@media (min-width: 786px) {
-  .studies__text {
-    bottom: 0;
-    max-width: 90%;
-    padding: .5rem;
-    position: absolute;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75); } }
+.studies__text {
+  font-size: .8375rem; }
+  @media (min-width: 786px) {
+    .studies__text {
+      bottom: 0;
+      font-size: 1rem;
+      max-width: 90%;
+      padding: .5rem;
+      position: absolute;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75); } }
 
 .studies__results {
   display: -webkit-box;
