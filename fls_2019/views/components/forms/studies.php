@@ -21,11 +21,12 @@ if ($studies_query) {
 		echo '<span class="dropdown text-right">'.PHP_EOL;
 		echo '<label class="studies__label">'.PHP_EOL;
 		echo '<select class="dropdown-toggle studies__dropdown" id="solution_filter">'.PHP_EOL;
+		echo '<option class="studies__option">Solutions</option>'.PHP_EOL;
 		$count_sol = 0;
 		foreach ($sol_studies as $sol_study) {
 			$sol_status = ($count_sol == 0?'active ':'');
 			$sol_all    = ($count_sol == 0?' id="all"':'');
-			echo '<option'.$sol_all.' class="'.$sol_status.' studies__option btn_filter" value="'.$sol_study->slug.'">'.$sol_study->name.'</option>'.PHP_EOL;// ID of the category as an option value
+			echo '<option'.$sol_all.' class="'.$sol_status.'studies__option btn_filter" value="'.$sol_study->slug.'">'.$sol_study->name.'</option>'.PHP_EOL;// ID of the category as an option value
 			$count_sol++;
 		}
 		echo '</select>'.PHP_EOL;
@@ -42,6 +43,7 @@ if ($studies_query) {
 		echo '<span class="dropdown">'.PHP_EOL;
 		echo '<label class="studies__label">'.PHP_EOL;
 		echo '<select class="dropdown-toggle studies__dropdown" id="industry_filter">'.PHP_EOL;
+		echo '<option class="studies__option">Industry</option>'.PHP_EOL;
 		$count_ind = 0;
 		foreach ($ind_studies as $ind_study) {
 			$ind_status = ($count_ind == 0?'active ':'');
