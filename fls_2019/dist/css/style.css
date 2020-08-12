@@ -2028,6 +2028,7 @@ body form {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: .9375rem;
+  position: relative;
   width: 50%; }
   @media (min-width: 991px) {
     .studies__item {
@@ -2038,6 +2039,13 @@ body form {
 
 .studies__image {
   width: 100%; }
+
+.studies__text {
+  bottom: 0;
+  max-width: 90%;
+  padding: .5rem;
+  position: absolute;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3725); }
 
 .studies .wrapper {
   display: -webkit-box;

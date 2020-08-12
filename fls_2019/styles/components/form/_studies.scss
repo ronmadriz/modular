@@ -32,6 +32,7 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		padding:.9375rem;
+		position: relative;
 		width: 50%;
 		@include for-laptop-up {
 			width: 33%;		
@@ -43,7 +44,13 @@
 	&__image {
 	    width: 100%;
 	}
-	&__text {}
+	&__text {
+		bottom: 0;
+		max-width: 90%;
+		padding: .5rem;
+		position: absolute;
+		text-shadow: 1px 1px 3px rgba($accent_7,.3725);
+	}
 	.wrapper {
 	    display: flex;
 	    flex-direction: column;
