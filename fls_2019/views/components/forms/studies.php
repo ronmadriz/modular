@@ -70,7 +70,7 @@ if ($studies_query) {
 				echo ' '.$study_cat->slug;
 			}
 		}
-		echo '" href="'.get_permalink().'>'.PHP_EOL;
+		echo '" href="'.get_permalink().'">'.PHP_EOL;
 		// the_post_thumbnail('full', array('class' => 'studies__image'));
 		echo '<img alt="'.$studies__title.'" class="studies__image" src="'.$studies__image.'">'.PHP_EOL;
 		echo '<span class="studies__text">'.$studies__title.'</span>'.PHP_EOL;
