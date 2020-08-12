@@ -1145,6 +1145,14 @@ html body main #flsCarousel {
   font-weight: 600;
   margin-bottom: 1.25rem; }
 
+.featured__button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: block; }
+  .featured__button--link {
+    display: block;
+    width: 100%; }
+
 .featured .wrapper {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
