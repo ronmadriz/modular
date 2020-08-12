@@ -2027,6 +2027,17 @@ body form {
     position: absolute;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75); } }
 
+.studies__results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 .studies__title {
   display: -webkit-box;
   display: -ms-flexbox;
