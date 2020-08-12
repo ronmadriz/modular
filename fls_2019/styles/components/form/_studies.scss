@@ -22,6 +22,11 @@
 	&__label {}
 	&__dropdown {}
 	&__option {}
+	&__results {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;		
+	}
 	&__item {
 		display: flex;
 		flex-direction: column;
