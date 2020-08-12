@@ -969,11 +969,13 @@ html form.lrm-form ul.acf-checkbox-list li {
             flex-direction: column; }
 
 .button__outline {
-  display: block;
-  width: 100%;
   border: 0.125rem solid #156cb3;
+  display: block;
+  padding: .1875rem;
   text-align: center;
-  padding: .1875rem; }
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%; }
 
 .load__more {
   background-color: #ddd;
