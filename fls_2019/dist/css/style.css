@@ -1987,9 +1987,10 @@ body form {
 .studies__dropdown {
   border: 0;
   color: #156CB3;
+  font-size: 1.25rem;
   padding: .375rem;
   outline: 0;
-  font-size: 1.25rem; }
+  text-transform: uppercase; }
 
 .studies__image {
   width: 100%; }

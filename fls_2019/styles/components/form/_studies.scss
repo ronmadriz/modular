@@ -15,9 +15,10 @@
 	&__dropdown {
 		border: 0;
 		color: $accent_1;
+		font-size: 1.25rem;		
 		padding: .375rem;
 	    outline: 0;
-		font-size: 1.25rem;		
+	    text-transform:uppercase;
 	}
 	&__image {
 	    width: 100%;
