@@ -1994,6 +1994,18 @@ body form {
     .studies__title--text:before {
       right: -120%; }
 
+.studies__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .studies .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
