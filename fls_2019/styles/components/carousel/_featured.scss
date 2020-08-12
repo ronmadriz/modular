@@ -13,7 +13,8 @@
     }
     &__item {
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
+        min-height: 100%;
         padding-left:.9375rem;
         padding-right:.9375rem;
         width:100%;

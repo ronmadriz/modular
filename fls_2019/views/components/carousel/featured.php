@@ -12,11 +12,9 @@ if ($featured_query->have_posts()) {
 		$featured__summary = get_field('sidebar__summary');
 		echo '<div class="featured__item">'.PHP_EOL;
 		echo '<a class="featured__image--link" href="'.get_the_permalink().'"><img alt="'.$featured__title.'" class="featured__image" src="'.$featured__img.'"></a>'.PHP_EOL;
-		echo '<div class="featured__content">'.PHP_EOL;
 		echo '<span class="featured__title"><a class="featured__title--link" href="'.get_the_permalink().'">'.(!empty($featured__title)?$featured__title:get_the_title()).'</a></span>'.PHP_EOL;
 		echo '<span class="featured__desc">'.$featured__summary.'</span>'.PHP_EOL;
 		echo '<span class="featured__button"><a class="button__outline featured__button--link" href="'.get_the_permalink().'">'.$featured__link__text.'</a></span>'.PHP_EOL;
-		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
