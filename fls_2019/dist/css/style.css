@@ -1103,7 +1103,11 @@ html body main #flsCarousel {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
   width: 100%; }
+
+.featured__nav {
+  position: absolute; }
 
 .featured__image {
   width: 100%; }
