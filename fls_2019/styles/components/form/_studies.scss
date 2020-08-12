@@ -37,7 +37,9 @@
 		}
 	}
 	&__link {}
-	&__image {}
+	&__image {
+	    width: 100%;
+	}
 	&__text {}
 	.wrapper {
 	    display: flex;
