@@ -73,7 +73,7 @@ if ($studies_query) {
 		echo '" href="'.get_permalink().'">'.PHP_EOL;
 		// the_post_thumbnail('full', array('class' => 'studies__image'));
 		echo '<img alt="'.$studies__title.'" class="studies__image" src="'.$studies__image.'">'.PHP_EOL;
-		echo '<span class="studies__text">'.$studies__title.'</span>'.PHP_EOL;
+		echo '<span class="studies__text">'.(!empty($studies__title)?$studies__title:get_the_title()).'</span>'.PHP_EOL;
 		echo '</a>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
