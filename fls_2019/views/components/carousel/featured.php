@@ -3,7 +3,7 @@ $featured_query = new WP_Query($featured_args);
 if ($featured_query->have_posts()) {
 	echo '<section id="featured" class="featured">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
-	echo '<span class="featured__title"><h2 class="featured__title--text">Featured Projects</h2></span>'.PHP_EOL;
+	echo '<span class="featured__header"><h2 class="featured__header--text">Featured Projects</h2></span>'.PHP_EOL;
 	echo '<div class="featured__list">'.PHP_EOL;
 	while ($featured_query->have_posts()) {
 		$featured_query->the_post();
@@ -13,9 +13,9 @@ if ($featured_query->have_posts()) {
 		echo '<div class="featured__item">'.PHP_EOL;
 		echo '<a class="featured__image--link" href="'.get_the_permalink().'"><img alt="'.$featured__title.'" class="featured__image" src="'.$featured__img.'"></a>'.PHP_EOL;
 		echo '<div class="featured__content">'.PHP_EOL;
-		echo '<span class="featured__content--title">'.(!empty($featured__title)?$featured__title:get_the_title()).'</span>'.PHP_EOL;
-		echo '<span class="featured__content--desc">'.$featured__summary.'</span>'.PHP_EOL;
-		echo '<span class="featured__content--link"><a href="'.get_the_permalink().'">'.$featured__link__text.'</a></span>'.PHP_EOL;
+		echo '<span class="featured__title"><a class="featured__content--link" href="">'.(!empty($featured__title)?$featured__title:get_the_title()).'</a></span>'.PHP_EOL;
+		echo '<span class="featured__desc">'.$featured__summary.'</span>'.PHP_EOL;
+		echo '<span class="featured__button"><a class="featured__content--link" href="'.get_the_permalink().'">'.$featured__link__text.'</a></span>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 	}

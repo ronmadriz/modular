@@ -1111,7 +1111,7 @@ html body main #flsCarousel {
     .featured__item {
       width: 33%; } }
 
-.featured__title {
+.featured__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1121,22 +1121,26 @@ html body main #flsCarousel {
   margin-bottom: 2rem;
   margin-top: 2rem;
   width: 100%; }
-  .featured__title--text {
+  .featured__header--text {
     display: inline-block;
     font-size: 2rem;
     position: relative;
     text-transform: uppercase; }
-    .featured__title--text:before, .featured__title--text:after {
+    .featured__header--text:before, .featured__header--text:after {
       content: '';
       height: 1px;
       position: absolute;
       width: 15vw;
       background-color: #156CB3;
       top: 1.25rem; }
-    .featured__title--text:after {
+    .featured__header--text:after {
       left: -120%; }
-    .featured__title--text:before {
+    .featured__header--text:before {
       right: -120%; }
+
+.featured__title {
+  font-size: 1.5rem;
+  text-transform: uppercase; }
 
 .featured .wrapper {
   -webkit-box-orient: vertical;
