@@ -540,10 +540,10 @@ function normalizeSlideHeights() {
 // Solutions Filter
 var $btns = j('.btn_filter').click(function() {
   if (this.id == 'all') {
-    j('.studies_results > .item').fadeIn(450);
+    j('.studies__results > .item').fadeIn(450);
   } else {
     var $el = j('.' + this.id).fadeIn(450);
-    j('.studies_results > .item').not($el).hide();
+    j('.studies__results > .item').not($el).hide();
   }
   $btns.removeClass('active');
   j(this).addClass('active');

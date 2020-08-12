@@ -56,7 +56,7 @@ if ($studies_query) {
 	}
 	wp_reset_postdata();
 	echo '</div>'.PHP_EOL;
-	echo '<div id="studies_results" class="studies_results">'.PHP_EOL;
+	echo '<div id="studies__results" class="studies__results">'.PHP_EOL;
 	while ($studies_query->have_posts()) {
 		$studies_query->the_post();
 		$studies__image   = get_the_post_thumbnail_url();
