@@ -56,7 +56,7 @@ if ($studies_query) {
 	echo '<div id="solutions_results" class="studies_results">'.PHP_EOL;
 	while ($studies_query->have_posts()) {
 		$studies_query->the_post();
-		$studies__image   = get_the_post_thumbnail_url('full');
+		$studies__image   = get_the_post_thumbnail_url();
 		$studies__title   = get_field('sidebar__title');
 		$studies__summary = get_field('sidebar__summary');
 		$summary          = get_field('summary');
