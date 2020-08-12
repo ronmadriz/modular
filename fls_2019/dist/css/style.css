@@ -1153,9 +1153,16 @@ html body main #flsCarousel {
   font-weight: 600;
   margin-bottom: 1.25rem; }
 
+.featured__desc {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-bottom: .5rem; }
+
 .featured__button {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   display: block; }
 
 .featured .wrapper {

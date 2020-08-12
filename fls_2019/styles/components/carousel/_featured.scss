@@ -43,10 +43,11 @@
         margin-bottom: 1.25rem;
     }
     &__desc {
-
+        flex-grow: 1;
+        margin-bottom:.5rem;
     }
     &__button {
-        align-self: flex-end;
+        align-items: baseline;
         display:block;
     }
     .wrapper {
