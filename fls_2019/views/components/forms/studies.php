@@ -72,7 +72,6 @@ if ($studies_query) {
 		echo '<img alt="'.$studies__title.'" class="studies__image" src="'.$studies__image.'">'.PHP_EOL;
 		echo '<figcaption class="studies__content">'.PHP_EOL;
 		echo '<span class="studies__title"><a class="studies__link" href="'.get_permalink().'">'.$studies__title.'</a></span>'.PHP_EOL;
-		echo '<span class="studies__desc"><a class="studies__link" href="'.get_the_permalink().'">'.$studies__summary.'</a></span>'.PHP_EOL;
 		echo '</figcaption>'.PHP_EOL;
 		echo '</figure>'.PHP_EOL;
 	}
