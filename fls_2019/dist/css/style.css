@@ -1967,7 +1967,7 @@ body form {
       top: 5px;
       position: relative; }
 
-.studies {
+.studies .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
