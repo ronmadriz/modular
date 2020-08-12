@@ -6,7 +6,6 @@
 			margin-bottom: 1rem;			
 		}		
 	}
-	&__drop {}
 	&__filter {
 		display: flex;
 		flex-direction: row;
@@ -35,7 +34,6 @@
 			width: 33%;		
 		}
 	}
-	&__label {}
 	&__link {
 		display:block;
 		@include for-tablet-up {

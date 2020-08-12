@@ -4,7 +4,6 @@ if ($featured_query->have_posts()) {
 	echo '<section id="featured" class="featured">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<span class="featured__title"><h2 class="featured__title--text">Featured Projects</h2></span>'.PHP_EOL;
-	echo '<div class="featured__items">'.PHP_EOL;
 	echo '<div class="featured__list">'.PHP_EOL;
 	while ($featured_query->have_posts()) {
 		$featured_query->the_post();
@@ -20,7 +19,6 @@ if ($featured_query->have_posts()) {
 		echo '</figcaption>'.PHP_EOL;
 		echo '</figure>'.PHP_EOL;
 	}
-	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
