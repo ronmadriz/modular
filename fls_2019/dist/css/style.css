@@ -1102,7 +1102,8 @@ html body main #flsCarousel {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  width: 100%; }
 
 .featured__image {
   width: 100%; }
@@ -1121,7 +1122,7 @@ html body main #flsCarousel {
   min-height: 100%;
   padding-left: .9375rem;
   padding-right: .9375rem;
-  width: 100%; }
+  width: 95%; }
   @media (min-width: 991px) {
     .featured__item {
       width: 33%; } }
