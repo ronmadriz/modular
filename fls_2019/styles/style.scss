@@ -469,34 +469,29 @@ html {
 
 //
 /// Components
-// Nav 
-@import 'components/navigation/menu';
-@import 'components/navigation/menu-mobile';
-@import 'components/navigation/menu-desktop';
-@import 'components/navigation/navigation';
-@import 'components/navigation/solutions';
-// Footer
-@import 'components/navigation/footer';
-@import 'components/navigation/boiler';
-// Main Content
-@import 'components/content/default';
-// Form
-@import 'components/form/form';
-@import 'components/form/footer';
-@import 'components/form/studies';
-// Galleries 
-@import 'components/gallery/default';
-@import 'components/gallery/gallery';
-
-@import 'components/banner/default';
 @import 'components/banner/banner';
-@import 'components/carousel/featured';
+@import 'components/banner/default';
+@import 'components/buttons/loadmore';
 @import 'components/carousel/carousels';
+@import 'components/carousel/featured';
 @import 'components/content/additional_content';
+@import 'components/content/default';
 @import 'components/ctas/speak';
 @import 'components/downloads/literature';
+@import 'components/form/footer';
+@import 'components/form/form';
+@import 'components/form/studies';
 @import 'components/fvpp/update';
+@import 'components/gallery/default';
+@import 'components/gallery/gallery';
 @import 'components/map/map';
+@import 'components/navigation/boiler';
+@import 'components/navigation/footer';
+@import 'components/navigation/menu';
+@import 'components/navigation/menu-desktop';
+@import 'components/navigation/menu-mobile';
+@import 'components/navigation/navigation';
+@import 'components/navigation/solutions';
 @import 'components/reviews/site-reviews';
 @import 'components/table/measurement_tables';
 @import 'components/table/tables';
