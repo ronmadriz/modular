@@ -52,7 +52,8 @@
 	&__results {
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;		
+		flex-wrap: wrap;
+		padding-bottom:10vh;
 	}
 	&__title {
         display: flex;
