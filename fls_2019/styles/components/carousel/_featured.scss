@@ -13,15 +13,20 @@
         &--text {
             display:none;
         }
+        &--prev {}
+        &--next {
+            right: 0;
+            transform: rotate(-90deg);            
+        }
     }
     &__icon {
         background:url(../../sprites/arrow.svg) no-repeat center center;
         background-size:cover;
         display:inline-block;
         filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
-        height: .5rem;
+        height: 2rem;
         margin-left: .5rem;
-        width: .5rem;        
+        width: 2rem;        
     }
     &__image {
         width:100%;
