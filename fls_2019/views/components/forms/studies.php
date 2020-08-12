@@ -78,9 +78,6 @@ if ($studies_query) {
 		echo '<figcaption class="studies__text"><a class="studies__link" href="'.get_permalink().'">'.(!empty($studies__title)?$studies__title:get_the_title()).'</a></figcaption>'.PHP_EOL;
 		echo '</figure>'.PHP_EOL;
 	}
-	global $wp_query;// you can remove this line if everything works for you
-
-	// don't display the button if there are not enough posts
 	if ($wp_query->max_num_pages > 1) {
 		echo '<div class="load__more">More posts</div>';// you can use <a> as well
 	}
