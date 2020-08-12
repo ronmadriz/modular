@@ -31,7 +31,8 @@
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		width: 50%;		
+		padding:.9375rem;
+		width: 50%;
 		@include for-laptop-up {
 			width: 33%;		
 		}

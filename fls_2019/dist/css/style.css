@@ -2027,6 +2027,7 @@ body form {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: .9375rem;
   width: 50%; }
   @media (min-width: 991px) {
     .studies__item {
