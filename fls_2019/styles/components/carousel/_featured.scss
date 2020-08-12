@@ -13,7 +13,9 @@
         &--text {
             display:none;
         }
-        &--prev {}
+        &--prev {
+            transform: rotate(90deg);
+        }
         &--next {
             right: 0;
             transform: rotate(-90deg);            

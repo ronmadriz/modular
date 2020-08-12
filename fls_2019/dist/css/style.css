@@ -1112,6 +1112,9 @@ html body main #flsCarousel {
   top: 25%; }
   .featured__nav--text {
     display: none; }
+  .featured__nav--prev {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
   .featured__nav--next {
     right: 0;
     -webkit-transform: rotate(-90deg);
