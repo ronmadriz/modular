@@ -36,7 +36,9 @@
 			width: 33%;		
 		}
 	}
-	&__link {}
+	&__link {
+		display:block;
+	}
 	&__image {
 	    width: 100%;
 	}

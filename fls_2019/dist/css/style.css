@@ -2032,6 +2032,9 @@ body form {
     .studies__item {
       width: 33%; } }
 
+.studies__link {
+  display: block; }
+
 .studies__image {
   width: 100%; }
 
