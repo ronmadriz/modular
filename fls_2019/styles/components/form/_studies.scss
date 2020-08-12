@@ -1,7 +1,35 @@
 .studies {
+	&__title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        width: 100%;
+        &--text {
+            display:inline-block;
+            font-size:2rem;
+            position:relative;
+            text-transform:uppercase;
+            @include bars($accent_1, 1.25rem, -120%);
+        }		
+	}
+	&__filter {}
+	&__drop {}
+	&__label {}
+	&__dropdown {}
+	&__option {}
+	&__link {}
+	&__image {}
+	&__text {}
 	.wrapper {
 	    display: flex;
 	    flex-direction: column;
 	    flex-wrap: wrap;		
 	}
 }
+
+
+
+
+
+

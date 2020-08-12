@@ -12,7 +12,7 @@ if ($studies_query) {
 	echo '<span class="studies__title"><h2 class="studies__title--text">';
 	_e('All Projects', 'fc_core');
 	echo '</h2></span>'.PHP_EOL;
-	echo '<div id="studies_filter" class="studies_filter">'.PHP_EOL;
+	echo '<div id="studies__filter" class="studies__filter">'.PHP_EOL;
 	if ($sol_studies = get_terms(array(
 				'taxonomy' => 'solution_type',
 				'orderby'  => 'name',

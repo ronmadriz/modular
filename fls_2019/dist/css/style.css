@@ -1967,6 +1967,33 @@ body form {
       top: 5px;
       position: relative; }
 
+.studies__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 100%; }
+  .studies__title--text {
+    display: inline-block;
+    font-size: 2rem;
+    position: relative;
+    text-transform: uppercase; }
+    .studies__title--text:before, .studies__title--text:after {
+      content: '';
+      height: 1px;
+      position: absolute;
+      width: 15vw;
+      background-color: #156CB3;
+      top: 1.25rem; }
+    .studies__title--text:after {
+      left: -120%; }
+    .studies__title--text:before {
+      right: -120%; }
+
 .studies .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
