@@ -9,6 +9,7 @@ $studies_query = new WP_Query($studies_args);
 if ($studies_query) {
 	echo '<section id="child_grid" class="studies">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
+	echo '<span class="section__title"><h2>'.get_the_title().'</h2></span>'.PHP_EOL;
 	echo '<div id="solutions_filter" class="studies_filter">'.PHP_EOL;
 	if ($sol_studies = get_terms(array(
 				'taxonomy' => 'solution_type',
