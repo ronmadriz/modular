@@ -64,19 +64,17 @@ if ($studies_query) {
 		$studies__summary = get_field('sidebar__summary');
 		$summary          = get_field('summary');
 		$studies_cat      = get_the_terms($post->ID, array('solution_type', 'industry'));
-		echo '<figure class="studies__item';
+		echo '<a class="studies__link';
 		if ($studies_cat) {
 			foreach ($studies_cat as $study_cat) {
 				echo ' '.$study_cat->slug;
 			}
 		}
-		echo '">'.PHP_EOL;
+		echo '" href="'.get_permalink().'>'.PHP_EOL;
 		// the_post_thumbnail('full', array('class' => 'studies__image'));
 		echo '<img alt="'.$studies__title.'" class="studies__image" src="'.$studies__image.'">'.PHP_EOL;
-		echo '<figcaption class="studies__content">'.PHP_EOL;
-		echo '<span class="studies__content--title"><a class="studies__content--link" href="'.get_permalink().'">'.$studies__title.'</a></span>'.PHP_EOL;
-		echo '</figcaption>'.PHP_EOL;
-		echo '</figure>'.PHP_EOL;
+		echo '<span class="studies__text">'.$studies__title.'</span>'.PHP_EOL;
+		echo '</a>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
