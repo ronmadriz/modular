@@ -1578,6 +1578,10 @@ body form {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%; }
+  @media (max-width: 786px) {
+    .studies__filter {
+      -webkit-transform: translateX(-6px);
+              transform: translateX(-6px); } }
 
 .studies__drop {
   width: 50%; }
@@ -1594,6 +1598,7 @@ body form {
       font-size: 1.25rem; } }
 
 .studies__image {
+  margin-bottom: .75rem;
   width: 100%; }
 
 .studies__item {
