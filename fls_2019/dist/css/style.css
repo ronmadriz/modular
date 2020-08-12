@@ -1579,13 +1579,19 @@ body form {
           justify-content: center;
   width: 100%; }
 
+.studies__drop {
+  width: 50%; }
+
 .studies__dropdown {
   border: 0;
   color: #156CB3;
-  font-size: 1.25rem;
+  font-size: .75rem;
   padding: .375rem;
   outline: 0;
   text-transform: uppercase; }
+  @media (min-width: 786px) {
+    .studies__dropdown {
+      font-size: 1.25rem; } }
 
 .studies__image {
   width: 100%; }

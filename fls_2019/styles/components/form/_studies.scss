@@ -12,13 +12,19 @@
 		justify-content: center;
 		width: 100%;
 	}
+	&__drop {
+		width: 50%;
+	}
 	&__dropdown {
 		border: 0;
 		color: $accent_1;
-		font-size: 1.25rem;		
+		font-size: .75rem;
 		padding: .375rem;
 	    outline: 0;
-	    text-transform:uppercase;;
+	    text-transform:uppercase;
+	    @include for-tablet-up {
+	    	font-size: 1.25rem;
+	    }
 	}
 	&__image {
 	    width: 100%;
