@@ -1,9 +1,10 @@
 .button {
 	&__outline {
-	    display: block;
-	    width: 100%;
 	    border: 0.125rem solid #156cb3;
-	    text-align: center;
+	    display: block;
 	    padding: .1875rem;	
+	    text-align: center;
+	    text-transform:uppercase;
+	    width: 100%;
 	}
 }
