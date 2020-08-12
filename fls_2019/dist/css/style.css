@@ -1988,6 +1988,7 @@ body form {
   border: 0;
   color: #156CB3;
   padding: .375rem;
+  outline: 0;
   font-size: 1.25rem; }
 
 .studies__image {
