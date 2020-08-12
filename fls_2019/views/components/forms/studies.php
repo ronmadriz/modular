@@ -9,7 +9,7 @@ $studies_query = new WP_Query($studies_args);
 if ($studies_query) {
 	echo '<section id="studies" class="studies">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
-	echo '<span class="section__title"><h2>';
+	echo '<span class="studies__header"><h2 class="studies__header--title">';
 	_e('All Projects', 'fc_core');
 	echo '</h2></span>'.PHP_EOL;
 	echo '<div id="studies_filter" class="studies_filter">'.PHP_EOL;
