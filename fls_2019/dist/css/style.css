@@ -968,6 +968,13 @@ html form.lrm-form ul.acf-checkbox-list li {
         -ms-flex-direction: column;
             flex-direction: column; }
 
+.button__outline {
+  display: block;
+  width: 100%;
+  border: 0.125rem solid #156cb3;
+  text-align: center;
+  padding: .1875rem; }
+
 .load__more {
   background-color: #ddd;
   border-radius: 2px;
@@ -1149,9 +1156,6 @@ html body main #flsCarousel {
   -ms-flex-item-align: end;
       align-self: flex-end;
   display: block; }
-  .featured__button--link {
-    display: block;
-    width: 100%; }
 
 .featured .wrapper {
   -webkit-box-orient: vertical;
