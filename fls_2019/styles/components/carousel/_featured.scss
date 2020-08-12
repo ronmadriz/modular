@@ -8,6 +8,7 @@
         width:100%;
         &--link {
             display:block;
+            margin-bottom: 1.125rem;
         }
     }
     &__item {
@@ -35,8 +36,10 @@
         }
     }
     &__title {
+        display: block;
         font-size:1.5rem;
-        text-transform:uppercase;
+        font-weight: 600;
+        margin-bottom: 1.25rem;
     }
     &__desc {
 
