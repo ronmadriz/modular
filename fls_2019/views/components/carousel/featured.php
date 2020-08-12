@@ -11,10 +11,10 @@ if ($featured_query->have_posts()) {
 		$featured__title   = get_field('sidebar__title');
 		$featured__summary = get_field('sidebar__summary');
 		echo '<a class="featured__nav--prev"><i class="featured__nav--icon"></i><span class="feature__nav--text">'.PHP_EOL;
-		_e('', 'fc_core');
+		_e('Previous', 'fc_core');
 		echo '</span></a>'.PHP_EOL;
 		echo '<a class="featured__nav--next"><i class="featured__nav--icon"></i><span class="feature__nav--text">'.PHP_EOL;
-		_e('', 'fc_core');
+		_e('Next', 'fc_core');
 		echo '</span></a>'.PHP_EOL;
 		echo '<div class="featured__item">'.PHP_EOL;
 		echo '<a class="featured__image--link" href="'.get_the_permalink().'"><img alt="'.$featured__title.'" class="featured__image" src="'.$featured__img.'"></a>'.PHP_EOL;
