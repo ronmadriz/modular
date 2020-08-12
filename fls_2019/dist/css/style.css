@@ -2046,7 +2046,7 @@ body form {
   max-width: 90%;
   padding: .5rem;
   position: absolute;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3725); }
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75); }
 
 .studies .wrapper {
   display: -webkit-box;
