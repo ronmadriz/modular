@@ -22,6 +22,15 @@
 	&__label {}
 	&__dropdown {}
 	&__option {}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 50%;		
+		@include for-laptop-up {
+			width: 33%;		
+		}
+	}
 	&__link {}
 	&__image {}
 	&__text {}
@@ -31,9 +40,3 @@
 	    flex-wrap: wrap;		
 	}
 }
-
-
-
-
-
-
