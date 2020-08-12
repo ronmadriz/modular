@@ -9,7 +9,7 @@ $studies_query = new WP_Query($studies_args);
 if ($studies_query) {
 	echo '<section id="studies" class="studies">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
-	echo '<span class="studies__header"><h2 class="studies__header--title">';
+	echo '<span class="studies__title"><h2 class="studies__title--text">';
 	_e('All Projects', 'fc_core');
 	echo '</h2></span>'.PHP_EOL;
 	echo '<div id="studies_filter" class="studies_filter">'.PHP_EOL;
@@ -74,7 +74,7 @@ if ($studies_query) {
 		// the_post_thumbnail('full', array('class' => 'studies__image'));
 		echo '<img alt="'.$studies__title.'" class="studies__image" src="'.$studies__image.'">'.PHP_EOL;
 		echo '<figcaption class="studies__content">'.PHP_EOL;
-		echo '<span class="studies__title"><a class="studies__link" href="'.get_permalink().'">'.$studies__title.'</a></span>'.PHP_EOL;
+		echo '<span class="studies__content--title"><a class="studies__content--link" href="'.get_permalink().'">'.$studies__title.'</a></span>'.PHP_EOL;
 		echo '</figcaption>'.PHP_EOL;
 		echo '</figure>'.PHP_EOL;
 	}
