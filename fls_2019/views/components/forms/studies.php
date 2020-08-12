@@ -64,7 +64,7 @@ if ($studies_query) {
 		$studies__summary = get_field('sidebar__summary');
 		$summary          = get_field('summary');
 		$studies_cat      = get_the_terms($post->ID, array('solution_type', 'industry'));
-		echo '<figure class="studies__link';
+		echo '<figure class="studies__item';
 		if ($studies_cat) {
 			foreach ($studies_cat as $study_cat) {
 				echo ' '.$study_cat->slug;
