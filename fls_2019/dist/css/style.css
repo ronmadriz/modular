@@ -2027,26 +2027,30 @@ body form {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: .9375rem;
+  padding: .25rem;
   position: relative;
   width: 50%; }
   @media (min-width: 991px) {
     .studies__item {
+      padding: .9375rem;
       width: 33%; } }
 
 .studies__link {
-  color: #FFFFFF;
   display: block; }
+  @media (min-width: 786px) {
+    .studies__link {
+      color: #FFFFFF; } }
 
 .studies__image {
   width: 100%; }
 
-.studies__text {
-  bottom: 0;
-  max-width: 90%;
-  padding: .5rem;
-  position: absolute;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75); }
+@media (min-width: 786px) {
+  .studies__text {
+    bottom: 0;
+    max-width: 90%;
+    padding: .5rem;
+    position: absolute;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75); } }
 
 .studies .wrapper {
   display: -webkit-box;
