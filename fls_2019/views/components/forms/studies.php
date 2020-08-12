@@ -7,10 +7,12 @@ $studies_args = array(
 );
 $studies_query = new WP_Query($studies_args);
 if ($studies_query) {
-	echo '<section id="child_grid" class="studies">'.PHP_EOL;
+	echo '<section id="studies" class="studies">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
-	echo '<span class="section__title"><h2>'.get_the_title().'</h2></span>'.PHP_EOL;
-	echo '<div id="solutions_filter" class="studies_filter">'.PHP_EOL;
+	echo '<span class="section__title"><h2>';
+	_e('All Projects', 'fc_core');
+	echo '</h2></span>'.PHP_EOL;
+	echo '<div id="studies_filter" class="studies_filter">'.PHP_EOL;
 	if ($sol_studies = get_terms(array(
 				'taxonomy' => 'solution_type',
 				'orderby'  => 'name',
@@ -54,7 +56,7 @@ if ($studies_query) {
 	}
 	wp_reset_postdata();
 	echo '</div>'.PHP_EOL;
-	echo '<div id="solutions_results" class="studies_results">'.PHP_EOL;
+	echo '<div id="studies_results" class="studies_results">'.PHP_EOL;
 	while ($studies_query->have_posts()) {
 		$studies_query->the_post();
 		$studies__image   = get_the_post_thumbnail_url();
