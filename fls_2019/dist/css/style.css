@@ -1576,7 +1576,8 @@ body form {
           flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  width: 100%; }
 
 .studies__dropdown {
   border: 0;
@@ -1601,7 +1602,7 @@ body form {
       flex-wrap: wrap;
   padding: .25rem;
   position: relative;
-  width: 50%; }
+  width: 47.5%; }
   @media (min-width: 991px) {
     .studies__item {
       padding: .9375rem;
