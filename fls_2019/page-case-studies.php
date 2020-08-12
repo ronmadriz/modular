@@ -12,7 +12,7 @@ $featured_args = array('post_type' => array('case_study'), 'post_status' => arra
 
 $featured__link__text = 'View Project';
 include (get_template_directory().'/views/components/carousel/featured.php');
-include (get_template_directory().'/views/components/forms/solutions.php');
+include (get_template_directory().'/views/components/forms/studies.php');
 
 get_footer();
 ?>
