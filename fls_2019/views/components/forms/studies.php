@@ -56,6 +56,7 @@ if ($studies_query) {
 	echo '<div id="solutions_results" class="studies_results">'.PHP_EOL;
 	while ($studies_query->have_posts()) {
 		$studies_query->the_post();
+		$studies__image   = get_the_post_thumbnail_url('full');
 		$studies__title   = get_field('sidebar__title');
 		$studies__summary = get_field('sidebar__summary');
 		$summary          = get_field('summary');
@@ -67,7 +68,8 @@ if ($studies_query) {
 			}
 		}
 		echo '">'.PHP_EOL;
-		the_post_thumbnail('full', array('class' => 'studies__image'));
+		// the_post_thumbnail('full', array('class' => 'studies__image'));
+		echo '<img alt="'.$studies__title.'" class="studies__image" src="'.$studies__image.'">'.PHP_EOL;
 		echo '<figcaption class="studies__content">'.PHP_EOL;
 		echo '<span class="studies__title"><a class="studies__link" href="'.get_permalink().'">'.$studies__title.'</a></span>'.PHP_EOL;
 		echo '<span class="studies__desc"><a class="studies__link" href="'.get_the_permalink().'">'.$studies__summary.'</a></span>'.PHP_EOL;
