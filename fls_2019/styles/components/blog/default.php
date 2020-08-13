@@ -1,13 +1,30 @@
 <?
-echo '<div class="blog">'.PHP_EOL;
-echo '<div class="blog__list">'.PHP_EOL;
-echo '<article class="blog__item">'.PHP_EOL;
-echo '<span class="blog__thumb"><img alt="" class="" src=""></span>'.PHP_EOL;
-echo '<div class="blog__content">'.PHP_EOL;
-echo '<h3 class="blog__title"></h3>'.PHP_EOL;
-echo '<p class="blog__desc"></p>'.PHP_EOL;
-echo '<a class="blog__link" href="#">Read More</a>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-echo '</article>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
-echo '</div>'.PHP_EOL;
+$blog__args = array(
+	'post__not_in' => array(1, 2, 3),
+	'post_type'    => 'post',
+	'post_status'  => 'publish',
+	'order'        => 'DESC',
+	'orderby'      => 'date',
+	// Pagination Parameters
+	'posts_per_page' => 3,
+	'nopaging'       => false,
+	'paged'          => get_query_var('paged'),
+);
+$blog__query = new WP_Query($blog__args);
+if ($blog__query->have_posts()) {
+	echo '<div class="blog">'.PHP_EOL;
+	echo '<div class="blog__list">'.PHP_EOL;
+	while ($blog__query->have_posts()) {
+		$blog__query->the_post();
+		echo '<article class="blog__item">'.PHP_EOL;
+		echo '<span class="blog__thumb"><img alt="" class="" src=""></span>'.PHP_EOL;
+		echo '<div class="blog__content">'.PHP_EOL;
+		echo '<h3 class="blog__title"></h3>'.PHP_EOL;
+		echo '<p class="blog__desc"></p>'.PHP_EOL;
+		echo '<a class="blog__link" href="#">Read More</a>'.PHP_EOL;
+		echo '</div>'.PHP_EOL;
+		echo '</article>'.PHP_EOL;
+	}
+	echo '</div>'.PHP_EOL;
+	echo '</div>'.PHP_EOL;
+}

@@ -130,7 +130,7 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
 	j(this).ekkoLightbox();
 });
 
-
+// Carousel - Featured List
 (function() {
   var sliderWidth = j('.featured__list').width();
   var Carousel = {
