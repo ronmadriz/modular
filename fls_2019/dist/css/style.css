@@ -1111,10 +1111,10 @@ html body main #flsCarousel {
   overflow: auto hidden;
   width: 93vw; }
   .featured__list--transition {
-    -webkit-transition: -webkit-transform 0.7s ease-in-out;
-    transition: -webkit-transform 0.7s ease-in-out;
-    transition: transform 0.7s ease-in-out;
-    transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out; }
+    -webkit-transition: -webkit-transform 0.35s ease-in-out;
+    transition: -webkit-transform 0.35s ease-in-out;
+    transition: transform 0.35s ease-in-out;
+    transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out; }
 
 .featured__nav {
   position: absolute;
