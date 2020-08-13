@@ -32,7 +32,13 @@
         filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
         height: 2rem;
         margin-left: .5rem;
-        width: 2rem;        
+        width: 2rem;
+        &--next {
+            transform: rotate(90deg);
+        }
+        &--prev {
+            transform: rotate(-90deg);
+        }
     }
     &__image {
         width:100%;
@@ -66,19 +72,19 @@
         }
     }
     &__nav {
-        height:100%;
+        align-items: center;
+        display: flex;
+        height: 100%;
         position: absolute;
-        top:25%;
+        top: 0;
         &--text {
             display:none;
         }
         &--prev {
             left: 0;
-            //transform: rotate(90deg);
         }
         &--next {
             right: 0;
-            //transform: rotate(-90deg);            
         }
     }
     &__title {
