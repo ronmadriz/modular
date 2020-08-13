@@ -11,7 +11,7 @@
         overflow: auto hidden;
         width: 93vw;
         &--transition {
-            transition: transform 0.35s ease-in-out;            
+            transition: all 0.35s ease-in-out;            
         }
     }
     &__nav {
