@@ -1,4 +1,3 @@
-var j = jQuery.noConflict();
 (function() {
   var sliderWidth = j('.featured__list').width();
   var Carousel = {
