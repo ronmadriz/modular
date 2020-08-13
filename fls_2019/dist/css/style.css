@@ -946,6 +946,7 @@ html form.lrm-form ul.acf-checkbox-list li {
     display: -ms-flexbox;
     display: flex;
     min-height: 6rem;
+    overflow-y: hidden;
     width: 100%; }
     @media (min-width: 991px) {
       .hero__holder {

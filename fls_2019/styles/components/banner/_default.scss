@@ -3,6 +3,7 @@
 	&__holder {
 		display: flex;
 		min-height:6rem;
+		overflow-y: hidden;
 		width: 100%;
 		@include for-laptop-up {
 			max-height: 60vh;
