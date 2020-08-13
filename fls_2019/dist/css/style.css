@@ -1000,6 +1000,9 @@ html form.lrm-form ul.acf-checkbox-list li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media (min-width: 786px) {
+    .blog__thumb {
+      width: 40%; } }
   .blog__thumb--img {
     width: 100%; }
 
@@ -1008,6 +1011,9 @@ html form.lrm-form ul.acf-checkbox-list li {
       align-self: flex-start;
   padding-left: .75rem;
   padding-right: .75rem; }
+  @media (min-width: 786px) {
+    .blog__content {
+      width: 60%; } }
 
 .blog__title {
   color: #404040;
