@@ -1108,7 +1108,7 @@ html body main #flsCarousel {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding: 0 2rem;
-  overflow: auto hidden;
+  overflow-x: hidden;
   width: 93vw; }
   .featured__list--transition {
     -webkit-transition: all 0.35s ease-in-out;

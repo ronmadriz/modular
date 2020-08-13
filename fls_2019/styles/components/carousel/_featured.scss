@@ -8,7 +8,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         padding: 0 2rem;
-        overflow: auto hidden;
+        overflow-x: hidden;
         width: 93vw;
         &--transition {
             transition: all 0.35s ease-in-out;            
