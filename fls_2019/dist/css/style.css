@@ -1109,6 +1109,10 @@ html body main #flsCarousel {
       flex-wrap: nowrap;
   padding: 0 2rem;
   overflow: auto hidden;
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
   width: 100%; }
 
 .featured__nav {
