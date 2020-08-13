@@ -1147,11 +1147,11 @@ html body main #flsCarousel {
   margin-left: .5rem;
   width: 2rem; }
   .featured__icon--next {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
-  .featured__icon--prev {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
+  .featured__icon--prev {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
 
 .featured__image {
   width: 100%; }

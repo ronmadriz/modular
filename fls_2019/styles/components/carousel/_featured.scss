@@ -34,10 +34,10 @@
         margin-left: .5rem;
         width: 2rem;
         &--next {
-            transform: rotate(90deg);
+            transform: rotate(-90deg);
         }
         &--prev {
-            transform: rotate(-90deg);
+            transform: rotate(90deg);
         }
     }
     &__image {
