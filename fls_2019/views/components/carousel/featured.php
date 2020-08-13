@@ -5,7 +5,7 @@ if ($featured_query->have_posts()) {
 	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<span class="featured__header"><h2 class="featured__header--text">Featured Projects</h2></span>'.PHP_EOL;
 	echo '<div class="featured__carousel">'.PHP_EOL;
-	echo '<div class="featured__list">'.PHP_EOL;
+	echo '<div class="featured__list featured__list--transition">'.PHP_EOL;
 	while ($featured_query->have_posts()) {
 		$featured_query->the_post();
 		$featured__img     = get_the_post_thumbnail_url(get_the_ID(), 'full');

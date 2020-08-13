@@ -9,8 +9,10 @@
         flex-wrap: nowrap;
         padding: 0 2rem;
         overflow: auto hidden;
-        transition: transform 0.7s ease-in-out;
         width: 100%;
+        &--transition {
+            transition: transform 0.7s ease-in-out;            
+        }
     }
     &__nav {
         position: absolute;
