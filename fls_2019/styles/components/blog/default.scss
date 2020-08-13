@@ -1,7 +1,21 @@
 .blog {
-	&__list {}
-	&__item {}
-	&__thumb {}
+	&__list {
+		margin-top: 1.125rem;
+		margin-bottom: 1.125rem;		
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		padding-left: .9375rem;
+		padding-right: .9375rem;
+		margin-bottom: .9375rem;		
+	}
+	&__thumb {
+		display: block;
+		&--img {
+			width: 100%;
+		}
+	}
 	&__content {}
 	&__title {}
 	&__desc {}
