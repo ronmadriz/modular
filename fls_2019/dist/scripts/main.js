@@ -18,12 +18,12 @@ const FlexSlider = {
     var that = this;
 
     // click on move item button
-    document.querySelector(".featured__nav").addEventListener('click', () => {
+    document.querySelector('.featured__nav').addEventListener('click', () => {
       this.gotoNext();
     });
 
     // after each item slides in, slider container fires transitionend event
-    document.querySelector(".featured__list").addEventListener('transitionend', () => {
+    document.querySelector('.featured__list').addEventListener('transitionend', () => {
       this.changeOrder();
     });
   },
