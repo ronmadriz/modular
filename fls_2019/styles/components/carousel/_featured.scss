@@ -73,11 +73,11 @@
         }
         &--prev {
             left: 0;
-            transform: rotate(90deg);
+            //transform: rotate(90deg);
         }
         &--next {
             right: 0;
-            transform: rotate(-90deg);            
+            //transform: rotate(-90deg);            
         }
     }
     &__title {

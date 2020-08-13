@@ -1195,13 +1195,9 @@ html body main #flsCarousel {
   .featured__nav--text {
     display: none; }
   .featured__nav--prev {
-    left: 0;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
+    left: 0; }
   .featured__nav--next {
-    right: 0;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg); }
+    right: 0; }
 
 .featured__title {
   display: block;
