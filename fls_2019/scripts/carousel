@@ -10,9 +10,9 @@
       j('.featured__item:last-child').prependTo('.featured__list');
     },
     bindEvents: function() {
-      j(".featured__nav--next").on("click", Carousel.next);
-      j(".featured__nav--prev").on("click", Carousel.previous);
-      j(document).on("keydown", function(e) { // you need only one listener
+      j('.featured__nav--next').on('click', Carousel.next);
+      j('.featured__nav--prev').on('click', Carousel.previous);
+      j(document).on('keydown', function(e) { // you need only one listener
         var key = e.which; // Use Event.which instead of keyCode
         if (key===37) Carousel.previous();
         if (key===39) Carousel.next();
