@@ -1190,6 +1190,7 @@ html body main #flsCarousel {
     transition: all 0.35s ease-in-out; }
 
 .featured__nav {
+  height: 100%;
   position: absolute;
   top: 25%; }
   .featured__nav--text {
