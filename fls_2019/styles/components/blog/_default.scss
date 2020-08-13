@@ -17,7 +17,19 @@
 		}
 	}
 	&__content {}
-	&__title {}
+	&__title {
+		color: $base;
+		margin-bottom: .5rem;		
+	}
+	&__date {}
+	&__meta {
+		display: block;
+		margin-bottom: .9375rem;		
+	}
+	&__author {
+		color:$accent_1;
+		font-weight:600;
+	}
 	&__desc {}
 	&__link	 {}
 }

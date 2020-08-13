@@ -1,20 +1,4 @@
 <?
-// Enqueue Font Awesome.
-/*
-add_action('wp_enqueue_scripts', 'ronmadriz_load_font_awesome');
-function ronmadriz_load_font_awesome() {
-wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/releases/v5.0.1/js/all.js', array(), null);
-}
-add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
-
-function add_defer_attribute($tag, $handle) {
-if ('font-awesome' === $handle) {
-$tag = str_replace(' src', ' defer src', $tag);
-}
-
-return $tag;
-}
- */
 function category_id_class($classes) {
 	global $post;
 	foreach ((get_the_category($post->ID)) as $category)
@@ -111,3 +95,9 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // Blog Navigation
 add_filter('next_posts_link_attributes', 'posts_link_attributes');
 add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function fc_init() {
+	remove_filter('excerpt_more', 'ascend_excerpt_more');
+	remove_filter('get_the_excerpt', 'ascend_custom_excerpt_more');
+}
+add_action('init', 'fc_init ');
