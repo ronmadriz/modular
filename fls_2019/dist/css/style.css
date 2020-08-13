@@ -991,8 +991,20 @@ html form.lrm-form ul.acf-checkbox-list li {
   .blog__thumb--img {
     width: 100%; }
 
+.blog__title {
+  color: #404040;
+  margin-bottom: .5rem; }
+
+.blog__meta {
+  display: block;
+  margin-bottom: .9375rem; }
+
+.blog__author {
+  color: #156CB3;
+  font-weight: 600; }
+
 .button__outline {
-  border: 0.125rem solid #156cb3;
+  border: 0.125rem solid #156CB3;
   display: block;
   font-size: .875rem;
   font-weight: 600;
@@ -1002,6 +1014,13 @@ html form.lrm-form ul.acf-checkbox-list li {
   width: 100%; }
   .button__outline:hover {
     text-decoration: none; }
+
+.button__solid {
+  background-color: #156CB3;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: .3275rem .875rem;
+  margin: .9375rem 0; }
 
 .load__more {
   background-color: #ddd;
