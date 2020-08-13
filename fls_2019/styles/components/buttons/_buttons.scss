@@ -1,6 +1,6 @@
 .button {
 	&__outline {
-	    border: 0.125rem solid #156cb3;
+	    border: 0.125rem solid $accent_1;
 	    display: block;
 		font-size: .875rem;
 		font-weight: 600;	    
@@ -11,5 +11,12 @@
 	    &:hover {
 		    text-decoration: none;	    	
 	    }
+	}
+	&__solid {
+		background-color: $accent_1;
+		color: $alternate;
+		display: inline-block;
+		padding: .3275rem .875rem;
+		margin: .9375rem 0;
 	}
 }
