@@ -4,13 +4,14 @@ if ($featured_query->have_posts()) {
 	echo '<section id="featured" class="featured">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<span class="featured__header"><h2 class="featured__header--text">Featured Projects</h2></span>'.PHP_EOL;
-	echo '<div class="featured__list">'.PHP_EOL;
+	echo '<div class="featured__carousel">'.PHP_EOL;
 	echo '<a class="featured__nav featured__nav--prev"><i class="featured__icon featured__icon--prev"></i><span class="featured__nav--text">'.PHP_EOL;
 	_e('Previous', 'fc_core');
 	echo '</span></a>'.PHP_EOL;
 	echo '<a class="featured__nav featured__nav--next"><i class="featured__icon featured__icon--next"></i><span class="featured__nav--text">'.PHP_EOL;
 	_e('Next', 'fc_core');
 	echo '</span></a>'.PHP_EOL;
+	echo '<div class="featured__list">'.PHP_EOL;
 	while ($featured_query->have_posts()) {
 		$featured_query->the_post();
 		$featured__img     = get_the_post_thumbnail_url(get_the_ID(), 'full');
@@ -23,6 +24,7 @@ if ($featured_query->have_posts()) {
 		echo '<span class="featured__button"><a class="button__outline featured__button--link" href="'.get_the_permalink().'">'.$featured__link__text.'</a></span>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 	}
+	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
