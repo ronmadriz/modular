@@ -1,4 +1,4 @@
-(function() {
+jQuery(function(j) {
   var sliderWidth = j('.featured__list').width();
   var Carousel = {
     init: function() {
