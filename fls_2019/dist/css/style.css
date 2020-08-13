@@ -1094,16 +1094,7 @@ html body main #flsCarousel {
     position: relative; }
 
 .featured__carousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 100vw;
+  overflow: hidden;
   position: relative; }
 
 .featured__list {
@@ -1114,9 +1105,10 @@ html body main #flsCarousel {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   padding: 0 2rem;
+  overflow: auto hidden;
   width: 100%; }
 
 .featured__nav {
