@@ -85,19 +85,16 @@ add_shortcode('post_title', 'post_title_shortcode');
 function posts_link_attributes() {
 	return 'class="btn btn-large btn-yellow"';
 }
-// Changing excerpt more
-function new_excerpt_more($more) {
-	global $post;
-	return '… <a href="'.get_permalink($post->ID).'">'.'Read More &raquo;'.'</a>';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
 
 // Blog Navigation
 add_filter('next_posts_link_attributes', 'posts_link_attributes');
 add_filter('previous_posts_link_attributes', 'posts_link_attributes');
 
-function fc_init() {
-	remove_filter('excerpt_more', 'ascend_excerpt_more');
-	remove_filter('get_the_excerpt', 'ascend_custom_excerpt_more');
+/*
+// Changing excerpt more
+function new_excerpt_more($more) {
+global $post;
+return '… <a href="'.get_permalink($post->ID).'">'.'Read More &raquo;'.'</a>';
 }
-add_action('init', 'fc_init ');
+add_filter('excerpt_more', 'new_excerpt_more');
+ */
