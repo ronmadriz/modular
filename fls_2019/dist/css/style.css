@@ -1161,7 +1161,7 @@ html body main #flsCarousel {
   width: 95%; }
   @media (min-width: 991px) {
     .featured__item {
-      width: 33%; } }
+      width: 34%; } }
 
 .featured__header {
   display: -webkit-box;
