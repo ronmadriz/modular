@@ -1,8 +1,12 @@
 @include for-phone-only {
 	.menus {
 		&__list {
+			display:none;
 			height: 100vh;
 			overflow-y: scroll;
+			&--active {
+				display:block;
+			}
 		}
 		&__item {
 			&--parent {

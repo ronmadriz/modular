@@ -2234,8 +2234,11 @@ svg .region path {
 
 @media (max-width: 786px) {
   .menus__list {
+    display: none;
     height: 100vh;
     overflow-y: scroll; }
+    .menus__list--active {
+      display: block; }
   .menus__item--parent {
     position: relative; }
     .menus__item--parent .menus__link:after {
