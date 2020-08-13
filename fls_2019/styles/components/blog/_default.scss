@@ -16,6 +16,9 @@
 	&__thumb {
 		display: flex;
 	    flex-direction: column;
+	    @include for-tablet-up {
+	    	width: 40%;
+	    }
 		&--img {
 			width: 100%;
 		}
@@ -24,6 +27,9 @@
 		align-self: flex-start;
 		padding-left: .75rem;
 		padding-right: .75rem;		
+	    @include for-tablet-up {
+	    	width: 60%;
+	    }
 	}
 	&__title {
 		color: $base;
