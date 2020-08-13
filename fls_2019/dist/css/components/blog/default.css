@@ -1,0 +1,20 @@
+.blog__list {
+  margin-top: 1.125rem;
+  margin-bottom: 1.125rem; }
+
+.blog__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: .9375rem;
+  padding-right: .9375rem;
+  margin-bottom: .9375rem; }
+
+.blog__thumb {
+  display: block; }
+  .blog__thumb--img {
+    width: 100%; }
