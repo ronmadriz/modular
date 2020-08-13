@@ -16,12 +16,13 @@ if ($blog__query->have_posts()) {
 	echo '<div class="blog__list">'.PHP_EOL;
 	while ($blog__query->have_posts()) {
 		$blog__query->the_post();
+		$blog__thumb = get_the_post_thumbnail_url('full');
 		echo '<article class="blog__item">'.PHP_EOL;
-		echo '<span class="blog__thumb"><img alt="" class="" src=""></span>'.PHP_EOL;
+		echo '<span class="blog__thumb"><img alt="'.get_the_title().'" class="blog__thumb--img" src="'.$blog__thumb.'"></span>'.PHP_EOL;
 		echo '<div class="blog__content">'.PHP_EOL;
-		echo '<h3 class="blog__title"></h3>'.PHP_EOL;
-		echo '<p class="blog__desc"></p>'.PHP_EOL;
-		echo '<a class="blog__link" href="#">Read More</a>'.PHP_EOL;
+		echo '<h3 class="blog__title">'.get_the_title().'</h3>'.PHP_EOL;
+		echo '<p class="blog__desc">'.get_the_excerpt().'</p>'.PHP_EOL;
+		echo '<a class="blog__link" href="'.get_the_permalink().'">Read More</a>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</article>'.PHP_EOL;
 	}
