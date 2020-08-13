@@ -18,7 +18,7 @@ const FlexSlider = {
     var that = this;
 
     // click on move item button
-    document.querySelector("#move-button").addEventListener('click', () => {
+    document.querySelector(".featured__nav").addEventListener('click', () => {
       this.gotoNext();
     });
 
