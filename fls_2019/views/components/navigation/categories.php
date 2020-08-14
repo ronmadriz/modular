@@ -1,6 +1,6 @@
 <?php
 echo '<div class="categories">'.PHP_EOL;
-echo '<h3 class="categories__title">';
+echo '<h3 class="categories__title blog__side--title">';
 _e('Discover', 'fc_core');
 echo '</h3>'.PHP_EOL;
 echo '<ul class="categories__list">'.PHP_EOL;

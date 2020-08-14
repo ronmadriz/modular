@@ -2671,14 +2671,6 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.categories__title {
-  border-bottom: 0.0625rem solid #156CB3;
-  color: #156CB3;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: .5rem;
-  text-transform: uppercase; }
-
 .categories__list {
   list-style: none;
   margin-left: 0;
@@ -2935,6 +2927,13 @@ html .blog .featured__article {
           -ms-flex-direction: column;
               flex-direction: column;
       width: 20%; } }
+  .blog__side--title {
+    border-bottom: 0.0625rem solid #156CB3;
+    color: #156CB3;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    text-transform: uppercase; }
 
 html body#page-home main section#home_banner {
   overflow-y: hidden; }
