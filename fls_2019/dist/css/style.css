@@ -2675,7 +2675,9 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
   color: #156CB3;
   font-size: 1rem;
   font-weight: 600;
-  text-transform: uppercase; }
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+  border-bottom: 0.0625rem solid #156CB3; }
 
 .categories__list {
   list-style: none;
