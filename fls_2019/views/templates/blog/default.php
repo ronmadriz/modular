@@ -12,7 +12,6 @@ $blog__args = array(
 );
 $blog__query = new WP_Query($blog__args);
 if ($blog__query->have_posts()) {
-	echo '<div class="blog">'.PHP_EOL;
 	echo '<div class="blog__list">'.PHP_EOL;
 	while ($blog__query->have_posts()) {
 		$blog__query->the_post();
@@ -29,6 +28,5 @@ if ($blog__query->have_posts()) {
 		echo '</div>'.PHP_EOL;
 		echo '</article>'.PHP_EOL;
 	}
-	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 }
