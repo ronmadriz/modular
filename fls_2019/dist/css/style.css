@@ -2683,14 +2683,12 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
   list-style: none;
   margin-left: 0;
   padding: 0; }
-  .categories__list ul {
-    list-style: none;
-    margin-left: 0;
-    padding: 0; }
 
 .categories__link {
   color: #848587;
+  font-size: .75rem;
   font-weight: 400;
+  line-height: 1.75;
   text-transform: none; }
 
 div#site_reviews div.title {

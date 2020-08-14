@@ -11,15 +11,12 @@
 		list-style: none;
 		margin-left: 0;
 		padding: 0;
-		ul{
-			list-style: none;
-			margin-left: 0;
-			padding: 0;
-		}
 	}
 	&__link {
 		color:$dark_gray;
+		font-size: .75rem;
 		font-weight: 400;
-		text-transform: none;		
+		line-height: 1.75;
+		text-transform: none;
 	}
 }
