@@ -55,6 +55,7 @@
 		flex-direction: row;
 		width:100%;
 		@include for-tablet-up {
+			flex-direction: column;
 			width:20%;
 		}
 	}

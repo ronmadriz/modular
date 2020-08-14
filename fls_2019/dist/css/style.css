@@ -2930,6 +2930,10 @@ html .blog .featured__article {
   width: 100%; }
   @media (min-width: 786px) {
     .blog__side {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       width: 20%; } }
 
 html body#page-home main section#home_banner {
