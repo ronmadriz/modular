@@ -2,7 +2,7 @@
 // Categories walker
 class Walker_Categories_Template extends Walker_Category {
 
-	function start_lvl(&$output, $depth = 1, $args = array()) {
+	function start_lvl(&$output, $depth = 0, $args = array()) {
 		$output .= "\n<ul class=\"categories__list\">\n";
 	}
 
