@@ -10,7 +10,7 @@ class Walker_Categories_Template extends Walker_Category {
 		$output .= "</ul>\n";
 	}
 
-	function start_el(&$output, $item, $depth = 0, $args = array() {
+	function start_el(&$output, $item, $depth = 0, $args = array()) {
 		$output .= "<li class=\"categories__item\"><a class=\"categories__link\" href=\"".esc_url(get_category_link($item->term_id))."\" title=\"".esc_attr($item->name)."\"><span class=\"categories__count\">".esc_attr($item->count)."</span>".esc_attr($item->name);
 	}
 
