@@ -10,7 +10,9 @@ if ($featured_query->have_posts()) {
 		$featured_query->the_post();
 		$featured__img     = get_the_post_thumbnail_url(get_the_ID(), 'full');
 		$featured__title   = get_field('sidebar__title');
-		$featured__summary = get_field('sidebar__summary');
+		$raw__summary      = get_field('sidebar__summary');
+		$featured__excerpt = get_the_excert();
+		$featured__summary = (!empty($raw__summary)?$raw__summary:$featured__excerpt);
 		echo '<div class="featured__item">'.PHP_EOL;
 		echo '<a class="featured__image--link" href="'.get_the_permalink().'"><img alt="'.$featured__title.'" class="featured__image" src="'.$featured__img.'"></a>'.PHP_EOL;
 		echo '<span class="featured__title"><a class="featured__title--link" href="'.get_the_permalink().'">'.(!empty($featured__title)?$featured__title:get_the_title()).'</a></span>'.PHP_EOL;
