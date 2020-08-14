@@ -2671,6 +2671,24 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+.categories {
+  color: #156CB3;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase; }
+  .categories__list {
+    list-style: none;
+    margin-left: 0;
+    padding: 0; }
+    .categories__list ul {
+      list-style: none;
+      margin-left: 0;
+      padding: 0; }
+  .categories__link {
+    color: #848587;
+    font-weight: 400;
+    text-transform: none; }
+
 div#site_reviews div.title {
   margin-bottom: 0rem;
   padding: 0 2rem 1rem; }
