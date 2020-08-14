@@ -1,10 +1,10 @@
 <?
 $blog__args = array(
-	'post__not_in' => array(1, 2, 3),
-	'post_type'    => 'post',
-	'post_status'  => 'publish',
-	'order'        => 'DESC',
-	'orderby'      => 'date',
+	//	'post__not_in' => array(1, 2, 3),
+	'post_type'   => 'post',
+	'post_status' => 'publish',
+	'order'       => 'DESC',
+	'orderby'     => 'date',
 	// Pagination Parameters
 	'posts_per_page' => 3,
 	'nopaging'       => false,
