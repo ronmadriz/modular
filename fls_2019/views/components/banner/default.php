@@ -10,8 +10,6 @@ echo '<span class="hero__holder">'.($banner_img != null?'<img alt="'.$banner_img
 echo '<div class="wrapper">'.PHP_EOL;
 if (is_home()) {
 	echo '<span class="hero__title"><h1 class="hero__title--text">'.$blogpage__title.'</h1></span>'.PHP_EOL;
-} elseif (is_taxonomy()) {
-	echo '<span class="hero__title"><h1 class="hero__title--text">'.single_term_title().'</h1></span>'.PHP_EOL;
 } elseif (!empty($alternate_page_title)) {
 	echo '<span class="hero__title"><h1 class="hero__title--text">'.$alternate_page_title.'</h1></span>'.PHP_EOL;
 } else {
