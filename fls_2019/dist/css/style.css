@@ -2913,6 +2913,22 @@ html .blog .featured__article {
   color: #156CB3;
   font-weight: 600; }
 
+.blog__side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%; }
+  @media (min-width: 786px) {
+    .blog__side {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      width: 30%; } }
+
 html body#page-home main section#home_banner {
   overflow-y: hidden; }
   html body#page-home main section#home_banner div.container, html body#page-home main section#home_banner div.container-fluid, html body#page-home main section#home_banner div.row, html body#page-home main section#home_banner div.col-12 {

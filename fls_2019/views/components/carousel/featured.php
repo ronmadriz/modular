@@ -3,7 +3,7 @@ $featured_query = new WP_Query($featured_args);
 if ($featured_query->have_posts()) {
 	echo '<section id="featured" class="featured">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
-	echo '<span class="featured__header"><h2 class="featured__header--text">Featured Projects</h2></span>'.PHP_EOL;
+	echo '<span class="featured__header"><h2 class="featured__header--text">'.$section__title.'</h2></span>'.PHP_EOL;
 	echo '<div id="featured__carousel" class="featured__carousel">'.PHP_EOL;
 	echo '<div class="featured__list featured__list--transition">'.PHP_EOL;
 	while ($featured_query->have_posts()) {

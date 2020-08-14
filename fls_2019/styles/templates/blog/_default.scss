@@ -46,4 +46,13 @@
 	}
 	&__desc {}
 	&__link	 {}
+	&__side {
+		display:flex;
+		flex-direction: row;
+		width:100%;
+		@include for-tablet-up {
+			order:2;
+			width:30%;
+		}
+	}
 }
