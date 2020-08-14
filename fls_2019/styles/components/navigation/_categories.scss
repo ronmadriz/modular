@@ -1,8 +1,10 @@
 .categories {
-    color: $accent_1;
-	font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
+	&__title {
+		color: $accent_1;
+		font-size: 1rem;
+		font-weight: 600;
+		text-transform: uppercase;		
+	}
 	&__list {
 		list-style: none;
 		margin-left: 0;
