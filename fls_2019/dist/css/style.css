@@ -2858,7 +2858,11 @@ html .blog .featured__article {
 
 .blog__list {
   margin-top: 1.125rem;
-  margin-bottom: 1.125rem; }
+  margin-bottom: 1.125rem;
+  width: 100%; }
+  @media (min-width: 786px) {
+    .blog__list {
+      width: 80%; } }
 
 .blog__item {
   display: -webkit-box;
@@ -2924,10 +2928,7 @@ html .blog .featured__article {
   width: 100%; }
   @media (min-width: 786px) {
     .blog__side {
-      -webkit-box-ordinal-group: 3;
-          -ms-flex-order: 2;
-              order: 2;
-      width: 30%; } }
+      width: 20%; } }
 
 html body#page-home main section#home_banner {
   overflow-y: hidden; }
