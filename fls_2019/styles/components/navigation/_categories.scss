@@ -1,11 +1,11 @@
 .categories {
 	&__title {
+	    border-bottom: 0.0625rem solid $accent_1;
 		color: $accent_1;
 	    font-size: 1rem;
 	    font-weight: 600;
 	    margin-bottom: .5rem;
 	    text-transform: uppercase;
-	    border-bottom: 0.0625rem solid $accent_1;
 	}
 	&__list {
 		list-style: none;

@@ -2672,12 +2672,12 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
       flex-wrap: wrap; }
 
 .categories__title {
+  border-bottom: 0.0625rem solid #156CB3;
   color: #156CB3;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: .5rem;
-  text-transform: uppercase;
-  border-bottom: 0.0625rem solid #156CB3; }
+  text-transform: uppercase; }
 
 .categories__list {
   list-style: none;
