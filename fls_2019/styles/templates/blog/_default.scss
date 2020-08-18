@@ -51,8 +51,7 @@
 	&__button {
 		display:flex;
 		flex-direction: column;
-		justify-content: center;
-		align-content: center;
+		align-items: start;
 	}
 	&__desc {}
 	&__link	 {}

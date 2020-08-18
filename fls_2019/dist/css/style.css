@@ -2919,11 +2919,9 @@ html .blog .featured__article {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center; }
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start; }
 
 .blog__side {
   display: -webkit-box;
