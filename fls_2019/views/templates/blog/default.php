@@ -15,7 +15,7 @@ if ($blog__query->have_posts()) {
 	echo '<div class="blog__list">'.PHP_EOL;
 	while ($blog__query->have_posts()) {
 		$blog__query->the_post();
-		$blog__thumb = get_the_post_thumbnail_url('large');
+		$blog__thumb = get_the_post_thumbnail_url();
 		echo '<article class="blog__item">'.PHP_EOL;
 		echo (!empty($blog__thumb)?'<span class="blog__thumb"><img alt="'.get_the_title().'" class="blog__thumb--img" src="'.$blog__thumb.'"></span>'.PHP_EOL:'');
 		echo '<div class="blog__content">'.PHP_EOL;
