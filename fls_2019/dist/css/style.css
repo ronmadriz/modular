@@ -3310,6 +3310,12 @@ body.solutions-template div.testimonials {
   padding: 28px 28px;
   word-wrap: break-word; }
 
+.home .hero {
+  min-height: 18.75rem; }
+  @media (min-width: 786px) {
+    .home .hero {
+      min-height: 43.75rem; } }
+
 html body section#avail_positions h3 a {
   display: block; }
   html body section#avail_positions h3 a svg {

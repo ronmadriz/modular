@@ -1,0 +1,6 @@
+.hero {
+	min-height:18.75rem;
+	@include for-tablet-up {
+		min-height:43.75rem;
+	}
+}
