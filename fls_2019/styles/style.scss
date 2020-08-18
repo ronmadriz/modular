@@ -469,7 +469,6 @@ html {
 
 //
 /// Components
-@import 'components/banner/home';
 @import 'components/banner/banner';
 @import 'components/banner/default';
 @import 'components/buttons/buttons';
@@ -503,12 +502,13 @@ html {
 /// Templates
 @import 'templates/blog';
 @import 'templates/blog/default';
-@import 'templates/home';
+// @import 'templates/home';
 @import 'templates/fluid';
 @import 'templates/industry-solution';
 
 //
 /// Single Page Styles
+@import 'pages/home/default';
 @import 'pages/careers';
 @import 'pages/case-studies';
 @import 'pages/fp_101';
