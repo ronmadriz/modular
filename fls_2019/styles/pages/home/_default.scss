@@ -1,3 +1,6 @@
 .home {
 	@import '../../components/banner/home';
+	@import 'blog';
+	@import 'clients';
+	@import 'testimonials';
 }
