@@ -6,6 +6,10 @@
 	@include for-tablet-up {
 		min-height:43.75rem;
 	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
 	.wrapper {
 		flex-direction: column;
 	}
