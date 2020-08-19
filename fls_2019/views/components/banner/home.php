@@ -1,3 +1,6 @@
+<style>
+	.hero (background-image:url(/wp-content/uploads/2019/05/aircraft-hangar-rigid-rail.jpg);
+</style>
 <section id="hero" class="hero">
 	<div class="wrapper">
 		<div class="hero__content">
