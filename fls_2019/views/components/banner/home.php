@@ -1,7 +1,7 @@
-<style>
-	.hero {background-image:url("/wp-content/uploads/2019/05/aircraft-hangar-rigid-rail.jpg");}
-</style>
 <section id="hero" class="hero">
+	<style>
+		.hero {background-image:url("/wp-content/uploads/2019/05/aircraft-hangar-rigid-rail.jpg");}
+	</style>
 	<div class="wrapper">
 		<div class="hero__content">
 			<h2 class="hero__content--title">Identify Your Hazards</h2>
