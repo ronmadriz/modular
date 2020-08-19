@@ -3311,6 +3311,9 @@ body.solutions-template div.testimonials {
   word-wrap: break-word; }
 
 .home .hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 18.75rem; }
   @media (min-width: 786px) {
     .home .hero {
