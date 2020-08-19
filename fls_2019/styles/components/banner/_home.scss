@@ -19,8 +19,14 @@
 			color:$alternate;
 			font-size:.875rem;
 		}
-		&--button {
+		&--link {
 			border:.0625rem solid $alternate;
+			color:$alternate;
+		}
+	}
+	&__services {
+		@include for-phone-only {
+			display:none;
 		}
 	}
 	.wrapper {

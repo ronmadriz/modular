@@ -3334,8 +3334,12 @@ body.solutions-template div.testimonials {
     .home .hero__content--desc {
       color: #FFFFFF;
       font-size: .875rem; }
-    .home .hero__content--button {
-      border: 0.0625rem solid #FFFFFF; }
+    .home .hero__content--link {
+      border: 0.0625rem solid #FFFFFF;
+      color: #FFFFFF; }
+  @media (max-width: 786px) {
+    .home .hero__services {
+      display: none; } }
   .home .hero .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
