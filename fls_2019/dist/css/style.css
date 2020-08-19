@@ -3315,6 +3315,11 @@ body.solutions-template div.testimonials {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 18.75rem; }
+  @media (max-width: 786px) {
+    .home .hero {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
   @media (min-width: 786px) {
     .home .hero {
       min-height: 43.75rem; } }

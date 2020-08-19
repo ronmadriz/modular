@@ -3,6 +3,9 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height:18.75rem;
+	@include for-phone-only {
+		display:flex;
+	}
 	@include for-tablet-up {
 		min-height:43.75rem;
 	}
