@@ -9,6 +9,19 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
+		&--title {
+			color:$alternate;
+			font-size:1.6275rem;
+			font-weight:700;
+			text-transform: uppercase;
+		}
+		&--desc {
+			color:$alternate;
+			font-size:.875rem;
+		}
+		&--button {
+			border:.0625rem solid $alternate;
+		}
 	}
 	.wrapper {
 		flex-direction: column;
