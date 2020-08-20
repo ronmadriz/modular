@@ -1,0 +1,16 @@
+.industries {
+	&__item {
+		padding: 1rem;
+		width: 33.333%;
+	}
+	&__list {
+	    display: flex;
+	    flex-wrap: wrap;
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+}
