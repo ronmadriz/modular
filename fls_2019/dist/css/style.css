@@ -3432,6 +3432,9 @@ body.solutions-template div.testimonials {
       .home .hero .wrapper {
         height: 43.75rem; } }
 
+.home .industries__image {
+  width: 100%; }
+
 .home .industries__item {
   display: -webkit-box;
   display: -ms-flexbox;
