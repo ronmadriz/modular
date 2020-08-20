@@ -3437,6 +3437,12 @@ body.solutions-template div.testimonials {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  .home .industries__content {
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center; }
   .home .industries__image {
     width: 100%; }
   .home .industries__item {

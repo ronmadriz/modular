@@ -2,7 +2,14 @@
 	background-color: $accent_1;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;	
+	background-size: cover;
+	&__content {
+		color:$alternate;
+	    margin-bottom: 2rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		text-align: center;		
+	}
 	&__image {
 		width:100%;
 	}
