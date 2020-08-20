@@ -3397,6 +3397,12 @@ body.solutions-template div.testimonials {
         display: none; } }
     .home .hero__services--link {
       color: #FFFFFF; }
+      .home .hero__services--link:after {
+        background-color: white;
+        content: '';
+        display: block;
+        height: 80%;
+        width: .375rem; }
     .home .hero__services--list {
       -webkit-box-align: end;
           -ms-flex-align: end;

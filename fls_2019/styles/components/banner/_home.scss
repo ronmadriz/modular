@@ -76,6 +76,13 @@
 		}
 		&--link {
 			color:$alternate;
+			&:after {
+			    background-color: white;
+			    content: '';
+			    display: block;
+			    height: 80%;
+			    width: .375rem;
+			}
 		}
 		&--list {
 			align-items: flex-end;
