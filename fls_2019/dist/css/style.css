@@ -3471,6 +3471,22 @@ body.solutions-template div.testimonials {
     position: absolute;
     top: 0;
     width: 90%; }
+  .home .industries__title {
+    color: #FFFFFF;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase; }
+    .home .industries__title:before, .home .industries__title:after {
+      content: '';
+      height: 1px;
+      position: absolute;
+      width: 15vw;
+      background-color: #FFFFFF;
+      top: 15%; }
+    .home .industries__title:after {
+      left: -100%; }
+    .home .industries__title:before {
+      right: -100%; }
   .home .industries .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
