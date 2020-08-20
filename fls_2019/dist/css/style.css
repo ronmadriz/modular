@@ -3455,12 +3455,17 @@ body.solutions-template div.testimonials {
   padding: 0; }
 
 .home .industries__link {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: 90%;
+  padding-left: 1rem;
   position: absolute;
-  top: 0; }
+  top: 0;
+  width: 90%; }
 
 .home .industries .wrapper {
   -webkit-box-orient: vertical;
