@@ -3432,49 +3432,50 @@ body.solutions-template div.testimonials {
       .home .hero .wrapper {
         height: 43.75rem; } }
 
-.home .industries__image {
-  width: 100%; }
-
-.home .industries__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: .125rem;
-  padding: 1rem;
-  position: relative;
-  width: 33.333%; }
-
-.home .industries__list {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.home .industries__link {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 1rem;
-  height: 90%;
-  position: absolute;
-  top: 0;
-  width: 90%; }
-
-.home .industries .wrapper {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+.home .industries {
+  background-color: #156CB3;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .home .industries__image {
+    width: 100%; }
+  .home .industries__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: .125rem;
+    padding: 1rem;
+    position: relative;
+    width: 33.333%; }
+  .home .industries__list {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .home .industries__link {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 1rem;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    width: 90%; }
+  .home .industries .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
 
 html body section#avail_positions h3 a {
   display: block; }
