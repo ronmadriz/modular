@@ -3437,7 +3437,8 @@ body.solutions-template div.testimonials {
   background-color: #156CB3;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 2rem; }
   .home .industries__content {
     color: #FFFFFF;
     margin-bottom: 2rem;
