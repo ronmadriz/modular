@@ -31,6 +31,10 @@
 		&--desc {
 			color:$alternate;
 			font-size:.875rem;
+			text-align:center;
+			@include for-tablet-up {
+				text-align:left;
+			}
 		}
 		&--link {
 			border:.0625rem solid $alternate;

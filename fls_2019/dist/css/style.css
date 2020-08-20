@@ -3347,7 +3347,11 @@ body.solutions-template div.testimonials {
         width: 30%; }
     .home .hero__content--desc {
       color: #FFFFFF;
-      font-size: .875rem; }
+      font-size: .875rem;
+      text-align: center; }
+      @media (min-width: 786px) {
+        .home .hero__content--desc {
+          text-align: left; } }
     .home .hero__content--link {
       border: 0.0625rem solid #FFFFFF;
       color: #FFFFFF;
