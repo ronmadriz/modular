@@ -3342,6 +3342,8 @@ body.solutions-template div.testimonials {
         content: '';
         display: block;
         height: .3125rem;
+        left: 30%;
+        position: relative;
         width: 30%; }
     .home .hero__content--desc {
       color: #FFFFFF;
