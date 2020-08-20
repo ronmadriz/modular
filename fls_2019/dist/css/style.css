@@ -3489,11 +3489,11 @@ body.solutions-template div.testimonials {
         position: absolute;
         width: 15vw;
         background-color: #FFFFFF;
-        top: 15%; }
+        top: 1.25rem; }
       .home .industries__title--text:after {
-        left: -100%; }
+        left: -18.25rem; }
       .home .industries__title--text:before {
-        right: -100%; }
+        right: -18.25rem; }
   .home .industries .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
