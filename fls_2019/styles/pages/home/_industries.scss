@@ -34,9 +34,12 @@
 		display: block;
 		margin-bottom: 3rem;
 		margin-top: 3rem;
+		text-align: center;
 		&--text {
 			color: $alternate;
+		    display: inline-block;
 			font-size: 2rem;
+		    position: relative;
 			text-align: center;
 			text-transform: uppercase;
 			@include bars($alternate, 15%, -100%);

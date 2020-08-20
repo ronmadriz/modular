@@ -3474,10 +3474,13 @@ body.solutions-template div.testimonials {
   .home .industries__title {
     display: block;
     margin-bottom: 3rem;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    text-align: center; }
     .home .industries__title--text {
       color: #FFFFFF;
+      display: inline-block;
       font-size: 2rem;
+      position: relative;
       text-align: center;
       text-transform: uppercase; }
       .home .industries__title--text:before, .home .industries__title--text:after {
