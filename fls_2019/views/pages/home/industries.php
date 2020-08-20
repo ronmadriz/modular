@@ -1,5 +1,5 @@
 <style>
-.footer {background-image:url(https://sandbox.fall-arrest.com/wp-content/uploads/2020/08/fall-arrest-footer.jpg);}
+.industries {background-image:url(https://sandbox.fall-arrest.com/wp-content/uploads/2020/08/fall-arrest-footer.jpg);}
 </style>
 <section id="home_industries" class="industries">
 	<div class="wrapper">
