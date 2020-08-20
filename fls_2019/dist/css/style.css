@@ -3452,7 +3452,8 @@ body.solutions-template div.testimonials {
       flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  position: relative; }
 
 .home .industries__link {
   -webkit-box-align: end;
