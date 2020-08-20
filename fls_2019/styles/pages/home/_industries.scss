@@ -31,11 +31,16 @@
 		width: 90%;
 	}
 	&__title {
-		color: $alternate;
-		font-size: 2rem;
-		text-align: center;
-		text-transform: uppercase;
-		@include bars($alternate, 15%, -100%);
+		display: block;
+		margin-bottom: 3rem;
+		margin-top: 3rem;
+		&--text {
+			color: $alternate;
+			font-size: 2rem;
+			text-align: center;
+			text-transform: uppercase;
+			@include bars($alternate, 15%, -100%);
+		}
 	}
 	.wrapper {
 		flex-direction: column;
