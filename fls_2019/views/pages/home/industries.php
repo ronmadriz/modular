@@ -1,3 +1,6 @@
+<style>
+.footer {background-image:url(https://sandbox.fall-arrest.com/wp-content/uploads/2020/08/fall-arrest-footer.jpg);}
+</style>
 <section id="home_industries" class="industries">
 	<div class="wrapper">
 		<span class="industries__title"><h2 class="industries__title--text">Industry Experts</h2></span>
