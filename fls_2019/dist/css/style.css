@@ -3336,6 +3336,13 @@ body.solutions-template div.testimonials {
       font-size: 1.6275rem;
       font-weight: 700;
       text-transform: uppercase; }
+      .home .hero__content--title:after {
+        background-color: #156CB3;
+        border-radius: 0 0 6.25rem 0;
+        content: '';
+        display: block;
+        height: .3125rem;
+        width: 30%; }
     .home .hero__content--desc {
       color: #FFFFFF;
       font-size: .875rem; }

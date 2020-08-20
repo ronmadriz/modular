@@ -17,6 +17,14 @@
 			font-size:1.6275rem;
 			font-weight:700;
 			text-transform: uppercase;
+			&:after {
+				background-color: $accent_1;
+				border-radius: 0 0 6.25rem 0;				
+				content: '';
+				display: block;
+				height: .3125rem;
+				width: 30%;
+			}
 		}
 		&--desc {
 			color:$alternate;
