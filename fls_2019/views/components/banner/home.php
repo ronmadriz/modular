@@ -11,7 +11,7 @@
 		<span class="hero__services">
 			<ul class="hero__services--list">
 				<li><a href="#" class="hero__services--link"><i class="hero__services--icon"></i><span class="hero__services--text">Rigid Rail</span></a></li>
-				<li><a href="#" class="hero__services--link"><i class="hero__services--icon"></i><span class="hero__services--text">Cavke Vased</span></a></li>
+				<li><a href="#" class="hero__services--link"><i class="hero__services--icon"></i><span class="hero__services--text">Cable Based</span></a></li>
 				<li><a href="#" class="hero__services--link"><i class="hero__services--icon"></i><span class="hero__services--text">Guardrail &amp; Safety</span></a></li>
 				<li><a href="#" class="hero__services--link"><i class="hero__services--icon"></i><span class="hero__services--text">Skylight Hatches</span></a></li>
 				<li><a href="#" class="hero__services--link"><i class="hero__services--icon"></i><span class="hero__services--text">Access Solutions</span></a></li>
