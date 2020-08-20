@@ -36,6 +36,13 @@
 				text-align:left;
 			}
 		}
+		&--button {
+			display: flex;
+			justify-content: center;
+			@include for-tablet-up {
+				justify-content: start;
+			}			
+		}
 		&--link {
 			border:.0625rem solid $alternate;
 			color:$alternate;
