@@ -1,5 +1,6 @@
 .blogs {
 	&__list {
+	    column-gap: .75rem;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -7,8 +8,9 @@
 	}
 	&__item {
 		display:flex;
+		border:.0625rem solid $dark_gray;
 		flex-direction: column;
-		width:33.333%;
+	    width: 32.5%;
 	}
 	.wrapper {
 	}	

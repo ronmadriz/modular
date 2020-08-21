@@ -3434,6 +3434,8 @@ body.solutions-template div.testimonials {
         height: 43.75rem; } }
 
 .home .blogs__list {
+  -webkit-column-gap: .75rem;
+          column-gap: .75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3449,11 +3451,12 @@ body.solutions-template div.testimonials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 0.0625rem solid #848587;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 33.333%; }
+  width: 32.5%; }
 
 .home .industries {
   background-color: #156CB3;
