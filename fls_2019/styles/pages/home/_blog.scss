@@ -15,6 +15,14 @@
 		flex-direction: column;
 	    width: 32.5%;
 	}
+	&__content {
+	    padding: 1rem;
+	}
+	&__footer {
+		display: flex;
+		flex-direction: column;
+		padding: 0 1rem 1rem;		
+	}
 	.wrapper {
 	}	
 }
