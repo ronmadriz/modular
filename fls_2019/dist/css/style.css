@@ -3525,7 +3525,10 @@ body.solutions-template div.testimonials {
     background-color: #FECD06;
     border-radius: .55rem;
     display: inline-block;
-    padding: .5rem 2rem; }
+    font-weight: 600;
+    letter-spacing: .0625rem;
+    padding: .5rem 2rem;
+    text-transform: uppercase; }
   .home .cases__title {
     z-index: 2; }
     .home .cases__title--text {
