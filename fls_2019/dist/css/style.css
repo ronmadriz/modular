@@ -3572,6 +3572,20 @@ body.solutions-template div.testimonials {
         -ms-flex-direction: column;
             flex-direction: column; }
 
+.home .testimonials__city {
+  color: #156CB3;
+  display: block;
+  line-height: 1.75; }
+
+.home .testimonials__company {
+  display: block;
+  margin-bottom: 2rem; }
+
+.home .testimonials__quote {
+  color: #156CB3;
+  font-size: 1.25rem;
+  font-style: italic; }
+
 html body section#avail_positions h3 a {
   display: block; }
   html body section#avail_positions h3 a svg {

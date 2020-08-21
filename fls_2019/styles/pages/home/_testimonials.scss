@@ -1,3 +1,16 @@
 .testimonials {
-	
+	&__city {
+	    color: $accent_1;
+	    display: block;
+	    line-height: 1.75;
+	}
+	&__company {
+	    display: block;
+	    margin-bottom: 2rem;
+	}
+	&__quote {
+	    color: $accent_1;
+	    font-size: 1.25rem;
+	    font-style: italic;
+	}
 }
