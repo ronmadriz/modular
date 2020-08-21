@@ -17,14 +17,18 @@
 		width: 100%;
     }
     &__button {
-    	z-index: 2;    	
+    	z-index: 2;
     }
     &__carousel {
     	z-index: 2;    	
     }
     &__content {
     	color:$alternate;
-    	z-index: 2;    	
+		display: block;
+		margin-bottom: 2rem;
+		margin-top: 1rem;
+		width: 40%;
+		z-index: 2;
     }
     &__title {
     	z-index: 2;

@@ -3516,6 +3516,10 @@ body.solutions-template div.testimonials {
     z-index: 2; }
   .home .cases__content {
     color: #FFFFFF;
+    display: block;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    width: 40%;
     z-index: 2; }
   .home .cases__title {
     z-index: 2; }
