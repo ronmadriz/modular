@@ -3582,8 +3582,22 @@ body.solutions-template div.testimonials {
   margin-bottom: 2rem; }
 
 .home .testimonials__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   padding-left: 5rem;
   padding-right: 5rem; }
+
+.home .testimonials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
 
 .home .testimonials__quote {
   color: #156CB3;
