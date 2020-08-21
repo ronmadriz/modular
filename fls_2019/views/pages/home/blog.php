@@ -9,7 +9,7 @@ if (have_rows('hm_blog')) {
 		if ($hm_blog_post) {
 			foreach ($hm_blog_post as $hm_post) {
 				setup_postdata($hm_post);
-				$hm_blog_img   = get_the_post_thumbnail_url('post-thumbnail');
+				$hm_blog_img   = get_the_post_thumbnail_url('full');
 				$hm_blog_title = get_the_title();
 				$hm_blog_date  = get_the_date();
 				$hm_blog_link  = get_the_permalink();
