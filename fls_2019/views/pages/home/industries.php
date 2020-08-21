@@ -9,7 +9,7 @@ if (have_rows('hm_ind')) {
 		$hm_ind_bg    = get_sub_field('hm_ind_bg');
 		if ($hm_ind_bg) {
 			echo '<style>'.PHP_EOL;
-			echo '.industries {background-image:url('.$hm_ind_bg.');}'.PHP_EOL;
+			echo '.industries {background-image:url('.$hm_ind_bg['url'].');}'.PHP_EOL;
 			echo '</style>'.PHP_EOL;
 		}
 		echo '<span class="industries__title"><h2 class="industries__title--text">'.$hm_ind_title.'</h2></span>'.PHP_EOL;
