@@ -3646,7 +3646,8 @@ body.solutions-template div.testimonials {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
+      flex-wrap: nowrap;
+  overflow-x: hidden; }
 
 .home .testimonials__quote {
   color: #156CB3;
