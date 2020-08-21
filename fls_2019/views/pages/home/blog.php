@@ -17,7 +17,7 @@ if (have_rows('hm_blog')) {
 			echo '<article class="blogs__item">'.PHP_EOL;
 			echo '<header class="blogs__header">'.PHP_EOL;
 			echo '<a href="blogs__image--link">';
-			the_post_thumbnail('full', array('blogs__image'));
+			the_post_thumbnail('full', array('class' => 'blogs__image'));
 			echo '</a>'.PHP_EOL;
 			echo '</header>'.PHP_EOL;
 			echo '<div class="blogs__content">'.PHP_EOL;
