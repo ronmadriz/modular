@@ -3592,6 +3592,11 @@ body.solutions-template div.testimonials {
     position: absolute;
     top: 0;
     width: 90%; }
+    .home .industries__link--text {
+      color: #FFFFFF;
+      font-weight: 600;
+      letter-spacing: .0425rem;
+      text-shadow: 0.0625rem 0 0.0625rem rgba(0, 0, 0, 0.85); }
   .home .industries__title {
     display: block;
     margin-bottom: 3rem;

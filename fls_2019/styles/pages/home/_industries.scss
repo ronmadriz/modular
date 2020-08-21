@@ -40,6 +40,12 @@
 		position: absolute;
 		top: 0;
 		width: 90%;
+		&--text {
+			color: $alternate;
+			font-weight: 600;
+			letter-spacing: .0425rem;
+			text-shadow: 0.0625rem 0 0.0625rem rgba($accent_6,.85);
+		}
 	}
 	&__title {
 		display: block;
