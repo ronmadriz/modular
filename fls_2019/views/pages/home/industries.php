@@ -21,9 +21,9 @@ if (have_rows('hm_ind')) {
 				$hm_ind_industry = get_sub_field('hm_ind_industry');
 				$hm_ind_image    = get_sub_field('hm_ind_image');
 				echo '<li class="industries__item">'.PHP_EOL;
-				echo '<img alt="'.$hm_ind_industry['title'].'" class="industries__image" src="'.$hm_ind_image['url'].'">'.PHP_EOL;
-				echo '<a class="industries__link" href="'.$hm_ind_industry['title'].'">'.PHP_EOL;
-				echo '<span class="industries__link--text">'.$hm_ind_industry['url'].'</span>'.PHP_EOL;
+				echo '<img alt="'.esc_url($hm_ind_industry).'" class="industries__image" src="'.$hm_ind_image['url'].'">'.PHP_EOL;
+				echo '<a class="industries__link" href="'.esc_url($hm_ind_industry).'">'.PHP_EOL;
+				echo '<span class="industries__link--text">'.esc_html($hm_ind_industry).'</span>'.PHP_EOL;
 				echo '</a>'.PHP_EOL;
 				echo '</li>'.PHP_EOL;
 			}
