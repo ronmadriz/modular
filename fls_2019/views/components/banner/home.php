@@ -4,7 +4,7 @@ if (have_rows('hm_hero')) {
 	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_rows('hm_hero')) {
 		the_row();
-		$hm_hero_img         = get_sub_field('hm_hero_img');
+		$hm_hero_img         = get_sub_field('hm_hero_image');
 		$hm_hero_title       = get_sub_field('hm_hero_title');
 		$hm_hero_description = get_sub_field('hm_hero_description');
 		$hm_hero_link        = get_sub_field('hm_hero_link');
