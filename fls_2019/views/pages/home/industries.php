@@ -21,15 +21,19 @@ if (have_rows('hm_ind')) {
 				$hm_ind_industry = get_sub_field('hm_ind_industry');
 				// $hm_ind_image    = get_sub_field('hm_ind_image');
 				if ($hm_ind_industry) {
-					$hm_ind_thumb      = get_the_post_thumbnail_url('full');
-					$hm_ind_post_title = get_the_title();
-					$hm_ind_link       = get_the_permalink();
-					echo '<li class="industries__item">'.PHP_EOL;
-					echo '<img alt="'.$hm_ind_post_title.'" class="industries__image" src="'.$hm_ind_thumb.'">'.PHP_EOL;
-					echo '<a class="industries__link" href="'.$hm_ind_link.'">'.PHP_EOL;
-					echo '<span class="industries__link--text">'.$hm_ind_post_title.'</span>'.PHP_EOL;
-					echo '</a>'.PHP_EOL;
-					echo '</li>'.PHP_EOL;
+					foreach ($hm_ind_industry as $industry) {
+						setup_postdata($industry);
+						$hm_ind_thumb      = get_the_post_thumbnail_url('full');
+						$hm_ind_post_title = get_the_title();
+						$hm_ind_link       = get_the_permalink();
+						echo '<li class="industries__item">'.PHP_EOL;
+						echo '<img alt="'.$hm_ind_post_title.'" class="industries__image" src="'.$hm_ind_thumb.'">'.PHP_EOL;
+						echo '<a class="industries__link" href="'.$hm_ind_link.'">'.PHP_EOL;
+						echo '<span class="industries__link--text">'.$hm_ind_post_title.'</span>'.PHP_EOL;
+						echo '</a>'.PHP_EOL;
+						echo '</li>'.PHP_EOL;
+					}
+					wp_reset_postdata();
 				}
 			}
 			echo '</ul>'.PHP_EOL;
