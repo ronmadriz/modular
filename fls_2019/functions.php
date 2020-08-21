@@ -18,4 +18,5 @@ require_once ('functions/lrm_code.php');
 require_once ('functions/contact-form-7.php');
 require_once ('functions/extras.php');
 require_once ('functions/loadmore.php');
+require_once ('functions/acf_icon_picker.php');
 ?>
