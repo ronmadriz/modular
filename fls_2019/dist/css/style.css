@@ -3447,6 +3447,9 @@ body.solutions-template div.testimonials {
       flex-wrap: wrap;
   width: 100%; }
 
+.home .blogs__image {
+  width: 100%; }
+
 .home .blogs__item {
   display: -webkit-box;
   display: -ms-flexbox;
