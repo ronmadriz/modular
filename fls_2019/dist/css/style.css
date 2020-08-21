@@ -3436,6 +3436,16 @@ body.solutions-template div.testimonials {
 .home .blogs__content {
   padding: 1rem; }
 
+.home .blogs__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1rem 1rem; }
+
 .home .blogs__image {
   width: 100%; }
 
@@ -3474,15 +3484,14 @@ body.solutions-template div.testimonials {
       flex-wrap: wrap;
   width: 100%; }
 
-.home .blogs__footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 1rem 1rem; }
+.home .blogs__sub {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #848587; }
+
+.home .blogs__title {
+  font-size: 1.4275rem;
+  font-weight: 600; }
 
 .home .industries {
   background-color: #156CB3;

@@ -2,6 +2,11 @@
 	&__content {
 	    padding: 1rem;
 	}
+	&__footer {
+		display: flex;
+		flex-direction: column;
+		padding: 0 1rem 1rem;		
+	}
 	&__image {
 		width:100%;
 	}
@@ -28,10 +33,14 @@
 		flex-wrap: wrap;
 		width:100%;
 	}
-	&__footer {
-		display: flex;
-		flex-direction: column;
-		padding: 0 1rem 1rem;		
+	&__sub {
+	    text-transform: uppercase;
+	    font-weight: 600;
+	    color: $dark_gray;		
+	}
+	&__title {
+		font-size: 1.4275rem;
+		font-weight: 600;		
 	}
 	.wrapper {
 	}	
