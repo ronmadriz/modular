@@ -3497,7 +3497,19 @@ body.solutions-template div.testimonials {
   background-color: #156CB3;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  position: relative; }
+  .home .cases:before {
+    background-color: #156CB3;
+    content: '';
+    display: block;
+    height: 100%;
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    width: 100%; }
   .home .cases .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

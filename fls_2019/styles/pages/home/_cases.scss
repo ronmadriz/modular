@@ -3,6 +3,19 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    position:relative;
+    &:before {
+		background-color: $accent_1;
+		content: '';
+		display: block;
+		height: 100%;
+		opacity: .3;    	
+		position: absolute;
+		top: 0;
+		width: 100%;
+    }	
 	.wrapper {
 		flex-direction: column;
 	}
