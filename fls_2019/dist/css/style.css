@@ -3486,7 +3486,8 @@ body.solutions-template div.testimonials {
     color: #848587; }
   .home .blogs__title {
     font-size: 1.4275rem;
-    font-weight: 600; }
+    font-weight: 600;
+    margin-top: .75rem; }
 
 .home .industries {
   background-color: #156CB3;
