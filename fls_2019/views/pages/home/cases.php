@@ -1,4 +1,9 @@
 <section id="home_cases" class="cases">
+	<style>
+		.cases {
+			background-image:url(/wp-content/uploads/2018/12/karbach-after-installation-fall-safety12-1024x767-1024x767.jpg);
+		}
+	</style>
 	<div class="wrapper">
 		<span class="cases__title"><h2 class="cases__title--text">Our Work</h2></span>
 		<span class="cases__content">
