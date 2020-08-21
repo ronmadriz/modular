@@ -3572,6 +3572,9 @@ body.solutions-template div.testimonials {
         -ms-flex-direction: column;
             flex-direction: column; }
 
+.home .testimonials__carousel {
+  position: relative; }
+
 .home .testimonials__city {
   color: #156CB3;
   display: block;

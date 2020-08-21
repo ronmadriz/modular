@@ -1,4 +1,7 @@
 .testimonials {
+	&__carousel {
+		position:relative;
+	}
 	&__city {
 	    color: $accent_1;
 	    display: block;
