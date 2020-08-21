@@ -21,8 +21,8 @@ if (have_rows('hm_ind')) {
 				$hm_ind_industry = get_sub_field('hm_ind_industry');
 				// $hm_ind_image    = get_sub_field('hm_ind_image');
 				if ($hm_ind_industry) {
-					foreach ($hm_ind_industry as $industry) {
-						setup_postdata($industry);
+					foreach ($hm_ind_industry as $post) {
+						setup_postdata($post);
 						$hm_ind_thumb      = get_the_post_thumbnail_url('full');
 						$hm_ind_post_title = get_the_title();
 						$hm_ind_link       = get_the_permalink();
