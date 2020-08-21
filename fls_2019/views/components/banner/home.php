@@ -1,24 +1,45 @@
-<section id="hero" class="hero">
-	<style>
-		.hero {background-image:url("/wp-content/uploads/2019/05/aircraft-hangar-rigid-rail.jpg");}
-	</style>
-	<div class="wrapper">
-		<div class="hero__content">
-			<h2 class="hero__content--title">Identify Your Hazards</h2>
-			<span class="hero__content--desc">Conduct a fall hazard assessment and explore potential solutions with one of our specialists. Virtual Online or In-Person Onsite.</span>
-			<span class="hero__content--button"><a class="hero__content--link" href="#">Read More</a></span>
-		</div>
-		<span class="hero__services">
-			<ul class="hero__services--list">
-				<li><a href="#" class="hero__services--link"><i class="hero__services--icon"></i><span class="hero__services--text">Rigid Rail</span></a></li>
-				<li><a href="#" class="hero__services--link"><i class="hero__services--icon"></i><span class="hero__services--text">Cable Based</span></a></li>
-				<li><a href="#" class="hero__services--link"><i class="hero__services--icon"></i><span class="hero__services--text">Guardrail &amp; Safety</span></a></li>
-				<li><a href="#" class="hero__services--link"><i class="hero__services--icon"></i><span class="hero__services--text">Skylight Hatches</span></a></li>
-				<li><a href="#" class="hero__services--link"><i class="hero__services--icon"></i><span class="hero__services--text">Access Solutions</span></a></li>
-				<li><a href="#" class="hero__services--link"><i class="hero__services--icon"></i><span class="hero__services--text">Anchor Points</span></a></li>
-				<li><a href="#" class="hero__services--link"><i class="hero__services--icon"></i><span class="hero__services--text">Portable Solutions</span></a></li>
-				<li><a href="#" class="hero__services--link"><i class="hero__services--icon"></i><span class="hero__services--text">Custom Solutions</span></a></li>
-			</ul>
-		</span>
-	</div>
-</section>
+<?
+$hm_hero_img         = get_sub_field('hm_hero_img');
+$hm_hero_title       = get_sub_field('hm_hero_title');
+$hm_hero_description = get_sub_field('hm_hero_description');
+$hm_hero_link        = get_sub_field('hm_hero_link');
+$hm_hero_image       = get_sub_field('hm_hero_image');
+$hm_hero_solutions   = get_sub_field('hm_hero_solutions');
+$hm_hero_icon        = get_sub_field('hm_hero_icon');
+$hm_hero_icon_title  = get_sub_field('hm_hero_icon_title');
+$hm_hero_icon_link   = get_sub_field('hm_hero_icon_link');
+
+if (have_rows('hm_hero')) {
+	if (!empty($hm_hero_img)) {
+		echo '<style>'.PHP_EOL;
+		echo '.hero {background-image:url("'.$hm_hero_img.'");}'.PHP_EOL;
+		echo '</style>'.PHP_EOL;
+	}
+	echo '<section id="hero" class="hero">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
+	while (have_rows('hm_hero')) {
+		the_row();
+		echo '<div class="hero__content">'.PHP_EOL;
+		echo (!empty($hm_hero_title)?'<h2 class="hero__content--title">'.$hm_hero_title.'</h2>'.PHP_EOL:'');
+		echo (!empty($hm_hero_description)?'<span class="hero__content--desc">'.$hm_hero_description.'</span>'.PHP_EOL:'');
+		echo (!empty($hm_hero_link)?'<span class="hero__content--button"><a class="hero__content--link" href="'.$hm_hero_link['url'].'">'.$hm_hero_link['title'].'</a></span>'.PHP_EOL:'');
+		echo '</div>'.PHP_EOL;
+		if (have_rows('hm_hero_solutions')) {
+			echo '<span class="hero__services">'.PHP_EOL;
+			echo '<ul class="hero__services--list">'.PHP_EOL;
+			while (have_rows('hm_hero_solutions')) {
+				the_row();
+				echo '<li>';
+				echo (!empty($hm_hero_icon_link)?'<a href="#" class="hero__services--link">':'');
+				echo (!empty($hm_hero_icon)?'<i class="hero__services--icon">'.file_get_contents(get_template_directory().'/sprites/'.$hm_hero_icon.'.svg').'</i>':'');
+				echo (!empty($hm_hero_icon_title)?'<span class="hero__services--text">'.$hm_hero_icon_title.'</span>':'');
+				echo '</a>';
+				echo '</li>'.PHP_EOL;
+			}
+			echo '</ul>'.PHP_EOL;
+			echo '</span>'.PHP_EOL;
+		}
+	}
+	echo '</div>'.PHP_EOL;
+	echo '</section>'.PHP_EOL;
+}
