@@ -3437,6 +3437,10 @@ body.solutions-template div.testimonials {
   padding-bottom: 3rem; }
   .home .blogs__content {
     padding: 1rem; }
+  .home .blogs__date {
+    color: #156CB3;
+    font-size: .9rem;
+    margin-top: 1.25rem; }
   .home .blogs__footer {
     display: -webkit-box;
     display: -ms-flexbox;
