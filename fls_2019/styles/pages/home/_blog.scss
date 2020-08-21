@@ -1,10 +1,6 @@
 .blogs {
-	&__list {
-	    column-gap: .75rem;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		width:100%;
+	&__content {
+	    padding: 1rem;
 	}
 	&__image {
 		width:100%;
@@ -15,8 +11,22 @@
 		flex-direction: column;
 	    width: 32.5%;
 	}
-	&__content {
-	    padding: 1rem;
+	&__link {
+	    display: block;
+	    border: .125rem solid $accent_1;
+	    font-size: .75rem;
+	    font-weight: 600;
+	    margin-top: 1rem;
+	    padding: .25rem 1rem;
+	    text-align: center;
+	    text-transform: uppercase;
+	}
+	&__list {
+	    column-gap: .75rem;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width:100%;
 	}
 	&__footer {
 		display: flex;
