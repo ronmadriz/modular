@@ -12,7 +12,7 @@ if (have_rows('hm_hero')) {
 		$hm_hero_solutions   = get_sub_field('hm_hero_solutions');
 		if (!empty($hm_hero_img)) {
 			echo '<style>'.PHP_EOL;
-			echo '.hero {background-image:url("'.$hm_hero_img.'");}'.PHP_EOL;
+			echo '.hero {background-image:url("'.$hm_hero_img['url'].'");}'.PHP_EOL;
 			echo '</style>'.PHP_EOL;
 		}
 		echo '<div class="hero__content">'.PHP_EOL;
