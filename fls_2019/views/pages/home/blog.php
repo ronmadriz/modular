@@ -10,14 +10,13 @@ if (have_rows('hm_blog')) {
 			global $post;
 			$post = $hm_blog_post;
 			setup_postdata($post);
-			$hm_blog_img   = get_the_post_thumbnail_url('full');
 			$hm_blog_title = get_the_title();
 			$hm_blog_date  = get_the_date('m/d/Y');
 			$hm_blog_ex    = get_the_excerpt();
 			$hm_blog_link  = get_the_permalink();
 			echo '<article class="blogs__item">'.PHP_EOL;
 			echo '<header class="blogs__header">'.PHP_EOL;
-			echo '<a href="blogs__image--link"><img alt="'.$hm_blog_title.'" class="blogs__image" src="'.$hm_blog_img.'"></a>'.PHP_EOL;
+			echo '<a href="blogs__image--link"><img alt="'.$hm_blog_title.'" class="blogs__image" src="'.get_the_post_thumbnail_url('full').'"></a>'.PHP_EOL;
 			echo '</header>'.PHP_EOL;
 			echo '<div class="blogs__content">'.PHP_EOL;
 			echo '<span class="blogs__sub">';
