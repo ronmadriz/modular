@@ -8,6 +8,10 @@
 	    display: block;
 	    margin-bottom: 2rem;
 	}
+	&__item {
+	    padding-left: 5rem;
+	    padding-right: 5rem;
+	}
 	&__quote {
 	    color: $accent_1;
 	    font-size: 1.25rem;

@@ -3581,6 +3581,10 @@ body.solutions-template div.testimonials {
   display: block;
   margin-bottom: 2rem; }
 
+.home .testimonials__item {
+  padding-left: 5rem;
+  padding-right: 5rem; }
+
 .home .testimonials__quote {
   color: #156CB3;
   font-size: 1.25rem;

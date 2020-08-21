@@ -6,7 +6,6 @@ function cc_mime_types($mimes) {
 	return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
-
 // Adding a new function to the WordPress editor
 function my_mce_buttons_2($buttons) {
 	$buttons[] = 'sup';
