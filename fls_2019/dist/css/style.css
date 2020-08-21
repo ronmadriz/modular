@@ -3521,6 +3521,11 @@ body.solutions-template div.testimonials {
     margin-top: 1rem;
     width: 40%;
     z-index: 2; }
+  .home .cases__link {
+    background-color: #FECD06;
+    border-radius: .55rem;
+    display: inline-block;
+    padding: .5rem 2rem; }
   .home .cases__title {
     z-index: 2; }
     .home .cases__title--text {

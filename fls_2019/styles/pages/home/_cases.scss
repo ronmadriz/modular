@@ -30,6 +30,12 @@
 		width: 40%;
 		z-index: 2;
     }
+    &__link {
+		background-color: $accent_2;
+		border-radius: .55rem;
+		display: inline-block;
+		padding: .5rem 2rem;    	
+    }
     &__title {
     	z-index: 2;
     	&--text {
