@@ -15,7 +15,25 @@
 		position: absolute;
 		top: 0;
 		width: 100%;
-    }	
+    }
+    &__button {
+    	z-index: 2;    	
+    }
+    &__carousel {
+    	z-index: 2;    	
+    }
+    &__content {
+    	z-index: 2;    	
+    }
+    &__title {
+    	z-index: 2;
+    	&--text {
+    		color:$accent_2;
+			font-size: 2rem;
+			font-weight: bold;
+			text-transform: uppercase;    		
+    	}
+    }
 	.wrapper {
 		flex-direction: column;
 	}

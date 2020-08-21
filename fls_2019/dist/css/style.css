@@ -3510,6 +3510,19 @@ body.solutions-template div.testimonials {
     position: absolute;
     top: 0;
     width: 100%; }
+  .home .cases__button {
+    z-index: 2; }
+  .home .cases__carousel {
+    z-index: 2; }
+  .home .cases__content {
+    z-index: 2; }
+  .home .cases__title {
+    z-index: 2; }
+    .home .cases__title--text {
+      color: #FECD06;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase; }
   .home .cases .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
