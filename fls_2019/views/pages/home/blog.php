@@ -2,9 +2,9 @@
 	<div class="wrapper">
 		<div class="blogs__list">
 			<article class="blogs__item">
-				<header class="blogs__header">
+				<div class="blogs__div">
 					<a href="blogs__image--link"><img alt="" class="blogs__image" src="https://via.placehold.com/430x275"></a>
-				</header>
+				</div>
 				<div class="blogs__content">
 					<span class="blogs__sub">Safety Recommendations</span>
 					<h3 class="blogs__title"><a class="blogs__title--link" href="#">Do I need a Lifeline or Guardrail for my Roof?</a></h3>
@@ -16,9 +16,9 @@
 				</footer>
 			</article>
 			<article class="blogs__item">
-				<header class="blogs__header">
+				<div class="blogs__div">
 					<a href="blogs__image--link"><img alt="" class="blogs__image" src="https://via.placehold.com/430x275"></a>
-				</header>
+				</div>
 				<div class="blogs__content">
 					<span class="blogs__sub">Safety Recommendations</span>
 					<h3 class="blogs__title"><a class="blogs__title--link" href="#">Do I need a Lifeline or Guardrail for my Roof?</a></h3>
@@ -30,9 +30,9 @@
 				</footer>
 			</article>
 			<article class="blogs__item">
-				<header class="blogs__header">
+				<div class="blogs__div">
 					<a href="blogs__image--link"><img alt="" class="blogs__image" src="https://via.placehold.com/430x275"></a>
-				</header>
+				</div>
 				<div class="blogs__content">
 					<span class="blogs__sub">Safety Recommendations</span>
 					<h3 class="blogs__title"><a class="blogs__title--link" href="#">Do I need a Lifeline or Guardrail for my Roof?</a></h3>
