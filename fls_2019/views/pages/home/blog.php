@@ -13,6 +13,7 @@ if (have_rows('hm_blog')) {
 			$hm_blog_img   = get_the_post_thumbnail_url('full');
 			$hm_blog_title = get_the_title();
 			$hm_blog_date  = get_the_date();
+			$hm_blog_ex    = get_the_excerpt();
 			$hm_blog_link  = get_the_permalink();
 			echo '<article class="blogs__item">'.PHP_EOL;
 			echo '<header class="blogs__header">'.PHP_EOL;
@@ -23,7 +24,7 @@ if (have_rows('hm_blog')) {
 			the_category(', ');
 			echo '</span>'.PHP_EOL;
 			echo '<h3 class="blogs__title"><a class="blogs__title--link" href="'.$hm_blog_link.'">'.$hm_blog_title.'</a></h3>'.PHP_EOL;
-			echo '<span class="blogs__desc">'.get_the_excerpt().'</span>'.PHP_EOL;
+			echo '<span class="blogs__desc">'.$hm_blog_ex.'</span>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 			echo '<footer class="blogs__footer">'.PHP_EOL;
 			echo '<time class="blogs__date">'.$hm_blog_date.'</time>'.PHP_EOL;
