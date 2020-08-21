@@ -3,7 +3,9 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-bottom: 2rem;
+    box-shadow: 0 0.3725rem 0.8725rem rgba($accent_6,.35);
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;	
 	&__content {
 		color:$alternate;
 	    margin-bottom: 2rem;

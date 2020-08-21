@@ -3438,7 +3438,10 @@ body.solutions-template div.testimonials {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 2rem; }
+  -webkit-box-shadow: 0 0.3725rem 0.8725rem rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0.3725rem 0.8725rem rgba(0, 0, 0, 0.35);
+  padding-bottom: 2rem;
+  margin-bottom: 3rem; }
   .home .industries__content {
     color: #FFFFFF;
     margin-bottom: 2rem;
