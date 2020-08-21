@@ -3314,7 +3314,7 @@ body.solutions-template div.testimonials {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 0.125rem solid #FECD06;
+  border-bottom: 0.175rem solid #FECD06;
   min-height: 18.75rem; }
   @media (max-width: 786px) {
     .home .hero {
@@ -3438,6 +3438,7 @@ body.solutions-template div.testimonials {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 0.175rem solid #FECD06;
   -webkit-box-shadow: 0 0.3725rem 0.8725rem rgba(0, 0, 0, 0.35);
           box-shadow: 0 0.3725rem 0.8725rem rgba(0, 0, 0, 0.35);
   padding-bottom: 2rem;
