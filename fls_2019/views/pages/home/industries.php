@@ -7,11 +7,13 @@ if (have_rows('hm_ind')) {
 		$hm_ind_title = get_sub_field('hm_ind_title');
 		$hm_ind_desc  = get_sub_field('hm_ind_desc');
 		$hm_ind_bg    = get_sub_field('hm_ind_bg');
-		echo '<style>'.PHP_EOL;
-		echo '.industries {background-image:url(https://sandbox.fall-arrest.com/wp-content/uploads/2020/08/fall-arrest-footer.jpg);}'.PHP_EOL;
-		echo '</style>'.PHP_EOL;
-		echo '<span class="industries__title"><h2 class="industries__title--text">Industry Experts</h2></span>'.PHP_EOL;
-		echo '<span class="industries__content">Flexible Lifeline Systems goes the extra step to become experts at analyzing your hazards as well as your employee work habits. This has lead us to installing thousands of fall arrest and fall protection systems globally that exceed expectations. Our comprehensive range of products meet the requirements of even the most challenging environments.</span>'.PHP_EOL;
+		if ($hm_ind_bg) {
+			echo '<style>'.PHP_EOL;
+			echo '.industries {background-image:url('.$hm_ind_bg.');}'.PHP_EOL;
+			echo '</style>'.PHP_EOL;
+		}
+		echo '<span class="industries__title"><h2 class="industries__title--text">'.$hm_ind_title.'</h2></span>'.PHP_EOL;
+		echo '<span class="industries__content">'.$hm_ind_desc.'</span>'.PHP_EOL;
 		if (have_rows('hm_ind_list')) {
 			echo '<ul class="industries__list">'.PHP_EOL;
 			while (have_rows('hm_ind_list')) {
