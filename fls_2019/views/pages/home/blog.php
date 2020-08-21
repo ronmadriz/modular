@@ -16,7 +16,7 @@ if (have_rows('hm_blog')) {
 			$hm_blog_link  = get_the_permalink();
 			echo '<article class="blogs__item">'.PHP_EOL;
 			echo '<header class="blogs__header">'.PHP_EOL;
-			echo '<a href="blogs__image--link"><img alt="'.$hm_blog_title.'" class="blogs__image" src="'.get_the_post_thumbnail_url('full').'"></a>'.PHP_EOL;
+			echo '<a href="blogs__image--link"><img alt="'.$hm_blog_title.'" class="blogs__image" src="'.get_the_post_thumbnail_url(get_the_ID(), 'full').'"></a>'.PHP_EOL;
 			echo '</header>'.PHP_EOL;
 			echo '<div class="blogs__content">'.PHP_EOL;
 			echo '<span class="blogs__sub">';
