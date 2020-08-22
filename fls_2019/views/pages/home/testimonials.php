@@ -6,7 +6,7 @@ if (have_rows('tst_carousel')) {
 	echo '<div class="testimonials__list">'.PHP_EOL;
 	while (have_rows('tst_carousel')) {
 		the_row();
-		$testimonials = get_sub_field('testimonial');
+		$testimonials = get_sub_field('tst_post');
 		if ($testimonials) {
 			$testimonials = $testimonial;
 			setup_postdata($testimonial);
