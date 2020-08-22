@@ -1,4 +1,5 @@
 <?
+// 'get_thumbnail_url(get_the_ID(), 'full').'
 if (have_rows('hm_blog')) {
 	echo '<section id="home_blog" class="blogs">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
