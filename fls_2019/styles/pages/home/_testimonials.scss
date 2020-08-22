@@ -1,6 +1,5 @@
 .testimonials {
 	&__carousel {
-//		position:relative;
 	}
 	&__city {
 	    color: $accent_1;
@@ -29,8 +28,12 @@
 		flex-wrap: nowrap;
 	}
 	&__quote {
+		align-items: center;
 	    color: $accent_1;
+		display:flex;
+		flex: 1 0 auto;
 	    font-size: 1.25rem;
 	    font-style: italic;
+		justify-content: center;	    
 	}
 }

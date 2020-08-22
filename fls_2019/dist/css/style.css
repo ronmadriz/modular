@@ -3661,9 +3661,21 @@ body.solutions-template div.testimonials {
       flex-wrap: nowrap; }
 
 .home .testimonials__quote {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #156CB3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   font-size: 1.25rem;
-  font-style: italic; }
+  font-style: italic;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 html body section#avail_positions h3 a {
   display: block; }
