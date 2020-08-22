@@ -7,16 +7,16 @@ $tst_args = array(
 
 $tst_query = new WP_Query($tst_args);
 if ($tst_query->have_posts()) {
-	$tst_content      = get_the_content($tst_query->ID);
-	$tst_title        = get_the_title();
-	$tst_city_st      = get_field('tst_city_st');
-	$tst_company_name = get_field('tst_company_name');
 	echo '<section id="home_testimonials" class="testimonials">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="testimonials__carousel">'.PHP_EOL;
 	echo '<div class="testimonials__list">'.PHP_EOL;
 	while ($tst_query->have_posts()) {
 		$tst_query->the_post();
+		$tst_content      = get_the_content($tst_query->ID);
+		$tst_title        = get_the_title();
+		$tst_city_st      = get_field('tst_city_st');
+		$tst_company_name = get_field('tst_company_name');
 		echo '<article class="testimonials__item">'.PHP_EOL;
 		echo '<blockquote class="testimonials__quote">'.$tst_content.'</blockquote>'.PHP_EOL;
 		echo '<span class="testimonials__city">'.$tst_title.' - '.$tst_city_st.'</span>'.PHP_EOL;
