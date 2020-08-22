@@ -3630,20 +3630,25 @@ body.solutions-template div.testimonials {
 .home .testimonials__city {
   color: #156CB3;
   display: block;
-  line-height: 1.75; }
+  line-height: 1.75;
+  -ms-flex-item-align: start;
+      align-self: start; }
 
 .home .testimonials__company {
   display: block;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  -ms-flex-item-align: start;
+      align-self: start; }
 
 .home .testimonials__item.carousel-item {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start; }
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: auto; }
   .home .testimonials__item.carousel-item.active {
     display: -webkit-box;
     display: -ms-flexbox;

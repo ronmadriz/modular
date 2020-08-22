@@ -5,10 +5,12 @@
 	    color: $accent_1;
 	    display: block;
 	    line-height: 1.75;
+	    align-self: start;
 	}
 	&__company {
 	    display: block;
 	    margin-bottom: 2rem;
+	    align-self: start;
 	}
 	&__item {
 //		flex: 0 0 100%;
@@ -16,7 +18,8 @@
 //	    padding-right: 5rem;
 		&.carousel-item {
 			flex-direction: column;
-			align-items: start;
+			align-items: stretch;
+			height:auto;
 			&.active {
 				display:flex;
 			}
