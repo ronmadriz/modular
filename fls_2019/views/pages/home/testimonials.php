@@ -8,15 +8,16 @@ if (have_rows('tst_carousel')) {
 		the_row();
 		$testimonials = get_sub_field('tst_post');
 		if ($testimonials) {
-			$testimonials = $testimonial;
-			setup_postdata($testimonial);
-			$tst_title   = $testimonial->post_title;
-			$tst_city_st = get_field('tst_city_st');
-			echo '<article class="testimonials__item">'.PHP_EOL;
-			echo '<blockquote class="testimonials__quote">'.$tst_content.'</blockquote>'.PHP_EOL;
-			echo '<span class="testimonials__city">'.$tst_title.' - '.$tst_city_st.'</span>'.PHP_EOL;
-			echo '<span class="testimonials__company">'.$tst_company_name.'</span>'.PHP_EOL;
-			echo '</article>'.PHP_EOL;
+			foreach ($testimonials as $testimonial) {
+				setup_postdata($testimonial);
+				$tst_content = $testimonial->post_title;
+				$tst_city_st = get_field('tst_city_st');
+				echo '<article class="testimonials__item">'.PHP_EOL;
+				echo '<blockquote class="testimonials__quote">'.$tst_content.'</blockquote>'.PHP_EOL;
+				echo '<span class="testimonials__city">'.$tst_title.' - '.$tst_city_st.'</span>'.PHP_EOL;
+				echo '<span class="testimonials__company">'.$tst_company_name.'</span>'.PHP_EOL;
+				echo '</article>'.PHP_EOL;
+			}
 			wp_reset_postdata();
 		}
 	}
