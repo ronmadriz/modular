@@ -13,7 +13,7 @@ if ($tst_query->have_posts()) {
 	echo '<div class="testimonials__list">'.PHP_EOL;
 	while ($tst_query->have_posts()) {
 		$tst_query->the_post();
-		$tst_content      = get_the_content($tst_query->ID);
+		$tst_content      = get_the_content();
 		$tst_title        = get_the_title();
 		$tst_city_st      = get_field('tst_city_st');
 		$tst_company_name = get_field('tst_company_name');
