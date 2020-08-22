@@ -47,7 +47,9 @@
     }
     &__item {
 		display: flex;
-		flex-shrink: 0;    	
+		flex-shrink: 0;
+		padding-left: 1rem;
+		padding-right: 1rem;
     	width:33.33%;
     	&.active {
     		display:flex;
