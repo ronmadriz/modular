@@ -45,6 +45,8 @@
 		flex-wrap: nowrap;
     }
     &__item {
+		display: flex;
+		flex-shrink: 0;    	
     	width:33%;
     	&.active {
     		display:flex;
