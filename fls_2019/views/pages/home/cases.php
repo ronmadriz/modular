@@ -3,9 +3,10 @@ if (have_rows('hm_work')) {
 	echo '<section id="home_cases" class="cases">'.PHP_EOL;
 	while (have_rows('hm_work')) {
 		the_row();
-		$hm_work_title = get_sub_field('hm_work_title');
-		$hm_work_desc  = get_sub_field('hm_work_desc');
-		$hm_work_btn   = get_sub_field('hm_work_btn');
+		$hm_work_bg_img = get_sub_field('hm_work_bg_img');
+		$hm_work_title  = get_sub_field('hm_work_title');
+		$hm_work_desc   = get_sub_field('hm_work_desc');
+		$hm_work_btn    = get_sub_field('hm_work_btn');
 		echo '<style>'.PHP_EOL;
 		echo '.cases {'.PHP_EOL;
 		echo 'background-image:url('.$hm_work_bg_img.');'.PHP_EOL;
