@@ -9,7 +9,6 @@ if (have_rows('tst_carousel')) {
 		$testimonials = get_sub_field('tst_post');
 		if ($testimonials) {
 			foreach ($testimonials as $testimonial) {
-				setup_postdata($testimonial);
 				$tst_content      = get_the_content($testimonial->ID);
 				$tst_title        = get_the_title($testimonial->ID);
 				$tst_city_st      = get_field('tst_city_st', $testimonial->ID);
@@ -20,7 +19,6 @@ if (have_rows('tst_carousel')) {
 				echo '<span class="testimonials__company">'.$tst_company_name.'</span>'.PHP_EOL;
 				echo '</article>'.PHP_EOL;
 			}
-			wp_reset_postdata();
 		}
 	}
 	echo '</div>'.PHP_EOL;
