@@ -3636,6 +3636,11 @@ body.solutions-template div.testimonials {
   display: block;
   margin-bottom: 2rem; }
 
+.home .testimonials__item.carousel-item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .home .testimonials__quote {
   color: #156CB3;
   font-size: 1.25rem;
