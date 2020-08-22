@@ -10,10 +10,10 @@ if (have_rows('tst_carousel')) {
 		if ($testimonials) {
 			foreach ($testimonials as $testimonial) {
 				setup_postdata($testimonial);
-				$tst_content      = get_the_content();
-				$tst_title        = $testimonial->post_title;
-				$tst_city_st      = get_field('tst_city_st');
-				$tst_company_name = get_field('tst_company_name');
+				$tst_content      = get_the_content($testimonial->ID);
+				$tst_title        = get_the_title($testimonial->ID);
+				$tst_city_st      = get_field('tst_city_st', $testimonial->ID);
+				$tst_company_name = get_field('tst_company_name', $testimonial->ID);
 				echo '<article class="testimonials__item">'.PHP_EOL;
 				echo '<blockquote class="testimonials__quote">'.$tst_content.'</blockquote>'.PHP_EOL;
 				echo '<span class="testimonials__city">'.$tst_title.' - '.$tst_city_st.'</span>'.PHP_EOL;
