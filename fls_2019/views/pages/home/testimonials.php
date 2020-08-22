@@ -6,11 +6,19 @@ if (have_rows('tst_carousel')) {
 	echo '<div class="testimonials__list">'.PHP_EOL;
 	while (have_rows('tst_carousel')) {
 		the_row();
-		echo '<article class="testimonials__item">'.PHP_EOL;
-		echo '<blockquote class="testimonials__quote">“The crew did a great job, were very professional and easy to work with. The project was completed exactly on time. Flexible Lifeline Systems responded to my questions and comments in a very timely manner; giving me even more information than I was expecting.”</blockquote>'.PHP_EOL;
-		echo '<span class="testimonials__city">Nang - Houston, TX</span>'.PHP_EOL;
-		echo '<span class="testimonials__company">Marathon Oil Corporation</span>'.PHP_EOL;
-		echo '</article>'.PHP_EOL;
+		$testimonials = get_sub_field('testimonial');
+		if ($testimonials) {
+			foreach ($testimonials as $testimonial) {
+				setup_postdata($testimonial);
+				$tst_city_st = get_field('tst_city_st');
+				echo '<article class="testimonials__item">'.PHP_EOL;
+				echo '<blockquote class="testimonials__quote">'.get_the_content().'</blockquote>'.PHP_EOL;
+				echo '<span class="testimonials__city">'.get_the_title().' - '.$tst_city_st.'</span>'.PHP_EOL;
+				echo '<span class="testimonials__company">'.$tst_company_name.'</span>'.PHP_EOL;
+				echo '</article>'.PHP_EOL;
+			}
+			wp_reset_postdata();
+		}
 	}
 	echo '<a class="featured__nav featured__nav--prev" href="#featured__carousel"><i class="featured__icon featured__icon--prev"></i><span class="featured__nav--text">'.PHP_EOL;
 	_e('Previous', 'fc_core');
