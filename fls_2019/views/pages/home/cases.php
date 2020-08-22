@@ -9,7 +9,7 @@ if (have_rows('hm_work')) {
 		$hm_work_btn    = get_sub_field('hm_work_btn');
 		echo '<style>'.PHP_EOL;
 		echo '.cases {'.PHP_EOL;
-		echo 'background-image:url('.$hm_work_bg_img.');'.PHP_EOL;
+		echo 'background-image:url('.$hm_work_bg_img['url'].');'.PHP_EOL;
 		echo '}'.PHP_EOL;
 		echo '</style>'.PHP_EOL;
 		echo '<div class="wrapper">'.PHP_EOL;
