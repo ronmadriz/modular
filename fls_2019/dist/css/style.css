@@ -3627,9 +3627,6 @@ body.solutions-template div.testimonials {
         -ms-flex-direction: column;
             flex-direction: column; }
 
-.home .testimonials__carousel {
-  position: relative; }
-
 .home .testimonials__city {
   color: #156CB3;
   display: block;
@@ -3638,25 +3635,6 @@ body.solutions-template div.testimonials {
 .home .testimonials__company {
   display: block;
   margin-bottom: 2rem; }
-
-.home .testimonials__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  padding-left: 5rem;
-  padding-right: 5rem; }
-
-.home .testimonials__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  overflow-x: hidden; }
 
 .home .testimonials__quote {
   color: #156CB3;
