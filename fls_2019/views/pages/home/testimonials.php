@@ -1,25 +1,27 @@
 <?
-if (have_rows('tst_carousel')) {
+$tst_args = array(
+	'post_type'      => 'testimonials',
+	'post_status'    => 'publish',
+	'posts_per_page' => 3,
+);
+
+$tst_query = new WP_Query($tst_args);
+if ($tst_query->have_posts()) {
+	$tst_content      = get_the_content();
+	$tst_title        = get_the_title();
+	$tst_city_st      = get_field('tst_city_st');
+	$tst_company_name = get_field('tst_company_name');
 	echo '<section id="home_testimonials" class="testimonials">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="testimonials__carousel">'.PHP_EOL;
 	echo '<div class="testimonials__list">'.PHP_EOL;
-	while (have_rows('tst_carousel')) {
-		the_row();
-		$testimonials = get_sub_field('tst_post');
-		if ($testimonials) {
-			foreach ($testimonials as $testimonial) {
-				$tst_content      = get_the_content($testimonial->ID);
-				$tst_title        = get_the_title($testimonial->ID);
-				$tst_city_st      = get_field('tst_city_st', $testimonial->ID);
-				$tst_company_name = get_field('tst_company_name', $testimonial->ID);
-				echo '<article class="testimonials__item">'.PHP_EOL;
-				echo '<blockquote class="testimonials__quote">'.$tst_content.'</blockquote>'.PHP_EOL;
-				echo '<span class="testimonials__city">'.$tst_title.' - '.$tst_city_st.'</span>'.PHP_EOL;
-				echo '<span class="testimonials__company">'.$tst_company_name.'</span>'.PHP_EOL;
-				echo '</article>'.PHP_EOL;
-			}
-		}
+	while ($tst_query->have_posts()) {
+		$tst_query->the_post();
+		echo '<article class="testimonials__item">'.PHP_EOL;
+		echo '<blockquote class="testimonials__quote">'.$tst_content.'</blockquote>'.PHP_EOL;
+		echo '<span class="testimonials__city">'.$tst_title.' - '.$tst_city_st.'</span>'.PHP_EOL;
+		echo '<span class="testimonials__company">'.$tst_company_name.'</span>'.PHP_EOL;
+		echo '</article>'.PHP_EOL;
 	}
 	echo '</div>'.PHP_EOL;
 	echo '<a class="featured__nav featured__nav--prev" href="#featured__carousel"><i class="featured__icon featured__icon--prev"></i><span class="featured__nav--text">'.PHP_EOL;
