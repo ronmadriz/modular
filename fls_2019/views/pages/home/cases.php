@@ -13,7 +13,7 @@ if (have_rows('hm_work')) {
 		$hm_work_desc  = get_sub_field('hm_work_desc');
 		$hm_work_btn   = get_sub_field('hm_work_btn');
 		echo '<span class="cases__title"><h2 class="cases__title--text">'.$hm_work_title.'</h2></span>'.PHP_EOL;
-		echo '<span class="cases__content">'.esc_html($hm_work_desc).'</span>'.PHP_EOL;
+		echo '<span class="cases__content">'.$hm_work_desc.'</span>'.PHP_EOL;
 		echo '<span class="cases__button"><a class="cases__link" href="'.$hm_work_btn['url'].'">'.$hm_work_btn['title'].'</a></span>'.PHP_EOL;
 		echo '<div class="cases__carousel">'.PHP_EOL;
 		echo '<div class="cases__list">'.PHP_EOL;
