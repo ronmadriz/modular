@@ -3546,6 +3546,8 @@ body.solutions-template div.testimonials {
       display: -ms-flexbox;
       display: flex; }
   .home .cases__image {
+    -webkit-filter: brightness(5000%);
+            filter: brightness(5000%);
     width: 100%; }
   .home .cases__title {
     z-index: 2; }

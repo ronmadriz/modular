@@ -69,9 +69,6 @@ j(document).ready(function(){
     });
     j('#update').firstVisitPopup({
       cookieName : 'flsUpdate'
-    });
-    J('#cases__carousel').carousel({
-      interval: false,
     });    
 });
 
