@@ -15,7 +15,7 @@ if ($tst_query->have_posts()) {
 		$tst_query->the_post();
 		$tst_content      = get_the_content();
 		$tst_title        = get_the_title();
-		$tst_city_st      = get_field('tst_city_st');
+		$tst_city_st      = get_field('tst_city_state');
 		$tst_company_name = get_field('tst_company_name');
 		echo '<article class="testimonials__item">'.PHP_EOL;
 		echo '<blockquote class="testimonials__quote">&ldquo;'.$tst_content.'&rdquo;</blockquote>'.PHP_EOL;
