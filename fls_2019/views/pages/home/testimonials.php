@@ -19,6 +19,7 @@ if (have_rows('tst_carousel')) {
 			wp_reset_postdata();
 		}
 	}
+	echo '</div>'.PHP_EOL;
 	echo '<a class="featured__nav featured__nav--prev" href="#featured__carousel"><i class="featured__icon featured__icon--prev"></i><span class="featured__nav--text">'.PHP_EOL;
 	_e('Previous', 'fc_core');
 	echo '</span></a>'.PHP_EOL;
