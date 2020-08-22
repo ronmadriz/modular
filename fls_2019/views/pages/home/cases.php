@@ -23,7 +23,7 @@ if (have_rows('hm_work')) {
 			while (have_rows('hm_work_cases')) {
 				the_row();
 				$hm_work_case = get_sub_field('hm_work_case', 'option');
-				echo '<span class="cases__item carousel-item'.($hm_work_count == 0?' active':'').'">'.file_get_contents($hm_work_case).'</span>'.PHP_EOL;
+				echo '<span class="cases__item carousel-item'.($hm_work_count == 0?' active':'').'">'.file_get_contents(get_site_url().$hm_work_case).'</span>'.PHP_EOL;
 				$hm_work_count++;
 			}
 			echo '</div>'.PHP_EOL;
