@@ -17,6 +17,7 @@
 //	    padding-right: 5rem;
 		&.carousel-item {
 			flex-direction: column;
+			align-items: start;
 			&.active {
 				display:flex;
 			}

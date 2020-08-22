@@ -3640,7 +3640,10 @@ body.solutions-template div.testimonials {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start; }
   .home .testimonials__item.carousel-item.active {
     display: -webkit-box;
     display: -ms-flexbox;
