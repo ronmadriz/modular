@@ -17,7 +17,7 @@ if (have_rows('hm_work')) {
 		echo '<span class="cases__content">'.$hm_work_desc.'</span>'.PHP_EOL;
 		echo '<span class="cases__button"><a class="cases__link" href="'.$hm_work_btn['url'].'">'.$hm_work_btn['title'].'</a></span>'.PHP_EOL;
 		if (have_rows('hm_work_cases')) {
-			echo '<div id="cases__carousel" class="cases__carousel" data-ride="carousel">'.PHP_EOL;
+			echo '<div id="cases__carousel" class="cases__carousel">'.PHP_EOL;
 			echo '<div class="cases__list carousel-inner">'.PHP_EOL;
 			$hm_work_count = 0;
 			while (have_rows('hm_work_cases')) {
@@ -33,3 +33,4 @@ if (have_rows('hm_work')) {
 	}
 	echo '</section>'.PHP_EOL;
 }
+// data-ride="carousel"
