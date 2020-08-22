@@ -3513,6 +3513,7 @@ body.solutions-template div.testimonials {
   .home .cases__button {
     z-index: 2; }
   .home .cases__carousel {
+    margin-top: 3rem;
     z-index: 2; }
   .home .cases__content {
     color: #FFFFFF;
