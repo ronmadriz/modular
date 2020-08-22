@@ -3546,7 +3546,7 @@ body.solutions-template div.testimonials {
     display: flex;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    width: 33%; }
+    width: 33.33%; }
     .home .cases__item.active {
       display: -webkit-box;
       display: -ms-flexbox;
