@@ -7,7 +7,7 @@ $tst_args = array(
 
 $tst_query = new WP_Query($tst_args);
 if ($tst_query->have_posts()) {
-	$tst_content      = get_the_content();
+	$tst_content      = get_the_content($tst_query->ID);
 	$tst_title        = get_the_title();
 	$tst_city_st      = get_field('tst_city_st');
 	$tst_company_name = get_field('tst_company_name');
@@ -23,6 +23,7 @@ if ($tst_query->have_posts()) {
 		echo '<span class="testimonials__company">'.$tst_company_name.'</span>'.PHP_EOL;
 		echo '</article>'.PHP_EOL;
 	}
+	wp_reset_postdata();
 	echo '</div>'.PHP_EOL;
 	echo '<a class="featured__nav featured__nav--prev" href="#featured__carousel"><i class="featured__icon featured__icon--prev"></i><span class="featured__nav--text">'.PHP_EOL;
 	_e('Previous', 'fc_core');
