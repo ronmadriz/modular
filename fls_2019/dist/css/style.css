@@ -3529,6 +3529,22 @@ body.solutions-template div.testimonials {
     letter-spacing: .0625rem;
     padding: .5rem 2rem;
     text-transform: uppercase; }
+  .home .cases__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+  .home .cases__item {
+    width: 33%; }
+    .home .cases__item.active {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   .home .cases__title {
     z-index: 2; }
     .home .cases__title--text {

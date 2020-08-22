@@ -39,6 +39,17 @@
 		padding: .5rem 2rem;
 		text-transform: uppercase; 	
     }
+    &__list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+    }
+    &__item {
+    	width:33%;
+    	&.active {
+    		display:flex;
+    	}
+    }
     &__title {
     	z-index: 2;
     	&--text {
