@@ -24,10 +24,9 @@
 		}
 	}
 	&__list {
-//		display:flex;
-//		flex-direction: row;
-//		flex-wrap: nowrap;
-//	    overflow-x: hidden;
+		display:flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
 	}
 	&__quote {
 	    color: $accent_1;

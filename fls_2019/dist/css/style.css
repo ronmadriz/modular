@@ -3649,6 +3649,17 @@ body.solutions-template div.testimonials {
     display: -ms-flexbox;
     display: flex; }
 
+.home .testimonials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
 .home .testimonials__quote {
   color: #156CB3;
   font-size: 1.25rem;
