@@ -3,7 +3,7 @@ if (have_rows('hm_work')) {
 	echo '<section id="home_cases" class="cases">'.PHP_EOL;
 	echo '<style>'.PHP_EOL;
 	echo '.cases {'.PHP_EOL;
-	echo 'background-image:url(/wp-content/uploads/2018/12/karbach-after-installation-fall-safety12-1024x767-1024x767.jpg);'.PHP_EOL;
+	echo 'background-image:url('.$hm_work_bg_img.');'.PHP_EOL;
 	echo '}'.PHP_EOL;
 	echo '</style>'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
@@ -15,11 +15,17 @@ if (have_rows('hm_work')) {
 		echo '<span class="cases__title"><h2 class="cases__title--text">'.$hm_work_title.'</h2></span>'.PHP_EOL;
 		echo '<span class="cases__content">'.$hm_work_desc.'</span>'.PHP_EOL;
 		echo '<span class="cases__button"><a class="cases__link" href="'.$hm_work_btn['url'].'">'.$hm_work_btn['title'].'</a></span>'.PHP_EOL;
-		echo '<div class="cases__carousel">'.PHP_EOL;
-		echo '<div class="cases__list">'.PHP_EOL;
-		echo '<a class="cases__item" href="#"></a>'.PHP_EOL;
-		echo '</div>'.PHP_EOL;
-		echo '</div>'.PHP_EOL;
+		if (have_rows('hm_work_cases')) {
+			echo '<div class="cases__carousel">'.PHP_EOL;
+			echo '<div class="cases__list">'.PHP_EOL;
+			while (have_rows('hm_work_cases')) {
+				the_row();
+				$hm_work_cases = get_sub_field('hm_work_cases');
+				echo '<span class="cases__item"><img class="cases__image" src="'.$hm_work_cases.'"></span>'.PHP_EOL;
+			}
+			echo '</div>'.PHP_EOL;
+			echo '</div>'.PHP_EOL;
+		}
 	}
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
