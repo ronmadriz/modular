@@ -3664,11 +3664,15 @@ body.solutions-template div.testimonials {
     display: -ms-flexbox;
     display: flex;
     height: 90%;
+    left: .5rem;
     padding-bottom: .5rem;
     padding-left: 1rem;
     position: absolute;
     top: 0;
     width: 90%; }
+    @media (min-width: 786px) {
+      .home .industries__link {
+        padding-bottom: 0; } }
     .home .industries__link--text {
       color: #FFFFFF;
       font-weight: 600;

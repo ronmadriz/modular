@@ -40,11 +40,15 @@
 		align-items: flex-end;
 		display: flex;
 		height: 90%;
+		left: .5rem;
 		padding-bottom: .5rem;
 		padding-left: 1rem;
 		position: absolute;
 		top: 0;
 		width: 90%;
+		@include for-tablet-up {
+			padding-bottom:0;
+		}
 		&--text {
 			color: $alternate;
 			font-weight: 600;
