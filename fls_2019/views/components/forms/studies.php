@@ -78,6 +78,7 @@ if ($studies_query) {
 		echo '<figcaption class="studies__text"><a class="studies__link" href="'.get_permalink().'">'.(!empty($studies__title)?$studies__title:get_the_title()).'</a></figcaption>'.PHP_EOL;
 		echo '</figure>'.PHP_EOL;
 	}
+	wp_reset_postdata();
 	global $wp_query;// you can remove this line if everything works for you
 
 	// don't display the button if there are not enough posts
@@ -87,5 +88,4 @@ if ($studies_query) {
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
-	wp_reset_postdata();
 }
