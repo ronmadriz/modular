@@ -1,14 +1,11 @@
 <?
-$blog__args = array(
-	//	'post__not_in' => array(1, 2, 3),
-	'post_type'   => 'post',
-	'post_status' => 'publish',
-	'order'       => 'DESC',
-	'orderby'     => 'date',
-	// Pagination Parameters
-	'posts_per_page' => 3,
-	'nopaging'       => false,
-	'paged'          => get_query_var('paged'),
+$postsPerPage = 3;
+$blog__args   = array(
+	'post_type'      => 'post',
+	'post_status'    => 'publish',
+	'order'          => 'DESC',
+	'orderby'        => 'date',
+	'posts_per_page' => $postsPerPage,
 );
 $blog__query = new WP_Query($blog__args);
 if ($blog__query->have_posts()) {
@@ -28,5 +25,9 @@ if ($blog__query->have_posts()) {
 		echo '</div>'.PHP_EOL;
 		echo '</article>'.PHP_EOL;
 	}
+	wp_reset_postdata();
 	echo '</div>'.PHP_EOL;
+	echo '<div id="more_posts">';
+	_e('Load More', 'fc_core');
+	echo '</div>';
 }
