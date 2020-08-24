@@ -15,12 +15,6 @@ function enqueue_my_scripts() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_my_scripts');
 
-wp_localize_script('site_script', 'ajax_posts', array(
-		'ajaxurl' => admin_url('admin-ajax.php'),
-		'noposts' => __('No older posts found', 'fc_core'),
-	)
-);
-
 // scripts
 function enqueue_my_styles() {
 	wp_enqueue_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');

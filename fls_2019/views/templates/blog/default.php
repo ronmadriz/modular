@@ -26,8 +26,12 @@ if ($blog__query->have_posts()) {
 		echo '</article>'.PHP_EOL;
 	}
 	wp_reset_postdata();
-	echo '<div id="more_posts" class="blog__more">';
-	_e('Load More', 'fc_core');
-	echo '</div>';
+	global $wp_query;// you can remove this line if everything works for you
+
+	// don't display the button if there are not enough posts
+	if ($wp_query->max_num_pages > 1) {
+		echo '<a class="misha_loadmore">More posts</a>';
+	}
+	// you can use <a> as well
 	echo '</div>'.PHP_EOL;
 }

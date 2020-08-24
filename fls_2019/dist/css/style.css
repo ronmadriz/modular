@@ -989,7 +989,7 @@ html form.lrm-form ul.acf-checkbox-list li {
   padding: .3275rem .875rem;
   margin: .9375rem 0; }
 
-.load__more {
+.misha_loadmore {
   background-color: #ddd;
   border-radius: 2px;
   display: block;
@@ -1004,7 +1004,7 @@ html form.lrm-form ul.acf-checkbox-list li {
   -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out; }
 
-.load__more:hover {
+.misha_loadmore:hover {
   background-color: #767676;
   color: #fff; }
 
