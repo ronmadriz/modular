@@ -15,14 +15,17 @@ if ($blog__query->have_posts()) {
 		$blog__thumb = get_the_post_thumbnail_url();
 		$fname       = get_the_author_meta('first_name');
 		$lname       = get_the_author_meta('last_name');
+		$displayName = get_the_author_meta('display_name');
 		$full_name   = '';
 		if (empty($fname)) {
 			$full_name = '<a class="blog__author">'.$lname.'</a> - ';
 		} elseif (empty($lname)) {
 			$full_name = '<a class="blog__author">'.$fname.'</a> - ';
-		} else {
+		} elseif (!empty($fname) && !empty($lname)) {
 			//both first name and last name are present
 			$full_name = '<a class="blog__author">'."{$fname} {$lname}" .'</a> - ';
+		} else {
+			$full_name = '<a class="blog__author">'.$displayName.'</a> - ';
 		}
 		echo '<article class="blog__item">'.PHP_EOL;
 		echo (!empty($blog__thumb)?'<span class="blog__thumb"><img alt="'.get_the_title().'" class="blog__thumb--img" src="'.$blog__thumb.'"></span>'.PHP_EOL:'');
