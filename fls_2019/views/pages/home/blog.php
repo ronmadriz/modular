@@ -12,7 +12,7 @@ if (have_rows('hm_blog')) {
 			$post = $hm_blog_post;
 			setup_postdata($post);
 			$hm_blog_title = get_the_title();
-			$hm_blog_img   = get_the_post_thumbnail_url();
+			$hm_blog_img   = get_field('banner');
 			$hm_blog_date  = get_the_date('m/d/Y');
 			$hm_blog_ex    = get_the_excerpt();
 			$hm_blog_link  = get_the_permalink();
