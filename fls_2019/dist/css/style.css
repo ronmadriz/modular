@@ -3398,7 +3398,8 @@ body.solutions-template div.testimonials {
     height: 20%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    margin-bottom: 1rem; }
     @media (max-width: 786px) {
       .home .hero__services {
         display: none; } }
