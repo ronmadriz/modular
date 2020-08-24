@@ -75,6 +75,13 @@
 		@include for-phone-only {
 			display:none;
 		}
+		&--icon {
+			max-width: 100%;
+			svg {
+				height:1rem;
+				width:100%;
+			}
+		}
 		&--link {
 			color:$alternate;
 			&:after {
