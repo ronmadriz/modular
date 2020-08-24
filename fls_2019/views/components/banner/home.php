@@ -29,10 +29,10 @@ if (have_rows('hm_hero')) {
 				$hm_hero_icon_title = get_sub_field('hm_hero_icon_title');
 				$hm_hero_icon_link  = get_sub_field('hm_hero_icon_link');
 				echo '<li class="hero__services--item">';
-				echo (!empty($hm_hero_icon_link)?'<a href="#" class="hero__services--link">':'');
+				echo (!empty($hm_hero_icon_link)?'<div href="#" class="hero__services--link">':'');
 				echo (!empty($hm_hero_icon)?'<i class="hero__services--icon">'.file_get_contents(get_template_directory().'/sprites/'.$hm_hero_icon.'.svg').'</i>':'');
 				echo (!empty($hm_hero_icon_title)?'<span class="hero__services--text">'.$hm_hero_icon_title.'</span>':'');
-				echo '</a>';
+				echo '</div>';
 				echo '</li>'.PHP_EOL;
 			}
 			echo '</ul>'.PHP_EOL;
