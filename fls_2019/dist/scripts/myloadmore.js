@@ -32,37 +32,3 @@ jQuery(function(j){ // use jQuery code inside this to avoid "j is not defined" e
 		});
 	});
 });
-Please note that line 23 can be different for your theme, it depends on your HTML document structure. I think you should know some basic jQuery DOM traversal methods – prev(), next(), parent() etc.
-
-Option 2. No button, just load posts on scroll (lazy load)
-jQuery(function(j){
-	var canBeLoaded = true, // this param allows to initiate the AJAX call only if necessary
-	    bottomOffset = 2000; // the distance (in px) from the page bottom when you want to load more posts
- 
-	j(window).scroll(function(){
-		var data = {
-			'action': 'loadmore',
-			'query': misha_loadmore_params.posts,
-			'page' : misha_loadmore_params.current_page
-		};
-		if( j(document).scrollTop() > ( j(document).height() - bottomOffset ) &amp;&amp; canBeLoaded == true ){
-			j.ajax({
-				url : misha_loadmore_params.ajaxurl,
-				data:data,
-				type:'POST',
-				beforeSend: function( xhr ){
-					// you can also add your own preloader here
-					// you see, the AJAX call is in process, we shouldn't run it again until complete
-					canBeLoaded = false; 
-				},
-				success:function(data){
-					if( data ) {
-						j('#main').find('article:last-of-type').after( data ); // where to insert posts
-						canBeLoaded = true; // the ajax is completed, now we can run it again
-						misha_loadmore_params.current_page++;
-					}
-				}
-			});
-		}
-	});
-});
