@@ -1,9 +1,4 @@
 <?
-wp_localize_script('site_script', 'ajax_posts', array(
-		'ajaxurl' => admin_url('admin-ajax.php'),
-		'noposts' => __('No older posts found', 'fc_core'),
-	)
-);
 
 function more_post_ajax() {
 

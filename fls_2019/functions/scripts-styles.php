@@ -27,14 +27,8 @@ function enqueue_my_styles() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_my_styles');
 
-function fc_load_more_scripts() {
-	global $wp_query;
-	wp_localize_script('fc_loadmore', 'load__more_params', array(
-			'ajaxurl'      => site_url().'/wp-admin/admin-ajax.php', // WordPress AJAX
-			'posts'        => json_encode($wp_query->query_vars), // everything about your loop is here
-			'current_page' => get_query_var('paged')?get_query_var('paged'):1,
-			'max_page'     => $wp_query->max_num_pages
-		));
-	wp_enqueue_script('fc_loadmore');
-}
-add_action('wp_enqueue_scripts', 'fc_load_more_scripts');
+wp_localize_script('site_script', 'ajax_posts', array(
+		'ajaxurl' => admin_url('admin-ajax.php'),
+		'noposts' => __('No older posts found', 'fc_core'),
+	)
+);
