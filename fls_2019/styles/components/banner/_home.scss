@@ -75,6 +75,14 @@
 		@include for-phone-only {
 			display:none;
 		}
+		&--item {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			line-height: 1.25;
+			padding-left: .5rem;
+			padding-right: .5rem;
+		}
 		&--icon {
 			align-self: center;
 			display: flex;
@@ -108,6 +116,13 @@
 			margin-right: auto;			
 			padding: 0;
 			width: 100%;
+		}
+		&--text {
+display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.25;
+    margin-top: .5rem;			
 		}
 	}
 	.wrapper {
