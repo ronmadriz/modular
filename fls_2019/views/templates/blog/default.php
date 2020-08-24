@@ -26,8 +26,8 @@ if ($blog__query->have_posts()) {
 		echo '</article>'.PHP_EOL;
 	}
 	wp_reset_postdata();
-	echo '</div>'.PHP_EOL;
 	echo '<div id="more_posts">';
 	_e('Load More', 'fc_core');
 	echo '</div>';
+	echo '</div>'.PHP_EOL;
 }
