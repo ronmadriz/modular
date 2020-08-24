@@ -1,7 +1,7 @@
 <?php
 $studies_args = array(
 	'post_type'      => 'case_study',
-	'posts_per_page' => -1,
+	'posts_per_page' => 6,
 	'orderby'        => 'menu_index',
 	'order'          => 'ASC',
 );

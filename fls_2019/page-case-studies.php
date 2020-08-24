@@ -13,6 +13,5 @@ $section__title       = 'Featured Projects';
 $featured__link__text = 'View Project';
 include (get_template_directory().'/views/components/carousel/featured.php');
 include (get_template_directory().'/views/components/forms/studies.php');
-
 get_footer();
 ?>
