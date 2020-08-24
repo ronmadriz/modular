@@ -13,25 +13,11 @@ if ($blog__query->have_posts()) {
 	while ($blog__query->have_posts()) {
 		$blog__query->the_post();
 		$blog__thumb = get_the_post_thumbnail_url();
-		$fname       = get_the_author_meta('first_name');
-		$lname       = get_the_author_meta('last_name');
-		$displayName = get_the_author_meta('display_name');
-		$full_name   = '';
-		if (empty($fname)) {
-			$full_name = '<a class="blog__author">'.$lname.'</a> - ';
-		} elseif (empty($lname)) {
-			$full_name = '<a class="blog__author">'.$fname.'</a> - ';
-		} elseif (!empty($fname) && !empty($lname)) {
-			//both first name and last name are present
-			$full_name = '<a class="blog__author">'."{$fname} {$lname}" .'</a> - ';
-		} else {
-			$full_name = '<a class="blog__author">'.$displayName.'</a> - ';
-		}
 		echo '<article class="blog__item">'.PHP_EOL;
 		echo (!empty($blog__thumb)?'<span class="blog__thumb"><img alt="'.get_the_title().'" class="blog__thumb--img" src="'.$blog__thumb.'"></span>'.PHP_EOL:'');
 		echo '<div class="blog__content">'.PHP_EOL;
 		echo '<h3 class="blog__title">'.get_the_title().'</h3>'.PHP_EOL;
-		echo '<span class="blog__meta">'.$full_name.'<date class="blog__date">'.get_the_date('F j,Y').'</date></span>'.PHP_EOL;
+		echo '<span class="blog__meta"><a class="blog__author">'.get_the_author_meta('display_name').'</a> &ndash; <date class="blog__date">'.get_the_date('F j,Y').'</date></span>'.PHP_EOL;
 		echo '<span class="blog__desc">'.get_the_excerpt().'</span>'.PHP_EOL;
 		echo '<span class="blog__button"><a class="blog__link button__solid" href="'.get_the_permalink().'">';
 		_e('Read More', 'fc_core');
