@@ -3399,8 +3399,11 @@ body.solutions-template div.testimonials {
     .home .hero__services--icon {
       max-width: 100%; }
       .home .hero__services--icon svg {
-        height: 1rem;
-        width: 100%; }
+        fill: #FECD06;
+        height: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 2rem; }
     .home .hero__services--link {
       color: #FFFFFF; }
       .home .hero__services--link:after {

@@ -78,8 +78,11 @@
 		&--icon {
 			max-width: 100%;
 			svg {
-				height:1rem;
-				width:100%;
+				fill: $accent_2;
+				height: 2rem;
+				margin-left: auto;
+				margin-right: auto;
+				width: 2rem;
 			}
 		}
 		&--link {
