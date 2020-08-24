@@ -1,17 +1,4 @@
 <?
-function misha_my_load_more_scripts() {
-	global $wp_query;
-	wp_enqueue_script('jquery');
-	wp_register_script('my_loadmore', get_stylesheet_directory_uri().'/dist/scripts/myloadmore.js', array('jquery'));
-	wp_localize_script('my_loadmore', 'misha_loadmore_params', array(
-			'ajaxurl'      => site_url().'/wp-admin/admin-ajax.php', // WordPress AJAX
-			'posts'        => json_encode($wp_query->query_vars), // everything about your loop is here
-			'current_page' => get_query_var('paged')?get_query_var('paged'):1,
-			'max_page'     => $wp_query->max_num_pages
-		));
-
-	wp_enqueue_script('my_loadmore');
-}
 
 add_action('wp_enqueue_scripts', 'misha_my_load_more_scripts');
 function misha_loadmore_ajax_handler() {
