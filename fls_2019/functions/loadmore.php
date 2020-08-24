@@ -9,8 +9,10 @@ function misha_my_load_more_scripts() {
 			'current_page' => get_query_var('paged')?get_query_var('paged'):1,
 			'max_page'     => $wp_query->max_num_pages
 		));
+
 	wp_enqueue_script('my_loadmore');
 }
+
 add_action('wp_enqueue_scripts', 'misha_my_load_more_scripts');
 function misha_loadmore_ajax_handler() {
 	$args                = json_decode(stripslashes($_POST['query']), true);
@@ -34,7 +36,7 @@ function misha_loadmore_ajax_handler() {
 			echo '</article>'.PHP_EOL;
 		}
 	}
-	die;// here we exit the script and even no wp_reset_query() required!
+	die;
 }
-add_action('wp_ajax_loadmore', 'misha_loadmore_ajax_handler');// wp_ajax_{action}
-add_action('wp_ajax_nopriv_loadmore', 'misha_loadmore_ajax_handler');// wp_ajax_nopriv_{action}
+add_action('wp_ajax_loadmore', 'misha_loadmore_ajax_handler');
+add_action('wp_ajax_nopriv_loadmore', 'misha_loadmore_ajax_handler');
