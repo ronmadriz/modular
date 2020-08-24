@@ -3640,7 +3640,10 @@ body.solutions-template div.testimonials {
     margin-bottom: .125rem;
     padding: 1rem;
     position: relative;
-    width: 33.333%; }
+    width: 50%; }
+    @media (min-width: 786px) {
+      .home .industries__item {
+        width: 33.333%; } }
   .home .industries__list {
     -webkit-box-align: end;
         -ms-flex-align: end;
