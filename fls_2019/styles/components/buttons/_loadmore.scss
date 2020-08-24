@@ -1,4 +1,4 @@
-.misha_loadmore{
+.load__more{
 	background-color: #ddd;
 	border-radius: 2px;
 	display: block;
@@ -11,8 +11,8 @@
 	text-transform: uppercase;
 	padding: 10px 0;
 	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;  
-}
-.misha_loadmore:hover{
-	background-color: #767676;
-	color: #fff;
+	&:hover{
+		background-color: #767676;
+		color: #fff;
+	}
 }
