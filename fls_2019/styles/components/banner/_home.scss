@@ -71,7 +71,9 @@
 		}
 	}
 	&__services {
+		display: flex;
 		height: 20%;
+		justify-content: center;
 		@include for-phone-only {
 			display:none;
 		}
@@ -115,14 +117,14 @@
 			margin-left: auto;
 			margin-right: auto;			
 			padding: 0;
-			width: 100%;
+			width: 50%;
 		}
 		&--text {
-display: flex;
-    justify-content: center;
-    text-align: center;
-    line-height: 1.25;
-    margin-top: .5rem;			
+			display: flex;
+		    justify-content: center;
+		    line-height: 1.25;
+		    margin-top: .5rem;			
+		    text-align: center;
 		}
 	}
 	.wrapper {

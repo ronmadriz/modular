@@ -3392,7 +3392,13 @@ body.solutions-template div.testimonials {
         .home .hero__content--link {
           margin: 1.5rem 0; } }
   .home .hero__services {
-    height: 20%; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 20%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     @media (max-width: 786px) {
       .home .hero__services {
         display: none; } }
@@ -3447,7 +3453,7 @@ body.solutions-template div.testimonials {
       margin-left: auto;
       margin-right: auto;
       padding: 0;
-      width: 100%; }
+      width: 50%; }
     .home .hero__services--text {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3455,9 +3461,9 @@ body.solutions-template div.testimonials {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      text-align: center;
       line-height: 1.25;
-      margin-top: .5rem; }
+      margin-top: .5rem;
+      text-align: center; }
   .home .hero .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
