@@ -21,11 +21,22 @@ function misha_loadmore_ajax_handler() {
 		while (have_posts()) {
 			the_post();
 			$blog_thumb_more = get_the_post_thumbnail_url();
+			$fname_more      = get_the_author_meta('first_name');
+			$lname_more      = get_the_author_meta('last_name');
+			$full_name_more  = '';
+			if (empty($fname_more)) {
+				$full_name_more = $lname_more;
+			} elseif (empty($lname)) {
+				$full_name_more = $fname_more;
+			} else {
+				//both first name and last name are present
+				$full_name_more = "{$fname} {$lname}";
+			}
 			echo '<article class="blog__item">'.PHP_EOL;
 			echo (!empty($blog__thumb_more)?'<span class="blog__thumb"><img alt="'.get_the_title().'" class="blog__thumb--img" src="'.$blog__thumb_more.'"></span>'.PHP_EOL:'');
 			echo '<div class="blog__content">'.PHP_EOL;
 			echo '<h3 class="blog__title">'.get_the_title().'</h3>'.PHP_EOL;
-			echo '<span class="blog__meta"><a class="blog__author">'.get_the_author_meta('display_name').'</a> &ndash; <date class="blog__date">'.get_the_date('F j,Y').'</date></span>'.PHP_EOL;
+			echo '<span class="blog__meta"><a class="blog__author">'.$full_name_more.'</a> &ndash; <date class="blog__date">'.get_the_date('F j,Y').'</date></span>'.PHP_EOL;
 			echo '<span class="blog__desc">'.get_the_excerpt().'</span>'.PHP_EOL;
 			echo '<span class="blog__button"><a class="blog__link button__solid" href="'.get_the_permalink().'">';
 			_e('Read More', 'fc_core');
