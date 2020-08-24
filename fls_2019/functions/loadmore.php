@@ -25,7 +25,7 @@ function misha_loadmore_ajax_handler() {
 			echo (!empty($blog__thumb_more)?'<span class="blog__thumb"><img alt="'.get_the_title().'" class="blog__thumb--img" src="'.$blog__thumb_more.'"></span>'.PHP_EOL:'');
 			echo '<div class="blog__content">'.PHP_EOL;
 			echo '<h3 class="blog__title">'.get_the_title().'</h3>'.PHP_EOL;
-			echo '<span class="blog__meta"><a class="blog__author">FLS</a> &ndash; <date class="blog__date">October 8, 2020</date></span>'.PHP_EOL;
+			echo '<span class="blog__meta"><a class="blog__author">'.get_the_author_meta('display_name').'</a> &ndash; <date class="blog__date">'.get_the_date('F j,Y').'</date></span>'.PHP_EOL;
 			echo '<span class="blog__desc">'.get_the_excerpt().'</span>'.PHP_EOL;
 			echo '<span class="blog__button"><a class="blog__link button__solid" href="'.get_the_permalink().'">';
 			_e('Read More', 'fc_core');
