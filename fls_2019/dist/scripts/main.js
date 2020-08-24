@@ -133,15 +133,11 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
 	j(this).ekkoLightbox();
 });
 
-// Carousel - Featured List
 (function() {
   var sliderWidth = j('.featured__list').width();
   var Carousel = {
     init: function() {
       Carousel.bindEvents();    
-      // You're missign the initial insertion
-      // and the negative margin (like in the codepen)
-      // This helps to go prev without nuisances. 
       j('.featured__list').css({marginLeft: -sliderWidth});
       j('.featured__item:last-child').prependTo('.featured__list');
     },
@@ -159,7 +155,6 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
         left: -sliderWidth
       }, 500, function() {
         j('.featured__item:first-child').appendTo('.featured__list');
-        // you don't want to reset left of "article" but ".featured__list"
         j('.featured__list').css('left', 0);
       });
     },
@@ -168,11 +163,9 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
         left: +sliderWidth
       }, 500, function() {
         j('.featured__item:last-child').prependTo('.featured__list');
-        // you don't want to reset left of "article" but ".featured__list"
         j('.featured__list').css('left', 0);
       });
     }
-    // TODO: update, props
   }  
   j( Carousel.init );
 })(window);
