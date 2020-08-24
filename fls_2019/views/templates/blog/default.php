@@ -30,7 +30,7 @@ if ($blog__query->have_posts()) {
 
 	// don't display the button if there are not enough posts
 	if ($wp_query->max_num_pages > 1) {
-		echo '<a class="fc_loadmore_post">More posts</a>';
+		echo '<a class="misha_loadmore">More posts</a>';
 	}
 	// you can use <a> as well
 	echo '</div>'.PHP_EOL;
