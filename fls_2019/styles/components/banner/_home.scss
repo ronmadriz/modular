@@ -76,6 +76,8 @@
 			display:none;
 		}
 		&--icon {
+			align-self: center;
+			display: flex;
 			max-width: 100%;
 			svg {
 				fill: $accent_2;
