@@ -12,6 +12,6 @@ $featured_args        = array('post_type' => array('case_study'), 'post_status' 
 $section__title       = 'Featured Projects';
 $featured__link__text = 'View Project';
 include (get_template_directory().'/views/components/carousel/featured.php');
-include (get_template_directory().'/views/components/forms/studies.php');
+include (get_template_directory().'/views/templates/cases/listing.php');
 get_footer();
 ?>
