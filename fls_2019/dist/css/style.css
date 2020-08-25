@@ -1889,7 +1889,7 @@ svg .region path {
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
     transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-    width: 92.5%;
+    width: 100%;
     z-index: 1000; }
     .menus__list--active {
       -webkit-transform: translateX(0%);
@@ -1906,7 +1906,7 @@ svg .region path {
     font-weight: 700;
     padding: .5rem 0 .5rem 1rem;
     text-transform: uppercase;
-    width: 100%; }
+    width: 92.5%; }
   .menus__sub {
     display: none;
     list-style: none;
