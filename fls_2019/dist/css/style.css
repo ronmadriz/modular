@@ -2129,6 +2129,8 @@ svg .region path {
       right: 0;
       width: 7.25%;
       z-index: 3; }
+  .menus__item:last-of-type .menus__link {
+    width: 100%; }
   .menus__icon {
     background-position: center;
     background-repeat: no-repeat;
