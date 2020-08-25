@@ -173,7 +173,7 @@ if (have_rows('image_callout') && !empty($image_callout)) {
 	echo '</section>'.PHP_EOL;
 }
 
-// ICONS
+// ICONS - this version of icons was the initial and differs from that of the fluid page and solutions template.
 $icon_section__title = get_field('icon_section__title');
 $icons               = get_field('icon_row');
 if (have_rows('icon_row')) {
