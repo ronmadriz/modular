@@ -14,6 +14,7 @@ function misha_my_load_more_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'misha_my_load_more_scripts');
+
 function misha_loadmore_ajax_handler() {
 	$args                = json_decode(stripslashes($_POST['query']), true);
 	$args['paged']       = $_POST['page']+1;// we need next page to be loaded
@@ -40,3 +41,33 @@ function misha_loadmore_ajax_handler() {
 }
 add_action('wp_ajax_loadmore', 'misha_loadmore_ajax_handler');
 add_action('wp_ajax_nopriv_loadmore', 'misha_loadmore_ajax_handler');
+
+function cases_loadmore_ajax_handler() {
+	$args                = json_decode(stripslashes($_POST['query']), true);
+	$args['paged']       = $_POST['page']+1;// we need next page to be loaded
+	$args['post_status'] = 'publish';
+	query_posts($args);
+	if (have_posts()) {
+		while (have_posts()) {
+			the_post();
+			$studies__image   = get_the_post_thumbnail_url();
+			$studies__title   = get_field('sidebar__title');
+			$studies__summary = get_field('sidebar__summary');
+			$summary          = get_field('summary');
+			$studies_cat      = get_the_terms($post->ID, array('solution_type', 'industry'));
+			echo '<figure class="studies__item';
+			if ($studies_cat) {
+				foreach ($studies_cat as $study_cat) {
+					echo ' '.$study_cat->slug;
+				}
+			}
+			echo '">'.PHP_EOL;
+			echo '<a class="studies__link" href="'.get_permalink().'"><img alt="'.$studies__title.'" class="studies__image" src="'.$studies__image.'"></a>'.PHP_EOL;
+			echo '<figcaption class="studies__text"><a class="studies__link" href="'.get_permalink().'">'.(!empty($studies__title)?$studies__title:get_the_title()).'</a></figcaption>'.PHP_EOL;
+			echo '</figure>'.PHP_EOL;
+		}
+	}
+	die;
+}
+add_action('wp_ajax_loadmore', 'cases_loadmore_ajax_handler');
+add_action('wp_ajax_nopriv_loadmore', 'cases_loadmore_ajax_handler');

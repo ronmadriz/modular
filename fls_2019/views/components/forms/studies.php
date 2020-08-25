@@ -79,9 +79,6 @@ if ($studies_query) {
 		echo '</figure>'.PHP_EOL;
 	}
 	wp_reset_postdata();
-	global $wp_query;// you can remove this line if everything works for you
-
-	// don't display the button if there are not enough posts
 	if ($wp_query->max_num_pages > 1) {
 		echo '<a class="load__more cases_loadmore">More posts</a>';
 	}
