@@ -26,31 +26,4 @@ jQuery(function(j){
 			}
 		});
 	});
-	j('.cases_loadmore').click(function(){
- 		var button = j(this),
-		    data = {
-			'action': 'loadmore',
-			'query': cases_loadmore_params.posts,
-			'page' : cases_loadmore_params.current_page
-		};
- 		j.ajax({
-			url : cases_loadmore_params.ajaxurl,
-			data : data,
-			type : 'POST',
-			beforeSend : function ( xhr ) {
-				button.text('Loading...');
-			},
-			success : function( data ){
-				if( data ) { 
-					button.text( 'More posts' ).prev().before(data); 
-					cases_loadmore_params.current_page++;
- 
-					if ( cases_loadmore_params.current_page == cases_loadmore_params.max_page ) 
-						button.remove();
- 				} else {
-					button.remove(); 
-				}
-			}
-		});
-	});	
 });

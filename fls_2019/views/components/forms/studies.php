@@ -79,9 +79,6 @@ if ($studies_query) {
 		echo '</figure>'.PHP_EOL;
 	}
 	wp_reset_postdata();
-	if ($wp_query->max_num_pages > 1) {
-		echo '<a class="load__more cases_loadmore">More posts</a>';
-	}
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
