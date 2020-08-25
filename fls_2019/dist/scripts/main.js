@@ -170,11 +170,12 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
   j( Carousel.init );
 })(window);
 j(document).ready(function(){
-  // toggle nav
-  j('.menus__toggle').click(function(){
-    j('.menus__list').toggleClass('menus__list--active');
-  });
-
+	j('.menus__toggle').click(function(){
+		j('.menus__list').toggleClass('menus__list--active');
+	});
+	j('.parent').click(function() {
+		j('.submenu').toggle('visible');
+	}); 
 });
 function normalizeSlideHeights() {
     j('.carousel').each(function(){

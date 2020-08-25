@@ -17,7 +17,7 @@ class FlsMain_Walker extends Walker_Nav_Menu {
 		} elseif ($depth == 0) {
 			$output .= '<li class="menus__item">';
 		} elseif ($args->has_children && $depth == 1) {
-			$output .= '<li class="menus__sub--item  menus__sub--parent">';
+			$output .= '<li class="menus__sub--item has__children menus__sub--parent">';
 		} elseif ($depth == 1) {
 			$output .= '<li class="menus__sub--item">';
 		} else {
@@ -47,7 +47,7 @@ class FlsMain_Walker extends Walker_Nav_Menu {
 			$output .= '<ul class="menus__sub has__children">';
 		}
 		if ($depth == 1) {
-			$output .= '<ul class="menus__tertiary has__children">';
+			$output .= '<ul class="menus__tertiary">';
 		}
 	}
 }
