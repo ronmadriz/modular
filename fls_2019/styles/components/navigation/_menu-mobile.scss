@@ -2,7 +2,7 @@
 	.menus {
 		&__list {
 			display:none;
-			height: 100vh;
+			height: 85vh;
 			overflow-y: scroll;
 			&--active {
 				display:block;
@@ -19,7 +19,7 @@
 						position:absolute;
 						right:1rem;
 						width:1rem;
-						z-index: 3
+						z-index: 3;
 					}
 				}
 			}
