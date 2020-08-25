@@ -1,5 +1,5 @@
 <?
-$postsPerPage = 3;
+$postsPerPage = -1;
 $blog__args   = array(
 	'post_type'      => 'post',
 	'post_status'    => 'publish',
