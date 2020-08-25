@@ -1889,7 +1889,7 @@ svg .region path {
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
     transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-    width: 100%;
+    width: 92.5%;
     z-index: 1000; }
     .menus__list--active {
       -webkit-transform: translateX(0%);
@@ -2119,12 +2119,15 @@ svg .region path {
   .menus__item--parent {
     position: relative; }
     .menus__item--parent .menus__link:after {
+      border-bottom: 0.0625rem solid #156CB3;
       content: '+';
       display: inline-block;
-      height: 1rem;
+      height: auto;
+      padding: .5rem 1rem;
       position: absolute;
-      right: 1rem;
-      width: 1rem;
+      top: 0;
+      right: 0;
+      width: 7.25%;
       z-index: 3; }
   .menus__icon {
     background-position: center;
