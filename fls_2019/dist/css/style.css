@@ -1882,7 +1882,6 @@ svg .region path {
             padding-inline-start: 0;
     position: absolute;
     right: 0;
-    top: 15vh;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     -webkit-transition: -webkit-transform 0.5s ease;
@@ -2113,7 +2112,8 @@ svg .region path {
   .menus__list {
     display: none;
     height: 85vh;
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    top: 15vh; }
     .menus__list--active {
       display: block; }
   .menus__item--parent {
