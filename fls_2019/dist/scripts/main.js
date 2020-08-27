@@ -167,6 +167,7 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
 })(window);
 j(document).ready(function(){
 	j('.menus__toggle').click(function(){
+		j(this).toggleClass('menus__toggle--open');
 		j('.menus__list').toggleClass('menus__list--active');
 	});
 	if (j(window).width() < 786) {
