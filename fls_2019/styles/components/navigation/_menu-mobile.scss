@@ -12,7 +12,6 @@
 		&__caret {
 			@include caret($accent_1);
 			display: flex;
-			filter: hue(-187deg) saturation(2);
 			height: 1rem;
 			padding: .75rem;
 			width: 5%;	
