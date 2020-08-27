@@ -2181,6 +2181,10 @@ svg .region path {
       margin-right: .875rem;
       position: relative;
       top: .175rem; }
+  .menus__open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .menus__tertiary--link {
     border-bottom: 0.0625rem solid #156CB3;
     color: #156CB3;

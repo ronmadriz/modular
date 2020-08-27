@@ -84,6 +84,9 @@
 				}
 			}
 		}
+		&__open {
+			display:flex;
+		}
 		&__tertiary {
 			&--item {}
 			&--link {
