@@ -17,6 +17,7 @@
 			width: 5%;			
 		}
 		&__item {
+			border-bottom:.0625rem solid $accent_1;
 			display: flex;
 			&--parent {
 				position:relative;
@@ -28,6 +29,7 @@
 			}
 		}
 		&__link {
+			border-bottom:0;
 			display:flex;
 		}
 		&__icon {

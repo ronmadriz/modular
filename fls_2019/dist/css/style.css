@@ -2125,6 +2125,7 @@ svg .region path {
     padding: .75rem;
     width: 5%; }
   .menus__item {
+    border-bottom: 0.0625rem solid #156CB3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -2133,6 +2134,7 @@ svg .region path {
     .menus__item:last-of-type .menus__link {
       width: 100%; }
   .menus__link {
+    border-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
