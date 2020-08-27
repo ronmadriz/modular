@@ -2110,7 +2110,7 @@ svg .region path {
 
 @media (max-width: 786px) {
   .menus__list {
-    display: block;
+    display: none;
     height: 85vh;
     overflow-y: scroll;
     top: 15vh; }
