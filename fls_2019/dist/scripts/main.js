@@ -170,10 +170,12 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
 })(window);
 var j = jQuery.noConflict();
 j(document).ready(function(){
-  j('.menus__caret').siblings('.menus__child').hide();
-  j('.menus__caret').click( function(){
-    j(this).siblings('.menus__child').toggle();
-  } );
+	if (j(window).width() < 786) {
+		j('.menus__parent').siblings('.menus__child').hide();
+		j('.menus__parent').click( function(){
+			j(this).siblings('.menus__child').toggle();
+		} );	
+	}
 });
 
 function normalizeSlideHeights() {
