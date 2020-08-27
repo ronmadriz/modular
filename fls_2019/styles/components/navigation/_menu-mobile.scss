@@ -10,6 +10,7 @@
 			}
 		}
 		&__caret {
+			align-self: center;
 			@include caret($accent_1);
 		    background-position: center;
 		    background-repeat: no-repeat;
