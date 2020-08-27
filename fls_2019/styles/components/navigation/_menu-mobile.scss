@@ -10,11 +10,12 @@
 			}
 		}
 		&__caret {
-			background-color: rgba(0,0,0,.4);
+			@include caret($accent_1);
 			display: flex;
+			filter: hue(-187deg) saturation(2);
 			height: 1rem;
 			padding: .75rem;
-			width: 5%;			
+			width: 5%;	
 		}
 		&__item {
 			border-bottom:.0625rem solid $accent_1;
