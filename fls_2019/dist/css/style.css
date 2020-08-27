@@ -2116,6 +2116,14 @@ svg .region path {
     top: 15vh; }
     .menus__list--active {
       display: block; }
+  .menus__child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%; }
   .menus__caret {
     -ms-flex-item-align: center;
         align-self: center;

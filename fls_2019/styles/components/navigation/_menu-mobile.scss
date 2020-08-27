@@ -9,6 +9,11 @@
 				display:block;
 			}
 		}
+		&__child {
+			flex-direction: column;
+			flex-wrap: wrap;
+			width: 100%;			
+		}
 		&__caret {
 			align-self: center;
 			@include caret($accent_1);
