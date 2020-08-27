@@ -7,6 +7,7 @@ j(document).ready(function(){
 		// j('.menus__caret').siblings('.menus__child').hide();
 		j('.menus__caret').click( function(){
 			j(this).siblings('.menus__child').toggleClass('menus__open');
+			j(this).toggleClass('menus__caret--open');
 		} );	
 	}	
 });
