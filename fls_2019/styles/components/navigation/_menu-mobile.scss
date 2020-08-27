@@ -70,6 +70,7 @@
 			}
 		}
 		&__sub {
+			border-top: .0625rem solid $accent_1;
 			&--item {
 				border-bottom: 0.0625rem solid $accent_1;
 				display: flex;
@@ -98,6 +99,7 @@
 			display:flex;
 		}
 		&__tertiary {
+			border-top: .0625rem solid $accent_1;
 			&--item {
 				border-bottom: 0.0625rem solid $accent_1;
 			}
