@@ -11,6 +11,9 @@
 		}
 		&__caret {
 			@include caret($accent_1);
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: 1rem;
 			display: flex;
 			height: 1rem;
 			padding: .75rem;
