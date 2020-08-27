@@ -70,16 +70,20 @@
 			}
 		}
 		&__sub {
-			&--item {}
-			&--link {
+			&--item {
 				border-bottom: 0.0625rem solid $accent_1;
+				display: flex;
+				width: 100%;	
+			}
+			&--link {
+				align-items: center;
 				color:$accent_1;
 				display: flex;
 				font-size: .875rem;
 				font-weight:700;
-				padding:0 0 0.35rem 1rem;
+				padding: 0 0 0 1rem;
 				text-transform: uppercase;
-				width:100%;
+				width:92.5%;
 				&:before {
 					color:$accent_1;
 				    content: '\2022';
@@ -94,16 +98,17 @@
 			display:flex;
 		}
 		&__tertiary {
-			&--item {}
-			&--link {
+			&--item {
 				border-bottom: 0.0625rem solid $accent_1;
+			}
+			&--link {
 				color:$accent_1;
 				display: flex;
 				font-size:.875rem;
 				font-weight:500;
 				padding:0 0 .5rem 3rem;
 				text-transform: uppercase;
-				width:100%;
+				width:92.5%;
 				&:before {
 					color:$accent_1;
 				    content: '\2022';
