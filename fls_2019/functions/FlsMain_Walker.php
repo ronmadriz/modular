@@ -13,11 +13,11 @@ class FlsMain_Walker extends Walker_Nav_Menu {
 	function start_el(&$output, $item, $depth = 0, $args = [], $id = 0) {
 
 		if ($args->has_children && $depth == 0) {
-			$output .= '<li id="menus__item--'.$this->number++ .'" class="menus__item menus__item--parent">';
+			$output .= '<li id="menus__item--'.$this->number++ .'" class="menus__item menus__parent menus__item--parent">';
 		} elseif ($depth == 0) {
 			$output .= '<li class="menus__item">';
 		} elseif ($args->has_children && $depth == 1) {
-			$output .= '<li class="menus__sub--item has__children menus__sub--parent">';
+			$output .= '<li class="menus__sub--item menus__parent menus__sub--parent">';
 		} elseif ($depth == 1) {
 			$output .= '<li class="menus__sub--item">';
 		} else {
@@ -44,7 +44,7 @@ class FlsMain_Walker extends Walker_Nav_Menu {
 	}
 	public function start_lvl(&$output, $depth = 0, $args = array()) {
 		if ($depth == 0) {
-			$output .= '<ul class="menus__sub menus__child">';
+			$output .= '<ul class="menus__sub menus__parent">';
 		}
 		if ($depth == 1) {
 			$output .= '<ul class="menus__tertiary">';
