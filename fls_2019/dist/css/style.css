@@ -1839,6 +1839,8 @@ svg .region path {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .menus__active {
+    background-color: #D0E2F0; }
   .menus__brand {
     display: -webkit-box;
     display: -ms-flexbox;

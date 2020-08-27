@@ -1,6 +1,9 @@
 .menus {
 	align-items: center;
 	display: flex;
+	&__active {
+		background-color: $accent_7;
+	}
 	&__brand {
 		display:flex;
 	    margin:1rem .5rem;
