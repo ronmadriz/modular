@@ -2136,7 +2136,12 @@ svg .region path {
     display: flex;
     height: 1rem;
     padding: .75rem;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
     width: 5%; }
+    .menus__caret--open {
+      -webkit-transform: rotate(-180deg);
+              transform: rotate(-180deg); }
   .menus__item {
     border-bottom: 0.0625rem solid #156CB3;
     display: -webkit-box;

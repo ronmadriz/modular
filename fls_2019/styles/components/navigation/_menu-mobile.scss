@@ -23,7 +23,11 @@
 			display: flex;
 			height: 1rem;
 			padding: .75rem;
-			width: 5%;	
+			transition:.3s ease all;
+			width: 5%;
+			&--open {
+				transform: rotate(-180deg);				
+			}
 		}
 		&__item {
 			border-bottom:.0625rem solid $accent_1;
