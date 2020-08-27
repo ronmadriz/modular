@@ -22,10 +22,7 @@ j(document).ready(function(){
 	    }
 	});
     j(".phone").text(function(i, text) {text = text.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3"); return text; });
-    // change SVG Target to TOP
-    j('svg a').click(function(event){
-      j('a').attr("target", "_top");
-    });
+
     // carousel Nav
     var view = j("#thumb_list");
     var move = "250px";
