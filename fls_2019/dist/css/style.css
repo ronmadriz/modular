@@ -2132,13 +2132,15 @@ svg .region path {
       position: relative; }
     .menus__item:last-of-type .menus__link {
       width: 100%; }
+  .menus__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .menus__icon {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
     height: 1rem;
     margin-right: .5rem;
     width: 1rem; }
@@ -2157,7 +2159,9 @@ svg .region path {
   .menus__sub--link {
     border-bottom: 0.0625rem solid #156CB3;
     color: #156CB3;
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-size: .875rem;
     font-weight: 700;
     padding: 0 0 0.35rem 1rem;
@@ -2173,7 +2177,9 @@ svg .region path {
   .menus__tertiary--link {
     border-bottom: 0.0625rem solid #156CB3;
     color: #156CB3;
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-size: .875rem;
     font-weight: 500;
     padding: 0 0 .5rem 3rem;

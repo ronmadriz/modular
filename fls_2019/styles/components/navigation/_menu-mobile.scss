@@ -27,12 +27,14 @@
 				}				
 			}
 		}
-		&__link {}
+		&__link {
+			display:flex;
+		}
 		&__icon {
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;		
-			display: flex;
+			display: inline-block;
 			height: 1rem;
 			margin-right:.5rem;
 			width: 1rem;
@@ -60,7 +62,7 @@
 			&--link {
 				border-bottom: 0.0625rem solid $accent_1;
 				color:$accent_1;
-				display: inline-block;
+				display: flex;
 				font-size: .875rem;
 				font-weight:700;
 				padding:0 0 0.35rem 1rem;
@@ -81,7 +83,7 @@
 			&--link {
 				border-bottom: 0.0625rem solid $accent_1;
 				color:$accent_1;
-				display: inline-block;
+				display: flex;
 				font-size:.875rem;
 				font-weight:500;
 				padding:0 0 .5rem 3rem;
