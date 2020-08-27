@@ -1,8 +1,7 @@
+var j = jQuery.noConflict();
 j(document).ready(function(){
-	j('.menus__toggle').click(function(){
-		j('.menus__list').toggleClass('menus__list--active');
-	});
-	j('.has__children').click(function() {
-		j('.has__children ul').toggleClass('show');
-	}); 
+  j('.menus__caret').siblings('.menus__child').hide();
+  j('.menus__caret').click( function(){
+    j(this).siblings('.menus__child').toggle();
+  } );
 });

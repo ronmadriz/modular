@@ -132,7 +132,6 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
 	event.preventDefault();
 	j(this).ekkoLightbox();
 });
-
 (function() {
   var sliderWidth = j('.featured__list').width();
   var Carousel = {
@@ -169,14 +168,14 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
   }  
   j( Carousel.init );
 })(window);
+var j = jQuery.noConflict();
 j(document).ready(function(){
-	j('.menus__toggle').click(function(){
-		j('.menus__list').toggleClass('menus__list--active');
-	});
-	j('.has__children').click(function() {
-		j('.has__children ul').toggleClass('show');
-	}); 
+  j('.menus__caret').siblings('.menus__child').hide();
+  j('.menus__caret').click( function(){
+    j(this).siblings('.menus__child').toggle();
+  } );
 });
+
 function normalizeSlideHeights() {
     j('.carousel').each(function(){
       var items = j('.carousel-item img.background', this);

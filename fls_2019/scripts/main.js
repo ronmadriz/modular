@@ -95,7 +95,6 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
 	event.preventDefault();
 	j(this).ekkoLightbox();
 });
-
 (function() {
   var sliderWidth = j('.featured__list').width();
   var Carousel = {

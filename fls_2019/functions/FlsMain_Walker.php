@@ -44,7 +44,7 @@ class FlsMain_Walker extends Walker_Nav_Menu {
 	}
 	public function start_lvl(&$output, $depth = 0, $args = array()) {
 		if ($depth == 0) {
-			$output .= '<ul class="menus__sub has__children">';
+			$output .= '<ul class="menus__sub menus__child">';
 		}
 		if ($depth == 1) {
 			$output .= '<ul class="menus__tertiary">';
