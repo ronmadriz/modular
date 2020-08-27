@@ -5,7 +5,7 @@ j(document).ready(function(){
 	if (j(window).width() < 786) {
 		j('<em class="menus__caret"></em>').insertBefore('.menus__child');
 		j('.menus__caret').click( function(){
-			j(this).parent('.menus__caret').toggleClass('menus__active');
+			j(this).parent('.menus__parent').toggleClass('menus__active');
 			j(this).siblings('.menus__child').toggleClass('menus__open');
 			j(this).toggleClass('menus__caret--open');
 		} );	
