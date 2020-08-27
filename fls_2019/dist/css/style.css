@@ -2180,6 +2180,8 @@ svg .region path {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       width: 100%; }
     .menus__sub--link {
       -webkit-box-align: center;

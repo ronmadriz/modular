@@ -74,6 +74,7 @@
 			&--item {
 				border-bottom: 0.0625rem solid $accent_1;
 				display: flex;
+				flex-wrap: wrap;
 				width: 100%;	
 			}
 			&--link {
