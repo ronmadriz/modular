@@ -2202,7 +2202,7 @@ svg .region path {
         font-size: 1.875rem;
         margin-right: .875rem;
         position: relative;
-        top: .175rem; }
+        top: .0625rem; }
   .menus__open {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2210,15 +2210,21 @@ svg .region path {
   .menus__tertiary {
     border-top: 0.0625rem solid #156CB3; }
     .menus__tertiary--item {
-      border-bottom: 0.0625rem solid #156CB3; }
+      border-bottom: 0.0625rem solid #156CB3;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
     .menus__tertiary--link {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       color: #156CB3;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       font-size: .875rem;
       font-weight: 500;
-      padding: 0 0 .5rem 3rem;
+      padding: 0 0 0 3rem;
       text-transform: uppercase;
       width: 92.5%; }
       .menus__tertiary--link:before {
@@ -2227,7 +2233,7 @@ svg .region path {
         font-size: 1.875rem;
         margin-right: .875rem;
         position: relative;
-        top: .3275rem; }
+        top: .125rem; }
   #menus__item--1 .menus__sub .menus__sub--parent:last-of-type {
     display: none; } }
 

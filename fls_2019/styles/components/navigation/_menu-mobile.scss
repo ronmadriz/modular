@@ -92,7 +92,7 @@
 				    font-size:1.875rem;
 				    margin-right:.875rem;
 				    position: relative;
-				    top: .175rem;
+				    top: .0625rem;
 				}
 			}
 		}
@@ -103,13 +103,15 @@
 			border-top: .0625rem solid $accent_1;
 			&--item {
 				border-bottom: 0.0625rem solid $accent_1;
+				display: flex;
 			}
 			&--link {
+				align-items: center;
 				color:$accent_1;
 				display: flex;
 				font-size:.875rem;
 				font-weight:500;
-				padding:0 0 .5rem 3rem;
+				padding:0 0 0 3rem;
 				text-transform: uppercase;
 				width:92.5%;
 				&:before {
@@ -118,7 +120,7 @@
 				    font-size:1.875rem;
 				    margin-right:.875rem;
 				    position: relative;
-				    top:.3275rem;
+				    top:.125rem;
 				}
 			}			
 		}
