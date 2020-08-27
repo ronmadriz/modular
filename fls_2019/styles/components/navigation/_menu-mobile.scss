@@ -12,20 +12,6 @@
 		&__item {
 			&--parent {
 				position:relative;
-				.menus__link {
-					&:after {
-						border-bottom: .0625rem solid $accent_1;
-						content: '+';
-						display: inline-block;
-						height: auto;
-						padding: .5rem 1rem;
-						position: absolute;
-						top: 0;
-						right: 0;
-						width: 7.25%;
-						z-index: 3;
-					}
-				}
 			}
 			&:last-of-type {
 				.menus__link {

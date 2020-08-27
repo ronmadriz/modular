@@ -2118,17 +2118,6 @@ svg .region path {
       display: block; }
   .menus__item--parent {
     position: relative; }
-    .menus__item--parent .menus__link:after {
-      border-bottom: 0.0625rem solid #156CB3;
-      content: '+';
-      display: inline-block;
-      height: auto;
-      padding: .5rem 1rem;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 7.25%;
-      z-index: 3; }
   .menus__item:last-of-type .menus__link {
     width: 100%; }
   .menus__icon {
