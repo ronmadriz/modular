@@ -4,14 +4,16 @@
 	padding-right: 0 !important;
 	position:relative;
 	&__content {
-		background-image: url(../../images/cfImage.jpg);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size:cover;
-		padding:1rem 0;
+		@include for-tablet-up {
+			background-image: url(../../images/cfImage.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size:cover;
+			padding:1rem 0;			
+		}
 		@include for-laptop-down {
 			padding:5% 2% 10%;
-		}		
+		}
 	}
 	&__button {
 		justify-content: center;
@@ -77,5 +79,10 @@
 		    top: 5px;
 		    position: relative;
     	}
+	}
+	.wrapper {
+		@include for-phone-only {
+			padding:0;
+		}
 	}
 }

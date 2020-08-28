@@ -1445,15 +1445,16 @@ html body main #flsCarousel {
   padding-left: 0 !important;
   padding-right: 0 !important;
   position: relative; }
-  .genForm__content {
-    background-image: url(../../images/cfImage.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 1rem 0; }
-    @media (min-width: 768px) and (min-width: 1200px) {
-      .genForm__content {
-        padding: 5% 2% 10%; } }
+  @media (min-width: 786px) {
+    .genForm__content {
+      background-image: url(../../images/cfImage.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 1rem 0; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .genForm__content {
+      padding: 5% 2% 10%; } }
   .genForm__button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1523,6 +1524,9 @@ html body main #flsCarousel {
               transform: rotate(-15deg);
       top: 5px;
       position: relative; }
+  @media (max-width: 786px) {
+    .genForm .wrapper {
+      padding: 0; } }
 
 body main form {
   -webkit-transition: all 0.25s ease;
