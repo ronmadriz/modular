@@ -80,6 +80,10 @@
 		    top: 5px;
 		    position: relative;
     	}
+    	&--text {
+			display: flex;
+			padding-left: 2.35%;
+    	}
 	}
 	.wrapper {
 		@include for-phone-only {

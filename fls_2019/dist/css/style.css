@@ -1525,6 +1525,11 @@ html body main #flsCarousel {
               transform: rotate(-15deg);
       top: 5px;
       position: relative; }
+    .genForm__footer--text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-left: 2.35%; }
   @media (max-width: 786px) {
     .genForm .wrapper {
       padding: 0; } }
