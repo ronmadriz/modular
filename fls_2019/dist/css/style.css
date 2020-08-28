@@ -1336,6 +1336,8 @@ html body main #flsCarousel {
           flex-direction: column; }
 
 .form__group {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: .5rem; }
 
 .form__label {

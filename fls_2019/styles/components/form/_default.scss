@@ -1,5 +1,6 @@
 .form {
 	&__group {
+		flex-wrap: wrap;
 		padding: .5rem;
 	}
 	&__label {
