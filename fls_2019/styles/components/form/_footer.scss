@@ -18,7 +18,7 @@
 			justify-content: flex-end;
 		}
 		&--btn {
-			background-color: $accent_5;
+			background-color: $accent_2;
 			border:0.0625rem solid $accent_5;
 			border-radius: .25rem;
 			color:$alternate;
@@ -29,7 +29,7 @@
 		}
 	}
 	&__form {
-		background-color: $accent_2;
+		background-color: $gray;
 		border:0.0625rem solid $accent_1;
 		display: flex;
 		flex-wrap: wrap;		

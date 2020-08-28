@@ -1463,7 +1463,7 @@ html body main #flsCarousel {
             -ms-flex-pack: end;
                 justify-content: flex-end; } }
     .genForm__button--btn {
-      background-color: #0F8ACF;
+      background-color: #FECD06;
       border: 0.0625rem solid #0F8ACF;
       border-radius: .25rem;
       color: #FFFFFF;
@@ -1472,7 +1472,7 @@ html body main #flsCarousel {
         .genForm__button--btn {
           padding: .3725rem 2rem; } }
   .genForm__form {
-    background-color: #FECD06;
+    background-color: #E6E7E9;
     border: 0.0625rem solid #156CB3;
     display: -webkit-box;
     display: -ms-flexbox;
