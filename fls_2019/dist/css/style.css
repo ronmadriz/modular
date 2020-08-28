@@ -1463,11 +1463,12 @@ html body main #flsCarousel {
             -ms-flex-pack: end;
                 justify-content: flex-end; } }
     .genForm__button--btn {
-      background-color: #FECD06;
-      border: 0.0625rem solid #0F8ACF;
-      border-radius: .25rem;
-      color: #FFFFFF;
-      padding: .3725rem 6rem; }
+      border: 0.125rem solid #156CB3;
+      display: block;
+      font-weight: 700;
+      padding: .75rem 2.5rem;
+      text-transform: uppercase;
+      width: 80%; }
       @media (min-width: 786px) {
         .genForm__button--btn {
           padding: .3725rem 2rem; } }

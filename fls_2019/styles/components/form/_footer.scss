@@ -18,11 +18,13 @@
 			justify-content: flex-end;
 		}
 		&--btn {
-			background-color: $accent_2;
-			border:0.0625rem solid $accent_5;
-			border-radius: .25rem;
-			color:$alternate;
-			padding: .3725rem 6rem;
+			background-color: $accent_2
+		    border: .125rem solid $accent_1;
+		    display: block;
+		    font-weight: 700;
+		    padding: .75rem 2.5rem;
+		    text-transform: uppercase;
+		    width: 80%;
 			@include for-tablet-up {
 				padding: .3725rem 2rem;
 			}
