@@ -13,10 +13,16 @@
 		padding:1rem 0;
 	}
 	&__button {
+		justify-content: center;
+		padding: .5rem;
 		&--btn {
 			background-color: $accent_5;
 			border:0.0625rem solid $accent_5;
 			color:$alternate;
+			@include for-phone-only {
+				border-radius: .25rem;
+				padding: .3725rem 6rem;
+			}
 		}
 	}
 	&__content {

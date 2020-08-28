@@ -1373,10 +1373,19 @@ html body main #flsCarousel {
     background-size: cover;
     padding: 1rem 0; } }
 
-.homeForm__button--btn {
-  background-color: #0F8ACF;
-  border: 0.0625rem solid #0F8ACF;
-  color: #FFFFFF; }
+.homeForm__button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .5rem; }
+  .homeForm__button--btn {
+    background-color: #0F8ACF;
+    border: 0.0625rem solid #0F8ACF;
+    color: #FFFFFF; }
+    @media (max-width: 786px) {
+      .homeForm__button--btn {
+        border-radius: .25rem;
+        padding: .3725rem 6rem; } }
 
 @media (min-width: 786px) {
   .homeForm__content {
