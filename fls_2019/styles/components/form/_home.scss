@@ -1,4 +1,5 @@
 .homeForm {
+	border-bottom:.3725rem solid $accent_2;
 	@include for-tv-up {
 		padding:5rem 6rem 12rem;
 	}
