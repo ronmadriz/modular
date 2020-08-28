@@ -25,6 +25,7 @@
 			color:$alternate;
 			padding: .3725rem 6rem;
 			@include for-phone-only {
+				padding: .3725rem 2rem;
 			}
 		}
 	}

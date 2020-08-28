@@ -1389,6 +1389,9 @@ html body main #flsCarousel {
     border-radius: .25rem;
     color: #FFFFFF;
     padding: .3725rem 6rem; }
+    @media (max-width: 786px) {
+      .homeForm__button--btn {
+        padding: .3725rem 2rem; } }
 
 @media (min-width: 786px) {
   .homeForm__content {
