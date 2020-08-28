@@ -1364,6 +1364,7 @@ html body main #flsCarousel {
   .homeForm__form {
     background-color: #FFFFFF;
     border: 0.0625rem solid #156CB3;
+    border-radius: .3725rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

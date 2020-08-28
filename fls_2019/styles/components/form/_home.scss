@@ -16,6 +16,7 @@
 	&__form {
 		background-color:$alternate;
 		border:0.0625rem solid $accent_1;
+	    border-radius: .3725rem;
 		display: flex;
 		flex-wrap: wrap;		
 		padding: 1.5rem 2.5rem;
