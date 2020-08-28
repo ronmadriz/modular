@@ -1328,12 +1328,20 @@ html body main #flsCarousel {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.form__group {
+  padding: .5rem; }
+
 .form__label {
-  font-size: .9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .75rem;
   margin-bottom: 0;
   text-transform: uppercase; }
 
 .form__field {
+  background-color: #FFFFFF;
+  border: 0.0625rem solid #E3ECE3;
   font-size: 1.25rem;
   padding: .0125rem;
   width: 100%; }
