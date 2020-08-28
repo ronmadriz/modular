@@ -1480,7 +1480,7 @@ html body main #flsCarousel {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 2rem;
-    width: 80%; }
+    width: 50%; }
   .genForm__header {
     border-bottom-width: 0;
     border-bottom-color: transparent;
