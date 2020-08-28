@@ -1,13 +1,16 @@
 .genForm {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size:cover;
-	padding:1rem 0;
-	@include for-tv-up {
-		padding:5rem 6rem 12rem;
-	}
-	@include for-laptop-down {
-		padding:2rem;
+	&__content {
+		background-image: url(../../images/cfImage.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:cover;
+		padding:1rem 0;
+		@include for-tv-up {
+			padding:5rem 6rem 12rem;
+		}
+		@include for-laptop-down {
+			padding:2rem;
+		}		
 	}
 	&__form {
 		background-color: $gray;
