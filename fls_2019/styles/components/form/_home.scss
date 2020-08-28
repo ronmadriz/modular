@@ -1,0 +1,51 @@
+.homeForm {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	border-radius:.3725rem;
+	padding:1rem 0;
+	width:42.75%;
+	@include for-tv-up {
+		padding:5rem 6rem 12rem;
+	}
+	@include for-laptop-down {
+		padding:2rem;
+	}
+	&__form {
+		background-color:$alternate;
+		border:0.0625rem solid $accent_1;
+		display: flex;
+		flex-wrap: wrap;		
+		padding: 1.5rem 2.5rem;
+	}
+	&__header{
+		border-bottom-width: 0;
+		border-bottom-color: transparent;
+		margin: 0;
+		&--text {
+			color: $alternate;
+		}
+	}
+	&__footer {
+		background-color: $accent_1;
+		border-bottom:3px solid $accent_5;
+	    text-align: center;
+	    padding: 1.25rem 0;
+	    color: $alternate;
+		font-weight: bold;
+	    font-size:1.2rem;
+	    @include for-laptop-up {
+			position: relative;
+			transform:translateY(-2rem);
+			margin-top:-8rem;
+	    }
+	    &--link {
+	    	color:$accent_2;
+	    }
+    	&--icon {
+		    transform: rotate(-15deg);
+		    top: 5px;
+		    position: relative;
+    	}
+	}	
+}
