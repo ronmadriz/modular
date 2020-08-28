@@ -1,4 +1,8 @@
 .form {
+	&__inside {
+		display:flex;
+		flex-wrap: wrap;
+	}
 	&__group {
 		flex-wrap: wrap;
 		padding: .5rem;

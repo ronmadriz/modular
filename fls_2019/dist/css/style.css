@@ -1335,6 +1335,13 @@ html body main #flsCarousel {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.form__inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 .form__group {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1464,12 +1471,6 @@ html body main #flsCarousel {
       @media (min-width: 786px) {
         .genForm__button--btn {
           padding: .3725rem 2rem; } }
-  .genForm__inside {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
   .genForm__form {
     background-color: #E6E7E9;
     border: 0.0625rem solid #156CB3;

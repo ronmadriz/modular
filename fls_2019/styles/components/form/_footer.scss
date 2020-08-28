@@ -28,10 +28,6 @@
 			}
 		}
 	}
-	&__inside {
-		display:flex;
-		flex-wrap: wrap;
-	}	
 	&__form {
 		background-color: $gray;
 		border:0.0625rem solid $accent_1;
