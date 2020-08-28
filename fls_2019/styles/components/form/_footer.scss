@@ -58,9 +58,8 @@
 		font-weight: bold;
 	    font-size:1.2rem;
 	    @include for-laptop-up {
-			position: relative;
-			transform:translateY(-2rem);
-			margin-top:-8rem;
+			position: absolute;
+			bottom:8rem;
 	    }
 	    &--link {
 	    	color:$accent_2;

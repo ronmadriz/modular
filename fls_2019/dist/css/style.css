@@ -1502,10 +1502,8 @@ html body main #flsCarousel {
     font-size: 1.2rem; }
     @media (min-width: 1200px) {
       .genForm__footer {
-        position: relative;
-        -webkit-transform: translateY(-2rem);
-                transform: translateY(-2rem);
-        margin-top: -8rem; } }
+        position: absolute;
+        bottom: 8rem; } }
     .genForm__footer--link {
       color: #FECD06; }
     .genForm__footer--icon {
