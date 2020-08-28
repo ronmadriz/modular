@@ -12,6 +12,8 @@
 	&__form {
 		background-color:$alternate;
 		border:0.0625rem solid $accent_1;
+		display: flex;
+		flex-wrap: wrap;		
 		padding: 1.5rem 2.5rem;
 	}
 	&__header{
@@ -28,8 +30,9 @@
 		text-transform:uppercase;
 	}
 	&__field {
-		padding:.0125rem;
 		font-size: 1.25rem;
+		padding:.0125rem;
+		width: 100%;
 	}
 	&__footer {
 		background-color: $accent_1;
