@@ -1359,6 +1359,8 @@ html body main #flsCarousel {
   @media (min-width: 768px) and (min-width: 1200px) {
     .homeForm {
       padding: 10% 2%; } }
+  .homeForm__content {
+    padding-left: 7%; }
   .homeForm__form {
     background-color: #FFFFFF;
     border: 0.0625rem solid #156CB3;

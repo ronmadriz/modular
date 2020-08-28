@@ -10,6 +10,9 @@
 	@include for-laptop-down {
 		padding:10% 2%;
 	}
+	&__content {
+	    padding-left: 7%;
+	}	
 	&__form {
 		background-color:$alternate;
 		border:0.0625rem solid $accent_1;
