@@ -1445,14 +1445,14 @@ html body main #flsCarousel {
     .genForm {
       padding: 2rem; } }
   .genForm__form {
-    background-color: #FFFFFF;
+    background-color: #E6E7E9;
     border: 0.0625rem solid #156CB3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 1.5rem 2.5rem; }
+    padding: 2rem; }
   .genForm__header {
     border-bottom-width: 0;
     border-bottom-color: transparent;

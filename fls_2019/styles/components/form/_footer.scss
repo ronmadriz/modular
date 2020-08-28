@@ -10,11 +10,11 @@
 		padding:2rem;
 	}
 	&__form {
-		background-color:$alternate;
+		background-color: $gray;
 		border:0.0625rem solid $accent_1;
 		display: flex;
 		flex-wrap: wrap;		
-		padding: 1.5rem 2.5rem;
+		padding: 2rem;
 	}
 	&__header{
 		border-bottom-width: 0;
