@@ -545,10 +545,17 @@ body #mobileCTA.fixed-bottom {
   display: -ms-flexbox;
   display: flex; }
   .layout__full {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%; }
-    @media (min-width: 786px) {
-      .layout__full--half {
-        width: 50%; } }
+    .layout__full--half {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      @media (min-width: 786px) {
+        .layout__full--half {
+          width: 50%; } }
 
 html body a {
   color: #156CB3; }

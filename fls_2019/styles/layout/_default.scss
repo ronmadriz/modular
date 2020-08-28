@@ -1,8 +1,10 @@
 .layout {
 	display:flex;
 	&__full {
+		display:flex;
 		width:100%;
 		&--half {
+			display:flex;
 			@include for-tablet-up {
 				width:50%;
 			}
