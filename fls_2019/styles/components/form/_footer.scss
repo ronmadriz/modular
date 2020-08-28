@@ -11,6 +11,27 @@
 			padding: 10% 2%;
 		}		
 	}
+	&__button {
+		justify-content: center;
+		padding: .5rem;
+		@include for-tablet-up {
+			justify-content: flex-end;
+		}
+		&--btn {
+			background-color: $accent_5;
+			border:0.0625rem solid $accent_5;
+			border-radius: .25rem;
+			color:$alternate;
+			padding: .3725rem 6rem;
+			@include for-tablet-up {
+				padding: .3725rem 2rem;
+			}
+		}
+	}
+	&__inside {
+		display:flex;
+		flex-wrap: wrap;
+	}	
 	&__form {
 		background-color: $gray;
 		border:0.0625rem solid $accent_1;

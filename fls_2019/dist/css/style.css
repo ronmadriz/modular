@@ -1445,6 +1445,31 @@ html body main #flsCarousel {
     @media (min-width: 768px) and (min-width: 1200px) {
       .genForm__content {
         padding: 10% 2%; } }
+  .genForm__button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: .5rem; }
+    @media (min-width: 786px) {
+      .genForm__button {
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; } }
+    .genForm__button--btn {
+      background-color: #0F8ACF;
+      border: 0.0625rem solid #0F8ACF;
+      border-radius: .25rem;
+      color: #FFFFFF;
+      padding: .3725rem 6rem; }
+      @media (min-width: 786px) {
+        .genForm__button--btn {
+          padding: .3725rem 2rem; } }
+  .genForm__inside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .genForm__form {
     background-color: #E6E7E9;
     border: 0.0625rem solid #156CB3;
