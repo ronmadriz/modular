@@ -8,7 +8,7 @@
 		background-size:cover;
 		padding:1rem 0;
 		@include for-laptop-down {
-			padding: 10% 2%;
+			padding: 5% 2% 15%;
 		}		
 	}
 	&__button {
@@ -29,7 +29,7 @@
 		}
 	}
 	&__form {
-		background-color: $gray;
+		background-color: $accent_2;
 		border:0.0625rem solid $accent_1;
 		display: flex;
 		flex-wrap: wrap;		
