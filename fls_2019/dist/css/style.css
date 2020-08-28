@@ -1530,6 +1530,10 @@ html body main #flsCarousel {
     .genForm .wrapper {
       padding: 0; } }
 
+select.form__field {
+  font-size: 1rem;
+  padding: 0.5rem; }
+
 body main form {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease; }
