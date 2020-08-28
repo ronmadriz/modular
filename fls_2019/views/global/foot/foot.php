@@ -2,7 +2,7 @@
 date_default_timezone_set('America/Chicago');
 $ronmadriz_settings = get_option('ronmadriz_settings');
 $footer_image       = get_theme_mod('footer_image');
-if (!is_front_page()) {
+if (is_front_page()) {
 	include (get_template_directory().'/views/components/forms/home.php');
 } else {
 	include (get_template_directory().'/views/components/forms/footer.php');
