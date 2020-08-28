@@ -10,7 +10,7 @@
 		background-size:cover;
 		padding:1rem 0;
 		@include for-laptop-down {
-			padding: 5% 2% 15%;
+			padding:5% 2% 10%;
 		}		
 	}
 	&__button {
@@ -58,7 +58,7 @@
 		font-weight: bold;
 	    font-size:1.2rem;
 	    @include for-laptop-up {
-			bottom:8rem;
+			bottom:2rem;
 			position: absolute;
 			width:100%;
 	    }
