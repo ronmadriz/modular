@@ -1352,8 +1352,7 @@ html body main #flsCarousel {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: .3725rem;
-  padding: 1rem 0;
-  width: 42.75%; }
+  padding: 1rem 0; }
   @media (min-width: 1360px) {
     .homeForm {
       padding: 5rem 6rem 12rem; } }
@@ -1368,7 +1367,8 @@ html body main #flsCarousel {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 1.5rem 2.5rem; }
+    padding: 1.5rem 2.5rem;
+    width: 42.75%; }
   .homeForm__header {
     border-bottom-width: 0;
     border-bottom-color: transparent;

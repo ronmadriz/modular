@@ -4,7 +4,6 @@
 	background-size:cover;
 	border-radius:.3725rem;
 	padding:1rem 0;
-	width:42.75%;
 	@include for-tv-up {
 		padding:5rem 6rem 12rem;
 	}
@@ -17,6 +16,7 @@
 		display: flex;
 		flex-wrap: wrap;		
 		padding: 1.5rem 2.5rem;
+		width:42.75%;
 	}
 	&__header{
 		border-bottom-width: 0;
