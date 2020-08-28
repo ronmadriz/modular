@@ -1482,6 +1482,7 @@ html body main #flsCarousel {
     padding: 2rem;
     width: 50%; }
   .genForm__header {
+    background-color: #156CB3;
     border-bottom-width: 0;
     border-bottom-color: transparent;
     margin: 0; }
