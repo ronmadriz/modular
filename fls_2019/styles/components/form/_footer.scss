@@ -1,20 +1,22 @@
-#contactFormCTA {
+.genForm {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:cover;
 	padding:1rem 0;
-	@media(min-width:1200px){
+	@include for-tv-up {
 		padding:5rem 6rem 12rem;
 	}
-	@media(min-width:768px) and (max-width:1199.99px){
+	@include for-laptop-down {
 		padding:2rem;
 	}
-	form {
-		background-color:$accent_3;
+	&__form {
+		background-color:$alternate;
+		border:0.0625rem solid $accent_1;
 		padding: 1.5rem 2.5rem;
 		label {
 			font-size:.9rem;
 			margin-bottom:0;
+			text-transform:uppercase;
 		}
 		.form-group {
 			&.col-12 {

@@ -479,7 +479,7 @@ body #mobileCTA.fixed-bottom {
   @media (min-width: 786px) and (max-width: 991px) {
     .footer__logo {
       width: 50%; } }
-  @media (min-width: 991px) {
+  @media (min-width: 1200px) {
     .footer__logo {
       width: 40%; } }
   .footer__logo--holder {
@@ -539,6 +539,16 @@ body #mobileCTA.fixed-bottom {
 
 .footer .social__link svg {
   fill: #FFFFFF; }
+
+.layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (min-width: 786px) {
+    .layout__half {
+      width: 50%; } }
+  .layout__full {
+    width: 100%; }
 
 html body a {
   color: #156CB3; }
@@ -948,7 +958,7 @@ html form.lrm-form ul.acf-checkbox-list li {
     min-height: 6rem;
     overflow-y: hidden;
     width: 100%; }
-    @media (min-width: 991px) {
+    @media (min-width: 1200px) {
       .hero__holder {
         max-height: 60vh;
         overflow-x: hidden; } }
@@ -1180,7 +1190,7 @@ html body main #flsCarousel {
   padding-left: .9375rem;
   padding-right: .9375rem;
   width: 100%; }
-  @media (min-width: 991px) {
+  @media (min-width: 1200px) {
     .featured__item {
       width: 34%; } }
 
@@ -1294,7 +1304,7 @@ html body main #flsCarousel {
   @media (min-width: 786px) {
     .literature__item {
       width: 33.3%; } }
-  @media (min-width: 991px) {
+  @media (min-width: 1200px) {
     .literature__item {
       width: 25%; } }
 
@@ -1318,37 +1328,39 @@ html body main #flsCarousel {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-#contactFormCTA {
+.genForm {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1rem 0; }
-  @media (min-width: 1200px) {
-    #contactFormCTA {
+  @media (min-width: 1360px) {
+    .genForm {
       padding: 5rem 6rem 12rem; } }
-  @media (min-width: 768px) and (max-width: 1199.99px) {
-    #contactFormCTA {
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .genForm {
       padding: 2rem; } }
-  #contactFormCTA form {
-    background-color: #E6E7E9;
+  .genForm__form {
+    background-color: #FFFFFF;
+    border: 0.0625rem solid #156CB3;
     padding: 1.5rem 2.5rem; }
-    #contactFormCTA form label {
+    .genForm__form label {
       font-size: .9rem;
-      margin-bottom: 0; }
-    #contactFormCTA form .form-group.col-12 {
+      margin-bottom: 0;
+      text-transform: uppercase; }
+    .genForm__form .form-group.col-12 {
       padding-left: 0;
       margin-bottom: .25rem; }
-    #contactFormCTA form .form-control {
+    .genForm__form .form-control {
       padding: .0125rem;
       font-size: 1.25rem; }
-    #contactFormCTA form .btn-large {
+    .genForm__form .btn-large {
       display: block;
       width: 100%;
       padding: .75rem 2.5rem;
       text-transform: uppercase;
       border: 2px solid #156CB3;
       font-weight: bold; }
-  #contactFormCTA #cfCTA_employeeInfo h3 {
+  .genForm #cfCTA_employeeInfo h3 {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 1em 2em 1.25em;
@@ -1359,9 +1371,9 @@ html body main #flsCarousel {
     font-size: 1.75em;
     font-weight: bold; }
     @media (min-width: 786px) {
-      #contactFormCTA #cfCTA_employeeInfo h3 {
+      .genForm #cfCTA_employeeInfo h3 {
         margin-bottom: 0rem; } }
-    #contactFormCTA #cfCTA_employeeInfo h3 small {
+    .genForm #cfCTA_employeeInfo h3 small {
       font-size: 1.4rem;
       font-weight: 100;
       letter-spacing: .6px;
@@ -2581,7 +2593,7 @@ body.single-post aside nav > ul > li > ul > li a, body#page-fls-blog aside nav >
   @media (min-width: 786px) {
     .solutions__item {
       width: 33%; } }
-  @media (min-width: 991px) {
+  @media (min-width: 1200px) {
     .solutions__item {
       width: 25%; } }
 
@@ -2941,7 +2953,7 @@ html .blog .featured__article {
   padding: .25rem;
   position: relative;
   width: 47.5%; }
-  @media (min-width: 991px) {
+  @media (min-width: 1200px) {
     .studies__item {
       padding: .9375rem;
       width: 33%; } }
