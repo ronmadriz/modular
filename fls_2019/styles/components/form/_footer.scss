@@ -37,11 +37,11 @@
 	}
 	&__form {
 		background-color: $gray;
-		border:0.0625rem solid $accent_1;
 		display: flex;
 		flex-wrap: wrap;		
 		padding: 2rem;
 		@include for-tablet-up {
+			border:0.0625rem solid $accent_1;
 			width:50%;
 		}
 	}
