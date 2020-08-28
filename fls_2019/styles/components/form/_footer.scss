@@ -23,27 +23,27 @@
 		padding:.0125rem;
 		font-size: 1.25rem;
 	}
-	#cfCTA_employeeInfo {
-		h3 {
-			display:inline-block;
-			background-color: rgba(0,0,0,.4);
-			padding: 1em 2em 1.25em;
-			text-align: left;
-			border-radius: 4px;
-			@media(min-width:786px){
-				margin-bottom:0rem;
-			}
-			color: $alternate;
-			text-shadow: 0 0 0.6em rgba(30,43,50,.12);
-			font-size: 1.75em;
-			font-weight: bold;
-			small {
-				font-size: 1.4rem;
-				font-weight: 100;
-				letter-spacing: .6px;
-				display: block;										
-			}										
-		}
+	&__footer {
+		background-color: $accent_1;
+		border-bottom:3px solid $accent_5;
+	    text-align: center;
+	    padding: 1.25rem 0;
+	    color: $alternate;
+		font-weight: bold;
+	    font-size:1.2rem;
+	    @media(min-width:1200px){
+			position: relative;
+			transform:translateY(-2rem);
+			margin-top:-8rem;
+	    }
+	    &--link {
+	    	color:$accent_2;
+	    }
+    	&--icon {
+		    transform: rotate(-15deg);
+		    top: 5px;
+		    position: relative;
+    	}
 	}
 }
 #cf_contactFormTitle {
@@ -58,25 +58,28 @@
 		}
 	}
 }
-#foot_call_cta {
-	background-color: $accent_1;
-	border-bottom:3px solid $accent_5;
-    text-align: center;
-    padding: 1.25rem 0;
-    color: $alternate;
-	font-weight: bold;
-    font-size:1.2rem;
-    @media(min-width:1200px){
-		position: relative;
-		transform:translateY(-2rem);
-		margin-top:-8rem;
-    }
-    a {
-    	color:$accent_2;
-    	i, svg {
-		    transform: rotate(-15deg);
-		    top: 5px;
-		    position: relative;
-    	}
-    }
+
+/*	
+#cfCTA_employeeInfo {
+	h3 {
+		display:inline-block;
+		background-color: rgba(0,0,0,.4);
+		padding: 1em 2em 1.25em;
+		text-align: left;
+		border-radius: 4px;
+		@media(min-width:786px){
+			margin-bottom:0rem;
+		}
+		color: $alternate;
+		text-shadow: 0 0 0.6em rgba(30,43,50,.12);
+		font-size: 1.75em;
+		font-weight: bold;
+		small {
+			font-size: 1.4rem;
+			font-weight: 100;
+			letter-spacing: .6px;
+			display: block;										
+		}										
+	}
 }
+*/
