@@ -1328,6 +1328,16 @@ html body main #flsCarousel {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.form__label {
+  font-size: .9rem;
+  margin-bottom: 0;
+  text-transform: uppercase; }
+
+.form__field {
+  font-size: 1.25rem;
+  padding: .0125rem;
+  width: 100%; }
+
 .genForm {
   background-position: center;
   background-repeat: no-repeat;
@@ -1354,14 +1364,6 @@ html body main #flsCarousel {
     margin: 0; }
     .genForm__header--text {
       color: #FFFFFF; }
-  .genForm__label {
-    font-size: .9rem;
-    margin-bottom: 0;
-    text-transform: uppercase; }
-  .genForm__field {
-    font-size: 1.25rem;
-    padding: .0125rem;
-    width: 100%; }
   .genForm__footer {
     background-color: #156CB3;
     border-bottom: 3px solid #0F8ACF;
