@@ -15,6 +15,9 @@
 	&__button {
 		justify-content: center;
 		padding: .5rem;
+		@include for-tablet-up {
+			justify-content: flex-end;
+		}
 		&--btn {
 			background-color: $accent_5;
 			border:0.0625rem solid $accent_5;
