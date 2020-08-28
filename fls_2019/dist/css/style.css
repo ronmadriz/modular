@@ -1433,57 +1433,57 @@ html body main #flsCarousel {
       top: 5px;
       position: relative; }
 
-.genForm__content {
-  background-image: url(../../images/cfImage.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 1rem 0; }
-  @media (min-width: 1360px) {
-    .genForm__content {
-      padding: 5rem 6rem 12rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
-    .genForm__content {
-      padding: 2rem; } }
-
-.genForm__form {
-  background-color: #E6E7E9;
-  border: 0.0625rem solid #156CB3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 2rem; }
-
-.genForm__header {
-  border-bottom-width: 0;
-  border-bottom-color: transparent;
-  margin: 0; }
-  .genForm__header--text {
-    color: #FFFFFF; }
-
-.genForm__footer {
-  background-color: #156CB3;
-  border-bottom: 3px solid #0F8ACF;
-  text-align: center;
-  padding: 1.25rem 0;
-  color: #FFFFFF;
-  font-weight: bold;
-  font-size: 1.2rem; }
-  @media (min-width: 1200px) {
-    .genForm__footer {
-      position: relative;
-      -webkit-transform: translateY(-2rem);
-              transform: translateY(-2rem);
-      margin-top: -8rem; } }
-  .genForm__footer--link {
-    color: #FECD06; }
-  .genForm__footer--icon {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-    top: 5px;
-    position: relative; }
+.genForm {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+  .genForm__content {
+    background-image: url(../../images/cfImage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem 0; }
+    @media (min-width: 1360px) {
+      .genForm__content {
+        padding: 5rem 6rem 12rem; } }
+    @media (min-width: 768px) and (min-width: 1200px) {
+      .genForm__content {
+        padding: 2rem; } }
+  .genForm__form {
+    background-color: #E6E7E9;
+    border: 0.0625rem solid #156CB3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 2rem; }
+  .genForm__header {
+    border-bottom-width: 0;
+    border-bottom-color: transparent;
+    margin: 0; }
+    .genForm__header--text {
+      color: #FFFFFF; }
+  .genForm__footer {
+    background-color: #156CB3;
+    border-bottom: 3px solid #0F8ACF;
+    text-align: center;
+    padding: 1.25rem 0;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.2rem; }
+    @media (min-width: 1200px) {
+      .genForm__footer {
+        position: relative;
+        -webkit-transform: translateY(-2rem);
+                transform: translateY(-2rem);
+        margin-top: -8rem; } }
+    .genForm__footer--link {
+      color: #FECD06; }
+    .genForm__footer--icon {
+      -webkit-transform: rotate(-15deg);
+              transform: rotate(-15deg);
+      top: 5px;
+      position: relative; }
 
 body main form {
   -webkit-transition: all 0.25s ease;
