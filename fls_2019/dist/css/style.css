@@ -1342,6 +1342,7 @@ html body main #flsCarousel {
 .form__field {
   background-color: #FFFFFF;
   border: 0.0625rem solid #DCDDDE;
+  border-radius: .3725rem;
   font-size: 1.25rem;
   padding: .0125rem;
   width: 100%; }
