@@ -1368,8 +1368,9 @@ html body main #flsCarousel {
   border: 0.0625rem solid #0F8ACF;
   color: #FFFFFF; }
 
-.homeForm__content {
-  padding-left: 7%; }
+@media (min-width: 786px) {
+  .homeForm__content {
+    padding-left: 7%; } }
 
 .homeForm__form {
   background-color: #FFFFFF;
@@ -1378,12 +1379,13 @@ html body main #flsCarousel {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 1.5rem 2.5rem; }
+  padding: 1.5rem 0.5rem; }
   @media (min-width: 786px) {
     .homeForm__form {
       border: 0.0625rem solid #156CB3;
       border-radius: .3725rem;
-      width: 42.75%; } }
+      width: 42.75%;
+      padding: 1.5rem 2.5rem; } }
 
 .homeForm__header {
   border-bottom-width: 0;
