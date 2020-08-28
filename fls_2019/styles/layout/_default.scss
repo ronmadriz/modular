@@ -1,11 +1,11 @@
 .layout {
 	display:flex;
-	&__half {
-		@include for-tablet-up {
-			width:50%;
-		}
-	}
 	&__full {
 		width:100%;
+		&--half {
+			@include for-tablet-up {
+				width:50%;
+			}
+		}
 	}
 }
