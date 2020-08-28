@@ -179,6 +179,7 @@ j(document).ready(function(){
 		} );	
 	}	
 });
+// 7.78
 function normalizeSlideHeights() {
     j('.carousel').each(function(){
       var items = j('.carousel-item img.background', this);

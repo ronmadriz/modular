@@ -10,3 +10,56 @@ Tags:
 License:
 License URI:
 */
+
+/* Kills the horizontal scroll bar coming from an unknown source */
+body {
+overflow-x: hidden;
+}
+/* Scales literature download images to hide shadow in top left corner */
+ul.literature_list li {
+overflow:hidden;
+}
+ul.literature_list li img.img-fluid {
+scale:102%;
+}
+/* Reduce size of text on large browsers */
+html body.blog main section#banner div.page_title p, html body.blog main section:not(#banner) p, html body.industries-template-single-all-industries main section#banner div.page_title p, html body.industries-template-single-all-industries main section:not(#banner) p, html body.industries-template-single-industries-fluid main section#banner div.page_title p, html body.industries-template-single-industries-fluid main section:not(#banner) p, html body.page-template-fall-protection-101 main section#banner div.page_title p, html body.page-template-fall-protection-101 main section:not(#banner) p, html body.page-template-fluid main section#banner div.page_title p, html body.page-template-fluid main section:not(#banner) p, html body.page-template-sample-fall-protection-plan main section#banner div.page_title p, html body.page-template-sample-fall-protection-plan main section:not(#banner) p, html body.single-post main section#banner div.page_title p, html body.single-post main section:not(#banner) p, html body.solutions-template-single-all-solutions main section#banner div.page_title p, html body.solutions-template-single-all-solutions main section:not(#banner) p, html body.solutions-template-solutions-fluid main section#banner div.page_title p, html body.solutions-template-solutions-fluid main section:not(#banner) p {
+	font-size: 100%;
+	line-height: 140%;
+}
+/* Speed up transition of ugly CTA bar */
+html body.solutions-template-solutions-fluid main section#cta_speak a {
+	transition: font-size ease .25s,color ease-in .45s,background-color ease-in .25s;
+}
+/* Vertically center logo in the navbar */
+body header nav.navbar a.navbar-brand {
+    transform: translateY(8%);
+}
+
+/* Removes gap at top of header image */
+body main section#banner {
+    margin-top: -10px;
+}
+/*  Image gallery styling */
+.lSSlideOuter .lSPager.lSGallery li {
+    max-height: 120px;
+}
+.lSSlideOuter .lSPager.lSGallery li, .lSSlideOuter .lSPager.lSGallery li {
+    border-radius: 0;
+    border: 3px solid #FFF;
+}
+.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
+    border-radius: 0;
+    border: 3px solid #156cb3;
+}
+
+/* Full width Additional Content Section */
+#additional_content .container {
+width:100%;
+}
+
+/* Additional Content section full width */
+
+section#additional_content .container {
+	max-width:100%;
+}

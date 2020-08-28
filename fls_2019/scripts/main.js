@@ -64,9 +64,6 @@ j(document).ready(function(){
           },
       ]          
     });
-    j('#update').firstVisitPopup({
-      cookieName : 'flsUpdate'
-    });
 });
 
 // Case Studies
