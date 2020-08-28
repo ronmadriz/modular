@@ -41,7 +41,9 @@
 		display: flex;
 		flex-wrap: wrap;		
 		padding: 2rem;
-		width:50%;
+		@include for-tablet-up {
+			width:50%;
+		}
 	}
 	&__header{
 		background-color: $accent_1;

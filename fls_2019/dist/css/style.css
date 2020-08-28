@@ -1485,8 +1485,10 @@ html body main #flsCarousel {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 2rem;
-    width: 50%; }
+    padding: 2rem; }
+    @media (min-width: 786px) {
+      .genForm__form {
+        width: 50%; } }
   .genForm__header {
     background-color: #156CB3;
     display: -webkit-box;
