@@ -29,7 +29,9 @@
 		display: flex;
 		flex-wrap: wrap;		
 		padding: 1.5rem 2.5rem;
-		width:42.75%;
+		@include for-tablet-up {
+			width:42.75%;
+		}
 	}
 	&__header{
 		border-bottom-width: 0;

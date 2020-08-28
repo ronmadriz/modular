@@ -1380,8 +1380,10 @@ html body main #flsCarousel {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 1.5rem 2.5rem;
-  width: 42.75%; }
+  padding: 1.5rem 2.5rem; }
+  @media (min-width: 786px) {
+    .homeForm__form {
+      width: 42.75%; } }
 
 .homeForm__header {
   border-bottom-width: 0;
