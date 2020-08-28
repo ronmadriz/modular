@@ -14,6 +14,14 @@
 		border:0.0625rem solid $accent_1;
 		padding: 1.5rem 2.5rem;
 	}
+	&__header{
+		border-bottom-width: 0;
+		border-bottom-color: transparent;
+		margin: 0;
+		&--text {
+			color: $alternate;
+		}
+	}	
 	&__label {
 		font-size:.9rem;
 		margin-bottom:0;
@@ -31,7 +39,7 @@
 	    color: $alternate;
 		font-weight: bold;
 	    font-size:1.2rem;
-	    @media(min-width:1200px){
+	    @include for-laptop-up {
 			position: relative;
 			transform:translateY(-2rem);
 			margin-top:-8rem;
@@ -44,18 +52,6 @@
 		    top: 5px;
 		    position: relative;
     	}
-	}
-}
-#cf_contactFormTitle {
-	div {
-		&.section__title {
-			border-bottom-width: 0;
-			border-bottom-color: transparent;
-			margin: 0;
-			h2 {
-				color: $white;
-			}
-		}
 	}
 }
 
