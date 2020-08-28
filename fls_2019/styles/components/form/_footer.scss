@@ -1,6 +1,8 @@
 .genForm {
+	border-bottom:.3725rem solid $accent_2;
 	padding-left: 0 !important;
-	padding-right: 0 !important;	
+	padding-right: 0 !important;
+	position:relative;
 	&__content {
 		background-image: url(../../images/cfImage.jpg);
 		background-position: center;
