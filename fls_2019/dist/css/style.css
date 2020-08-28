@@ -1442,12 +1442,9 @@ html body main #flsCarousel {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1rem 0; }
-    @media (min-width: 1360px) {
-      .genForm__content {
-        padding: 5rem 6rem 12rem; } }
     @media (min-width: 768px) and (min-width: 1200px) {
       .genForm__content {
-        padding: 2rem; } }
+        padding: 10% 2%; } }
   .genForm__form {
     background-color: #E6E7E9;
     border: 0.0625rem solid #156CB3;
@@ -1456,7 +1453,8 @@ html body main #flsCarousel {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 2rem; }
+    padding: 2rem;
+    width: 80%; }
   .genForm__header {
     border-bottom-width: 0;
     border-bottom-color: transparent;
