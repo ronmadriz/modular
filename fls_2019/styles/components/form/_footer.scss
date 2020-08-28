@@ -21,8 +21,9 @@
 		}
 		&--btn {
 			background-color: $accent_2;
-		    border: .125rem solid $accent_1;
+		    border: .0625rem solid $accent_1;
 		    display: block;
+		    font-size:.75rem;
 		    font-weight: 700;
 		    padding: .75rem 2.5rem;
 		    text-transform: uppercase;
@@ -42,11 +43,16 @@
 	}
 	&__header{
 		background-color: $accent_1;
-		border-bottom-width: 0;
-		border-bottom-color: transparent;
-		margin: 0;
+		display: flex;
+		padding-bottom: .75rem;
+		padding-top: 1.5rem;
 		&--text {
 			color: $alternate;
+			display: flex;
+			font-family:$tertiary;
+			font-size:1.375rem;
+			margin-left: auto;
+			margin-right: auto;			
 		}
 	}
 	&__footer {
