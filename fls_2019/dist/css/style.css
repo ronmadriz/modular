@@ -1501,7 +1501,8 @@ html body main #flsCarousel {
       font-family: "Oswald", helvetica, sans-serif;
       font-size: 1.375rem;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      text-transform: uppercase; }
   .genForm__footer {
     background-color: #156CB3;
     border-bottom: 3px solid #0F8ACF;
