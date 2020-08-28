@@ -24,7 +24,7 @@
 			border-radius: .25rem;
 			color:$alternate;
 			padding: .3725rem 6rem;
-			@include for-phone-only {
+			@include for-tablet-up {
 				padding: .3725rem 2rem;
 			}
 		}
