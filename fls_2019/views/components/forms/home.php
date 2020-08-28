@@ -1,5 +1,4 @@
 <?
-$form_phone = get_theme_mod('footer_phone');
 echo '<section id="contactFormCTA" class="genForm">'.PHP_EOL;
 echo '<div class="wrapper">'.PHP_EOL;
 echo '<style>.genForm {background-image: url("'.get_stylesheet_directory_uri().'/images/cfImage.jpg");}</style>'.PHP_EOL;
