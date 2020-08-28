@@ -1361,17 +1361,13 @@ html body main #flsCarousel {
   .homeForm {
     padding: 5rem 6rem 12rem; } }
 
-@media (min-width: 768px) and (min-width: 1200px) {
-  .homeForm {
-    padding: 10% 2%; } }
-
 @media (min-width: 786px) {
   .homeForm {
     background-image: url(../../images/cfImage.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 1rem 0; } }
+    padding: 10% 2%; } }
 
 .homeForm__button {
   -webkit-box-pack: center;

@@ -2,15 +2,12 @@
 	@include for-tv-up {
 		padding:5rem 6rem 12rem;
 	}
-	@include for-laptop-down {
-		padding:10% 2%;
-	}
 	@include for-tablet-up {
 		background-image: url(../../images/cfImage.jpg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size:cover;		
-		padding:1rem 0;
+		padding:10% 2%;
 	}
 	&__button {
 		justify-content: center;
