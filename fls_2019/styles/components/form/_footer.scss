@@ -58,8 +58,9 @@
 		font-weight: bold;
 	    font-size:1.2rem;
 	    @include for-laptop-up {
-			position: absolute;
 			bottom:8rem;
+			position: absolute;
+			width:100%;
 	    }
 	    &--link {
 	    	color:$accent_2;
