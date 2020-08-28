@@ -1378,30 +1378,6 @@ html body main #flsCarousel {
       top: 5px;
       position: relative; }
 
-/*	
-#cfCTA_employeeInfo {
-	h3 {
-		display:inline-block;
-		background-color: rgba(0,0,0,.4);
-		padding: 1em 2em 1.25em;
-		text-align: left;
-		border-radius: 4px;
-		@media(min-width:786px){
-			margin-bottom:0rem;
-		}
-		color: $alternate;
-		text-shadow: 0 0 0.6em rgba(30,43,50,.12);
-		font-size: 1.75em;
-		font-weight: bold;
-		small {
-			font-size: 1.4rem;
-			font-weight: 100;
-			letter-spacing: .6px;
-			display: block;										
-		}										
-	}
-}
-*/
 body main form {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease; }
