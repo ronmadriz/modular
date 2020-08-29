@@ -1452,7 +1452,7 @@ html body main #flsCarousel {
       background-repeat: no-repeat;
       background-size: cover;
       padding: 1rem 0; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 768px) and (max-width: 1200px) {
     .genForm__content {
       padding: 5% 2% 10%; } }
   .genForm__button {
@@ -1504,7 +1504,7 @@ html body main #flsCarousel {
       font-family: "Oswald", helvetica, sans-serif;
       font-size: 1.375rem;
       text-transform: uppercase; }
-      @media (min-width: 768px) and (min-width: 1200px) {
+      @media (min-width: 768px) and (max-width: 1200px) {
         .genForm__header--text {
           padding-left: 2%; } }
   .genForm__footer {
@@ -1531,7 +1531,7 @@ html body main #flsCarousel {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      @media (min-width: 768px) and (min-width: 1200px) {
+      @media (min-width: 768px) and (max-width: 1200px) {
         .genForm__footer--text {
           padding-left: 2.35%; } }
   @media (max-width: 786px) {
