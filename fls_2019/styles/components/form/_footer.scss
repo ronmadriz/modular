@@ -55,8 +55,10 @@
 			display: flex;
 			font-family:$tertiary;
 			font-size:1.375rem;
-			padding-left: 2%;
-			text-transform:uppercase;			
+			text-transform:uppercase;
+			@include for-laptop-down {
+				padding-left: 2%;
+			}			
 		}
 	}
 	&__footer {
@@ -82,7 +84,9 @@
     	}
     	&--text {
 			display: flex;
-			padding-left: 2.35%;
+			@include for-laptop-down {
+				padding-left: 2.35%;
+			}
     	}
 	}
 	.wrapper {
