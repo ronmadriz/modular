@@ -73,11 +73,11 @@
 		    text-transform: uppercase;			
 		}
 	}
-	&__content {
-		&.wrapper {
-			@include for-phone-only {
-				flex-direction: column;
-			}
-		}		
+}
+main {
+	.wrapper {
+		@include for-phone-only {
+			flex-direction: column;
+		}
 	}
 }
