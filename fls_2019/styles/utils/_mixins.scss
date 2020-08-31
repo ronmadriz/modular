@@ -23,9 +23,8 @@
 @mixin for-tv-up {
   @media (min-width: 1360px) { @content; }
 }
-
 // Commonly Used
-@mixin bars($bars_bg, $bars_pos, $bars_dist){
+@mixin bars($bars_bg, $bars_pos, $bars_dist, $bars_dist_tv){
 	&:before, &:after {
 		content: '';
 		height: 1px;
@@ -39,7 +38,15 @@
 	}
 	&:before {
 		right:$bars_dist;
-	}	
+	}
+	@media(min-width:1200px) {
+		&:after {
+			left:$bars_dist_tv;
+		}
+		&:before {
+			right:$bars_dist_tv;
+		}		
+	}
 }
 
 @mixin caret($stroke_color) {

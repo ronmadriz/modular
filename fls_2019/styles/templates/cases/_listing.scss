@@ -84,7 +84,7 @@
             font-size:2rem;
             position:relative;
             text-transform:uppercase;
-            @include bars($accent_1, 1.25rem, -120%);
+            @include bars($accent_1, 1.25rem, -120%, -120%);
         }		
 	}
 	.wrapper {
