@@ -3597,6 +3597,9 @@ body.solutions-template div.testimonials {
         left: 30%;
         position: relative;
         width: 30%; }
+        @media (min-width: 786px) {
+          .home .hero__content--title:after {
+            left: 0; } }
     .home .hero__content--desc {
       color: #FFFFFF;
       font-size: .875rem;

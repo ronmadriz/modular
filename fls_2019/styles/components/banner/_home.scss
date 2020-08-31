@@ -41,6 +41,9 @@
 				left:30%;
 				position: relative;
 				width: 30%;
+				@include for-tablet-up {
+					left:0;
+				}
 			}
 		}
 		&--desc {
