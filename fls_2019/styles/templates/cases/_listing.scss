@@ -51,8 +51,7 @@
 		overflow: hidden;
 		padding: .25rem;
 		position: relative;
-		transition: 1s ease all;
-		width:50%;
+		width:50%;//1rem
 		@include for-tablet-up {
 			padding:.5rem;
 			width: 33.333%;		

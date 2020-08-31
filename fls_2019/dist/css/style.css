@@ -1197,9 +1197,9 @@ html body main #flsCarousel {
   padding-left: .9375rem;
   padding-right: .9375rem;
   width: 100%; }
-  @media (min-width: 1200px) {
+  @media (min-width: 786px) {
     .featured__item {
-      width: 34%; } }
+      width: 33%; } }
 
 .featured__list {
   display: -webkit-box;
@@ -1213,6 +1213,8 @@ html body main #flsCarousel {
       flex-wrap: nowrap;
   padding: 0 2rem;
   overflow-x: hidden;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
   width: 93vw; }
   .featured__list--transition {
     -webkit-transition: all 0.35s ease-in-out;
@@ -3107,8 +3109,6 @@ html .blog .featured__article {
   overflow: hidden;
   padding: .25rem;
   position: relative;
-  -webkit-transition: 1s ease all;
-  transition: 1s ease all;
   width: 50%; }
   @media (min-width: 786px) {
     .studies__item {

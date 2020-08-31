@@ -57,8 +57,8 @@
         padding-left:.9375rem;
         padding-right:.9375rem;
         width:100%;
-        @include for-laptop-up {
-            width:34%;        
+        @include for-tablet-up {
+            width:33%;        
         }
     }
     &__list {
@@ -67,6 +67,7 @@
         flex-wrap: nowrap;
         padding: 0 2rem;
         overflow-x: hidden;
+        transition: 1s ease all;
         width: 93vw;
         &--transition {
             transition: all 0.35s ease-in-out;            
