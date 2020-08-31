@@ -3656,7 +3656,8 @@ body.solutions-template div.testimonials {
               flex-direction: column;
       line-height: 1.25;
       padding-left: .5rem;
-      padding-right: .5rem; }
+      padding-right: .5rem;
+      position: relative; }
       .home .hero__services--item:after {
         background-color: #FFFFFF;
         content: '';
