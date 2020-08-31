@@ -1152,7 +1152,7 @@ html body main #flsCarousel {
       content: '';
       height: 1px;
       position: absolute;
-      width: 15vw;
+      width: 13rem;
       background-color: #156CB3;
       top: 1.25rem; }
     .featured__header--text:after {
@@ -2230,7 +2230,7 @@ svg .region path {
             content: '';
             height: 1px;
             position: absolute;
-            width: 15vw;
+            width: 13rem;
             background-color: #404040;
             top: 0.5625rem; }
           #menus__item--1 .menus__sub--item:last-of-type .menus__link:after {
@@ -3146,7 +3146,7 @@ html .blog .featured__article {
       content: '';
       height: 1px;
       position: absolute;
-      width: 15vw;
+      width: 13rem;
       background-color: #156CB3;
       top: 1.25rem; }
     .studies__title--text:after {
@@ -3909,7 +3909,7 @@ body.solutions-template div.testimonials {
         content: '';
         height: 1px;
         position: absolute;
-        width: 15vw;
+        width: 13rem;
         background-color: #FFFFFF;
         top: 1.25rem; }
       .home .industries__title--text:after {
