@@ -3669,8 +3669,6 @@ body.solutions-template div.testimonials {
         right: -0.0625rem;
         top: 1rem;
         width: 0.0625rem; }
-      .home .hero__services--item:last-of-type:after {
-        display: none; }
     .home .hero__services--icon {
       -ms-flex-item-align: center;
           align-self: center;
