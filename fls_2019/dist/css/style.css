@@ -3140,7 +3140,7 @@ html .blog .featured__article {
   font-size: .8375rem; }
   @media (min-width: 786px) {
     .studies__text {
-      bottom: 0;
+      bottom: .5rem;
       font-size: 1rem;
       max-width: 90%;
       padding: .5rem;
