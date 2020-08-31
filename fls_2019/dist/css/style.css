@@ -3040,6 +3040,19 @@ html .blog .featured__article {
         -ms-flex-direction: column;
             flex-direction: column; } }
 
+.studies__cases {
+  color: #E6E7E9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: .5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (min-width: 786px) {
+    .studies__cases {
+      margin-top: 2rem; } }
+
 .studies__content--title {
   display: block;
   font-size: 1.25rem;

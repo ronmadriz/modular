@@ -1,4 +1,13 @@
 .studies {
+	&__cases {
+		color: $accent_3;
+		display: flex;
+		margin-bottom: .5rem;
+		justify-content: center;
+		@include for-tablet-up {
+			margin-top: 2rem;
+		}
+	}
 	&__content {
 		&--title {
 			display: block;
