@@ -24,7 +24,7 @@
   @media (min-width: 1360px) { @content; }
 }
 // Commonly Used
-@mixin bars($bars_bg, $bars_pos, $bars_dist){
+@mixin bars($bars_bg, $bars_pos){
 	&:before, &:after {
 		content: '';
 		height: 1px;

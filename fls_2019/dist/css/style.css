@@ -1145,6 +1145,7 @@ html body main #flsCarousel {
   .featured__header--text {
     display: inline-block;
     font-size: 2rem;
+    font-weight: 700;
     position: relative;
     text-transform: uppercase; }
     .featured__header--text:before, .featured__header--text:after {
@@ -1238,7 +1239,6 @@ html body main #flsCarousel {
 .featured__title {
   display: block;
   font-size: 1.125rem;
-  font-weight: 600;
   margin-bottom: 1.25rem; }
 
 .featured .wrapper {
