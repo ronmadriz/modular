@@ -3020,6 +3020,7 @@ html .blog .featured__article {
   width: 100%; }
   @media (min-width: 786px) {
     .blog__side {
+      margin-left: 7%;
       width: 20%; } }
   .blog__side--title {
     border-bottom: 0.0625rem solid #156CB3;
