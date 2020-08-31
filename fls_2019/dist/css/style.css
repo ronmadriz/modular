@@ -3107,6 +3107,8 @@ html .blog .featured__article {
   overflow: hidden;
   padding: .25rem;
   position: relative;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
   width: 50%; }
   @media (min-width: 786px) {
     .studies__item {
