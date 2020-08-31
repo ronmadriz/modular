@@ -1151,13 +1151,13 @@ html body main #flsCarousel {
       content: '';
       height: 1px;
       position: absolute;
-      width: 13rem;
+      width: 125%;
       background-color: #156CB3;
       top: 1.25rem; }
     .featured__header--text:after {
-      left: 100%; }
+      left: 105%; }
     .featured__header--text:before {
-      right: 100%; }
+      right: 105%; }
 
 .featured__icon {
   background: url(../../sprites/arrow.svg) no-repeat center center;
@@ -2229,13 +2229,13 @@ svg .region path {
             content: '';
             height: 1px;
             position: absolute;
-            width: 13rem;
+            width: 125%;
             background-color: #404040;
             top: 0.5625rem; }
           #menus__item--1 .menus__sub--item:last-of-type .menus__link:after {
-            left: 100%; }
+            left: 105%; }
           #menus__item--1 .menus__sub--item:last-of-type .menus__link:before {
-            right: 100%; }
+            right: 105%; }
         #menus__item--1 .menus__sub--item:last-of-type .menus__tertiary {
           margin-top: 1rem; }
         #menus__item--1 .menus__sub--item:last-of-type .menus__tertiary--item {
@@ -3165,13 +3165,13 @@ html .blog .featured__article {
       content: '';
       height: 1px;
       position: absolute;
-      width: 13rem;
+      width: 125%;
       background-color: #156CB3;
       top: 1.25rem; }
     .studies__title--text:after {
-      left: 100%; }
+      left: 105%; }
     .studies__title--text:before {
-      right: 100%; }
+      right: 105%; }
 
 .studies .wrapper {
   display: -webkit-box;
@@ -3945,13 +3945,13 @@ body.solutions-template div.testimonials {
         content: '';
         height: 1px;
         position: absolute;
-        width: 13rem;
+        width: 125%;
         background-color: #FFFFFF;
         top: 1.25rem; }
       .home .industries__title--text:after {
-        left: 100%; }
+        left: 105%; }
       .home .industries__title--text:before {
-        right: 100%; }
+        right: 105%; }
   .home .industries .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

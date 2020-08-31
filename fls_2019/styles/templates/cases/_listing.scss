@@ -95,7 +95,7 @@
             font-weight: 700;
             position:relative;
             text-transform:uppercase;
-            @include bars($accent_1, 1.25rem, 100%);
+            @include bars($accent_1, 1.25rem);
         }		
 	}
 	.wrapper {

@@ -29,15 +29,15 @@
 		content: '';
 		height: 1px;
 		position: absolute;
-		width: 13rem;
+		width: 125%;
 		background-color: $bars_bg;
 		top: $bars_pos;										
 	}
 	&:after {
-		left:$bars_dist;
+		left:105%;
 	}
 	&:before {
-		right:$bars_dist;
+		right:105%;
 	}
 }
 
