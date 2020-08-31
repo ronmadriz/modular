@@ -3040,7 +3040,7 @@ html .blog .featured__article {
         -ms-flex-direction: column;
             flex-direction: column; } }
 
-.studies__cases {
+.studies__desc {
   color: #E6E7E9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3050,7 +3050,7 @@ html .blog .featured__article {
       -ms-flex-pack: center;
           justify-content: center; }
   @media (min-width: 786px) {
-    .studies__cases {
+    .studies__desc {
       margin-top: 2rem; } }
 
 .studies__content--title {
