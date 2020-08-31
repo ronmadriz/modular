@@ -1008,6 +1008,7 @@ html form.lrm-form ul.acf-checkbox-list li {
 
 .load__more {
   border: 0.125rem solid #156CB3;
+  color: #156CB3;
   display: block;
   font-size: .875rem;
   font-weight: 600;
