@@ -90,6 +90,17 @@
 			line-height: 1.25;
 			padding-left: .5rem;
 			padding-right: .5rem;
+			&:after {
+				background-color: $alternate;
+				content: '';
+				display: flex;
+				height: 50%;
+				opacity: .5;
+				position: absolute;
+				right: -0.0625rem;
+				top: 1rem;
+				width: 0.0625rem;				
+			}
 		}
 		&--icon {
 			align-self: center;
@@ -105,13 +116,6 @@
 		}
 		&--link {
 			color:$alternate;
-			&:after {
-			    background-color: white;
-			    content: '';
-			    display: block;
-			    height: 80%;
-			    width: .375rem;
-			}
 		}
 		&--list {
 			align-items: flex-end;
