@@ -3721,7 +3721,10 @@ body.solutions-template div.testimonials {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 32.5%; }
+    width: 100%; }
+    @media (min-width: 786px) {
+      .home .blogs__item {
+        width: 32.5%; } }
   .home .blogs__link {
     display: block;
     border: 0.125rem solid #156CB3;
