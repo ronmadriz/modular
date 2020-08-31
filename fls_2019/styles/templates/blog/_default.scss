@@ -74,4 +74,9 @@
 		    text-transform: uppercase;			
 		}
 	}
+	.wrapper {
+		@include for-phone-only {
+			flex-direction: column;
+		}
+	}
 }
