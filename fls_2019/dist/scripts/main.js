@@ -101,9 +101,6 @@ j(document).ready(function(){
           },
       ]          
     });
-    j('#update').firstVisitPopup({
-      cookieName : 'flsUpdate'
-    });
 });
 
 // Case Studies
@@ -149,7 +146,7 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
     next: function() {
       j('.featured__list').animate({
         left: -sliderWidth
-      }, 500, function() {
+      }, 350, function() {
         j('.featured__item:first-child').appendTo('.featured__list');
         j('.featured__list').css('left', 0);
       });
@@ -157,7 +154,7 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
     previous: function() {
       j('.featured__list').animate({
         left: +sliderWidth
-      }, 500, function() {
+      }, 350, function() {
         j('.featured__item:last-child').prependTo('.featured__list');
         j('.featured__list').css('left', 0);
       });
