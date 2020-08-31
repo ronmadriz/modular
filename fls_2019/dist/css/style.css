@@ -3110,7 +3110,7 @@ html .blog .featured__article {
   width: 50%; }
   @media (min-width: 1200px) {
     .studies__item {
-      padding: .9375rem;
+      padding: .5rem;
       width: 33.333%; } }
 
 .studies__link {
