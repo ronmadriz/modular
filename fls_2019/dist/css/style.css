@@ -3721,6 +3721,7 @@ body.solutions-template div.testimonials {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 1rem;
     width: 100%; }
     @media (min-width: 786px) {
       .home .blogs__item {

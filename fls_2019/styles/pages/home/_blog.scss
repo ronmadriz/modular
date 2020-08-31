@@ -20,6 +20,7 @@
 		display:flex;
 		border:.0625rem solid $dark_gray;
 		flex-direction: column;
+		margin-bottom:1rem;
 	    width: 100%;
 	    @include for-tablet-up {
 		    width: 32.5%;
