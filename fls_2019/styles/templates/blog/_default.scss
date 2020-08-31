@@ -57,11 +57,10 @@
 	&__link	 {}
 	&__side {
 		display:flex;
-		flex-direction: row;
+		flex-direction: column;
 		margin-top:3rem;
 		width:100%;
 		@include for-tablet-up {
-			flex-direction: column;
 			width:20%;
 		}
 		&--title {
