@@ -3108,7 +3108,7 @@ html .blog .featured__article {
   padding: .25rem;
   position: relative;
   width: 50%; }
-  @media (min-width: 1200px) {
+  @media (min-width: 786px) {
     .studies__item {
       padding: .5rem;
       width: 33.333%; } }
