@@ -1496,6 +1496,7 @@ html body main #flsCarousel {
     display: -ms-flexbox;
     display: flex;
     padding-bottom: .75rem;
+    padding-left: 1.5rem;
     padding-top: 1.5rem; }
     .genForm__header--text {
       color: #FFFFFF;
@@ -1522,7 +1523,8 @@ html body main #flsCarousel {
         position: absolute;
         width: 100%; } }
     .genForm__footer--link {
-      color: #FECD06; }
+      color: #FECD06;
+      margin-left: 0.5rem; }
     .genForm__footer--icon {
       -webkit-transform: rotate(-15deg);
               transform: rotate(-15deg);
