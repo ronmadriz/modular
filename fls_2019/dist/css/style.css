@@ -3104,9 +3104,10 @@ html .blog .featured__article {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  overflow: hidden;
   padding: .25rem;
   position: relative;
-  width: 47.5%; }
+  width: 50%; }
   @media (min-width: 1200px) {
     .studies__item {
       padding: .9375rem;
@@ -3157,6 +3158,7 @@ html .blog .featured__article {
   .studies__title--text {
     display: inline-block;
     font-size: 2rem;
+    font-weight: 700;
     position: relative;
     text-transform: uppercase; }
     .studies__title--text:before, .studies__title--text:after {
