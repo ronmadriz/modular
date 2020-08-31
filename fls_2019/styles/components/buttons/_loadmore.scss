@@ -5,10 +5,12 @@
     display: block;
     font-size: .875rem;
     font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;    
     padding: .6275rem .1875rem;
     text-align: center;
     text-transform: uppercase;
-    width: 100%;
+    width: 80%;
     &:hover {
     	background-color: $accent_1;
     	color:$alternate;
