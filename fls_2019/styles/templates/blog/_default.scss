@@ -29,9 +29,9 @@
 	}
 	&__content {
 		align-self: flex-start;
-		padding-left: .75rem;
-		padding-right: .75rem;		
 	    @include for-tablet-up {
+			padding-left: .75rem;
+			padding-right: .75rem;		
 	    	width: 60%;
 	    }
 	}

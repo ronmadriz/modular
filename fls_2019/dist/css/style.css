@@ -2979,11 +2979,11 @@ html .blog .featured__article {
 
 .blog__content {
   -ms-flex-item-align: start;
-      align-self: flex-start;
-  padding-left: .75rem;
-  padding-right: .75rem; }
+      align-self: flex-start; }
   @media (min-width: 786px) {
     .blog__content {
+      padding-left: .75rem;
+      padding-right: .75rem;
       width: 60%; } }
 
 .blog__title {
