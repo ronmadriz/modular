@@ -42,6 +42,8 @@
 				position: relative;
 				width: 30%;
 				@include for-tablet-up {
+					border:0 0 6.25rem 0;
+					height:.375rem;
 					left:0;
 				}
 			}
@@ -125,6 +127,7 @@
 		}
 		&--text {
 			display: flex;
+			font-family: $tertiary;
 		    justify-content: center;
 		    line-height: 1.25;
 		    margin-top: .5rem;			
