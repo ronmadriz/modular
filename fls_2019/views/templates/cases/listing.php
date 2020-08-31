@@ -13,7 +13,7 @@ if ($studies_query) {
 	_e('All Projects', 'fc_core');
 	echo '</h2></span>'.PHP_EOL;
 	echo '<span class="studies__text">(';
-	_e('refine search')
+	_e('refine search');
 	echo ')</span>'.PHP_EOL;
 	echo '<div id="studies__filter" class="studies__filter">'.PHP_EOL;
 	if ($sol_studies = get_terms(array(
