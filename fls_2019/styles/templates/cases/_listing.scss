@@ -75,7 +75,7 @@
 	&__text {
 		font-size: .8375rem;
 		@include for-tablet-up {
-			bottom: .5rem;
+			bottom: 1rem;
 			font-size:1rem;
 			max-width: 90%;
 			padding: .5rem;
