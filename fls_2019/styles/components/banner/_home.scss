@@ -101,6 +101,11 @@
 				top: 1rem;
 				width: 0.0625rem;				
 			}
+			&:last-of-type {
+				&:after {
+					display:none;
+				}
+			}
 		}
 		&--icon {
 			align-self: center;
