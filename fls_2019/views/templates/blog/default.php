@@ -20,7 +20,7 @@ if ($blog__query->have_posts()) {
 		echo '<span class="blog__meta"><a class="blog__author">'.get_the_author_meta('display_name').'</a> &ndash; <date class="blog__date">'.get_the_date('F j,Y').'</date></span>'.PHP_EOL;
 		echo '<span class="blog__desc">'.get_the_excerpt().'</span>'.PHP_EOL;
 		echo '<span class="blog__button"><a class="blog__link button__solid" href="'.get_the_permalink().'">';
-		_e('Read More', 'fc_core');
+		_e('Load More Posts', 'fc_core');
 		echo '</a></span>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</article>'.PHP_EOL;
