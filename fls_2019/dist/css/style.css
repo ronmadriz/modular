@@ -3033,7 +3033,7 @@ html .blog .featured__article {
     text-transform: uppercase; }
 
 @media (max-width: 786px) {
-  .blog .wrapper {
+  .blog__content.wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

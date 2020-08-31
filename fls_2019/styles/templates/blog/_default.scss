@@ -73,9 +73,11 @@
 		    text-transform: uppercase;			
 		}
 	}
-	.wrapper {
-		@include for-phone-only {
-			flex-direction: column;
-		}
+	&__content {
+		&.wrapper {
+			@include for-phone-only {
+				flex-direction: column;
+			}
+		}		
 	}
 }
