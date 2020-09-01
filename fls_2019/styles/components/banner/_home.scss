@@ -117,6 +117,9 @@
 		}
 		&--link {
 			color:$alternate;
+			&:hover {
+				text-decoration: none;
+			}
 		}
 		&--list {
 			align-items: flex-end;
