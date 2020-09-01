@@ -60,6 +60,9 @@
         @include for-tablet-up {
             width:33%;        
         }
+        @include for-desktop-up {
+            width:25%;
+        }
     }
     &__list {
         display:flex;
