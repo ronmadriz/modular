@@ -1200,7 +1200,7 @@ html body main #flsCarousel {
   @media (min-width: 786px) {
     .featured__item {
       width: 33%; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1360px) {
     .featured__item {
       width: 25%; } }
 
