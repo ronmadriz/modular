@@ -4030,6 +4030,8 @@ body.solutions-template div.testimonials {
       padding: 0;
       width: 100%; }
     .home .hero__services--text {
+      -ms-flex-item-align: center;
+          align-self: center;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
