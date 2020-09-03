@@ -4034,10 +4034,10 @@ body.solutions-template div.testimonials {
       display: -ms-flexbox;
       display: flex;
       font-family: "Oswald", helvetica, sans-serif;
+      font-size: 1.0625rem;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      font-size: 1.0625rem;
       line-height: 1.25;
       margin-top: .5rem;
       text-align: center; }
