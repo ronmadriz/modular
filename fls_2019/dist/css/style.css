@@ -4042,7 +4042,8 @@ body.solutions-template div.testimonials {
               justify-content: center;
       line-height: 1.25;
       margin-top: .5rem;
-      text-align: center; }
+      text-align: center;
+      width: 70%; }
   .home .hero .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
