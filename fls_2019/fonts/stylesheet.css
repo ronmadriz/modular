@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Encode Sans SemiCondensedLight';
+    src: url('EncodeSans-SemiCondensedLight.woff2') format('woff2'),
+        url('EncodeSans-SemiCondensedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans SemiCondensedExtraLight';
+    src: url('EncodeSans-SemiCondensedExtraLight.woff2') format('woff2'),
+        url('EncodeSans-SemiCondensedExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans SemiCondensedExtraBold';
+    src: url('EncodeSans-SemiCondensedExtraBold.woff2') format('woff2'),
+        url('EncodeSans-SemiCondensedExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans SemiExpandedBlack';
+    src: url('EncodeSans-SemiExpandedBlack.woff2') format('woff2'),
+        url('EncodeSans-SemiExpandedBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans SemiExpandedExtraBold';
+    src: url('EncodeSans-SemiExpandedExtraBold.woff2') format('woff2'),
+        url('EncodeSans-SemiExpandedExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    src: url('EncodeSans-SemiExpandedBold.woff2') format('woff2'),
+        url('EncodeSans-SemiExpandedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans SemiCondensedSemiBold';
+    src: url('EncodeSans-SemiCondensedSemiBold.woff2') format('woff2'),
+        url('EncodeSans-SemiCondensedSemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    src: url('EncodeSans-SemiCondensedRegular.woff2') format('woff2'),
+        url('EncodeSans-SemiCondensedRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans SemiCondensedThin';
+    src: url('EncodeSans-SemiCondensedThin.woff2') format('woff2'),
+        url('EncodeSans-SemiCondensedThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans SemiCondensedMedium';
+    src: url('EncodeSans-SemiCondensedMedium.woff2') format('woff2'),
+        url('EncodeSans-SemiCondensedMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans SemiExpandedLight';
+    src: url('EncodeSans-SemiExpandedLight.woff2') format('woff2'),
+        url('EncodeSans-SemiExpandedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans SemiExpandedExtraLight';
+    src: url('EncodeSans-SemiExpandedExtraLight.woff2') format('woff2'),
+        url('EncodeSans-SemiExpandedExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans SemiExpandedSemiBold';
+    src: url('EncodeSans-SemiExpandedSemiBold.woff2') format('woff2'),
+        url('EncodeSans-SemiExpandedSemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans SemiExpandedThin';
+    src: url('EncodeSans-SemiExpandedThin.woff2') format('woff2'),
+        url('EncodeSans-SemiExpandedThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    src: url('EncodeSans-SemiExpandedRegular.woff2') format('woff2'),
+        url('EncodeSans-SemiExpandedRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans SemiExpandedMedium';
+    src: url('EncodeSans-SemiExpandedMedium.woff2') format('woff2'),
+        url('EncodeSans-SemiExpandedMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
