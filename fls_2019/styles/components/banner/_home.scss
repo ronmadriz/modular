@@ -15,7 +15,7 @@
 		flex-direction: column;
 		@include for-tablet-up {
 			height: 80%;
-			transform: translate(5vw, 10vh);
+			transform: translate(1vw,10vh);
 			width: 65%;
 		}
 		@include for-desktop-up {
