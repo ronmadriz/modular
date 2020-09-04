@@ -49,9 +49,7 @@
 		flex-shrink: 0;
 		padding-left: 1rem;
 		padding-right: 1rem;
-    	&.active {
-    		display:flex;
-    	}
+    	// &.active {display:flex; }
     	@include for-phone-up {
 	    	width:33.33%;
     	}
