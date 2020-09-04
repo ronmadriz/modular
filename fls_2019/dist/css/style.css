@@ -4219,6 +4219,12 @@ body.solutions-template div.testimonials {
   .home .cases__button {
     z-index: 2; }
   .home .cases__carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 3rem;
     z-index: 2; }
   .home .cases__content {
@@ -4246,6 +4252,9 @@ body.solutions-template div.testimonials {
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
+    @media (min-width: 786px) {
+      .home .cases__list {
+        width: 80%; } }
   .home .cases__item {
     -ms-flex-negative: 0;
         flex-shrink: 0;

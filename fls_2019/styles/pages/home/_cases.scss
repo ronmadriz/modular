@@ -20,6 +20,8 @@
     	z-index: 2;
     }
     &__carousel {
+		display: flex;    	
+		justify-content: center;
 	    margin-top: 3rem;
     	z-index: 2;    	
     }
@@ -44,6 +46,9 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
+		@include for-phone-up {
+			width:80%;
+		}
     }
     &__item {
 		flex-shrink: 0;
