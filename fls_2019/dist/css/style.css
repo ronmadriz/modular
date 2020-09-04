@@ -4255,10 +4255,12 @@ body.solutions-template div.testimonials {
     margin: 0;
     padding: 0; }
   .home .industries__link {
+    background: #000000;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(56%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.35)));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 56%, rgba(0, 0, 0, 0.35) 100%);
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    background-color: rgba(0, 0, 0, 0.2);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4266,7 +4268,7 @@ body.solutions-template div.testimonials {
     left: 1rem;
     padding: 1rem;
     position: absolute;
-    top: .75rem;
+    top: 1rem;
     width: 92%; }
     @media (max-width: 786px) {
       .home .industries__link {
