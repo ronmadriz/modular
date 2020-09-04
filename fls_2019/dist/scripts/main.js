@@ -1,3 +1,4 @@
+var j = jQuery.noConflict();
 j(document).ready(function(){
   j('.multi__carousel').on('slide.bs.carousel', function (e) {
     // CC 2.0 License Iatek LLC 2018
