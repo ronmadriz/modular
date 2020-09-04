@@ -4268,6 +4268,12 @@ body.solutions-template div.testimonials {
             filter: brightness(5000%);
     min-height: 8rem;
     width: 100%; }
+  .home .cases__nav {
+    background-image: url(../../sprites/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    width: 10%; }
   .home .cases__title {
     z-index: 2; }
     .home .cases__title--text {
