@@ -4258,15 +4258,16 @@ body.solutions-template div.testimonials {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.2);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 90%;
-    left: .5rem;
-    padding-left: 1rem;
+    left: 1rem;
+    padding: 1rem;
     position: absolute;
-    top: 0;
-    width: 90%; }
+    top: .75rem;
+    width: 92%; }
     @media (max-width: 786px) {
       .home .industries__link {
         padding-bottom: .5rem; } }
