@@ -23,7 +23,7 @@
 		&--parent {
 		    width:50%;
 		    margin-bottom: 1rem;
-		    @include for-tablet-up {
+		    @include for-phone-up {
 		    	width:25%;
 		    }
 		    > .footer__link {

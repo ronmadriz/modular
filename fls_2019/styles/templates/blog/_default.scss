@@ -3,7 +3,7 @@
 		margin-top:3rem;
 		margin-bottom: 1.125rem;
 		width:100%;
-		@include for-tablet-up {
+		@include for-phone-up {
 		    width: 70%;
 		}
 	}
@@ -13,14 +13,14 @@
 		padding-left: .9375rem;
 		padding-right: .9375rem;
 		margin-bottom: .9375rem;
-		@include for-tablet-up {
+		@include for-phone-up {
 			flex-direction: row;
 		}
 	}
 	&__thumb {
 		display: flex;
 	    flex-direction: column;
-	    @include for-tablet-up {
+	    @include for-phone-up {
 	    	width: 40%;
 	    }
 		&--img {
@@ -29,7 +29,7 @@
 	}
 	&__content {
 		align-self: flex-start;
-	    @include for-tablet-up {
+	    @include for-phone-up {
 			padding-left: .75rem;
 			padding-right: .75rem;		
 	    	width: 60%;
@@ -61,7 +61,7 @@
 		flex-direction: column;
 		margin-top:3rem;
 		width:100%;
-		@include for-tablet-up {
+		@include for-phone-up {
 		    margin-left: 7%;
 			width:20%;
 		}

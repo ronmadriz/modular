@@ -2,11 +2,14 @@
 @mixin for-phone-only {
   @media (max-width: 786px) { @content; }
 }
-@mixin for-tablet-up {
+@mixin for-phone-up {
   @media (min-width: 786px) { @content; }
 }
+@mixin for-tablet-up {
+  @media (min-width: 992px) { @content; }
+}
 @mixin for-tablet-below {
-  @media (min-width: 786px) and (max-width: 991px) { @content; }
+  @media (min-width: 786px) and (max-width: 992px) { @content; }
 }
 @mixin for-ipad-only {
   @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {@content;}

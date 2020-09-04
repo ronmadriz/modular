@@ -3,7 +3,7 @@
 	@include for-tv-up {
 		padding:5rem 6rem 12rem;
 	}
-	@include for-tablet-up {
+	@include for-phone-up {
 		background-image: url(../../images/cfImage.jpg);
 		background-position: center;
 		background-repeat: no-repeat;
@@ -13,7 +13,7 @@
 	&__button {
 		justify-content: center;
 		padding: .5rem;
-		@include for-tablet-up {
+		@include for-phone-up {
 			justify-content: flex-end;
 		}
 		&--btn {
@@ -22,13 +22,13 @@
 			border-radius: .25rem;
 			color:$alternate;
 			padding: .3725rem 6rem;
-			@include for-tablet-up {
+			@include for-phone-up {
 				padding: .3725rem 2rem;
 			}
 		}
 	}
 	&__content {
-		@include for-tablet-up {
+		@include for-phone-up {
 			padding-left: 7%;
 		}
 	}
@@ -37,7 +37,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		padding:1.5rem 0.5rem;
-		@include for-tablet-up {
+		@include for-phone-up {
 			border:0.0625rem solid $accent_1;
 		    border-radius: .3725rem;
 			width:42.75%;

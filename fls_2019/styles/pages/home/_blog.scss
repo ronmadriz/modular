@@ -28,8 +28,11 @@
 		flex-direction: column;
 		margin-bottom:1rem;
 	    width: 100%;
-	    @include for-tablet-up {
+	    @include for-phone-up {
 		    width: 32.5%;
+	    }
+	    @include for-tablet-below {
+	    	width: 50%;
 	    }
 	}
 	&__link {

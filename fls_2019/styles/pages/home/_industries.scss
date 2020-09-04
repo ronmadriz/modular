@@ -24,7 +24,7 @@
 		padding:1rem;
 	    position: relative;
 		width:50%;
-		@include for-tablet-up {
+		@include for-phone-up {
 			width:33.333%;
 		}
 	}

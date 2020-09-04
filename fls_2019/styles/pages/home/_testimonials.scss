@@ -30,7 +30,7 @@
 		display:flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		@include for-tablet-up {
+		@include for-phone-up {
 			min-height: 14.75rem;
 		}
 	}

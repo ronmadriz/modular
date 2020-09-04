@@ -7,13 +7,13 @@
 	@include for-phone-only {
 		display:flex;
 	}
-	@include for-tablet-up {
+	@include for-phone-up {
 		min-height:43.75rem;
 	}
 	&__content {
 		display: flex;
 		flex-direction: column;
-		@include for-tablet-up {
+		@include for-phone-up {
 			height: 80%;
 			transform: translate(1vw,10vh);
 			width: 65%;
@@ -28,7 +28,7 @@
 			font-size:1.6275rem;
 			font-weight:700;
 			text-transform: uppercase;
-			@include for-tablet-up {
+			@include for-phone-up {
 				font-size: 2.25rem;
 				margin-bottom: 1.5rem;
 			}
@@ -41,7 +41,7 @@
 				left:30%;
 				position: relative;
 				width: 30%;
-				@include for-tablet-up {
+				@include for-phone-up {
 					border:0 0 6.25rem 0;
 					height:.375rem;
 					left:0;
@@ -52,14 +52,14 @@
 			color:$alternate;
 			font-size:.875rem;
 			text-align:center;
-			@include for-tablet-up {
+			@include for-phone-up {
 				text-align:left;
 			}
 		}
 		&--button {
 			display: flex;
 			justify-content: center;
-			@include for-tablet-up {
+			@include for-phone-up {
 				justify-content: start;
 			}			
 		}
@@ -70,7 +70,7 @@
 			font-size: .75rem;
 			margin: 1rem 0;
 			padding: .25rem .5rem;
-			@include for-tablet-up {
+			@include for-phone-up {
 				margin:1.5rem 0;
 			}
 		}
@@ -156,7 +156,7 @@
 		flex-direction: column;
 		height: 100%;
 		align-self: center;
-		@include for-tablet-up {
+		@include for-phone-up {
 			height:43.75rem;
 		}
 	}

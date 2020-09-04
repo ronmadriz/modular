@@ -10,7 +10,7 @@
 	}
 	&__item {
 		color:$alternate;
-		@include for-tablet-up {
+		@include for-phone-up {
 			&:not(:last-of-type):after {
 			    color: $alternate;
 			    content: '/';

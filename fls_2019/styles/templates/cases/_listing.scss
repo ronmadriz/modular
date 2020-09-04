@@ -4,7 +4,7 @@
 		display: flex;
 		margin-bottom: .5rem;
 		justify-content: center;
-		@include for-tablet-up {
+		@include for-phone-up {
 			margin-top: 2rem;
 		}
 	}
@@ -27,7 +27,7 @@
 		padding: .375rem;
 	    outline: 0;
 	    text-transform:uppercase;
-	    @include for-tablet-up {
+	    @include for-phone-up {
 	    	font-size: 1.25rem;
 	    }
 	}
@@ -52,14 +52,14 @@
 		padding: .25rem;
 		position: relative;
 		width:50%;//1rem
-		@include for-tablet-up {
+		@include for-phone-up {
 			padding:.5rem;
 			width: 33.333%;		
 		}
 	}
 	&__link {
 		display:block;
-		@include for-tablet-up {
+		@include for-phone-up {
 			color:$alternate;
 		}
 	}
@@ -68,13 +68,13 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		padding-bottom:5vh;
-		@include for-tablet-up{
+		@include for-phone-up{
 			padding-bottom:10vh;
 		}
 	}
 	&__text {
 		font-size: .8375rem;
-		@include for-tablet-up {
+		@include for-phone-up {
 			bottom: 1rem;
 			font-size:1rem;
 			max-width: 90%;

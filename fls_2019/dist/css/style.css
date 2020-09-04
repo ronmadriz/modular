@@ -791,7 +791,7 @@ body #mobileCTA.fixed-bottom {
 .footer__logo {
   margin-bottom: 2rem;
   width: 80%; }
-  @media (min-width: 786px) and (max-width: 991px) {
+  @media (min-width: 786px) and (max-width: 992px) {
     .footer__logo {
       width: 50%; } }
   @media (min-width: 1200px) {
@@ -4104,6 +4104,9 @@ body.solutions-template div.testimonials {
     @media (min-width: 786px) {
       .home .blogs__item {
         width: 32.5%; } }
+    @media (min-width: 786px) and (max-width: 992px) {
+      .home .blogs__item {
+        width: 50%; } }
   .home .blogs__link {
     display: block;
     border: 0.125rem solid #156CB3;

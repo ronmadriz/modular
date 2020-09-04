@@ -57,7 +57,7 @@
         padding-left:.9375rem;
         padding-right:.9375rem;
         width:100%;
-        @include for-tablet-up {
+        @include for-phone-up {
             width:33%;        
         }
         @include for-tv-up {

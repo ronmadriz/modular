@@ -5,7 +5,7 @@
 		width:100%;
 		&--half {
 			display:flex;
-			@include for-tablet-up {
+			@include for-phone-up {
 				width:50%;
 			}
 		}

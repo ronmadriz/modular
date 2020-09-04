@@ -13,7 +13,7 @@
 		padding-left:0.9375rem;
 		padding-right:0.9375rem;
 		width:50%;
-		@include for-tablet-up {
+		@include for-phone-up {
 			width:33.3%;
 		}
 		@include for-laptop-up {

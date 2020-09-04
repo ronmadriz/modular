@@ -35,7 +35,7 @@
 			svg {
 				fill:$alternate;
 			}
-			@include for-tablet-up {
+			@include for-phone-up {
 				display: inline-block;
 			}
 		}
