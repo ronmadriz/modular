@@ -122,6 +122,8 @@
 		}
 		&--link {
 			color:$alternate;
+			display: flex;
+			flex-direction: column;			
 			&:hover {
 				text-decoration: none;
 			}
