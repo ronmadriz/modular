@@ -4247,9 +4247,6 @@ body.solutions-template div.testimonials {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
   .home .cases__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     padding-left: 1rem;
