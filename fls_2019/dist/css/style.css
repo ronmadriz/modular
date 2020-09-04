@@ -4350,7 +4350,7 @@ body.solutions-template div.testimonials {
       flex-wrap: nowrap; }
   @media (min-width: 786px) {
     .home .testimonials__list {
-      min-height: 18.75rem; } }
+      min-height: 14.75rem; } }
 
 .home .testimonials__quote {
   -webkit-box-align: center;

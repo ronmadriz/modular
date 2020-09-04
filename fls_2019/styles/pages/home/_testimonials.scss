@@ -31,7 +31,7 @@
 		flex-direction: row;
 		flex-wrap: nowrap;
 		@include for-tablet-up {
-			min-height: 18.75rem;
+			min-height: 14.75rem;
 		}
 	}
 	&__quote {
