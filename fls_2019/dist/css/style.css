@@ -4336,6 +4336,9 @@ body.solutions-template div.testimonials {
     display: flex; }
 
 .home .testimonials__list {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4345,6 +4348,9 @@ body.solutions-template div.testimonials {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
+  @media (min-width: 786px) {
+    .home .testimonials__list {
+      min-height: 18.75rem; } }
 
 .home .testimonials__quote {
   -webkit-box-align: center;
