@@ -4257,6 +4257,7 @@ body.solutions-template div.testimonials {
   .home .cases__image {
     -webkit-filter: brightness(5000%);
             filter: brightness(5000%);
+    min-height: 8rem;
     width: 100%; }
   .home .cases__title {
     z-index: 2; }
