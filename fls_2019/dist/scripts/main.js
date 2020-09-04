@@ -5,7 +5,7 @@ j(document).ready(function(){
     // Attribution required
     var je = j(e.relatedTarget);
     var idx = je.index();
-    // console.log("IDX :  " + idx);
+    console.log("IDX :  " + idx);
     var itemsPerSlide = 3;
     var totalItems = j('.carousel-item').length;
     if (idx >= totalItems-(itemsPerSlide-1)) {
