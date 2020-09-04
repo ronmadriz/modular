@@ -4126,9 +4126,9 @@ body.solutions-template div.testimonials {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%; }
-  .home .blogs__sub {
+  .home .blogs__sub a {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     color: #848587; }
   .home .blogs__title {
     font-size: 1.4275rem;
