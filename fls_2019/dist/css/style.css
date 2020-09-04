@@ -4199,12 +4199,14 @@ body.solutions-template div.testimonials {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     padding-left: 1rem;
-    padding-right: 1rem;
-    width: 33.33%; }
+    padding-right: 1rem; }
     .home .cases__item.active {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
+    @media (min-width: 786px) {
+      .home .cases__item {
+        width: 33.33%; } }
   .home .cases__image {
     -webkit-filter: brightness(5000%);
             filter: brightness(5000%);
