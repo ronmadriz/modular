@@ -26,6 +26,13 @@ if (have_rows('hm_work')) {
 				echo '<span class="cases__item carousel-item'.($hm_work_count == 0?' active':'').'"><img class="cases__image" src="'.$hm_work_case['url'].'"></span>'.PHP_EOL;
 				$hm_work_count++;
 			}
+			echo '<a class="cases__nav carousel-control-prev" href="#cases__carousel"><i class="cases__icon carousel__icon--prev"></i><span class="cases__nav--text">'.PHP_EOL;
+			_e('Previous', 'fc_core');
+			echo '</span></a>'.PHP_EOL;
+			echo '<a class="cases__nav carousel-control-next" href="#cases__carousel"><i class="cases__icon carousel__icon--next"></i><span class="cases__nav--text">'.PHP_EOL;
+			_e('Next', 'fc_core');
+			echo '</span></a>'.PHP_EOL;
+
 			echo '</div>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
 		}
