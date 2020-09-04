@@ -14,7 +14,13 @@
 		padding: 0 1rem 1rem;		
 	}
 	&__image {
+		align-self: center;
 		width:100%;
+		&--link {
+			display: flex;
+			max-height: 11.25rem;
+			overflow: hidden;			
+		}
 	}
 	&__item {
 		display:flex;
