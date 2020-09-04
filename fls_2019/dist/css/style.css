@@ -4129,6 +4129,12 @@ body.solutions-template div.testimonials {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%; }
+    @media (min-width: 992px) {
+      .home .blogs__list {
+        min-height: 14.75rem; } }
+    @media (min-width: 786px) and (max-width: 992px) {
+      .home .blogs__list {
+        min-height: 16.75rem; } }
   .home .blogs__sub a {
     text-transform: uppercase;
     font-size: .875rem;

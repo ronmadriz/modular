@@ -51,6 +51,12 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		width:100%;
+		@include for-tablet-up {
+			min-height:14.75rem;
+		}
+		@include for-tablet-below {
+			min-height:16.75rem;
+		}
 	}
 	&__sub {
 		a {
