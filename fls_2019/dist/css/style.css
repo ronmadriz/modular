@@ -4267,7 +4267,7 @@ body.solutions-template div.testimonials {
         flex-wrap: nowrap; }
     @media (min-width: 786px) {
       .home .cases__list {
-        width: 90%; } }
+        width: 100%; } }
   .home .cases__item {
     -ms-flex-negative: 0;
         flex-shrink: 0;

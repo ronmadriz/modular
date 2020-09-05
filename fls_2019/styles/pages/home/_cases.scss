@@ -47,14 +47,13 @@
 		flex-direction: row;
 		flex-wrap: nowrap;
 		@include for-phone-up {
-			width:90%;
+			width:100%;
 		}
     }
     &__item {
 		flex-shrink: 0;
 		padding-left: 1rem;
 		padding-right: 1rem;
-    	// &.active {display:flex; }
     	@include for-phone-up {
 	    	width:33.33%;
     	}
