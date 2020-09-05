@@ -47,7 +47,7 @@
 		flex-direction: row;
 		flex-wrap: nowrap;
 		@include for-phone-up {
-			width:80%;
+			width:90%;
 		}
     }
     &__item {
@@ -69,7 +69,7 @@
     	background-position:center;
     	background-repeat:no-repeat;
     	background-size:1.5rem;
-    	width:10%;
+    	width:5%;
     }
     &__title {
     	z-index: 2;

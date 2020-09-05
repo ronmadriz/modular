@@ -4254,7 +4254,7 @@ body.solutions-template div.testimonials {
         flex-wrap: nowrap; }
     @media (min-width: 786px) {
       .home .cases__list {
-        width: 80%; } }
+        width: 90%; } }
   .home .cases__item {
     -ms-flex-negative: 0;
         flex-shrink: 0;
@@ -4273,7 +4273,7 @@ body.solutions-template div.testimonials {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1.5rem;
-    width: 10%; }
+    width: 5%; }
   .home .cases__title {
     z-index: 2; }
     .home .cases__title--text {
