@@ -1338,6 +1338,13 @@ html form.lrm-form ul.acf-checkbox-list li {
     background-color: #156CB3;
     color: #FFFFFF; }
 
+.carousel__nav {
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.656 490.656"><path d="M487.536 120.445c-4.16-4.16-10.923-4.16-15.083 0L245.317 347.581 18.203 120.445c-4.16-4.16-10.923-4.16-15.083 0s-4.16 10.923 0 15.083l234.667 234.667c2.069 2.091 4.8 3.136 7.531 3.136s5.461-1.045 7.552-3.115l234.667-234.667a10.7 10.7 0 00-.001-15.104z"/></svg>');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  width: 5%; }
+
 html body main #gallery .carousel-inner .carousel-item.active,
 html body main #gallery .carousel-inner .carousel-item-next,
 html body main #gallery .carousel-inner .carousel-item-prev {
@@ -4268,12 +4275,6 @@ body.solutions-template div.testimonials {
             filter: brightness(5000%);
     min-height: 8rem;
     width: 100%; }
-  .home .cases__nav {
-    background-image: url(../../sprites/arrow.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1.5rem;
-    width: 5%; }
   .home .cases__title {
     z-index: 2; }
     .home .cases__title--text {
