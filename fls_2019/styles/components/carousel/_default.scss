@@ -13,9 +13,12 @@
 		}    	
 	}
 	&__icon {
-	    background-image: url( $data-svg-prefix + map-get( $icons, 'caret_white' ) );
+	    background-image: url( $data-svg-prefix + map-get( $icons, 'caret_dark' ) );
 		background-position:center;
 		background-repeat:no-repeat;
 		background-size:1.5rem;
+		&.light {
+		    background-image: url( $data-svg-prefix + map-get( $icons, 'caret_light' ) );
+		}
 	}
 }

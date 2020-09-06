@@ -27,10 +27,10 @@ if (have_rows('hm_work')) {
 				$hm_work_count++;
 			}
 			echo '</div>'.PHP_EOL;
-			echo '<a class="cases__nav carousel__nav carousel__nav--prev carousel-control-prev" href="#cases__carousel" role="button" data-slide="prev"><i class="cases__icon carousel__icon carousel__icon--prev"></i><span class="cases__nav--text sr-only">'.PHP_EOL;
+			echo '<a class="cases__nav dark carousel__nav carousel__nav--prev carousel-control-prev" href="#cases__carousel" role="button" data-slide="prev"><i class="cases__icon carousel__icon carousel__icon--prev"></i><span class="cases__nav--text sr-only">'.PHP_EOL;
 			_e('Previous', 'fc_core');
 			echo '</span></a>'.PHP_EOL;
-			echo '<a class="cases__nav carousel__nav carousel__nav--next carousel-control-next" href="#cases__carousel" role="button" data-slide="next"><i class="cases__icon carousel__icon carousel__icon--next"></i><span class="cases__nav--text sr-only">'.PHP_EOL;
+			echo '<a class="cases__nav dark carousel__nav carousel__nav--next carousel-control-next" href="#cases__carousel" role="button" data-slide="next"><i class="cases__icon carousel__icon carousel__icon--next"></i><span class="cases__nav--text sr-only">'.PHP_EOL;
 			_e('Next', 'fc_core');
 			echo '</span></a>'.PHP_EOL;
 			echo '</div>'.PHP_EOL;
