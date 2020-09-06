@@ -1339,7 +1339,7 @@ html form.lrm-form ul.acf-checkbox-list li {
     color: #FFFFFF; }
 
 .carousel__nav {
-  width: 3rem; }
+  width: 2rem; }
   .carousel__nav--next {
     right: -2rem;
     -webkit-transform: rotate(270deg);
