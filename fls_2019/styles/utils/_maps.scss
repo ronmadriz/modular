@@ -1,28 +1,4 @@
 $data-svg-prefix: 'data:image/svg+xml;utf-8,';
 $icons: (
-	'caret': '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.656 490.656"> <path d="M487.536 120.445c-4.16-4.16-10.923-4.16-15.083 0L245.317 347.581 18.203 120.445c-4.16-4.16-10.923-4.16-15.083 0s-4.16 10.923 0 15.083l234.667 234.667c2.069 2.091 4.8 3.136 7.531 3.136s5.461-1.045 7.552-3.115l234.667-234.667a10.7 10.7 0 00-.001-15.104z" fill="none" stroke="%%COLOR%%"/></svg>',
+	'caret_white': '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.656 490.656"> <path d="M487.536 120.445c-4.16-4.16-10.923-4.16-15.083 0L245.317 347.581 18.203 120.445c-4.16-4.16-10.923-4.16-15.083 0s-4.16 10.923 0 15.083l234.667 234.667c2.069 2.091 4.8 3.136 7.531 3.136s5.461-1.045 7.552-3.115l234.667-234.667a10.7 10.7 0 00-.001-15.104z" fill="%23ffffff" /></svg>',
 );
-
-
-
-
-@function get-icon( $icon, $color: #fff ) {
-
-  @if 'color' != type-of( $color ) {
-
-    @warn 'The requested color - "' + $color + '" - was not recognized as a Sass color value.';
-    @return null;
-  }
-
-  @if map-has-key( $icons, $icon ) {
-
-    $icon:        map-get( $icons, $icon );
-    $placeholder: '%%COLOR%%';
-    $data-uri:    str-replace( url( $data-svg-prefix + $icon ), $placeholder, $color );
-
-    @return str-replace( $data-uri, '#', '%23' );
-  }
-
-  @warn 'The requested icon - "' + $icon + '" - is not defined in the $icons map.';
-  @return null;
-}
