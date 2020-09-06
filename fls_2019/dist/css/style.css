@@ -1345,25 +1345,22 @@ html form.lrm-form ul.acf-checkbox-list li {
   height: 1rem;
   width: 3rem; }
   .carousel__nav--next {
-    display: inline-block;
-    height: 100%;
     right: -1rem;
     -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
-    width: 100%; }
+            transform: rotate(270deg); }
   .carousel__nav--prev {
-    display: inline-block;
-    height: 100%;
     left: -1rem;
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    width: 100%; }
+            transform: rotate(90deg); }
 
 .carousel__icon {
   background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.656 490.656"> <path d="M487.536 120.445c-4.16-4.16-10.923-4.16-15.083 0L245.317 347.581 18.203 120.445c-4.16-4.16-10.923-4.16-15.083 0s-4.16 10.923 0 15.083l234.667 234.667c2.069 2.091 4.8 3.136 7.531 3.136s5.461-1.045 7.552-3.115l234.667-234.667a10.7 10.7 0 00-.001-15.104z" fill="%23ffffff" /></svg>');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 1.5rem; }
+  background-size: 1.5rem;
+  display: inline-block;
+  height: 100%;
+  width: 100%; }
   .carousel__icon.light {
     background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.656 490.656"> <path d="M487.536 120.445c-4.16-4.16-10.923-4.16-15.083 0L245.317 347.581 18.203 120.445c-4.16-4.16-10.923-4.16-15.083 0s-4.16 10.923 0 15.083l234.667 234.667c2.069 2.091 4.8 3.136 7.531 3.136s5.461-1.045 7.552-3.115l234.667-234.667a10.7 10.7 0 00-.001-15.104z" fill="%23ffffff" /></svg>'); }
 
