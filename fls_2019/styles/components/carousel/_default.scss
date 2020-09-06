@@ -1,5 +1,7 @@
 .carousel {
 	&__nav {
+	}
+	&__icon {
 	    background-image: get-icon( 'caret', $alternate );
 		background-position:center;
 		background-repeat:no-repeat;
