@@ -1,13 +1,12 @@
 .carousel {
 	&__nav {
 		&:before {
-
+		    background-image: get-icon( 'caret', $alternate );
+			background-position:center;
+			background-repeat:no-repeat;
+			background-size:1.5rem;
+			width:5%;
 		}
-	    background-image: get-icon( 'caret', $alternate );
-    	background-position:center;
-    	background-repeat:no-repeat;
-    	background-size:1.5rem;
-    	width:5%;
     	&--next {
 			transform: rotate(270deg);    		
     	}
