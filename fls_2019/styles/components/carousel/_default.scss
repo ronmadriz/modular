@@ -1,13 +1,5 @@
 .carousel {
 	&__nav {
-	}
-	&__icon {
-	    background-image: url( $data-svg-prefix + map-get( $icons, 'caret_white' ) );
-		background-position:center;
-		background-repeat:no-repeat;
-		background-size:1.5rem;
-		display:flex;
-		width:5%;
     	&--next {
     		right:-1rem;
 			transform: rotate(270deg);    		
@@ -16,5 +8,13 @@
     		left:-1rem;
 		    transform: rotate(90deg);
 		}    	
+	}
+	&__icon {
+	    background-image: url( $data-svg-prefix + map-get( $icons, 'caret_white' ) );
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:1.5rem;
+		display:flex;
+		width:5%;
 	}
 }
