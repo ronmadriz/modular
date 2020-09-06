@@ -2,7 +2,7 @@
 	&__nav {
 	}
 	&__icon {
-	    background-image: get-icon( 'caret', $alternate );
+	    background-image: url( $data-svg-prefix + map-get( $icons, 'caret_white' ) );
 		background-position:center;
 		background-repeat:no-repeat;
 		background-size:1.5rem;
