@@ -3,7 +3,9 @@
 if (have_rows('hm_blog')) {
 	echo '<section id="home_blog" class="blogs">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
-	echo '<div class="blogs__list">'.PHP_EOL;
+	echo '<div id="blog__carousel" class="blog__carousel multi__carousel slide carousel"  data-interval="false">'.PHP_EOL;
+	echo '<div class="blogs__list carousel-inner">'.PHP_EOL;
+	$hm_blog_count = 0;
 	while (have_rows('hm_blog')) {
 		the_row();
 		$hm_blog_post = get_sub_field('hm_blog_post');
@@ -16,7 +18,7 @@ if (have_rows('hm_blog')) {
 			$hm_blog_date  = get_the_date('m/d/Y');
 			$hm_blog_ex    = get_field('blg_summary');
 			$hm_blog_link  = get_the_permalink();
-			echo '<article class="blogs__item">'.PHP_EOL;
+			echo '<article class="blogs__item carousel-item'.($hm_work_count == 0?' active':'').'">'.PHP_EOL;
 			echo '<header class="blogs__header">'.PHP_EOL;
 			echo '<a class="blogs__image--link" href="'.get_the_permalink().'"><img alt="'.$hm_blog_title.'" class="blogs__image" src="'.$hm_blog_img.'"></a>'.PHP_EOL;
 			echo '</header>'.PHP_EOL;
@@ -34,9 +36,17 @@ if (have_rows('hm_blog')) {
 			echo '</a></span>'.PHP_EOL;
 			echo '</footer>'.PHP_EOL;
 			echo '</article>'.PHP_EOL;
-			wp_reset_postdata();
 		}
+		$hm_work_count++;
 	}
+	wp_reset_postdata();
+	echo '</div>'.PHP_EOL;
+	echo '<a class="cases__nav light carousel__nav carousel__nav--prev carousel-control-prev" href="#cases__carousel" role="button" data-slide="prev"><i class="cases__icon carousel__icon carousel__icon--prev"></i><span class="cases__nav--text sr-only">'.PHP_EOL;
+	_e('Previous', 'fc_core');
+	echo '</span></a>'.PHP_EOL;
+	echo '<a class="cases__nav light carousel__nav carousel__nav--next carousel-control-next" href="#cases__carousel" role="button" data-slide="next"><i class="cases__icon carousel__icon carousel__icon--next"></i><span class="cases__nav--text sr-only">'.PHP_EOL;
+	_e('Next', 'fc_core');
+	echo '</span></a>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
