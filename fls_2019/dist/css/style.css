@@ -1339,10 +1339,6 @@ html form.lrm-form ul.acf-checkbox-list li {
     color: #FFFFFF; }
 
 .carousel__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 1rem;
   width: 3rem; }
   .carousel__nav--next {
     right: -1rem;
