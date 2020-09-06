@@ -1,5 +1,8 @@
 .carousel {
 	&__nav {
+		display:flex;
+		height:1rem;
+		width:3rem;
     	&--next {
     		right:-1rem;
 			transform: rotate(270deg);    		
@@ -14,8 +17,5 @@
 		background-position:center;
 		background-repeat:no-repeat;
 		background-size:1.5rem;
-		display:flex;
-		height:1rem;
-		width:3rem;
 	}
 }
