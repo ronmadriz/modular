@@ -4064,7 +4064,8 @@ body.solutions-template div.testimonials {
       line-height: 1.25;
       padding-left: .5rem;
       padding-right: .5rem;
-      position: relative; }
+      position: relative;
+      width: 12.5%; }
       .home .hero__services--item:after {
         background-color: #FFFFFF;
         content: '';
