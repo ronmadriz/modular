@@ -38,8 +38,8 @@ if (have_rows('hm_blog')) {
 			echo '</article>'.PHP_EOL;
 			wp_reset_postdata();
 		}
-		$hm_work_count++;
 	}
+	$hm_work_count++;
 	echo '</div>'.PHP_EOL;
 	echo '<a class="cases__nav light carousel__nav carousel__nav--prev carousel-control-prev" href="#cases__carousel" role="button" data-slide="prev"><i class="cases__icon carousel__icon carousel__icon--prev"></i><span class="cases__nav--text sr-only">'.PHP_EOL;
 	_e('Previous', 'fc_core');
