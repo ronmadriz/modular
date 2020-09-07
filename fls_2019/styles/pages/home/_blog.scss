@@ -23,6 +23,7 @@
 		}
 	}
 	&__item {
+		background-color: $alternate;
 		border:.0625rem solid $dark_gray;
 		flex-direction: column;
 		flex-shrink: 0;

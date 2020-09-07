@@ -4167,6 +4167,7 @@ body.solutions-template div.testimonials {
       max-height: 11.25rem;
       overflow: hidden; }
   .home .blogs__item {
+    background-color: #FFFFFF;
     border: 0.0625rem solid #848587;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
