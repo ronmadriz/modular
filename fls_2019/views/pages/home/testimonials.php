@@ -9,7 +9,7 @@ $tst_query = new WP_Query($tst_args);
 if ($tst_query->have_posts()) {
 	echo '<section id="home_testimonials" class="testimonials">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
-	echo '<div id="testimonials__carousel" class="testimonials__carousel carousel fade" data-ride="carousel">'.PHP_EOL;
+	echo '<div id="testimonials__carousel" class="testimonials__carousel carousel carousel-fade" data-ride="carousel">'.PHP_EOL;
 	echo '<div class="testimonials__list carousel-inner">'.PHP_EOL;
 	$tst_count = 0;
 	while ($tst_query->have_posts()) {
