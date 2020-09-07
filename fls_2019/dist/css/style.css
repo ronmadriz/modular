@@ -4431,6 +4431,8 @@ body.solutions-template div.testimonials {
   margin-bottom: 2rem; }
 
 .home .testimonials__item {
+  -ms-flex-item-align: center;
+      align-self: center;
   background: white;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -4460,7 +4462,9 @@ body.solutions-template div.testimonials {
       flex-wrap: nowrap; }
   @media (min-width: 786px) {
     .home .testimonials__list {
-      min-height: 14.75rem; } }
+      height: 15rem;
+      max-height: 15rem;
+      overflow: hidden; } }
 
 .home .testimonials__quote {
   -webkit-box-align: center;
@@ -4473,7 +4477,7 @@ body.solutions-template div.testimonials {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-style: italic;
   font-weight: lighter;
   -webkit-box-pack: center;

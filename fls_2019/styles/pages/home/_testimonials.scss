@@ -11,6 +11,7 @@
 	    margin-bottom: 2rem;
 	}
 	&__item {
+		align-self: center;
 		background: white;
 		flex-shrink: 0;
 		height: 100%;
@@ -27,7 +28,9 @@
 		flex-direction: row;
 		flex-wrap: nowrap;
 		@include for-phone-up {
-			min-height: 14.75rem;
+			height: 15rem;
+			max-height: 15rem;
+			overflow: hidden;
 		}
 	}
 	&__quote {
@@ -35,7 +38,7 @@
 	    color: $accent_1;
 		display:flex;
 		flex: 1 0 auto;
-	    font-size: 1.25rem;
+	    font-size: 1rem;
 	    font-style: italic;
         font-weight: lighter;
 		justify-content: center;
