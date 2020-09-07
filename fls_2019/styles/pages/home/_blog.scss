@@ -28,6 +28,9 @@
 		flex-shrink: 0;
 		margin-bottom:1rem;
 	    width: 100%;
+	    &.active {
+	    	display: flex;
+	    }
 	    @include for-phone-up {
 		    width: 32.5%;
 	    }
