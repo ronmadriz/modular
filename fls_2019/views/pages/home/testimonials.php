@@ -27,10 +27,10 @@ if ($tst_query->have_posts()) {
 	}
 	wp_reset_postdata();
 	echo '</div>'.PHP_EOL;
-	echo '<a class="testimonials__nav carousel-control-prev" href="#testimonials__carousel"><i class="testimonials__icon testimonials__icon--prev"></i><span class="testimonials__nav--text">'.PHP_EOL;
+	echo '<a class="testimonials__nav light carousel__nav carousel__nav--prev carousel-control-prev" href="#testimonials__carousel" role="button" data-slide="prev"><i class="testimonials__icon carousel__icon carousel__icon--prev"></i><span class="testimonials__nav--text sr-only">'.PHP_EOL;
 	_e('Previous', 'fc_core');
 	echo '</span></a>'.PHP_EOL;
-	echo '<a class="testimonials__nav carousel-control-next" href="#testimonials__carousel"><i class="testimonials__icon testimonials__icon--next"></i><span class="testimonials__nav--text">'.PHP_EOL;
+	echo '<a class="testimonials__nav light carousel__nav carousel__nav--next carousel-control-next" href="#testimonials__carousel" role="button" data-slide="next"><i class="testimonials__icon carousel__icon carousel__icon--next"></i><span class="testimonials__nav--text sr-only">'.PHP_EOL;
 	_e('Next', 'fc_core');
 	echo '</span></a>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
