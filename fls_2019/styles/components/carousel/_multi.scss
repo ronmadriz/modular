@@ -4,7 +4,7 @@
 	    .carousel-inner .active,
 	    .carousel-inner .active + .carousel-item,
 	    .carousel-inner .active + .carousel-item + .carousel-item {
-	        display: block;
+	        display: flex;
 	    }
 	    
 	    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
@@ -25,7 +25,7 @@
 	        top: 0;
 	        right: -33.3333%;
 	        z-index: -1;
-	        display: block;
+	        display: flex;
 	        visibility: visible;
 	    }
 	    
@@ -45,7 +45,7 @@
 	        top: 0;
 	        left: 0;
 	        z-index: -1;
-	        display: block;
+	        display: flex;
 	        visibility: visible;
 	    }
 	    
@@ -57,7 +57,7 @@
 	        position: relative;
 	        transform: translate3d(100%, 0, 0);
 	        visibility: visible;
-	        display: block;
+	        display: flex;
 	        visibility: visible;
 	    }
 

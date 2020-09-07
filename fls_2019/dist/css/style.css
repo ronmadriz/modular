@@ -1598,7 +1598,9 @@ html body main #flsCarousel {
     .multi__carousel .carousel-inner .active,
     .multi__carousel .carousel-inner .active + .carousel-item,
     .multi__carousel .carousel-inner .active + .carousel-item + .carousel-item {
-      display: block; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
     .multi__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
     .multi__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
     .multi__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
@@ -1615,7 +1617,9 @@ html body main #flsCarousel {
       top: 0;
       right: -33.3333%;
       z-index: -1;
-      display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       visibility: visible; }
     .multi__carousel .active.carousel-item-left + .carousel-item-next.carousel-item-left,
     .multi__carousel .carousel-item-next.carousel-item-left + .carousel-item,
@@ -1630,7 +1634,9 @@ html body main #flsCarousel {
       top: 0;
       left: 0;
       z-index: -1;
-      display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       visibility: visible; }
     .multi__carousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
     .multi__carousel .carousel-item-prev.carousel-item-right + .carousel-item,
@@ -1640,7 +1646,9 @@ html body main #flsCarousel {
       -webkit-transform: translate3d(100%, 0, 0);
               transform: translate3d(100%, 0, 0);
       visibility: visible;
-      display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       visibility: visible; } }
 
 .additional_content {
