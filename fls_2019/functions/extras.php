@@ -90,11 +90,8 @@ function posts_link_attributes() {
 add_filter('next_posts_link_attributes', 'posts_link_attributes');
 add_filter('previous_posts_link_attributes', 'posts_link_attributes');
 
-/*
 // Changing excerpt more
-function new_excerpt_more($more) {
-global $post;
-return '… <a href="'.get_permalink($post->ID).'">'.'Read More &raquo;'.'</a>';
+function tn_custom_excerpt_length($length) {
+	return 35;
 }
-add_filter('excerpt_more', 'new_excerpt_more');
- */
+add_filter('excerpt_length', 'tn_custom_excerpt_length', 999);
