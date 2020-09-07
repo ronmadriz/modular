@@ -4163,7 +4163,8 @@ body.solutions-template div.testimonials {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 1rem 1rem; }
+    padding: 0 1rem 1rem;
+    width: 100%; }
   .home .blogs__image {
     -ms-flex-item-align: center;
         align-self: center;
