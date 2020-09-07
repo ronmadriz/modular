@@ -1,5 +1,8 @@
 @include for-phone-up {
 	.menus {
+		ul {
+		    padding-inline-start: 0;
+		}
 		&__brand {
 			width:28.59375rem;			
 		}
