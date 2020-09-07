@@ -17,7 +17,7 @@ if (have_rows('hm_blog')) {
 			$hm_blog_img     = get_the_post_thumbnail_url();
 			$hm_blog_date    = get_the_date('m/d/Y');
 			$hm_blog_ex      = get_field('blg_summary');
-			$hm_blog_excerpt = get_excerpt();
+			$hm_blog_excerpt = get_the_excerpt();
 			$hm_blog_summary = (!empty($hm_blog_ex)?$hm_blog_ex:$hm_blog_excerpt);
 			$hm_blog_link    = get_the_permalink();
 			echo '<article class="blogs__item carousel-item'.($hm_blog_count == 0?' active':'').'">'.PHP_EOL;
