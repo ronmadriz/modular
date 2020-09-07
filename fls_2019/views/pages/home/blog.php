@@ -18,7 +18,7 @@ if (have_rows('hm_blog')) {
 			$hm_blog_date  = get_the_date('m/d/Y');
 			$hm_blog_ex    = get_field('blg_summary');
 			$hm_blog_link  = get_the_permalink();
-			echo '<article class="blogs__item carousel-item'.($hm_work_count == 0?' active':'').'">'.PHP_EOL;
+			echo '<article class="blogs__item carousel-item'.($hm_blog_post == 0?' active':'').'">'.PHP_EOL;
 			echo '<header class="blogs__header">'.PHP_EOL;
 			echo '<a class="blogs__image--link" href="'.get_the_permalink().'"><img alt="'.$hm_blog_title.'" class="blogs__image" src="'.$hm_blog_img.'"></a>'.PHP_EOL;
 			echo '</header>'.PHP_EOL;
