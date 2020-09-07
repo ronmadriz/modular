@@ -4424,15 +4424,14 @@ body.solutions-template div.testimonials {
 .home .testimonials__city {
   color: #156CB3;
   display: block;
-  line-height: 1.75;
-  -ms-flex-item-align: start;
-      align-self: start; }
+  line-height: 1.75; }
 
 .home .testimonials__company {
   display: block;
-  margin-bottom: 2rem;
-  -ms-flex-item-align: start;
-      align-self: start; }
+  margin-bottom: 2rem; }
+
+.home .testimonials__item {
+  text-align: center; }
 
 .home .testimonials__list {
   -webkit-box-align: start;

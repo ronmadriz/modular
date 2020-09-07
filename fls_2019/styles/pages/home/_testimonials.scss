@@ -18,7 +18,6 @@
 		display:flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		wid
 		@include for-phone-up {
 			min-height: 14.75rem;
 		}
