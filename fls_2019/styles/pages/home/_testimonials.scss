@@ -5,31 +5,20 @@
 	    color: $accent_1;
 	    display: block;
 	    line-height: 1.75;
-	    align-self: start;
 	}
 	&__company {
 	    display: block;
 	    margin-bottom: 2rem;
-	    align-self: start;
 	}
 	&__item {
-//		flex: 0 0 100%;
-//	    padding-left: 5rem;
-//	    padding-right: 5rem;
-		&.carousel-item {
-			flex-direction: column;
-			align-items: stretch;
-			height:auto;
-			&.active {
-				display:flex;
-			}
-		}
+
 	}
 	&__list {
 		align-items: start;
 		display:flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
+		wid
 		@include for-phone-up {
 			min-height: 14.75rem;
 		}
@@ -41,6 +30,6 @@
 		flex: 1 0 auto;
 	    font-size: 1.25rem;
 	    font-style: italic;
-		justify-content: center;	    
+		justify-content: center;
 	}
 }
