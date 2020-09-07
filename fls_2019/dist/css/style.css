@@ -3965,7 +3965,7 @@ body.solutions-template div.testimonials {
       display: flex; } }
   @media (min-width: 786px) {
     .home .hero {
-      min-height: 43.75rem; } }
+      max-height: 37.75rem; } }
   .home .hero__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3982,7 +3982,7 @@ body.solutions-template div.testimonials {
         width: 65%; } }
     @media (min-width: 1200px) {
       .home .hero__content {
-        height: 80%;
+        height: 65%;
         -webkit-transform: translate(1vw, 10vh);
                 transform: translate(1vw, 10vh);
         width: 45%; } }
