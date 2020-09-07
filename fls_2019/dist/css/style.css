@@ -4193,7 +4193,7 @@ body.solutions-template div.testimonials {
             flex-direction: column;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    margin-bottom: 1rem;
+    margin: 1rem;
     width: 100%; }
     .home .blogs__item.active {
       display: -webkit-box;
@@ -4201,7 +4201,7 @@ body.solutions-template div.testimonials {
       display: flex; }
     @media (min-width: 786px) {
       .home .blogs__item {
-        width: 32.5%; } }
+        width: 30.75%; } }
     @media (min-width: 786px) and (max-width: 992px) {
       .home .blogs__item {
         width: 47.5%; } }

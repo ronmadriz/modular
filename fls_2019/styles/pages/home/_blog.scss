@@ -33,13 +33,13 @@
 		border:.0625rem solid $dark_gray;
 		flex-direction: column;
 		flex-shrink: 0;
-		margin-bottom:1rem;
+		margin:1rem;
 	    width: 100%;
 	    &.active {
 	    	display: flex;
 	    }
 	    @include for-phone-up {
-		    width: 32.5%;
+		    width: 30.75%;
 	    }
 	    @include for-tablet-below {
 	    	width: 47.5%;
