@@ -26,6 +26,7 @@
 		display:flex;
 		border:.0625rem solid $dark_gray;
 		flex-direction: column;
+		flex-shrink: 0;
 		margin-bottom:1rem;
 	    width: 100%;
 	    @include for-phone-up {
@@ -49,7 +50,7 @@
 	    column-gap: .75rem;
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		width:100%;
 		@include for-tablet-up {
 			min-height:14.75rem;
