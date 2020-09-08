@@ -1560,24 +1560,6 @@ html body main #flsCarousel {
     -webkit-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out; }
 
-.featured__nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  position: absolute;
-  top: 0; }
-  .featured__nav--text {
-    display: none; }
-  .featured__nav--prev {
-    left: 0; }
-  .featured__nav--next {
-    right: 0; }
-
 .featured__title {
   display: block;
   font-size: 1.125rem;

@@ -77,21 +77,6 @@
         }
     }
     &__nav {
-        align-items: center;
-        background-color: $alternate;
-        display: flex;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        &--text {
-            display:none;
-        }
-        &--prev {
-            left: 0;
-        }
-        &--next {
-            right: 0;
-        }
     }
     &__title {
         display: block;
