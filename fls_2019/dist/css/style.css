@@ -4090,7 +4090,7 @@ body.solutions-template div.testimonials {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 1rem; }
-    @media (max-width: 786px) {
+    @media (max-width: 992px) {
       .home .hero__services {
         display: none; } }
     .home .hero__services--item {

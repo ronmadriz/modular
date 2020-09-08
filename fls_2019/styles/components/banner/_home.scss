@@ -91,7 +91,7 @@
 		height: 20%;
 		justify-content: center;
 		margin-bottom: 1rem;
-		@include for-phone-only {
+		@include for-tablet-down {
 			display:none;
 		}
 		&--item {
