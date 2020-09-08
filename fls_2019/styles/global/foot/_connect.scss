@@ -2,7 +2,7 @@
 	&__logo {
 		margin-bottom:2rem;
 		width:80%;
-		@include for-tablet-below {
+		@include for-tablet-between {
 			width:50%;
 		}
 		@include for-laptop-up {

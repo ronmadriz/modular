@@ -1,5 +1,5 @@
-@include for-tablet-below {
-	.menus {
+.menus {
+	@include for-tablet-down {
 		&__list {
 			display:none;
 			height: 85vh;

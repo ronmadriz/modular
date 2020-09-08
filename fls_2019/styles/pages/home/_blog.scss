@@ -41,7 +41,7 @@
 	    @include for-phone-up {
 		    width: 30.75%;
 	    }
-	    @include for-tablet-below {
+	    @include for-tablet-between {
 	    	width: 47.5%;
 	    }
 	}
@@ -64,7 +64,7 @@
 		@include for-tablet-up {
 			min-height:14.75rem;
 		}
-		@include for-tablet-below {
+		@include for-tablet-between {
 			min-height:16.75rem;
 		}
 	}
