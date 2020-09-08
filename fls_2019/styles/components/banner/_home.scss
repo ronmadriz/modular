@@ -19,8 +19,9 @@
 			width: 65%;
 		}
 		@include for-tablet-up {
-			transform: translate(1vw,10vh);
 			height:60%;
+			transform: translate(1vw,10vh);
+			width: 45%;
 		}
 		@include for-desktop-up {
 			height: 65%;
