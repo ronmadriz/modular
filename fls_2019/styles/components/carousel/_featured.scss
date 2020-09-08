@@ -3,10 +3,6 @@
         align-items: baseline;
         display:block;
     }
-    &__carousel {
-        overflow: hidden;
-        position: relative;
-    }
     &__desc {
         flex-grow: 1;
         margin-bottom: 1.5rem;
@@ -34,7 +30,6 @@
         }
     }
     &__item {
-        display: flex;
         flex-direction: column;
         flex-shrink: 0;
         margin-bottom: 1.25rem;

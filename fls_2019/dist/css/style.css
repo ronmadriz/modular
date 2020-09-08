@@ -1459,10 +1459,6 @@ html body main #flsCarousel {
           align-items: baseline;
   display: block; }
 
-.featured__carousel {
-  overflow: hidden;
-  position: relative; }
-
 .featured__desc {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1504,9 +1500,6 @@ html body main #flsCarousel {
     margin-bottom: 1.125rem; }
 
 .featured__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
