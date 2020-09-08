@@ -26,21 +26,6 @@
             @include bars($accent_1, 1.25rem);
         }
     }
-    &__icon {
-        background:url(../../sprites/arrow.svg) no-repeat center center;
-        background-size:cover;
-        display:inline-block;
-        filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
-        height: 2rem;
-        margin-left: .5rem;
-        width: 2rem;
-        &--next {
-            transform: rotate(-90deg);
-        }
-        &--prev {
-            transform: rotate(90deg);
-        }
-    }
     &__image {
         width:100%;
         &--link {

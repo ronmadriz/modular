@@ -1497,22 +1497,6 @@ html body main #flsCarousel {
     .featured__header--text:before {
       right: 105%; }
 
-.featured__icon {
-  background: url(../../sprites/arrow.svg) no-repeat center center;
-  background-size: cover;
-  display: inline-block;
-  -webkit-filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
-          filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
-  height: 2rem;
-  margin-left: .5rem;
-  width: 2rem; }
-  .featured__icon--next {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg); }
-  .featured__icon--prev {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
-
 .featured__image {
   width: 100%; }
   .featured__image--link {
