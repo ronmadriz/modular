@@ -23,10 +23,12 @@
         }
     }
     &__image {
+        align-self: center;
         width:100%;
         &--link {
-            display:block;
-            margin-bottom: 1.125rem;
+            display: flex;
+            max-height: 11.25rem;
+            overflow: hidden;           
         }
     }
     &__item {

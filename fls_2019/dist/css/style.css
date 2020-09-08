@@ -1494,10 +1494,15 @@ html body main #flsCarousel {
       right: 105%; }
 
 .featured__image {
+  -ms-flex-item-align: center;
+      align-self: center;
   width: 100%; }
   .featured__image--link {
-    display: block;
-    margin-bottom: 1.125rem; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 11.25rem;
+    overflow: hidden; }
 
 .featured__item {
   -webkit-box-orient: vertical;
