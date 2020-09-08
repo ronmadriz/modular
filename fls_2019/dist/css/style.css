@@ -4007,12 +4007,15 @@ body.solutions-template div.testimonials {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    @media (min-width: 786px) {
+    @media (min-width: 786px) and (max-width: 992px) {
       .home .hero__content {
         height: 80%;
         -webkit-transform: translate(1vw, 10vh);
                 transform: translate(1vw, 10vh);
         width: 65%; } }
+    @media (min-width: 992px) {
+      .home .hero__content {
+        height: 60%; } }
     @media (min-width: 1200px) {
       .home .hero__content {
         height: 65%;

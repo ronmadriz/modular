@@ -13,10 +13,13 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
-		@include for-phone-up {
+		@include for-tablet-between {
 			height: 80%;
 			transform: translate(1vw,10vh);
 			width: 65%;
+		}
+		@include for-tablet-up {
+			height:60%;
 		}
 		@include for-desktop-up {
 			height: 65%;
