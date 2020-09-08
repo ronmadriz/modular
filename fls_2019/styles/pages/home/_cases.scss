@@ -63,14 +63,6 @@
 	    min-height: 8rem;
     	width:100%;
     }
-    &__nav {
-    	&.carousel__nav--next{
-    		right:0;
-    	}
-    	&.carousel__nav--prev{
-    		left:0;
-    	}
-    }
     &__title {
     	z-index: 2;
     	&--text {
