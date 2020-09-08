@@ -4015,6 +4015,8 @@ body.solutions-template div.testimonials {
         width: 65%; } }
     @media (min-width: 992px) {
       .home .hero__content {
+        -webkit-transform: translate(1vw, 10vh);
+                transform: translate(1vw, 10vh);
         height: 60%; } }
     @media (min-width: 1200px) {
       .home .hero__content {
