@@ -2667,7 +2667,7 @@ svg .region path {
     #menus__item--1 .menus__sub {
       -webkit-transform: translateX(-56vw);
               transform: translateX(-56vw); } }
-  @media (min-width: 992px) and (max-width: 1920px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1919.99px) and (min-width: 1200px) {
     #menus__item--1 .menus__sub {
       -webkit-transform: translateX(-58vw);
               transform: translateX(-58vw); } }
