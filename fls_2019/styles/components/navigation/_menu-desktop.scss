@@ -117,7 +117,12 @@
 				&:hover {
 					color:$accent_1;
 				}
-			}			
+			}
+			&--parent {
+				.menus__caret {
+					display:none;
+				}
+			}
 		}
 		&__tertiary {
 			font-weight: 500;

@@ -2604,6 +2604,8 @@ svg .region path {
       text-align: center; }
       .menus__sub--link:hover {
         color: #156CB3; }
+    .menus__sub--parent .menus__caret {
+      display: none; }
   .menus__tertiary {
     font-weight: 500;
     line-height: 1.75;
