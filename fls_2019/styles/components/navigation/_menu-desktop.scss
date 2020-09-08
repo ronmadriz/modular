@@ -13,7 +13,7 @@
 		    position: relative;
 			transform: translateX(0%);
 			width: 50%;
-			@include for-tablet-below {
+			@include for-laptop-below {
 				width:60%;
 			}
 		}
