@@ -3,8 +3,8 @@ j(document).ready(function(){
 		j(this).toggleClass('menus__toggle--open');
 		j('.menus__list').toggleClass('menus__list--active');
 	});
-	if (j(window).width() < 992) {
 		j('<em class="menus__caret"></em>').insertBefore('.menus__child');
+	if (j(window).width() < 992) {
 		j('.menus__caret').click( function(){
 			j(this).toggleClass('menus__caret--open');
 			j(this).parent('.menus__parent').toggleClass('menus__active');
