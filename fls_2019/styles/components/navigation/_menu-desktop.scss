@@ -13,6 +13,9 @@
 		    position: relative;
 			transform: translateX(0%);
 			width: 50%;
+			@include for-tablet-below {
+				width:60%;
+			}
 		}
 		&__icon {
 			display:none;
