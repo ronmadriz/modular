@@ -2735,6 +2735,7 @@ svg .region path {
     display: flex;
     height: 1rem;
     padding: .75rem;
+    margin-left: .25rem;
     -webkit-transition: .3s ease all;
     transition: .3s ease all;
     width: 5%; }
