@@ -13,6 +13,16 @@
 			max-width: 100%;
 		}
 	}
+	&__caret {
+		background-image: url( $data-svg-prefix + map-get( $icons, 'caret_blue' ) );
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		display: inline-block;
+		height: .5rem;
+		margin-left: .5rem;
+		width: .5rem;
+	}
 	&__toggle {
 	    align-self: center;
 	    display: block;
