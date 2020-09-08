@@ -2519,12 +2519,7 @@ svg .region path {
     position: relative;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    width: 50%; } }
-  @media (min-width: 992px) and (min-width: 786px) and (max-width: 992px) {
-    .menus__list {
-      width: 60%; } }
-
-@media (min-width: 992px) {
+    width: 50%; }
   .menus__icon {
     display: none; }
   .menus__item {
