@@ -3,11 +3,11 @@
 	}
 	&__city {
 	    color: $accent_1;
-	    display: block;
+		display:flex;
 	    line-height: 1.75;
 	}
 	&__company {
-	    display: block;
+		display:flex;
 	    margin-bottom: 2rem;
 	}
 	&__item {
@@ -21,6 +21,9 @@
 		text-align: center;
 		width: 100%;
 		flex-direction: column;
+		&.active {
+			display:flex;
+		}
 	}
 	&__list {
 		align-items: start;

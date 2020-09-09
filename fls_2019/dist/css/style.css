@@ -4456,11 +4456,15 @@ body.solutions-template div.testimonials {
 
 .home .testimonials__city {
   color: #156CB3;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   line-height: 1.75; }
 
 .home .testimonials__company {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 2rem; }
 
 .home .testimonials__item {
@@ -4479,6 +4483,10 @@ body.solutions-template div.testimonials {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .home .testimonials__item.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .home .testimonials__list {
   -webkit-box-align: start;
