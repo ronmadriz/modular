@@ -13,7 +13,10 @@
 	    margin-bottom: 2rem;
 		padding-left: 1rem;
 		padding-right: 1rem;
-		text-align: center;		
+		text-align: center;
+		* {
+			font-family:$stationary;
+		}
 	}
 	&__image {
 		border:.125rem solid $accent_2;

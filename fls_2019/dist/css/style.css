@@ -4362,6 +4362,8 @@ body.solutions-template div.testimonials {
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center; }
+    .home .industries__content * {
+      font-family: "Encode Sans", sans-serif; }
   .home .industries__image {
     border: 0.125rem solid #FECD06;
     width: 100%; }
