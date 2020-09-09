@@ -4510,6 +4510,7 @@ body.solutions-template div.testimonials {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  font-family: "Encode Sans Condensed", sans-serif;
   font-size: 1rem;
   font-style: italic;
   font-weight: lighter;
