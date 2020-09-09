@@ -9,6 +9,7 @@
     margin-bottom: 3rem;	
 	&__content {
 		color:$alternate;
+		font-family:$stationary;
 	    margin-bottom: 2rem;
 		padding-left: 1rem;
 		padding-right: 1rem;
@@ -52,7 +53,7 @@
 		}
 		&--text {
 			color: $alternate;
-			font-family: 'Encode Sans', sans-serif;
+			font-family: $stationary;
 			font-weight: 700;
 			letter-spacing: .0425rem;
 			text-shadow: 0.0625rem 0 0.0625rem rgba($accent_6,.85);

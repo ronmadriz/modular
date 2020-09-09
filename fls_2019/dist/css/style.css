@@ -4357,6 +4357,7 @@ body.solutions-template div.testimonials {
   margin-bottom: 3rem; }
   .home .industries__content {
     color: #FFFFFF;
+    font-family: "Encode Sans", sans-serif;
     margin-bottom: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -4408,7 +4409,7 @@ body.solutions-template div.testimonials {
         padding-bottom: .5rem; } }
     .home .industries__link--text {
       color: #FFFFFF;
-      font-family: 'Encode Sans', sans-serif;
+      font-family: "Encode Sans", sans-serif;
       font-weight: 700;
       letter-spacing: .0425rem;
       text-shadow: 0.0625rem 0 0.0625rem rgba(0, 0, 0, 0.85); }
