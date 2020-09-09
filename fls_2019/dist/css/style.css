@@ -3438,6 +3438,10 @@ html .blog .featured__article {
   .blog__side .wp_rss_retriever_list {
     padding-left: 0;
     font-size: .875rem; }
+  .blog__side .wp_rss_retriever_metadata {
+    display: none; }
+  .blog__side .wp_rss_retriever_readmore {
+    display: none; }
 
 @media (max-width: 786px) {
   main .wrapper {
