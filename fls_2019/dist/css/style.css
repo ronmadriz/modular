@@ -1577,7 +1577,6 @@ html body main #flsCarousel {
       -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0); }
     .multi__carousel .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-      position: absolute;
       top: 0;
       right: -33.3333%;
       z-index: -1;
