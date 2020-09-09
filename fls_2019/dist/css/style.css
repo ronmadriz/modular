@@ -4425,6 +4425,7 @@ body.solutions-template div.testimonials {
       display: inline-block;
       font-family: "Encode Sans", sans-serif;
       font-size: 2rem;
+      letter-spacing: .0625rem;
       position: relative;
       text-align: center;
       text-transform: uppercase; }
