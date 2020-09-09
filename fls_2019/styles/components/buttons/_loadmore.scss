@@ -1,18 +1,22 @@
-.load__more{
-	border: .125rem solid $accent_1;
-	color:$accent_1;
-	cursor: pointer;
-    display: block;
-    font-size: .875rem;
-    font-weight: 600;
-    margin-left: auto;
-    margin-right: auto;    
-    padding: .6275rem .1875rem;
-    text-align: center;
-    text-transform: uppercase;
-    width: 80%;
-    &:hover {
-    	background-color: $accent_1;
-    	color:$alternate;
+a {
+    &:not[href]):not([tabindex]) {
+        &.load__more{
+            border: .125rem solid $accent_1;
+            color:$accent_1;
+            cursor: pointer;
+            display: block;
+            font-size: .875rem;
+            font-weight: 600;
+            margin-left: auto;
+            margin-right: auto;    
+            padding: .6275rem .1875rem;
+            text-align: center;
+            text-transform: uppercase;
+            width: 80%;
+            &:hover {
+                background-color: $accent_1;
+                color:$alternate;
+            }
+        }
     }
 }
