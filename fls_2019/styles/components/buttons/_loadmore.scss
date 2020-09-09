@@ -1,5 +1,5 @@
 a {
-    &:not[href]):not([tabindex]) {
+    &:not([href]):not([tabindex]) {
         &.load__more{
             border: .125rem solid $accent_1;
             color:$accent_1;
