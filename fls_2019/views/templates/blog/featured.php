@@ -12,5 +12,5 @@ $featured_args = array(
 	)
 );
 $section__title       = 'Must Read Stories';
-$featured__link__text = 'View Project';
+$featured__link__text = 'View Blog';
 include (get_template_directory().'/views/components/carousel/featured.php');
