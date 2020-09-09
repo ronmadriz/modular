@@ -4176,7 +4176,8 @@ body.solutions-template div.testimonials {
     font-size: .9rem;
     margin-top: 1.25rem; }
   .home .blogs__desc {
-    font-family: "Encode Sans", sans-serif; }
+    font-family: "Encode Sans", sans-serif;
+    font-size: .875rem; }
   .home .blogs__footer {
     display: -webkit-box;
     display: -ms-flexbox;
