@@ -50,9 +50,10 @@
         display:flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        padding: 0 2rem;
+        padding: 0;
+        margin: 0;
         transition: 1s ease all;
-        width: 93vw;
+        width: 100%;
         &--transition {
             transition: all 0.35s ease-in-out;            
         }

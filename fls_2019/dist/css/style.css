@@ -1533,10 +1533,11 @@ html body main #flsCarousel {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 0 2rem;
+  padding: 0;
+  margin: 0;
   -webkit-transition: 1s ease all;
   transition: 1s ease all;
-  width: 93vw; }
+  width: 100%; }
   .featured__list--transition {
     -webkit-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out; }
