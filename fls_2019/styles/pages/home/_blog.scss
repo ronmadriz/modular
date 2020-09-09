@@ -8,6 +8,9 @@
 		font-size: .9rem;
 		margin-top: 1.25rem;		
 	}
+	&__desc {
+	    font-family:$stationary_semicondensedsemibold;
+	}
 	&__footer {
 		display: flex;
 		flex-direction: column;
