@@ -4255,6 +4255,7 @@ body.solutions-template div.testimonials {
         min-height: 16.75rem; } }
   .home .blogs__sub a {
     text-transform: uppercase;
+    font-family: "Encode Sans SemiCondensedSemiBold", sans-serif;
     font-size: .875rem;
     font-weight: 500;
     color: #848587; }
