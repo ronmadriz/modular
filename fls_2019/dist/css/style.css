@@ -40,7 +40,7 @@ html, body {
   font-display: swap; }
 
 @font-face {
-  font-family: 'Encode Sans';
+  font-family: 'Encode Sans SemiExpanded';
   src: url("../../fonts/EncodeSans-SemiExpandedBold.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiExpandedBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
