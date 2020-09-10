@@ -26,6 +26,9 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
+		@include for-tablet-up {
+			transform: translate(0.5rem, 7rem);
+		}
 		&--title {
 			color:$alternate;
 			font-size:1.6275rem;
