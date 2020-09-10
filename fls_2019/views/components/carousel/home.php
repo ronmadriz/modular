@@ -25,10 +25,10 @@ if (have_rows('hm_hero')) {
 	}
 	echo '</div>'.PHP_EOL;
 }
-echo '<a class="hero__nav light carousel__nav carousel__nav--prev carousel-control-prev" href="#hero__carousel" role="button" data-slide="prev"><i class="hero__icon carousel__icon carousel__icon--prev"></i><span class="hero__nav--text sr-only">'.PHP_EOL;
+echo '<a class="hero__nav carousel__nav carousel__nav--prev carousel-control-prev" href="#hero__carousel" role="button" data-slide="prev"><i class="hero__icon light carousel__icon carousel__icon--prev"></i><span class="hero__nav--text sr-only">'.PHP_EOL;
 _e('Previous', 'fc_core');
 echo '</span></a>'.PHP_EOL;
-echo '<a class="hero__nav light carousel__nav carousel__nav--next carousel-control-next" href="#hero__carousel" role="button" data-slide="next"><i class="hero__icon carousel__icon carousel__icon--next"></i><span class="hero__nav--text sr-only">'.PHP_EOL;
+echo '<a class="hero__nav carousel__nav carousel__nav--next carousel-control-next" href="#hero__carousel" role="button" data-slide="next"><i class="hero__icon light carousel__icon carousel__icon--next"></i><span class="hero__nav--text sr-only">'.PHP_EOL;
 _e('Next', 'fc_core');
 echo '</span></a>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
