@@ -3,12 +3,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-bottom:.175rem solid $accent_2;
-	@include for-phone-only {
-		display:flex;
-	}
-	@include for-phone-up {
-		max-height:37.75rem;
-	}
+	display:flex;
 	&__item {
 	    background-position: center;
 	    background-repeat: no-repeat;
@@ -23,8 +18,8 @@
 		display: flex;
 		overflow: hidden;
 		@include for-tablet-up {
-			height: 16rem;
-			min-height: 16rem;
+			height: 37.5rem;
+			min-height: 37.5rem;
 		}
 	}
 	&__content {

@@ -3959,15 +3959,10 @@ body.solutions-template div.testimonials {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 0.175rem solid #FECD06; }
-  @media (max-width: 786px) {
-    .home .hero {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
-  @media (min-width: 786px) {
-    .home .hero {
-      max-height: 37.75rem; } }
+  border-bottom: 0.175rem solid #FECD06;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .home .hero__item {
     background-position: center;
     background-repeat: no-repeat;
@@ -3987,8 +3982,8 @@ body.solutions-template div.testimonials {
     overflow: hidden; }
     @media (min-width: 992px) {
       .home .hero__list {
-        height: 16rem;
-        min-height: 16rem; } }
+        height: 37.5rem;
+        min-height: 37.5rem; } }
   .home .hero__content {
     display: -webkit-box;
     display: -ms-flexbox;
