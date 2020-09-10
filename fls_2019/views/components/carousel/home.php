@@ -1,6 +1,6 @@
 <?
 echo '<section id="hero" class="hero">'.PHP_EOL;
-echo '<div id="hero__carousel" class="hero__carousel multi__carousel slide carousel" data-ride="true">'.PHP_EOL;
+echo '<div id="hero__carousel" class="hero__carousel slide carousel" data-ride="true">'.PHP_EOL;
 if (have_rows('hm_hero')) {
 	echo '<div class="hero__list carousel-inner">'.PHP_EOL;
 	$hero_count = 0;
