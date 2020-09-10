@@ -4300,8 +4300,9 @@ body.solutions-template div.testimonials {
   @media (max-width: 786px) {
     .home .blogs__nav.carousel__nav--next {
       right: -1.15rem; } }
-  .home .blogs__nav.carousel__nav--prev {
-    left: -1.15rem; }
+  @media (max-width: 786px) {
+    .home .blogs__nav.carousel__nav--prev {
+      left: -1.15rem; } }
   .home .blogs__sub a {
     text-transform: uppercase;
     font-family: "Encode Sans SemiCondensedSemiBold", sans-serif;
