@@ -2,7 +2,7 @@
 echo '<section id="hero" class="hero">'.PHP_EOL;
 echo '<div id="hero__carousel" class="hero__carousel multi__carousel slide carousel"  data-interval="false">'.PHP_EOL;
 if (have_rows('hm_hero')) {
-	echo '<div class="blogs__list carousel-inner">'.PHP_EOL;
+	echo '<div class="hero__list carousel-inner">'.PHP_EOL;
 	while (have_rows('hm_hero')) {
 		the_row();
 		$hm_hero_img         = get_sub_field('hm_hero_image');
