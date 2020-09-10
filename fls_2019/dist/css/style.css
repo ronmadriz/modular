@@ -4072,6 +4072,7 @@ body.solutions-template div.testimonials {
         top: 0;
         width: 1rem; }
   .home .hero__services {
+    bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4079,7 +4080,9 @@ body.solutions-template div.testimonials {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    position: absolute;
+    width: 100%; }
     @media (max-width: 992px) {
       .home .hero__services {
         display: none; } }

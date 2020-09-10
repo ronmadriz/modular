@@ -103,10 +103,13 @@
 		}
 	}
 	&__services {
+		bottom: 0;
 		display: flex;
 		height: 20%;
 		justify-content: center;
 		margin-bottom: 1rem;
+		position: absolute;
+		width: 100%;
 		@include for-tablet-down {
 			display:none;
 		}
