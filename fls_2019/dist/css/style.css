@@ -3994,6 +3994,9 @@ body.solutions-template div.testimonials {
       .home .hero__list {
         height: 37.5rem;
         min-height: 37.5rem; } }
+    @media (max-width: 786px) {
+      .home .hero__list {
+        height: 50vh; } }
   .home .hero__content {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -31,6 +31,9 @@
 			height: 37.5rem;
 			min-height: 37.5rem;
 		}
+		@include for-phone-only {
+			height: 50vh;
+		}
 	}
 	&__content {
 		display: flex;
