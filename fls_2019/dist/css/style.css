@@ -3959,8 +3959,7 @@ body.solutions-template div.testimonials {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 0.175rem solid #FECD06;
-  min-height: 18.75rem; }
+  border-bottom: 0.175rem solid #FECD06; }
   @media (max-width: 786px) {
     .home .hero {
       display: -webkit-box;
@@ -3969,6 +3968,15 @@ body.solutions-template div.testimonials {
   @media (min-width: 786px) {
     .home .hero {
       max-height: 37.75rem; } }
+  .home .hero__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden; }
+    @media (min-width: 992px) {
+      .home .hero__list {
+        height: 16rem;
+        min-height: 16rem; } }
   .home .hero__content {
     display: -webkit-box;
     display: -ms-flexbox;
