@@ -19,9 +19,9 @@ if (have_rows('hm_hero')) {
 		echo '<div class="hero__item">'.PHP_EOL;
 		echo '<div class="wrapper">'.PHP_EOL;
 		echo '<div class="hero__content">'.PHP_EOL;
-		echo (!empty($hm_hero_title)?'<h2 class="hero__item--title">'.$hm_hero_title.'</h2>'.PHP_EOL:'');
-		echo (!empty($hm_hero_description)?'<span class="hero__item--desc">'.$hm_hero_description.'</span>'.PHP_EOL:'');
-		echo (!empty($hm_hero_link)?'<span class="hero__item--button"><a class="hero__item--link" href="'.$hm_hero_link['url'].'">'.$hm_hero_link['title'].'</a></span>'.PHP_EOL:'');
+		echo (!empty($hm_hero_title)?'<h2 class="hero__content--title">'.$hm_hero_title.'</h2>'.PHP_EOL:'');
+		echo (!empty($hm_hero_description)?'<span class="hero__content--desc">'.$hm_hero_description.'</span>'.PHP_EOL:'');
+		echo (!empty($hm_hero_link)?'<span class="hero__content--button"><a class="hero__content--link" href="'.$hm_hero_link['url'].'">'.$hm_hero_link['title'].'</a></span>'.PHP_EOL:'');
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;

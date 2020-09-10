@@ -10,7 +10,7 @@
 	@include for-phone-up {
 		max-height:37.75rem;
 	}
-	&__item {
+	&__content {
 		display: flex;
 		flex-direction: column;
 		@include for-tablet-between {
