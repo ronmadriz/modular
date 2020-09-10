@@ -3,6 +3,7 @@ echo '<section id="hero" class="hero">'.PHP_EOL;
 echo '<div id="hero__carousel" class="hero__carousel multi__carousel slide carousel"  data-interval="false">'.PHP_EOL;
 if (have_rows('hm_hero')) {
 	echo '<div class="hero__list carousel-inner">'.PHP_EOL;
+	$hero_count = 0;
 	while (have_rows('hm_hero')) {
 		the_row();
 		$hm_hero_img         = get_sub_field('hm_hero_image');
@@ -16,7 +17,7 @@ if (have_rows('hm_hero')) {
 			echo '.hero__item {background-image:url("'.$hm_hero_img['url'].'");}'.PHP_EOL;
 			echo '</style>'.PHP_EOL;
 		}
-		echo '<div class="hero__item">'.PHP_EOL;
+		echo '<div class="hero__item'.($hero_count == 0?' active':'').'">'.PHP_EOL;
 		echo '<div class="wrapper">'.PHP_EOL;
 		echo '<div class="hero__content">'.PHP_EOL;
 		echo (!empty($hm_hero_title)?'<h2 class="hero__content--title">'.$hm_hero_title.'</h2>'.PHP_EOL:'');
@@ -25,6 +26,7 @@ if (have_rows('hm_hero')) {
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
+		$hero_count++;
 	}
 	echo '</div>'.PHP_EOL;
 }
