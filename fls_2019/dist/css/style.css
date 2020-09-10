@@ -4068,6 +4068,12 @@ body.solutions-template div.testimonials {
         right: -2rem;
         top: 0;
         width: 1rem; }
+  .home .hero__nav {
+    width: 2rem; }
+    .home .hero__nav .carousel__nav--next {
+      right: 0rem; }
+    .home .hero__nav .carousel__nav--prev {
+      left: 0rem; }
   .home .hero__services {
     bottom: 0;
     display: -webkit-box;
