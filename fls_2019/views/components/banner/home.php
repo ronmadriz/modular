@@ -14,7 +14,7 @@ if (have_rows('hm_hero')) {
 		$hm_hero_solutions   = get_sub_field('hm_hero_solutions');
 		if (!empty($hm_hero_img)) {
 			echo '<style>'.PHP_EOL;
-			echo '.hero {background-image:url("'.$hm_hero_img['url'].'");}'.PHP_EOL;
+			echo '.hero__item {background-image:url("'.$hm_hero_img['url'].'");}'.PHP_EOL;
 			echo '</style>'.PHP_EOL;
 		}
 		echo '<div class="hero__item">'.PHP_EOL;
@@ -25,24 +25,26 @@ if (have_rows('hm_hero')) {
 	}
 	echo '</div>'.PHP_EOL;
 }
+/*
 if (have_rows('hm_hero_solutions')) {
-	echo '<span class="hero__services">'.PHP_EOL;
-	echo '<ul class="hero__services--list">'.PHP_EOL;
-	while (have_rows('hm_hero_solutions')) {
-		the_row();
-		$hm_hero_icon       = get_sub_field('hm_hero_icon');
-		$hm_hero_icon_title = get_sub_field('hm_hero_icon_title');
-		$hm_hero_icon_link  = get_sub_field('hm_hero_icon_link');
-		echo '<li class="hero__services--item">';
-		echo (!empty($hm_hero_icon_link)?'<a href="'.$hm_hero_icon_link.'" class="hero__services--link">':'');
-		echo (!empty($hm_hero_icon)?'<i class="hero__services--icon">'.file_get_contents(get_template_directory().'/sprites/'.$hm_hero_icon.'.svg').'</i>':'');
-		echo (!empty($hm_hero_icon_title)?'<span class="hero__services--text">'.$hm_hero_icon_title.'</span>':'');
-		echo (!empty($hm_hero_icon_link)?'</a>':'');
-		echo '</li>'.PHP_EOL;
-	}
-	echo '</ul>'.PHP_EOL;
-	echo '</span>'.PHP_EOL;
+echo '<span class="hero__services">'.PHP_EOL;
+echo '<ul class="hero__services--list">'.PHP_EOL;
+while (have_rows('hm_hero_solutions')) {
+the_row();
+$hm_hero_icon       = get_sub_field('hm_hero_icon');
+$hm_hero_icon_title = get_sub_field('hm_hero_icon_title');
+$hm_hero_icon_link  = get_sub_field('hm_hero_icon_link');
+echo '<li class="hero__services--item">';
+echo (!empty($hm_hero_icon_link)?'<a href="'.$hm_hero_icon_link.'" class="hero__services--link">':'');
+echo (!empty($hm_hero_icon)?'<i class="hero__services--icon">'.file_get_contents(get_template_directory().'/sprites/'.$hm_hero_icon.'.svg').'</i>':'');
+echo (!empty($hm_hero_icon_title)?'<span class="hero__services--text">'.$hm_hero_icon_title.'</span>':'');
+echo (!empty($hm_hero_icon_link)?'</a>':'');
+echo '</li>'.PHP_EOL;
 }
+echo '</ul>'.PHP_EOL;
+echo '</span>'.PHP_EOL;
+}
+ */
 echo '<a class="blog__nav light carousel__nav carousel__nav--prev carousel-control-prev" href="#blog__carousel" role="button" data-slide="prev"><i class="blog__icon carousel__icon carousel__icon--prev"></i><span class="blog__nav--text sr-only">'.PHP_EOL;
 _e('Previous', 'fc_core');
 echo '</span></a>'.PHP_EOL;
