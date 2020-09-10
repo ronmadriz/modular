@@ -4004,7 +4004,8 @@ body.solutions-template div.testimonials {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    z-index: 1; }
     @media (min-width: 992px) {
       .home .hero__content {
         -webkit-transform: translate(0.5rem, 7rem);

@@ -38,6 +38,7 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
+		z-index: 1;
 		@include for-tablet-up {
 			transform: translate(0.5rem, 7rem);
 		}
