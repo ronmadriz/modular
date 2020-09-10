@@ -4460,6 +4460,7 @@ body.solutions-template div.testimonials {
   display: -ms-flexbox;
   display: flex;
   font-family: "Encode Sans Condensed", sans-serif;
+  font-size: 1.125rem;
   line-height: 1.75; }
 
 .home .testimonials__company {
