@@ -4014,7 +4014,9 @@ body.solutions-template div.testimonials {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        z-index: 1; } }
+        z-index: 1; }
+        .home .hero__content p {
+          font-size: 1.0625rem; } }
     @media (min-width: 992px) {
       .home .hero__content {
         -webkit-transform: translate(0.5rem, 7rem);
