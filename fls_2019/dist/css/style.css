@@ -4459,12 +4459,14 @@ body.solutions-template div.testimonials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Encode Sans Condensed", sans-serif;
   line-height: 1.75; }
 
 .home .testimonials__company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Encode Sans Condensed", sans-serif;
   margin-bottom: 2rem; }
 
 .home .testimonials__item {

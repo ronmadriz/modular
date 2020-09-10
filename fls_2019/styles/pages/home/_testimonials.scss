@@ -4,10 +4,12 @@
 	&__city {
 	    color: $accent_1;
 		display:flex;
+	    font-family:$stationary_condensed;
 	    line-height: 1.75;
 	}
 	&__company {
 		display:flex;
+	    font-family:$stationary_condensed;
 	    margin-bottom: 2rem;
 	}
 	&__item {
