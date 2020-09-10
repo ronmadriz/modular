@@ -4505,8 +4505,8 @@ body.solutions-template div.testimonials {
       flex-wrap: nowrap; }
   @media (min-width: 786px) {
     .home .testimonials__list {
-      height: 15rem;
-      max-height: 15rem;
+      height: 20rem;
+      max-height: 20rem;
       overflow: hidden; } }
 
 .home .testimonials__quote {
@@ -4521,7 +4521,7 @@ body.solutions-template div.testimonials {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   font-family: "Encode Sans Condensed", sans-serif;
-  font-size: 1rem;
+  font-size: 1.3725rem;
   font-style: italic;
   font-weight: lighter;
   -webkit-box-pack: center;
