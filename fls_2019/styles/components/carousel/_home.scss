@@ -19,8 +19,14 @@
 		    content: '';
 		    display: block;
 		    height: 100%;
+			left: 0;
 		    position: absolute;			
+		    top: 0;
 		    width: 100%;
+		}
+		@include for-phone-only {
+			padding-left:1rem;
+			padding-right:1rem;
 		}
 	}
 	&__list {
@@ -58,6 +64,9 @@
 			@include for-phone-up {
 				font-size: 2.25rem;
 				margin-bottom: 1.5rem;
+			}
+			@include for-phone-only {
+			    text-align: center;
 			}
 			&:after {
 				background-color: $accent_1;

@@ -3982,8 +3982,14 @@ body.solutions-template div.testimonials {
       content: '';
       display: block;
       height: 100%;
+      left: 0;
       position: absolute;
+      top: 0;
       width: 100%; }
+    @media (max-width: 786px) {
+      .home .hero__item {
+        padding-left: 1rem;
+        padding-right: 1rem; } }
   .home .hero__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4030,6 +4036,9 @@ body.solutions-template div.testimonials {
         .home .hero__content--title {
           font-size: 2.25rem;
           margin-bottom: 1.5rem; } }
+      @media (max-width: 786px) {
+        .home .hero__content--title {
+          text-align: center; } }
       .home .hero__content--title:after {
         background-color: #156CB3;
         border-radius: 0 0 6.25rem 6.25rem;
