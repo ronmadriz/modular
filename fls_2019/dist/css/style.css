@@ -4165,9 +4165,6 @@ body.solutions-template div.testimonials {
     height: 100%;
     -ms-flex-item-align: center;
         align-self: center; }
-    @media (min-width: 786px) {
-      .home .hero .wrapper {
-        height: 43.75rem; } }
 
 .home .blogs {
   padding-bottom: 3rem; }
