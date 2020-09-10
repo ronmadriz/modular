@@ -9,6 +9,11 @@
 	@include for-phone-up {
 		max-height:37.75rem;
 	}
+	&__item {
+		display:flex;
+		height:100%;
+		overflow:hidden;
+	}
 	&__list {
 		display: flex;
 		overflow: hidden;
@@ -20,21 +25,6 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
-		@include for-tablet-between {
-			height: 80%;
-			transform: translate(1vw,10vh);
-			width: 65%;
-		}
-		@include for-tablet-up {
-			height:60%;
-			transform: translate(1vw,10vh);
-			width: 45%;
-		}
-		@include for-desktop-up {
-			height: 65%;
-			transform: translate(1vw,10vh);
-			width: 45%;
-		}
 		&--title {
 			color:$alternate;
 			font-size:1.6275rem;
