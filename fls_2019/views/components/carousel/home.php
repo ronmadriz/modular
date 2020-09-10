@@ -12,12 +12,7 @@ if (have_rows('hm_hero')) {
 		$hm_hero_link        = get_sub_field('hm_hero_link');
 		$hm_hero_image       = get_sub_field('hm_hero_image');
 		$hm_hero_solutions   = get_sub_field('hm_hero_solutions');
-		if (!empty($hm_hero_img)) {
-			echo '<style>'.PHP_EOL;
-			echo '#hero__item--'.$hero_count.' {background-image:url("'.$hm_hero_img['url'].'");}'.PHP_EOL;
-			echo '</style>'.PHP_EOL;
-		}
-		echo '<div id="hero__item--'.$hero_count.'" class="hero__item carousel-item'.($hero_count == 0?' active':'').'">'.PHP_EOL;
+		echo '<div class="hero__item carousel-item'.($hero_count == 0?' active':'').'"'.(empty($hm_hero_img)?'':' style="background-image:url("'.$hm_hero_img['url'].'");"').'>'.PHP_EOL;
 		echo '<div class="wrapper">'.PHP_EOL;
 		echo '<div class="hero__content">'.PHP_EOL;
 		echo (!empty($hm_hero_title)?'<h2 class="hero__content--title">'.$hm_hero_title.'</h2>'.PHP_EOL:'');
