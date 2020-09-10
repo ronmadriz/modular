@@ -3972,9 +3972,6 @@ body.solutions-template div.testimonials {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     height: 100%;
