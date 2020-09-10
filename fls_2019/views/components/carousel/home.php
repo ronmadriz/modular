@@ -7,12 +7,12 @@ if (have_rows('hm_hero')) {
 	while (have_rows('hm_hero')) {
 		the_row();
 		$hm_hero_image       = get_sub_field('hm_hero_image');
-		$hm_hero_img         = $hm_hero_image['url'];
+		$hm_hero_img         = esc_url($hm_hero_image['url']);
 		$hm_hero_title       = get_sub_field('hm_hero_title');
 		$hm_hero_description = get_sub_field('hm_hero_description');
 		$hm_hero_link        = get_sub_field('hm_hero_link');
 		$hm_hero_solutions   = get_sub_field('hm_hero_solutions');
-		echo '<div class="hero__item carousel-item'.($hero_count == 0?' active':'').'"'.(empty($hm_hero_img)?'':' style="background-image:url("'.esc_url($hm_hero_img).'");"').'>'.PHP_EOL;
+		echo '<div class="hero__item carousel-item'.($hero_count == 0?' active':'').'"'.(empty($hm_hero_img)?'':' style="background-image:url("'.$hm_hero_img.'");"').'>'.PHP_EOL;
 		echo '<div class="wrapper">'.PHP_EOL;
 		echo '<div class="hero__content">'.PHP_EOL;
 		echo (!empty($hm_hero_title)?'<h2 class="hero__content--title">'.$hm_hero_title.'</h2>'.PHP_EOL:'');
