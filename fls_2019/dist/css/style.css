@@ -4257,7 +4257,7 @@ body.solutions-template div.testimonials {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     margin: 1rem;
-    width: 100%; }
+    width: 90%; }
     .home .blogs__item.active {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -4297,6 +4297,10 @@ body.solutions-template div.testimonials {
     @media (min-width: 786px) and (max-width: 992px) {
       .home .blogs__list {
         min-height: 16.75rem; } }
+  .home .blogs__nav.carousel__nav--next {
+    right: -1.15rem; }
+  .home .blogs__nav.carousel__nav--prev {
+    left: -1.15rem; }
   .home .blogs__sub a {
     text-transform: uppercase;
     font-family: "Encode Sans SemiCondensedSemiBold", sans-serif;

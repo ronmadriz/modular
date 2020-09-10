@@ -39,7 +39,7 @@
 		flex-direction: column;
 		flex-shrink: 0;
 		margin:1rem;
-	    width: 100%;
+	    width: 90%;
 	    &.active {
 	    	display: flex;
 	    }
@@ -72,6 +72,14 @@
 		}
 		@include for-tablet-between {
 			min-height:16.75rem;
+		}
+	}
+	&__nav {
+		&.carousel__nav--next{
+			right:-1.15rem;
+		}
+		&.carousel__nav--prev{
+			left:-1.15rem;
 		}
 	}
 	&__sub {
