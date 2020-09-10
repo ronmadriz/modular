@@ -3962,7 +3962,11 @@ body.solutions-template div.testimonials {
   border-bottom: 0.175rem solid #FECD06;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .home .hero__item {
     background-position: center;
     background-repeat: no-repeat;
