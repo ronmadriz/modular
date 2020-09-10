@@ -25,12 +25,12 @@ if (have_rows('hm_hero')) {
 	}
 	echo '</div>'.PHP_EOL;
 }
-echo '<a class="blog__nav light carousel__nav carousel__nav--prev carousel-control-prev" href="#blog__carousel" role="button" data-slide="prev"><i class="blog__icon carousel__icon carousel__icon--prev"></i><span class="blog__nav--text sr-only">'.PHP_EOL;
-_e('Previous', 'fc_core');
-echo '</span></a>'.PHP_EOL;
-echo '<a class="blog__nav light carousel__nav carousel__nav--next carousel-control-next" href="#blog__carousel" role="button" data-slide="next"><i class="blog__icon carousel__icon carousel__icon--next"></i><span class="blog__nav--text sr-only">'.PHP_EOL;
-_e('Next', 'fc_core');
-echo '</span></a>'.PHP_EOL;
+// echo '<a class="blog__nav light carousel__nav carousel__nav--prev carousel-control-prev" href="#blog__carousel" role="button" data-slide="prev"><i class="blog__icon carousel__icon carousel__icon--prev"></i><span class="blog__nav--text sr-only">'.PHP_EOL;
+// _e('Previous', 'fc_core');
+// echo '</span></a>'.PHP_EOL;
+// echo '<a class="blog__nav light carousel__nav carousel__nav--next carousel-control-next" href="#blog__carousel" role="button" data-slide="next"><i class="blog__icon carousel__icon carousel__icon--next"></i><span class="blog__nav--text sr-only">'.PHP_EOL;
+// _e('Next', 'fc_core');
+// echo '</span></a>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 if (have_rows('hm_hero_solutions')) {
 	echo '<span class="hero__services">'.PHP_EOL;
