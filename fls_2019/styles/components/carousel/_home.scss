@@ -102,11 +102,10 @@
 		}
 	}
 	&__nav {
-		width:2rem;
-    	.carousel__nav--next {
+    	&.carousel__nav--next {
     		right:0rem;
     	}
-		.carousel__nav--prev {
+		&.carousel__nav--prev {
     		left:0rem;
 		}    	
 	}	
