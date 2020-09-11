@@ -4333,6 +4333,9 @@ body.solutions-template div.testimonials {
   padding-bottom: 5rem;
   padding-top: 5rem;
   position: relative; }
+  @media (min-width: 992px) {
+    .home .cases {
+      padding-bottom: 9rem; } }
   .home .cases:before {
     background-color: #156CB3;
     content: '';

@@ -7,6 +7,9 @@
     padding-bottom: 5rem;
     padding-top: 5rem;
     position:relative;
+    @include for-tablet-up {
+		padding-bottom:9rem;
+    }
     &:before {
 		background-color: $accent_1;
 		content: '';
