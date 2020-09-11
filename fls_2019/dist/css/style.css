@@ -4215,6 +4215,7 @@ body.solutions-template div.testimonials {
         align-self: center; }
 
 .home .blogs {
+  margin-top: 5rem;
   padding-bottom: 3rem; }
   .home .blogs__content {
     padding: 1rem; }
@@ -4328,6 +4329,7 @@ body.solutions-template div.testimonials {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 5rem;
   padding-bottom: 5rem;
   padding-top: 5rem;
   position: relative; }
