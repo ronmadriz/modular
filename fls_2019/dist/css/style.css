@@ -4353,6 +4353,9 @@ body.solutions-template div.testimonials {
             justify-content: center;
     margin-top: 3rem;
     z-index: 2; }
+    @media (min-width: 992px) {
+      .home .cases__carousel {
+        margin-top: 8rem; } }
   .home .cases__content {
     color: #FFFFFF;
     display: block;
@@ -4396,6 +4399,9 @@ body.solutions-template div.testimonials {
     width: 100%; }
   .home .cases__title {
     z-index: 2; }
+    @media (min-width: 992px) {
+      .home .cases__title {
+        margin-top: 3rem; } }
     .home .cases__title--text {
       color: #FECD06;
       font-size: 2rem;

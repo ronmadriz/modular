@@ -24,7 +24,10 @@
 		display: flex;    	
 		justify-content: center;
 	    margin-top: 3rem;
-    	z-index: 2;    	
+    	z-index: 2;
+    	@include for-tablet-up {
+    		margin-top:8rem;
+    	}
     }
     &__content {
     	color:$alternate;
@@ -66,6 +69,9 @@
     }
     &__title {
     	z-index: 2;
+    	@include for-tablet-up {
+    		margin-top:3rem;
+    	}
     	&--text {
     		color:$accent_2;
 			font-size: 2rem;
