@@ -4264,7 +4264,7 @@ body.solutions-template div.testimonials {
             flex-direction: column;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    margin: 1rem;
+    margin: 0 .75rem;
     width: 90%; }
     .home .blogs__item.active {
       display: -webkit-box;
