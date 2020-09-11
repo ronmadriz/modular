@@ -4514,82 +4514,80 @@ body.solutions-template div.testimonials {
         -ms-flex-direction: column;
             flex-direction: column; }
 
-.home .testimonials__city {
-  color: #156CB3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "Encode Sans Condensed", sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.75;
-  width: 100%; }
-
-.home .testimonials__company {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "Encode Sans Condensed", sans-serif;
-  margin-bottom: 2rem;
-  width: 100%; }
-
-.home .testimonials__item {
-  -ms-flex-item-align: center;
-      align-self: center;
-  background: white;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  height: 100%;
-  justify-self: center;
-  padding-left: 10%;
-  padding-right: 10%;
-  width: 100%; }
-  .home .testimonials__item.active {
+.home .testimonials {
+  margin-top: 3rem; }
+  .home .testimonials__city {
+    color: #156CB3;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-
-.home .testimonials__list {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
-  @media (min-width: 786px) {
-    .home .testimonials__list {
-      height: 20rem;
-      max-height: 20rem;
-      overflow: hidden; } }
-
-.home .testimonials__quote {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #156CB3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  font-family: "Encode Sans Condensed", sans-serif;
-  font-size: 1.3725rem;
-  font-style: italic;
-  font-weight: lighter;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center; }
+    display: flex;
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.75;
+    width: 100%; }
+  .home .testimonials__company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Encode Sans Condensed", sans-serif;
+    margin-bottom: 2rem;
+    width: 100%; }
+  .home .testimonials__item {
+    -ms-flex-item-align: center;
+        align-self: center;
+    background: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    height: 100%;
+    justify-self: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%; }
+    .home .testimonials__item.active {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .home .testimonials__list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    @media (min-width: 786px) {
+      .home .testimonials__list {
+        height: 20rem;
+        max-height: 20rem;
+        overflow: hidden; } }
+  .home .testimonials__quote {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #156CB3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-size: 1.3725rem;
+    font-style: italic;
+    font-weight: lighter;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center; }
 
 html body section#avail_positions h3 a {
   display: block; }
