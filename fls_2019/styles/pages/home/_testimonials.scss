@@ -16,13 +16,13 @@
 	&__item {
 		align-self: center;
 		background: white;
+		flex-direction: column;
 		flex-shrink: 0;
 		height: 100%;
 		justify-self: center;
 		padding-left: 10%;
 		padding-right: 10%;
 		width: 100%;
-		flex-direction: column;
 		&.active {
 			display:flex;
 		}
@@ -48,5 +48,6 @@
 	    font-style: italic;
         font-weight: lighter;
 		justify-content: center;
+	    text-align: center;
 	}
 }
