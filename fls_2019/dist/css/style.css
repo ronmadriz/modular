@@ -1730,6 +1730,13 @@ html body main #flsCarousel {
   padding: .0125rem;
   width: 100%; }
 
+.form__title--text {
+  color: #404040;
+  font-family: "Encode Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 1rem .5rem; }
+
 .homeForm {
   border-bottom: 0.3725rem solid #FECD06; }
   @media (min-width: 1360px) {
