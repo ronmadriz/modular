@@ -7,11 +7,13 @@
 	    font-family:$stationary_condensed;
 	    font-size: 1.125rem;
 	    line-height: 1.75;
+	    width: 100%;
 	}
 	&__company {
 		display:flex;
 	    font-family:$stationary_condensed;
 	    margin-bottom: 2rem;
+	    width: 100%;
 	}
 	&__item {
 		align-self: center;

@@ -4512,14 +4512,16 @@ body.solutions-template div.testimonials {
   display: flex;
   font-family: "Encode Sans Condensed", sans-serif;
   font-size: 1.125rem;
-  line-height: 1.75; }
+  line-height: 1.75;
+  width: 100%; }
 
 .home .testimonials__company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: "Encode Sans Condensed", sans-serif;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  width: 100%; }
 
 .home .testimonials__item {
   -ms-flex-item-align: center;
