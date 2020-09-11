@@ -20,7 +20,9 @@
 		}
 	}
 	&__image {
+		align-self: center;	
 		border:.125rem solid $accent_2;
+		display: flex;
 		width:100%;
 	}
 	&__item {

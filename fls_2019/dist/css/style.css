@@ -4419,7 +4419,12 @@ body.solutions-template div.testimonials {
       font-family: "Encode Sans", sans-serif;
       font-size: 1.15rem; }
   .home .industries__image {
+    -ms-flex-item-align: center;
+        align-self: center;
     border: 0.125rem solid #FECD06;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%; }
   .home .industries__item {
     display: -webkit-box;
