@@ -63,7 +63,7 @@
 			font-weight:700;
 			text-transform: uppercase;
 			@include for-phone-up {
-				font-size: 4.4375rem;
+				font-size: 2.9325rem;
 				margin-bottom: 1.5rem;
 			}
 			@include for-phone-only {
@@ -95,9 +95,12 @@
 			text-align:center;
 			@include for-phone-up {
 				text-align:left;
+				width: 50%;
 			}
 			p {
-				font-size:1.5625rem;
+				@include for-phone-up {
+					font-size:1.25rem;
+				}
 			}
 		}
 		&--button {

@@ -4042,7 +4042,7 @@ body.solutions-template div.testimonials {
       text-transform: uppercase; }
       @media (min-width: 786px) {
         .home .hero__content--title {
-          font-size: 4.4375rem;
+          font-size: 2.9325rem;
           margin-bottom: 1.5rem; } }
       @media (max-width: 786px) {
         .home .hero__content--title {
@@ -4071,9 +4071,11 @@ body.solutions-template div.testimonials {
       text-align: center; }
       @media (min-width: 786px) {
         .home .hero__content--desc {
-          text-align: left; } }
-      .home .hero__content--desc p {
-        font-size: 1.5625rem; }
+          text-align: left;
+          width: 50%; } }
+      @media (min-width: 786px) {
+        .home .hero__content--desc p {
+          font-size: 1.25rem; } }
     .home .hero__content--button {
       display: -webkit-box;
       display: -ms-flexbox;
