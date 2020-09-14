@@ -3926,12 +3926,12 @@ body.solutions-template div.testimonials {
   .home .blogs__date {
     color: #156CB3;
     font-family: "Encode Sans Condensed", sans-serif;
-    font-size: 1.125rem;
+    font-size: .9rem;
     font-weight: 600;
     margin-top: 1.25rem; }
   .home .blogs__desc {
     font-family: "Encode Sans", sans-serif;
-    font-size: 1rem; }
+    font-size: .875rem; }
   .home .blogs__footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3986,7 +3986,7 @@ body.solutions-template div.testimonials {
     display: block;
     border: 0.125rem solid #156CB3;
     font-family: "Encode Sans Condensed", sans-serif;
-    font-size: 1.125rem;
+    font-size: .75rem;
     font-weight: 600;
     margin-top: 1rem;
     padding: .25rem 1rem;
@@ -4020,13 +4020,13 @@ body.solutions-template div.testimonials {
   .home .blogs__sub {
     text-transform: uppercase;
     font-family: "Encode Sans Condensed", sans-serif;
-    font-size: 1.9375rem; }
+    font-size: .875rem; }
     .home .blogs__sub a {
       font-weight: 600;
       color: #848587; }
   .home .blogs__title {
     font-family: "Encode Sans Condensed", sans-serif;
-    font-size: 1.875rem;
+    font-size: 1.1275rem;
     font-weight: 600;
     margin-top: .75rem; }
 
