@@ -4189,8 +4189,8 @@ body.solutions-template div.testimonials {
     padding: 0; }
   .home .industries__link {
     background: #000000;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(56%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.35)));
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 56%, rgba(0, 0, 0, 0.35) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(56%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.75)));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 56%, rgba(0, 0, 0, 0.75) 100%);
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
