@@ -63,7 +63,7 @@
 			font-weight:700;
 			text-transform: uppercase;
 			@include for-phone-up {
-				font-size: 1.5625rem;
+				font-size: 4.4375rem;
 				margin-bottom: 1.5rem;
 			}
 			@include for-phone-only {
@@ -90,10 +90,14 @@
 		}
 		&--desc {
 			color:$alternate;
+			font-family:$stationary;
 			font-size:.875rem;
 			text-align:center;
 			@include for-phone-up {
 				text-align:left;
+			}
+			p {
+				font-size:1.5625rem;
 			}
 		}
 		&--button {
