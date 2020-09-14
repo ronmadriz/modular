@@ -58,11 +58,12 @@
 		}
 		&--title {
 			color:$alternate;
-			font-family:$stationary_condensedblack;
+			font-family:$stationary_condensed;
 			font-size:1.6275rem;
 			font-weight:700;
 			text-transform: uppercase;
 			@include for-phone-up {
+				// font-size: 4.4375rem; 
 				font-size: 2.9325rem;
 				margin-bottom: 1.5rem;
 			}
@@ -99,6 +100,7 @@
 			}
 			p {
 				@include for-phone-up {
+					// font-size:1.5625rem;
 					font-size:1.25rem;
 				}
 			}
@@ -214,7 +216,7 @@
 		&--text {
 			align-self: center;
 			display: flex;
-			font-family: $stationary_condensedextrabold;
+			font-family: $stationary_condensed;
 		    font-size:.9325rem;
 		    justify-content: center;
 		    line-height: 1.25;

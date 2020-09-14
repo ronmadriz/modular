@@ -1,14 +1,13 @@
-var gulp = require('gulp'),
-    plumber = require('gulp-plumber'),
-    rename = require('gulp-rename');
-var autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
-var terser = require('gulp-terser');
-// var uglify = require('gulp-uglify');
-var imagemin = require('gulp-imagemin'),
-    cache = require('gulp-cache');
-var minifycss = require('gulp-minify-css');
-var sass = require('gulp-sass');
+const gulp = require('gulp'),
+      plumber = require('gulp-plumber'),
+      rename = require('gulp-rename');
+const autoprefixer = require('gulp-autoprefixer');
+const concat = require('gulp-concat');
+const terser = require('gulp-terser');
+const imagemin = require('gulp-imagemin'),
+      cache = require('gulp-cache');
+const cleanCSS = require('gulp-clean-css');
+const sass = require('gulp-sass');
 
 
 
@@ -32,7 +31,7 @@ gulp.task('styles', function(){
     .pipe(autoprefixer('last 2 versions'))
     .pipe(gulp.dest('dist/css/'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(minifycss())
+    .pipe(cleanCSS())
     .pipe(gulp.dest('dist/css/'))
 //    .pipe(browserSync.reload({stream:true}))
 });

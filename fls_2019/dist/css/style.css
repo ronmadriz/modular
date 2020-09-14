@@ -1,324 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600;800;900&family=Encode+Sans+Semi+Condensed:wght@800&family=Encode+Sans:wght@400;500;600;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 html, body {
   width: 100%;
   overflow-x: hidden; }
 
-@font-face {
-  font-family: 'Encode Sans SemiCondensedLight';
-  src: url("../../fonts/EncodeSans-SemiCondensedLight.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiCondensedLight.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans SemiCondensedExtraLight';
-  src: url("../../fonts/EncodeSans-SemiCondensedExtraLight.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiCondensedExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans SemiCondensedExtraBold';
-  src: url("../../fonts/EncodeSans-SemiCondensedExtraBold.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiCondensedExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans SemiExpandedBlack';
-  src: url("../../fonts/EncodeSans-SemiExpandedBlack.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiExpandedBlack.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans SemiExpandedExtraBold';
-  src: url("../../fonts/EncodeSans-SemiExpandedExtraBold.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiExpandedExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans SemiExpanded';
-  src: url("../../fonts/EncodeSans-SemiExpandedBold.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiExpandedBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans SemiCondensedSemiBold';
-  src: url("../../fonts/EncodeSans-SemiCondensedSemiBold.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiCondensedSemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans Condensed';
-  src: url("../../fonts/EncodeSans-SemiCondensedRegular.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiCondensedRegular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans SemiCondensedThin';
-  src: url("../../fonts/EncodeSans-SemiCondensedThin.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiCondensedThin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans SemiCondensedMedium';
-  src: url("../../fonts/EncodeSans-SemiCondensedMedium.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiCondensedMedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans SemiExpandedLight';
-  src: url("../../fonts/EncodeSans-SemiExpandedLight.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiExpandedLight.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans SemiExpandedExtraLight';
-  src: url("../../fonts/EncodeSans-SemiExpandedExtraLight.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiExpandedExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans SemiExpandedSemiBold';
-  src: url("../../fonts/EncodeSans-SemiExpandedSemiBold.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiExpandedSemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans SemiExpandedThin';
-  src: url("../../fonts/EncodeSans-SemiExpandedThin.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiExpandedThin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-SemiExpandedRegular.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiExpandedRegular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans SemiExpandedMedium';
-  src: url("../../fonts/EncodeSans-SemiExpandedMedium.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiExpandedMedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-Black.woff2") format("woff2"), url("../../fonts/EncodeSans-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-ExtraBold.woff2") format("woff2"), url("../../fonts/EncodeSans-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-Bold.woff2") format("woff2"), url("../../fonts/EncodeSans-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-Medium.woff2") format("woff2"), url("../../fonts/EncodeSans-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-ExtraLight.woff2") format("woff2"), url("../../fonts/EncodeSans-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-Light.woff2") format("woff2"), url("../../fonts/EncodeSans-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-SemiBold.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-Thin.woff2") format("woff2"), url("../../fonts/EncodeSans-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans CondensedBlack';
-  src: url("../../fonts/EncodeSansCondensed-Black.ttf") format("ttf");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-Regular.woff2") format("woff2"), url("../../fonts/EncodeSans-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans CondensedExtraLight';
-  src: url("../../fonts/EncodeSans-CondensedExtraLight.woff2") format("woff2"), url("../../fonts/EncodeSans-CondensedExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-CondensedBold.woff2") format("woff2"), url("../../fonts/EncodeSans-CondensedBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans CondensedExtraBold';
-  src: url("../../fonts/EncodeSans-CondensedExtraBold.woff2") format("woff2"), url("../../fonts/EncodeSans-CondensedExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans CondensedLight';
-  src: url("../../fonts/EncodeSans-CondensedLight.woff2") format("woff2"), url("../../fonts/EncodeSans-CondensedLight.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-CondensedRegular.woff2") format("woff2"), url("../../fonts/EncodeSans-CondensedRegular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans CondensedMedium';
-  src: url("../../fonts/EncodeSans-CondensedMedium.woff2") format("woff2"), url("../../fonts/EncodeSans-CondensedMedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans ExpandedBlack';
-  src: url("../../fonts/EncodeSans-ExpandedBlack.woff2") format("woff2"), url("../../fonts/EncodeSans-ExpandedBlack.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans CondensedThin';
-  src: url("../../fonts/EncodeSans-CondensedThin.woff2") format("woff2"), url("../../fonts/EncodeSans-CondensedThin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans CondensedSemiBold';
-  src: url("../../fonts/EncodeSans-CondensedSemiBold.woff2") format("woff2"), url("../../fonts/EncodeSans-CondensedSemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-ExpandedBold.woff2") format("woff2"), url("../../fonts/EncodeSans-ExpandedBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans ExpandedExtraBold';
-  src: url("../../fonts/EncodeSans-ExpandedExtraBold.woff2") format("woff2"), url("../../fonts/EncodeSans-ExpandedExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans ExpandedExtraLight';
-  src: url("../../fonts/EncodeSans-ExpandedExtraLight.woff2") format("woff2"), url("../../fonts/EncodeSans-ExpandedExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans ExpandedLight';
-  src: url("../../fonts/EncodeSans-ExpandedLight.woff2") format("woff2"), url("../../fonts/EncodeSans-ExpandedLight.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans ExpandedMedium';
-  src: url("../../fonts/EncodeSans-ExpandedMedium.woff2") format("woff2"), url("../../fonts/EncodeSans-ExpandedMedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-ExpandedRegular.woff2") format("woff2"), url("../../fonts/EncodeSans-ExpandedRegular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans ExpandedSemiBold';
-  src: url("../../fonts/EncodeSans-ExpandedSemiBold.woff2") format("woff2"), url("../../fonts/EncodeSans-ExpandedSemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans ExpandedThin';
-  src: url("../../fonts/EncodeSans-ExpandedThin.woff2") format("woff2"), url("../../fonts/EncodeSans-ExpandedThin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans SemiCondensedBlack';
-  src: url("../../fonts/EncodeSans-SemiCondensedBlack.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiCondensedBlack.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Encode Sans';
-  src: url("../../fonts/EncodeSans-SemiCondensedBold.woff2") format("woff2"), url("../../fonts/EncodeSans-SemiCondensedBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
+/*
+$stationary_semicondensed:'Encode Sans SemiCondensedSemiBold', sans-serif;
+$stationary_condensedextrabold:'Encode Sans CondensedExtraBold', sans-serif;
+$stationary_condensedblack:'Encode Sans CondensedBlack', sans-serif;
+*/
 body {
   font-size: 16px; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -4036,7 +3727,7 @@ body.solutions-template div.testimonials {
                 transform: translate(0.5rem, 7rem); } }
     .home .hero__content--title {
       color: #FFFFFF;
-      font-family: "Encode Sans CondensedBlack", sans-serif;
+      font-family: "Encode Sans Condensed", sans-serif;
       font-size: 1.6275rem;
       font-weight: 700;
       text-transform: uppercase; }
@@ -4205,7 +3896,7 @@ body.solutions-template div.testimonials {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      font-family: "Encode Sans CondensedExtraBold", sans-serif;
+      font-family: "Encode Sans Condensed", sans-serif;
       font-size: .9325rem;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -4230,7 +3921,7 @@ body.solutions-template div.testimonials {
     padding: 1rem; }
   .home .blogs__date {
     color: #156CB3;
-    font-family: "Encode Sans SemiCondensedSemiBold", sans-serif;
+    font-family: "Encode Sans Semi Condensed", sans-serif;
     font-size: .9rem;
     margin-top: 1.25rem; }
   .home .blogs__desc {
@@ -4289,7 +3980,7 @@ body.solutions-template div.testimonials {
   .home .blogs__link {
     display: block;
     border: 0.125rem solid #156CB3;
-    font-family: "Encode Sans SemiCondensedSemiBold", sans-serif;
+    font-family: "Encode Sans Semi Condensed", sans-serif;
     font-size: .75rem;
     font-weight: 600;
     margin-top: 1rem;
@@ -4323,12 +4014,12 @@ body.solutions-template div.testimonials {
       left: -1.15rem; } }
   .home .blogs__sub a {
     text-transform: uppercase;
-    font-family: "Encode Sans SemiCondensedSemiBold", sans-serif;
+    font-family: "Encode Sans Semi Condensed", sans-serif;
     font-size: .875rem;
     font-weight: 500;
     color: #848587; }
   .home .blogs__title {
-    font-family: "Encode Sans SemiCondensedSemiBold", sans-serif;
+    font-family: "Encode Sans Semi Condensed", sans-serif;
     font-size: 1.1275rem;
     font-weight: 600;
     margin-top: .75rem; }

@@ -6,7 +6,7 @@
 	}
 	&__date {
 		color:$accent_1;
-	    font-family:$stationary_semicondensedsemibold;
+	    font-family:$stationary_semicondensed;
 		font-size: .9rem;
 		margin-top: 1.25rem;		
 	}
@@ -54,7 +54,7 @@
 	&__link {
 	    display: block;
 	    border: .125rem solid $accent_1;
-	    font-family:$stationary_semicondensedsemibold;
+	    font-family:$stationary_semicondensed;
 	    font-size: .75rem;
 	    font-weight: 600;
 	    margin-top: 1rem;
@@ -90,14 +90,14 @@
 	&__sub {
 		a {
 		    text-transform: uppercase;
-		    font-family:$stationary_semicondensedsemibold;
+		    font-family:$stationary_semicondensed;
 		    font-size:.875rem;
 		    font-weight: 500;
 		    color: $dark_gray;
 		}
 	}
 	&__title {
-	    font-family:$stationary_semicondensedsemibold;
+	    font-family:$stationary_semicondensed;
 		font-size: 1.1275rem;
 		font-weight: 600;
 		margin-top:.75rem;
