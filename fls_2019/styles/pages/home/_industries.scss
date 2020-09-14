@@ -89,7 +89,7 @@
 			text-transform: uppercase;
 			@include bars($alternate, 1.75rem);
 			&:after, &:before {
-				width:60%;
+				width:55%;
 			}
 		}
 	}
