@@ -4154,7 +4154,8 @@ body.solutions-template div.testimonials {
     text-align: center; }
     .home .industries__content p, .home .industries__content li, .home .industries__content td {
       font-family: "Encode Sans", sans-serif;
-      font-size: 1.15rem; }
+      font-size: 1.15rem;
+      width: 85%; }
   .home .industries__image {
     -ms-flex-item-align: center;
         align-self: center;
