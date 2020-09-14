@@ -34,8 +34,8 @@
 		overflow: hidden;
 		position:relative;
 		@include for-tablet-up {
-			height: 37.5rem;
-			min-height: 37.5rem;
+			height: 45.25rem;
+			min-height: 45.25rem;
 		}
 		@include for-phone-only {
 			height: 50vh;

@@ -3696,8 +3696,8 @@ body.solutions-template div.testimonials {
     position: relative; }
     @media (min-width: 992px) {
       .home .hero__list {
-        height: 37.5rem;
-        min-height: 37.5rem; } }
+        height: 45.25rem;
+        min-height: 45.25rem; } }
     @media (max-width: 786px) {
       .home .hero__list {
         height: 50vh; } }
