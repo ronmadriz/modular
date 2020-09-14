@@ -74,13 +74,17 @@
 			color: $alternate;
 		    display: inline-block;
 			font-family: $stationary_condensed;
-			font-size: 2rem;
-			font-weight:800;
-		    letter-spacing: .0625rem;
+			// font-size: 4.3125rem;
+			font-size: 3rem;
+			font-weight: 800;
+			letter-spacing: .125rem;
 		    position: relative;
 			text-align: center;
 			text-transform: uppercase;
 			@include bars($alternate, 1.25rem);
+			&:after, &:before {
+				width:60%;
+			}
 		}
 	}
 	.wrapper {

@@ -4205,9 +4205,9 @@ body.solutions-template div.testimonials {
       color: #FFFFFF;
       display: inline-block;
       font-family: "Encode Sans Condensed", sans-serif;
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: 800;
-      letter-spacing: .0625rem;
+      letter-spacing: .125rem;
       position: relative;
       text-align: center;
       text-transform: uppercase; }
@@ -4222,6 +4222,8 @@ body.solutions-template div.testimonials {
         left: 105%; }
       .home .industries__title--text:before {
         right: 105%; }
+      .home .industries__title--text:after, .home .industries__title--text:before {
+        width: 60%; }
   .home .industries .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
