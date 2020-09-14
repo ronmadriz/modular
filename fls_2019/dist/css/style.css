@@ -4248,6 +4248,7 @@ body.solutions-template div.testimonials {
     display: flex;
     font-family: "Encode Sans Condensed", sans-serif;
     font-size: 1.125rem;
+    font-weight: 500;
     line-height: 1.75;
     width: 100%; }
   .home .testimonials__company {
@@ -4256,6 +4257,7 @@ body.solutions-template div.testimonials {
     display: flex;
     font-family: "Encode Sans Condensed", sans-serif;
     font-size: 1.125rem;
+    font-weight: 500;
     margin-bottom: 2rem;
     width: 100%; }
   .home .testimonials__item {
