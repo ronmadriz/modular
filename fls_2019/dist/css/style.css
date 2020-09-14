@@ -3925,8 +3925,9 @@ body.solutions-template div.testimonials {
     padding: 1rem; }
   .home .blogs__date {
     color: #156CB3;
-    font-family: "Encode Sans Semi Condensed", sans-serif;
+    font-family: "Encode Sans Condensed", sans-serif;
     font-size: .9rem;
+    font-weight: 600;
     margin-top: 1.25rem; }
   .home .blogs__desc {
     font-family: "Encode Sans", sans-serif;
@@ -3984,7 +3985,7 @@ body.solutions-template div.testimonials {
   .home .blogs__link {
     display: block;
     border: 0.125rem solid #156CB3;
-    font-family: "Encode Sans Semi Condensed", sans-serif;
+    font-family: "Encode Sans Condensed", sans-serif;
     font-size: .75rem;
     font-weight: 600;
     margin-top: 1rem;
