@@ -4140,8 +4140,14 @@ body.solutions-template div.testimonials {
   margin-bottom: 3rem; }
   .home .industries__content {
     color: #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-family: "Encode Sans Condensed", sans-serif;
     font-weight: 500;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -4207,7 +4213,7 @@ body.solutions-template div.testimonials {
       text-shadow: 0.0625rem 0 0.0625rem rgba(0, 0, 0, 0.85); }
   .home .industries__title {
     display: block;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
     margin-top: 3rem;
     text-align: center; }
     .home .industries__title--text {
