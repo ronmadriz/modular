@@ -4036,6 +4036,7 @@ body.solutions-template div.testimonials {
                 transform: translate(0.5rem, 7rem); } }
     .home .hero__content--title {
       color: #FFFFFF;
+      font-family: "Encode Sans", sans-serif;
       font-size: 1.6275rem;
       font-weight: 700;
       text-transform: uppercase; }
