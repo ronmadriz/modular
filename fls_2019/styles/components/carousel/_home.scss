@@ -79,8 +79,10 @@
 				width: 30%;
 				@include for-phone-up {
 					border:0 0 6.25rem 0;
-					height:.375rem;
+					border-radius: 0 0 6.25rem 0;
+					height:.5625rem;
 					left:0;
+					width:13.1875rem;
 				}
 			}
 		}

@@ -4058,8 +4058,10 @@ body.solutions-template div.testimonials {
         @media (min-width: 786px) {
           .home .hero__content--title:after {
             border: 0 0 6.25rem 0;
-            height: .375rem;
-            left: 0; } }
+            border-radius: 0 0 6.25rem 0;
+            height: .5625rem;
+            left: 0;
+            width: 13.1875rem; } }
     .home .hero__content--desc {
       color: #FFFFFF;
       font-size: .875rem;
