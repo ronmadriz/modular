@@ -3734,6 +3734,7 @@ body.solutions-template div.testimonials {
       @media (min-width: 786px) {
         .home .hero__content--title {
           font-size: 2.9325rem;
+          letter-spacing: .0625rem;
           margin-bottom: 1.5rem; } }
       @media (max-width: 786px) {
         .home .hero__content--title {
