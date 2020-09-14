@@ -4016,12 +4016,13 @@ body.solutions-template div.testimonials {
   @media (max-width: 786px) {
     .home .blogs__nav.carousel__nav--prev {
       left: -1.15rem; } }
-  .home .blogs__sub a {
+  .home .blogs__sub {
     text-transform: uppercase;
     font-family: "Encode Sans Semi Condensed", sans-serif;
-    font-size: .875rem;
-    font-weight: 500;
-    color: #848587; }
+    font-size: .875rem; }
+    .home .blogs__sub a {
+      font-weight: 500;
+      color: #848587; }
   .home .blogs__title {
     font-family: "Encode Sans Semi Condensed", sans-serif;
     font-size: 1.1275rem;

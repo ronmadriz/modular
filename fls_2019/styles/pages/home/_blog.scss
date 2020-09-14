@@ -88,10 +88,10 @@
 		}
 	}
 	&__sub {
+	    text-transform: uppercase;
+	    font-family:$stationary_semicondensed;
+	    font-size:.875rem;
 		a {
-		    text-transform: uppercase;
-		    font-family:$stationary_semicondensed;
-		    font-size:.875rem;
 		    font-weight: 500;
 		    color: $dark_gray;
 		}
