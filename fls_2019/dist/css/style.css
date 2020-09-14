@@ -4068,6 +4068,9 @@ body.solutions-template div.testimonials {
   .home .cases__content {
     color: #FFFFFF;
     display: block;
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
     margin-bottom: 2rem;
     margin-top: 1rem;
     width: 40%;
@@ -4076,7 +4079,9 @@ body.solutions-template div.testimonials {
     background-color: #FECD06;
     border-radius: .55rem;
     display: inline-block;
-    font-weight: 600;
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-size: 1.625rem;
+    font-weight: 500;
     letter-spacing: .0625rem;
     padding: .5rem 2rem;
     text-transform: uppercase; }
@@ -4113,8 +4118,9 @@ body.solutions-template div.testimonials {
         margin-top: 3rem; } }
     .home .cases__title--text {
       color: #FECD06;
+      font-family: "Encode Sans Condensed", sans-serif;
       font-size: 2rem;
-      font-weight: bold;
+      font-weight: 900;
       text-transform: uppercase; }
   .home .cases .wrapper {
     -webkit-box-orient: vertical;
@@ -4249,6 +4255,7 @@ body.solutions-template div.testimonials {
     display: -ms-flexbox;
     display: flex;
     font-family: "Encode Sans Condensed", sans-serif;
+    font-size: 1.125rem;
     margin-bottom: 2rem;
     width: 100%; }
   .home .testimonials__item {

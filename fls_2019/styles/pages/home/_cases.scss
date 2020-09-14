@@ -35,6 +35,10 @@
     &__content {
     	color:$alternate;
 		display: block;
+    	font-family:$stationary_condensed;
+    	// font-size:2rem;
+		font-size: 1.5rem;
+		font-weight:500;
 		margin-bottom: 2rem;
 		margin-top: 1rem;
 		width: 40%;
@@ -44,7 +48,10 @@
 		background-color: $accent_2;
 		border-radius: .55rem;
 		display: inline-block;
-		font-weight: 600;
+    	font-family:$stationary_condensed;
+    	// font-size:2.125rem;
+		font-size: 1.625rem;
+		font-weight:500;
 		letter-spacing: .0625rem;
 		padding: .5rem 2rem;
 		text-transform: uppercase; 	
@@ -77,8 +84,10 @@
     	}
     	&--text {
     		color:$accent_2;
+	    	font-family:$stationary_condensed;
+	    	// font-size:4.0625rem;
 			font-size: 2rem;
-			font-weight: bold;
+			font-weight: 900;
 			text-transform: uppercase;    		
     	}
     }
