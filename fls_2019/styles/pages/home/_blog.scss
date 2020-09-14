@@ -7,15 +7,15 @@
 	&__date {
 		color:$accent_1;
 	    font-family:$stationary_condensed;
-		// font-size: 1.25rem;
-		font-size: .9rem;
+		font-size: 1.125rem;
+		// font-size: .9rem;
 		font-weight:600;
 		margin-top: 1.25rem;		
 	}
 	&__desc {
 	    font-family:$stationary;
-	    // font-size:1rem;
-	    font-size:.875rem;
+	    font-size:1rem;
+	    // font-size:.875rem;
 	}
 	&__footer {
 		display: flex;
@@ -58,8 +58,8 @@
 	    display: block;
 	    border: .125rem solid $accent_1;
 	    font-family:$stationary_condensed;
-	    // font-size: 1.125rem;
-	    font-size: .75rem;
+	    font-size: 1.125rem;
+	    // font-size: .75rem;
 	    font-weight: 600;
 	    margin-top: 1rem;
 	    padding: .25rem 1rem;
@@ -94,8 +94,8 @@
 	&__sub {
 	    text-transform: uppercase;
 	    font-family:$stationary_condensed;
-	    // font-size:1.9375rem;
-	    font-size:.875rem;
+	    font-size:1.9375rem;
+	   // font-size:.875rem;
 		a {
 		    font-weight: 600;
 		    color: $dark_gray;
@@ -103,8 +103,8 @@
 	}
 	&__title {
 	    font-family:$stationary_condensed;
-		// font-size: 1.875rem;
-		font-size: 1.1275rem;
+		font-size: 1.875rem;
+		// font-size: 1.1275rem;
 		font-weight: 600;
 		margin-top:.75rem;
 	}
