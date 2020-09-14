@@ -4018,10 +4018,10 @@ body.solutions-template div.testimonials {
       left: -1.15rem; } }
   .home .blogs__sub {
     text-transform: uppercase;
-    font-family: "Encode Sans Semi Condensed", sans-serif;
+    font-family: "Encode Sans Condensed", sans-serif;
     font-size: .875rem; }
     .home .blogs__sub a {
-      font-weight: 500;
+      font-weight: 600;
       color: #848587; }
   .home .blogs__title {
     font-family: "Encode Sans Semi Condensed", sans-serif;
