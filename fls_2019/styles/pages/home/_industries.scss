@@ -49,16 +49,17 @@
 	    padding: 0;
 	}
 	&__link {
+		align-items: flex-end;
 		background: $accent_6;
 		background: linear-gradient(180deg, rgba($accent_6,0) 56%, rgba($accent_6,.75) 100%);		
-		align-items: flex-end;
 		display: flex;
 		height: 90%;
 		left: 1rem;
+		margin: .0625rem .0625rem 0;
 		padding: 1rem 1rem .25rem .75rem;
 		position: absolute;
 		bottom: 1.1rem;
-		width: 92%;
+		width: 91%;
 		@include for-phone-only {
 			padding-bottom: .5rem;
 		}

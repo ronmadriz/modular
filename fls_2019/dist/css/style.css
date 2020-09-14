@@ -4188,21 +4188,22 @@ body.solutions-template div.testimonials {
     margin: 0;
     padding: 0; }
   .home .industries__link {
-    background: #000000;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(56%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.75)));
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 56%, rgba(0, 0, 0, 0.75) 100%);
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    background: #000000;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(56%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.75)));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 56%, rgba(0, 0, 0, 0.75) 100%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 90%;
     left: 1rem;
+    margin: .0625rem .0625rem 0;
     padding: 1rem 1rem .25rem .75rem;
     position: absolute;
     bottom: 1.1rem;
-    width: 92%; }
+    width: 91%; }
     @media (max-width: 786px) {
       .home .industries__link {
         padding-bottom: .5rem; } }
