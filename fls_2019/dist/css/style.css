@@ -3903,6 +3903,7 @@ body.solutions-template div.testimonials {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
+      letter-spacing: .031275rem;
       line-height: 1.25;
       margin-top: .5rem;
       text-align: center;
