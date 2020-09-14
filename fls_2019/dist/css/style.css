@@ -3757,16 +3757,17 @@ body.solutions-template div.testimonials {
             width: 13.1875rem; } }
     .home .hero__content--desc {
       color: #FFFFFF;
-      font-family: "Encode Sans", sans-serif;
       font-size: .875rem;
       text-align: center; }
       @media (min-width: 786px) {
         .home .hero__content--desc {
           text-align: left;
           width: 50%; } }
-      @media (min-width: 786px) {
-        .home .hero__content--desc p {
-          font-size: 1.25rem; } }
+      .home .hero__content--desc p {
+        font-family: "Encode Sans", sans-serif; }
+        @media (min-width: 786px) {
+          .home .hero__content--desc p {
+            font-size: 1.25rem; } }
     .home .hero__content--button {
       display: -webkit-box;
       display: -ms-flexbox;
