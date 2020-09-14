@@ -4204,8 +4204,9 @@ body.solutions-template div.testimonials {
     .home .industries__title--text {
       color: #FFFFFF;
       display: inline-block;
-      font-family: "Encode Sans", sans-serif;
+      font-family: "Encode Sans Condensed", sans-serif;
       font-size: 2rem;
+      font-weight: 800;
       letter-spacing: .0625rem;
       position: relative;
       text-align: center;
