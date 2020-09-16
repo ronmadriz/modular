@@ -71,7 +71,9 @@
     }
     &__title {
         display: flex;
+        font-family: $stationary_condensed;
         font-size: 1.125rem;
+        font-weight:600;
         margin-bottom: 1.25rem;
         padding: .5rem 1rem 0;
         width: 100%;
