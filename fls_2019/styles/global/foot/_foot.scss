@@ -7,6 +7,7 @@
     @include gradient-bars(12%);
 	&__boiler {
 		margin-bottom:2rem;
+		z-index: 1000;
 		&--info {
 			color: $alternate;
 			display: flex;
@@ -33,6 +34,7 @@
 	}
 	&__logo {
 		margin-top:2rem;
+		z-index: 1000;
 	}
 	.wrapper {
 		align-items: center;
