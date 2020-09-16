@@ -4156,7 +4156,7 @@ body.solutions-template div.testimonials {
   .home .industries:before {
     content: '';
     display: block;
-    height: 12%;
+    height: 18%;
     position: absolute;
     top: 0;
     width: 100%;
@@ -4166,7 +4166,7 @@ body.solutions-template div.testimonials {
   .home .industries:after {
     content: '';
     display: block;
-    height: 12%;
+    height: 18%;
     position: absolute;
     bottom: 0;
     width: 100%;

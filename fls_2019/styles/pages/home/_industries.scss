@@ -7,7 +7,7 @@
     box-shadow: 0 0.3725rem 0.8725rem rgba($accent_6,.35);
     padding-bottom: 2rem;
     margin-bottom: 3rem;
-    @include gradient-bars;
+    @include gradient-bars(18%);
 	&__content {
 		color:$alternate;
 	    display: flex;

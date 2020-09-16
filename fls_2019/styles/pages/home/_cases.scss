@@ -10,7 +10,7 @@
     @include for-tablet-up {
 		padding-bottom:9rem;
     }
-    @include gradient-bars;
+    @include gradient-bars(12%);
     &__button {
     	z-index: 2;
     }
