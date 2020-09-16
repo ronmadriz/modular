@@ -1,7 +1,9 @@
 .featured {
     &__button {
         align-items: baseline;
-        display:block;
+        display: flex;
+        padding: 1rem;        
+        width: 100%;
     }
     &__desc {
         flex-grow: 1;
