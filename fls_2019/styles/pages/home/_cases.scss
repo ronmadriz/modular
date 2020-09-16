@@ -10,16 +10,6 @@
     @include for-tablet-up {
 		padding-bottom:9rem;
     }
-    &:before {
-		background-color: $accent_1;
-		content: '';
-		display: block;
-		height: 100%;
-		opacity: .3;    	
-		position: absolute;
-		top: 0;
-		width: 100%;
-    }
     @include gradient-bars;
     &__button {
     	z-index: 2;

@@ -4046,15 +4046,6 @@ body.solutions-template div.testimonials {
     .home .cases {
       padding-bottom: 9rem; } }
   .home .cases:before {
-    background-color: #156CB3;
-    content: '';
-    display: block;
-    height: 100%;
-    opacity: .3;
-    position: absolute;
-    top: 0;
-    width: 100%; }
-  .home .cases:before {
     content: '';
     display: block;
     height: 12%;
