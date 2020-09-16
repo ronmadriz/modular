@@ -61,7 +61,10 @@
 		font-family: $stationary;
 		font-size: .875rem;		
 	}
-	&__link	 {}
+	&__link	 {
+		font-family: $stationary_condensed;
+		font-size:.875rem;
+	}
 	&__side {
 		display:flex;
 		flex-direction: column;

@@ -3159,6 +3159,10 @@ html .blog .featured__article {
   font-family: "Encode Sans", sans-serif;
   font-size: .875rem; }
 
+.blog__link {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-size: .875rem; }
+
 .blog__side {
   display: -webkit-box;
   display: -ms-flexbox;
