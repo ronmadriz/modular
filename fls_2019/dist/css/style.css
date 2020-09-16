@@ -1181,7 +1181,6 @@ html body main #flsCarousel {
     width: 100%; }
 
 .featured__desc {
-  color: #848587;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
