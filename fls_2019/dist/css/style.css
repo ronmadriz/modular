@@ -3187,7 +3187,7 @@ html .blog .featured__article {
     text-transform: uppercase; }
   .blog__side .categories__item {
     font-family: "Encode Sans", sans-serif; }
-  .blog__side .wp_rss_retriever_content {
+  .blog__side .wp_rss_retriever_container {
     font-family: "Encode Sans", sans-serif; }
   .blog__side .wp_rss_retriever_list {
     padding-left: 0;
