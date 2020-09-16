@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    // filter: sepia(600%) hue-rotate(180deg) saturate(900%);
+    @include gradient-bars(12%);
 	&__boiler {
 		margin-bottom:2rem;
 		&--info {
