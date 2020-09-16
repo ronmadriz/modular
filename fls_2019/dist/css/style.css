@@ -1176,6 +1176,9 @@ html body main #flsCarousel {
   display: flex;
   padding: 1rem;
   width: 100%; }
+  .featured__button--link {
+    display: block;
+    width: 100%; }
 
 .featured__desc {
   -webkit-box-flex: 1;
