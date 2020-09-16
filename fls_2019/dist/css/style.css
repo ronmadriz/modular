@@ -1221,7 +1221,7 @@ html body main #flsCarousel {
     overflow: hidden; }
 
 .featured__item {
-  border: 0.625rem solid #E3ECE3;
+  border: 0.0625rem solid #E3ECE3;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
