@@ -83,6 +83,11 @@
 		    margin-bottom: .5rem;
 		    text-transform: uppercase;			
 		}
+		.categories {
+			&__item {
+				font-family:$stationary;
+			}
+		}
 		.wp_rss_retriever_list {
 		    padding-left: 0;
 		    font-size: .875rem;

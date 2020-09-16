@@ -3185,6 +3185,8 @@ html .blog .featured__article {
     margin-top: .25rem;
     margin-bottom: .5rem;
     text-transform: uppercase; }
+  .blog__side .categories__item {
+    font-family: "Encode Sans", sans-serif; }
   .blog__side .wp_rss_retriever_list {
     padding-left: 0;
     font-size: .875rem; }
