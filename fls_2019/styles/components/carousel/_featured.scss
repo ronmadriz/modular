@@ -70,9 +70,11 @@
     &__nav {
     }
     &__title {
-        display: block;
-        font-size:1.125rem;
+        display: flex;
+        font-size: 1.125rem;
         margin-bottom: 1.25rem;
+        padding: .5rem 1rem 0;
+        width: 100%;
     }
     .wrapper {
         flex-direction: column;

@@ -1267,9 +1267,13 @@ html body main #flsCarousel {
     transition: all 0.35s ease-in-out; }
 
 .featured__title {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 1.125rem;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 1.25rem;
+  padding: .5rem 1rem 0;
+  width: 100%; }
 
 .featured .wrapper {
   -webkit-box-orient: vertical;
