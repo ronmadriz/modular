@@ -3180,6 +3180,7 @@ html .blog .featured__article {
   .blog__side--title {
     border-bottom: 0.0625rem solid #156CB3;
     color: #156CB3;
+    font-family: "Encode Sans Condensed", sans-serif;
     font-size: 1rem;
     font-weight: 600;
     margin-top: .25rem;
