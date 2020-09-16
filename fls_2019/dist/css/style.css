@@ -3129,6 +3129,7 @@ html .blog .featured__article {
 
 .blog__title {
   color: #404040;
+  font-family: "Encode Sans Condensed", sans-serif;
   margin-top: 0;
   margin-bottom: .5rem; }
 
@@ -3151,6 +3152,10 @@ html .blog .featured__article {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start; }
+
+.blog__desc {
+  font-family: "Encode Sans", sans-serif;
+  font-size: .875rem; }
 
 .blog__side {
   display: -webkit-box;
