@@ -1202,6 +1202,7 @@ html body main #flsCarousel {
   width: 100%; }
   .featured__header--text {
     display: inline-block;
+    font-family: "Encode Sans Condensed", sans-serif;
     font-size: 2rem;
     font-weight: 700;
     position: relative;
