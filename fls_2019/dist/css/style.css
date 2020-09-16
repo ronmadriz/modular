@@ -1184,6 +1184,7 @@ html body main #flsCarousel {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  font-family: "Encode Sans", sans-serif;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem; }
