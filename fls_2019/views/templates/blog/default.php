@@ -28,7 +28,7 @@ if ($blog__query->have_posts()) {
 	wp_reset_postdata();
 	global $wp_query;
 	if ($wp_query->max_num_pages > 1) {
-		echo '<a class="load__more misha_loadmore">More posts</a>';
+		echo '<a class="load__more misha_loadmore">Load More Stories</a>';
 	}
 	echo '</div>'.PHP_EOL;
 }
