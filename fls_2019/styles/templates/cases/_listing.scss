@@ -56,14 +56,14 @@
 			padding:.5rem;
 			width: 33.333%;		
 		}
+		> .studies__link {
+			overflow:hidden;
+		}
 	}
 	&__link {
 		display:block;
 		@include for-phone-up {
 			color:$alternate;
-		}
-		> .studies__link {
-			overflow:hidden;
 		}
 	}
 	&__results {

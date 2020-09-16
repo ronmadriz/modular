@@ -3282,14 +3282,14 @@ html .blog .featured__article {
     .studies__item {
       padding: .5rem;
       width: 33.333%; } }
+  .studies__item > .studies__link {
+    overflow: hidden; }
 
 .studies__link {
   display: block; }
   @media (min-width: 786px) {
     .studies__link {
       color: #FFFFFF; } }
-  .studies__link > .studies__link {
-    overflow: hidden; }
 
 .studies__results {
   display: -webkit-box;
