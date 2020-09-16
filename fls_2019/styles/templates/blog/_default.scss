@@ -88,15 +88,25 @@
 				font-family:$stationary;
 			}
 		}
-		.wp_rss_retriever_list {
-		    padding-left: 0;
-		    font-size: .875rem;
-		}
-		.wp_rss_retriever_metadata {
-		    display: none;
-		}
-		.wp_rss_retriever_readmore {
-		    display: none;
+		.wp_rss_retriever {
+			&_content {
+				font-family:$stationary;
+			}
+			&_list {
+			    padding-left: 0;
+			    font-size: .875rem;
+			}
+			&_metadata {
+			    display: none;
+			}
+			&_readmore {
+			    display: none;
+			}
+			&_title {
+				font-family: $stationary_condensed;
+				font-size: .875rem;
+				font-weight: 600;
+			}
 		}
 	}
 }
