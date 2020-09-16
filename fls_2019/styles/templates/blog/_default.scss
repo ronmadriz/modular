@@ -44,6 +44,8 @@
 	&__date {}
 	&__meta {
 		display: block;
+		font-family: $stationary_condensed;
+		font-size: .875rem;		
 		margin-bottom: .9375rem;		
 	}
 	&__author {

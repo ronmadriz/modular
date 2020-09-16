@@ -3135,6 +3135,8 @@ html .blog .featured__article {
 
 .blog__meta {
   display: block;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-size: .875rem;
   margin-bottom: .9375rem; }
 
 .blog__author {
