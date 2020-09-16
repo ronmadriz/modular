@@ -4053,6 +4053,14 @@ body.solutions-template div.testimonials {
     position: absolute;
     top: 0;
     width: 100%; }
+  .home .cases:before {
+    background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(25%, rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to bottom, black 0%, rgba(255, 255, 255, 0.75) 25%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=0 ); }
+  .home .cases:after {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(25%, rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to top, black 0%, rgba(255, 255, 255, 0.75) 25%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 ); }
   .home .cases__button {
     z-index: 2; }
   .home .cases__carousel {
