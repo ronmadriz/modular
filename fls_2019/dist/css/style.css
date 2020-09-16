@@ -3288,6 +3288,8 @@ html .blog .featured__article {
   @media (min-width: 786px) {
     .studies__link {
       color: #FFFFFF; } }
+  .studies__link > .studies__link {
+    overflow: hidden; }
 
 .studies__results {
   display: -webkit-box;

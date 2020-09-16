@@ -62,6 +62,9 @@
 		@include for-phone-up {
 			color:$alternate;
 		}
+		> .studies__link {
+			overflow:hidden;
+		}
 	}
 	&__results {
 		display: flex;
