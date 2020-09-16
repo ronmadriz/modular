@@ -10,9 +10,10 @@
         }        
     }
     &__desc {
+        color:$dark_gray;
         flex-grow: 1;
         font-family: $stationary;
-        font-size: .9rem;
+        font-size: .9325rem;
         margin-bottom: 1.5rem;
         padding-left: 1rem;
         padding-right: 1rem;        

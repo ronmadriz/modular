@@ -1181,11 +1181,12 @@ html body main #flsCarousel {
     width: 100%; }
 
 .featured__desc {
+  color: #848587;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   font-family: "Encode Sans", sans-serif;
-  font-size: .9rem;
+  font-size: .9325rem;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem; }
