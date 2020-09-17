@@ -54,9 +54,6 @@
         @include for-phone-up {
             width:32%;        
         }
-        @include for-tv-up {
-            width:25%;
-        }
     }
     &__list {
         display:flex;
