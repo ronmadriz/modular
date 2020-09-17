@@ -41,7 +41,7 @@ if (have_rows('hm_hero_solutions')) {
 		$hm_hero_icon          = get_sub_field('hm_hero_icon');
 		$hm_hero_icon_title    = get_sub_field('hm_hero_icon_title');
 		$hm_hero_icon_link_raw = get_sub_field('hm_hero_icon_link');
-		$hm_hero_icon_link_raw = $hm_hero_icon_link_raw['url'];
+		$hm_hero_icon_link     = $hm_hero_icon_link_raw['url'];
 		echo '<li class="hero__services--item">';
 		echo (!empty($hm_hero_icon_link)?'<a href="'.$hm_hero_icon_link.'" class="hero__services--link">':'');
 		echo (!empty($hm_hero_icon)?'<i class="hero__services--icon">'.file_get_contents(get_template_directory().'/sprites/'.$hm_hero_icon.'.svg').'</i>':'');
