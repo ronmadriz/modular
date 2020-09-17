@@ -1243,12 +1243,12 @@ html body main #flsCarousel {
   margin-left: .9375rem;
   margin-right: .9375rem;
   width: 100%; }
-  @media (min-width: 992px) {
-    .featured__item {
-      width: 32%; } }
   @media (min-width: 786px) {
     .featured__item {
       width: 47.75%; } }
+  @media (min-width: 992px) {
+    .featured__item {
+      width: 32%; } }
 
 .featured__list {
   display: -webkit-box;
