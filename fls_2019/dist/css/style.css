@@ -3301,6 +3301,7 @@ html .blog .featured__article {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  min-height: 19rem;
   padding-bottom: 5vh; }
   @media (min-width: 786px) {
     .studies__results {
