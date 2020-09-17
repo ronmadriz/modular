@@ -1248,7 +1248,7 @@ html body main #flsCarousel {
       width: 32%; } }
   @media (min-width: 786px) {
     .featured__item {
-      width: 47%; } }
+      width: 47.75%; } }
 
 .featured__list {
   display: -webkit-box;
@@ -2415,9 +2415,9 @@ svg .region path {
 @media (max-width: 992px) {
   .menus__list {
     display: none;
-    height: 85vh;
+    height: 86.65vh;
     overflow-y: scroll;
-    top: 14.17vh; }
+    top: 13.35vh; }
     .menus__list--active {
       display: block; }
   .menus__child {

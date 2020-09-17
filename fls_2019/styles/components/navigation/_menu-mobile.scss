@@ -2,9 +2,9 @@
 	@include for-tablet-down {
 		&__list {
 			display:none;
-			height: 85vh;
+			height: 86.65vh;
 			overflow-y: scroll;
-			top: 14.17vh;
+			top: 13.35vh;
 			&--active {
 				display:block;
 			}
