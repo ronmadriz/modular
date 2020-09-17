@@ -3260,6 +3260,9 @@ html .blog .featured__article {
 .studies__image {
   margin-bottom: .75rem;
   width: 100%; }
+  .studies__image--link {
+    display: block;
+    overflow: hidden; }
 
 .studies__item {
   display: -webkit-box;
@@ -3279,8 +3282,6 @@ html .blog .featured__article {
     .studies__item {
       padding: .5rem;
       width: 33.333%; } }
-  .studies__item > .studies__link {
-    overflow: hidden; }
 
 .studies__link {
   display: block; }

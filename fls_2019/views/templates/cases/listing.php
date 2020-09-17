@@ -77,7 +77,7 @@ if ($studies_query) {
 		}
 		echo '">'.PHP_EOL;
 		// the_post_thumbnail('full', array('class' => 'studies__image'));
-		echo '<a class="studies__link" href="'.get_permalink().'"><img alt="'.$studies__title.'" class="studies__image" src="'.$studies__image.'"></a>'.PHP_EOL;
+		echo '<a class="studies__image--link" href="'.get_permalink().'"><img alt="'.$studies__title.'" class="studies__image" src="'.$studies__image.'"></a>'.PHP_EOL;
 		echo '<figcaption class="studies__text"><a class="studies__link" href="'.get_permalink().'">'.(!empty($studies__title)?$studies__title:get_the_title()).'</a></figcaption>'.PHP_EOL;
 		echo '</figure>'.PHP_EOL;
 	}
