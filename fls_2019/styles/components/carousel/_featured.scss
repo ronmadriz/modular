@@ -69,6 +69,9 @@
         &--transition {
             transition: all 0.35s ease-in-out;            
         }
+        @include for-tablet-down {
+            width:97.5%;
+        }
     }
     &__nav {
     }

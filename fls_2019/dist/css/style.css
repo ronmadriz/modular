@@ -1268,6 +1268,9 @@ html body main #flsCarousel {
   .featured__list--transition {
     -webkit-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out; }
+  @media (max-width: 992px) {
+    .featured__list {
+      width: 97.5%; } }
 
 .featured__title {
   display: -webkit-box;
