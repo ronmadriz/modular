@@ -3281,6 +3281,7 @@ html .blog .featured__article {
   @media (min-width: 786px) {
     .studies__item {
       padding: .5rem;
+      max-height: 285px;
       width: 33.333%; } }
 
 .studies__link {
@@ -3308,7 +3309,7 @@ html .blog .featured__article {
   font-size: .8375rem; }
   @media (min-width: 786px) {
     .studies__text {
-      bottom: 1rem;
+      bottom: .25rem;
       font-size: 1rem;
       max-width: 90%;
       padding: .5rem;

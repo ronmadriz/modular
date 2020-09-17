@@ -58,6 +58,7 @@
 		width:50%;//1rem
 		@include for-phone-up {
 			padding:.5rem;
+		    max-height: 285px;
 			width: 33.333%;		
 		}
 	}
@@ -72,14 +73,14 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		padding-bottom:5vh;
-		@include for-phone-up{
+		@include for-phone-up {
 			padding-bottom:10vh;
 		}
 	}
 	&__text {
 		font-size: .8375rem;
 		@include for-phone-up {
-			bottom: 1rem;
+			bottom: .25rem;
 			font-size:1rem;
 			max-width: 90%;
 			padding: .5rem;
