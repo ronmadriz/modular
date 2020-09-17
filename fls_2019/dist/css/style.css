@@ -1260,7 +1260,7 @@ html body main #flsCarousel {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 0;
+  padding: 0 .9375rem;
   margin: 0;
   -webkit-transition: 1s ease all;
   transition: 1s ease all;
