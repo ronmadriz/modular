@@ -51,8 +51,11 @@
         margin-left:.9375rem;
         margin-right:.9375rem;
         width:100%;
+        @include for-tablet-up {
+            width:32%;
+        }
         @include for-phone-up {
-            width:32%;        
+            width:47%;        
         }
     }
     &__list {
