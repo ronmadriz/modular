@@ -1055,11 +1055,11 @@ a:not([href]):not([tabindex]).load__more {
 .carousel__nav {
   width: 2rem; }
   .carousel__nav--next {
-    right: -2rem;
+    right: -1rem;
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg); }
   .carousel__nav--prev {
-    left: -2rem;
+    left: -1rem;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
 

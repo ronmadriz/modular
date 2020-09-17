@@ -2,11 +2,11 @@
 	&__nav {
 		width:2rem;
     	&--next {
-    		right:-2rem;
+    		right:-1rem;
 			transform: rotate(270deg);    		
     	}
 		&--prev {
-    		left:-2rem;
+    		left:-1rem;
 		    transform: rotate(90deg);
 		}    	
 	}
