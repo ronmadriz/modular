@@ -3274,6 +3274,7 @@ html .blog .featured__article {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: .0625rem;
   overflow: hidden;
   padding: .25rem;
   position: relative;
