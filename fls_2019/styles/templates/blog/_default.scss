@@ -21,6 +21,8 @@
 		display: flex;
 	    flex-direction: column;
 	    @include for-phone-up {
+			height: 177px;
+			overflow: hidden;	    	
 	    	width: 40%;
 	    }
 		&--img {

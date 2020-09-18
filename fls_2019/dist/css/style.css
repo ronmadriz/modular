@@ -3126,6 +3126,8 @@ html .blog .featured__article {
           flex-direction: column; }
   @media (min-width: 786px) {
     .blog__thumb {
+      height: 177px;
+      overflow: hidden;
       width: 40%; } }
   .blog__thumb--img {
     width: 100%; }
