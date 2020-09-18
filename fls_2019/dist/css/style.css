@@ -3329,11 +3329,10 @@ html .blog .featured__article {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-height: 19rem;
   padding-bottom: 5vh; }
   @media (min-width: 786px) {
     .studies__results {
-      padding-bottom: 10vh; } }
+      padding-bottom: 3vh; } }
 
 .studies__text {
   font-size: .8375rem; }
