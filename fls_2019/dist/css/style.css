@@ -3306,8 +3306,8 @@ html .blog .featured__article {
     .studies__link {
       color: #FFFFFF; } }
   .studies__link:before {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(56%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.75)));
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 56%, rgba(0, 0, 0, 0.75) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(56%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.95)));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 56%, rgba(0, 0, 0, 0.95) 100%);
     content: '';
     display: block;
     height: 100%;

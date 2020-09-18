@@ -76,7 +76,7 @@
 @mixin gradient-bg {
 	position:relative;
 	&:before {
-		background:linear-gradient(180deg, rgba($accent_6,0) 56%, rgba($accent_6,.75) 100%);
+		background:linear-gradient(180deg, rgba($accent_6,0) 56%, rgba($accent_6,.95) 100%);
 		content:'';
 		display:block;
 		height:100%;
