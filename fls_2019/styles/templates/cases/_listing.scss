@@ -45,13 +45,13 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		margin-bottom:.0625rem;
+	    max-height: 285px;
 		overflow: hidden;
 		padding: .25rem;
 		position: relative;
 		width:50%;//1rem
 		@include for-phone-up {
 			padding:.5rem;
-		    max-height: 285px;
 			width: 33.333%;		
 		}
 	}

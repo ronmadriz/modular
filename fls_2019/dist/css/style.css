@@ -3282,6 +3282,7 @@ html .blog .featured__article {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: .0625rem;
+  max-height: 285px;
   overflow: hidden;
   padding: .25rem;
   position: relative;
@@ -3289,7 +3290,6 @@ html .blog .featured__article {
   @media (min-width: 786px) {
     .studies__item {
       padding: .5rem;
-      max-height: 285px;
       width: 33.333%; } }
 
 .studies__link {
