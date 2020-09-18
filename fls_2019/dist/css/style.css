@@ -3282,7 +3282,7 @@ html .blog .featured__article {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: .0625rem;
-  max-height: 285px;
+  height: 285px;
   overflow: hidden;
   padding: .25rem;
   position: relative;
@@ -3297,7 +3297,7 @@ html .blog .featured__article {
   background-repeat: no-repeat;
   background-size: 100%;
   display: block;
-  height: 100%;
+  height: 225px;
   -webkit-transition: .7s ease all;
   transition: .7s ease all;
   width: 100%;
