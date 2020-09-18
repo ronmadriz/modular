@@ -3271,13 +3271,6 @@ html .blog .featured__article {
       -webkit-transform: translateX(-6px);
               transform: translateX(-6px); } }
 
-.studies__image {
-  margin-bottom: .75rem;
-  width: 100%; }
-  .studies__image--link {
-    display: block;
-    overflow: hidden; }
-
 .studies__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3300,10 +3293,31 @@ html .blog .featured__article {
       width: 33.333%; } }
 
 .studies__link {
-  display: block; }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+  height: 100%;
+  -webkit-transition: .7s ease all;
+  transition: .7s ease all;
+  width: 100%;
+  position: relative; }
   @media (min-width: 786px) {
     .studies__link {
       color: #FFFFFF; } }
+  .studies__link:before {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(56%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.75)));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 56%, rgba(0, 0, 0, 0.75) 100%);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .studies__link:hover {
+    background-size: 110%;
+    color: #FFFFFF; }
 
 .studies__results {
   display: -webkit-box;

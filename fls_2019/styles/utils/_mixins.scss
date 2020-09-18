@@ -73,3 +73,16 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );		
 	}
 }
+@mixin gradient-bg {
+	position:relative;
+	&:before {
+		background:linear-gradient(180deg, rgba($accent_6,0) 56%, rgba($accent_6,.75) 100%);
+		content:'';
+		display:block;
+		height:100%;
+		left:0;
+		position:absolute;
+		top:0;
+		width:100%;
+	}
+}

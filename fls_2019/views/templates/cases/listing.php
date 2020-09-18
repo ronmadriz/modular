@@ -69,7 +69,7 @@ if ($studies_query) {
 		$studies__summary = get_field('sidebar__summary');
 		$summary          = get_field('summary');
 		$studies_cat      = get_the_terms($post->ID, array('solution_type', 'industry'));
-		echo '<figure class="studies__item';
+		echo '<span class="studies__item';
 		if ($studies_cat) {
 			foreach ($studies_cat as $study_cat) {
 				echo ' '.$study_cat->slug;
@@ -77,9 +77,9 @@ if ($studies_query) {
 		}
 		echo '">'.PHP_EOL;
 		// the_post_thumbnail('full', array('class' => 'studies__image'));
-		echo '<a class="studies__image--link" href="'.get_permalink().'"><img alt="'.$studies__title.'" class="studies__image" src="'.$studies__image.'"></a>'.PHP_EOL;
-		echo '<figcaption class="studies__text"><a class="studies__link" href="'.get_permalink().'">'.(!empty($studies__title)?$studies__title:get_the_title()).'</a></figcaption>'.PHP_EOL;
-		echo '</figure>'.PHP_EOL;
+		echo '<a class="studies__image--link" href="'.get_permalink().'" title="'.$studies__title.'" style="background-image: url('.$studies__image.');">'.PHP_EOL;
+		echo '<span class="studies__text">'.(!empty($studies__title)?$studies__title:get_the_title()).'</span>'.PHP_EOL;
+		echo '</span>'.PHP_EOL;
 	}
 	wp_reset_postdata();
 	echo '</div>'.PHP_EOL;

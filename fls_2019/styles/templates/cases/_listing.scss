@@ -40,14 +40,6 @@
 			transform: translateX(-6px);
 		}
 	}
-	&__image {
-	    margin-bottom: .75rem;
-	    width: 100%;
-	    &--link {
-			display:block;
-			overflow:hidden;
-	    }
-	}
 	&__item {
 		display: flex;
 		flex-direction: column;
@@ -64,8 +56,19 @@
 		}
 	}
 	&__link {
-		display:block;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		display: block;
+		height: 100%;
+		transition:.7s ease all;
+		width: 100%;
 		@include for-phone-up {
+			color:$alternate;
+		}
+		@include gradient-bg;
+		&:hover {
+			background-size: 110%;
 			color:$alternate;
 		}
 	}
