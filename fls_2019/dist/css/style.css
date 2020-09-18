@@ -4321,8 +4321,8 @@ body.solutions-template div.testimonials {
         -ms-flex-align: end;
             align-items: flex-end;
     background: #000000;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(56%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.75)));
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 56%, rgba(0, 0, 0, 0.75) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(56%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.95)));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 56%, rgba(0, 0, 0, 0.95) 100%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
