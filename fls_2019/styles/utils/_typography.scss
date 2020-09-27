@@ -13,7 +13,7 @@ $stationary_condensed: 'Encode Sans Condensed', sans-serif;
 $stationary_semicondensed: 'Encode Sans Semi Condensed', sans-serif;
 $tertiary:'Oswald', helvetica, sans-serif;
 
-$primary:'Open Sans', arial, helvetica, sans-serif;
+$primary:$stationary_semicondensed;
 $secondary:$stationary_condensed;
 
 body {

@@ -13,7 +13,7 @@ $stationary_condensedblack:'Encode Sans CondensedBlack', sans-serif;
 body {
   font-size: 16px; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
-    font-family: "Open Sans", arial, helvetica, sans-serif; }
+    font-family: "Encode Sans Semi Condensed", sans-serif; }
   body h1 {
     font-family: "Oswald", helvetica, sans-serif;
     font-size: 1.4375rem;
@@ -26,7 +26,7 @@ body {
     margin-bottom: 1rem; }
   body h2 {
     color: #156CB3;
-    font-family: "Open Sans", arial, helvetica, sans-serif;
+    font-family: "Encode Sans Semi Condensed", sans-serif;
     font-weight: 600;
     font-size: 1.375rem; }
   body p, body li, body dd, body dt, body blockquote, body code, body span, body div, body section, body small, body address {
@@ -41,7 +41,7 @@ body {
     color: #156CB3; }
   body main h4 {
     color: #156CB3;
-    font-family: "Open Sans", arial, helvetica, sans-serif;
+    font-family: "Encode Sans Semi Condensed", sans-serif;
     font-size: 1.25rem; }
   body main p {
     margin-bottom: 1.75rem; }
@@ -172,7 +172,7 @@ body main section#banner {
     padding-top: 1rem; }
     body main section#banner div.page_title h1 {
       color: #FFFFFF;
-      font-family: "Open Sans", arial, helvetica, sans-serif;
+      font-family: "Encode Sans Semi Condensed", sans-serif;
       font-size: 1.8125rem;
       font-weight: bold; }
       @media (min-width: 786px) {
@@ -285,7 +285,7 @@ body footer section#foot_info {
     text-align: left;
     font-size: 1.03rem;
     margin-bottom: 1.25rem;
-    font-family: "Open Sans", arial, helvetica, sans-serif;
+    font-family: "Encode Sans Semi Condensed", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.04em; }
@@ -2646,7 +2646,7 @@ body header nav.navbar {
       -webkit-transform: rotate(0);
               transform: rotate(0); }
   body header nav.navbar ul > li > a {
-    font-family: "Open Sans", arial, helvetica, sans-serif;
+    font-family: "Encode Sans Semi Condensed", sans-serif;
     color: #404040;
     text-transform: uppercase;
     font-weight: bold;
@@ -2688,7 +2688,7 @@ body header nav.navbar {
       body header nav.navbar .navbar-collapse ul.navbar-nav > li:first-of-type {
         background-color: #156CB3; }
         body header nav.navbar .navbar-collapse ul.navbar-nav > li:first-of-type li {
-          font-family: "Open Sans", arial, helvetica, sans-serif;
+          font-family: "Encode Sans Semi Condensed", sans-serif;
           text-transfform: uppercase;
           -webkit-font-smoothing: subpixel-antialiased;
           border-bottom: 1px solid #FFFFFF; }
@@ -2757,7 +2757,7 @@ body header nav.navbar {
           width: 20vw;
           background-color: #156CB3; }
           body header nav.navbar ul.navbar-nav > li:first-of-type li {
-            font-family: "Open Sans", arial, helvetica, sans-serif;
+            font-family: "Encode Sans Semi Condensed", sans-serif;
             text-transfform: uppercase;
             -webkit-font-smoothing: subpixel-antialiased;
             border-bottom: 1px solid #FFFFFF; }
@@ -3544,7 +3544,7 @@ html body.solutions-template-solutions-fluid main section#literature, html body.
       font-size: 1.25rem;
       margin-bottom: .5rem;
       font-weight: 700;
-      font-family: "Open Sans", arial, helvetica, sans-serif;
+      font-family: "Encode Sans Semi Condensed", sans-serif;
       line-height: 1.2;
       color: #404040; }
       html body.solutions-template-solutions-fluid main section#literature ul.literature_list li h3 a, html body.industries-template-single-industries-fluid main section#literature ul.literature_list li h3 a, html body.page-template-fall-protection-101 main section#literature ul.literature_list li h3 a, html body.page-template-sample-fall-protection-plan main section#literature ul.literature_list li h3 a, html body.industries-template-single-all-industries main section#literature ul.literature_list li h3 a, html body.solutions-template-single-all-solutions main section#literature ul.literature_list li h3 a, html body.page-template-fluid main section#literature ul.literature_list li h3 a, html body.single-post main section#literature ul.literature_list li h3 a {
