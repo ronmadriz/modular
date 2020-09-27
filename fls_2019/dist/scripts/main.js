@@ -126,7 +126,9 @@ j(document).ready(function(){
       ]          
     });
 });
-
+j('#cases__carousel').carousel({
+  wrap: false
+});
 // Case Studies
 j(function() {
     j('#solution_filter, #industry_filter').change(function(){
