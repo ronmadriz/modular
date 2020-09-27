@@ -30,11 +30,11 @@ body {
     font-weight: 600;
     font-size: 1.375rem; }
   body p, body li, body dd, body dt, body blockquote, body code, body span, body div, body section, body small, body address {
-    font-family: Helvetica, Arial, sans-serif; }
+    font-family: "Encode Sans Condensed", sans-serif; }
   body p, body li, body td, body dd {
     font-size: 90%; }
   body main h3 {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Encode Sans Condensed", sans-serif;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-size: 1.35rem;

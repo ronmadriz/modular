@@ -8,12 +8,13 @@ $stationary_condensedextrabold:'Encode Sans CondensedExtraBold', sans-serif;
 $stationary_condensedblack:'Encode Sans CondensedBlack', sans-serif;
 */
 $fontawesome:"Font Awesome 5 Free";
-$primary:'Open Sans', arial, helvetica, sans-serif;
-$secondary:Helvetica,Arial,sans-serif;
 $stationary:'Encode Sans', sans-serif;
 $stationary_condensed: 'Encode Sans Condensed', sans-serif;
 $stationary_semicondensed: 'Encode Sans Semi Condensed', sans-serif;
 $tertiary:'Oswald', helvetica, sans-serif;
+
+$primary:'Open Sans', arial, helvetica, sans-serif;
+$secondary:$stationary_condensed;
 
 body {
     font-size:16px;
