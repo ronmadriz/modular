@@ -112,23 +112,6 @@ html {
 							}
 						}
 					}
-					&#banner {
-						div {
-							&.w-image {
-								@media(min-width:1600px){
-								    min-height: 600px;
-								    margin-bottom:0;
-								}								
-							}
-							&.page_title {
-								margin-bottom:0;
-								&::after{
-									height:0;
-									width:0;
-								}
-							}
-						}
-					}
 					&#gallery {
 						padding:2rem 0 0;
 						@media(min-width:768px) {

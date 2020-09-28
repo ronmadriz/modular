@@ -3460,17 +3460,6 @@ html body.solutions-template-solutions-fluid main section#icons, html body.indus
   html body.solutions-template-solutions-fluid main section#icons div.fl_content p, html body.industries-template-single-industries-fluid main section#icons div.fl_content p, html body.page-template-fall-protection-101 main section#icons div.fl_content p, html body.page-template-sample-fall-protection-plan main section#icons div.fl_content p, html body.industries-template-single-all-industries main section#icons div.fl_content p, html body.solutions-template-single-all-solutions main section#icons div.fl_content p, html body.page-template-fluid main section#icons div.fl_content p, html body.single-post main section#icons div.fl_content p {
     margin-bottom: 0; }
 
-@media (min-width: 1600px) {
-  html body.solutions-template-solutions-fluid main section#banner div.w-image, html body.industries-template-single-industries-fluid main section#banner div.w-image, html body.page-template-fall-protection-101 main section#banner div.w-image, html body.page-template-sample-fall-protection-plan main section#banner div.w-image, html body.industries-template-single-all-industries main section#banner div.w-image, html body.solutions-template-single-all-solutions main section#banner div.w-image, html body.page-template-fluid main section#banner div.w-image, html body.single-post main section#banner div.w-image {
-    min-height: 600px;
-    margin-bottom: 0; } }
-
-html body.solutions-template-solutions-fluid main section#banner div.page_title, html body.industries-template-single-industries-fluid main section#banner div.page_title, html body.page-template-fall-protection-101 main section#banner div.page_title, html body.page-template-sample-fall-protection-plan main section#banner div.page_title, html body.industries-template-single-all-industries main section#banner div.page_title, html body.solutions-template-single-all-solutions main section#banner div.page_title, html body.page-template-fluid main section#banner div.page_title, html body.single-post main section#banner div.page_title {
-  margin-bottom: 0; }
-  html body.solutions-template-solutions-fluid main section#banner div.page_title::after, html body.industries-template-single-industries-fluid main section#banner div.page_title::after, html body.page-template-fall-protection-101 main section#banner div.page_title::after, html body.page-template-sample-fall-protection-plan main section#banner div.page_title::after, html body.industries-template-single-all-industries main section#banner div.page_title::after, html body.solutions-template-single-all-solutions main section#banner div.page_title::after, html body.page-template-fluid main section#banner div.page_title::after, html body.single-post main section#banner div.page_title::after {
-    height: 0;
-    width: 0; }
-
 html body.solutions-template-solutions-fluid main section#gallery, html body.industries-template-single-industries-fluid main section#gallery, html body.page-template-fall-protection-101 main section#gallery, html body.page-template-sample-fall-protection-plan main section#gallery, html body.industries-template-single-all-industries main section#gallery, html body.solutions-template-single-all-solutions main section#gallery, html body.page-template-fluid main section#gallery, html body.single-post main section#gallery {
   padding: 2rem 0 0; }
   @media (min-width: 768px) {
