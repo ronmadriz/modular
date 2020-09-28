@@ -224,13 +224,10 @@
 		&--1 {
 			.menus {
 				&__sub {
-					@media (min-width:1908px){
+					@media (min-width:1340px){
 					    margin-left: -100%;
 					}
-					@media (min-width:1360px) and (max-width:1433px){
-					    margin-left: -68%;
-					}
-					@media (min-width:1300px) and (max-width:1360px){
+					@media (min-width:1300px) and (max-width:1340px){
 					    margin-left: -65%;
 					}
 					@media (max-width:1100px) and (min-width:1060px){
