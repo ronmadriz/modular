@@ -11,7 +11,7 @@ the_breadcrumb();
 // MAIN CONTENT
 if (have_posts()) {
 	echo '<section id="main-content">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	while (have_posts()) {
 		the_post();
@@ -30,7 +30,7 @@ $solutions_gallery = get_field('solutions_gallery');
 if ($solutions_gallery['gallery_pics']) {
 	echo '<section id="gallery">'.PHP_EOL;
 	echo '<div class="container-fluid">'.PHP_EOL;
-	echo '<div class="row justify-content-center mb-md-3"><div class="content text-md-center col-12 col-md-9">'.PHP_EOL;
+	echo '<div class="content text-md-center col-12 col-md-9">'.PHP_EOL;
 	while (have_rows('solutions_gallery')) {
 		the_row();
 		$gallery_pics = get_sub_field('gallery_pics');
@@ -52,7 +52,7 @@ if ($solutions_gallery['gallery_pics']) {
 $quotes = get_field('quotes');
 if (have_rows('quotes')) {
 	echo '<section id="testimonial">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row justify-content-center">'.PHP_EOL;
 	while (have_rows('quotes')) {
 		the_row();
@@ -74,7 +74,7 @@ if (have_rows('quotes')) {
 
 // Ugly CTA formerly cta_blue
 
-echo (!empty(get_the_content())?'<section id="cta_speak"><div class="container-fluid"><div class="row"><div class="col-12"><h2 class="text-center text-uppercase"><a href="#cta_blue">Speak with a fall protection specialist <i class="im im-angle-right-circle"></i></a></h2></div></div></div></section>'.PHP_EOL:'');
+echo (!empty(get_the_content())?'<section id="cta_speak"><div class="wrapper"><div class="row"><div class="col-12"><h2 class="text-center text-uppercase"><a href="#cta_blue">Speak with a fall protection specialist <i class="im im-angle-right-circle"></i></a></h2></div></div></div></section>'.PHP_EOL:'');
 
 @include 'views/components/image-callouts.php';
 @include 'views/layouts/icons.php';
@@ -83,7 +83,7 @@ echo (!empty(get_the_content())?'<section id="cta_speak"><div class="container-f
 
 if (have_rows('additional_content')) {
 	echo '<section id="additional_content" class="additional_content">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_rows('additional_content')) {
 		the_row();
 		$ac_title     = get_sub_field('title');
@@ -101,7 +101,7 @@ if (have_rows('additional_content')) {
 $download_literature_title = get_field('download_literature_title');
 if (have_rows('download_literature')) {
 	echo '<section id="literature">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="section__title col-12"><h2>'.(!empty($download_literature_title)?$download_literature_title:'download literature').'</h2></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
@@ -136,7 +136,7 @@ if (have_rows('download_literature')) {
 $subnav = get_field('subnav');
 if (have_rows('subnav')) {
 	echo '<section id="subnav">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_rows('subnav')) {
 		the_row();
 		$subnav_title           = get_sub_field('title');
@@ -175,7 +175,7 @@ if (have_rows('subnav')) {
 $case_studies = get_field('case_study_groups');
 if (have_rows('case_study_groups')) {
 	echo '<section id="case_study">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_rows('case_study_groups')) {
 		the_row();
 		$study_section__title = get_sub_field('study_section__title');
@@ -251,7 +251,7 @@ if (have_rows('measurement_tables')) {
 		$m_title  = get_sub_field('title');
 		$m_image  = get_sub_field('image');
 		$m_tables = get_sub_field('tables');
-		echo '<div class="container-fluid">'.PHP_EOL;
+		echo '<div class="wrapper">'.PHP_EOL;
 		echo (!empty($m_title)?'<div class="row"><div class="section__title col-12"><h2>'.$m_title.'</h2></div></div>':'').PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
 		echo ($m_image != null?'<div class="col-12 col-md-4"><img src="'.$m_image['url'].'" alt="'.$m_image['alt'].'" class="img-fluid"></div>':'');
@@ -307,7 +307,7 @@ if ($videos) {
 		$video_count = count($videos);
 		if ($video_count == 1) {
 			echo '<section id="videos">'.PHP_EOL;
-			echo '<div class="container-fluid">'.PHP_EOL;
+			echo '<div class="wrapper">'.PHP_EOL;
 			while (have_rows('videos')) {
 				the_row();
 				$v_title = get_sub_field('title');
@@ -330,7 +330,7 @@ if ($videos) {
 			echo '</section>'.PHP_EOL;
 		} elseif ($video_count > 1) {
 			echo '<section id="videos">'.PHP_EOL;
-			echo '<div class="container-fluid">'.PHP_EOL;
+			echo '<div class="wrapper">'.PHP_EOL;
 			echo '<div class="row">'.PHP_EOL;
 			while (have_rows('videos')) {
 				the_row();
@@ -356,7 +356,7 @@ if ($videos) {
 $osha = get_field('osha');
 if ($osha['content']) {
 	echo '<section id="osha">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_rows('osha', $post_id)) {
 		the_row();
 		$osha_title   = get_sub_field('title');
