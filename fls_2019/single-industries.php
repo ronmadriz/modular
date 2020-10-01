@@ -3,14 +3,14 @@ $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
 get_header();
 include (get_template_directory().'/views/components/banner/default.php');
-echo '<div id="pagewrapper" class="container">'.PHP_EOL;
+echo '<div id="pagewrapper" class="wrapper">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
 
 // INDUSTRY CONTENT
 if (have_posts()):while (have_posts()):the_post();
 echo '<section id="main-content">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div class="col-12">';
 the_content();
@@ -27,7 +27,7 @@ if ($solutions_group) {
 	while (have_rows('solutions_group')):the_row();
 	$section__title = get_sub_field('section__title');
 	echo '<section id="child_solutions" class="imgs_captions">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo (!empty($section__title)?'<div class="row"><div class="section__title col-12"><h2>'.$section__title.'</h2></div></div>'.PHP_EOL:'');
 	$solutions_repeater = get_sub_field('solutions');
 	if ($solutions_repeater) {
@@ -69,7 +69,7 @@ if ($industry_testimonials) {
 	$testimonial = $industry_testimonials;
 	setup_postdata($testimonial);
 	echo '<section id="testimonial">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="section__title col-12">'.PHP_EOL;
 	echo '<h2>customer testimonial</h2>'.PHP_EOL;
@@ -92,7 +92,7 @@ if ($industry_testimonials) {
 $case_studies = get_field('case_study_groups');
 if (have_rows('case_study_groups')) {
 	echo '<section id="case_study">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_rows('case_study_groups')):the_row();
 	$study_section__title = get_sub_field('study_section__title');
 	$studies              = get_sub_field('studies');
@@ -131,7 +131,7 @@ if (have_rows('case_study_groups')) {
 // Additional Content
 if (have_rows('additional_content')) {
 	echo '<section id="additional_content" class="additional_content">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_rows('additional_content')) {
 		the_row();
 		$ac_title     = get_sub_field('title');
@@ -154,7 +154,7 @@ if (have_rows('measurement_tables')) {
 		$m_title  = get_sub_field('title');
 		$m_image  = get_sub_field('image');
 		$m_tables = get_sub_field('tables');
-		echo '<div class="container-fluid">'.PHP_EOL;
+		echo '<div class="wrapper">'.PHP_EOL;
 		echo (!empty($m_title)?'<div class="row"><div class="section__title col-12"><h2>'.$m_title.'</h2></div></div>':'').PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
 		echo ($m_image != null?'<div class="col-12 col-md-4"><img src="'.$m_image['url'].'" alt="'.$m_image['alt'].'" class="img-fluid"></div>':'');
@@ -205,7 +205,7 @@ if (have_rows('measurement_tables')) {
 $videos = get_field('videos');
 if ($videos) {
 	echo '<section id="solution_videos">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_rows('videos')) {
 		the_row();
 		$v_title = get_sub_field('title');
@@ -233,7 +233,7 @@ if ($industry_gallery['gallery_pics']) {
 		$gallery_title = get_sub_field('title');
 		$gallery_pics  = get_sub_field('gallery_pics');
 		echo '<section id="gallery">'.PHP_EOL;
-		echo '<div class="container">'.PHP_EOL;
+		echo '<div class="wrapper">'.PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
 		echo '<div class="section__title col-12">'.PHP_EOL;
 		echo '<h2>'.$gallery_title.'</h2>'.PHP_EOL;
@@ -263,7 +263,7 @@ if ($industry_gallery['gallery_pics']) {
 
 if (have_rows('industry_faq')) {
 	echo '<section id="faq">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="content col-12">'.PHP_EOL;
 	echo '<ul class="nav nav-tabs">'.PHP_EOL;
@@ -295,7 +295,7 @@ $download_literature_title = get_field('download_literature_title');
 
 if (have_rows('download_literature')) {
 	echo '<section id="literature">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="section__title col-12"><h2>'.(!empty($download_literature_title)?$download_literature_title:'download literature').'</h2></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
@@ -338,7 +338,7 @@ if ($side_nav == 1) {
 	if (get_field('navmenu')) {
 		$menu = get_field('navmenu')->slug;
 	}
-	echo wp_nav_menu(['container' => 'nav', "menu" => $menu]);
+	echo wp_nav_menu(['wrapper' => 'nav', "menu" => $menu]);
 }
 get_sidebar();
 echo '</aside>'.PHP_EOL;
@@ -353,12 +353,12 @@ if ($solutions_footercs) {
 	$solution_footers_title = get_sub_field('title');
 	$solution_footers_text  = get_sub_field('text');
 	echo '<section id="child_grid">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="section__title gray_bg col-12 text-center"><h2>'.$solution_footers_title.'</h2></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row summary mt-4 align-content-center justify-content-center">'.PHP_EOL;
 	echo '<div class="col-12 col-md-8 text-center">'.PHP_EOL;
 	echo $solution_footers_text;
@@ -403,12 +403,12 @@ if ('has_2_solutions') {
 		$solution_footers_title_2 = get_sub_field('title_2');
 		$solution_footers_text_2  = get_sub_field('text_2');
 		echo '<section id="child_grid">'.PHP_EOL;
-		echo '<div class="container-fluid">'.PHP_EOL;
+		echo '<div class="wrapper">'.PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
 		echo '<div class="title gray_bg col-12 text-center"><span>'.$solution_footers_title_2.'</span></div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
-		echo '<div class="container">'.PHP_EOL;
+		echo '<div class="wrapper">'.PHP_EOL;
 		echo '<div class="row summary mt-4 align-content-center justify-content-center">'.PHP_EOL;
 		echo '<div class="col-12 col-md-8 text-center">'.PHP_EOL;
 		echo $solution_footers_text_2;

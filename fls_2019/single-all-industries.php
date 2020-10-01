@@ -11,7 +11,7 @@ include (get_template_directory().'/views/components/banner/default.php');
 // INDUSTRY CONTENT
 if (have_posts()):while (have_posts()):the_post();
 echo '<section id="main-content">'.PHP_EOL;
-echo '<div class="container-fluid">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 echo '<div class="row justify-content-center align-content-center mb-3">'.PHP_EOL;
 echo '<div class="col-12">';
 the_content();
@@ -32,7 +32,7 @@ $industries = array(
 $industries_query = new WP_Query($industries);
 if ($industries_query) {
 	echo '<section id="inline_solutions">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	while ($industries_query->have_posts()) {
 		$industries_query->the_post();
@@ -53,7 +53,7 @@ if ($industries_query) {
 $base_content = get_field('base_content');
 if ($base_content) {
 	echo '<section id="base-content">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row justify-content-center align-content-center">'.PHP_EOL;
 	echo '<div class="col-12">'.$base_content.'</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
@@ -63,7 +63,7 @@ if ($base_content) {
 $featured_clients = get_field('featured_clients');
 if ($featured_clients) {
 	echo '<section id="logos">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_rows('featured_clients')) {
 		the_row();
 		$feat_clients_title = get_sub_field('title');

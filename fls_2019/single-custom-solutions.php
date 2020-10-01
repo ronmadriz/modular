@@ -7,13 +7,13 @@ $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
 get_header();
 include (get_template_directory().'/views/components/banner/default.php');
-echo '<div id="pagewrapper" class="container">'.PHP_EOL;
+echo '<div id="pagewrapper" class="wrapper">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
 // INDUSTRY CONTENT
 if (have_posts()):while (have_posts()):the_post();
 echo '<section id="main-content">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div class="col-12">';
 the_content();
@@ -27,7 +27,7 @@ endif;
 $case_studies = get_field('case_study_groups');
 if (have_rows('case_study_groups')) {
 	echo '<section id="case_study">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_rows('case_study_groups')):the_row();
 	$study_section__title = get_sub_field('study_section__title');
 	$studies              = get_sub_field('studies');
@@ -67,7 +67,7 @@ if (have_rows('case_study_groups')) {
 $videos = get_field('videos');
 if ($videos):
 echo '<section id="solution_videos">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 while (have_rows('videos')):the_row();
 $v_title = get_sub_field('title');
 $v_embed = get_sub_field('v_embed');
@@ -92,7 +92,7 @@ if ($solutions_gallery) {
 	$gallery_title = get_sub_field('title');
 	$gallery_pics  = get_sub_field('gallery_pics');
 	echo '<section id="gallery">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="section__title col-12">'.PHP_EOL;
 	echo '<h2>'.$gallery_title.'</h2>'.PHP_EOL;
@@ -122,7 +122,7 @@ if ($solutions_gallery) {
 $download_literature_title = get_field('download_literature_title');
 if (have_rows('download_literature')) {
 	echo '<section id="literature">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="section__title col-12"><h2>'.(!empty($download_literature_title)?$download_literature_title:'download literature').'</h2></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
@@ -165,7 +165,7 @@ if ($side_nav == 1) {
 	if (get_field('navmenu')) {
 		$menu = get_field('navmenu')->slug;
 	}
-	echo wp_nav_menu(['container' => 'nav', "menu" => $menu]);
+	echo wp_nav_menu(['wrapper' => 'nav', "menu" => $menu]);
 }
 get_sidebar();
 echo '</aside>'.PHP_EOL;

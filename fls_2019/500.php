@@ -1,10 +1,10 @@
-<?php get_header(); ?>
+<?php get_header();?>
 <?php
-    $pageID = get_the_id();
-    $pageCF = get_post_custom($pageID);
+$pageID = get_the_id();
+$pageCF = get_post_custom($pageID);
 ?>
-	<section id="main-content">
-		<div class="container">
+<section id="main-content">
+		<div class="wrapper">
 			<div class="row">
 				<div class="col-lg-12">
 				    <h1>Oops!</h1>
@@ -13,4 +13,4 @@
 			</div>
 		</div>
 	</section>
-<?php get_footer(); ?>
+<?php get_footer();?>

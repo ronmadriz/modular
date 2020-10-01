@@ -164,7 +164,7 @@ if ($solutions_gallery['gallery_pics']) {
 		$gallery_title = get_sub_field('title');
 		$gallery_pics  = get_sub_field('gallery_pics');
 		echo '<section id="gallery">'.PHP_EOL;
-		echo '<div class="container">'.PHP_EOL;
+		echo '<div class="wrapper">'.PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
 		echo '<div class="section__title col-12">'.PHP_EOL;
 		echo '<h2>'.$gallery_title.'</h2>'.PHP_EOL;
@@ -237,7 +237,7 @@ if ($side_nav == 1) {
 	if (get_field('navmenu')) {
 		$menu = get_field('navmenu')->slug;
 	}
-	echo wp_nav_menu(['container' => 'nav', "menu" => $menu]);
+	echo wp_nav_menu(['wrapper' => 'nav', "menu" => $menu]);
 }
 get_sidebar();
 echo '</aside>'.PHP_EOL;
@@ -257,7 +257,7 @@ if ($solutions_footercs) {
 	echo '<div class="title gray_bg col-12 text-center"><span>'.$solution_footers_title.'</span></div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row summary mt-4 align-content-center justify-content-center">'.PHP_EOL;
 	echo '<div class="col-12 col-md-8 text-center">'.PHP_EOL;
 	echo $solution_footers_text;

@@ -7,13 +7,13 @@ $pageCF = get_post_custom($pageID);
 get_header();
 include (get_template_directory().'/views/components/banner/default.php');
 
-echo '<div id="pagewrapper" class="container">'.PHP_EOL;
+echo '<div id="pagewrapper" class="wrapper">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
 
 // MAIN CONTENT
 echo '<section id="main-content">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 if (have_posts()):while (have_posts()):the_post();
 echo '<div class="row">'.PHP_EOL;
 echo '<div class="col-12">';
@@ -34,7 +34,7 @@ $careers_args = array(
 $careers_query = new WP_Query($careers_args);
 if ($careers_query) {
 	echo '<section id="avail_positions">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	$count = 0;
 	while ($careers_query->have_posts()):$careers_query->the_post();
@@ -60,7 +60,7 @@ if ($careers_query) {
 $sub_content = get_field('sub_content');
 if ($sub_content):
 echo '<section id="main-content">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div class="col-12">'.$sub_content.'</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
@@ -80,7 +80,7 @@ if ($side_nav == 1) {
 	if (get_field('navmenu')) {
 		$menu = get_field('navmenu')->slug;
 	}
-	echo wp_nav_menu(['container' => 'nav', "menu" => $menu]);
+	echo wp_nav_menu(['wrapper' => 'nav', "menu" => $menu]);
 }
 get_sidebar();
 echo '</aside>'.PHP_EOL;

@@ -7,7 +7,7 @@ $pageCF = get_post_custom($pageID);
 get_header();
 include (get_template_directory().'/views/components/banner/default.php');
 
-echo '<div id="pagewrapper" class="container">'.PHP_EOL;
+echo '<div id="pagewrapper" class="wrapper">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
 
@@ -21,7 +21,7 @@ $fls_blog_args = array(
 $fls_blog_query = new WP_Query($fls_blog_args);
 if ($fls_blog_query) {
 	echo '<section id="main-content">'.PHP_EOL;
-	echo '<div class="container">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	while ($fls_blog_query->have_posts()):$fls_blog_query->the_post();
 	$post_th = get_the_post_thumbnail($post_id, 'full', array('class' => 'img-fluid'));

@@ -11,7 +11,7 @@ the_breadcrumb();
 
 // MAIN CONTENT
 echo '<section id="main-content">'.PHP_EOL;
-echo '<div class="container-fluid">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 if (have_posts()):while (have_posts()):the_post();
 echo '<div class="row">'.PHP_EOL;
 echo '<div class="col-12">';
@@ -26,7 +26,7 @@ echo '</section>'.PHP_EOL;
 // Icons
 if (have_rows('fp_icons')) {
 	echo '<section id="fp_icons">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	while (have_rows('fp_icons')) {
 		the_row();
@@ -48,7 +48,7 @@ if (have_rows('fp_icons')) {
 $fp_info = get_field('fp_info');
 if (!empty($fp_info)) {
 	echo '<section id="fp_info">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="col-12">'.$fp_info.'</div>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
@@ -61,9 +61,9 @@ if (!empty($fp_info)) {
 $cf_contactForm_code = get_field('cf_contactForm_code');
 $cf_contactForm      = do_shortcode($cf_contactForm_code);
 if ($cf_contactForm) {
-	echo '<section id="cf_contactFormTitle"><div class="container-fluid"><div class="row"><div class="section__title col-12"><h2 class="text-center">How can we help?</h2></div></div></div></section>'.PHP_EOL;
+	echo '<section id="cf_contactFormTitle"><div class="wrapper"><div class="row"><div class="section__title col-12"><h2 class="text-center">How can we help?</h2></div></div></div></section>'.PHP_EOL;
 	echo '<section id="cf_contactForm">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;// made fluid
+	echo '<div class="wrapper">'.PHP_EOL;// made fluid
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="col-12">'.PHP_EOL;
 	echo $cf_contactForm;
@@ -78,7 +78,7 @@ if ($cf_contactForm) {
 $tabbed_intro   = get_field('tabbed_content_introduction');
 $tabbed_content = get_field('tabbed_content');
 echo '<section id="fp_101">'.PHP_EOL;
-echo '<div class="container-fluid">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 echo (!empty($tabbed_intro)?'<div id="fp_101_intro" class="row"><div class="col-12">'.$tabbed_intro.'</div></div>'.PHP_EOL:'');
 if (have_rows('tabbed_content')) {
 	$fp_counter = 1;

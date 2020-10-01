@@ -6,14 +6,14 @@ $pageCF = get_post_custom($pageID);
  */
 get_header();
 include (get_template_directory().'/views/components/banner/default.php');
-echo '<div id="pagewrapper" class="container">'.PHP_EOL;
+echo '<div id="pagewrapper" class="wrapper">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
 
 // MAIN CONTENT
 if (have_posts()):
 echo '<section id="main-content">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 while (have_posts()):the_post();
 echo '<div class="row">'.PHP_EOL;
 echo '<div class="col-12">';
@@ -30,7 +30,7 @@ endif;
 // FAQ
 if (have_rows('faq_group')):
 echo '<section id="main-content">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div class="col-12">'.PHP_EOL;
 echo '<dl class="faq">'.PHP_EOL;
@@ -59,7 +59,7 @@ if ($side_nav == 1) {
 	if (get_field('navmenu')) {
 		$menu = get_field('navmenu')->slug;
 	}
-	echo wp_nav_menu(['container' => 'nav', "menu" => $menu]);
+	echo wp_nav_menu(['wrapper' => 'nav', "menu" => $menu]);
 }
 get_sidebar();
 echo '</aside>'.PHP_EOL;

@@ -11,7 +11,7 @@ include (get_template_directory().'/views/components/banner/default.php');
 echo '<section id="main-content">'.PHP_EOL;
 // Fall Safety Solution CONTENT
 if (have_posts()):
-echo '<div class="container-fluid">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 while (have_posts()):the_post();
 echo '<div class="row justify-content-center align-content-center mb-3">'.PHP_EOL;
 echo '<div class="col-12">';
@@ -30,7 +30,7 @@ echo '</section>'.PHP_EOL;
 $all_solutions = get_field('all_solutions');
 if (have_rows('all_solutions')) {
 	echo '<section id="all_solutions">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_rows('all_solutions')) {
 		the_row();
 		if (have_rows('solution')) {
@@ -70,7 +70,7 @@ $testimonials_args = array(
 $testimonials_query = new WP_Query($testimonials_args);
 if ($testimonials_query) {
 	echo '<section id="testimonials">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div class="row">'.PHP_EOL;
 	echo '<div class="col-12 testimonials">'.PHP_EOL;
 	while ($testimonials_query->have_posts()):$testimonials_query->the_post();
@@ -87,7 +87,7 @@ if ($testimonials_query) {
 $featured_clients = get_field('featured_clients');
 if ($featured_clients):
 echo '<section id="logos">'.PHP_EOL;
-echo '<div class="container-fluid">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 while (have_rows('featured_clients')):
 the_row();
 $feat_clients_title = get_sub_field('title');
