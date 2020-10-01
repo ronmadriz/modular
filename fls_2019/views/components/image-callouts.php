@@ -4,7 +4,7 @@
 $image_callout = get_field('image_callout');
 if ($image_callout['callout']) {
 	echo '<section id="image_callout">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_rows('image_callout')) {
 		the_row();
 		$co_title  = get_sub_field('callout_title');
