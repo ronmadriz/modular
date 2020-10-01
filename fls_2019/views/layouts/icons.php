@@ -4,7 +4,7 @@
 $icons = get_field('icons');
 if (have_rows('icons')) {
 	echo '<section id="icons">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_rows('icons')) {
 		the_row();
 		if (have_rows('icon_group')) {
