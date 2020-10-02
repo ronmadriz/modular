@@ -14,7 +14,9 @@
 	&__img {
 		align-self: center;
 		display: flex;
-		width: 100%;
+	    min-height: 515px;
+	    max-height: 515px;
+		width: auto;
     }
 	&__title {
 		padding-top: 1rem;

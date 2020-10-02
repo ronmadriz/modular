@@ -1008,7 +1008,9 @@ html form.lrm-form ul.acf-checkbox-list li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%; }
+    min-height: 515px;
+    max-height: 515px;
+    width: auto; }
   .hero__title {
     padding-top: 1rem;
     width: 100%; }
