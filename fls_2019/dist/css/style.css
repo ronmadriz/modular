@@ -2416,7 +2416,8 @@ svg .region path {
     #menus__item--1 .menus__sub:after {
       right: 100%; }
     #menus__item--1 .menus__sub:before {
-      left: 100%; }
+      left: 100%;
+      z-index: -1; }
   #menus__item--1 .menus__tertiary--item {
     font-size: .625rem; }
   #menus__item--1 .menus__tertiary--link {
