@@ -139,7 +139,7 @@ body {
     text-transform: uppercase; }
 
 .content__main {
-  margin-top: 2rem; }
+  padding-top: 2rem; }
 
 body header span.nav_tel {
   font-weight: bold;
