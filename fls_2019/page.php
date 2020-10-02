@@ -4,7 +4,7 @@ $pageCF = get_post_custom($pageID);
 get_header();
 include (get_template_directory().'/views/components/banner/default.php');
 
-echo '<div id="pagewrapper" class="container"><div class="row"><div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
+echo '<div id="pagewrapper" class="wrapper"><div class="row"><div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
 // MAIN CONTENT
 echo '<section id="main-content">'.PHP_EOL;
 echo '<div class="wrapper">'.PHP_EOL;
