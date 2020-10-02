@@ -2448,6 +2448,10 @@ svg .region path {
   #menus__item--1 .menus__sub {
     margin-left: -67%; } }
 
+@media (min-width: 1101px) and (max-width: 1300px) {
+  #menus__item--1 .menus__sub {
+    margin-left: -61%; } }
+
 @media (max-width: 1100px) and (min-width: 1060px) {
   #menus__item--1 .menus__sub {
     margin-left: -70%; } }
