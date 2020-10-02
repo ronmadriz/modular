@@ -7,7 +7,7 @@ include (get_template_directory().'/views/components/banner/default.php');
 echo '<div id="pagewrapper" class="container"><div class="row"><div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
 // MAIN CONTENT
 echo '<section id="main-content">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 if (have_posts()):while (have_posts()):the_post();
 echo '<div class="row">'.PHP_EOL;
 echo '<div class="col-12">';
