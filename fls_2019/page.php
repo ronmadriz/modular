@@ -4,7 +4,7 @@ $pageCF = get_post_custom($pageID);
 get_header();
 include (get_template_directory().'/views/components/banner/default.php');
 
-echo '<section id="page__content" class="content"><div class="wrapper"><div class="row"><div id="main-content" class="col-12 col-md-9">'.PHP_EOL;
+echo '<section id="content" class="content"><div class="wrapper"><div class="row"><div id="main-content" class="content__main col-12 col-md-9">'.PHP_EOL;
 if (have_posts()):while (have_posts()):the_post();
 the_content();
 endwhile;
