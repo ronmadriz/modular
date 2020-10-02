@@ -2409,15 +2409,15 @@ svg .region path {
       background: #FFFFFF;
       content: '';
       display: block;
-      width: 100%;
       height: 100%;
       position: absolute;
-      top: 0; }
+      top: 0;
+      z-index: -1;
+      width: 100%; }
     #menus__item--1 .menus__sub:after {
       right: 100%; }
     #menus__item--1 .menus__sub:before {
-      left: 100%;
-      z-index: -1; }
+      left: 100%; }
   #menus__item--1 .menus__tertiary--item {
     font-size: .625rem; }
   #menus__item--1 .menus__tertiary--link {
