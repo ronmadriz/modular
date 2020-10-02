@@ -2362,7 +2362,7 @@ svg .region path {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     left: 0;
-    margin-left: -67%;
+    margin-left: -100%;
     width: 100vw; }
     #menus__item--1 .menus__sub--link {
       background-color: transparent;
