@@ -72,11 +72,7 @@ if (have_rows('quotes')) {
 	echo '</div>'.PHP_EOL;
 	echo '</section>'.PHP_EOL;
 }
-
-// Ugly CTA formerly cta_blue
-
-echo (!empty(get_the_content())?'<section id="cta_speak"><div class="wrapper"><div class="row"><div class="col-12"><h2 class="text-center text-uppercase"><a href="#cta_blue">Speak with a fall protection specialist <i class="im im-angle-right-circle"></i></a></h2></div></div></div></section>'.PHP_EOL:'');
-
+@include 'views/components/ctas/speak.php';
 // IMAGE CALLOUTS
 
 $image_callout = get_field('image_callout');
