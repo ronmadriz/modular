@@ -1311,52 +1311,65 @@ html body main #flsCarousel {
           flex-direction: column; }
 
 @media (min-width: 786px) {
-  .multi__carousel .carousel-inner {
-    text-align: center; }
-    .multi__carousel .carousel-inner > .item {
-      -webkit-transition: 500ms ease-in-out left;
-      transition: 500ms ease-in-out left; }
-      .multi__carousel .carousel-inner > .item > a {
-        text-align: center; } }
-    @media all and (min-width: 786px) and (transform-3d), (min-width: 786px) and (-webkit-transform-3d) {
-      .multi__carousel .carousel-inner > .item {
-        -webkit-transition: 500ms ease-in-out left;
-        transition: 500ms ease-in-out left;
-        -webkit-backface-visibility: visible;
-                backface-visibility: visible;
-        -webkit-transform: none !important;
-                transform: none !important; } }
-
-@media (min-width: 786px) {
-    .multi__carousel .carousel-inner .item a .img-fluid {
-      display: inline-block;
-      margin: auto; }
-    .multi__carousel .carousel-inner .active.left {
-      left: -33%; } }
-    @media all and (min-width: 786px) and (-ms-high-contrast: none), (min-width: 786px) and (-ms-high-contrast: active) {
-      .multi__carousel .carousel-inner .active.left {
-        left: 0%; } }
-
-@media (min-width: 786px) {
-    .multi__carousel .carousel-inner .active.right {
-      left: 33%; } }
-    @media all and (min-width: 786px) and (-ms-high-contrast: none), (min-width: 786px) and (-ms-high-contrast: active) {
-      .multi__carousel .carousel-inner .active.right {
-        left: 0%; } }
-
-@media (min-width: 786px) {
-    .multi__carousel .carousel-inner .next {
-      left: 33%; } }
-    @media all and (min-width: 786px) and (-ms-high-contrast: none), (min-width: 786px) and (-ms-high-contrast: active) {
-      .multi__carousel .carousel-inner .next {
-        left: 0%; } }
-
-@media (min-width: 786px) {
-    .multi__carousel .carousel-inner .prev {
-      left: -33%; } }
-    @media all and (min-width: 786px) and (-ms-high-contrast: none), (min-width: 786px) and (-ms-high-contrast: active) {
-      .multi__carousel .carousel-inner .prev {
-        left: 0%; } }
+  .multi__carousel {
+    /* show 3 items */
+    /* left or forward direction */
+    /* farthest right hidden item must be abso position for animations */
+    /* right or prev direction */ }
+    .multi__carousel .carousel-inner .active,
+    .multi__carousel .carousel-inner .active + .carousel-item,
+    .multi__carousel .carousel-inner .active + .carousel-item + .carousel-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .multi__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .multi__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .multi__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+      -webkit-transition: none;
+      transition: none;
+      margin-right: initial; }
+    .multi__carousel .carousel-inner .carousel-item-next,
+    .multi__carousel .carousel-inner .carousel-item-prev {
+      position: relative;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
+    .multi__carousel .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      top: 0;
+      right: -33.3333%;
+      z-index: -1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      visibility: visible; }
+    .multi__carousel .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .multi__carousel .carousel-item-next.carousel-item-left + .carousel-item,
+    .multi__carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .multi__carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      -webkit-transform: translate3d(-100%, 0, 0);
+              transform: translate3d(-100%, 0, 0);
+      visibility: visible; }
+    .multi__carousel .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      visibility: visible; }
+    .multi__carousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .multi__carousel .carousel-item-prev.carousel-item-right + .carousel-item,
+    .multi__carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .multi__carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      -webkit-transform: translate3d(100%, 0, 0);
+              transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      visibility: visible; } }
 
 .additional_content {
   padding-bottom: 2rem; }

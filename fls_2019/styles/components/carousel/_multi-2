@@ -1,0 +1,50 @@
+.multi__carousel {
+  .carousel-inner {
+    text-align:center; 
+    &> .item {
+      transition: 500ms ease-in-out left;
+      &>a {
+        text-align:center;
+      }
+      @media all and (transform-3d), (-webkit-transform-3d) {
+        transition: 500ms ease-in-out left;
+        backface-visibility: visible;
+        transform: none!important;
+      }      
+    }
+    .item {
+      a {
+        .img-fluid {
+          display:inline-block; 
+          margin:auto;
+        }
+      } 
+    }
+    .active {
+      &.left {
+        left: -33%;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          left: 0%;
+        }        
+      }
+      &.right {
+        left: 33%;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          left: 0%;
+        }        
+      }
+    }
+    .next {
+      left: 33%;
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        left: 0%;
+      }
+    }
+    .prev {
+      left: -33%;
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        left: 0%;
+      }
+    }    
+  }
+}
