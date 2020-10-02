@@ -2230,13 +2230,13 @@ svg .region path {
       .menus__tertiary .menus__link:before {
         font-size: 1rem;
         top: .125rem; }
-
-@media (min-width: 992px) {
   .menus .wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
+
+@media (min-width: 992px) {
   .menus__brand {
     width: 28.59375rem; }
   .menus__list {
