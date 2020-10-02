@@ -30,8 +30,8 @@ endif;
 $industry_gallery = get_field('industry_gallery');
 if ($industry_gallery['gallery_pics']) {
 	echo '<section id="gallery">'.PHP_EOL;
-	echo '<div class="container-fluid">'.PHP_EOL;
-	echo '<div class="row justify-content-center mb-md-3"><div class="content text-md-center col-12 col-md-9">'.PHP_EOL;
+	echo '<div class="wrapper">'.PHP_EOL;
+	echo '<div class="row justify-content-center mb-md-3"><div class="content text-md-center col-12">'.PHP_EOL;
 	while (have_rows('industry_gallery')) {
 		the_row();
 		$gallery_pics = get_sub_field('gallery_pics');
