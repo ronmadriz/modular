@@ -243,6 +243,11 @@ body main section#banner {
     @media (min-width: 786px) {
       .topbar .social__item {
         display: inline-block; } }
+  .topbar .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
 
 body footer section#foot_contact {
   background-color: #E6E7E9; }
