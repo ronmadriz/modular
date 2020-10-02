@@ -144,7 +144,7 @@
 			&--1 {
 				.menus{				
 					&__sub {
-						background-color: rgba($alternate,.95);
+						background-color: transparent;
 						border-radius: 0;
 						flex-direction: row;
 						flex-wrap: wrap;					
@@ -187,7 +187,7 @@
 							padding-top: 1.75rem;
 						}
 						&:before, &:after {
-							background: $alternate;
+							background: rgba($alternate,.95);
 							content: '';
 							display: block;
 							height: 100%;

@@ -2353,7 +2353,7 @@ svg .region path {
   #menus__item--2 {
     display: none; }
   #menus__item--1 .menus__sub {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: transparent;
     border-radius: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2406,7 +2406,7 @@ svg .region path {
 
 @media (min-width: 992px) {
     #menus__item--1 .menus__sub:before, #menus__item--1 .menus__sub:after {
-      background: #FFFFFF;
+      background: rgba(255, 255, 255, 0.95);
       content: '';
       display: block;
       height: 100%;
