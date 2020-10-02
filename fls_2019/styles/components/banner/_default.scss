@@ -14,9 +14,12 @@
 	&__img {
 		align-self: center;
 		display: flex;
-	    min-height: 515px;
-	    max-height: 515px;
-		width: auto;
+		width: 100%;
+		@include for-tablet-up {
+			min-height: 515px;
+			max-height: 515px;
+			width: auto;			
+		}
     }
 	&__title {
 		padding-top: 1rem;
