@@ -3,13 +3,13 @@ $pageID = get_the_id();
 $pageCF = get_post_custom($pageID);
 get_header();
 include (get_template_directory().'/views/components/banner/default.php');
-echo '<div id="pagewrapper" class="container">'.PHP_EOL;
+echo '<div id="pagewrapper" class="wrapper">'.PHP_EOL;
 echo '<div class="row">'.PHP_EOL;
 echo '<div id="columns_2" class="col-12 col-md-9">'.PHP_EOL;
 
 // MAIN CONTENT
 echo '<section id="main-content">'.PHP_EOL;
-echo '<div class="container">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 if (have_posts()):while (have_posts()):the_post();
 echo '<div class="row">'.PHP_EOL;
 echo '<div class="col-12">';
@@ -30,7 +30,7 @@ if (have_rows('post_gallery')) {
 		$gallery_title = get_sub_field('title');
 		$gallery       = get_sub_field('gallery');
 		echo '<section id="gallery-'.$count.'">'.PHP_EOL;
-		echo '<div class="container">'.PHP_EOL;
+		echo '<div class="wrapper">'.PHP_EOL;
 		echo '<div class="row">'.PHP_EOL;
 		echo '<div class="section__title col-12">'.PHP_EOL;
 		echo '<h2>'.$gallery_title.'</h2>'.PHP_EOL;
