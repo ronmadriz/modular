@@ -6,7 +6,8 @@
 		overflow-y: hidden;
 		width: 100%;
 		@include for-laptop-up {
-			max-height: 60vh;
+			min-height: 515px;
+			max-height: 515px;
 			overflow-x: hidden;			
 		}
 	}

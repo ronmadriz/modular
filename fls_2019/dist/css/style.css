@@ -999,7 +999,8 @@ html form.lrm-form ul.acf-checkbox-list li {
     width: 100%; }
     @media (min-width: 1200px) {
       .hero__holder {
-        max-height: 60vh;
+        min-height: 515px;
+        max-height: 515px;
         overflow-x: hidden; } }
   .hero__img {
     -ms-flex-item-align: center;
