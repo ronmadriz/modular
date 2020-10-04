@@ -42,16 +42,11 @@
 		border:.0625rem solid $dark_gray;
 		flex-direction: column;
 		flex-shrink: 0;
+		padding-left:0;
+		padding-right:0;
 		margin:0 1.1825rem;
-	    width: 90%;
 	    &.active {
 	    	display: flex;
-	    }
-	    @include for-phone-up {
-		    width: 30.75%;
-	    }
-	    @include for-tablet-between {
-	    	width: 47.5%;
 	    }
 	}
 	&__link {
