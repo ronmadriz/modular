@@ -69,6 +69,7 @@
 		width:100%;
 		@include for-tablet-up {
 			min-height:14.75rem;
+			width:98.5%;
 		}
 		@include for-tablet-between {
 			min-height:16.75rem;
