@@ -4168,18 +4168,18 @@ body.solutions-template div.testimonials {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-    @media (min-width: 768px) {
-      .home .blogs__item {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 0 33.333333%;
-                flex: 0 0 33.333333%;
-        max-width: 33.333333%; } }
     @media (min-width: 576px) {
       .home .blogs__item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 50%;
                 flex: 0 0 50%;
         max-width: 50%; } }
+    @media (min-width: 768px) {
+      .home .blogs__item {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 33.333333%;
+                flex: 0 0 33.333333%;
+        max-width: 33.333333%; } }
   .home .blogs__link {
     display: block;
     border: 0.125rem solid #156CB3;
