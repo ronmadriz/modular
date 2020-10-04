@@ -40,14 +40,24 @@
 	&__item {
 		background-color: $alternate;
 		border:.0625rem solid $dark_gray;
+		flex: 0 0 100%;
 		flex-direction: column;
 		flex-shrink: 0;
 		padding-left:0;
 		padding-right:0;
 		margin:0 1.1825rem;
+		width:100%;
 	    &.active {
 	    	display: flex;
 	    }
+	    @media (min-width: 768px) {
+			flex: 0 0 33.333333%;
+			max-width: 33.333333%;	    	
+	    }
+		@media (min-width: 576px) {
+		    flex: 0 0 50%;
+		    max-width: 50%;
+		}
 	}
 	&__link {
 	    display: block;
