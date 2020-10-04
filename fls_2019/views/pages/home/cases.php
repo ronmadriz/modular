@@ -23,7 +23,7 @@ if (have_rows('hm_work')) {
 			while (have_rows('hm_work_cases')) {
 				the_row();
 				$hm_work_case = get_sub_field('hm_work_case');
-				echo '<span class="cases__item carousel-item'.($hm_work_count == 0?' active':'').'"><img class="cases__image" src="'.$hm_work_case['url'].'"></span>'.PHP_EOL;
+				echo '<div class="cases__item carousel-item'.($hm_work_count == 0?' active':'').'"><span class="col-12 col-md-4"><img class="cases__image" src="'.$hm_work_case['url'].'"></span></div>'.PHP_EOL;
 				$hm_work_count++;
 			}
 			echo '</div>'.PHP_EOL;
