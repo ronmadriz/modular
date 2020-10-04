@@ -4159,7 +4159,7 @@ body.solutions-template div.testimonials {
         flex-shrink: 0;
     padding-left: 0;
     padding-right: 0;
-    margin: 0; }
+    margin: 0 1.1825rem; }
     .home .blogs__item.active {
       display: -webkit-box;
       display: -ms-flexbox;
