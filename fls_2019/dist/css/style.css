@@ -4302,12 +4302,12 @@ body.solutions-template div.testimonials {
         flex-shrink: 0;
     padding-left: 1rem;
     padding-right: 1rem; }
-    @media (min-width: 786px) {
-      .home .cases__item {
-        width: 33.33%; } }
   .home .cases__image {
+    display: block;
     -webkit-filter: brightness(5000%);
             filter: brightness(5000%);
+    margin-left: auto;
+    margin-right: auto;
     min-height: 8rem;
     width: 100%; }
   .home .cases__title {
