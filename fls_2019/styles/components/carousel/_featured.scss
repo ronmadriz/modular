@@ -55,10 +55,10 @@
         padding-right:0;
         width:100%;
         @include for-phone-up {
-            width:49%;        
+            max-width:49%;        
         }
         @include for-tablet-up {
-            width:32.125%;
+            max-width:32.125%;
         }
     }
     &__list {

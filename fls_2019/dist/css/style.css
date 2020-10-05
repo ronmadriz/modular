@@ -1277,10 +1277,10 @@ html body main #flsCarousel {
   width: 100%; }
   @media (min-width: 786px) {
     .featured__item {
-      width: 49%; } }
+      max-width: 49%; } }
   @media (min-width: 992px) {
     .featured__item {
-      width: 32.125%; } }
+      max-width: 32.125%; } }
 
 .featured__list {
   display: -webkit-box;
