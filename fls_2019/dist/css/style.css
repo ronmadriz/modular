@@ -4209,7 +4209,7 @@ body.solutions-template div.testimonials {
       right: -1.15rem; } }
   @media (min-width: 992px) {
     .home .blogs__nav.carousel__nav--next {
-      right: -1rem; } }
+      right: 0rem; } }
   @media (max-width: 786px) {
     .home .blogs__nav.carousel__nav--prev {
       left: -1.15rem; } }
