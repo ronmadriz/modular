@@ -11,7 +11,7 @@
 		&--prev {
     		left:-1rem;
 		    transform: rotate(90deg);
-		    @include for-tv-up {
+		    @include for-desktop-up {
 	    		left:-2rem;
 		    }
 		}    	

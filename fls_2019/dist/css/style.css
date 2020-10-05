@@ -1086,7 +1086,7 @@ a:not([href]):not([tabindex]).load__more {
     left: -1rem;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
-    @media (min-width: 1360px) {
+    @media (min-width: 1200px) {
       .carousel__nav--prev {
         left: -2rem; } }
 
