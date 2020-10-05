@@ -14,7 +14,7 @@ if ($featured_query->have_posts()) {
 		$raw__summary      = get_field('sidebar__summary');
 		$featured__excerpt = get_the_excerpt();
 		$featured__summary = (!empty($raw__summary)?$raw__summary:$featured__excerpt);
-		echo '<div class="col-12 col-sm-6 col-md-4 carousel-item'.($blg_ft_count == 0?' active':'').'">'.PHP_EOL;
+		echo '<div class="carousel-item col-12 col-sm-6 col-md-4'.($blg_ft_count == 0?' active':'').'">'.PHP_EOL;
 		echo '<a class="featured__image--link" href="'.get_the_permalink().'"><img alt="'.$featured__title.'" class="featured__image" src="'.$featured__img.'"></a>'.PHP_EOL;
 		echo '<span class="featured__title"><a class="featured__title--link" href="'.get_the_permalink().'">'.(!empty($featured__title)?$featured__title:get_the_title()).'</a></span>'.PHP_EOL;
 		echo '<span class="featured__desc">'.$featured__summary.'</span>'.PHP_EOL;
