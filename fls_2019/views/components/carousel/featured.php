@@ -4,7 +4,7 @@ if ($featured_query->have_posts()) {
 	echo '<section id="featured" class="featured">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<span class="featured__header"><h2 class="featured__header--text">'.$section__title.'</h2></span>'.PHP_EOL;
-	echo '<div id="featured__carousel" class="featured__carousel multi__carousel slide carousel"  data-interval="false">'.PHP_EOL;
+	echo '<div id="featured__carousel" class="featured__carousel multi__carousel slide carousel"  data-wrap="false" data-interval="false">'.PHP_EOL;
 	echo '<div class="featured__list carousel-inner">'.PHP_EOL;
 	$blg_ft_count = 0;
 	while ($featured_query->have_posts()) {
