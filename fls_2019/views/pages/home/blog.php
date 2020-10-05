@@ -3,7 +3,7 @@
 if (have_rows('hm_blog')) {
 	echo '<section id="home_blog" class="blogs">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
-	echo '<div id="blog__carousel" class="blog__carousel multi__carousel slide carousel"  data-interval="false">'.PHP_EOL;
+	echo '<div id="blog__carousel" class="blog__carousel multi__carousel slide carousel" data-interval="false"  data-wrap="false">'.PHP_EOL;
 	echo '<div class="blogs__list carousel-inner">'.PHP_EOL;
 	$hm_blog_count = 0;
 	while (have_rows('hm_blog')) {
