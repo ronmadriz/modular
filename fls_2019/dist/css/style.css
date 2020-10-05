@@ -4159,11 +4159,18 @@ body.solutions-template div.testimonials {
         flex-shrink: 0;
     padding-left: 0;
     padding-right: 0;
-    margin: 0 1.1825rem; }
+    margin: 0 1.1825rem;
+    width: 100%; }
     .home .blogs__item.active {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
+    @media (max-width: 992px) {
+      .home .blogs__item {
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .home .blogs__item {
+        width: 33.3333%; } }
   .home .blogs__link {
     display: block;
     border: 0.125rem solid #156CB3;
