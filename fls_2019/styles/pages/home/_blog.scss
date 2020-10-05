@@ -84,11 +84,11 @@
 	}
 	&__nav {
 		&.carousel__nav--next{
-			@include for-tablet-up {
-				right: -1rem;
-			}
 			@include for-phone-only {
 				right:-1.15rem;
+			}
+			@include for-tablet-up {
+				right: -1rem;
 			}
 		}
 		&.carousel__nav--prev{
