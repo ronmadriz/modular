@@ -1202,6 +1202,9 @@ html body main #flsCarousel {
     width: 100%; }
 
 .featured__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
