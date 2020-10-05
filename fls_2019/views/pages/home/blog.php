@@ -20,7 +20,7 @@ if (have_rows('hm_blog')) {
 			$hm_blog_excerpt = get_the_excerpt();
 			$hm_blog_summary = (!empty($hm_blog_ex)?$hm_blog_ex:$hm_blog_excerpt);
 			$hm_blog_link    = get_the_permalink();
-			echo '<article class="blogs__item carousel-item'.($hm_blog_count == 0?' active':'').'">'.PHP_EOL;
+			echo '<article class="blogs__item col-12 col-sm-6 col-md-4 carousel-item'.($hm_blog_count == 0?' active':'').'">'.PHP_EOL;
 			echo '<header class="blogs__header">'.PHP_EOL;
 			echo '<a class="blogs__image--link" href="'.get_the_permalink().'"><img alt="'.$hm_blog_title.'" class="blogs__image" src="'.$hm_blog_img.'"></a>'.PHP_EOL;
 			echo '</header>'.PHP_EOL;
