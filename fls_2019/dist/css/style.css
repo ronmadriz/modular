@@ -1272,6 +1272,8 @@ html body main #flsCarousel {
   min-height: 100%;
   margin-left: .9375rem;
   margin-right: .9375rem;
+  padding-left: 0;
+  padding-right: 0;
   width: 100%; }
   @media (min-width: 786px) {
     .featured__item {
