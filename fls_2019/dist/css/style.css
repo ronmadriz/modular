@@ -1080,7 +1080,7 @@ a:not([href]):not([tabindex]).load__more {
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg); }
   .carousel__nav--prev {
-    left: -1rem;
+    left: -2rem;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
 
