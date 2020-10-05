@@ -3290,6 +3290,13 @@ html .blog .featured__article {
   font-family: "Encode Sans Condensed", sans-serif;
   font-size: .875rem; }
 
+@media (min-width: 992px) {
+  .blog__page {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+
 .blog__side {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3328,13 +3335,6 @@ html .blog .featured__article {
     font-family: "Encode Sans Condensed", sans-serif;
     font-size: .875rem;
     font-weight: 600; }
-
-@media (max-width: 786px) {
-  main .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
 
 .studies__desc {
   color: #848587;

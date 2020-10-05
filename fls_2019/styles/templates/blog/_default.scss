@@ -67,6 +67,11 @@
 		font-family: $stationary_condensed;
 		font-size:.875rem;
 	}
+	&__page {
+		@include for-tablet-up {
+			flex-direction: row;
+		}
+	}
 	&__side {
 		display:flex;
 		flex-direction: column;
@@ -110,13 +115,6 @@
 				font-size: .875rem;
 				font-weight: 600;
 			}
-		}
-	}
-}
-main {
-	.wrapper {
-		@include for-phone-only {
-			flex-direction: column;
 		}
 	}
 }

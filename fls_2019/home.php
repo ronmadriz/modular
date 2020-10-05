@@ -5,7 +5,7 @@ get_header();
 include (get_template_directory().'/views/components/banner/default.php');
 include (get_template_directory().'/views/templates/blog/featured.php');
 echo '<section id="blog" class="blog">'.PHP_EOL;
-echo '<div class="wrapper">'.PHP_EOL;
+echo '<div class="wrapper blog__page">'.PHP_EOL;
 include (get_template_directory().'/views/templates/blog/default.php');
 include (get_template_directory().'/views/templates/blog/side.php');
 echo '</div>'.PHP_EOL;
