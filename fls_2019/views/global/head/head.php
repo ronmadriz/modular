@@ -16,6 +16,7 @@ if (!empty($site_logo_header)) {
 	echo '<a class="menus__brand" href="'.get_bloginfo('url').'" title="'.get_bloginfo('name').'">'.get_bloginfo('name').'</a>'.PHP_EOL;
 }
 include (get_template_directory().'/views/components/navigation/mega.php');
+include (get_template_directory().'/views/components/navigation/mega-solutions.php');
 echo '<div class="menus__toggle">'.PHP_EOL;
 echo '<span class="menus__toggle--item"></span>'.PHP_EOL;
 echo '<span class="menus__toggle--item"></span>'.PHP_EOL;
