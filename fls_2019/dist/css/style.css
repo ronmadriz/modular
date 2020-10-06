@@ -2670,6 +2670,15 @@ svg .region path {
 .menus#menus__item--1 .menus__sub .menus__sub--parent:last-of-type {
   display: none; }
 
+.menus__solutions {
+  display: none;
+  background: #FFFFFF;
+  height: auto;
+  position: absolute;
+  top: 18vh;
+  width: 100vw;
+  z-index: 10; }
+
 body header nav.navbar {
   -webkit-box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.24);
           box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.24);
