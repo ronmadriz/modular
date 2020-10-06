@@ -18,7 +18,7 @@ $mega_args = array(
 	'depth'           => 3,
 );
 wp_nav_menu($mega_args);
-echo '<div class="menus__solutions"><ul class="menus__sub menus__child"><li class="menus__sub--item menus__parent menus__sub--parent"><a href="https://sandbox.fall-arrest.com/fall-protection-solutions/rigid-rail/" class="menus__sub--link">Rigid Rail</a><ul class="menus__tertiary menus__child"><li class="menus__tertiary--item"><a href="https://sandbox.fall-arrest.com/fall-protection-solutions/rigid-rail/flexrail/" class="menus__tertiary--link">FlexRail</a></li>
+echo '<div class="menus__solutions"><div class="wrapper"><ul class="menus__parent"><li class="menus__sub--item menus__parent menus__sub--parent"><a href="https://sandbox.fall-arrest.com/fall-protection-solutions/rigid-rail/" class="menus__sub--link">Rigid Rail</a><ul class="menus__tertiary menus__child"><li class="menus__tertiary--item"><a href="https://sandbox.fall-arrest.com/fall-protection-solutions/rigid-rail/flexrail/" class="menus__tertiary--link">FlexRail</a></li>
 <li class="menus__tertiary--item"><a href="https://sandbox.fall-arrest.com/fall-protection-solutions/rigid-rail/flextraxx/" class="menus__tertiary--link">FlexTraxx</a></li>
 <li class="menus__tertiary--item"><a href="https://sandbox.fall-arrest.com/fall-protection-solutions/rigid-rail/flexbridge/" class="menus__tertiary--link">FlexBridge</a></li>
 <li class="menus__tertiary--item"><a href="https://sandbox.fall-arrest.com/fall-protection-solutions/rigid-rail/dual-overhead-rails/" class="menus__tertiary--link">Twin FlexRail</a></li>
@@ -78,4 +78,4 @@ echo '<div class="menus__solutions"><ul class="menus__sub menus__child"><li clas
 <li class="menus__tertiary--item"><a href="https://sandbox.fall-arrest.com/fall-protection-industries/all/" class="menus__tertiary--link">[All]</a></li>
 	</ul>
 </li>
-</ul></div>'.PHP_EOL;
+</ul></div></div>'.PHP_EOL;
