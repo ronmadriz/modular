@@ -1,0 +1,12 @@
+.menus {
+	&__solutions {
+		display: none;
+		//
+	    background: $alternate;
+	    height: auto;
+	    position: absolute;
+	    top: 18vh;
+	    width: 100vw;
+	    z-index: 10;	
+	}
+}
