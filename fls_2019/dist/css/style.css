@@ -1239,6 +1239,61 @@ html body main #flsCarousel {
   width: 98%;
   z-index: 2; }
 
+.featured__button {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  width: 100%; }
+  .featured__button--link {
+    display: block;
+    width: 100%; }
+
+.featured__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-family: "Encode Sans", sans-serif;
+  font-size: .9325rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.featured__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 100%; }
+  .featured__header--text {
+    display: inline-block;
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase; }
+    .featured__header--text:before, .featured__header--text:after {
+      content: '';
+      height: 1px;
+      position: absolute;
+      width: 125%;
+      background-color: #156CB3;
+      top: 1.25rem; }
+    .featured__header--text:after {
+      left: 105%; }
+    .featured__header--text:before {
+      right: 105%; }
+
 .multi__carousel {
   /*
 	    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
