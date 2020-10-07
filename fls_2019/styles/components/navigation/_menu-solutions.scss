@@ -1,7 +1,7 @@
 .menus {
 	&__solutions {
 	    background-color: rgba($alternate, .93);
-		display: none;
+		display: flex;
 		flex-direction: row;
 	    height: auto;
 	    position: absolute;
