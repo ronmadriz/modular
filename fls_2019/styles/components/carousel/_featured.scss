@@ -3,7 +3,8 @@
         position: relative;
         z-index: 3;
     }
-    &__item {        
+    &__item {
+        border:0.0625rem solid $keyline;        
         &--wrapper {
           background-color: #fff;
           border: .0625rem solid #848587;
@@ -90,4 +91,13 @@
             overflow: hidden;           
         }
     }
+    &__title {
+        display: flex;
+        font-family: $stationary_condensed;
+        font-size: 1.125rem;
+        font-weight:600;
+        margin-bottom: 1.25rem;
+        padding: .5rem 1rem 0;
+        width: 100%;
+    }    
 }
