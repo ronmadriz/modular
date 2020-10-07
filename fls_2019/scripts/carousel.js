@@ -45,8 +45,8 @@ j(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    prevArrow: j('.featured__nav--prev'),
-    nextArrow: j('.featured__nav--next'),
+    prevArrow: j('.carousel__nav--prev'),
+    nextArrow: j('.carousel__nav--next'),
     responsive: [
       {
         breakpoint: 992,

@@ -30,10 +30,10 @@ if ($featured_query->have_posts()) {
 	}
 	echo '</div>'.PHP_EOL;
 	echo '<div class="featured__slidenav">'.PHP_EOL;
-	echo '<a class="featureds__nav light carousel__nav carousel__nav--prev carousel-control-prev" href="#featured__carousel"role="button" data-slide="prev"><i class="featured__icon carousel__icon carousel__icon--prev"></i><span class="featured__nav--text sr-only">';
-	_e('Next', 'fc_core');
+	echo '<a class="featured__nav light carousel__nav carousel__nav--prev carousel-control-prev" href="#featured__carousel"role="button" data-slide="prev"><i class="featured__icon carousel__icon carousel__icon--prev"></i><span class="featured__nav--text sr-only">';
+	_e('Previous', 'fc_core');
 	echo '</span></a>'.PHP_EOL;
-	echo '<a class="featureds__nav light carousel__nav carousel__nav--next carousel-control-next" href="#featured__carousel"role="button" data-slide="next"><i class="featured__icon carousel__icon carousel__icon--next"></i><span class="featured__nav--text sr-only">';
+	echo '<a class="featured__nav light carousel__nav carousel__nav--next carousel-control-next" href="#featured__carousel"role="button" data-slide="next"><i class="featured__icon carousel__icon carousel__icon--next"></i><span class="featured__nav--text sr-only">';
 	_e('Next', 'fc_core');
 	echo '</span></a>'.PHP_EOL;
 	echo '</div>'.PHP_EOL;
