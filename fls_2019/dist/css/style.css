@@ -1198,6 +1198,9 @@ html body main #flsCarousel {
   position: relative;
   z-index: 3; }
 
+.featured__content {
+  min-height: 15rem; }
+
 .featured__item {
   border: 0.0625rem solid #E3ECE3;
   margin-left: .125rem;

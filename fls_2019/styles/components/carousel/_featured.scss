@@ -3,6 +3,9 @@
         position: relative;
         z-index: 3;
     }
+    &__content {
+        min-height: 15rem;
+    }
     &__item {
         border:0.0625rem solid $keyline;
         margin-left: .125rem;
