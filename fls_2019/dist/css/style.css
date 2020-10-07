@@ -1255,11 +1255,13 @@ html body main #flsCarousel {
     width: 100%; }
 
 .featured__date {
+  display: block;
   color: #156CB3;
   font-family: "Encode Sans Condensed", sans-serif;
   font-size: .9rem;
   font-weight: 600;
-  margin-top: 1.25rem; }
+  margin-top: 1.25rem;
+  margin-left: 1rem; }
 
 .featured__desc {
   display: -webkit-box;
@@ -1326,9 +1328,12 @@ html body main #flsCarousel {
   width: 100%; }
 
 .featured__sub {
+  display: block;
   text-transform: uppercase;
   font-family: "Encode Sans Condensed", sans-serif;
-  font-size: .875rem; }
+  font-size: .875rem;
+  margin-left: 1rem;
+  padding-top: 1rem; }
   .featured__sub a {
     font-weight: 600;
     color: #848587; }
