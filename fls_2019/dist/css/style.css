@@ -1318,6 +1318,14 @@ html body main #flsCarousel {
   padding: .5rem 1rem 0;
   width: 100%; }
 
+.featured__sub {
+  text-transform: uppercase;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-size: .875rem; }
+  .featured__sub a {
+    font-weight: 600;
+    color: #848587; }
+
 .featured .wrapper {
   position: relative; }
 
