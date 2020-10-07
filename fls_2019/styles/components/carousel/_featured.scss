@@ -62,6 +62,13 @@
             width: 100%;
         }        
     }
+    &__date {
+      color:$accent_1;
+      font-family:$stationary_condensed;
+      font-size: .9rem;
+      font-weight:600;
+      margin-top: 1.25rem;    
+    }    
     &__desc {
         display:flex;
         flex-grow: 1;

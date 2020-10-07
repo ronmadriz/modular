@@ -1254,6 +1254,13 @@ html body main #flsCarousel {
     display: block;
     width: 100%; }
 
+.featured__date {
+  color: #156CB3;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-size: .9rem;
+  font-weight: 600;
+  margin-top: 1.25rem; }
+
 .featured__desc {
   display: -webkit-box;
   display: -ms-flexbox;
