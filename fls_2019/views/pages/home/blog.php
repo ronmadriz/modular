@@ -1,7 +1,7 @@
 <?
 // 'get_thumbnail_url(get_the_ID(), 'full').'
 if (have_rows('hm_blog')) {
-	echo '<section id="home_blog" class="blogs">'.PHP_EOL;
+	echo '<section id="home_blog" class="featured">'.PHP_EOL;
 	echo '<div class="wrapper">'.PHP_EOL;
 	echo '<div id="featured__carousel" class="featured__carousel">'.PHP_EOL;
 	echo '<div class="featured__slider">'.PHP_EOL;
