@@ -2691,11 +2691,15 @@ svg .region path {
   display: none; }
 
 .menus__solutions {
+  background-color: rgba(255, 255, 255, 0.93);
   display: none;
-  background: #FFFFFF;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: auto;
   position: absolute;
-  top: 18vh;
+  top: 13vh;
   width: 100vw;
   z-index: 10; }
 

@@ -1,11 +1,11 @@
 .menus {
 	&__solutions {
+	    background-color: rgba($alternate, .93);
 		display: none;
-		//
-	    background: $alternate;
+		flex-direction: row;
 	    height: auto;
 	    position: absolute;
-	    top: 18vh;
+	    top: 13vh;
 	    width: 100vw;
 	    z-index: 10;	
 	}
