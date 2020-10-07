@@ -32,7 +32,7 @@ if (have_rows('hm_blog')) {
 			echo '</div>'.PHP_EOL;
 			echo '<footer class="featured__footer">'.PHP_EOL;
 			echo '<time class="featured__date">'.$hm_blog_date.'</time>'.PHP_EOL;
-			echo '<span class="featured__buttons"><a class="featured__link" href="'.$hm_blog_link.'">';
+			echo '<span class="featured__button"><a class="button__outline featured__button--link" href="'.$hm_blog_link.'">';
 			_e('Continue Reading', 'fc_core');
 			echo '</a></span>'.PHP_EOL;
 			echo '</footer>'.PHP_EOL;
