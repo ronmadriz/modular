@@ -80,5 +80,14 @@
             text-transform:uppercase;
             @include bars($accent_1, 1.25rem);
         }
-    }    
+    }
+    &__image {
+        align-self: center;
+        width:100%;
+        &--link {
+            display: flex;
+            max-height: 11.25rem;
+            overflow: hidden;           
+        }
+    }
 }
