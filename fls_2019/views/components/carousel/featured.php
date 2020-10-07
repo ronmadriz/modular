@@ -21,7 +21,7 @@ if ($featured_query->have_posts()) {
 		echo '<span class="featured__title"><a class="featured__title--link" href="'.get_the_permalink().'">'.(!empty($featured__title)?$featured__title:get_the_title()).'</a></span>'.PHP_EOL;
 		echo '<span class="featured__desc">'.$featured__summary.'</span>'.PHP_EOL;
 		echo '</div>';
-		echo '<footer class="featured__footer">'
+		echo '<footer class="featured__footer">'.PHP_EOL;
 		echo '<span class="featured__button"><a class="button__outline featured__button--link" href="'.get_the_permalink().'">'.$featured__link__text.'</a></span>'.PHP_EOL;
 		echo '</footer>'.PHP_EOL;
 		echo '</div>'.PHP_EOL;
