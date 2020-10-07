@@ -1315,6 +1315,9 @@ html body main #flsCarousel {
   padding: .5rem 1rem 0;
   width: 100%; }
 
+.featured .wrapper {
+  position: relative; }
+
 .multi__carousel {
   /*
 	    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
