@@ -1199,7 +1199,9 @@ html body main #flsCarousel {
   z-index: 3; }
 
 .featured__item {
-  border: 0.0625rem solid #E3ECE3; }
+  border: 0.0625rem solid #E3ECE3;
+  margin-left: .125rem;
+  margin-right: .125rem; }
   .featured__item--wrapper {
     background-color: #fff;
     border: .0625rem solid #848587; }

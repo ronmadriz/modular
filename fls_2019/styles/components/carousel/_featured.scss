@@ -4,7 +4,9 @@
         z-index: 3;
     }
     &__item {
-        border:0.0625rem solid $keyline;        
+        border:0.0625rem solid $keyline;
+        margin-left: .125rem;
+        margin-right: .125rem;        
         &--wrapper {
           background-color: #fff;
           border: .0625rem solid #848587;
