@@ -1194,132 +1194,50 @@ html body main #flsCarousel {
   html body main #flsCarousel .carousel-outer {
     position: relative; }
 
-.featured__button {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+.featured__slider {
+  position: relative;
+  z-index: 3; }
+
+.featured__item--wrapper {
+  background-color: #fff;
+  border: .0625rem solid #848587; }
+
+.featured__item--image {
+  width: 100%;
+  height: auto; }
+
+.featured__item--content {
+  padding: 1rem; }
+
+.featured__item__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem;
-  width: 100%; }
-  .featured__button--link {
-    display: block;
-    width: 100%; }
-
-.featured__desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  font-family: "Encode Sans", sans-serif;
-  font-size: .9325rem;
-  margin-bottom: 1.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem; }
-
-.featured__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  width: 100%; }
-  .featured__header--text {
-    display: inline-block;
-    font-family: "Encode Sans Condensed", sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    position: relative;
-    text-transform: uppercase; }
-    .featured__header--text:before, .featured__header--text:after {
-      content: '';
-      height: 1px;
-      position: absolute;
-      width: 125%;
-      background-color: #156CB3;
-      top: 1.25rem; }
-    .featured__header--text:after {
-      left: 105%; }
-    .featured__header--text:before {
-      right: 105%; }
-
-.featured__image {
-  -ms-flex-item-align: center;
-      align-self: center;
-  width: 100%; }
-  .featured__image--link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-height: 11.25rem;
-    overflow: hidden; }
-
-.featured__item {
-  border: 0.0625rem solid #E3ECE3;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  margin-bottom: 1.25rem;
-  min-height: 100%;
-  margin-left: .9375rem;
-  margin-right: .9375rem;
-  padding-left: 0;
-  padding-right: 0;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 1rem 1rem;
   width: 100%; }
-  @media (min-width: 786px) {
-    .featured__item {
-      max-width: 49%; } }
-  @media (min-width: 992px) {
-    .featured__item {
-      max-width: 32.125%; } }
 
-.featured__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  padding: 0 .9375rem;
-  margin: 0;
-  -webkit-transition: 1s ease all;
-  transition: 1s ease all;
-  width: 99%; }
-  .featured__list--transition {
-    -webkit-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out; }
-  @media (max-width: 992px) {
-    .featured__list {
-      width: 97.5%; } }
-
-.featured__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.featured__item__link {
+  display: block;
+  border: .125rem solid #156cb3;
   font-family: "Encode Sans Condensed", sans-serif;
-  font-size: 1.125rem;
+  font-size: .75rem;
   font-weight: 600;
-  margin-bottom: 1.25rem;
-  padding: .5rem 1rem 0;
-  width: 100%; }
+  margin-top: 1rem;
+  padding: .25rem 1rem;
+  text-align: center;
+  text-transform: uppercase; }
 
-.featured .wrapper {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+.featured__item__nav {
+  position: absolute;
+  top: 0;
+  left: 1%;
+  height: 100%;
+  width: 98%;
+  z-index: 2; }
 
 .multi__carousel {
   /*
