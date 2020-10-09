@@ -1,7 +1,7 @@
 <?php
 $mega_solutions_args = array(
-	'theme_location'  => 'mega',
-	'menu'            => 'mega',
+	'theme_location'  => 'mega_solution',
+	'menu'            => 'mega_solution',
 	'container'       => '',
 	'container_class' => '',
 	'container_id'    => '',
