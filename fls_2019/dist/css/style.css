@@ -2625,8 +2625,61 @@ svg .region path {
       -ms-flex-direction: row;
           flex-direction: row;
   height: auto;
+  list-style-type: none;
   width: 100vw;
   z-index: 10; }
+  .menus__solutions--list {
+    background-color: transparent;
+    border-radius: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    left: 0;
+    margin-left: -100%;
+    width: 100%; }
+  .menus__solutions--item {
+    margin-bottom: .5rem;
+    width: 25%; }
+    .menus__solutions--item:last-of-type {
+      padding-bottom: 1rem;
+      padding-top: 1.5rem;
+      text-align: center;
+      width: 100%; }
+      .menus__solutions--item:last-of-type .menus__solutions--link {
+        background-color: transparent;
+        font-size: 1.03125rem;
+        position: relative; }
+        .menus__solutions--item:last-of-type .menus__solutions--link:before, .menus__solutions--item:last-of-type .menus__solutions--link:after {
+          content: '';
+          height: 1px;
+          position: absolute;
+          width: 125%;
+          background-color: #404040;
+          top: 0.5625rem; }
+        .menus__solutions--item:last-of-type .menus__solutions--link:after {
+          left: 105%; }
+        .menus__solutions--item:last-of-type .menus__solutions--link:before {
+          right: 105%; }
+      .menus__solutions--item:last-of-type .menus__solutions--submenu {
+        margin-top: 1rem; }
+      .menus__solutions--item:last-of-type .menus__solutions--subitem {
+        color: #156CB3;
+        display: inline;
+        font-weight: 700; }
+  .menus__solutions--link {
+    color: #156CB3;
+    font-size: .875rem;
+    font-weight: 700; }
+  .menus__solutions--subitem {
+    font-size: .625rem; }
+  .menus__solutions--sublink {
+    color: #848587;
+    font-size: .75rem;
+    padding-left: .5rem;
+    padding-right: .5rem; }
 
 body header nav.navbar {
   -webkit-box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.24);
