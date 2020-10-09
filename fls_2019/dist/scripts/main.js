@@ -201,11 +201,11 @@ j(document).ready(function(){
 			j(this).siblings('.menus__child').toggleClass('menus__open');
 		} );	
 	}	
+	j('#menus__item--1').hover(
+	       function(){ j('.menus__solutions').toggleClass('show') },
+	);
 });
 
-$('#menus__item--1').hover(
-       function(){ $('.menus__solutions').toggleClass('show') },
-)
 function normalizeSlideHeights() {
     j('.carousel').each(function(){
       var items = j('.carousel-item img.background', this);
