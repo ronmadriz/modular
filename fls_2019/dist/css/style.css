@@ -2635,6 +2635,9 @@ svg .region path {
   .menus__solutions--list {
     background-color: transparent;
     border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2683,11 +2686,6 @@ svg .region path {
     font-size: .75rem;
     padding-left: .5rem;
     padding-right: .5rem; }
-  .menus__solutions .wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
 
 body header nav.navbar {
   -webkit-box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.24);
