@@ -2638,7 +2638,6 @@ svg .region path {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     left: 0;
-    margin-left: -100%;
     width: 100%; }
   .menus__solutions--item {
     margin-bottom: .5rem;
