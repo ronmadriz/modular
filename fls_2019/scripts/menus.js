@@ -12,4 +12,7 @@ j(document).ready(function(){
 		} );	
 	}	
 });
-// 7.78
+
+$('#menus__item--1').hover(
+       function(){ $('.menus__solutions').toggleClass('show') },
+)
