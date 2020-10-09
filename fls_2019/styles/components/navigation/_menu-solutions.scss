@@ -36,6 +36,9 @@
 					font-size: 1.03125rem;
 					position:relative;
 					@include bars($base, 1rem);
+					&:after, &:before {
+						max-width: 400px;
+					}
 					&:after {
 						left:60%;
 					}

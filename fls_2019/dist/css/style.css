@@ -2671,6 +2671,8 @@ svg .region path {
           left: 105%; }
         .menus__solutions--item:last-of-type .menus__solutions--link:before {
           right: 105%; }
+        .menus__solutions--item:last-of-type .menus__solutions--link:after, .menus__solutions--item:last-of-type .menus__solutions--link:before {
+          max-width: 400px; }
         .menus__solutions--item:last-of-type .menus__solutions--link:after {
           left: 60%; }
         .menus__solutions--item:last-of-type .menus__solutions--link:before {
