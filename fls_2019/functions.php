@@ -11,6 +11,7 @@ require_once ('functions/FlsMain_Walker.php');
 require_once ('functions/Footer_Walker.php');
 require_once ('functions/Category_Walker.php');
 require_once ('functions/Boiler_Walker.php');
+require_once ('functions/Solutions_Walker.php');
 require_once ('functions/social.php');
 require_once ('functions/gallery.php');
 require_once ('functions/custom-reviews.php');
