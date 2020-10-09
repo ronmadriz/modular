@@ -2666,11 +2666,15 @@ svg .region path {
           position: absolute;
           width: 125%;
           background-color: #404040;
-          top: 0.5625rem; }
+          top: 1rem; }
         .menus__solutions--item:last-of-type .menus__solutions--link:after {
           left: 105%; }
         .menus__solutions--item:last-of-type .menus__solutions--link:before {
           right: 105%; }
+        .menus__solutions--item:last-of-type .menus__solutions--link:after {
+          left: 60%; }
+        .menus__solutions--item:last-of-type .menus__solutions--link:before {
+          right: 60%; }
       .menus__solutions--item:last-of-type .menus__solutions--submenu {
         margin-top: 1rem; }
       .menus__solutions--item:last-of-type .menus__solutions--subitem {
