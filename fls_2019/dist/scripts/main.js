@@ -201,9 +201,7 @@ j(document).ready(function(){
 			j(this).siblings('.menus__child').toggleClass('menus__open');
 		} );	
 	}	
-	j('#menus__item--1').hover(
-	       function(){ j('.menus__solutions').addClass('show') },
-	);
+	// j('#menus__item--1').hover(function(){ j('.menus__solutions').addClass('show') },);
 });
 
 function normalizeSlideHeights() {
