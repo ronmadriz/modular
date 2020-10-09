@@ -142,86 +142,8 @@
 			}
 			// Solutions 
 			&--1 {
-				.menus{				
-					&__sub {
-						background-color: transparent;
-						border-radius: 0;
-						flex-direction: row;
-						flex-wrap: wrap;					
-					    left: 0;
-					    margin-left:-100%;
-						width: 100vw;
-						&--link {
-							background-color: transparent;
-							color:$accent_1;
-						    font-size: .875rem;
-							font-weight:700;
-						}
-						&--item {
-							margin-bottom: .5rem;
-							width:25%;
-							&:last-of-type {
-								padding-bottom: 1rem;
-								padding-top: 1.5rem;
-								text-align: center;
-								width: 100%;
-								.menus__link {
-									background-color: transparent;
-									font-size: 1.03125rem;
-									position:relative;
-									@include bars($base, 0.5625rem);
-								}
-								.menus__tertiary {
-									margin-top: 1rem;
-								}
-								.menus__tertiary--item {
-									color:$accent_1;
-									display:inline;
-									font-weight:700;
-								}
-							}
-						}
-						@include for-tv-up {
-							padding-left: 25%;
-							padding-right: 25%;
-							padding-top: 1.75rem;
-						}
-						&:before, &:after {
-							background: rgba($alternate,.95);
-							content: '';
-							display: block;
-							height: 100%;
-							position: absolute;
-							top: 0;							
-							z-index:-1;
-							width: 100%;
-						}
-						&:after {
-							right: 100%;
-						}
-						&:before {
-							left: 100%;
-						}
-					}
-					&__tertiary {
-						&--item {
-							font-size:.625rem;
-						}
-						&--link {
-							color:$dark_gray;
-							font-size: .75rem;
-							padding-left: .5rem;
-							padding-right: .5rem;
-						}
-					}
-				}
-				&:hover {
-					.menus__sub {
-						display: none;
-					}
-					.menus__tertiary {
-						display: block;						
-					}
+				.menus__sub {
+					display:none;
 				}
 			}
 		}
