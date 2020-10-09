@@ -2617,9 +2617,7 @@ svg .region path {
 
 .menus__solutions {
   background-color: rgba(255, 255, 255, 0.93);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -2630,6 +2628,10 @@ svg .region path {
   position: absolute;
   width: 100vw;
   z-index: 10; }
+  .menus__solutions.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .menus__solutions ul, .menus__solutions li {
     list-style-type: none;
     margin-left: 0;

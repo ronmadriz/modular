@@ -9,6 +9,9 @@
 		position: absolute;
 		width: 100vw;
 		z-index: 10;
+		&.show {
+			display: flex;
+		}
 		ul, li {
 			list-style-type: none;
 			margin-left: 0;
