@@ -64,7 +64,7 @@
 				</ul>
 			</li>
 			<li class="menus__solutions--item"><a href="https://sandbox.fall-arrest.com/fall-protection-solutions/custom/" class="menus__solutions--link">Custom</a></li>
-			<li class="menus__solutions--subitem"><span class="menus__solutions--link">Search By Industry</span>
+			<li class="menus__solutions--item"><span class="menus__solutions--link">Search By Industry</span>
 				<ul class="menus__solutions--submenu">
 					<li class="menus__solutions--subitem"><a href="https://sandbox.fall-arrest.com/fall-protection-industries/aircraft/" class="menus__solutions--sublink">Aircraft</a></li>
 					<li class="menus__solutions--subitem"><a href="https://sandbox.fall-arrest.com/fall-protection-industries/rooftop/" class="menus__solutions--sublink">Rooftop</a></li>
