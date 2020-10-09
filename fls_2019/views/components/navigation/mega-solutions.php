@@ -1,4 +1,6 @@
 <?php
+echo '<div class="menus__solutions">'.PHP_EOL;
+echo '<div class="wrapper">'.PHP_EOL;
 $mega_solutions_args = array(
 	'theme_location'  => 'mega_solution',
 	'menu'            => 'mega_solution',
@@ -18,3 +20,5 @@ $mega_solutions_args = array(
 	'depth'           => 3,
 );
 wp_nav_menu($mega_solutions_args);
+echo '</div>'.PHP_EOL;
+echo '</div>'.PHP_EOL;
