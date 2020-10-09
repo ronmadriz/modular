@@ -228,6 +228,13 @@ function normalizeSlideHeights() {
 }
 var timer;
 
+function openSubmenu() {
+  j(".menus__solutions").addClass("show");
+}
+function closeSubmenu() {
+  j(".menus__solutions").removeClass("show");
+}
+
 j("#menus__item--1").on("mouseover", function() {
   clearTimeout(timer);
   openSubmenu();
@@ -236,14 +243,6 @@ j("#menus__item--1").on("mouseover", function() {
     closeSubmenu
   , 1000);
 });
-
-function openSubmenu() {
-  j(".menus__solutions").addClass("show");
-}
-function closeSubmenu() {
-  j(".menus__solutions").removeClass("show");
-}
-
 // Solutions Filter
 var $btns = j('.btn_filter').click(function() {
   if (this.id == 'all') {
