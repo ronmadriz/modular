@@ -2687,7 +2687,7 @@ svg .region path {
   .menus__solutions--sublink {
     color: #848587;
     font-size: .75rem;
-    line-height: 1.75rem;
+    line-height: 1.75;
     padding-left: .5rem;
     padding-right: .5rem; }
 
