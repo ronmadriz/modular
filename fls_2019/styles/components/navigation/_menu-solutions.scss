@@ -7,6 +7,11 @@
 		list-style-type: none;
 		width: 100vw;
 		z-index: 10;
+		ul, li {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
 		&--list {
 			background-color: transparent;
 			border-radius: 0;
