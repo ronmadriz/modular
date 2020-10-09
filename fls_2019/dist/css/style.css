@@ -2648,6 +2648,7 @@ svg .region path {
     width: 100%; }
   .menus__solutions--item {
     margin-bottom: .5rem;
+    text-align: center;
     width: 25%; }
     .menus__solutions--item:last-of-type {
       padding-bottom: 1rem;
