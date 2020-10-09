@@ -2,7 +2,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         var
         inTriangle = false,
-        navigation = document.getElementById('menus__solutions'),
+        navigation = document.getElementByClass('menus__list'),
         x1, x2, x3, y1, y2, y3, link, timeout;
 
         navigation.addEventListener('mouseenter', onmouseenter);
