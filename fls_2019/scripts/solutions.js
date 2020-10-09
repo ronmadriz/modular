@@ -10,8 +10,8 @@ j("#menus__item--1").on("mouseover", function() {
 });
 
 function openSubmenu() {
-  j("#menus__solutions").addClass("show");
+  j(".menus__solutions").addClass("show");
 }
 function closeSubmenu() {
-  j("#menus__solutions").removeClass("show");
+  j(".menus__solutions").removeClass("show");
 }
