@@ -2678,8 +2678,10 @@ svg .region path {
         font-weight: 700; }
   .menus__solutions--link {
     color: #156CB3;
+    display: block;
     font-size: .875rem;
-    font-weight: 700; }
+    font-weight: 700;
+    line-height: 2rem; }
   .menus__solutions--subitem {
     font-size: .625rem; }
   .menus__solutions--sublink {
