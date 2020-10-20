@@ -1,5 +1,5 @@
 j(document).ready(function(){
-    //Show dropdown on mouseover
+    //Show dropdown on mouseenter
     j('#menus__item--1').mouseenter(function() {
        j('.menus__solutions').addClass('show');
     });
