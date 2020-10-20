@@ -8,7 +8,7 @@ j(document).ready(function(){
         j('.menus__solutions').removeClass('show');
     });
     // Also remove dropdown when mouse leaves navbar
-    j('#menu-mega').mouseleave(function() {
+    j('#menus__item--1').mouseleave(function() {
         if(!j('.menus__solutions:hover').length != 0){
             j('.menus__solutions').removeClass('show');
         }
