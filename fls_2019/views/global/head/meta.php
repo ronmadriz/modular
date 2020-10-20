@@ -16,5 +16,6 @@ echo '<title>'.PHP_EOL;
 wp_title('', true, 'right');
 echo '</title>'.PHP_EOL;
 wp_head();
+echo '<script type="text/javascript" src="'.get_template_directory_uri().'/scripts/solutions.js"></script>'.PHP_EOL;
 // echo $ronmadriz_settings['ronmadriz_header_extra'];
 echo '</head>'.PHP_EOL;

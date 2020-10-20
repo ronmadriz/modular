@@ -84,10 +84,3 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
 	event.preventDefault();
 	j(this).ekkoLightbox();
 });
-
-// j('#menus__item--1').mouseover(function() {
-    //     j('.menus__solutions').addClass('show');
-    // });
-  j('.menu__parent').not('#menus__item--1').mouseover(function() {
-    j('.menus__solutions').removeClass('show');
-  });
