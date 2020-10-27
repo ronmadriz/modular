@@ -2233,7 +2233,7 @@ svg .region path {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 1rem .5rem;
+    /*margin: 1rem .5rem;*/
     width: 65%; }
     .menus__brand--img {
       -ms-flex-item-align: center;
