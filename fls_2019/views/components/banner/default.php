@@ -17,5 +17,6 @@ if (is_home()) {
 }
 echo '</div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
+echo '<p>TESTING</p>'.PHP_EOL;
 echo do_shortcode("[rev_slider alias="basic-hero-collection1"]");
 echo '</section>'.PHP_EOL;
