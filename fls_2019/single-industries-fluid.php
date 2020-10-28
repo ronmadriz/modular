@@ -420,7 +420,7 @@ if ($solutions_footercs) {
 	wp_reset_query();
 }
 
-include get_template_directory().'views/components/studies/default.php';
+include get_template_directory().'/views/components/studies/default.php';
 
 // FREQUENTLY ASKED QUESTIONS
 
