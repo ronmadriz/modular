@@ -27,18 +27,22 @@ j(document).ready(function(){
 function inGapArea(mouseX, mouseY, solutionsTab){
     if (mouseX < solutionsTab.left){
         // Left
+        console.log('left');
         return false;
     };
     if (mouseX > solutionsTab.right){
         // Right
+        console.log('right');
         return false;
     };
     if (solutionsTab.bottom +9 < mouseY){
         // Below assuming a max 9 px gap
+        console.log('bottom');
         return false;
     };
     if (solutionsTab.bottom > mouseY){
         // Above
+        console.log('top');
         return false;
     };
 
