@@ -6,12 +6,12 @@ if (have_rows('case_study_groups')) {
 	echo '<div class="wrapper">'.PHP_EOL;
 	while (have_rows('case_study_groups')) {
 		the_row();
-		$study_section__title = get_sub_field('study_section__title');
-		$study_section__title = 'Our Work';
-		$studies              = get_sub_field('studies');
-		$studies_count        = 0;
+		$study_section__title      = get_sub_field('study_section__title');
+		$study_section__title_dflt = 'Our Work';
+		$studies                   = get_sub_field('studies');
+		$studies_count             = 0;
 		if (is_array($studies)) {
-			echo '<div class="row"><div class="section__title col-12"><h2>'.(!empty($study_section__title)?.$study_section__title:$study_section__title_dflt).'</h2></div></div>'.PHP_EOL;
+			echo '<div class="row"><div class="section__title col-12"><h2>'.(!empty($study_section__title)?$study_section__title:$study_section__title_dflt).'</h2></div></div>'.PHP_EOL;
 			echo '<div class="row">'.PHP_EOL;
 			while (have_rows('studies')) {
 				the_row();
