@@ -7,7 +7,7 @@ if (have_rows('case_study_groups')) {
 	while (have_rows('case_study_groups')) {
 		the_row();
 		$study_section__title      = get_sub_field('study_section__title');
-		$study_section__title_dflt = 'Our Work';
+		$study_section__title_dflt = 'Projects';
 		$studies                   = get_sub_field('studies');
 		$studies_count             = 0;
 		if (is_array($studies)) {
