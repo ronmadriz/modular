@@ -12,7 +12,7 @@ j(document).ready(function(){
     // Also remove dropdown when mouse leaves solutions tab, but not when it goes into dropdown
     j('#menus__item--1').mouseleave(function(e) {
         if(j('.menus__solutions:hover').length == 0){
-            var solutionsTab = j('#menus__item--1').getBoundingClientRect();
+            var solutionsTab = j('#menus__item--1')[0].getBoundingClientRect();
             var mouseX = e.pageX;
             var mouseY = e.pageY;
             //If mouse is in gap (FireFox only) don't remove
