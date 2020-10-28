@@ -6,6 +6,7 @@ j(document).ready(function(){
 
     //Remove dropdown when mouse leaves dropdown box
     j('.menus__solutions').mouseleave(function() {
+        console.log('leaving dropdown')
         j('.menus__solutions').removeClass('show');
     });
 
