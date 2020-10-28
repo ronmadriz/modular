@@ -10,13 +10,14 @@ j(document).ready(function(){
     });
 
     // Also remove dropdown when mouse leaves solutions tab, but not when it goes into dropdown
-    j('#menus__item--1').mouseleave(function(e) {
+    j('#menus__item--1').mousemove(function(e) {
         if(j('.menus__solutions:hover').length == 0){
             var solutionsTab = j('#menus__item--1')[0].getBoundingClientRect();
+            var menuBar = j('.menus');
             var mouseX = e.pageX;
             var mouseY = e.pageY;
             //If mouse is in gap (FireFox only) don't remove
-            if (!inGapArea(mouseX,mouseY,solutionsTab)){
+            if (!inSolutionsTab(mouseX,mouseY,solutionsTab, menuBar)){
                 j('.menus__solutions').removeClass('show');
             }
         }
@@ -24,7 +25,7 @@ j(document).ready(function(){
 });
 
 
-function inGapArea(mouseX, mouseY, solutionsTab){
+function inSolutionsTab(mouseX, mouseY, solutionsTab, menuBar){
     if (mouseX < solutionsTab.left){
         // Left
         console.log('left');
@@ -35,12 +36,12 @@ function inGapArea(mouseX, mouseY, solutionsTab){
         console.log('right');
         return false;
     };
-    if (solutionsTab.bottom +9 < mouseY){
-        // Below assuming a max 9 px gap
+    if (menuBar.bottom < mouseY){
+        // Below
         console.log('bottom');
         return false;
     };
-    if (solutionsTab.bottom > mouseY){
+    if (solutionsTab.top > mouseY){
         // Above
         console.log('top');
         return false;
