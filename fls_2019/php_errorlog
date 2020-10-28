@@ -1,0 +1,32 @@
+[03-Aug-2020 17:40:47 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_id() in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php on line 2
+[03-Aug-2020 17:41:42 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_id() in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php on line 2
+[03-Aug-2020 17:41:42 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_id() in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php on line 2
+[03-Aug-2020 17:41:45 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_id() in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php on line 2
+[27-Aug-2020 11:37:00 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_id() in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php on line 2
+[27-Aug-2020 11:37:00 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_id() in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php on line 2
+[28-Aug-2020 01:51:08 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_id() in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php on line 2
+[28-Aug-2020 01:51:09 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_id() in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/fallarre/public_html/sandbox/wp-content/themes/fls_2019/index.php on line 2

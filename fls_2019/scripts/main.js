@@ -8,7 +8,7 @@ j(document).ready(function(){
 	});
 	j('#myModal').on('shown.bs.modal', function () {
 		j('#myInput').trigger('focus')
-	})	
+	})
   j("a[target!='_blank'][href$='.pdf']").attr("target", "_blank");
 	j(window).scroll(function(){
 	    if (j(this).scrollTop() > 50) {
@@ -58,7 +58,7 @@ j(document).ready(function(){
                   gallery:false,
                 }
           },
-      ]          
+      ]
     });
 });
 // Case Studies
@@ -67,8 +67,8 @@ j(function() {
         j('.all-solutions').hide();
         j('.' + j(this).val()).show();
     });
-}); 
-// Search Toggle 
+});
+// Search Toggle
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
    j('form#searchform').addClass('d-block');

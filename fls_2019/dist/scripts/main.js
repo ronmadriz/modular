@@ -1,70 +1,4 @@
-var j = jQuery.noConflict();
-j(document).ready(function(){
 
- /* j('.multi__carousel').on('slide.bs.carousel', function (e) {
-    // CC 2.0 License Iatek LLC 2018
-    // Attribution required
-    var je = j(e.relatedTarget);
-    var idx = je.index();
-    console.log("IDX :  " + idx);
-    var itemsPerSlide = 3;
-    var totalItems = j('.carousel-item').length;
-    if (idx >= totalItems-(itemsPerSlide-1)) {
-      var it = itemsPerSlide - (totalItems - idx);
-      for (var i=0; i<it; i++) {
-        // append slides to end
-        if (e.direction=="left") {
-            j('.carousel-item').eq(i).appendTo('.carousel-inner');
-        }
-        else {
-            j('.carousel-item').eq(0).appendTo('.carousel-inner');
-        }
-      }
-    }
-  }); */ 
-  j('.multi__carousel .item').each(function(){
-    var next = j(this).next();
-    if (!next.length) {
-      next = j(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    
-    if (next.next().length>0) {
-      next.next().children(':first-child').clone().appendTo($(this));
-    } else {
-      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-    }
-  }); 
-  j('.crsl-items').carousel();
-  // !function(t){t.fn.bcSwipe=function(e){var n={threshold:50};return e&&t.extend(n,e),this.each(function(){function e(t){1==t.touches.length&&(u=t.touches[0].pageX,c=!0,this.addEventListener("touchmove",o,!1))}function o(e){if(c){var o=e.touches[0].pageX,i=u-o;Math.abs(i)>=n.threshold&&(h(),t(this).carousel(i>0?"next":"prev"))}}function h(){this.removeEventListener("touchmove",o),u=null,c=!1}var u,c=!1;"ontouchstart"in document.documentElement&&this.addEventListener("touchstart",e,!1)}),this}}(jQuery);
-  // j('.carousel').bcSwipe({ threshold: 50 });
-  j('#flsCarousel').carousel('pause');  
-
-
-  j('.featured__slider').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    prevArrow: j('.carousel__nav--prev'),
-    nextArrow: j('.carousel__nav--next'),
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });  
-});
 var j = jQuery.noConflict();
 j(document).ready(function(){
    var ppp = 3; // Post per page
@@ -102,6 +36,7 @@ j(document).ready(function(){
         j(this).insertAfter('#ajax-posts'); // Move the 'Load More' button to the end of the the newly added posts.
     });
 });
+
 var j = jQuery.noConflict();
 j(document).ready(function(){
 	j('a').not('[href*="mailto:"]').each(function () {
@@ -112,7 +47,7 @@ j(document).ready(function(){
 	});
 	j('#myModal').on('shown.bs.modal', function () {
 		j('#myInput').trigger('focus')
-	})	
+	})
   j("a[target!='_blank'][href$='.pdf']").attr("target", "_blank");
 	j(window).scroll(function(){
 	    if (j(this).scrollTop() > 50) {
@@ -162,7 +97,7 @@ j(document).ready(function(){
                   gallery:false,
                 }
           },
-      ]          
+      ]
     });
 });
 // Case Studies
@@ -171,8 +106,8 @@ j(function() {
         j('.all-solutions').hide();
         j('.' + j(this).val()).show();
     });
-}); 
-// Search Toggle 
+});
+// Search Toggle
 j(document).on('click', '#searchToggle', function(event) {
    j('form#searchform').removeClass('d-none');
    j('form#searchform').addClass('d-block');
@@ -188,6 +123,7 @@ j(document).on('click', '[data-toggle="lightbox"]', function(event) {
 	event.preventDefault();
 	j(this).ekkoLightbox();
 });
+
 j(document).ready(function(){
 	j('.menus__toggle').click(function(){
 		j(this).toggleClass('menus__toggle--open');
@@ -226,15 +162,24 @@ function normalizeSlideHeights() {
       items.css('min-height', maxHeight + 'px');
     }) 
 }
+
 j(document).ready(function(){
-    // j('#menus__item--1').hover(function(){j('.menus__solutions').toggleClass('show') }, );
-    j('#menus__item--1').mouseover(function() {
-        j('.menus__solutions').addClass('show');
+    //Show dropdown on mouse
+    j('#menus__item--1').mouseenter(function() {
+       j('.menus__solutions').addClass('show');
     });
-    j('.menu__parent').not('#menus__item--1').mouseover(function() {
+    //Remove dropdown when mouse leaves dropdown box
+    j('.menus__solutions').mouseleave(function() {
         j('.menus__solutions').removeClass('show');
-    });    
+    });
+    // Also remove dropdown when mouse leaves navbar, but not when it goes into dropdown
+    j('#menus__item--1').mouseleave(function() {
+        if(j('.menus__solutions:hover').length == 0){
+            j('.menus__solutions').removeClass('show');
+        }
+    });
 });
+
 // Solutions Filter
 var $btns = j('.btn_filter').click(function() {
   if (this.id == 'all') {
