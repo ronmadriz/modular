@@ -2655,6 +2655,7 @@ svg .region path {
     text-align: center;
     width: 25%; }
     .menus__solutions--item:last-of-type {
+      background-color: transparent;
       padding-bottom: 1rem;
       padding-top: 1.5rem;
       text-align: center;
