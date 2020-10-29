@@ -2702,7 +2702,7 @@ svg .region path {
     padding-left: .5rem;
     padding-right: .5rem; }
 
-#menus__solutions--8 .menus__link {
+#menus__solutions--8 > .menus__link {
   background-color: transparent; }
 
 body header nav.navbar {
