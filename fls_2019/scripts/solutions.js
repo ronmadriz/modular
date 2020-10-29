@@ -33,24 +33,20 @@ function inSolutionsTab(e){
 
     if (mouseX < solutionsTab.left){
         // Left
-        console.log('left');
         return false;
     };
     if (mouseX > solutionsTab.right){
         // Right
-        console.log('right');
         return false;
     };
     if (menuBar.bottom + 5 < mouseY){
         // Below
-        console.log('bottom');
         return false;
     };
     if (solutionsTab.top > mouseY){
         // Above
-        console.log('top');
         return false;
     };
-    console.log('inside');
+    
     return true;
 }
