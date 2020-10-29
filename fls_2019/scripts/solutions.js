@@ -49,6 +49,6 @@ function inSolutionsTab(e){
         console.log('top');
         return false;
     };
-
+    console.log('inside');
     return true;
 }
