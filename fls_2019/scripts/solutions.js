@@ -23,7 +23,7 @@ j(document).ready(function(){
 });
 
 
-function inSolutionsTab(mouseX, mouseY, solutionsTab, menuBar){
+function inSolutionsTab(e){
     var solutionsTab = j('#menus__item--1')[0].getBoundingClientRect();
     var menuBar = j('.menus')[0].getBoundingClientRect();
     var mouseX = e.pageX;
