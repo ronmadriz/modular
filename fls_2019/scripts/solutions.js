@@ -1,7 +1,9 @@
 j(document).ready(function(){
     //Show dropdown on mouse enter solutions tab
-    j('#menus__item--1').mouseenter(function() {
-       j('.menus__solutions').addClass('show');
+    j('#menus__item--1').mousemove(function(e) {
+        if (inSolutionsTab(e)){
+            j('.menus__solutions').addClass('show');
+        }
     });
 
     //Remove dropdown when mouse leaves dropdown box
@@ -10,23 +12,23 @@ j(document).ready(function(){
         j('.menus__solutions').removeClass('show');
     });
 
-    // Also remove dropdown when mouse leaves solutions tab, but not when it goes into dropdown
+    // Also remove dropdown when outside solutions tab, but not when it goes into dropdown
     j('#menus__item--1').mousemove(function(e) {
         if(j('.menus__solutions:hover').length == 0){
-            var solutionsTab = j('#menus__item--1')[0].getBoundingClientRect();
-            var menuBar = j('.menus')[0].getBoundingClientRect();
-            var mouseX = e.pageX;
-            var mouseY = e.pageY;
-            //If mouse is in gap (FireFox only) don't remove
-            if (!inSolutionsTab(mouseX,mouseY,solutionsTab, menuBar)){
+            if (!inSolutionsTab(e)){
                 j('.menus__solutions').removeClass('show');
-            }
-        }
+            };
+        };
     });
 });
 
 
 function inSolutionsTab(mouseX, mouseY, solutionsTab, menuBar){
+    var solutionsTab = j('#menus__item--1')[0].getBoundingClientRect();
+    var menuBar = j('.menus')[0].getBoundingClientRect();
+    var mouseX = e.pageX;
+    var mouseY = e.pageY;
+
     if (mouseX < solutionsTab.left){
         // Left
         console.log('left');
