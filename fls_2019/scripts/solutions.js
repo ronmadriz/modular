@@ -39,7 +39,7 @@ function inSolutionsTab(e){
         console.log('right');
         return false;
     };
-    if (menuBar.bottom < mouseY){
+    if (menuBar.bottom + 5 < mouseY){
         // Below
         console.log('bottom');
         return false;
