@@ -58,6 +58,11 @@ j(document).ready(function(){
         return false;
     }
 
+    j("#more_posts").on("click",function(){ // When btn is pressed.
+        j("#more_posts").attr("disabled",true); // Disable the button, temp.
+        load_posts();
+        j(this).insertAfter('#ajax-posts'); // Move the 'Load More' button to the end of the the newly added posts.
+    });
 });
 
 var j = jQuery.noConflict();
