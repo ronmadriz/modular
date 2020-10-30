@@ -24,7 +24,7 @@ j(document).ready(function(){
         }
       }
     ]
-  });  
+  });
 });
 
 var j = jQuery.noConflict();
@@ -44,7 +44,7 @@ j(document).ready(function(){
             success: function(data){
                 var $data = $(data);
                 if($data.length){
-                    j("#ajax-posts").append($data);
+                    j("#ajax-posts").insertAfter($data);
                     j("#more_posts").attr("disabled",false);
                 } else{
                     j("#more_posts").attr("disabled",true);
@@ -163,8 +163,8 @@ j(document).ready(function(){
 			j(this).toggleClass('menus__caret--open');
 			j(this).parent('.menus__parent').toggleClass('menus__active');
 			j(this).siblings('.menus__child').toggleClass('menus__open');
-		} );	
-	}	
+		} );
+	}
 	// j('#menus__item--1').hover(function(){ j('.menus__solutions').toggleClass('show') }, );
 });
 
@@ -172,9 +172,9 @@ function normalizeSlideHeights() {
     j('.carousel').each(function(){
       var items = j('.carousel-item img.background', this);
       items.css('min-height', 0);
-      var maxHeight = Math.max.apply(null, 
+      var maxHeight = Math.max.apply(null,
           items.map(function(){
-          return j(this).outerHeight()}).get() 
+          return j(this).outerHeight()}).get()
       );
       items.css('min-height', maxHeight + 'px');
     })
@@ -183,12 +183,12 @@ function normalizeSlideHeights() {
       // reset the height
       items.css('min-height', 0);
       // set the height
-      var maxHeight = Math.max.apply(null, 
+      var maxHeight = Math.max.apply(null,
           items.map(function(){
-          return j(this).outerHeight()}).get() 
+          return j(this).outerHeight()}).get()
       );
       items.css('min-height', maxHeight + 'px');
-    }) 
+    })
 }
 
 j(document).ready(function(){
@@ -254,6 +254,6 @@ var $btns = j('.btn_filter').click(function() {
 })
 j(document).scroll(function() {
   if (screen.width > 786) {
-    j('.navbar-brand img').css({width: j(this).scrollTop() > 100? "280px":"457.5px"});  
+    j('.navbar-brand img').css({width: j(this).scrollTop() > 100? "280px":"457.5px"});
   }
 });
