@@ -15,7 +15,7 @@ jQuery(function(j){
 			},
 			success : function( data ){
 				if( data ) {
-					button.text( 'More posts' ).prev(data);
+					button.text( 'More posts' ).prev().before(data);
 					misha_loadmore_params.current_page++;
 
 					if ( misha_loadmore_params.current_page == misha_loadmore_params.max_page )
