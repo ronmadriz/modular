@@ -2702,6 +2702,9 @@ svg .region path {
     padding-left: .5rem;
     padding-right: .5rem; }
 
+#menus__solutions--8 > .menus__link {
+  background-color: transparent; }
+
 body header nav.navbar {
   -webkit-box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.24);
           box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.24);
