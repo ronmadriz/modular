@@ -44,7 +44,7 @@ j(document).ready(function(){
             success: function(data){
                 var $data = $(data);
                 if($data.length){
-                    j("#ajax-posts").insertAfter($data);
+                    j("#ajax-posts").append($data);
                     j("#more_posts").attr("disabled",false);
                 } else{
                     j("#more_posts").attr("disabled",true);
