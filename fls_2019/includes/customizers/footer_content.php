@@ -55,6 +55,19 @@ function ronmadriz_register_cta_customizer($wp_customize) {
 		)
 	);
 
+	$wp_customize->add_setting('footer_form');
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize, 'footer_form',
+			array(
+				'label'    => __('Footer Form', 'fc_core'),
+				'section'  => 'footer_content',
+				'type'     => 'text',
+				'settings' => 'footer_form',
+			)
+		)
+	);
+
 	$wp_customize->add_setting('footer_phone');
 	$wp_customize->add_control(
 		new WP_Customize_Control(
