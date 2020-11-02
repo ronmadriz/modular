@@ -5,7 +5,7 @@ echo '<section id="contactFormCTA" class="genForm">'.PHP_EOL;
 echo '<div class="genForm__header"><div class="wrapper"><h2 class="genForm__header--text">';
 _e('Tell Us About Your Fall Hazard', 'fc_core');
 echo '</h2></div></div>'.PHP_EOL;
-echo (!empty($footer_form)?'<div class="genForm__content"><div class="wrapper">'.do_shortcode($footer_form).'</div></div>'.PHP_EOL:'');
+echo '<div class="genForm__content"><div class="wrapper">'.do_shortcode($footer_form).'</div></div>'.PHP_EOL;
 echo '</div>'.PHP_EOL;
 echo '<div class="genForm__footer"><div class="wrapper"><span class="genForm__footer--text">';
 _e('Talk to Fall Protection Expert Now', 'fc_core');
